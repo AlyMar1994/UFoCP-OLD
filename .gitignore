@@ -1,0 +1,5 @@
+# Windows .DB (Thumbnail DataBase) Files
+Thumbs.db
+
+# macOS .DS_Store (Desktop Services Store) Files
+*.DS_Store
