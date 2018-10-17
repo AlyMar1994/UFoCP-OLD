@@ -5,7 +5,7 @@ Before downloading the source, please read the [License](https://github.com/AlyM
 
 ## Prerequisities
 ### Windows
-- [Visual Studio](https://www.visualstudio.com/vs/community/)
+- [Visual Studio (2017+)](https://www.visualstudio.com/vs/community/)
 - (Or) [Notepad++](https://notepad-plus-plus.org/)
 
 ### Linux
