@@ -1,0 +1,11 @@
+General patches/fixes are marked with an asterisk (*). If anything needs to be explained, it's expanded upon with a double-asterisk (**).
+
+
+v1.0 - Petroglyph'd
+============
+
+==================
+General
+==================
+*Fixed STAR WARS credits music.
+**Base-game "Credits_Ep3.MP3" was an incorrect version of "The Throne Room/End Title" from one of STAR WARS (: Episode IV - A New Hope)'s soundtrack releases. I've replaced it with the correct normal-speed render (which I've had ripped from the movie itself).
