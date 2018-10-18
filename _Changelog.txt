@@ -18,6 +18,11 @@ General
 
 
 ==================
+General
+==================
+*Empire/Rebellion -- Fixed Lose-To-Underworld (Consortium) music being erroneously referencing "Lose_To_Zann_1.MP3" instead of "UND_Lose_To_Zann.MP3."
+
+==================
 Units (Land)
 ==================
 *Darth Vader -- Fixed HeroClash.XML trying to find "Darth_Vader" (EaW) instead of "Darth_Vader_Expansion" (FoC) when dueling against Obi-Wan Kenobi.
