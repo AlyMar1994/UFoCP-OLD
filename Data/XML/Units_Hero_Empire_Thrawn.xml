@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <Grand_Admiral_Thrawn_Data>
 <!-- 
-		This version is here if we wish to use Thrawn as a galactic-only hero like Tarkin
-		(he would actually replace Tarkin). If you want to use a space tactical version,
-		use the Admonitor below.
+    This version is here if we wish to use Thrawn as a galactic-only hero like Tarkin
+    (he would actually replace Tarkin). If you want to use a space tactical version,
+    use the Admonitor below.
 -->
 
 	<HeroUnit Name="Grand_Admiral_Thrawn">
@@ -39,19 +39,19 @@
 		<Can_Be_Neutralized_By_Minor_Heroes> No </Can_Be_Neutralized_By_Minor_Heroes>
 		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
 
-		<Abilities SubObjectList="Yes">
-			<Reduce_Production_Price_Ability Name="Thrawn_Reduce_Production_Price">
-				<Unit_Strength_Category />
-				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types> E_Ground_Research_Facility </Applicable_Unit_Types>
-				<Price_Reduction_Percentage> 0.25 </Price_Reduction_Percentage>
-				<Stacking_Category> 0 </Stacking_Category>
-			</Reduce_Production_Price_Ability>
+    <Abilities SubObjectList="Yes">
+      <Reduce_Production_Price_Ability Name="Thrawn_Reduce_Production_Price">
+        <Unit_Strength_Category />
+        <Applicable_Unit_Categories />
+        <Applicable_Unit_Types> E_Ground_Research_Facility </Applicable_Unit_Types>
+        <Price_Reduction_Percentage> 0.25 </Price_Reduction_Percentage>
+        <Stacking_Category> 0 </Stacking_Category>
+      </Reduce_Production_Price_Ability>
 
-			<Combat_Bonus_Ability Name="Thrawn_Combat_Bonus">
-				<Activation_Style> Space_Automatic </Activation_Style>
-				<Unit_Strength_Category> Capital | Corvette | Frigate | Fighter </Unit_Strength_Category>
-				<Applicable_Unit_Categories> Capital | Corvette | Frigate | Fighter </Applicable_Unit_Categories>
+      <Combat_Bonus_Ability Name="Thrawn_Combat_Bonus">
+        <Activation_Style> Space_Automatic </Activation_Style>
+        <Unit_Strength_Category> Capital | Corvette | Frigate | Fighter </Unit_Strength_Category>
+        <Applicable_Unit_Categories> Capital | Corvette | Frigate | Fighter </Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Health_Bonus_Percentage> 0.20 </Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage> 0.1 </Damage_Bonus_Percentage>
@@ -117,7 +117,6 @@
 				<Mod_Multiplier> WEAPON_DELAY_MULTIPLIER, 0.2f </Mod_Multiplier>
 				<Recharge_Seconds> 50 </Recharge_Seconds>
 				<Expiration_Seconds> 7 </Expiration_Seconds>
-				
 				<SFXEvent_GUI_Unit_Ability_Activated> Unit_Barrage_Thrawn </SFXEvent_GUI_Unit_Ability_Activated>
 				<SFXEvent_GUI_Unit_Ability_Deactivated />
 			</Unit_Ability>
@@ -213,7 +212,7 @@
 		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Thrawn </SFXEvent_Health_Low_Warning>
 		<SFXEvent_Health_Critical_Warning> Unit_Defeat_Thrawn </SFXEvent_Health_Critical_Warning>
 		<SFXEvent_Bombard_Select_Target>	EHD_Bombard_Select_Target </SFXEvent_Bombard_Select_Target>
-		<SFXEvent_Bombard_Incoming> EHD_Bombard_Incoming </SFXEvent_Bombard_Incoming>
+    <SFXEvent_Bombard_Incoming> EHD_Bombard_Incoming </SFXEvent_Bombard_Incoming>
     <Play_SFXEvent_On_Sighting> True </Play_SFXEvent_On_Sighting>
 
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Thrawn </SFXEvent_Hardpoint_Destroyed>
@@ -250,28 +249,28 @@
 
 		<!-- Hero abilities for Captain Piett added to ship; Hero "moveable" unit removed -->
 
-		<Unit_Abilities_Data SubObjectList="Yes">
+    <Unit_Abilities_Data SubObjectList="Yes">
       <Unit_Ability>
-				<Type> POWER_TO_WEAPONS </Type>
-				<Mod_Multiplier> WEAPON_DELAY_MULTIPLIER,	0.3f </Mod_Multiplier>
-				<Mod_Multiplier> SPEED_MULTIPLIER,        2.0f </Mod_Multiplier>
-				<Mod_Multiplier> CAUSE_DAMAGE_MULTIPLIER, 2.0f </Mod_Multiplier>
-				<Recharge_Seconds> 50 </Recharge_Seconds>
-				<Expiration_Seconds> 7 </Expiration_Seconds>
+        <Type> POWER_TO_WEAPONS </Type>
+        <Mod_Multiplier> WEAPON_DELAY_MULTIPLIER,	0.3f </Mod_Multiplier>
+        <Mod_Multiplier> SPEED_MULTIPLIER,        2.0f </Mod_Multiplier>
+        <Mod_Multiplier> CAUSE_DAMAGE_MULTIPLIER, 2.0f </Mod_Multiplier>
+        <Recharge_Seconds> 50 </Recharge_Seconds>
+        <Expiration_Seconds> 7 </Expiration_Seconds>
         <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_ASSAULT_NAME</Alternate_Name_Text>
         <Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_ASSAULT_DESCRIPTION</Alternate_Description_Text>
         <Alternate_Icon_Name>i_sa_assault.tga</Alternate_Icon_Name>
-			</Unit_Ability>
+      </Unit_Ability>
 
       <Unit_Ability>
-	      <Type> TRACTOR_BEAM </Type>
+        <Type> TRACTOR_BEAM </Type>
 	      <Mod_Multiplier> SPEED_MULTIPLIER, 0.6f </Mod_Multiplier>
 	      <GUI_Activated_Ability_Name> Admonitor_Tractor_Beam_Attack_Ability </GUI_Activated_Ability_Name>
 	      <Recharge_Seconds> 25 </Recharge_Seconds>
 	      <SFXEvent_Target_Ability> Unit_Tractor_Beam_Thrawn </SFXEvent_Target_Ability>
-		    <SFXEvent_Special_Ability_Loop> Unit_Star_Destroyer_Tractor_Beam </SFXEvent_Special_Ability_Loop>
+        <SFXEvent_Special_Ability_Loop> Unit_Star_Destroyer_Tractor_Beam </SFXEvent_Special_Ability_Loop>
       </Unit_Ability>
-		</Unit_Abilities_Data>
+    </Unit_Abilities_Data>
 
 		<Abilities SubObjectList="Yes">
 			<Combat_Bonus_Ability Name="Admonitor_Combat_Bonus">
@@ -291,10 +290,10 @@
 			<Tractor_Beam_Attack_Ability Name="Admonitor_Tractor_Beam_Attack_Ability">
 				<Activation_Style> User_Input </Activation_Style>
 				<Applicable_Unit_Categories> Transport | Corvette | Frigate </Applicable_Unit_Categories>
-	      <Applicable_Unit_Types> Millennium_Falcon, Houndstooth, IG-2000 </Applicable_Unit_Types>
+        <Applicable_Unit_Types> Millennium_Falcon, Houndstooth, IG-2000 </Applicable_Unit_Types>
 				<Excluded_Unit_Types> Buzz_Droids </Excluded_Unit_Types>
 				<Activation_Min_Range> 0 </Activation_Min_Range>
-	     <Activation_Max_Range> 800 </Activation_Max_Range>
+        <Activation_Max_Range> 800 </Activation_Max_Range>
 
 				<!-- Modifiers. If 0 - no modifier is applied, 1 - "100% increase or decrease" -->
 
