@@ -2381,7 +2381,7 @@
 
 			<Death_Breakoff_Prop> Hardpoint_Breakoff_Acclamator_Weapon_BR </Death_Breakoff_Prop>
 
-			<Damage_Type> Damage_Acclamator </Damage_Type>
+			<Damage_Type> Damage_Acclamator_TL </Damage_Type>
             <Fire_Bone_A>FP_B-R_00</Fire_Bone_A>
             <Fire_Bone_B>FP_B-R_01</Fire_Bone_B>
             <Fire_Cone_Width>160</Fire_Cone_Width>
