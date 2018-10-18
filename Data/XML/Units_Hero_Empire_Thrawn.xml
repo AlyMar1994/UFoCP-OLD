@@ -89,7 +89,9 @@
 				<Causes_Despawn> No </Causes_Despawn>
 				<Applicable_Unit_Categories> Fighter | Bomber | Corvette | Frigate | Capital | Super </Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
+
 				<!-- Allied units do double-damage against the unit with the Find Weakness defense reduction effect -->
+
 				<Damage_Bonus_Percentage> 1.0 </Damage_Bonus_Percentage>
 				<Stacking_Category> 0 </Stacking_Category>
 			</Find_Weakness_Ability>
@@ -105,7 +107,9 @@
 		</Abilities>
 		
 		<Unit_Abilities_Data SubObjectList="Yes">
+
 			<!-- Primary ability -->
+
 			<Unit_Ability>
 				<Type> POWER_TO_WEAPONS </Type>
 				<Mod_Multiplier> SPEED_MULTIPLIER,        0.5f </Mod_Multiplier>
@@ -243,7 +247,6 @@
 		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
 
 		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
-
 
 		<!-- Hero abilities for Captain Piett added to ship; Hero "moveable" unit removed -->
 
