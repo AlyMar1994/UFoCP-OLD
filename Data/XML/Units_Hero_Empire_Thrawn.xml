@@ -6,7 +6,7 @@
     use the Admonitor below.
 -->
 
-	<HeroUnit Name="Grand_Admiral_Thrawn">
+  <HeroUnit Name="Grand_Admiral_Thrawn">
 		<Is_Named_Hero> Yes </Is_Named_Hero>
 		<Text_ID> TEXT_HERO_THRAWN </Text_ID>
 		<Encyclopedia_Text> TEXT_TOOLTIP_THRAWN </Encyclopedia_Text>
@@ -215,15 +215,15 @@
     <SFXEvent_Bombard_Incoming> EHD_Bombard_Incoming </SFXEvent_Bombard_Incoming>
     <Play_SFXEvent_On_Sighting> True </Play_SFXEvent_On_Sighting>
 
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Thrawn </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER,           Unit_Lost_Laser_Thrawn </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Thrawn </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Thrawn </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Lost_Engines_Thrawn </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON,      Unit_Lost_Ion_Thrawn </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR,       Unit_Lost_Shields_Thrawn </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,                 Unit_Lost_Engines_Thrawn </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Thrawn </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, Unit_Lost_Tractor_Thrawn</SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY,            Unit_Lost_Bay_Thrawn </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM,           Unit_Lost_Tractor_Thrawn </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
 
 		<SFXEvent_Engine_Idle_Loop> Unit_Star_Destroyer_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
@@ -232,7 +232,7 @@
 
 		<SFXEvent_Build_Started> EHD_Request_Assistance </SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled> EHD_Request_Canceled </SFXEvent_Build_Cancelled>		
-		<SFXEvent_Build_Complete> Unit_Select_Thrawn </SFXEvent_Build_Complete>
+		<SFXEvent_Build_Complete> Unit_Complete_Thrawn </SFXEvent_Build_Complete>
 		<SFXEvent_Hero_Respawned> Unit_Select_Thrawn </SFXEvent_Hero_Respawned>
 
 

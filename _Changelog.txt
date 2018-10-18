@@ -10,7 +10,7 @@ v1.0 - Petroglyph'd
 ==================
 General
 ==================
-*Any .XML included in the mod has had it's size trimmed. Any unecessary white-space has been trimmed for the sake of file size and (possibly but %99.999996 unlikely) load times.
+*Any .XML included in the mod has had it's size trimmed, and spaces added to perameters. Any unecessary white-space has been trimmed for the sake of file size and (possibly but %99.999996 unlikely) load times.
 **This isn't immersion breaking in-game by any means (at least that requires a traditional patch), but it helps readability for the future in any new edits.
 
 *Fixed STAR WARS credits music.
@@ -20,12 +20,17 @@ General
 ==================
 Units (Land)
 ==================
-*Fixed HeroClash.XML trying to find "Darth_Vader" (EaW) instead of "Darth_Vader_Expansion" (FoC) when dueling against Obi-Wan Kenobi.
+*Darth Vader -- Fixed HeroClash.XML trying to find "Darth_Vader" (EaW) instead of "Darth_Vader_Expansion" (FoC) when dueling against Obi-Wan Kenobi.
 **A fix will be attempted for the other two disabled duels in the future.
 
+==================
+Units (Space)
+==================
+*Acclamator Cruiser -- Fixed the right-most turbolaser's damage type. Was normal laser damage, now it's turbolaser damage.
 
 ==================
 Units (Galactic Conquest)
 ==================
-*Removed dupliate <Activation_Style> tag in Grand Admiral Thrawn's "Remove Corruption" ability.
-*Fixed Grand Admiral Thrawn's "Remove Corruption" ability sound from the Rebellion's removal sound to the Empire's.
+*Grand Admiral Thrawn -- Removed dupliate <Activation_Style> tag in the "Remove Corruption" ability.
+*Grand Admiral Thrawn -- Fixed Thrawn's "Remove Corruption" ability sound from the Rebellion's to the Empire's.
+*Grand Admiral Thrawn -- Fixed Thrawn's spawning sound. It'll now play his own "completion" sound.
