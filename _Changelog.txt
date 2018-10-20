@@ -1,37 +1,41 @@
 ----
 General patches/fixes are marked with an asterisk (*). If anything needs to be explained (or extra info included), it's expanded upon with a double-asterisk (**).
 ----
+Vocab.:
+
+-Underworld – Zann Consortium
+-Rebels – Rebellion
+-Empire - Galactic Empire/Imperials
+-Pirates – Black Sun Pirates
+-Hutts – Jabba the Hutt's faction
+-EaW – Empire at War (base game, pre-Forces of Corruption)
+-FoC – Forces of Corruption (expansion game)
+----
 
 ===================================================================================================
 v1.0 - Petroglyph'd
 ===================================================================================================
-
+Any edits to the master text file are recorded in the document labeled "_MasterTEXT Changelog."
 
 ==================
 General
 ==================
-*Any .XML included in the mod has had it's size trimmed, and spaces added to perameters. Any unecessary white-space has been trimmed for the sake of file size and (possibly but %99.999996 unlikely) load times.
-**This isn't immersion breaking in-game by any means (at least that requires a traditional patch), but it helps readability for the future in any new edits.
-
 *Fixed STAR WARS credits music.
-**Base-game "Credits_Ep3.MP3" was an incorrectly rendered version of "The Throne Room/End Title" from one of STAR WARS (: Episode IV - A New Hope)'s soundtrack releases. I've replaced it with my copy, the correct normal-speed render (which I've ripped from the movie itself).
+**"Credits_Ep3.MP3" was an incorrect version of "The Throne Room/End Title" from a release of STAR WARS (: Episode IV - A New Hope)'s soundtrack. It's replaced with a correct version.
 
-
-==================
-General
-==================
-*Empire/Rebellion -- Fixed Lose-To-Underworld (Consortium) music being erroneously referencing "Lose_To_Zann_1.MP3" instead of "UND_Lose_To_Zann.MP3."
+*Empire/Rebellion -- Fixed Lose-to-Underworld music referencing "Lose_To_Zann_1.MP3" instead of "UND_Lose_To_Zann.MP3."
 
 ==================
 Units (Land)
 ==================
 *Darth Vader -- Fixed HeroClash.XML trying to find "Darth_Vader" (EaW) instead of "Darth_Vader_Expansion" (FoC) when dueling against Obi-Wan Kenobi.
-**A fix will be attempted for the other two disabled duels in the future.
+**This was one of three duels which are broken. The other two will be looked at in the future.
 
 ==================
 Units (Space)
 ==================
 *Acclamator Cruiser -- Fixed the right-most turbolaser's damage type. Was normal laser damage, now it's turbolaser damage.
+*Rouge Squadron -- Fixed last good-against reference from "Death_Star" (EaW) to "Death_Star_II" (FoC) for all squadrons/containers.
 
 ==================
 Units (Galactic Conquest)
