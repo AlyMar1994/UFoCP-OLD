@@ -1,7 +1,10 @@
-# Unofficial Forces of Corruption Patch (UFoCP)
-Created by AlyMar1994.
+# UFoCP
+The Unofficial Forces of Corruption Patch for Petroglyph Games' "STAR WARS: Empire at War – Forces of Corruption." Created by lead developer AlyMar1994.
 
-Before downloading the source, please read the [License](https://github.com/AlyMar1994/UFoCP/blob/master/LICENSE).
+UFoCP is a fan-patch for "STAR WARS: Empire at War – Forces of Corruption," (FoC) which aims to fix numerous bugs within FoC without adding any "flavor patches."
+
+* Version: 1.0
+* License: AGPL-3.0 (please read the [License](https://github.com/AlyMar1994/UFoCP/blob/master/LICENSE) for more info)
 
 ## Prerequisities
 ### Windows
@@ -16,3 +19,9 @@ N/A
 
 ## Links
 N/A
+
+## Installation (Debug, ect.)
+* Download the repository's "Data" folder.
+* Make a new directory inside your Steam copy of FoC's "Mods" folder (e.g.: "corruption\Mods\UFoCP1.0")
+* Paste "Data" folder in UFoCP folder.
+* Launch the Steam copy of FoC with the launch option "MODPATH=Mods\##Folder Name##."
