@@ -13,7 +13,7 @@ UFoCP is a fan-patch for "STAR WARS: Empire at War – Forces of Corruption," (F
 ## Prerequisities
 ### Windows
 #### Editors
-* Anything that can correctly parse .XML will do.
+* Anything that can correctly parse .XML and .LUA will do.
 * (Recommended) [Visual Studio (2017+)](https://www.visualstudio.com/vs/community/)
 * [Notepad++](https://notepad-plus-plus.org/)
 
