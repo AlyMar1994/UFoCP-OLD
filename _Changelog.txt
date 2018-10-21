@@ -17,13 +17,24 @@ v1.0 - Petroglyph'd
 =========================================================================================
 There are MasterTextFiles_ENGLISH.dat updates in this update! Check "_MasterTEXT Changelog.txt" in the game directory to see!
 
+
 ==================
 General
 ==================
 *Fixed STAR WARS credits music.
 **"Credits_Ep3.MP3" was an incorrect version of "The Throne Room/End Title" from a release of STAR WARS (: Episode IV - A New Hope)'s soundtrack. It's replaced with a correct version.
 
+*Empire/Rebellion -- Fixing conditionals: changing reference Death_Star (EaW) to Death_Star_II. Both teams will now use the proper advisor dialogue for when a hero (such as the Death Star II, Palpatine, Mon Mothma, or a combination of such) is in battle.
 *Empire/Rebellion -- Fixed Lose-to-Underworld music referencing "Lose_To_Zann_1.MP3" instead of "UND_Lose_To_Zann.MP3."
+*Empire/Rebellion -- Fixed "Object Spotted Announcement" for Darth Vader. Was searching Darth_Vader (EaW) instead of Darth_Vader_Expansion (FoC).
+
+*Empire -- Fixing defined faction super weapon from Death_Star (EaW) to Death_Star_II (FoC).
+
+*Rebellion -- Fixed conditionals referring to a combination: since Luke Skywalker can't destroy the Death Star in FoC (he could in EaW!) his conditional has been changed to Rogue Squadron (Wedge's X-Wing specifically, as Wedge alone destroys the Death Star II).
+
+*Underworld -- Removed references to non-existant "finale" movies for galactic conquest.
+*Underworld -- Fixed "Object Spotted Announcement" for Darth Vader. Was searching Darth_Vader (EaW) instead of Darth_Vader_Expansion (FoC).
+
 
 ==================
 Units (Land)
@@ -31,11 +42,13 @@ Units (Land)
 *Darth Vader -- Fixed HeroClash.XML trying to find "Darth_Vader" (EaW) instead of "Darth_Vader_Expansion" (FoC) when dueling against Obi-Wan Kenobi.
 **This was one of three duels which are broken. The other two will be looked at in the future.
 
+
 ==================
 Units (Space)
 ==================
 *Acclamator Cruiser -- Fixed the back-right turbolaser's damage type. Was normal laser damage, now it's turbolaser damage.
 *Rouge Squadron -- Fixed good-against references from "Death_Star" (EaW) to "Death_Star_II" (FoC) for all squadrons/containers.
+
 
 ==================
 Units (Galactic Conquest)
