@@ -15,7 +15,7 @@ Vocab.:
 ===================================================================================================
 v1.0 - Petroglyph'd
 ===================================================================================================
-Any edits to the master text file are recorded in the document labeled "_MasterTEXT Changelog."
+There are MasterTextFiles_ENGLISH.dat updates in this update! Check "_MasterTEXT Changelog.txt" to see!
 
 ==================
 General
