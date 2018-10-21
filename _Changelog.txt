@@ -12,10 +12,10 @@ Vocab.:
 -FoC – Forces of Corruption (expansion game)
 ----
 
-===================================================================================================
+=========================================================================================
 v1.0 - Petroglyph'd
-===================================================================================================
-There are MasterTextFiles_ENGLISH.dat updates in this update! Check "_MasterTEXT Changelog.txt" to see!
+=========================================================================================
+There are MasterTextFiles_ENGLISH.dat updates in this update! Check "_MasterTEXT Changelog.txt" in the game directory to see!
 
 ==================
 General
@@ -34,12 +34,12 @@ Units (Land)
 ==================
 Units (Space)
 ==================
-*Acclamator Cruiser -- Fixed the right-most turbolaser's damage type. Was normal laser damage, now it's turbolaser damage.
-*Rouge Squadron -- Fixed last good-against reference from "Death_Star" (EaW) to "Death_Star_II" (FoC) for all squadrons/containers.
+*Acclamator Cruiser -- Fixed the back-right turbolaser's damage type. Was normal laser damage, now it's turbolaser damage.
+*Rouge Squadron -- Fixed good-against references from "Death_Star" (EaW) to "Death_Star_II" (FoC) for all squadrons/containers.
 
 ==================
 Units (Galactic Conquest)
 ==================
 *Grand Admiral Thrawn -- Removed dupliate <Activation_Style> tag in the "Remove Corruption" ability.
 *Grand Admiral Thrawn -- Fixed Thrawn's "Remove Corruption" ability sound from the Rebellion's to the Empire's.
-*Grand Admiral Thrawn -- Fixed Thrawn's spawning sound. It'll now play his own "completion" sound.
+*Grand Admiral Thrawn -- Fixed Thrawn's spawning sound. It'll now play his own designated spawn sound.

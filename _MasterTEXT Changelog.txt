@@ -27,11 +27,11 @@ F: "Intimidating Galactic Senator Polo Se'Lab puts important information and the
 
 ----
 
-*MB_LAND_PLANET_BYSS_KIDNAPPING -- Fixed improper comma usage.
+*MB_LAND_PLANET_BYSS_KIDNAPPING -- Fixed improper comma usage, improper capitalization of "emperor" and non-capitalization of title "Planetary Governer."
 
 O: "Byss, an extremely dangerous world, prized by the Emperor. Taking planetary governor Kirith can reap great rewards in credits.  Our Defiler has assembled a strike team of our reservists to accomplish our goal. "
 
-F: "Byss, an extremely dangerous world prized by the Emperor. Taking planetary governor Kirith can reap great rewards in credits.  Our Defiler has assembled a strike team of our reservists to accomplish our goal. "
+F: "Byss, an extremely dangerous world prized by the emperor. Taking Planetary Governor Kirith can reap great rewards in credits.  Our Defiler has assembled a strike team of our reservists to accomplish our goal. "
 
 ----
 
@@ -107,11 +107,11 @@ F: "Piracy is going to be especially dangerous to set up around Mandalore. I wil
 
 ----
 
-*TEXT_CAMPAIGN_SINGLE_12_INTRO_E -- Fixed improper dash usage in the Empire version of "Heart of the Maw"'s intro.
+*TEXT_CAMPAIGN_SINGLE_12_INTRO_E -- Fixed improper dash usage in the Empire version of "Heart of the Maw"'s intro, and improper capitalization of "emperor."
 
 O: "The Empire wishes to use the Maw as a location for a research facility.  Both the Rebellion and the Zann Consortium also wish to use the location for their own purposes.  The Emperor instructs you to capture the Maw along with four other key planets to further his plans.  You have 60 galactic days to do this - fail at your own peril."
 
-F: "The Empire wishes to use the Maw as a location for a research facility.  Both the Rebellion and the Zann Consortium also wish to use the location for their own purposes.  The Emperor instructs you to capture the Maw along with four other key planets to further his plans.  You have 60 galactic days to do this—fail at your own peril."
+F: "The Empire wishes to use the Maw as a location for a research facility.  Both the Rebellion and the Zann Consortium also wish to use the location for their own purposes.  The emperor instructs you to capture the Maw along with four other key planets to further his plans.  You have 60 galactic days to do this—fail at your own peril."
 
 ----
 
@@ -227,10 +227,114 @@ F: "The IG-2000 Must Survive."
 
 ----
 
-*
+*MBUM02_REMNANTS_OF_THE_DEATH_STAR -- Fixing improper capitalization of "emperor's."
 
-O: ""
+O: "It seems the Rebels went and blew up the Emperor's Death Star while I was busy rebuilding in another part of the galaxy.  Lucky for me the corpse is relatively fresh, and the scavengers have yet to pick it clean.  If the crew ejected the data pods, and if I can recover them before the Rebels, they just might contain information on the Emperor's hidden vaults...."
 
-F: ""
+F: "It seems the Rebels went and blew up the emperor's Death Star while I was busy rebuilding in another part of the galaxy.  Lucky for me the corpse is relatively fresh, and the scavengers have yet to pick it clean.  If the crew ejected the data pods, and if I can recover them before the Rebels, they just might contain information on the emperor's hidden vaults...."
+
+----
+
+*MBUM04_VISIONS_OF_THE_PAST -- Fixed non-hyphening of "Clone Wars-era."
+
+O: "Jabba the Hutt has uncovered an old Clone Wars-era factory built by the Geonosians that was never found by the old Republic.  If I can get there first, I can take a large prize out of Jabba's slimy hands, and gain a lot of firepower in the bargain.  Urai has gone ahead to scout while I gather some reinforcements.  What could possibly go wrong?"
+
+F: "Jabba the Hutt has uncovered an old Clone Wars-era factory built by the Geonosians that was never found by the old Republic.  If I can get there first, I can take a large prize out of Jabba's slimy hands, and gain a lot of firepower in the bargain.  Urai has gone ahead to scout while I gather some reinforcements.  What could possibly go wrong?"
+
+----
+
+*MBUM06_DARK_ALLY -- Fixed improper capitalization of "emperor."
+
+O: "I'm landing on Dathomir to search for a Dark Force user to unlock the Sith Artifact. I'm surprised to see the planet under strict Empire control. It seems there are many secrets here the Emperor himself wants to keep hidden. It will be interesting to see what Urai and I can find...."
+
+F: "I'm landing on Dathomir to search for a Dark Force user to unlock the Sith Artifact. I'm surprised to see the planet under strict Empire control. It seems there are many secrets here the emperor himself wants to keep hidden. It will be interesting to see what Urai and I can find...."
+
+----
+
+*MBUM09_BAITING_THE_HOOK -- Fixing capitalization of "Sith Artifact." It generally doesn't matter if it is or not, but consistiency does!
+
+O: "According to my plans I'm meeting the Imperial contact on Carida, supposedly to sell the Sith artifact.  I'm naturally expecting a double cross by everyone I'm meeting. After all, it's what I would do if I were meeting them.  But a trap you know about is one you can use to your advantage...."
+
+F: "According to my plans I'm meeting the Imperial contact on Carida, supposedly to sell the Sith Artifact.  I'm naturally expecting a double cross by everyone I'm meeting. After all, it's what I would do if I were meeting them.  But a trap you know about is one you can use to your advantage...."
+
+----
+
+*MBUM11_RAIDERS_OF_THE_LOST_HOLOCRON -- Fixed capitalization of "archive" and "emperor," and fixing the broken triple-period usage.
+
+O: "Urai, Silri, and I are raiding the Imperial Archive on Coruscant. I'm going to get the Emperor's personal passkey. I realize fully that Silri is going to be a problem, but for now I'll just watch her closely and make sure she does my bidding…."
+
+F: "Urai, Silri, and I are raiding the Imperial archive on Coruscant. I'm going to get the emperor's personal passkey. I realize fully that Silri is going to be a problem, but for now I'll just watch her closely and make sure she does my bidding...."
+
+----
+
+*MBUM12_THE_EMPERORS_NEW_WEAPON -- Fixed improper capitalization of "emperor" and dash usage.
+
+O: "The Emperor's passkey is the key to unlocking my prize - the Emperor's vaults and enough wealth to gain control of the galaxy's criminal underworld.  All I have to do is fight my way through the remaining Imperial ships, not to mention fending off whatever Rebel forces come to investigate..."
+
+F: "The emperor's passkey is the key to unlocking my prize—the emperor's vaults and enough wealth to gain control of the galaxy's criminal underworld.  All I have to do is fight my way through the remaining Imperial ships, not to mention fending off whatever Rebel forces come to investigate..."
+
+----
+
+*MT_SPACE_PLANET_CORELLIA_PIRACY -- Fixing improper capitalization of "satellites."
+
+O: "Raid the orbital satellites over Corellia"
+
+F: "Raid the orbital Satellites over Corellia"
+
+----
+
+*TEXT_CAMPAIGN_SINGLE_36_INTRO_E -- Fixing improper capitalization of "emperor."
+
+O: "While the heart of the Empire is relatively secure, the Outer Rim is a constant plague of corruption and disorder.  The Emperor wants the worlds of the Rim under control and his laws enforced; with the Rim in his control the Rebels and criminals will have nowhere left to run."
+
+F: "While the heart of the Empire is relatively secure, the Outer Rim is a constant plague of corruption and disorder.  The emperor wants the worlds of the Rim under control and his laws enforced; with the Rim in his control the Rebels and criminals will have nowhere left to run."
+
+----
+
+*TEXT_CAMPAIGN_SINGLE_56_INTRO_E -- Fixed improper capitalization of "emperor." 
+
+O: "During our battles with the Rebellion, we have noticed increased corruption and crime on many worlds.  The Emperor does not enjoy hearing that the funds meant for the advancement of his military are going to criminals, any more than he likes Rebel scum interfering with his rule.  Remove the Zann Consortium and the Rebellion from the galaxy by any means necessary.  Use your initial credits wisely to upgrade and expand your forces."
+
+F: "During our battles with the Rebellion, we have noticed increased corruption and crime on many worlds.  The emperor does not enjoy hearing that the funds meant for the advancement of his military are going to criminals, any more than he likes Rebel scum interfering with his rule.  Remove the Zann Consortium and the Rebellion from the galaxy by any means necessary.  Use your initial credits wisely to upgrade and expand your forces."
+
+----
+
+*TEXT_ENCYCLOPEDIA_TECH_UPGRADE_05 -- Fixing reference to the Death Star (EaW) instead of Death Star II (FoC).
+
+O: "Allows Production (with pre-requisites) of: The Death Star"
+
+F: "Allows Production (with pre-requisites) of: the Death Star II"
+
+----
+
+*TEXT_UW_ACT03_M11_GOAL_00 -- Making "must survive." consistient.
+
+O: "Tyber, Urai, and Silri must survive."
+
+F: "Tyber, Urai, and Silri Must Survive."
+
+----
+
+*TEXT_UW_ACT02_M07_GOAL_05 -- Making "must survive." consistient.
+
+O: "Urai Fen must survive."
+
+F: "Urai Fen Must Survive."
+
+----
+
+*TEXT_UW_ACT02_M07_GOAL_06 -- Making "must survive." consistient.
+
+O: "IG-88 must survive."
+
+F: "IG-88 Must Survive."
+
+----
+
+*TEXT_UW_ACT02_M07_GOAL_04 -- Making "must survive." consistient with the rest.
+
+O: "Tyber, Urai, and IG-88 must survive."
+
+F: "Tyber, Urai, and IG-88 Must Survive.
 
 ----
