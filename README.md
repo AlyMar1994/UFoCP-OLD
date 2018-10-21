@@ -34,4 +34,4 @@ UFoCP is a fan-patch for "STAR WARS: Empire at War – Forces of Corruption," (F
 
 ## Links
 - Bug Reporting: https://github.com/AlyMar1994/UFoCP/issues
-- Steam HomePage: N/A
+- Steam Source: N/A
