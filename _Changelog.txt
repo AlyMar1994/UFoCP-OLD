@@ -1,5 +1,5 @@
 ----
-General patches/fixes are marked with an asterisk (*). If anything needs to be explained (or extra info included), it's expanded upon with a double-asterisk (**).
+Fixes are marked with an asterisk (*). If an explanation is required (or extra info included), it's expanded upon with a double-asterisk (**).
 ----
 Vocab.:
 

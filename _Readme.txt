@@ -10,15 +10,13 @@
 
 ==> Description
 ================
-This is the modification to Petroglyph's 2006 expansion STAR WARS: Empire at War - Forces of Corruption, "Unofficial Forces of Corruption Patch" by AlyMar1994. This patch is solely dedicated to fixing bugs where possible by editing already existing game files with no engine changes or "flavor patches" (changes solely in flavor, or "want to be changed"/personal preference) what-so-ever, being inspired by "Patch For Purists," created by "half11" and The Elder Scrolls III: Morrowind Community.
+The Unofficial Forces of Corruption Patch (UFoCP) for Petroglyph's "STAR WARS: Empire at War – Forces of Corruption"—created by lead developer AlyMar1994 in late-2018.
 
-As an example of what this mod covers, two exerpts from "Patch For Purist"'s description is applicable:
+UFoCP is a fan-patch for "STAR WARS: Empire at War – Forces of Corruption," (FoC) which aims to fix numerous bugs within FoC without adding any "flavor patches"—fixes which are based upon personal preference and or wants. An exerpt from half11 puts this ideal into words with his "Patch For Purists" on the MorrowindNEXUS:
 
-1) "Patch for Purists strives to be an all-in-one patcher for everything in the The Elder Scrolls III: Morrowind Game of the Year Edition that is considerd a bug. I define a bug as: 'an immersion breaking issue which was clearly not intended by the developers'. This definition was the benchmark for creating this patch."
+"'What distinguishes the Patch for Purists from existing player made patches?,' you may ask. My purist approach kept me from introducing debatable and unnecessary changes: balance changes based on personal preferences, so-called improvements in gameplay, and adding of unnecessary stuff. These are changes which, according to me, do not belong in a bugfixing patch because they go beyond fixing unintentional immersion breaking issues. Unfortunately, these are the exact changes that plague most player made patches. These patches force purists to play an outdated version of the game and alter the experience of new players who are not aware of these unnecessary changes to the original game, as was intended by the developers."
 
-2) "'What distinguishes the Patch for Purists from existing player made patches?,' you may ask. My purist approach kept me from introducing debatable and unnecessary changes: balance changes based on personal preferences, so-called improvements in gameplay, and adding of unnecessary stuff. These are changes which, according to me, do not belong in a bugfixing patch because they go beyond fixing unintentional immersion breaking issues. Unfortunately, these are the exact changes that plague most player made patches."
-
-This was my general mindset when developing the Unofficial Forces of Corruption patch.
+My mindset was typically this: all the changes in this modification are based on keeping the game as pure, and instead only fixing unintended errors within game.
 
 ==> Links
 ================
