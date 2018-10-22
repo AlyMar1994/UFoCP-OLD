@@ -15,7 +15,7 @@ UFoCP is a fan-patch for "STAR WARS: Empire at War – Forces of Corruption," (F
 ## Prerequisities
 ### Windows
 #### Editors
-* Anything that can correctly parse .XML and .LUA will do.
+Anything that can correctly parse .XML and .LUA will do.
 * (Recommended) [Visual Studio (2017+)](https://www.visualstudio.com/vs/community/)
 * [Notepad++](https://notepad-plus-plus.org/)
 
@@ -28,11 +28,11 @@ UFoCP is a fan-patch for "STAR WARS: Empire at War – Forces of Corruption," (F
 ### macOS
 * N/A (Insufficient knowledge of release)
 
-## Installation (Debug, ect.)
-* Download the repository's "Data" folder.
-* Make a new directory inside your Steam copy of FoC's "Mods" folder (e.g.: "corruption\Mods\UFoCP1.0")
-* Paste "Data" folder in UFoCP folder.
-* Launch the Steam copy of FoC with the launch option "MODPATH=Mods\##Folder Name##."
+## Installation
+* Clone/download the repository.
+* Create a new directory inside your Steam copy of FoC's "Mods" folder (e.g.: "\corruption\Mods\UFoCP1.0\")
+* Paste repository contents into UFoCP folder.
+* Launch the Steam copy of FoC with the launch option "MODPATH=Mods\\##Folder Name##."
 
 ## Links
 - Bug Reporting: https://github.com/AlyMar1994/UFoCP/issues
