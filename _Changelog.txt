@@ -52,6 +52,8 @@ Units (Land)
 
 *Urai Fen -- Fixed Fen's unit file trying to find "Darth_Vader" (EaW) instead of "Darth_Vader_Expansion" for his lightsaber-block ability.
 
+*Vornskr -- "Fixed" good against reference for Darth Vader; was "Darth_Vader" (EaW) instead of "Darth_Vader_Expansion" (FoC). No real change is made as it seems, but having it be referenced properly is always nice.
+
 
 ==================
 Units (Space)
@@ -59,6 +61,8 @@ Units (Space)
 *Acclamator Cruiser -- Fixed the back-right turbolaser's damage type. Was normal laser damage, now it's turbolaser damage.
 
 *Rouge Squadron -- Fixed good-against references from "Death_Star" (EaW) to "Death_Star_II" (FoC) for all squadrons/containers.
+
+*Skipray BlastBoat -- Fixed squadron escort status; "is escort" is now "no" instead of "nos."
 
 
 ==================
