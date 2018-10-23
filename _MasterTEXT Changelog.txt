@@ -335,6 +335,46 @@ F: "IG-88 Must Survive."
 
 O: "Tyber, Urai, and IG-88 must survive."
 
-F: "Tyber, Urai, and IG-88 Must Survive.
+F: "Tyber, Urai, and IG-88 Must Survive."
+
+----
+
+*TEXT_STORY_TRANSMISSION_TYBER -- Made consistient with the others (this was the only one out).
+
+O: "Incoming transmission from Tyber Zann"
+
+F: "Incoming Transmission from Tyber Zann"
+
+----
+
+*TEXT_TOOLTIP_UNIT_BEVEL_LEMELISK -- Fixed odd spacing.
+
+O: "Bevel Lemelisk is  a genius ship designer."
+
+F: "Bevel Lemelisk is a genius ship designer."
+
+----
+
+*TEXT_TOOLTIP_YODA -- Fixed improper capitalization of "emperor."
+
+O: "Yoda was a Jedi Master and part of the Jedi Council before the fall of the Republic.  He has been in hiding from the Emperor since the end of the Clone Wars."
+
+F: "Yoda was a Jedi Master and part of the Jedi Council before the fall of the Republic.  He has been in hiding from the emperor since the end of the Clone Wars."
+
+----
+
+*Adding periods (to complete the sentence) for all Empire tech level upgrades, and many other things that are applicable. Not every one will be recorded.
+
+----
+
+*Fixed improper capitalization of "production" in all Empire upgrade technologies.
+
+----
+
+*
+
+O: ""
+
+F: ""
 
 ----
