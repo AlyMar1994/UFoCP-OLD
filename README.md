@@ -1,5 +1,5 @@
 # UFoCP
-UFoCP, the Unofficial Forces of Corruption Patch for Petroglyph's "STAR WARS: Empire at War – Forces of Corruption"—created by lead developer AlyMar1994 in late-2018.
+UFoCP, the Unofficial Forces of Corruption Patch for Petroglyph's "STAR WARS: Empire at War – Forces of Corruption."
 
 UFoCP is a fan-patch for "STAR WARS: Empire at War – Forces of Corruption," (FoC) which aims to fix numerous bugs within FoC without adding any "flavor patches"—fixes which are based upon personal preference and or wants. An exerpt from [half11](https://www.nexusmods.com/morrowind/users/36879320) puts this ideal into words with his "[Patch For Purists](https://www.nexusmods.com/morrowind/mods/45096/)" on the [MorrowindNEXUS](https://www.nexusmods.com/morrowind/):
 
