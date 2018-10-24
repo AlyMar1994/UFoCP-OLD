@@ -329,6 +329,7 @@
 		<SFXEvent_Unit_Type_Spotted>Obi_Wan_Kenobi,						Unit_Announce_ObiWan_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
 		<SFXEvent_Unit_Type_Spotted>Generic_Field_Commander_Rebel,	Unit_Announce_R_Field_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
 		<SFXEvent_Unit_Type_Spotted>Han_Solo,								Unit_Announce_Solo_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
+    <SFXEvent_Unit_Type_Spotted>Darth_Vader,							Unit_Announce_Vader_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
 		<SFXEvent_Unit_Type_Spotted>Darth_Vader_Expansion,							Unit_Announce_Vader_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
 		<SFXEvent_Unit_Type_Spotted>General_Veers,						Unit_Announce_Veers_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
 
@@ -338,7 +339,7 @@
         <SFXEvent_Unit_Type_Spotted>IG-88,                              Unit_Announce_IG88_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
         <SFXEvent_Unit_Type_Spotted>Urai_Fen,		                    Unit_Announce_Urai_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
         <SFXEvent_Unit_Type_Spotted>Silri,		                        Unit_Announce_Silri_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
-        <SFXEvent_Unit_Type_Spotted>Grand_Admiral_Thrawn,		        Unit_Announce_Thrawn_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
+        <SFXEvent_Unit_Type_Spotted>Admonitor_Star_Destroyer,		        Unit_Announce_Thrawn_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
         <SFXEvent_Unit_Type_Spotted>Executor_Super_Star_Destroyer,		Unit_Announce_Executor_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
         <SFXEvent_Unit_Type_Spotted>Yoda,		                        Unit_Announce_Yoda_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
         <SFXEvent_Unit_Type_Spotted>Luke_Skywalker_Jedi,		        Unit_Announce_Luke_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
@@ -1118,6 +1119,7 @@
 		<SFXEvent_Unit_Type_Spotted>Obi_Wan_Kenobi,						Unit_Announce_ObiWan_Storm_Trooper</SFXEvent_Unit_Type_Spotted>
 		<SFXEvent_Unit_Type_Spotted>Generic_Field_Commander_Rebel,	Unit_Announce_R_Field_Storm_Trooper</SFXEvent_Unit_Type_Spotted>
 		<SFXEvent_Unit_Type_Spotted>Han_Solo,								Unit_Announce_Solo_Storm_Trooper</SFXEvent_Unit_Type_Spotted>
+    <SFXEvent_Unit_Type_Spotted>Darth_Vader,							Unit_Announce_Vader_Storm_Trooper</SFXEvent_Unit_Type_Spotted>
 		<SFXEvent_Unit_Type_Spotted>Darth_Vader_Expansion,							Unit_Announce_Vader_Storm_Trooper</SFXEvent_Unit_Type_Spotted>
 		<SFXEvent_Unit_Type_Spotted>General_Veers,						Unit_Announce_Veers_Storm_Trooper</SFXEvent_Unit_Type_Spotted>
 
@@ -1127,7 +1129,7 @@
         <SFXEvent_Unit_Type_Spotted>IG-88,                              Unit_Announce_IG88_Empire_Soldier</SFXEvent_Unit_Type_Spotted>
         <SFXEvent_Unit_Type_Spotted>Urai_Fen,		                    Unit_Announce_Urai_Empire_Soldier</SFXEvent_Unit_Type_Spotted>
         <SFXEvent_Unit_Type_Spotted>Silri,		                        Unit_Announce_Silri_Empire_Soldier</SFXEvent_Unit_Type_Spotted>
-        <SFXEvent_Unit_Type_Spotted>Grand_Admiral_Thrawn,		        Unit_Announce_Thrawn_Empire_Soldier</SFXEvent_Unit_Type_Spotted>
+        <SFXEvent_Unit_Type_Spotted>Admonitor_Star_Destroyer,		        Unit_Announce_Thrawn_Empire_Soldier</SFXEvent_Unit_Type_Spotted>
         <SFXEvent_Unit_Type_Spotted>Executor_Super_Star_Destroyer,		Unit_Announce_Executor_Empire_Soldier</SFXEvent_Unit_Type_Spotted>
         <SFXEvent_Unit_Type_Spotted>Yoda,		                        Unit_Announce_Yoda_Empire_Soldier</SFXEvent_Unit_Type_Spotted>
         <SFXEvent_Unit_Type_Spotted>Luke_Skywalker_Jedi,		        Unit_Announce_Luke_Empire_Soldier</SFXEvent_Unit_Type_Spotted>
