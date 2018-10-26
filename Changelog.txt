@@ -4,8 +4,6 @@ Fixes are marked with an asterisk (*). If an explanation is required (or extra i
 Vocab.:
 
 -Empire - Galactic Empire/Imperials
--Hutts – Jabba the Hutt's faction
--Pirates – Black Sun Pirates
 -Rebels – Rebellion
 -Underworld – Zann Consortium
 
@@ -32,15 +30,14 @@ General
 ==================
 Factions
 ==================
-*Empire/Rebellion -- Fixing conditionals. Changing reference Death_Star (EaW) to Death_Star_II (FoC). Rebels & Empire will now use the proper advisor dialogue for when the DSII, Palpatine or Mon Mothma are in battle.
+*Empire/Rebellion -- Fixing conditionals. Changing reference Death_Star (EaW) to Death_Star_II (FoC). Rebels and Empire will now use the proper advisor dialogue for when the DSII, Palpatine or Mon Mothma are in battle.
 *Empire/Rebellion -- Fixed Lose-to-Underworld music referencing "Lose_To_Zann_1.MP3" instead of "UND_Lose_To_Zann.MP3."
 
-*Empire -- Fixing faction super weapon value from Death_Star (EaW) to Death_Star_II (FoC).
+*Empire -- Fixing faction super weapon type from Death_Star (EaW) to Death_Star_II (FoC).
 
-*Rebellion -- Fixed combination conditionals. Since Luke Skywalker can't destroy the Death Star in FoC (he could in EaW!), that Death Star + LSkywalker conditional has been changed to DSII + Rogue Squadron (Wedge's X-Wing specifically, as Wedge alone destroys the Death Star II, none of the other squadron does).
+*Rebellion -- Fixed combination conditionals. Since Luke Skywalker can't destroy the Death Star in FoC (he could in EaW!), the Death Star + LSkywalker conditionals have been changed to DSII + Rogue Squadron (Wedge's X-Wing specifically, as Wedge alone destroys the Death Star II, none of the other squadron does).
 
 *Underworld -- Removed references to non-existant "finale" movies for galactic conquest.
-*Underworld -- In turn, added a new "object spotted announcement" for Darth_Vader, since Skirmish mode still builds Darth_Vader.
 
 
 ==================
