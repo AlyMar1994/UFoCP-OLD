@@ -1,0 +1,80 @@
+----
+Fixes are marked with an asterisk (*). If an explanation is required (or extra info included), it's expanded upon with a double-asterisk (**).
+----
+Vocab.:
+
+-Empire - Galactic Empire/Imperials
+-Rebels – Rebellion
+-Underworld – Zann Consortium
+
+-EaW – Empire at War (base game, pre-Forces of Corruption)
+-FoC – Forces of Corruption (expansion game)
+
+-Conditional(s) - "If this, then this will happen"-type code.
+----
+
+
+=========================================================================================
+v1.0 - Petroglyph'd
+=========================================================================================
+There are MasterTextFiles_ENGLISH.dat updates in this update! Check "_MasterTEXT Changelog.txt" in the game directory to see!
+
+
+==================
+General
+==================
+*Fixed STAR WARS (: Episode IV - A New Hope)' credits music.
+**"Credits_Ep3.MP3" was an incorrect version of "The Throne Room/End Title" from a botched release of STAR WARS' soundtrack. It's replaced with a correct version.
+
+
+==================
+Factions
+==================
+*Empire/Rebellion -- Fixing conditionals. Changing reference Death_Star (EaW) to Death_Star_II (FoC). Rebels and Empire will now use the proper advisor dialogue for when the DSII, Palpatine or Mon Mothma are in battle.
+*Empire/Rebellion -- Fixed Lose-to-Underworld music referencing "Lose_To_Zann_1.MP3" instead of "UND_Lose_To_Zann.MP3."
+
+*Empire -- Fixing faction super weapon type from Death_Star (EaW) to Death_Star_II (FoC).
+
+*Rebellion -- Fixed combination conditionals. Since Luke Skywalker can't destroy the Death Star in FoC (he could in EaW!), the Death Star + LSkywalker conditionals have been changed to DSII + Rogue Squadron (Wedge's X-Wing specifically, as Wedge alone destroys the Death Star II, none of the other squadron does).
+
+*Underworld -- Removed references to non-existant "finale" movies for galactic conquest.
+
+
+==================
+Units (Land)
+==================
+*Bunkers -- Fixed the damage type of the bunkers in GameConstants not being properly seperated, breaking the type. It should work now.
+
+*Darth Vader -- Fixed HeroClash.XML trying to find "Darth_Vader" (EaW) instead of "Darth_Vader_Expansion" (FoC) when dueling against Obi-Wan Kenobi.
+*Darth Vader -- Fixed "object spotted announcement" for Darth Vader for all factions. Was searching Darth_Vader (EaW) instead of Darth_Vader_Expansion (FoC).
+*Darth Vader -- In turn, added a new "object spotted announcement" for Darth_Vader, since Skirmish mode still builds Darth_Vader in space.
+**Darth_Vader in Skirmish won't be changed, especially for space; Darth_Vader_Expansion having the Executor (while I don't believe so) is super overpowered, and it's a flavor change.
+
+*Urai Fen -- Fixed Fen's unit file trying to find "Darth_Vader" (EaW) instead of "Darth_Vader_Expansion" for his lightsaber-block ability.
+
+*IG-88 -- Fixed the infection weapon's seperator in GameConstants. It's now properly seperated and should work.
+
+*Vornskr -- "Fixed" good against reference for Darth Vader; was "Darth_Vader" (EaW) instead of "Darth_Vader_Expansion" (FoC). No real change is made as it seems, but having it be referenced properly is always nice.
+
+
+==================
+Units (Space)
+==================
+*Acclamator Cruiser -- Fixed the back-right turbolaser's damage type. Was normal laser damage, now it's turbolaser damage.
+
+*Executor Super Star Destroyer -- Fixing the SSD armor type. It's now properly seperated and should work.
+
+*Rouge Squadron -- Fixed good-against references from "Death_Star" (EaW) to "Death_Star_II" (FoC) for all squadrons/containers.
+
+*Skipray BlastBoat -- Fixed squadron escort status; "is escort" is now "no" instead of "nos."
+
+
+==================
+Units (Galactic Conquest)
+==================
+*Grand Admiral Thrawn -- Removed dupliate "activation style" tag in the remove corruption ability.
+*Grand Admiral Thrawn -- Fixed Thrawn's remove corruption ability sound from the Rebellion's to the Empire's.
+*Grand Admiral Thrawn -- Fixed Thrawn's spawning sound. It'll now play his own designated spawn sound.
+*Grand Admiral Thrawn -- Fixed "object spotted announcement" for Thrawn for all factions. It was referencing "Grand_Admiral_Thrawn" instead of "Admonitor_Star_Destroyer."
+
+=========================================================================================
