@@ -36,4 +36,4 @@ Anything that can correctly parse .XML and .LUA will do.
 
 ## Links
 - Bug Reporting: https://github.com/AlyMar1994/UFoCP/issues
-- Steam Source: N/A
+- Steam Source: https://steamcommunity.com/sharedfiles/filedetails/?id=1548018187
