@@ -8,6 +8,12 @@ Last of note, I am a human being and I make mistakes. Please point out text erro
 For any corruption mission briefings that are edited, their tooltips for the menus are also edited! They're not mentioned, though.
 ----
 
+
+=========================================================================================
+v1.1 - Name Pending
+=========================================================================================
+
+
 ===================================================================================================
 v1.0 - Petroglyph'd
 ===================================================================================================

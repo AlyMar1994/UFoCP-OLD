@@ -15,7 +15,23 @@ Vocab.:
 
 
 =========================================================================================
-v1.0 - Petroglyph'd
+v1.1 - Name Pending
+=========================================================================================
+
+
+==================
+Units (Land)
+==================
+*Darth Vader - Fixed and created multiple containers for Vader, fixing abilities and dueling issues in Skrimish land mode.
+**New container "Vader_Team_Expansion" to go with original "Vader_Team." "_Expansion" is for land Skirmish, and is based on "Darth_Vader_Expansion" (FoC) so dueling, abilities (such as Urai Fen's "redirect lightsaber") work. Space Skirmish still uses "Darth_Team" so Darth Vader still uses his TIE Advanced x1 in space (as "Darth_Team" uses "Darth_Vader" [EaW]).
+
+*Darth Vader - Also Updated Vader's space Skirmish unit file so it has the same good against and weak against encyclopedia markers as the regular TIE Advanced x1 unit does.
+**This change added the StarViper Fighter to the "Good Against" list, and replaces the X-Wing with the Crusader Gunship in the "Vulnerable To" list.
+=========================================================================================
+
+
+=========================================================================================
+v1.0 - Petroglyph'd (Initial Upload)
 =========================================================================================
 There are MasterTextFiles_ENGLISH.dat updates in this update! Check "_MasterTEXT Changelog.txt" in the game directory to see!
 
@@ -30,12 +46,12 @@ General
 ==================
 Factions
 ==================
-*Empire/Rebellion -- Fixing conditionals. Changing reference Death_Star (EaW) to Death_Star_II (FoC). Rebels and Empire will now use the proper advisor dialogue for when the DSII, Palpatine or Mon Mothma are in battle.
+*Empire/Rebellion -- Fixing conditionals. Changing reference "Death_Star" (EaW) to "Death_Star_II" (FoC). Rebels and Empire will now use the proper advisor dialogue for when the Death Star II, Palpatine or Mon Mothma are in battle.
 *Empire/Rebellion -- Fixed Lose-to-Underworld music referencing "Lose_To_Zann_1.MP3" instead of "UND_Lose_To_Zann.MP3."
 
-*Empire -- Fixing faction super weapon type from Death_Star (EaW) to Death_Star_II (FoC).
+*Empire -- Fixing faction super weapon type from "Death_Star" (EaW) to "Death_Star_II" (FoC).
 
-*Rebellion -- Fixed combination conditionals. Since Luke Skywalker can't destroy the Death Star in FoC (he could in EaW!), the Death Star + LSkywalker conditionals have been changed to DSII + Rogue Squadron (Wedge's X-Wing specifically, as Wedge alone destroys the Death Star II, none of the other squadron does).
+*Rebellion -- Fixed combination conditionals. Since Luke Skywalker can't destroy the Death Star in FoC (he could in EaW!), the Death Star + LSkywalker conditionals have been changed to Death Star II + Rogue Squadron (Wedge's X-Wing specifically, as Wedge alone destroys the Death Star II, none of the other squadron does). The Rebel advisor will now properly comment when the "Super Weapon Killer" is in battle with the Death Star.
 
 *Underworld -- Removed references to non-existant "finale" movies for galactic conquest.
 
@@ -43,12 +59,11 @@ Factions
 ==================
 Units (Land)
 ==================
-*Bunkers -- Fixed the damage type of the bunkers in GameConstants not being properly seperated, breaking the type. It should work now.
+*Bunkers -- Fixed the armor type of the bunkers in GameConstants not being properly seperated, breaking the type. It should work now.
 
 *Darth Vader -- Fixed HeroClash.XML trying to find "Darth_Vader" (EaW) instead of "Darth_Vader_Expansion" (FoC) when dueling against Obi-Wan Kenobi.
-*Darth Vader -- Fixed "object spotted announcement" for Darth Vader for all factions. Was searching Darth_Vader (EaW) instead of Darth_Vader_Expansion (FoC).
-*Darth Vader -- In turn, added a new "object spotted announcement" for Darth_Vader, since Skirmish mode still builds Darth_Vader in space.
-**Darth_Vader in Skirmish won't be changed, especially for space; Darth_Vader_Expansion having the Executor (while I don't believe so) is super overpowered, and it's a flavor change.
+*Darth Vader -- Fixed "object spotted announcement" for Darth Vader for all factions. Was searching "Darth_Vader" (EaW) instead of "Darth_Vader_Expansion" (FoC).
+**In turn, added a new "object spotted announcement" for "Darth_Vader", since Skirmish mode still builds "Darth_Vader" in space.
 
 *Urai Fen -- Fixed Fen's unit file trying to find "Darth_Vader" (EaW) instead of "Darth_Vader_Expansion" for his lightsaber-block ability.
 
@@ -60,21 +75,21 @@ Units (Land)
 ==================
 Units (Space)
 ==================
-*Acclamator Cruiser -- Fixed the back-right turbolaser's damage type. Was normal laser damage, now it's turbolaser damage.
+*Acclamator Cruiser -- Fixed the back-right turbolaser's damage type. Was normal laser damage ("Damage_Acclamator"), now it's turbolaser damage ("Damage_Acclamator_TL").
 
 *Executor Super Star Destroyer -- Fixing the SSD armor type. It's now properly seperated and should work.
 
-*Rouge Squadron -- Fixed good-against references from "Death_Star" (EaW) to "Death_Star_II" (FoC) for all squadrons/containers.
+*Rouge Squadron -- Fixed good-against references from "Death_Star" (EaW) to "Death_Star_II" (FoC) for all squadrons/containers. Again, no real change but its nice.
 
-*Skipray BlastBoat -- Fixed squadron escort status; "is escort" is now "no" instead of "nos."
+*Skipray BlastBoat -- Fixed squadron escort status; "Is Escort" is now "no" instead of "nos."
 
 
 ==================
 Units (Galactic Conquest)
 ==================
-*Grand Admiral Thrawn -- Removed dupliate "activation style" tag in the remove corruption ability.
-*Grand Admiral Thrawn -- Fixed Thrawn's remove corruption ability sound from the Rebellion's to the Empire's.
-*Grand Admiral Thrawn -- Fixed Thrawn's spawning sound. It'll now play his own designated spawn sound.
+*Grand Admiral Thrawn -- Removed duplicate "activation style" tag in the remove corruption ability.
+*Grand Admiral Thrawn -- Fixed Thrawn's remove corruption ability sound from the Rebels' to the Empire's.
+*Grand Admiral Thrawn -- Fixed Thrawn's "complete" sound. It'll now play his own designated "complete" sound.
 *Grand Admiral Thrawn -- Fixed "object spotted announcement" for Thrawn for all factions. It was referencing "Grand_Admiral_Thrawn" instead of "Admonitor_Star_Destroyer."
 
 =========================================================================================
