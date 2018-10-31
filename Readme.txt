@@ -28,6 +28,8 @@ UFoCP is a fan-patch for "STAR WARS: Empire at War – Forces of Corruption," (F
 
 My mindset was typically this: all the changes in this modification are based on keeping the game as pure as possible—instead only fixing unintended errors within game.
 
+Overall, the point of UFoCP is to be a comprehensive bug fixing mod for FoC. The goal is to eventually fix every bug with FoC not officially resolved by Petroglyph, to the limits of what modders can do in the Alamo engine and community-developed tools, in one package.
+
 
 ==> Issues/Support
 ================
@@ -37,7 +39,7 @@ MOD NOT LAUNCHING FROM "MODS" MENU
 
 2). Set Forces of Corruption's .EXE files (runme2.exe, StarWarsG.exe, swfoc.exe)' compatibility mode under Windows XP - Service Pack 2.
 
-3). Run the mod directly with the launch option "STEAMMOD=####" where the four #s are placed with the mod I.D.
+3). Run the mod directly with the launch option "STEAMMOD=1548018187".
 
 
 ==> Updates
@@ -50,4 +52,21 @@ See "_Changelog.txt" and "_MasterTEXT Changelog.txt" for changes per-update, in 
 -GitHub Source: https://github.com/AlyMar1994/UFoCP
 -Bug Reporting: https://github.com/AlyMar1994/UFoCP/issues
 
--Steam Source: N/A
+-Steam Source: https://steamcommunity.com/sharedfiles/filedetails/?id=1548018187
+
+
+==> Credits
+================
+Developers
+================
+AlyMar1994 - Lead developer
+
+================
+Audio
+================
+Diamondback - Music (Credits_Ep3.MP3)
+
+================
+Graphics
+================
+Nekyn - Support (Workshop page)
