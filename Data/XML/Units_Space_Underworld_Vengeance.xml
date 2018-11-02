@@ -1,0 +1,249 @@
+<?xml version="1.0"?>
+
+
+<Vengeance_Frigate_Data>
+
+
+
+	<SpaceUnit Name="Vengeance_Frigate">
+		<Text_ID>TEXT_UNIT_VENGEANCE_FRIGATE</Text_ID>
+		<Encyclopedia_Good_Against> Alliance_Assault_Frigate Victory_Destroyer </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> MC30_Frigate B-wing TIE_Defender </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text> TEXT_TOOLTIP_VENGEANCE </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FRIGATE </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_uv_vengeance.tga</Icon_Name>
+
+		<GUI_Row> 1 </GUI_Row>
+		<Space_Model_Name>UV_VENGEANCE.ALO</Space_Model_Name>
+		<No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+		<Mass>0.999</Mass>
+		<Scale_Factor>0.9</Scale_Factor>
+
+		<Select_Box_Scale>300</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Ranged_Target_Z_Adjust>35.0</Ranged_Target_Z_Adjust>
+
+		<Size_Value>8</Size_Value>
+		<Behavior> DUMMY_STARSHIP, SELECTABLE, POWERED </Behavior>
+		<SpaceBehavior>SELF_DESTRUCT, ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
+
+		<Max_Speed>2.5</Max_Speed>
+		<Max_Rate_Of_Turn>2.0</Max_Rate_Of_Turn>
+		<MovementClass> Space </MovementClass>
+		<Space_Layer> Frigate </Space_Layer>
+		<Layer_Z_Adjust>-100.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Roll>0.4</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>5</Bank_Turn_Angle>
+		<Max_Thrust>4.5</Max_Thrust>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Maintenance_Cost>0.1</Maintenance_Cost>
+		<OverrideAcceleration> .04 </OverrideAcceleration>
+		<OverrideDeceleration> .04 </OverrideDeceleration>
+
+		<Armor_Type> Armor_Vengeance </Armor_Type>
+        <Shield_Armor_Type />
+
+		<Affiliation>Underworld</Affiliation>
+		<Build_Cost_Credits>2800</Build_Cost_Credits>
+		<Build_Time_Seconds>25</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>4</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+
+		<Cheap_Bribe_Cost>110</Cheap_Bribe_Cost>
+		<Expensive_Bribe_Cost>220</Expensive_Bribe_Cost>
+		<Tactical_Bribe_Cost>1200</Tactical_Bribe_Cost>
+
+		<Ship_Class>frigate</Ship_Class>
+		<Formation_Priority>3</Formation_Priority>
+		<Is_Escort>yes</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Political_Control>0</Political_Control>
+		<Squadron_Capacity>10</Squadron_Capacity>
+		<Transport_Capacity>8</Transport_Capacity>
+		<Number_per_Squadron>1</Number_per_Squadron>
+
+		<AI_Combat_Power>2200</AI_Combat_Power>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Damage>30</Damage>
+		<Autoresolve_Health>4000</Autoresolve_Health>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>4000</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>3000</Energy_Capacity>
+		<Energy_Refresh_Rate>500</Energy_Refresh_Rate>
+
+		<Space_FOW_Reveal_Range>1500.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1200.0</Targeting_Max_Attack_Distance>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Death_Leave_Hulk_Behind> No </Death_Leave_Hulk_Behind>
+		<Death_Clone>Damage_Normal, Vengeance_Death_Clone</Death_Clone>
+		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
+
+		<HardPoints>
+			HP_VENGEANCE_MASS_DRIVER_LEFT,
+			HP_VENGEANCE_MASS_DRIVER_RIGHT,
+			HP_VENGEANCE_TURBOLASER_LEFT,
+			HP_VENGEANCE_TURBOLASER_RIGHT,
+			HP_VENGEANCE_ENGINES
+		</HardPoints>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Vengeance_Frigate</SFXEvent_Build_Complete>
+
+		<SFXEvent_Select>Unit_Select_Vengeance_Frigate</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Vengeance_Frigate</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Vengeance_Frigate</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Vengeance_Frigate</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Vengeance_Frigate</SFXEvent_Guard>
+		<SFXEvent_Barrage>Unit_Barrage_Vengeance_Frigate</SFXEvent_Barrage>
+		<SFXEvent_Move_Into_Nebula> Unit_Nebula_Vengeance_Frigate </SFXEvent_Move_Into_Nebula>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Vengeance_Frigate </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Vengeance_Frigate </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Vengeance_Frigate </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Vengeance_Frigate </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Vengeance_Frigate </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Vengeance_Frigate </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_GRAV_Vengeance_Frigate </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Vengeance_Frigate </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,   </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,   </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Vengeance_Frigate </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Lost_Engines_Vengeance_Frigate </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Engine_Idle_Loop> Unit_Nebulon_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Nebulon_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Nebulon_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
+		<Selt_Destruct_SFXEvent_Start_Die> Unit_ZC_Self_Destruct </Selt_Destruct_SFXEvent_Start_Die>
+
+		<Space_Full_Stop_Command> Yes </Space_Full_Stop_Command>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>1.0</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>1.0</Radar_Icon_Scale_Space>
+
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>0.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>Vengeance_TP</Targeting_Priority_Set>
+		<Score_Cost_Credits> 2250</Score_Cost_Credits>
+		<Population_Value>3</Population_Value>
+        <Ranking_In_Category>6</Ranking_In_Category>
+		<CategoryMask> Frigate | AntiCorvette</CategoryMask>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>3300</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>18</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+		<!-- Non-Hero unit abilities description -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+         <Unit_Ability>
+            <Type>SELF_DESTRUCT</Type>
+            <Alternate_Description_Text>TEXT_TOOLTIP_KRAYT_DESTRUCT_DESCRIPTION</Alternate_Description_Text>
+            <Expiration_Seconds>3.5</Expiration_Seconds>
+            <Recharge_Seconds>10</Recharge_Seconds> 
+            <Spawned_Object_Type> Vengeance_Self_Destruct_Blast </Spawned_Object_Type>
+            <GUI_Activated_Ability_Name>Vengeance_Self_Destruct</GUI_Activated_Ability_Name>
+            <Stop_When_Activated>No</Stop_When_Activated>
+   
+            <!--<SFXEvent_GUI_Unit_Ability_Activated>Unit_Self_Destruct_Krayt_Class_Destroyer</SFXEvent_GUI_Unit_Ability_Activated>-->
+                <Must_Be_Bought_On_Black_Market>Yes</Must_Be_Bought_On_Black_Market>
+   
+         </Unit_Ability>
+
+         <Unit_Ability>
+             <Type>STEALTH</Type>
+             <Alternate_Icon_Name>i_sa_stealth.tga</Alternate_Icon_Name>
+             <Alternate_Name_Text>TEXT_TOOLTIP_CLOAK</Alternate_Name_Text>
+             <GUI_Activated_Ability_Name>Stealth_Vengeance</GUI_Activated_Ability_Name> 
+             <Recharge_Seconds>15.0</Recharge_Seconds>
+             <Expiration_Seconds>60.0</Expiration_Seconds>
+             <SFXEvent_GUI_Unit_Ability_Activated>Unit_Stealth_On_Vengeance_Frigate</SFXEvent_GUI_Unit_Ability_Activated>
+             <SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Stealth_Off_Vengeance_Frigate</SFXEvent_GUI_Unit_Ability_Deactivated>
+             <Must_Be_Bought_On_Black_Market>Yes</Must_Be_Bought_On_Black_Market>
+         </Unit_Ability>
+            
+		</Unit_Abilities_Data>
+
+        <Abilities SubObjectList="Yes">
+            <Stealth_Ability Name="Stealth_Vengeance">
+                <Activation_Style> User_Input </Activation_Style>
+                <Stealth_Color>255, 255, 255, 255</Stealth_Color>
+                <Stealth_Transition_Time>.5</Stealth_Transition_Time>
+                <SFXEvent_Activate></SFXEvent_Activate>
+                <Must_Be_Bought_On_Black_Market>Yes</Must_Be_Bought_On_Black_Market>
+            </Stealth_Ability>
+        </Abilities>
+
+	</SpaceUnit>
+	
+     <SpaceUnit Name="Vengeance_Death_Clone">
+		<Text_ID>TEXT_UNIT_VENGEANCE_FRIGATE</Text_ID>
+		<Space_Model_Name>UV_VENGEANCE_D.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Scale_Factor>0.9</Scale_Factor>
+		<Layer_Z_Adjust>-100.0</Layer_Z_Adjust>
+		<Max_Speed>1.2</Max_Speed>
+		<Max_Rate_Of_Turn>0.03</Max_Rate_Of_Turn>
+		<Max_Thrust>1</Max_Thrust>
+		<Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>0</Bank_Turn_Angle>
+		<Affiliation>Underworld</Affiliation>
+		<Ship_Class>frigate</Ship_Class>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceUnit>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Vengeance_Frigate_Data>
