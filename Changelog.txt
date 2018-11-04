@@ -25,8 +25,28 @@ Units (Space)
 ==================
 -Crusader Gunship – Fixed death clone's Z-axis offset to -20 units. The corvette should now explode and fall from its actual place in the world.
 
+-Darth Vader – Added "Darth_Vader_TIE_Fighter_Container" to the "object spotted announcement" so Darth Vader's squadron is called out onto the battlefield for all factions (affects Skirmish space mode, as "Darth_Vader" didn't seem to be working).
+-Darth Vader – Edited squadron container so all of it says its good against/bad against the same thing.
+
+-Rouge Squadron – In-line with the Vader squadron edits, edited Rouge Squadron's conditionals for being in-battle with the Death Star II to "Rouge_Squadon_Space" as an attempt to get it to work.
+
 -Vengance Frigate – Fixed death clone's Z-axis offset from -90 units to -100.
 -Vengance Frigate - Fixed death clone's scale size from 0.76 to 0.9 (the model's actual size). The model should now retain size when destroyed.
+
+
+==================
+Units (Galactic Conquest)
+==================
+-Admiral Ackbar – Fixed remove corruption ability. It already existed, but it wasn't added to GameConstants.XML.
+
+-Han Solo – Fixed remove corruption ability (added it to GameConstants.XML).
+
+-Kyle Katarn – Fixed remove corruption ability (added it to GameConstants.XML).
+
+-Mara Jade – Fixed remove corruption ability (added it to GameConstants.XML).
+
+-Maximillian Veers – Fixed remove corruption ability (added it to GameConstants.XML).
+
 
 =========================================================================================
 v1.0.1 - Hotfix #1
