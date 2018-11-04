@@ -45,7 +45,7 @@ Anything that can correctly parse .XML and .LUA will do.
 ----
 
 ## License
-    The Unofficial Forces of Corruption Patch (UFoCP) is a patch dedicated to fixing most of the issues within STAR WARS: Empire at War – Forces of Corruption by Petroglyph Games.
+    The Unofficial Forces of Corruption Patch ("UFoCP") is a patch dedicated to fixing most of the issues within STAR WARS: Empire at War – Forces of Corruption by Petroglyph Games.
     Copyright (C) 2018  Connor ("AlyMar1994") Hess.
 
     This program is free software: you can redistribute it and/or modify
