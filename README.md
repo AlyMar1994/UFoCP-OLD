@@ -7,7 +7,7 @@ UFoCP is a fan-patch for "STAR WARS: Empire at War – Forces of Corruption," (F
 
 ---
 
-* Version: 1.0
+* Version: 1.1
 * License: AGPL-3.0 (please read the [License](https://github.com/AlyMar1994/UFoCP/blob/master/LICENSE) for more info)
 
 ---
