@@ -917,7 +917,7 @@
 		Damage_Turbo_GRND,
 		Damage_Wall_Destruction,
 		Damage_Self_Destruct,
-        Damage_AWing,
+    Damage_AWing,
 		Damage_Force_Pike,
 		Damage_BugBite,
 		Damage_StarBase_Self_Destruct,

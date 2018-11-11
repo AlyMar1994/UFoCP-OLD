@@ -1,5 +1,5 @@
 ----
-Fixes are marked with a hyphen (-), their changes seperated by an en dash (–). If an explanation is required (or extra info included), it's expanded upon with a double-asterisk (**) beneath the change. Changes with double-asterisks are also double-spaced as to prevent eye-hurting.
+Fixes are marked with a hyphen (-), their changes seperated by an en dash (–). If an explanation is required (or extra info included), it's expanded upon with a double-asterisk (**) beneath the change. Changes with double-asterisks are also double-spaced as to prevent eye-hurting. Extra notes are seperated by three asterisks.
 ----
 Vocab.:
 
@@ -18,6 +18,19 @@ Vocab.:
 =========================================================================================
 v1.1 - 11/1/18 START
 =========================================================================================
+There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT Changelog.txt" in the game directory to see!
+
+
+==================
+Maps (Space)
+==================
+-Mandalore – Adjusted third attacker-entry marker to Z-angle "132.0" so all attacking forces enter the map correctly (faces toward the station instead of entering sideways).
+
+
+==================
+Structures (Space)
+==================
+-Zann Consortium Station(s) – Fixed almost all hardpoints for all levels; adding damage_types for essentially all levels.
 
 
 ==================
@@ -25,7 +38,6 @@ Units (Space)
 ==================
 -Crusader Gunship – Fixed death clone's Z-axis offset to -20 units. The corvette should now explode and fall from its actual place in the world.
 
--Darth Vader – Added "Darth_Vader_TIE_Fighter_Container" to the "object spotted announcement" so Darth Vader's squadron is called out onto the battlefield for all factions (affects Skirmish space mode, as "Darth_Vader" didn't seem to be working).
 -Darth Vader – Edited squadron container so all of it says its good against/bad against the same thing.
 
 -Rouge Squadron – In-line with the Vader squadron edits, edited Rouge Squadron's conditionals for being in-battle with the Death Star II to "Rouge_Squadon_Space" as an attempt to get it to work.
@@ -47,6 +59,10 @@ Units (Galactic Conquest)
 
 -Maximillian Veers – Fixed remove corruption ability (added it to GameConstants.XML).
 
+*** While untested, it's possible that the AI will be a tad more aggressive in their corruption-undoing, now that the Rebels and Empire have more units to remove it instead of just juggling around the same 2-3 originally.
+
+=========================================================================================
+
 
 =========================================================================================
 v1.0.1 - Hotfix #1
@@ -57,11 +73,10 @@ v1.0.1 - Hotfix #1
 Units (Land)
 ==================
 -Darth Vader – Fixed regression by creating multiple multiplayer containers for Vader, fixing abilities and dueling issues in Skrimish land mode.
-**New container "Vader_Team_Expansion" to go with original "Vader_Team." "_Expansion" is for land Skirmish, and is based on "Darth_Vader_Expansion" (FoC) so dueling, abilities (such as Urai Fen's "block lightsaber") work. Space Skirmish still uses "Darth_Team" so Darth Vader still uses his TIE Advanced x1 in space (as "Darth_Team" uses "Darth_Vader" [EaW]).
+**New container "Vader_Team_Expansion" to go with original "Vader_Team." "_Expansion" is for land Skirmish, and is based on "Darth_Vader_Expansion" (FoC) so dueling and abilities (such as Urai Fen's "block lightsaber") work. Space Skirmish still uses "Darth_Team" so Darth Vader still uses his TIE Advanced x1 in space (as "Darth_Team" uses "Darth_Vader" [EaW]).
 
 -Darth Vader – Updated Vader's space Skirmish unit file so it has the same good against and weak against encyclopedia markers as the regular TIE Advanced x1 unit does.
 **This change added the StarViper Fighter to the "Good Against" list, and replaces the X-Wing with the Crusader Gunship in the "Vulnerable To" list.
-
 
 =========================================================================================
 
@@ -69,7 +84,7 @@ Units (Land)
 =========================================================================================
 v1.0 - Petroglyph'd (Initial Upload)
 =========================================================================================
-There are MasterTextFiles_ENGLISH.dat updates in this update! Check "_MasterTEXT Changelog.txt" in the game directory to see!
+There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT Changelog.txt" in the game directory to see!
 
 
 ==================
@@ -93,10 +108,14 @@ Factions
 
 
 ==================
-Units (Land)
+Structures (Land)
 ==================
 -Bunkers – Fixed the armor type of the bunkers in GameConstants not being properly seperated, breaking the type. It should work now.
 
+
+==================
+Units (Land)
+==================
 -Darth Vader – Fixed HeroClash.XML trying to find "Darth_Vader" (EaW) instead of "Darth_Vader_Expansion" (FoC) when dueling against Obi-Wan Kenobi.
 -Darth Vader – Fixed "object spotted announcement" for Darth Vader for all factions. Was searching "Darth_Vader" (EaW) instead of "Darth_Vader_Expansion" (FoC).
 **In turn, added a new "object spotted announcement" for "Darth_Vader", since Skirmish mode still builds "Darth_Vader" in space.
