@@ -316,75 +316,151 @@ F: "Saving..."
 
 ----
 
-*
+*MP_TEXT_ENCYCLOPEDIA_COMMAND_CENTER_REBEL_00 - Fixed non-use of a hyphen for "based."
 
-O: ""
+O: "The central structure of operations for Rebellion ground based forces. Command Centers allow the recruitment of hero units."
 
-F: ""
-
-----
-
-*
-
-O: ""
-
-F: ""
+F: "The central structure of operations for Rebellion ground-based forces. Command Centers allow the recruitment of hero units."
 
 ----
 
-*
+*TEXT_BESPIN_PIRACY_OBJECTIVE_01 - Fixing improper capitalization of "designated location."
 
-O: ""
+O: "Activate the Interdictor at the Designated Location."
 
-F: ""
-
-----
-
-*
-
-O: ""
-
-F: ""
+F: "Activate the Interdictor at the designated location."
 
 ----
 
-*
+*TEXT_BESPIN_PIRACY_OBJECTIVE_02 - Fixing improper capitalization of "shuttles carrying."
 
-O: ""
+O: "Destroy the Shuttles Carrying the Tibanna Gas."
 
-F: ""
-
-----
-
-*
-
-O: ""
-
-F: ""
+F: "Destroy the shuttles carrying the Tibanna Gas."
 
 ----
 
-*
+*TEXT_BESPIN_PIRACY_OBJECTIVE_03 - Fixed improper capitalization of "Tibana Gas shuttles."
 
-O: ""
+O: "Destroy the Tibanna Gas Shuttles in the second convoy."
 
-F: ""
-
-----
-
-*
-
-O: ""
-
-F: ""
+F: "Destroy the Tibanna Gas shuttles in the second convoy."
 
 ----
 
-*
+*TEXT_CAMPAIGN_DIRECTIONS2 - Fixed odd ellipses character use.
 
-O: ""
+O: "Choose your destiny…"
 
-F: ""
+F: "Choose your destiny..."
+
+----
+
+*TEXT_CORRUPTION_BONADAN_STORY_CORUPTMILITIA - Fixing improper capitalization of "militia."
+
+O: "On Bonadan they have odd rules about carrying weapons, making the corruption of their Militia a useful priority for the Zann Consortium. If you control the weapon users on the planet, you control the planet. "
+
+F: "On Bonadan they have odd rules about carrying weapons, making the corruption of their militia a useful priority for the Zann Consortium. If you control the weapon users on the planet, you control the planet. "
+
+----
+
+*TEXT_CORRUPTION_CARIDA_STORY_BRIBERY - Fixed improper capitalization of "trade route."
+
+O: "In bribing Tarlen Ten, the trade master of the Perlemian Trade Route, we gain a great deal of information and the powerful garrison of Carida will no longer produce units for our enemies. "
+
+F: "In bribing Tarlen Ten, the trade master of the Perlemian trade route, we gain a great deal of information and the powerful garrison of Carida will no longer produce units for our enemies. "
+
+----
+
+*TEXT_CORRUPTION_ERIADU_STORY_RACKETEER - Fixed non-pluralization of "habitats'"
+
+O: "The orbital habitats of Eriadu are perfect for racketeering organizations that can take advantage of the habitats isolated status. "
+
+F: "The orbital habitats of Eriadu are perfect for racketeering organizations that can take advantage of the habitats' isolated status. "
+
+----
+
+*TEXT_CORRUPTION_ILUM_STORY_BRIBERY - Fixed capitalization of "crystals."
+
+O: "A thinly populated world filled with ice caves, bribing members of the population could reveal many Jedi secrets about the planet's Adegan Crystals. "
+
+F: "A thinly populated world filled with ice caves, bribing members of the population could reveal many Jedi secrets about the planet's Adegan crystals. "
+
+----
+
+*TEXT_CORRUPTION_KORRIBAN_STORY_RACKETEER - Fixed improper capitalization of "dark."
+
+O: "Of all the things that could happen on this Dark Force planet, only racketeering could work, and even trying this could present great danger for the Consortium. "
+
+F: "Of all the things that could happen on this dark Force planet, only racketeering could work, and even trying this could present great danger for the Consortium. "
+
+----
+
+*TEXT_CORRUPTION_NALHUTTA_STORY_BLACKMARKET - Fixed improper capitalization of "black market."
+
+O: "The Hutt organization is rife with jealousy and politics. The Zann Consortium can easily set up a Black Market pulling data from Rebel and Imperial technologies. "
+
+F: "The Hutt organization is rife with jealousy and politics. The Zann Consortium can easily set up a black market pulling data from Rebel and Imperial technologies. "
+
+----
+
+*TEXT_CORRUPTION_RACKETEERING_BENEFIT - Fixing weird period placement.
+
+O: "BENEFITS: Automatically generates a large amount of credits on the galactic level; provides a salvage credit bonus for every enemy unit destroyed during tactical combat . "
+
+F: "BENEFITS: Automatically generates a large amount of credits on the galactic level; provides a salvage credit bonus for every enemy unit destroyed during tactical combat. "
+
+----
+
+*TEXT_ENCYCLOPEDIA_R_SHIP_SPEED - Adding hyphen for connected word.
+
+O: "Increases the movement speed of your team's Frigate and Capital class starships."
+
+F: "Increases the movement speed of your team's Frigate- and Capital-class starships."
+
+----
+
+*TEXT_ENCYCLOPEDIA_RANCOR_SPAWNER - Capitalized "Rancor."
+
+O: "Periodically creates a rancor until destroyed."
+
+F: "Periodically creates a Rancor until destroyed."
+
+----
+
+*TEXT_ENCYCLOPEDIA_REMOTE_SENSOR_POD - Fixed improper comma usage and improper capitalization of "fog of war."
+
+O: "Reveals Fog of War, while controlled, exposing enemy positions on the battlefield."
+
+F: "Reveals fog of war while controlled, exposing enemy positions on the battlefield."
+
+----
+
+*TEXT_GAME_DESCRIPTION_CAMPAIGN - Fixed improper capitalization of all three "the"s.
+
+O: "The full campaign game for 2 players. Choose your side: The Galactic Empire, The Rebel Alliance, or The Zann Consortium."
+
+F: "The full campaign game for 2 players. Choose your side: the Galactic Empire, the Rebel Alliance, or the Zann Consortium."
+
+----
+
+*TEXT_OBJECTIVE_UNDERWORLD_PIRACY_TUTORIAL_01 - Fixing improper capitalization of "right-clicking."
+
+O: "Destroy the Supreme Strategist’s engines by highlighting and Right-Clicking on the engine hardpoint of his ship."
+
+F: "Destroy the Supreme Strategist’s engines by highlighting and right-clicking on the engine hardpoint of his ship."
+
+----
+
+*TEXT_SELECT_OPTIONS - Fixed weird elipses character thing.
+
+O: "Advanced…"
+
+F: "Advanced..."
+
+----
+
+*TEXT_UNIT_MOBILE_DEFENSE_UNIT_EMPIRE/REBEL/UNDERWORLD - Added periods to complete the sentence.
 
 ----
 

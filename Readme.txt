@@ -67,7 +67,7 @@ AlyMar1994 - Lead developer
 ================
 Audio
 ================
-Diamondback - Music (Credits_Ep3.MP3)
+Diamondback - Music (Credits_Ep3.mp3)
 
 ================
 Graphics

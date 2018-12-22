@@ -26,11 +26,13 @@ Maps (Space)
 ==================
 -Alzoc III (Alzoc 3) – Adjusted space station position so it points towards the attackers (for Empire/Consortium stations).
 
--Endor - Adjusted space station position.
+-Atzerri – Adjusted space station position.
+
+-Endor – Adjusted space station position.
 
 -Kamino – Adjusted space station position.
 
--Kuat - Adjusted space station position.
+-Kuat – Adjusted space station position.
 
 -Mandalore – Adjusted space station position.
 -Mandalore – Adjusted first two attacker-entry marker so all attacking forces enter the map correctly (faces toward the station instead of entering sideways).
@@ -40,11 +42,13 @@ Maps (Space)
 
 -Utapau – Adjusted space station position.
 
+-Vergesso Asteroids – Adjusted space station position.
+
 
 ==================
 Structures (Space)
 ==================
--Underworld Space Station(s) – Fixed almost all hardpoints for all levels; adding damage types for essentially all levels.
+-Underworld Space Station(s) – Fixed almost all hardpoints; adding damage types for essentially all levels.
 
 
 ==================
@@ -56,7 +60,7 @@ Units (Space)
 
 -Darth Vader – Edited squadron container so all of it says its good against/bad against the same thing.
 
--Rouge Squadron – In-line with the Vader squadron edits, edited Rouge Squadron's conditionals for being in-battle with the Death Star II to "Rouge_Squadon_Space" as an attempt to get it to work.
+-Rouge Squadron – Edited Rouge Squadron's conditionals for being in-battle with the Death Star II to "Rouge_Squadon_Space" as an attempt to get it to work.
 
 -Vengance Frigate – Fixed death clone's Z-axis offset from -90 units to -100.
 -Vengance Frigate – Fixed death clone's scale size from 0.76 to 0.9 (the model's actual size). The model should now retain size when destroyed.
@@ -65,7 +69,7 @@ Units (Space)
 ==================
 Units (Galactic Conquest)
 ==================
--Admiral Ackbar – Fixed remove corruption ability. It already existed, but it wasn't added to GameConstants.XML.
+-Admiral Ackbar – Fixed remove corruption ability. It already existed (and essentially referenced in every file needed), but wasn't added to GameConstants.XML.
 
 -Han Solo – Fixed remove corruption ability (added it to GameConstants.XML).
 
