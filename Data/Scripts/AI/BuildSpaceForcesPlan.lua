@@ -47,17 +47,19 @@ ScriptPoolCount = 4
 function Definitions()
 	Category = "Build_Space_Forces"
 	IgnoreTarget = true
-	
+
 	--Fighters are omitted deliberately.  Since they're cheap, build fast and are quickly killed it's typically better
 	--to build them as we need them to attack.  For defensive purposes we'll rely on space station garrisons for our fighter
 	--needs
 	TaskForce = {
 	{
-		"ReserveForce"
-		,"DenyHeroAttach"
-		,"Corvette = 0,4"
-		,"Frigate = 0,4"
-		,"Capital = 0,4"
+		"ReserveForce",
+		"DenyHeroAttach",
+		"Corvette = 0,4",
+		"Frigate = 0,4",
+		"Capital = 0,4",
+		"Fleet_Com_Rebel_Team",
+		"Fleet_Com_Empire_Team"
 	}
 	}
 	RequiredCategories = { "Corvette | Frigate | Capital" }

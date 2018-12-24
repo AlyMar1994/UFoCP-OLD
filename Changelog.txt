@@ -13,12 +13,22 @@ Vocab.:
 -Conditional(s) – "If this, then this will happen"-type code.
 -Death Clone – The version of a ship that lingers in a map when destroyed.
 ----
+Whenever the AI is edited, it's not labeled based on specific changed units with the A.I., but it's labelled based on the file.
+----
 
 
 =========================================================================================
 v1.1 - 11/1/18 START
 =========================================================================================
 There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT Changelog.txt" in the game directory to see!
+
+
+==================
+A.I. (Galactic Conquest)
+==================
+-BuildGroundForcesPlan – In an attempt to get the AI to build certain ground forces, fixed (aparently) broken unit spawning for: (CONSORTIUM) F9TZ Infantry Cloaking Transport, (EMPIRE) HAV Juggernaut Infantry Transport & Imperial Field Commanders, (REBELS) Gallofree Infantry Transport & Rebel Field Commanders (all the lines referencing what should be built had "-" in-front of them when they shouldn't).
+
+-BuildSpaceForcesPlan – In an attempt to get the A.I. to build fleet commanders, I've added the Rebel & Imperial Fleet commanders to the spawn AI. In the future, I may add Darth_Vader_Expansion to this list in order to get the Empire to build that, but for right now, baby steps (added lines "Fleet_Com_Empire_Team" and "Fleet_Com_Rebel_Team."
 
 
 ==================
