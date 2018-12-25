@@ -28,7 +28,7 @@ A.I. (Galactic Conquest)
 ==================
 -BuildGroundForcesPlan – In an attempt to get the AI to build certain ground forces, fixed (aparently) broken unit spawning for: (CONSORTIUM) F9TZ Infantry Cloaking Transport, (EMPIRE) HAV Juggernaut Infantry Transport & Imperial Field Commanders, (REBELS) Gallofree Infantry Transport & Rebel Field Commanders (all the lines referencing what should be built had "-" in-front of them when they shouldn't).
 
--BuildSpaceForcesPlan – In an attempt to get the A.I. to build fleet commanders, I've added the Rebel & Imperial Fleet commanders to the spawn AI. In the future, I may add Darth_Vader_Expansion to this list in order to get the Empire to build that, but for right now, baby steps (added lines "Fleet_Com_Empire_Team" and "Fleet_Com_Rebel_Team."
+-BuildSpaceForcesPlan – In an attempt to get the A.I. to build fleet commanders, I've added the Rebel & Imperial Fleet commanders to the spawn AI. In the future, I may add Darth_Vader_Expansion to this list in order to get the Empire to build that, but for right now, baby steps (added lines "Fleet_Com_Empire_Team" and "Fleet_Com_Rebel_Team").
 
 
 ==================
@@ -59,6 +59,9 @@ Maps (Space)
 Structures (Space)
 ==================
 -Underworld Space Station(s) – Fixed almost all hardpoints; adding damage types for essentially all levels.
+-Underworld Space Station(s) – (Hopefully) fixed "Black Market Reactors" upgrades I, II & III for Underworld fighters, by adding the fighters' squadrons into the upgrade-modified fighters tag instead of just the fighter units themselves (Skirmish).
+
+-Empire Space Stations(s) – (Hopefully) fixed "Enhanced Reactors" upgrades I, II & III for Empire fighters, by adding the fighters' squadrons into the upgrade-modified fighters tag instead of just the fighter units themselves (Skirmish).
 
 
 ==================

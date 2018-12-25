@@ -821,7 +821,7 @@
 			<Combat_Bonus_Ability Name="US_BlackMarket_Reactors_L1_Upgrade">
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>Skipray_Blastboat</Applicable_Unit_Types>
+				<Applicable_Unit_Types>Skipray_Blastboat, Skipray_Squadron</Applicable_Unit_Types>
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
 				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
@@ -862,7 +862,7 @@
 			<Combat_Bonus_Ability Name="US_BlackMarket_Reactors_L2_Upgrade">
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>Skipray_Blastboat, Interceptor4_Frigate</Applicable_Unit_Types>
+				<Applicable_Unit_Types>Skipray_Blastboat, Skipray_Squadron, Interceptor4_Frigate</Applicable_Unit_Types>
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
 				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
@@ -903,7 +903,7 @@
 			<Combat_Bonus_Ability Name="US_BlackMarket_Reactors_L3_Upgrade">
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>Skipray_Blastboat, Interceptor4_Frigate, Krayt_Class_Destroyer, The_Peacebringer</Applicable_Unit_Types>
+				<Applicable_Unit_Types>Skipray_Blastboat, Skipray_Squadron, Interceptor4_Frigate, Krayt_Class_Destroyer, The_Peacebringer</Applicable_Unit_Types>
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
 				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>

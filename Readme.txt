@@ -62,17 +62,17 @@ See "_Changelog.txt" and "_MasterTEXT Changelog.txt" for changes per-update, in 
 ================
 Developers
 ================
-AlyMar1994 - Lead developer
+AlyMar1994 – Lead developer
 
 ================
 Audio
 ================
-Diamondback - Music (Credits_Ep3.mp3)
+Diamondback – Music (Credits_Ep3.mp3)
 
 ================
 Graphics
 ================
-Nekyn - Support (Workshop page)
+Nekyn – Support (Workshop page)
 
 
 =========================================================================================
@@ -81,7 +81,7 @@ Nekyn - Support (Workshop page)
 ==> License (AGPL-3.0)
 ================
     The Unofficial Forces of Corruption Patch (UFoCP) is a patch dedicated to fixing most of the issues within STAR WARS: Empire at War – Forces of Corruption by Petroglyph Games.
-    Copyright (C) 2018  Connor ("AlyMar1994") Hess.
+    Copyright (C) 2018 Connor ("AlyMar1994") Hess.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as published
