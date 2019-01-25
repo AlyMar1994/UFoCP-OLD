@@ -18,7 +18,7 @@ Whenever the AI is edited, it's not labeled based on specific changed units with
 
 
 =========================================================================================
-v1.1 - 11/1/18 START
+v1.1
 =========================================================================================
 There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT Changelog.txt" in the game directory to see!
 
@@ -35,6 +35,7 @@ A.I. (Galactic Conquest)
 Maps (Space)
 ==================
 -Alzoc III (Alzoc 3) – Adjusted space station position so it points towards the attackers (for Empire/Consortium stations).
+**These few maps edited are tests for community feedback.
 
 -Atzerri – Adjusted space station position.
 
@@ -59,9 +60,9 @@ Maps (Space)
 Structures (Space)
 ==================
 -Underworld Space Station(s) – Fixed almost all hardpoints; adding damage types for essentially all levels.
--Underworld Space Station(s) – (Hopefully) fixed "Black Market Reactors" upgrades I, II & III for Underworld fighters, by adding the fighters' squadrons into the upgrade-modified fighters tag instead of just the fighter units themselves (Skirmish).
+-Underworld Space Station(s) (Skirmish) – (Hopefully) fixed "Black Market Reactors" upgrades I, II & III for Underworld fighters, by adding the fighters' squadrons into the upgrade-modified fighters tag instead of just the fighter units themselves (Skirmish).
 
--Empire Space Stations(s) – (Hopefully) fixed "Enhanced Reactors" upgrades I, II & III for Empire fighters, by adding the fighters' squadrons into the upgrade-modified fighters tag instead of just the fighter units themselves (Skirmish).
+-Empire Space Station(s) (Skirmish) – (Hopefully) fixed "Enhanced Reactors" upgrades I, II & III for Empire fighters, by adding the fighters' squadrons into the upgrade-modified fighters tag instead of just the fighter units themselves (Skirmish).
 
 
 ==================
