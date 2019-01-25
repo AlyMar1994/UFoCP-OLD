@@ -917,7 +917,7 @@
 		Damage_Turbo_GRND,
 		Damage_Wall_Destruction,
 		Damage_Self_Destruct,
-        Damage_AWing,
+    Damage_AWing,
 		Damage_Force_Pike,
 		Damage_BugBite,
 		Damage_StarBase_Self_Destruct,
@@ -966,7 +966,7 @@
 		Damage_Wampa,
         Damage_Infection,
 		Damage_Remote_Bomb,
-		Damage_Drain_Life,
+		Damage_Drain_Life
 
 		<!-- DO NOT ADD new damage types after this point -->
 	</Damage_Types>
@@ -1031,7 +1031,7 @@
 		Armor_Vornskr,
 		Armor_Destroyer_Droid,
 		Armor_Bunker,		<!-- Bunkers and pillboxes -->
-		Armor_SSD,			<!-- Armor for the Executor and other SSDs-->
+		Armor_SSD			<!-- Armor for the Executor and other SSDs-->
 				
 	</Armor_Types>
 
@@ -3721,7 +3721,7 @@
 	<Activated_System_Spy_Ability_Names> Probe_Droid_System_Spy </Activated_System_Spy_Ability_Names>
 	<Activated_Destroy_Planet_Ability_Names> Death_Star_Planet_Destruction </Activated_Destroy_Planet_Ability_Names>
 	<Activated_Corrupt_Planet_Ability_Names> Corruptor_Corrupt_Planet_1, Saboteur_Corruption </Activated_Corrupt_Planet_Ability_Names>
-	<Activated_Remove_Corruption_Ability_Names> Mothma_Remove_Corruption, Emperor_Remove_Corruption, ObiWan_Remove_Corruption, Vader_Remove_Corruption, Thrawn_Remove_Corruption, Luke_Remove_Corruption, Yoda_Remove_Corruption </Activated_Remove_Corruption_Ability_Names>
+	<Activated_Remove_Corruption_Ability_Names> Mothma_Remove_Corruption, Emperor_Remove_Corruption, ObiWan_Remove_Corruption, Vader_Remove_Corruption, Thrawn_Remove_Corruption, Veers_Remove_Corruption, Mara_Remove_Corruption, Luke_Remove_Corruption, Yoda_Remove_Corruption, Akbar_Remove_Corruption, Hansolo_Remove_Corruption, Kyle_Remove_Corruption </Activated_Remove_Corruption_Ability_Names>
 	<Activated_Hack_Super_Weapon_Ability_Names> IG88_Hack_Death_Star </Activated_Hack_Super_Weapon_Ability_Names>
 	
 	<Use_Reinforcement_Points>True</Use_Reinforcement_Points>
@@ -3903,13 +3903,13 @@
         i_pa_spy_network.tga,
         i_pa_stamina_boost.tga,
         i_pa_tactical_auto_damage.tga,
-        i_pa_tactical_heal_Infantry.tga
-	i_pa_tactical_cloning.tga
-	i_pa_tactical_secure.tga
-	i_pa_tactical_research.tga
-	i_pa_tactical_damage.tga
-	i_pa_tactical_environment.tga
-	i_pa_tactical_shields.tga
+        i_pa_tactical_heal_Infantry.tga,
+	i_pa_tactical_cloning.tga,
+	i_pa_tactical_secure.tga,
+	i_pa_tactical_research.tga,
+	i_pa_tactical_damage.tga,
+	i_pa_tactical_environment.tga,
+	i_pa_tactical_shields.tga,
 	i_pa_tactical_force.tga
     </Planet_Ability_Icon_Names>
     <Planet_Ability_Text_IDs>
@@ -3930,14 +3930,14 @@
         TEXT_PA_SPY_NETWORK,
         TEXT_PA_STAMINA_BOOST,
         TEXT_PA_TACTICAL_AUTO_DAMAGE,
-        TEXT_PA_TACTICAL_HEAL_INFANTRY
-	TEXT_PA_CLONING_VATS
-	TEXT_PA_SECURE_AREA
-	TEXT_PA_RESEARCH_ADVANCES
-	TEXT_PA_DAMAGE_BONUS
-	TEXT_PA_ENVIRONMENTAL_TRAINING
-	TEXT_PA_ADVANCED_SHIELDS
-	TEXT_PA_FORCE_NEGATION
+        TEXT_PA_TACTICAL_HEAL_INFANTRY,
+	TEXT_PA_CLONING_VATS,
+	TEXT_PA_SECURE_AREA,
+	TEXT_PA_RESEARCH_ADVANCES,
+	TEXT_PA_DAMAGE_BONUS,
+	TEXT_PA_ENVIRONMENTAL_TRAINING,
+	TEXT_PA_ADVANCED_SHIELDS,
+	TEXT_PA_FORCE_NEGATION,
      </Planet_Ability_Text_IDs>
     <Planet_Ability_RGBs>
         0, 255, 100,

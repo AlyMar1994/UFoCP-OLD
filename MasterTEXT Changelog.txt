@@ -10,8 +10,481 @@ For any corruption mission briefings that are edited, their tooltips for the men
 
 
 ===================================================================================================
+v1.1 - 11/1/18 START
+===================================================================================================
+---
+
+*Adding periods to essentially all construction texts and upgrades to complete the sentence and keep consistiency (half didn't have them, half did).
+
+E.g.: "CLICK to construct Consortium Factory" --> "CLICK to construct Consortium Factory."
+
+----
+
+*MBTM02_SCRAMBLE (& MBTM02_Scramble) -- Fixed improper comma usage.
+
+O: "After escaping the Imperial assault on Kashyyyk, the Rebel Alliance must reinforce their holdings at several, nearby planets."
+
+F: "After escaping the Imperial assault on Kashyyyk, the Rebel Alliance must reinforce their holdings at several nearby planets."
+
+----
+
+*MP_TEXT_ENCYCLOPEDIA_ASTEROID_MINING_FACILITY_PAD_01 -- Fixed improper capitalization of "asteroid miners."
+
+O: "When operational, Asteroid Miners extract ore and precious minerals from space rocks and convert them into cash."
+
+F: "When operational, asteroid miners extract ore and precious minerals from space rocks and convert them into cash."
+
+----
+
+*TEXT_DROID_ADVISOR_EMPIRE_GALACTIC_23 -- Fixed improper capitalization of "emperor."
+
+O: "If the Emperor is captured, the Empire will fall."
+
+F: "If the emperor is captured, the Empire will fall."
+
+----
+
+*TEXT_DROID_ADVISOR_EMPIRE_LAND_11 -- Fixed improper capitalization of "emperor."
+
+O: "The Emperor can convert units to your control.  Use this ability when Rebel infantry units are present."
+
+F: "The emperor can convert units to your control.  Use this ability when Rebel infantry units are present."
+
+----
+
+*TEXT_DROID_ADVISOR_EMPIRE_SPACE_00 -- Fixed improper capitalization of "space station."
+
+O: "The Space Station's destruction will end this battle."
+
+F: "The space station's destruction will end this battle."
+
+----
+
+*TEXT_DROID_ADVISOR_EMPIRE_SPACE_01 -- Fixed improper capitalization of "space station."
+
+O: "If you're attacking a planet, destroy the Space Station.  If you're defending, protect the Space Station."
+
+F: "If you're attacking a planet, destroy the space station.  If you're defending, protect the space station."
+
+----
+
+*TEXT_DROID_ADVISOR_EMPIRE_SPACE_04 -- Fixed improper capitalization of "space station" and "hard points."
+
+O: "Attack Hard Points on large ships and Space Stations to take out critical systems such as shield generators."
+
+F: "Attack hard points on large ships and space stations to take out critical systems such as shield generators."
+
+----
+
+*TEXT_DROID_ADVISOR_EMPIRE_SPACE_07 -- Fixed improper capitalization of "asteroid."
+
+O: "Nebulae clouds disable shields and, like Asteroid fields, limit your units' line of sight."
+
+F: "Nebulae clouds disable shields and, like asteroid fields, limit your units' line of sight."
+
+----
+
+*TEXT_DROID_ADVISOR_EMPIRE_SPACE_09 -- Fixed improper capitalization of "station."
+
+O: "If you're defending, your space station can make combat upgrades during battle.  Click on the Station to select the upgrades."
+
+F: "If you're defending, your space station can make combat upgrades during battle.  Click on the station to select the upgrades."
+
+----
+
+*TEXT_DROID_ADVISOR_EMPIRE_SPACE_12 -- Added a period to complete the sentence, and fixed improper capitalization of "emperor."
+
+O: "If the Emperor is present, protect him  His death will mean the end for the Empire."
+
+F: "If the emperor is present, protect him.  His death will mean the end for the Empire."
+
+----
+
+*TEXT_DROID_ADVISOR_EMPIRE_SPACE_13 -- Fixed improper capitalization of "space stations."
+
+O: "Broadside Cruisers do great damage to enemy Space Stations."
+
+F: "Broadside Cruisers do great damage to enemy space stations."
+
+----
+
+*TEXT_DROID_ADVISOR_REBEL_GALACTIC_24 -- Fixed flow of the sentence. It wasn't correct without "the."
+
+O: "Mon Mothma must be protected.  If she dies, war is lost."
+
+F: "Mon Mothma must be protected.  If she dies, the war is lost."
+
+----
+
+*TEXT_DROID_ADVISOR_REBEL_SPACE_00 -- Fixed improper capitalization of "space station."
+
+O: "The Space Station's destruction will end this battle."
+
+F: "The space station's destruction will end this battle."
+
+----
+
+*TEXT_DROID_ADVISOR_REBEL_SPACE_01 -- Fixed improper capitalization of "space station."
+
+O: "If you're attacking a planet, destroy the Space Station.  If you're defending, protect the Space Station."
+
+F: "If you're attacking a planet, destroy the space station.  If you're defending, protect the space station."
+
+----
+
+*TEXT_DROID_ADVISOR_REBEL_SPACE_04 -- Fixed improper capitalization of "space station" and "hard points."
+
+O: "Attack Hard Points on large ships and Space Stations to take out critical systems such as shield generators."
+
+F: "Attack hard points on large ships and space stations to take out critical systems such as shield generators."
+
+----
+
+*TEXT_DROID_ADVISOR_REBEL_SPACE_07 -- Fixed improper capitalization of "asteroid."
+
+O: "Nebulae clouds disable shields and, like Asteroid fields, limit your units' line of sight."
+
+F: "Nebulae clouds disable shields and, like asteroid fields, limit your units' line of sight."
+
+----
+
+*TEXT_DROID_ADVISOR_REBEL_SPACE_09 -- Fixed improper capitalization of "station."
+
+O: "If you're defending, your space station can make combat upgrades during battle.  Click on the Station to select the upgrades."
+
+F: "If you're defending, your space station can make combat upgrades during battle.  Click on the station to select the upgrades."
+
+----
+
+*TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_00 -- Fixed improper capitalization of "enemy."
+
+O: "In order to defeat the Enemy, you must liberate every planet in the galaxy."
+
+F: "In order to defeat the enemy, you must liberate every planet in the galaxy."
+
+----
+
+*TEXT_DROID_ADVISOR_UNDERWORLD_LAND_15 -- Fixed non-capitalization of "Force."
+
+O: "Vornskrs are able to sense force disturbances in their surroundings.  This allows them to detect stealth units as well as Jedi and Sith."
+
+F: "Vornskrs are able to sense Force disturbances in their surroundings.  This allows them to detect stealth units as well as Jedi and Sith."
+
+----
+
+*For all Consortium space hints, fixed improper capitalizations of "asteroid," "space station" and "station."
+
+----
+
+*TEXT_DROID_ADVISOR_UNDERWORLD_SPACE_05 -- Fixed improper capitalization and spelling of "Skipray Blastboat."
+
+O: "Skipray Blast Boats can be used to great effect against shielded hard points."
+
+F: "Skipray Blastboats can be used to great effect against shielded hard points."
+
+----
+
+*TEXT_DROID_ADVISOR_UNDERWORLD_SPACE_12 -- Fixed improper pronoun for Tyber Zann. "her death," really Petroglyph?
+
+O: "If Tyber Zann is killed, her death will mean the end of the Zann Consortium."
+
+F: "If Tyber Zann is killed, his death will mean the end of the Zann Consortium."
+
+----
+
+*TEXT_EMPIRE_ACT1_CRAWL_PART_3 -- Fixed improper capitalization of "emperor" and broken period spacing.
+
+O: "Threatening to turn the tide of this struggle is an unknown Imperial traitor, who deals in military secrets.  The Emperor has tasked his apprentice, DARTH VADER, with tracking down and eliminating this double agent….  "
+
+F: "Threatening to turn the tide of this struggle is an unknown Imperial traitor, who deals in military secrets.  The emperor has tasked his apprentice, DARTH VADER, with tracking down and eliminating this double agent...."
+
+----
+
+*TEXT_ENCYCLOPEDIA_LOADING -- Fixed weird-character periods on "Loading..."
+
+O: "Loading…"
+
+F: "Loading..."
+
+----
+
+*TEXT_ENCYCLOPEDIA_RESEARCH_00 -- Fixed improper use of "Death Star."
+
+O: "Allows the Empire to advance their technology by researching components for the Death Star."
+
+F: "Allows the Empire to advance their technology by researching components for the Death Star II."
+
+----
+
+*TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE -- Added period to complete the sentence.
+
+O: "An indigenous unit enslaved to the will of the Zann Consortium"
+
+F: "An indigenous unit enslaved to the will of the Zann Consortium."
+
+----
+
+*TEXT_ENCYCLOPEDIA_STORY_BROKEN_SHIP -- Added period to complete the sentence.
+
+O: "This ship is unmanned, deactivated, and awaiting repairs"
+
+F: "This ship is unmanned, deactivated, and awaiting repairs."
+
+----
+
+*TEXT_ENCYCLOPEDIA_STORY_UNDER_CONSTRUCTION -- Added period to complete the sentence.
+
+O: "This ship is under construction and not functional"
+
+F: "This ship is under construction and not functional."
+
+----
+
+*Fixed all TEXT_ENCYCLOPEDIA_UPGRADE_LEVEL_ strings incorrectly capitalizing "space station."
+
+----
+
+*TEXT_ENCYCLOPEDIA_VORNSKR_SPAWNER -- Added period to complete the sentence.
+
+O: "Periodically creates Vornskrs until destroyed"
+
+F: "Periodically creates Vornskrs until destroyed."
+
+----
+
+*TEXT_ENCYCLOPEDIA_WAMPA_SPAWNER -- Added period to complete sentence and capitalized "Wampa."
+
+O: "Periodically creates a wampa until destroyed"
+
+F: "Periodically creates a Wampa until destroyed."
+
+----
+
+*TEXT_HACK_SUPER_WEAPON_DESCRIPTION -- Fixed reference to "Death Star." Corrected "in" to "into" and corrected comma usage.
+
+O: "IG-88 will download his AI consciousness in the data core of the Death Star resulting in a catastrophic overload of all systems. The Death Star, nearby enemy fleets, and the orbited planet, will all be destroyed. IG-88 will also be destroyed in the process."
+
+F: "IG-88 will download his AI consciousness into the data core of the Death Star II resulting in a catastrophic overload of all systems. The Death Star II, nearby enemy fleets and the orbited planet will all be destroyed. IG-88 will also be destroyed in the process."
+
+----
+
+*TEXT_KUAT_KIDNAPPING_OBJECTIVE_01 -- Capitalized "Must Survive" for consistiency with all other texts.
+
+O: "Bossk must survive."
+
+F: "Bossk Must Survive."
+
+----
+
+*TEXT_MAL_SWAP_DESCRIPTION -- Fixed improper use of semi-colon and improper capitalization of "missles."
+
+O: "Swap between standard Concussion missiles and Carbonite Missiles; Carbonite missiles slow and damage their targets."
+
+F: "Swap between standard Concussion missiles and Carbonite missiles. Carbonite missiles slow and damage their targets."
+
+----
+
+*TEXT_MANDALORE_PIRACY_OBJECTIVE_01 -- Capitalized "Must Survive" for consistiency with all other texts.
+
+O: "Tyber Zann must survive."
+
+F: "Tyber Zann Must Survive."
+
+----
+
+*TEXT_MUUNILINST_KIDNAPPING_OBJECTIVE_01 -- Capitalized "Must Survive" for consistiency with all other texts.
+
+O: "IG-88 must survive."
+
+F: "IG-88 Must Survive."
+
+----
+
+*TEXT_NALHUTTA_KIDNAPPING_OBJECTIVE_01 -- Capitalized "Must Survive" for consistiency with all other texts.
+
+O: "Urai Fen must survive."
+
+F: "Urai Fen Must Survive."
+
+----
+
+*TEXT_SAVELOAD_SAVING_MSG -- Fixed odd "…" character.
+
+O: "Saving…"
+
+F: "Saving..."
+
+----
+
+*MP_TEXT_ENCYCLOPEDIA_COMMAND_CENTER_REBEL_00 - Fixed non-use of a hyphen for "based."
+
+O: "The central structure of operations for Rebellion ground based forces. Command Centers allow the recruitment of hero units."
+
+F: "The central structure of operations for Rebellion ground-based forces. Command Centers allow the recruitment of hero units."
+
+----
+
+*TEXT_BESPIN_PIRACY_OBJECTIVE_01 - Fixing improper capitalization of "designated location."
+
+O: "Activate the Interdictor at the Designated Location."
+
+F: "Activate the Interdictor at the designated location."
+
+----
+
+*TEXT_BESPIN_PIRACY_OBJECTIVE_02 - Fixing improper capitalization of "shuttles carrying."
+
+O: "Destroy the Shuttles Carrying the Tibanna Gas."
+
+F: "Destroy the shuttles carrying the Tibanna Gas."
+
+----
+
+*TEXT_BESPIN_PIRACY_OBJECTIVE_03 - Fixed improper capitalization of "Tibana Gas shuttles."
+
+O: "Destroy the Tibanna Gas Shuttles in the second convoy."
+
+F: "Destroy the Tibanna Gas shuttles in the second convoy."
+
+----
+
+*TEXT_CAMPAIGN_DIRECTIONS2 - Fixed odd ellipses character use.
+
+O: "Choose your destiny…"
+
+F: "Choose your destiny..."
+
+----
+
+*TEXT_CORRUPTION_BONADAN_STORY_CORUPTMILITIA - Fixing improper capitalization of "militia."
+
+O: "On Bonadan they have odd rules about carrying weapons, making the corruption of their Militia a useful priority for the Zann Consortium. If you control the weapon users on the planet, you control the planet. "
+
+F: "On Bonadan they have odd rules about carrying weapons, making the corruption of their militia a useful priority for the Zann Consortium. If you control the weapon users on the planet, you control the planet. "
+
+----
+
+*TEXT_CORRUPTION_CARIDA_STORY_BRIBERY - Fixed improper capitalization of "trade route."
+
+O: "In bribing Tarlen Ten, the trade master of the Perlemian Trade Route, we gain a great deal of information and the powerful garrison of Carida will no longer produce units for our enemies. "
+
+F: "In bribing Tarlen Ten, the trade master of the Perlemian trade route, we gain a great deal of information and the powerful garrison of Carida will no longer produce units for our enemies. "
+
+----
+
+*TEXT_CORRUPTION_ERIADU_STORY_RACKETEER - Fixed non-pluralization of "habitats'"
+
+O: "The orbital habitats of Eriadu are perfect for racketeering organizations that can take advantage of the habitats isolated status. "
+
+F: "The orbital habitats of Eriadu are perfect for racketeering organizations that can take advantage of the habitats' isolated status. "
+
+----
+
+*TEXT_CORRUPTION_ILUM_STORY_BRIBERY - Fixed capitalization of "crystals."
+
+O: "A thinly populated world filled with ice caves, bribing members of the population could reveal many Jedi secrets about the planet's Adegan Crystals. "
+
+F: "A thinly populated world filled with ice caves, bribing members of the population could reveal many Jedi secrets about the planet's Adegan crystals. "
+
+----
+
+*TEXT_CORRUPTION_KORRIBAN_STORY_RACKETEER - Fixed improper capitalization of "dark."
+
+O: "Of all the things that could happen on this Dark Force planet, only racketeering could work, and even trying this could present great danger for the Consortium. "
+
+F: "Of all the things that could happen on this dark Force planet, only racketeering could work, and even trying this could present great danger for the Consortium. "
+
+----
+
+*TEXT_CORRUPTION_NALHUTTA_STORY_BLACKMARKET - Fixed improper capitalization of "black market."
+
+O: "The Hutt organization is rife with jealousy and politics. The Zann Consortium can easily set up a Black Market pulling data from Rebel and Imperial technologies. "
+
+F: "The Hutt organization is rife with jealousy and politics. The Zann Consortium can easily set up a black market pulling data from Rebel and Imperial technologies. "
+
+----
+
+*TEXT_CORRUPTION_RACKETEERING_BENEFIT - Fixing weird period placement.
+
+O: "BENEFITS: Automatically generates a large amount of credits on the galactic level; provides a salvage credit bonus for every enemy unit destroyed during tactical combat . "
+
+F: "BENEFITS: Automatically generates a large amount of credits on the galactic level; provides a salvage credit bonus for every enemy unit destroyed during tactical combat. "
+
+----
+
+*TEXT_ENCYCLOPEDIA_R_SHIP_SPEED - Adding hyphen for connected word.
+
+O: "Increases the movement speed of your team's Frigate and Capital class starships."
+
+F: "Increases the movement speed of your team's Frigate- and Capital-class starships."
+
+----
+
+*TEXT_ENCYCLOPEDIA_RANCOR_SPAWNER - Capitalized "Rancor."
+
+O: "Periodically creates a rancor until destroyed."
+
+F: "Periodically creates a Rancor until destroyed."
+
+----
+
+*TEXT_ENCYCLOPEDIA_REMOTE_SENSOR_POD - Fixed improper comma usage and improper capitalization of "fog of war."
+
+O: "Reveals Fog of War, while controlled, exposing enemy positions on the battlefield."
+
+F: "Reveals fog of war while controlled, exposing enemy positions on the battlefield."
+
+----
+
+*TEXT_GAME_DESCRIPTION_CAMPAIGN - Fixed improper capitalization of all three "the"s.
+
+O: "The full campaign game for 2 players. Choose your side: The Galactic Empire, The Rebel Alliance, or The Zann Consortium."
+
+F: "The full campaign game for 2 players. Choose your side: the Galactic Empire, the Rebel Alliance, or the Zann Consortium."
+
+----
+
+*TEXT_OBJECTIVE_UNDERWORLD_PIRACY_TUTORIAL_01 - Fixing improper capitalization of "right-clicking."
+
+O: "Destroy the Supreme Strategist’s engines by highlighting and Right-Clicking on the engine hardpoint of his ship."
+
+F: "Destroy the Supreme Strategist’s engines by highlighting and right-clicking on the engine hardpoint of his ship."
+
+----
+
+*TEXT_SELECT_OPTIONS - Fixed weird elipses character thing.
+
+O: "Advanced…"
+
+F: "Advanced..."
+
+----
+
+*TEXT_UNIT_MOBILE_DEFENSE_UNIT_EMPIRE/REBEL/UNDERWORLD - Added periods to complete the sentence.
+
+----
+
+*
+
+O: ""
+
+F: ""
+
+----
+
+===================================================================================================
+
+
+===================================================================================================
 v1.0 - Petroglyph'd
 ===================================================================================================
+*Adding periods (to complete the sentence) for all Empire tech level upgrades, and many other things that are applicable. Not every one will be recorded.
+
+----
+
+*Fixed improper capitalization of "production" in all Empire upgrade technologies.
+
+----
 *MB_LAND_PLANET_ALZOCIII_INTIMIDATION -- Fixed "Food Commissioner" as it's a title, added dashes in "behind the scenes," and fixed improper capitalization of "planet."
 
 O: "The food Commissioner is an important behind the scenes power broker on the Planet. With him in our control, mining production levels can be changed at the whim of the Zann Consortium.  Our Defiler has assembled a strike team of our reservists to accomplish our goal.  "
@@ -362,20 +835,4 @@ O: "Yoda was a Jedi Master and part of the Jedi Council before the fall of the R
 
 F: "Yoda was a Jedi Master and part of the Jedi Council before the fall of the Republic.  He has been in hiding from the emperor since the end of the Clone Wars."
 
-----
-
-*Adding periods (to complete the sentence) for all Empire tech level upgrades, and many other things that are applicable. Not every one will be recorded.
-
-----
-
-*Fixed improper capitalization of "production" in all Empire upgrade technologies.
-
-----
-
-*
-
-O: ""
-
-F: ""
-
-----
+===================================================================================================

@@ -656,19 +656,19 @@
 													<!-- Conditionals: 	 		(A) Present, 			  	(B) Present, 		(C) Not Present		-->
 
 		<!-- A and B present and C not present -->
-		<SpeechEvent_Tactical_Intro_Space_Defender_Conditional_And> Death_Star_II, 		  		Wedge_XWing_Rogue, 	None, 				GRS_INTRO_SPACE_DEFEND_R_06 </SpeechEvent_Tactical_Intro_Space_Defender_Conditional_And> <!-- Death Star present, Luke present -->
+		<SpeechEvent_Tactical_Intro_Space_Defender_Conditional_And> Death_Star_II, 		  		Rogue_Squadron_Space, 	None, 				GRS_INTRO_SPACE_DEFEND_R_06 </SpeechEvent_Tactical_Intro_Space_Defender_Conditional_And> <!-- Death Star present, Luke present -->
 		
 		<!-- A or B present and C not present -->
-		<SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or>  Death_Star_II, 	  			None, 				Wedge_XWing_Rogue, 	GRS_INTRO_SPACE_DEFEND_R_05 </SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or> <!-- Death Star present, Luke not present -->
+		<SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or>  Death_Star_II, 	  			None, 				Rogue_Squadron_Space, 	GRS_INTRO_SPACE_DEFEND_R_05 </SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or> <!-- Death Star present, Luke not present -->
 		
 		<!-- A or B present and C not present -->
 		<SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or> 	Mon_Mothma, 	  			None, 				None, 				GRS_INTRO_SPACE_DEFEND_R_04 </SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or> <!-- Just Mon Mothma present -->
 		
 		<!-- A and B present and C not present -->
-		<SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_And> Death_Star_II,	 				Wedge_XWing_Rogue, 	None, 				GRS_INTRO_SPACE_ATTACK_R_07 </SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_And> <!-- Death Star present, Luke present -->
+		<SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_And> Death_Star_II,	 				Rogue_Squadron_Space, 	None, 				GRS_INTRO_SPACE_ATTACK_R_07 </SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_And> <!-- Death Star present, Luke present -->
 		
 		<!-- A or B present and C not present -->
-		<SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or> 	Death_Star_II, 	 			None, 				Wedge_XWing_Rogue,	GRS_INTRO_SPACE_ATTACK_R_06 </SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or> <!-- Death Star present, Luke not present -->
+		<SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or> 	Death_Star_II, 	 			None, 				Rogue_Squadron_Space,	GRS_INTRO_SPACE_ATTACK_R_06 </SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or> <!-- Death Star present, Luke not present -->
 	
 		<!-- A or B present and C not present -->
 		<SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or> 	Emperor_Palpatine, 		None, 				None, 				GRS_INTRO_SPACE_ATTACK_R_05 </SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or> <!-- Just Empoeror Palpatine present -->

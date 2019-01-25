@@ -7,8 +7,8 @@ UFoCP is a fan-patch for "STAR WARS: Empire at War – Forces of Corruption," (F
 
 ---
 
-* Version: 1.0.1
-* License: AGPL-3.0 (please read the [License](https://github.com/AlyMar1994/UFoCP/blob/master/LICENSE) for more info)
+* Version: 1.1
+* License: AGPL-3.0 (please read the [License](https://github.com/AlyMar1994/UFoCP/blob/master/LICENSE) for more info, and/or end of this readme for a tl;dr)
 
 ---
 
@@ -28,12 +28,39 @@ Anything that can correctly parse .XML and .LUA will do.
 ### macOS
 * N/A (Insufficient knowledge of release)
 
+----
+
 ## Installation
 * Clone/download the repository.
 * Create a new directory inside your Steam copy of FoC's "Mods" folder (e.g.: "\corruption\Mods\UFoCP1.0\")
 * Paste repository contents into UFoCP folder.
 * Launch the Steam copy of FoC with the launch option "MODPATH=Mods\\##Folder Name##."
 
+----
+
 ## Links
 - Bug Reporting: https://github.com/AlyMar1994/UFoCP/issues
 - Steam Source: https://steamcommunity.com/sharedfiles/filedetails/?id=1548018187
+
+----
+
+## License
+    The Unofficial Forces of Corruption Patch ("UFoCP") is a patch dedicated to fixing most of the issues within STAR WARS: Empire at War – Forces of Corruption by Petroglyph Games.
+    Copyright (C) 2018  Connor ("AlyMar1994") Hess.
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see https://www.gnu.org/licenses/.
+
+	This license applies to all files, source, and elseor all applicable mod-content, despite said files not being marked with license information.
+	
+----
