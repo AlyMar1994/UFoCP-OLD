@@ -10,7 +10,113 @@ For any corruption mission briefings that are edited, their tooltips for the men
 
 
 ===================================================================================================
-v1.1 - 11/1/18 START
+v1.2
+===================================================================================================
+----
+
+*Fixed all campaign mission texts; double spaced them since they were in the majority (compared to that which wasn't)
+
+----
+
+*MBUM06_DARK_ALLY -- Fixed improper capitalization of "dark."
+
+O: "I'm landing on Dathomir to search for a Dark Force user to unlock the Sith Artifact. I'm surprised to see the planet under strict Empire control. It seems there are many secrets here the emperor himself wants to keep hidden. It will be interesting to see what Urai and I can find...."
+
+F: "I'm landing on Dathomir to search for a dark Force user to unlock the Sith Artifact. I'm surprised to see the planet under strict Empire control. It seems there are many secrets here the emperor himself wants to keep hidden. It will be interesting to see what Urai and I can find...."
+
+----
+
+*MT_SPACE_PLANET_CORELLIA_PIRACY -- Capitalized to match with other texts.
+
+O: "Raid the orbital satellites over Corellia"
+
+F: "Raid the Orbital Satellites Over Corellia"
+
+----
+
+*TEXT_DROID_ADVISOR_EMPIRE_GALACTIC_18 -- Fixed improper capitalization of "bounty hunter."
+
+O: "Hire Bounty Hunters to find and kill smugglers and thieves."
+
+F: "Hire bounty hunters to find and kill smugglers and thieves."
+
+----
+
+*TEXT_DROID_ADVISOR_EMPIRE_GALACTIC_17 -- Ditto.
+
+O: "Construct a Hutt Palace to gain access to Bounty Hunters."
+
+F: "Construct a Hutt Palace to gain access to bounty hunters."
+
+----
+
+*TEXT_DROID_ADVISOR_EMPIRE_GALACTIC_19 -- Fixed improper capitalization of "research facilities."
+
+O: "Construct Research Facilities to advance the Empire's technology level."
+
+F: "Construct research facilities to advance the Empire's technology level."
+
+----
+
+*TEXT_DROID_ADVISOR_EMPIRE_LAND_01 -- Fixed improper capitalization of "generators."
+
+O: "Power Generators are a prime target for attacking forces."
+
+F: "Power generators are a prime target for attacking forces."
+
+----
+
+*TEXT_DROID_ADVISOR_EMPIRE_GALACTIC_08 -- Put quotation marks around "Enable Hints".
+
+O: "You can turn off these hints at any time by unchecking Enable Hints in the droid log menu screen."
+
+F: "You can turn off these hints at any time by unchecking 'Enable Hints' in the droid log menu screen."
+
+----
+
+*TEXT_DROID_ADVISOR_EMPIRE_SPACE_05 -- Fixed improper capitalization of "bomber."
+
+O: "TIE Bombers can be used to great effect against shielded hard points."
+
+F: "TIE bombers can be used to great effect against shielded hard points."
+
+----
+
+*
+
+O: ""
+
+F: ""
+
+----
+
+*
+
+O: ""
+
+F: ""
+
+----
+
+*
+
+O: ""
+
+F: ""
+
+----
+
+*
+
+O: ""
+
+F: ""
+
+----
+
+
+===================================================================================================
+v1.1
 ===================================================================================================
 ---
 
@@ -461,16 +567,6 @@ F: "Advanced..."
 ----
 
 *TEXT_UNIT_MOBILE_DEFENSE_UNIT_EMPIRE/REBEL/UNDERWORLD - Added periods to complete the sentence.
-
-----
-
-*
-
-O: ""
-
-F: ""
-
-----
 
 ===================================================================================================
 

@@ -18,6 +18,28 @@ Whenever the AI is edited, it's not labeled based on specific changed units with
 
 
 =========================================================================================
+v1.2
+=========================================================================================
+
+
+==================
+A.I. (Galactic Conquest)
+==================
+-AI_Plan_ExpansionGeneric_RemoveCorruption – Fixed AI trying to call "Darth_Team" (EaW), and "Grand_Admiral_Thrawn_Team" (a non-existant political unit that originally was to replace Tarkin). Replaced Darth's with "Darth_Team_Expansion" (a team-tag added last update), and Thrawn's with "Admonitor_Star_Destroyer" to fix Vader and Thrawn's Remove Corruption ability.
+**Thrawn's fix is still in testing, as it appears Thrawn doesn't have a team, just a unit definition as a "UniqueUnit" in his file.
+
+
+-UpgradeStarbasePlan – Added all Rebel and Empire starbases to the list of buildable/upgradable starbases. The A.I. will likely start building past Lvl. 1 or 2 now.
+
+==================
+Units (Space)
+==================
+-Boba Fett – 
+
+=========================================================================================
+
+
+=========================================================================================
 v1.1
 =========================================================================================
 There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT Changelog.txt" in the game directory to see!
