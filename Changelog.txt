@@ -29,12 +29,32 @@ A.I. (Galactic Conquest)
 **Thrawn's fix is still in testing, as it appears Thrawn doesn't have a team, just a unit definition as a "UniqueUnit" in his file.
 
 
--UpgradeStarbasePlan – Added all Rebel and Empire starbases to the list of buildable/upgradable starbases. The A.I. will likely start building past Lvl. 1 or 2 now.
+-UpgradeStarbasePlan – Added all Rebel, Empire and Underworld starbases to the list of buildable/upgradable starbases. The A.I. will likely start building past Lvl. 1 or 2 now.
+
+==================
+Maps (Space)
+==================
+-Nal Hutta – Adjusted space station position so it points towards the attackers (for Empire/Consortium stations).
+-Nal Hutta – Fixed 3 defense turrets not appearing for any faction (only appeared when the Black Sun Pirates held the planet).
+-Nal Hutta – Fixed multiple asteroids and asteroid fields only appearing when Black Sun Pirates held the planet.
+
+-Shola – Adjusted space station position.
+-Shola – Fixed multiple asteroids and asteroid fields only appearing when Black Sun Pirates held the planet.
+
 
 ==================
 Units (Space)
 ==================
--Boba Fett – 
+-Boba Fett – Attempted a unit re-code to fix an object contestation error, as reported in the main thread, since that's aparently how all the cool kids are handeling this issue.
+**I do wish to pursue a fix that doesn't involve a reorganization in the future.
+
+
+
+==================
+Units (Galactic Conquest)
+==================
+-Kyle Katarn – Fixed improper spacing/defining in <Activated_Sabotage_Ability_Names>. No longer "Kyle_Katarn_Sabotage Saboteur_Galactic_Sabotage," now "Kyle_Katarn_Sabotage, Saboteur_Galactic_Sabotage". Should work now.
+
 
 =========================================================================================
 

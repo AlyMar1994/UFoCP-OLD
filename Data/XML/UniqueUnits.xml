@@ -1196,63 +1196,30 @@
 
 
 	
+
 	<!-- Slave I is used by Boba Fett (Empire Major Hero) during space battles -->
 	<UniqueUnit Name="Slave_I">
-		<Text_ID>TEXT_UNIT_SLAVE_I</Text_ID>
+		<Text_ID> TEXT_UNIT_SLAVE_I </Text_ID>
+		<Icon_Name> I_BUTTON_SLAVE1.TGA </Icon_Name>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR </Encyclopedia_Unit_Class>
 		<Encyclopedia_Good_Against> X-wing Y-Wing Starviper_Fighter </Encyclopedia_Good_Against>
 		<Encyclopedia_Vulnerable_To> Corellian_Corvette Corellian_Gunboat Crusader_Gunship </Encyclopedia_Vulnerable_To>
-		<Land_Model_Name> EV_SLAVE1.ALO </Land_Model_Name>
-		<Space_Model_Name> EV_SLAVE1_SPACE.ALO </Space_Model_Name>
-		<Icon_Name>i_button_slave1.tga</Icon_Name>
-		<Mass>0.995</Mass>
-		<Scale_Factor>1.2</Scale_Factor>
-		<Select_Box_Scale>80</Select_Box_Scale>
-		<Select_Box_Z_Adjust>-1</Select_Box_Z_Adjust>
+		<Encyclopedia_Text> TEXT_TOOLTIP_SLAVE_ONE </Encyclopedia_Text>
+		<Political_Control> 0 </Political_Control>
+		<Population_Value> 1 </Population_Value>
+		<Affiliation> Empire </Affiliation>
 
-        <Ranking_In_Category>3</Ranking_In_Category>
-		<Max_Speed>5.5</Max_Speed>
-		<Min_Speed>3.5</Min_Speed>
-		<Max_Rate_Of_Turn>5.0</Max_Rate_Of_Turn>
-		<Max_Lift>5.0</Max_Lift>
-		<Max_Thrust>1.0</Max_Thrust>
-		<Max_Rate_Of_Roll>5.5</Max_Rate_Of_Roll>
-		<Bank_Turn_Angle>60</Bank_Turn_Angle>
-		<Begin_Turn_Towards_Distance>800.0</Begin_Turn_Towards_Distance>
-		<Hyperspace>Yes</Hyperspace>
-		<Hyperspace_Speed>1.5</Hyperspace_Speed>
-
-		<Armor_Type> Armor_Hero_Transport </Armor_Type>
-
-		<Affiliation>Empire</Affiliation>
-		<Ship_Class>Fighter</Ship_Class>
-		<Formation_Priority>5</Formation_Priority>
-		<Is_Escort>yes</Is_Escort>
-		<Shield_Points>150</Shield_Points>
-		<Tactical_Health>1000</Tactical_Health>
-		<Shield_Refresh_Rate>15</Shield_Refresh_Rate>
-		<Energy_Capacity>999</Energy_Capacity>
-		<Energy_Refresh_Rate>999</Energy_Refresh_Rate>
-		<Size_Value>120</Size_Value>
-		<Damage>5</Damage>
-		<Behavior>DUMMY_STARSHIP, TRANSPORT, POWERED, SHIELDED </Behavior>
-		<SpaceBehavior>ABILITY_COUNTDOWN, FIGHTER_LOCOMOTOR, TARGETING, WEAPON, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, UNIT_AI, NEBULA, SELECTABLE, DAMAGE_TRACKING </SpaceBehavior>
-		<LandBehavior>REVEAL, HIDE_WHEN_FOGGED, IDLE</LandBehavior> 
-		<Victory_Relevant>yes</Victory_Relevant>
-		<Hover_Offset>30.0</Hover_Offset>
-
-		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
-		<Damage_Type>Damage_Fighter</Damage_Type>
-		<Projectile_Damage>12.0</Projectile_Damage>
-		<Projectile_Types>Proj_Ship_Medium_Laser_Cannon_Red</Projectile_Types>
-		<Projectile_Fire_Pulse_Count>8</Projectile_Fire_Pulse_Count>
-		<Projectile_Fire_Pulse_Delay_Seconds>0.15</Projectile_Fire_Pulse_Delay_Seconds>
-		<Projectile_Fire_Recharge_Seconds>0.0</Projectile_Fire_Recharge_Seconds>
-		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
-		<Space_FOW_Reveal_Range>1000.0</Space_FOW_Reveal_Range>
-		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
-		<Targeting_Max_Attack_Distance>800.0</Targeting_Max_Attack_Distance>
-		<Death_Explosions>Medium_Explosion_Space_Empire</Death_Explosions>
-		
+		<Ship_Class> Fighter </Ship_Class>
+		<CategoryMask> Fighter | SpaceHero </CategoryMask>
+		<Ranking_In_Category> 3 </Ranking_In_Category>
+		<Targeting_Priority_Set> Fighter </Targeting_Priority_Set>
+		<Is_Escort> Yes </Is_Escort>
+		<Is_Bomber> No </Is_Bomber>
+		<Damage> 5 </Damage>
+		<Projectile_Types> Proj_Ship_Medium_Laser_Cannon_Red </Projectile_Types>
+		<Projectile_Fire_Pulse_Count> 8 </Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds> 0.15 </Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds> 0 </Projectile_Fire_Recharge_Seconds>
 		<Fire_Inaccuracy_Distance> Fighter, 1.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Bomber, 1.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Transport, 1.0 </Fire_Inaccuracy_Distance>
@@ -1260,83 +1227,121 @@
 		<Fire_Inaccuracy_Distance> Frigate, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Capital, 30.0 </Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance> Super, 30.0 </Fire_Inaccuracy_Distance>
+		<Targeting_Max_Attack_Distance> 800.0 </Targeting_Max_Attack_Distance>
 
-		<Turret_Rotate_Extent_Degrees>50</Turret_Rotate_Extent_Degrees>
-		<Turret_Elevate_Extent_Degrees>50</Turret_Elevate_Extent_Degrees>
+		<Remove_Upon_Death> True </Remove_Upon_Death>
+		<Death_Explosions> Medium_Explosion_Space_Empire </Death_Explosions>
+		<Asteroid_Damage_Hit_Particles> Small_Damage_Space </Asteroid_Damage_Hit_Particles>
+		<Death_SFXEvent_Start_Die> Unit_Corvette_Death_SFX </Death_SFXEvent_Start_Die>
+		<Death_Clone> Damage_Normal, Slave_I_Death_Clone </Death_Clone>
 
+		<Tactical_Health> 1000 </Tactical_Health>
+		<Shield_Points> 150 </Shield_Points>
+		<Shield_Refresh_Rate> 15 </Shield_Refresh_Rate>
+		<Energy_Capacity> 999 </Energy_Capacity>
+		<Energy_Refresh_Rate> 999 </Energy_Refresh_Rate>
+
+		<Armor_Type> Armor_Hero_Transport </Armor_Type>
+	
+		<Space_Model_Name> EV_SLAVE1_SPACE.ALO </Space_Model_Name>
+		<Land_Model_Name> EV_SLAVE1.ALO </Land_Model_Name>
+		<Scale_Factor> 1.2 </Scale_Factor>
+		<Select_Box_Scale> 80.0 </Select_Box_Scale>
+		<Select_Box_Z_Adjust> -1.0f </Select_Box_Z_Adjust>
+		<Mouse_Collide_Override_Sphere_Radius> 50.0 </Mouse_Collide_Override_Sphere_Radius>
+		<Mass> 0.995 </Mass>
+		<Landing_Transport_Variant> Slave_I_Landing </Landing_Transport_Variant>
+
+		<Damage_Type> Damage_Fighter </Damage_Type>
+		<Ranged_Target_Z_Adjust> 0 </Ranged_Target_Z_Adjust>
+		<Fires_Forward> No </Fires_Forward>
+		<Turret_Rotate_Extent_Degrees> 50 </Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees> 50 </Turret_Elevate_Extent_Degrees>
+
+		<Dense_FOW_Reveal_Range_Multiplier> 0.2 </Dense_FOW_Reveal_Range_Multiplier>
+
+		<Max_Speed> 5.5 </Max_Speed>
+		<Min_Speed> 3.5 </Min_Speed>
+		<Max_Rate_Of_Turn> 5.0 </Max_Rate_Of_Turn>
+		<Max_Thrust> 1.0 </Max_Thrust>
+		<Max_Rate_Of_Roll> 5.5 </Max_Rate_Of_Roll>
+		<Bank_Turn_Angle> 60 </Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance> 800.0 </Begin_Turn_Towards_Distance>
+		<Strafe_Distance> 500.0 </Strafe_Distance>
+		<Hover_Offset>30.0</Hover_Offset>
+
+		<Max_Lift> 5.0 </Max_Lift>
+		<Hyperspace> Yes </Hyperspace>
+		<Hyperspace_Speed> 1.5 </Hyperspace_Speed>
+		<Maintenance_Cost> 0.1 </Maintenance_Cost>
+		<Formation_Priority> 5 </Formation_Priority>
+		<Behavior> DUMMY_STARSHIP, TRANSPORT, POWERED, SHIELDED </Behavior>
+		<SpaceBehavior> ABILITY_COUNTDOWN, FIGHTER_LOCOMOTOR, TARGETING, WEAPON, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, UNIT_AI, NEBULA, SELECTABLE, DAMAGE_TRACKING </SpaceBehavior>
+		<LandBehavior> REVEAL, HIDE_WHEN_FOGGED, IDLE </LandBehavior>
 		<Fire_Category_Restrictions> Infantry, Vehicle, Structure, Air, Transport </Fire_Category_Restrictions>
 
-		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
-		<Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
+		<Size_Value> 120 </Size_Value>
+		<Collidable_By_Projectile_Living> Yes </Collidable_By_Projectile_Living>
 
-		<Encyclopedia_Text> TEXT_TOOLTIP_SLAVE_ONE </Encyclopedia_Text>
-		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR </Encyclopedia_Unit_Class>
+		<Land_FOW_Reveal_Range> 200.0 </Land_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range> 1000.0 </Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance> 800.0 </Targeting_Max_Attack_Distance>
+		<Asteroid_Damage_Hit_Particles> Small_Damage_Space </Asteroid_Damage_Hit_Particles>
 
-		<Death_Clone>Damage_Normal, Slave_I_Death_Clone</Death_Clone>
-
-		<Score_Cost_Credits> 8000 </Score_Cost_Credits>
-
-		<SFXEvent_Fire>Unit_Slave_1_Fire</SFXEvent_Fire>
-		<SFXEvent_Select>Unit_Select_Ship_Boba_Fett</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_Ship_Boba_Fett</SFXEvent_Move>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Boba_Fett</SFXEvent_Fleet_Move>
-		<SFXEvent_Attack>Unit_Attack_Ship_Boba_Fett</SFXEvent_Attack>
-		<SFXEvent_Guard>Unit_Guard_Boba_Fett</SFXEvent_Guard>
+		<SFXEvent_Fire> Unit_Slave_1_Fire </SFXEvent_Fire>
+		<SFXEvent_Select> Unit_Select_Ship_Boba_Fett </SFXEvent_Select>
+		<SFXEvent_Move> Unit_Move_Ship_Boba_Fett </SFXEvent_Move>
+		<SFXEvent_Fleet_Move> Unit_Fleet_Move_Boba_Fett </SFXEvent_Fleet_Move>
+		<SFXEvent_Attack> Unit_Attack_Ship_Boba_Fett </SFXEvent_Attack>
+		<SFXEvent_Guard> Unit_Guard_Boba_Fett </SFXEvent_Guard>
 		<SFXEvent_Deploy>Unit_Deploy_Boba_Fett</SFXEvent_Deploy>
 		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Boba_Fett </SFXEvent_Health_Low_Warning>
-		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Boba_Fett </SFXEvent_Health_Critical_Warning>
-        
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Boba_Fett  </SFXEvent_Health_Critical_Warning>
 		<SFXEvent_Ambient_Moving> Unit_Slave1_Fly_By </SFXEvent_Ambient_Moving>
 		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
 		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
-
-		<!--<SFXEvent_Engine_Idle_Loop> Unit_Slave1_Engine_Loop </SFXEvent_Engine_Idle_Loop>
-		<SFXEvent_Engine_Moving_Loop> Unit_Slave1_Engine_Loop </SFXEvent_Engine_Moving_Loop> -->
-
 		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Slave1_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
-
-		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
-		<Blob_Shadow_Scale>200.0, 100.0</Blob_Shadow_Scale>
-		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
-		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
-		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
-
-		<GUI_Bracket_Size>0</GUI_Bracket_Size>
-
-		<AI_Combat_Power>1500</AI_Combat_Power>
+		
+		<!-- ALYMAR1994 (3/8/19) - Misc. Edits. Lots of them. Some new added/commented out functions from original file. -->
+		<Property_Flags> SmallShip </Property_Flags>
+		<Victory_Relevant> Yes </Victory_Relevant>
+		<Is_Visible_On_Radar> Yes </Is_Visible_On_Radar>
+		<Custom_Footprint_Radius> 7.0 </Custom_Footprint_Radius>
 		<MovementClass> Space </MovementClass>
-		<CategoryMask> Fighter | SpaceHero</CategoryMask>
-		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
-		<Landing_Transport_Variant>Slave_I_Landing</Landing_Transport_Variant>
-		<Display_Contained_Hero_Grab_Bars>True</Display_Contained_Hero_Grab_Bars>
+		<Out_Of_Combat_Defense_Adjustment>-1.0</Out_Of_Combat_Defense_Adjustment>
+		<Minimum_Follow_Distance>25.0</Minimum_Follow_Distance>
+		<Lua_Script> Slave_I </Lua_Script>
+		<Score_Cost_Credits> 8000 </Score_Cost_Credits>
+		<Blob_Shadow_Below_Detail_Level> 2 </Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale> 200.0, 100.0 </Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name> Generic_Shadow </Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level> 1 </No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level> 1 </No_Refraction_Below_Detail_Level>
+		<GUI_Bracket_Size> 0 </GUI_Bracket_Size>
+		<Display_Contained_Hero_Grab_Bars> True </Display_Contained_Hero_Grab_Bars>
+		<Cheap_Bribe_Cost> 2500 </Cheap_Bribe_Cost>
 
-		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
-		<Tactical_Build_Cost_Multiplayer>3200</Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites />
-		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
-		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
-		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
-		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
-
-		<Cheap_Bribe_Cost>2500</Cheap_Bribe_Cost>
-		<Space_Override_Population_Value>1</Space_Override_Population_Value>
-
-		<!-- Non-Hero unit abilities description -->
 		<Unit_Abilities_Data SubObjectList="Yes">
-			<!-- Primary ability -->
 			<Unit_Ability>
-				<Type>HARMONIC_BOMB</Type>
-				<Recharge_Seconds>20</Recharge_Seconds>
-				<Spawned_Object_Type>Proj_Harmonic_Bomb_Slave_I</Spawned_Object_Type>
-				<Bomb_Countdown_Seconds>1.5</Bomb_Countdown_Seconds>  <!-- AI 8.12 -->
-				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ability_Boba_Fett</SFXEvent_GUI_Unit_Ability_Activated>
-				<Supports_Autofire>True</Supports_Autofire>
+				<Type> HARMONIC_BOMB </Type>
+				<Spawned_Object_Type> Proj_Harmonic_Bomb_Slave_I </Spawned_Object_Type>
+				<Bomb_Countdown_Seconds> 1.5 </Bomb_Countdown_Seconds>  <!-- AI 8.12 -->
+				<Recharge_Seconds> 20 </Recharge_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated> Unit_Ability_Boba_Fett </SFXEvent_GUI_Unit_Ability_Activated>
 			</Unit_Ability>
 		</Unit_Abilities_Data>
-		<Lua_Script>Slave_I</Lua_Script>
-	</UniqueUnit>
 
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+
+		<Tactical_Build_Cost_Multiplayer> 3200 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 30 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue> Tactical_Units </Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies> 1 </Build_Limit_Current_For_All_Allies>
+		<Build_Limit_Lifetime_Per_Player> -1 </Build_Limit_Lifetime_Per_Player>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+	</UniqueUnit>
 
 	<UniqueUnit Name="Slave_I_Death_Clone">
 		<Text_ID>TEXT_UNIT_SLAVE_I</Text_ID>

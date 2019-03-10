@@ -3713,9 +3713,9 @@
 	they arrive at a planet. Most of those special actions are tied to special abilities (Raid is the only
 	action that is not). This is the list of special abilities that will cause the corresponding special
 	action slot to be displayed on the zoomed out galactic GUI when dragging a fleet. -->
-	<Activated_Slice_Ability_Names> Tani_Slicer,R2D2_Slicer</Activated_Slice_Ability_Names>
+	<Activated_Slice_Ability_Names> Tani_Slicer, R2D2_Slicer</Activated_Slice_Ability_Names>
     <Activated_Black_Market_Ability_Names> Tyber_Zann_Black_Market, Urai_Fen_Black_Market, Silri_Black_Market</Activated_Black_Market_Ability_Names>
-	<Activated_Sabotage_Ability_Names> Mara_Jade_Sabotage, Kyle_Katarn_Sabotage Saboteur_Galactic_Sabotage </Activated_Sabotage_Ability_Names>
+	<Activated_Sabotage_Ability_Names> Mara_Jade_Sabotage, Kyle_Katarn_Sabotage, Saboteur_Galactic_Sabotage </Activated_Sabotage_Ability_Names>
 	<Activated_Neutralize_Hero_Ability_Names> Boba_Fett_Neutralize_Hero, Bounty_Hunter_Neutralize_Hero, Mara_Jade_Hero_Assasin, Bossk_Neutralize_Hero, IG88_Neutralize_Hero </Activated_Neutralize_Hero_Ability_Names>
 	<Activated_Siphon_Credits_Ability_Names> Han_Solo_Siphon_Credits, Smuggler_Siphon_Credits </Activated_Siphon_Credits_Ability_Names>
 	<Activated_System_Spy_Ability_Names> Probe_Droid_System_Spy </Activated_System_Spy_Ability_Names>
@@ -3732,21 +3732,21 @@
 	
 	<!-- Gameplay option defaults -->
 		
-	<MP_Default_Credits>										6000		</MP_Default_Credits>
-	<MP_Default_Start_Tech_Level>							1			</MP_Default_Start_Tech_Level>
-	<MP_Default_Max_Tech_Level>							5			</MP_Default_Max_Tech_Level>
+	<MP_Default_Credits> 6000 </MP_Default_Credits>
+	<MP_Default_Start_Tech_Level> 1	</MP_Default_Start_Tech_Level>
+	<MP_Default_Max_Tech_Level> 5 </MP_Default_Max_Tech_Level>
 	
 	<!-- Auto_Resolve Values, 0 == Always, 1 == Never, 2 == Ask, 3 == Overwhelming odds -->
-	<MP_Default_Allow_Auto_Resolve>						2			</MP_Default_Allow_Auto_Resolve>
-	<MP_Default_Game_Timer>									0			</MP_Default_Game_Timer>
-	<MP_Default_Win_Condition>								0			</MP_Default_Win_Condition>
-	<MP_Default_Win_Condition_Int_Param>				0			</MP_Default_Win_Condition_Int_Param>
-	<MP_Default_Win_Condition_Float_Param>				0.0		</MP_Default_Win_Condition_Float_Param>
-	<MP_Default_Allow_Heroes>								yes		</MP_Default_Allow_Heroes>
-	<MP_Default_Allow_SuperWeapons>						yes		</MP_Default_Allow_SuperWeapons>
-	<MP_Default_Pre_Built_Base>							yes		</MP_Default_Pre_Built_Base>
-	<MP_Default_Allow_Random_Events>						no			</MP_Default_Allow_Random_Events>
-	<MP_Default_Free_Starting_Units>						yes		</MP_Default_Free_Starting_Units>
+	<MP_Default_Allow_Auto_Resolve>	2 </MP_Default_Allow_Auto_Resolve>
+	<MP_Default_Game_Timer>	0 </MP_Default_Game_Timer>
+	<MP_Default_Win_Condition> 0 </MP_Default_Win_Condition>
+	<MP_Default_Win_Condition_Int_Param> 0 </MP_Default_Win_Condition_Int_Param>
+	<MP_Default_Win_Condition_Float_Param> 0.0 </MP_Default_Win_Condition_Float_Param>
+	<MP_Default_Allow_Heroes> yes </MP_Default_Allow_Heroes>
+	<MP_Default_Allow_SuperWeapons>	yes </MP_Default_Allow_SuperWeapons>
+	<MP_Default_Pre_Built_Base> yes	</MP_Default_Pre_Built_Base>
+	<MP_Default_Allow_Random_Events> no	</MP_Default_Allow_Random_Events>
+	<MP_Default_Free_Starting_Units> yes </MP_Default_Free_Starting_Units>
 	<MP_Default_Land_Tactical_Win_Condition>SKIRMISH_ALL_ENEMY_BASE_COMPONENTS_DESTROYED</MP_Default_Land_Tactical_Win_Condition>
 	<MP_Default_Space_Tactical_Win_Condition>SKIRMISH_SPACE_ENEMY_STARBASE_DESTROYED</MP_Default_Space_Tactical_Win_Condition>
 	
@@ -3790,7 +3790,7 @@
 	<Localized_Splash_Screen> FRENCH, 	Splash_french.TGA </Localized_Splash_Screen>
 	<Localized_Splash_Screen> SPANISH, 	Splash_spanish.TGA </Localized_Splash_Screen>
 	<Localized_Splash_Screen> ITALIAN, 	Splash_italian.TGA </Localized_Splash_Screen>
-	<Localized_Splash_Screen> JAPANESE, 	Splash_uk.TGA </Localized_Splash_Screen>
+	<Localized_Splash_Screen> JAPANESE, Splash_uk.TGA </Localized_Splash_Screen>
 	<Localized_Splash_Screen> KOREAN, 	Splash_uk.TGA </Localized_Splash_Screen>
 	<Localized_Splash_Screen> CHINESE, 	Splash_uk.TGA </Localized_Splash_Screen>
 	<Localized_Splash_Screen> POLISH, 	Splash_polish.TGA </Localized_Splash_Screen>
@@ -3937,7 +3937,7 @@
 	TEXT_PA_DAMAGE_BONUS,
 	TEXT_PA_ENVIRONMENTAL_TRAINING,
 	TEXT_PA_ADVANCED_SHIELDS,
-	TEXT_PA_FORCE_NEGATION,
+	TEXT_PA_FORCE_NEGATION
      </Planet_Ability_Text_IDs>
     <Planet_Ability_RGBs>
         0, 255, 100,
@@ -3966,10 +3966,10 @@
         0, 255, 100,
         0, 255, 100
     </Planet_Ability_RGBs>
-    <Droid_Date_Color>255 0 0</Droid_Date_Color>
-    <Droid_Text_Color>255 255 255</Droid_Text_Color>
-    <Droid_Seperator_Color>128 128 128</Droid_Seperator_Color>
-    <Droid_Encyclopedia_Offset>24 -179</Droid_Encyclopedia_Offset>
+    <Droid_Date_Color>255, 0, 0</Droid_Date_Color>
+    <Droid_Text_Color>255, 255, 255</Droid_Text_Color>
+    <Droid_Seperator_Color>128, 128, 128</Droid_Seperator_Color>
+    <Droid_Encyclopedia_Offset>24, -179</Droid_Encyclopedia_Offset>
 
 	<Indigenous_Spawn_Destruction_Reward>500</Indigenous_Spawn_Destruction_Reward>
 	
@@ -4079,89 +4079,89 @@
 		7. Corruption_Bonded_Citizens
 	-->
    <Corruption_Choice_Icon_Name>
-		i_button_corruption_assassination_a.tga
-		i_button_corruption_piracy_a.tga
-		i_button_corruption_kidnapping_a.tga
-		i_button_corruption_racketeering_a.tga
-		i_button_corruption_drug_a.tga
-		i_button_corruption_bribery_a.tga
-		i_button_corruption_black_market_a.tga
+		i_button_corruption_assassination_a.tga,
+		i_button_corruption_piracy_a.tga,
+		i_button_corruption_kidnapping_a.tga,
+		i_button_corruption_racketeering_a.tga,
+		i_button_corruption_drug_a.tga,
+		i_button_corruption_bribery_a.tga,
+		i_button_corruption_black_market_a.tga,
 		i_button_corruption_slavery_a.tga
 	</Corruption_Choice_Icon_Name>
    <Corruption_Choice_Name>
-		TEXT_CORRUPTION_ASSASSINATION
-		TEXT_CORRUPTION_PIRACY
-		TEXT_CORRUPTION_KIDNAPPING
-		TEXT_CORRUPTION_RACKETEERING
-		TEXT_CORRUPTION_DRUG_DISTRIBUTION
-		TEXT_CORRUPTION_BRIBERY
-		TEXT_CORRUPTION_BLACK_MARKET
+		TEXT_CORRUPTION_ASSASSINATION,
+		TEXT_CORRUPTION_PIRACY,
+		TEXT_CORRUPTION_KIDNAPPING,
+		TEXT_CORRUPTION_RACKETEERING,
+		TEXT_CORRUPTION_DRUG_DISTRIBUTION,
+		TEXT_CORRUPTION_BRIBERY,
+		TEXT_CORRUPTION_BLACK_MARKET,
 		TEXT_CORRUPTION_SLAVERY
 	</Corruption_Choice_Name>
    <Corruption_Choice_Benefit>
-		TEXT_CORRUPTION_ASSASSINATION_BENEFIT
-		TEXT_CORRUPTION_PIRACY_BENEFIT
-		TEXT_CORRUPTION_KIDNAPPING_BENEFIT
-		TEXT_CORRUPTION_RACKETEERING_BENEFIT
-		TEXT_CORRUPTION_DRUG_DISTRIBUTION_BENEFIT
-		TEXT_CORRUPTION_BRIBERY_BENEFIT
-		TEXT_CORRUPTION_BLACK_MARKET_BENEFIT
+		TEXT_CORRUPTION_ASSASSINATION_BENEFIT,
+		TEXT_CORRUPTION_PIRACY_BENEFIT,
+		TEXT_CORRUPTION_KIDNAPPING_BENEFIT,
+		TEXT_CORRUPTION_RACKETEERING_BENEFIT,
+		TEXT_CORRUPTION_DRUG_DISTRIBUTION_BENEFIT,
+		TEXT_CORRUPTION_BRIBERY_BENEFIT,
+		TEXT_CORRUPTION_BLACK_MARKET_BENEFIT,
 		TEXT_CORRUPTION_SLAVERY_BENEFIT
 	</Corruption_Choice_Benefit>
    <Corruption_Mission_Requirement_Icon_Name>
-		i_button_corruption_assassination_b.tga
-		i_button_corruption_piracy_b.tga
-		i_button_corruption_kidnapping_b.tga
-		i_button_corruption_racketeering_b.tga
-		i_button_corruption_drug_b.tga
-		i_button_corruption_bribery_b.tga
-		i_button_corruption_black_market_b.tga
-		i_button_corruption_slavery_b.tga
-      i_button_corruption_generic_planet.tga
+		i_button_corruption_assassination_b.tga,
+		i_button_corruption_piracy_b.tga,
+		i_button_corruption_kidnapping_b.tga,
+		i_button_corruption_racketeering_b.tga,
+		i_button_corruption_drug_b.tga,
+		i_button_corruption_bribery_b.tga,
+		i_button_corruption_black_market_b.tga,
+		i_button_corruption_slavery_b.tga,
+      i_button_corruption_generic_planet.tga,
       i_button_saboteur.tga
 	</Corruption_Mission_Requirement_Icon_Name>
    <Corruption_Choice_Encyclopedia>
-		TEXT_CORRUPTION_ASSASSINATION_ENCYCLOPEDIA
-		TEXT_CORRUPTION_PIRACY_ENCYCLOPEDIA
-		TEXT_CORRUPTION_KIDNAPPING_ENCYCLOPEDIA
-		TEXT_CORRUPTION_RACKETEERING_ENCYCLOPEDIA
-		TEXT_CORRUPTION_DRUG_DISTRIBUTION_ENCYCLOPEDIA
-		TEXT_CORRUPTION_BRIBERY_ENCYCLOPEDIA
-		TEXT_CORRUPTION_BLACK_MARKET_ENCYCLOPEDIA
+		TEXT_CORRUPTION_ASSASSINATION_ENCYCLOPEDIA,
+		TEXT_CORRUPTION_PIRACY_ENCYCLOPEDIA,
+		TEXT_CORRUPTION_KIDNAPPING_ENCYCLOPEDIA,
+		TEXT_CORRUPTION_RACKETEERING_ENCYCLOPEDIA,
+		TEXT_CORRUPTION_DRUG_DISTRIBUTION_ENCYCLOPEDIA,
+		TEXT_CORRUPTION_BRIBERY_ENCYCLOPEDIA,
+		TEXT_CORRUPTION_BLACK_MARKET_ENCYCLOPEDIA,
 		TEXT_CORRUPTION_SLAVERY_ENCYCLOPEDIA
 	</Corruption_Choice_Encyclopedia>
 	<Corruption_Choice_Income_Percentage> 0.5, 0.8, 0.4, 4.5, 0.5, 0.5, 0.8, 1.0 </Corruption_Choice_Income_Percentage>
 	<Bribery_Fleet_Reveal_Range> 75.0 </Bribery_Fleet_Reveal_Range>
 
    <Corruption_Planet_Icon>
-		i_button_corruption_Assassination_g.tga
-		i_button_corruption_Piracy_g.tga
-		i_button_corruption_Kidnapping_g.tga
-		i_button_corruption_Racketeering_g.tga
-		i_button_corruption_Drug_g.tga
-		i_button_corruption_Bribery_g.tga
-		i_button_corruption_Black_Market_g.tga
-		i_button_corruption_Slavery_g.tga
+		i_button_corruption_Assassination_g.tga,
+		i_button_corruption_Piracy_g.tga,
+		i_button_corruption_Kidnapping_g.tga,
+		i_button_corruption_Racketeering_g.tga,
+		i_button_corruption_Drug_g.tga,
+		i_button_corruption_Bribery_g.tga,
+		i_button_corruption_Black_Market_g.tga,
+		i_button_corruption_Slavery_g.tga,
       i_icon_corruption_info.tga
    </Corruption_Planet_Icon>
    <Corruption_Planet_Icon_Encyclopedia_Name>
-		TEXT_CORRUPTION_ASSASSINATION
-		TEXT_CORRUPTION_PIRACY
-		TEXT_CORRUPTION_KIDNAPPING
-		TEXT_CORRUPTION_RACKETEERING
-		TEXT_CORRUPTION_DRUG_DISTRIBUTION
-		TEXT_CORRUPTION_BRIBERY
-		TEXT_CORRUPTION_BLACK_MARKET
+		TEXT_CORRUPTION_ASSASSINATION,
+		TEXT_CORRUPTION_PIRACY,
+		TEXT_CORRUPTION_KIDNAPPING,
+		TEXT_CORRUPTION_RACKETEERING,
+		TEXT_CORRUPTION_DRUG_DISTRIBUTION,
+		TEXT_CORRUPTION_BRIBERY,
+		TEXT_CORRUPTION_BLACK_MARKET,
 		TEXT_CORRUPTION_SLAVERY
    </Corruption_Planet_Icon_Encyclopedia_Name>
    <Corruption_Planet_Icon_Encyclopedia_Desc>
-		TEXT_CORRUPTION_ASSASSINATION_ENCYCLOPEDIA
-		TEXT_CORRUPTION_PIRACY_ENCYCLOPEDIA
-		TEXT_CORRUPTION_KIDNAPPING_ENCYCLOPEDIA
-		TEXT_CORRUPTION_RACKETEERING_ENCYCLOPEDIA
-		TEXT_CORRUPTION_DRUG_DISTRIBUTION_ENCYCLOPEDIA
-		TEXT_CORRUPTION_BRIBERY_ENCYCLOPEDIA
-		TEXT_CORRUPTION_BLACK_MARKET_ENCYCLOPEDIA
+		TEXT_CORRUPTION_ASSASSINATION_ENCYCLOPEDIA,
+		TEXT_CORRUPTION_PIRACY_ENCYCLOPEDIA,
+		TEXT_CORRUPTION_KIDNAPPING_ENCYCLOPEDIA,
+		TEXT_CORRUPTION_RACKETEERING_ENCYCLOPEDIA,
+		TEXT_CORRUPTION_DRUG_DISTRIBUTION_ENCYCLOPEDIA,
+		TEXT_CORRUPTION_BRIBERY_ENCYCLOPEDIA,
+		TEXT_CORRUPTION_BLACK_MARKET_ENCYCLOPEDIA,
 		TEXT_CORRUPTION_SLAVERY_ENCYCLOPEDIA
    </Corruption_Planet_Icon_Encyclopedia_Desc>
 
