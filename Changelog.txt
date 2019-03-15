@@ -20,6 +20,15 @@ Whenever the AI is edited, it's not labeled based on specific changed units with
 =========================================================================================
 v1.2
 =========================================================================================
+There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT Changelog.txt" in the game directory to see!
+
+
+==================
+Factions
+==================
+-Empire – 
+
+-Rebellion/Empire – Modified factions file with some spacing changes (mainly conditionals).
 
 
 ==================
@@ -34,26 +43,54 @@ A.I. (Galactic Conquest)
 ==================
 Maps (Space)
 ==================
--Nal Hutta – Adjusted space station position so it points towards the attackers (for Empire/Consortium stations).
--Nal Hutta – Fixed 3 defense turrets not appearing for any faction (only appeared when the Black Sun Pirates held the planet).
--Nal Hutta – Fixed multiple asteroids and asteroid fields only appearing when Black Sun Pirates held the planet.
+**For space station adjustments (and what they mean), see update changelog 1.1!
+
+
+-Geonosis – Adjusted space station position.
+
+-Myrkr – Adjusted space station position.
+
+-Nal Hutta – Adjusted space station position.
 
 -Shola – Adjusted space station position.
--Shola – Fixed multiple asteroids and asteroid fields only appearing when Black Sun Pirates held the planet.
 
 
 ==================
 Units (Space)
 ==================
--Boba Fett – Attempted a unit re-code to fix an object contestation error, as reported in the main thread, since that's aparently how all the cool kids are handeling this issue.
-**I do wish to pursue a fix that doesn't involve a reorganization in the future.
+-Acclamator Assault Ship – Fixed build sounds for Underworld-built Acclamators (was Empire, now Underworld).
 
+-A-wing – Fixed build sounds for Underworld-built A-wings (was Rebel, now Underworld).
+-A-wing – Fixed Underworld-type A-wing being "good against"/"vulnerable to" own units. Replaced "Crusader_Gunship" with "Corellian_Corvette" and "Skipray_Blastboat" to "Y-wing."
+-A-wing – Updated original A-wing, gave squadron same "good against"/"vulnerable to" the FoC expansion gave individual units.
+
+-Boba Fett – Attempted a unit re-code to fix an object contestation error, as reported in the main thread, since that's aparently how all the cool kids are handling this issue.
+
+-Broadside-class Cruiser – Fixed build sounds for Underworld-built Broadsides (was Empire, now Underworld).
+
+-Corellian Corvette – Fixed build sounds for Underworld-built Corellian Corvettes (was Empire, now Underworld).
+
+-Marauder-class Cruiser – Fixed build sounds for Underworld-built Marauders (was Rebel, now Underworld).
+
+-Nebulon-B Frigate – Fixed build sounds for Underworld-built Nebulons (was Rebel, now Underworld).
+
+-Rouge Squadron – Changed conditionals back to "Wedge_XWing_Rouge."
+
+-Tartan Patrol Cruiser – Fixed build sounds for Underworld-built Tartans (was Empire, now Underworld).
+
+-TIE defender – Fixed build sounds for Underworld-built TIE defenders (was Empire, now Underworld).
 
 
 ==================
 Units (Galactic Conquest)
 ==================
--Kyle Katarn – Fixed improper spacing/defining in <Activated_Sabotage_Ability_Names>. No longer "Kyle_Katarn_Sabotage Saboteur_Galactic_Sabotage," now "Kyle_Katarn_Sabotage, Saboteur_Galactic_Sabotage". Should work now.
+-Kyle Katarn – Fixed improper defining in <Activated_Sabotage_Ability_Names>. No longer "Kyle_Katarn_Sabotage Saboteur_Galactic_Sabotage," now "Kyle_Katarn_Sabotage, Saboteur_Galactic_Sabotage". Should work now.
+
+
+==================
+Units (Land)
+==================
+-Canderous Assault Tank – Fixed amount of shots fired per-burst. The animation showed extra shots/recoil from the barrels, when in reality nothing shoots (leaving the tank shooting 2 times-per-fire with extra recoil). This has been fixed so the shot amounts line with the animation (shoots 4 times-a-pulse).
 
 
 =========================================================================================

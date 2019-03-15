@@ -329,8 +329,8 @@
 		<SFXEvent_Unit_Type_Spotted>Obi_Wan_Kenobi,						Unit_Announce_ObiWan_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
 		<SFXEvent_Unit_Type_Spotted>Generic_Field_Commander_Rebel,	Unit_Announce_R_Field_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
 		<SFXEvent_Unit_Type_Spotted>Han_Solo,								Unit_Announce_Solo_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
-    <SFXEvent_Unit_Type_Spotted>Darth_Vader,							Unit_Announce_Vader_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
-		<SFXEvent_Unit_Type_Spotted>Darth_Vader_Expansion,							Unit_Announce_Vader_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
+		<SFXEvent_Unit_Type_Spotted>Darth_Vader,							Unit_Announce_Vader_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
+		<SFXEvent_Unit_Type_Spotted>Darth_Vader_Expansion,					Unit_Announce_Vader_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
 		<SFXEvent_Unit_Type_Spotted>General_Veers,						Unit_Announce_Veers_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
 
         <SFXEvent_Unit_Type_Spotted>Tyber_Zann,		                    Unit_Announce_Tyber_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
@@ -339,7 +339,7 @@
         <SFXEvent_Unit_Type_Spotted>IG-88,                              Unit_Announce_IG88_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
         <SFXEvent_Unit_Type_Spotted>Urai_Fen,		                    Unit_Announce_Urai_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
         <SFXEvent_Unit_Type_Spotted>Silri,		                        Unit_Announce_Silri_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
-        <SFXEvent_Unit_Type_Spotted>Admonitor_Star_Destroyer,		        Unit_Announce_Thrawn_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
+        <SFXEvent_Unit_Type_Spotted>Admonitor_Star_Destroyer,		    Unit_Announce_Thrawn_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
         <SFXEvent_Unit_Type_Spotted>Executor_Super_Star_Destroyer,		Unit_Announce_Executor_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
         <SFXEvent_Unit_Type_Spotted>Yoda,		                        Unit_Announce_Yoda_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
         <SFXEvent_Unit_Type_Spotted>Luke_Skywalker_Jedi,		        Unit_Announce_Luke_Rebel_Soldier</SFXEvent_Unit_Type_Spotted>
@@ -643,6 +643,7 @@
 		<SpeechEvent_Tactical_Intro_Land_Attacker_Last_Location> GRS_INTRO_SPACE_ATTACK_R_05 </SpeechEvent_Tactical_Intro_Land_Attacker_Last_Location>
 		<SpeechEvent_Tactical_Intro_Land_Defender_Last_Location> GRS_INTRO_LAND_DEFEND_R_05 </SpeechEvent_Tactical_Intro_Land_Defender_Last_Location>
 
+												<!-- ALYMAR1994 (3/15/19) - THESE CONDITIONAL NOTES ARE OUT OF DATE FOR FoC! -->
 													<!-- Note that conditionals will be evaluated in the order below, so order/priority is important -->
 													<!-- -->  
 													<!-- Luke object types (4) : 		  	Luke_Skywalker, Luke_Team, Luke_XWing, Red_Squadron	-->
@@ -653,31 +654,39 @@
 													<!-- ...Conditional_Or:  A (or) B present and C not present											-->
 													<!-- ...Conditional_And: A (and) B present and C not present										-->
 													<!-- -->  
-													<!-- Conditionals: 	 		(A) Present, 			  	(B) Present, 		(C) Not Present		-->
+													<!-- Conditionals: (A) Present, (B) Present, (C) Not Present		-->
 
 		<!-- A and B present and C not present -->
-		<SpeechEvent_Tactical_Intro_Space_Defender_Conditional_And> Death_Star_II, 		  		Rogue_Squadron_Space, 	None, 				GRS_INTRO_SPACE_DEFEND_R_06 </SpeechEvent_Tactical_Intro_Space_Defender_Conditional_And> <!-- Death Star present, Luke present -->
+		<SpeechEvent_Tactical_Intro_Space_Defender_Conditional_And> Death_Star_II, Wedge_XWing_Rogue, None, GRS_INTRO_SPACE_DEFEND_R_06 </SpeechEvent_Tactical_Intro_Space_Defender_Conditional_And>
+		<!-- DS2 & WEDGE IN-BATTLE (SPACE DEFENSE) -->
 		
 		<!-- A or B present and C not present -->
-		<SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or>  Death_Star_II, 	  			None, 				Rogue_Squadron_Space, 	GRS_INTRO_SPACE_DEFEND_R_05 </SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or> <!-- Death Star present, Luke not present -->
+		<SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or> Death_Star_II, None, Wedge_XWing_Rogue, GRS_INTRO_SPACE_DEFEND_R_05 </SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or>
+		<!-- DS2 IN-BATTLE, WEDGE NOT (SPACE DEFENSE) -->
 		
 		<!-- A or B present and C not present -->
-		<SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or> 	Mon_Mothma, 	  			None, 				None, 				GRS_INTRO_SPACE_DEFEND_R_04 </SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or> <!-- Just Mon Mothma present -->
-		
+		<SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or> Mon_Mothma, None, None, GRS_INTRO_SPACE_DEFEND_R_04 </SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or>
+		<!-- MON MOTHMA IN-BATTLE (SPACE DEFEND) -->
+
 		<!-- A and B present and C not present -->
-		<SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_And> Death_Star_II,	 				Rogue_Squadron_Space, 	None, 				GRS_INTRO_SPACE_ATTACK_R_07 </SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_And> <!-- Death Star present, Luke present -->
+		<SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_And> Death_Star_II, Wedge_XWing_Rogue, None, GRS_INTRO_SPACE_ATTACK_R_07 </SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_And>
+		<!-- DS2 & WEDGE IN-BATTLE (SPACE ATTACK) -->
 		
 		<!-- A or B present and C not present -->
-		<SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or> 	Death_Star_II, 	 			None, 				Rogue_Squadron_Space,	GRS_INTRO_SPACE_ATTACK_R_06 </SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or> <!-- Death Star present, Luke not present -->
+		<SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or> Death_Star_II, None, Wedge_XWing_Rogue, GRS_INTRO_SPACE_ATTACK_R_06 </SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or>
+		<!-- DS2 IN-BATTLE, WEDGE NOT (SPACE ATTACK) -->
 	
 		<!-- A or B present and C not present -->
-		<SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or> 	Emperor_Palpatine, 		None, 				None, 				GRS_INTRO_SPACE_ATTACK_R_05 </SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or> <!-- Just Empoeror Palpatine present -->
+		<SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or> Emperor_Palpatine, None, None, GRS_INTRO_SPACE_ATTACK_R_05 </SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or>
+		<!-- PALPATINE IN-BATTLE (SPAC ATTACK) -->
 
 		<!-- A or B present and C not present -->
-		<SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or> 	Mon_Mothma, 				None, 				None, 				GRS_INTRO_SPACE_ATTACK_R_04 </SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or> <!-- Just Mon Mothma present -->
+		<SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or> Mon_Mothma, None, None, GRS_INTRO_SPACE_ATTACK_R_04 </SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or>
+		<!-- MON MOTHMA IN-BATTLE (SPACE ATTACK) -->
 		
 		<!-- A or B present and C not present -->
-		<SpeechEvent_Tactical_Intro_Land_Defender_Conditional_Or> 	Mon_Mothma, 				None, 				None, 				GRS_INTRO_LAND_DEFEND_R_04 </SpeechEvent_Tactical_Intro_Land_Defender_Conditional_Or> <!-- Just Mon Mothma present -->
+		<SpeechEvent_Tactical_Intro_Land_Defender_Conditional_Or> Mon_Mothma, None, None, GRS_INTRO_LAND_DEFEND_R_04 </SpeechEvent_Tactical_Intro_Land_Defender_Conditional_Or>
+		<!-- MON MOTHMA IN-BATTLE (LAND DEFEND) -->
 
 		<!-- End Sandbox tactical battle introduction SpeechEvents -->
 
@@ -789,7 +798,7 @@
 			Generic_Corrupt_Militia_Corruption_Upgrade,
 			Generic_Bribery_Corruption_Upgrade,
 			Generic_Black_Market_Corruption_Upgrade,
-			Generic_Bonded_Citizens_Corruption_Upgrade,
+			Generic_Bonded_Citizens_Corruption_Upgrade
 		</Automatic_Planetary_Corruption_Upgrade_Type>
 
 	</Faction>
@@ -1119,7 +1128,7 @@
 		<SFXEvent_Unit_Type_Spotted>Obi_Wan_Kenobi,						Unit_Announce_ObiWan_Storm_Trooper</SFXEvent_Unit_Type_Spotted>
 		<SFXEvent_Unit_Type_Spotted>Generic_Field_Commander_Rebel,	Unit_Announce_R_Field_Storm_Trooper</SFXEvent_Unit_Type_Spotted>
 		<SFXEvent_Unit_Type_Spotted>Han_Solo,								Unit_Announce_Solo_Storm_Trooper</SFXEvent_Unit_Type_Spotted>
-    <SFXEvent_Unit_Type_Spotted>Darth_Vader,							Unit_Announce_Vader_Storm_Trooper</SFXEvent_Unit_Type_Spotted>
+		<SFXEvent_Unit_Type_Spotted>Darth_Vader,							Unit_Announce_Vader_Storm_Trooper</SFXEvent_Unit_Type_Spotted>
 		<SFXEvent_Unit_Type_Spotted>Darth_Vader_Expansion,							Unit_Announce_Vader_Storm_Trooper</SFXEvent_Unit_Type_Spotted>
 		<SFXEvent_Unit_Type_Spotted>General_Veers,						Unit_Announce_Veers_Storm_Trooper</SFXEvent_Unit_Type_Spotted>
 
@@ -1421,6 +1430,7 @@
 		<SpeechEvent_Tactical_Intro_Land_Attacker_Last_Location> GES_INTRO_LAND_ATTACK_E_05 </SpeechEvent_Tactical_Intro_Land_Attacker_Last_Location>
 		<SpeechEvent_Tactical_Intro_Land_Defender_Last_Location> GES_INTRO_LAND_DEFEND_E_05 </SpeechEvent_Tactical_Intro_Land_Defender_Last_Location>
 
+													<!-- ALYMAR1994 (3/15/19) - THESE CONDITIONAL NOTES ARE OUT OF DATE FOR FoC! -->
 														<!-- Note that conditionals will be evaluated in the order below, so order/priority is important -->
 														<!-- -->  
 														<!-- Luke object types (4) : 		  	Luke_Skywalker, Luke_Team, Luke_XWing, Red_Squadron				-->
@@ -1431,22 +1441,27 @@
 														<!-- ...Conditional_Or:  A (or) B present - and C not present													-->
 														<!-- ...Conditional_And: A (and) B present - and C not present													-->
 														<!-- -->  
-														<!-- Conditionals:  		(A) Present, 				(B) Present,  	(C) Not Present -->
+														<!-- Conditionals: (A) Present, (B) Present, (C) Not Present -->
 	
 		<!-- A or B present and C not present -->
-		<SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or> Death_Star_II, 					None, 			None, 	GES_INTRO_SPACE_DEFEND_E_05 </SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or> <!-- Just Death Star present -->
+		<SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or> Death_Star_II, None, None, GES_INTRO_SPACE_DEFEND_E_05 </SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or>
+		<!-- DS2 IN-BATTLE (SPACE DEFEND) -->
 
 		<!-- A or B present and C not present-->
-		<SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or> Emperor_Palpatine, 		None, 			None, 	GES_INTRO_SPACE_DEFEND_E_04 </SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or> <!-- Just Emperor Palpatine present -->
+		<SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or> Emperor_Palpatine, None, None, GES_INTRO_SPACE_DEFEND_E_04 </SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or>
+		<!-- PAPA PALPY IN-BATTLE (SPACE DEFEND) -->
 			
 		<!-- A or B present and C not present -->
-		<SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or> Death_Star_II, 					None, 			None, 	GES_INTRO_SPACE_ATTACK_E_04 </SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or> <!-- Just Death Star present -->
+		<SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or> Death_Star_II, None, None, GES_INTRO_SPACE_ATTACK_E_04 </SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or>
+		<!-- DS2 IN-BATTLE (SPACE ATTACK) -->
 					
 		<!-- A or B present and C not present-->
-		<SpeechEvent_Tactical_Intro_Land_Defender_Conditional_Or>  Emperor_Palpatine,			None, 			None, 	GES_INTRO_LAND_DEFEND_E_05 </SpeechEvent_Tactical_Intro_Land_Defender_Conditional_Or> <!-- Just Emperor Palpatine present -->
+		<SpeechEvent_Tactical_Intro_Land_Defender_Conditional_Or> Emperor_Palpatine, None, None, GES_INTRO_LAND_DEFEND_E_05 </SpeechEvent_Tactical_Intro_Land_Defender_Conditional_Or>
+		<!-- PAPA PALPY IN-BATTLE (LAND DEFEND) -->
 					
 		<!-- A or B present and C not present-->
-		<SpeechEvent_Tactical_Intro_Land_Attacker_Conditional_Or>  Mon_Mothma,					None, 			None, 	GES_INTRO_LAND_ATTACK_E_04 </SpeechEvent_Tactical_Intro_Land_Attacker_Conditional_Or> <!-- Just Mon Mothma present -->
+		<SpeechEvent_Tactical_Intro_Land_Attacker_Conditional_Or> Mon_Mothma, None, None, GES_INTRO_LAND_ATTACK_E_04 </SpeechEvent_Tactical_Intro_Land_Attacker_Conditional_Or>
+		<!-- MON MOTHMA IN-BATTLE (LAND ATTACK) -->
 
 		<!-- End Sandbox tactical battle introduction SpeechEvents -->
 
@@ -1549,7 +1564,7 @@
 			Generic_Corrupt_Militia_Corruption_Upgrade,
 			Generic_Bribery_Corruption_Upgrade,
 			Generic_Black_Market_Corruption_Upgrade,
-			Generic_Bonded_Citizens_Corruption_Upgrade,
+			Generic_Bonded_Citizens_Corruption_Upgrade
 		</Automatic_Planetary_Corruption_Upgrade_Type>
 
 	</Faction>
