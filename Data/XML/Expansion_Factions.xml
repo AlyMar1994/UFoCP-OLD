@@ -50,10 +50,10 @@
 			Generic_Corrupt_Militia_Corruption_Upgrade,
 			Generic_Bribery_Corruption_Upgrade,
 			Generic_Black_Market_Corruption_Upgrade,
-			Generic_Bonded_Citizens_Corruption_Upgrade,
+			Generic_Bonded_Citizens_Corruption_Upgrade
 		</Automatic_Planetary_Corruption_Upgrade_Type>
 		<Displayed_Tech_Level_Adjustment> 0 </Displayed_Tech_Level_Adjustment>
-		<Infantry_Icon_Name>i_button_pirate_soldier.tga</Infantry_Icon_Name>
+		<Infantry_Icon_Name>i_button_ui_mercenary_infantry.tga</Infantry_Icon_Name>
 		<Vehicle_Icon_Name>i_r_vehicle.tga</Vehicle_Icon_Name>
 		<Carrier_Icon_Name>i_r_carrier.tga</Carrier_Icon_Name>
 		<Frigate_Icon_Name>i_r_frigate.tga</Frigate_Icon_Name>

@@ -24,14 +24,6 @@ There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT 
 
 
 ==================
-Factions
-==================
--Empire – 
-
--Rebellion/Empire – Modified factions file with some spacing changes (mainly conditionals).
-
-
-==================
 A.I. (Galactic Conquest)
 ==================
 -AI_Plan_ExpansionGeneric_RemoveCorruption – Fixed AI trying to call "Darth_Team" (EaW), and "Grand_Admiral_Thrawn_Team" (a non-existant political unit that originally was to replace Tarkin). Replaced Darth's with "Darth_Team_Expansion" (a team-tag added last update), and Thrawn's with "Admonitor_Star_Destroyer" to fix Vader and Thrawn's Remove Corruption ability.
@@ -39,6 +31,17 @@ A.I. (Galactic Conquest)
 
 
 -UpgradeStarbasePlan – Added all Rebel, Empire and Underworld starbases to the list of buildable/upgradable starbases. The A.I. will likely start building past Lvl. 1 or 2 now.
+
+
+==================
+Factions
+==================
+-Empire – 
+
+-Underworld – Fixed generic faction infantry icon (seen in battle prompt) being the Black Sun Pirates infantry instead of the generic infantry unit (Grenadier) for the Underworld.
+
+-Rebellion/Empire – Modified factions file with some spacing changes (mainly conditionals).
+
 
 ==================
 Maps (Space)
@@ -53,6 +56,12 @@ Maps (Space)
 -Nal Hutta – Adjusted space station position.
 
 -Shola – Adjusted space station position.
+
+
+==================
+Structures (Land)
+==================
+-Repulserlift Jammer – Fixed Underworld VO. Removed lines from queue that still imply Imperial use of the jammer, or that the Underworld destroys the jammer when owned (e.g., removed line "The Imperials are using a Gravity Well Generator!" when the Underworld is the only faction to use it).
 
 
 ==================
