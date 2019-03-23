@@ -26,11 +26,16 @@ There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT 
 ==================
 A.I. (Galactic Conquest)
 ==================
--AI_Plan_ExpansionGeneric_RemoveCorruption – Fixed AI trying to call "Darth_Team" (EaW), and "Grand_Admiral_Thrawn_Team" (a non-existant political unit that originally was to replace Tarkin). Replaced Darth's with "Darth_Team_Expansion" (a team-tag added last update), and Thrawn's with "Admonitor_Star_Destroyer" to fix Vader and Thrawn's Remove Corruption ability.
+-AI_Plan_ExpansionGeneric_RemoveCorruption – Fixed AI trying to call "Darth_Team" (EaW), and "Grand_Admiral_Thrawn_Team" (a non-existant political unit that originally replaced Tarkin). Replaced Darth's with "Darth_Team_Expansion" (a team-tag added last update), and Thrawn's with "Admonitor_Star_Destroyer" to fix Vader and Thrawn's Remove Corruption ability.
 **Thrawn's fix is still in testing, as it appears Thrawn doesn't have a team, just a unit definition as a "UniqueUnit" in his file.
 
+-DeathStarPlan – Modified GameObject plan to avoid "Rouge_Squadron_Space" (Rouge Squadron) instead of "Luke_Team" (Luke Skywalker).
 
 -UpgradeStarbasePlan – Added all Rebel, Empire and Underworld starbases to the list of buildable/upgradable starbases. The A.I. will likely start building past Lvl. 1 or 2 now.
+
+-BuildGroundForcesPlan – Removed commented units from update v1.1, and removed their reference from the file entirely so the game doesn't try to build non-existant units.
+-BuildSpaceForcesPlan – Removed added units from update v1.1.
+**This was a larger mistake on my end. I didn't use my decision-making skills effectively, and implemented these flavor changes stupidly. They have been corrected.
 
 
 ==================
@@ -99,7 +104,7 @@ Units (Galactic Conquest)
 ==================
 Units (Land)
 ==================
--Canderous Assault Tank – Fixed amount of shots fired per-burst. The animation showed extra shots/recoil from the barrels, when in reality nothing shoots (leaving the tank shooting 2 times-per-fire with extra recoil). This has been fixed so the shot amounts line with the animation (shoots 4 times-a-pulse).
+-Canderous Assault Tank – Fixed amount of shots fired per-burst. The animation showed extra shots/recoil from the barrels, when in reality nothing shoots (leaving the tank shooting 2 times-per-fire with extra recoil). This has been fixed so the shot amounts line with the animation (shoots 4 times-a-pulse instead of 2).
 
 
 =========================================================================================

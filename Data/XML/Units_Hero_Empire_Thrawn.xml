@@ -106,7 +106,7 @@
         <!-- Time it takes to remove corruption-->
         <Activation_Style>Ground_Activated</Activation_Style>
         <Causes_Despawn>No</Causes_Despawn>
-        <SFXEvent_Activate>RHD_Removing_Corruption</SFXEvent_Activate>
+        <SFXEvent_Activate>EHD_Removing_Corruption</SFXEvent_Activate>
       </Remove_Corruption_Ability>
 
     </Abilities>
@@ -347,6 +347,7 @@
         <Causes_Despawn>No</Causes_Despawn>
         <SFXEvent_Activate>EHD_Removing_Corruption</SFXEvent_Activate>
       </Remove_Corruption_Ability>
+	  
 
     </Abilities>
 

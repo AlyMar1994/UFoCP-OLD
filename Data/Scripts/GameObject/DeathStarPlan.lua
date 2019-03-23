@@ -1,4 +1,4 @@
--- $Id: //depot/Projects/StarWars_Expansion/Run/Data/Scripts/AI/BuildGroundForcesPlan.lua#4 $
+-- $Id: //depot/Projects/StarWars_Expansion/Run/Data/Scripts/GameObject/DeathStarPlan.lua#1 $
 --/////////////////////////////////////////////////////////////////////////////////////////////////
 --
 -- (C) Petroglyph Games, Inc.
@@ -25,41 +25,60 @@
 -- C O N F I D E N T I A L   S O U R C E   C O D E -- D O   N O T   D I S T R I B U T E
 --/////////////////////////////////////////////////////////////////////////////////////////////////
 --
---              $File: //depot/Projects/StarWars_Expansion/Run/Data/Scripts/AI/BuildGroundForcesPlan.lua $
+--              $File: //depot/Projects/StarWars_Expansion/Run/Data/Scripts/GameObject/DeathStarPlan.lua $
 --
---    Original Author: James Yarrow
+--    Original Author: Steve_Copeland
 --
---            $Author: James_Yarrow $
+--            $Author: Andre_Arsenault $
 --
---            $Change: 56727 $
+--            $Change: 37816 $
 --
---          $DateTime: 2006/10/24 14:14:26 $
+--          $DateTime: 2006/02/15 15:33:33 $
 --
---          $Revision: #4 $
+--          $Revision: #1 $
 --
 --/////////////////////////////////////////////////////////////////////////////////////////////////
 
-require("pgevents")
+require("HeroPlanAttach")
 
+-- Self Attachment plan is currently unused; the death star has a plan that names it in the task force
 
-function Definitions()	
-	Category = "Build_Ground_Forces"
-	IgnoreTarget = true
-	
-	TaskForce = {
-	{
-		"ReserveForce",
-		"Infantry = 0,2",
-		"Vehicle = 0,2",
-		"Air = 0,2"
+function Definitions()
+	DebugMessage("%s -- In Definitions", tostring(Script))
+
+	-- only join plans that meet our expense requirements.
+	MinPlanAttachCost = 50000
+	MaxPlanAttachCost = 0
+
+	-- Commander hit list.
+	Attack_Ability_Type_Names = { 
+		"Infantry", "Vehicle", "Air", "Structure",    		-- Attack these types.
+		"Rogue_Squadron_Space"  						-- Stay away from these types.
 	}
+	Attack_Ability_Weights = { 
+		1, 1, 1, 10,      				-- attack type weights.
+		BAD_WEIGHT 					-- feared type weights.
 	}
-	RequiredCategories = { "Vehicle" }
-	AllowFreeStoreUnits = false
+	Attack_Ability_Types = WeightedTypeList.Create()
+	Attack_Ability_Types.Parse(Attack_Ability_Type_Names, Attack_Ability_Weights)
+
+	-- Prefer task forces with these units.
+	Escort_Ability_Type_Names = {"Fighter", "Capital", "Frigate", "Super" }
+	Escort_Ability_Weights = { 1, 5, 4, 6 }
+	Escort_Ability_Types = WeightedTypeList.Create()
+	Escort_Ability_Types.Parse(Escort_Ability_Type_Names, Escort_Ability_Weights)
 end
 
-function ReserveForce_Thread()		
-	ReserveForce.Set_As_Goal_System_Removable(false)
-	BlockOnCommand(ReserveForce.Produce_Force())
-	ReserveForce.Set_Plan_Result(true)	
+function Evaluate_Attack_Ability(target, goal)
+	return Get_Target_Weight(target, Attack_Ability_Types, Attack_Ability_Weights)
 end
+
+function Get_Escort_Ability_Weights(goal)
+	return Escort_Ability_Types
+end
+
+function HeroService()
+
+end
+
+
