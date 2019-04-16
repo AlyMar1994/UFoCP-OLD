@@ -24,6 +24,7 @@ v1.2
 *Modified AT-AT description to match AT-ST's and AT-AA's.
 *Grammar fixes to campaign/normal speech texts (double-spacing, ect...).
 *Corrected some campaign/mission texts to accurately match the dialogue.
+*Fixed R2-D2's single-unit tooltip. R2 by himself isn't a "duo."
 
 
 ===================================================================================================

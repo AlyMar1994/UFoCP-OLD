@@ -2668,7 +2668,7 @@
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Text_ID>TEXT_HERO_DROID_R2D2</Text_ID>
 		<Land_Model_Name>RI_R2.ALO</Land_Model_Name>
-		<Icon_Name>i_button_c3po_r2d2.tga</Icon_Name>
+		<Icon_Name> I_BUTTON_R2D2.TGA </Icon_Name>
 
 		<GUI_Bracket_Width>5</GUI_Bracket_Width>
 		<GUI_Bracket_Height>0</GUI_Bracket_Height>
@@ -2835,20 +2835,13 @@
 	</HeroUnit>
 
 
-	<!-- NOTE: There are 4 game object XML entries to support the R2 & 3PO team and R2's special abilities (Galactic and Tactical) -->
-	<!-- "Droid_R2D2" in NamedHeroUnits.xml - the idivudual unit -->
-	<!-- "Droid_C3P0" in NamedHeroUnits.xml - the idivudual unit -->
-	<!-- "Droids_Team" in HeroCompnaies.xml -->
-	<!-- "Tactical_R2_3PO_Team" in Containers.xml (has actual framework for tactical special abilities) -->
-
-
-
 	<HeroUnit Name="Droid_C3P0">
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Text_ID>TEXT_HERO_DROID_C3P0</Text_ID>
 		<Land_Model_Name>RI_C3PO.ALO</Land_Model_Name>
 		<!-- Leave icon name blank so only 1 icon shows up for R2 and 3PO -->
-		<Icon_Name /> 
+		<!-- ALYMAR1994 (3/23/19) - THE ABOVE STATEMENT IS WRONG (partially)! Adding C-3PO's icon to fix blank icon issue. -->
+		<Icon_Name> I_BUTTON_C3PO.TGA </Icon_Name>
 
 		<GUI_Bracket_Width>5</GUI_Bracket_Width>
 		<GUI_Bracket_Height>0</GUI_Bracket_Height>
@@ -2928,7 +2921,7 @@
 		<Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
 		<AI_Combat_Power>10</AI_Combat_Power>
 
-		<Encyclopedia_Text> TEXT_TOOLTIP_R2D2 TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
+		<Encyclopedia_Text> TEXT_TOOLTIP_C3P0 TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DROID </Encyclopedia_Unit_Class>
 		<Score_Cost_Credits> 0 </Score_Cost_Credits>
 

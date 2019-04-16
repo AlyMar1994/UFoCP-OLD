@@ -599,7 +599,7 @@
 		<Score_Cost_Credits> 10000 </Score_Cost_Credits>
 	</HeroCompany>
 
-  <HeroCompany Name="Darth_Team_Expansion">
+	<HeroCompany Name="Darth_Team_Expansion">
     <Text_ID>TEXT_HERO_VADER_TEAM</Text_ID>
     <Icon_Name>i_button_darth_vader.tga</Icon_Name>
     <Is_Dummy>Yes</Is_Dummy>
@@ -1345,7 +1345,8 @@
 		<CategoryMask>LandHero</CategoryMask>
 		<Ranking_In_Category> 3 </Ranking_In_Category>
 	</HeroCompany>
-	
+
+
 	<HeroCompany Name="Rebel_Refugee_Team">
 		<GUI_Row>1</GUI_Row>
 		<Text_ID>TEXT_UNIT_REBEL_REFUGEE</Text_ID>

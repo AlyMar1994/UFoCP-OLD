@@ -1512,7 +1512,7 @@
 		<Text_ID>TEXT_HERO_DROIDS_TEAM</Text_ID>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DROID </Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
-		<Show_Name>No</Show_Name>
+		<Show_Name>Yes</Show_Name>
 
 		<Behavior> TEAM, UNIT_AI </Behavior>
 		<LandBehavior> SELECTABLE,  REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, ABILITY_COUNTDOWN, GARRISON_UNIT </LandBehavior>
@@ -1601,23 +1601,23 @@
 				<!-- NOTE: we'll specify Empire units here since we want them be repaired when they are hacked -->
 				<!-- NOTE: allso add captured clones of empire vehicles (vehicle thief ability) -->
 				<Applicable_Unit_Types>  
-					MPTL
-					T2B_Tank
-					T4B_Tank
-					Rebel_Anti_Aircraft_Turret
-					Rebel_Anti_Infantry_Turret
-					Rebel_Anti_Vehicle_Turret
-					Empire_Anti_Aircraft_Turret     
-					Empire_Anti_Infantry_Turret 
-					Empire_Anti_Vehicle_Turret 		
-					Pirate_Skiff_Captured
-					M1_Repulsor_Tank_00_Captured
-					M1_Repulsor_Tank_Captured
-					TIE_Crawler_Captured
-					SPMAT_Walker_Captured
-					AT_AA_Walker_Captured
-					AT_AT_Walker_Captured		
-					AT_ST_Walker_Captured	
+					MPTL,
+					T2B_Tank,
+					T4B_Tank,
+					Rebel_Anti_Aircraft_Turret,
+					Rebel_Anti_Infantry_Turret,
+					Rebel_Anti_Vehicle_Turret,
+					Empire_Anti_Aircraft_Turret,  
+					Empire_Anti_Infantry_Turret,
+					Empire_Anti_Vehicle_Turret,
+					Pirate_Skiff_Captured,
+					M1_Repulsor_Tank_00_Captured,
+					M1_Repulsor_Tank_Captured,
+					TIE_Crawler_Captured,
+					SPMAT_Walker_Captured,
+					AT_AA_Walker_Captured,
+					AT_AT_Walker_Captured,
+					AT_ST_Walker_Captured,
 					Swamp_Speeder_Captured	
 				</Applicable_Unit_Types>
 				

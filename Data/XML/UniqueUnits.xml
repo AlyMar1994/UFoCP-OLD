@@ -2570,7 +2570,7 @@
 		<Energy_Capacity>2500</Energy_Capacity>
 		<Energy_Refresh_Rate>200</Energy_Refresh_Rate>
 		<Ship_Class>Corvette</Ship_Class>
-		<Is_Escort>np</Is_Escort>
+		<Is_Escort>no</Is_Escort>
 		<Is_Bomber>no</Is_Bomber>
 		<Political_Control>0</Political_Control>
 		<Squadron_Capacity>0</Squadron_Capacity>

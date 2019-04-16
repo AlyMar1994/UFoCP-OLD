@@ -570,18 +570,18 @@
    <Min_Accuracy_For_Icon> 0.4 </Min_Accuracy_For_Icon>
    <Min_Sight_Range_For_Icon> 0.5 </Min_Sight_Range_For_Icon>
 
-   <Left_Queue_Tint>128 128 255 215</Left_Queue_Tint>
-   <Right_Queue_Tint>255 128 128 215</Right_Queue_Tint>
+   <Left_Queue_Tint>128, 128, 255, 215</Left_Queue_Tint>
+   <Right_Queue_Tint>255, 128, 128, 215</Right_Queue_Tint>
 
 	<Icons_Per_Column>13</Icons_Per_Column>
 
-	<Hint_Text_Color>0 193 91</Hint_Text_Color>
-	<System_Text_Color>255 24 39</System_Text_Color>
-	<Task_Text_Color>109 247 255</Task_Text_Color>
-	<Speech_Text_Color>255 255 255</Speech_Text_Color>
+	<Hint_Text_Color>0, 193, 91</Hint_Text_Color>
+	<System_Text_Color>255, 24, 39</System_Text_Color>
+	<Task_Text_Color>109, 247, 255</Task_Text_Color>
+	<Speech_Text_Color>255, 255, 255</Speech_Text_Color>
 
-	<CB_Movie_Offset>0 200</CB_Movie_Offset>
-	<CB_Movie_Color>255 255 255 220</CB_Movie_Color>
+	<CB_Movie_Offset>0, 200</CB_Movie_Offset>
+	<CB_Movie_Color>255, 255, 255, 220</CB_Movie_Color>
 
 	<!-- Top left positions of vertical countdown timers list - like production, retreat, death star range, -->
 	<!-- Note: There could be mutliple timers simultaneously in a vertical list -->
@@ -772,7 +772,7 @@
 
 	<Auto_Rotate_For_Space_Targeting>False</Auto_Rotate_For_Space_Targeting>
 
-	<In_Game_Cinematics>True</In_Game_Cinematics>	
+	<In_Game_Cinematics>True</In_Game_Cinematics>
 	<Display_Bink_Movie_Frames>False</Display_Bink_Movie_Frames>  
 
 	<!-- Global speed modifier to everything with engines, and when they are destroyed -->

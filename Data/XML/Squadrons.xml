@@ -88,7 +88,7 @@
 		<GUI_Row> 1 </GUI_Row>
 		<Is_Dummy>Yes</Is_Dummy>
 		<Formation_Priority>2</Formation_Priority>
-		<Is_Escort>Nos</Is_Escort>
+		<Is_Escort>No</Is_Escort>
 		<Is_Bomber>yes</Is_Bomber>
 		<Autoresolve_Health>200</Autoresolve_Health>
 		<Damage>15</Damage>
