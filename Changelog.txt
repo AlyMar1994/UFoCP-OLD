@@ -41,8 +41,6 @@ A.I. (Galactic Conquest)
 ==================
 Factions
 ==================
--Empire – 
-
 -Underworld – Fixed generic faction infantry icon (seen in battle prompt) being the Black Sun Pirates infantry instead of the generic infantry unit (Grenadier) for the Underworld.
 
 -Rebellion/Empire – Modified factions file with some spacing changes (mainly conditionals).
@@ -67,6 +65,8 @@ Maps (Space)
 Structures (Land)
 ==================
 -Repulserlift Jammer – Fixed Underworld VO. Removed lines from queue that still imply Imperial use of the jammer, or that the Underworld destroys the jammer when owned (e.g., removed line "The Imperials are using a Gravity Well Generator!" when the Underworld is the only faction to use it).
+
+-Turbolaser Towers – Fixed Underworld VO for use of Skirmish turbolaser towers. Changed from Rebel VO to Underworld VO.
 
 
 ==================
@@ -98,6 +98,27 @@ Units (Space)
 
 -Y-wing – Fixed squadron "Is_Escort" type being "Nos" instead of "no."
 
+==================
+Units (Land)
+==================
+-Canderous Assault Tank – Fixed amount of shots fired per-burst. The animation showed extra shots/recoil from the barrels, when in reality nothing shoots (leaving the tank shooting 2 times-per-fire with extra recoil). This has been fixed so the shot amounts line with the animation (shoots 4 times-a-pulse instead of 2).
+
+-General Veers – Added an extra death clone for when killed by a Snowspeeder cable attack.
+
+-General Veers – Modified death clones with the "IMPOSING_PRESENCE" behavior (and presence range), so Rebel Infantry units now respond properly with their "celebrate" "presence induced animation."
+
+-Imperial Guard(s) – Fixed "presence induced animations" (i.e. standing at attention) in-front of Darth Vader, by adding the "Darth_Vader_Expansion" (FoC) tag with the original "Darth_Vader" (EaW).
+
+-Rebel Infantry – Fixed "presence induced animations" for General Veers (Empire hero AT-AT) by adding death clones to "celebrate" animations.
+
+-Rebel PLEX – Fixed "presence induced animations" for General Veers' dead AT-AT.
+
+-Scout Troopers – Fixed "presence induced animations" for "Darth_Vader_Expansion."
+
+-Snowspeeder – Fixed Veers's AT-AT not being targetable. Added Veers's AT-AT walker to the tow-cable-attack ability, so the speeder can properly target him.
+
+-Stormtrooper(s) – Fixed "presence induced animations" for "Darth_Vader_Expansion."
+
 
 ==================
 Units (Galactic Conquest)
@@ -109,12 +130,6 @@ Units (Galactic Conquest)
 **An unintended side-effect of these changes now makes it so R2-D2 and C-3P0 are now seperate units on the hero-bar at the top of the screen. The units still are their combined team, and lead to the same single-unit, but they appear as seperate units on the command bar with seperate tool-tips and images. This is the opposite when they die/are stealing technology, as they combine into a single icon again.
 
 -Kyle Katarn – Fixed improper defining in <Activated_Sabotage_Ability_Names>. No longer "Kyle_Katarn_Sabotage Saboteur_Galactic_Sabotage," now "Kyle_Katarn_Sabotage, Saboteur_Galactic_Sabotage". Should work now.
-
-
-==================
-Units (Land)
-==================
--Canderous Assault Tank – Fixed amount of shots fired per-burst. The animation showed extra shots/recoil from the barrels, when in reality nothing shoots (leaving the tank shooting 2 times-per-fire with extra recoil). This has been fixed so the shot amounts line with the animation (shoots 4 times-a-pulse instead of 2).
 
 
 =========================================================================================
