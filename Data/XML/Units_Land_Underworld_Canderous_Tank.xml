@@ -62,7 +62,7 @@
 		<Turret_Targets_Anything_Else> 4 </Turret_Targets_Anything_Else>
 
 		<Projectile_Types>Proj_Mass_Driver_Tank</Projectile_Types>
-		<Projectile_Fire_Pulse_Count>4</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Count>3</Projectile_Fire_Pulse_Count>
 		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
 		<Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
 		

@@ -2534,6 +2534,7 @@
 		<Targeting_Min_Attack_Distance> 100 </Targeting_Min_Attack_Distance>
 		
 		<Ranged_Target_Z_Adjust>20.0</Ranged_Target_Z_Adjust>
+		<Projectile_Types>Proj_Ground_Turbolaser_Green</Projectile_Types>
 		<Projectile_Damage>125.0</Projectile_Damage>
 		<Projectile_Fire_Recharge_Seconds>2.0</Projectile_Fire_Recharge_Seconds>
 		<Projectile_Fire_Pulse_Count>4</Projectile_Fire_Pulse_Count>
@@ -2634,7 +2635,6 @@
 		<Obstacle_Proxy_Type> E_Ground_Turbolaser_Tower_Build_Pad </Obstacle_Proxy_Type>
 
 		<Affiliation>Empire</Affiliation>
-		<Projectile_Types>Proj_Ground_Turbolaser_Green</Projectile_Types>
 
 		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
 		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
@@ -2651,7 +2651,6 @@
 		<Obstacle_Proxy_Type> R_Ground_Turbolaser_Tower_Build_Pad </Obstacle_Proxy_Type>
 
 		<Affiliation>Rebel</Affiliation>
-		<Projectile_Types>Proj_Ground_Turbolaser_Red</Projectile_Types>
 
 		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
 		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
@@ -2668,7 +2667,6 @@
 		<Obstacle_Proxy_Type> U_Ground_Turbolaser_Tower_Build_Pad </Obstacle_Proxy_Type>
 
 		<Affiliation>Underworld</Affiliation>
-		<Projectile_Types>Proj_Ground_Turbolaser_Red</Projectile_Types>
 
 		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
 		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>

@@ -114,7 +114,7 @@
 
 		<Bombardment_Shadow_Blob_Material_Name> Bombardment_Rebel </Bombardment_Shadow_Blob_Material_Name>
 		<Bombardment_Blob_Size> 250.0 </Bombardment_Blob_Size>
-		<Bombardment_Required_Orbital_Ships> Calamari_Cruiser, Nebulon_B_Frigate, Alliance_Assault_Frigate, Home_One </Bombardment_Required_Orbital_Ships>
+		<Bombardment_Required_Orbital_Ships> Calamari_Cruiser, Home_One </Bombardment_Required_Orbital_Ships>
 		<Bombardment_Projectile> Proj_Rebel_Bombardment_Ion_Cannon </Bombardment_Projectile>
 		<Bombardment_Number_Of_Salvos> 2 </Bombardment_Number_Of_Salvos>
 		<Bombardment_Shots_Per_Salvo> 8 </Bombardment_Shots_Per_Salvo>
