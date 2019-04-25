@@ -12,10 +12,10 @@ For any corruption mission briefings that are edited, their tooltips for the men
 ===================================================================================================
 v1.2
 ===================================================================================================
-*Fixed all campaign pre-mission monologues; double spaced them since they were in the majority (compared to that which wasn't)
+*Fixed all campaign pre-mission monologues; double spaced them since they were in the majority (compared to that which wasn't).
 *Fixed all single-player campaign mission holocron objectives. Mass period-placing, capitalization corrections, and other edits.
-*Due to huge majority (from which I hadn't realized the last few updates), all "*CHARACTER* Must Survive" texts will be de-capitalized/period'd.
-*Fixed all bounty hunter texts; "bounty hunter" is no longer capitalized (and other titles, "field commander," ect...).
+*Due to a huge majority (from which I hadn't realized the last few updates), all "*CHARACTER* Must Survive" texts will be de-capitalized/period'd.
+*Fixed all bounty hunter texts; "bounty hunter" is no longer capitalized (and other titles that aren't proper in their context, "field commander," ect...).
 *Due to ignorance of species-capitalization, all species name (like "rancor") will now begin to be de-capitalized.
 *De-capitalized upgrade tooltips for improper nouns (e.g. "Fighters," "Infantry").
 *Corrected garrison texts to include a period after sentence (match with the rest).
