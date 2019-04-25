@@ -1,7 +1,7 @@
 ----
-Fixes are marked with an asterisk (*), followed by the "original" text and after the "fixed" text (marked with "O" and "F"). If an explanation is required (or extra info included), it's expanded upon with a double-asterisk (**).
+Fixes are marked with an asterisk (*). If an explanation is required (or extra info included), it's expanded upon with a double-asterisk (**).
 
-THESE EDITS FOLLOW THE STANDARDS OF AMERICAN ENGLISH! Odd spacing is not changed in these edits, as that was intended (unless it is extremely jarring, like sex-tupple spacing in the middle of a paragraph). The double-space seperating "Our Defiler" and the triple-space at the end of the corruption dialogs stay.
+THESE EDITS FOLLOW THE STANDARDS OF AMERICAN ENGLISH! (Yes, I am a filthy American) Odd spacing is not changed in these edits, as that was intended (unless it is extremely jarring, like sex-tupple spacing in the middle of a paragraph). The double-space seperating "Our Defiler" and the triple-space at the end of the corruption dialogs stay.
 
 Last of note, I am a human being and I make mistakes. Please point out text errors in-game through bug reporting!
 ----
@@ -10,7 +10,25 @@ For any corruption mission briefings that are edited, their tooltips for the men
 
 
 ===================================================================================================
-v1.1 - 11/1/18 START
+v1.2
+===================================================================================================
+*Fixed all campaign pre-mission monologues; double spaced them since they were in the majority (compared to that which wasn't).
+*Fixed all single-player campaign mission holocron objectives. Mass period-placing, capitalization corrections, and other edits.
+*Due to a huge majority (from which I hadn't realized the last few updates), all "*CHARACTER* Must Survive" texts will be de-capitalized/period'd.
+*Fixed all bounty hunter texts; "bounty hunter" is no longer capitalized (and other titles that aren't proper in their context, "field commander," ect...).
+*Due to ignorance of species-capitalization, all species name (like "rancor") will now begin to be de-capitalized.
+*De-capitalized upgrade tooltips for improper nouns (e.g. "Fighters," "Infantry").
+*Corrected garrison texts to include a period after sentence (match with the rest).
+*De-capitalized more instances of "dark Force" and "emperor."
+*Fixed descriptions of anti-vehicle, anti-infantry and anti-aircraft turrets being capitalized/mispelled.
+*Modified AT-AT description to match AT-ST's and AT-AA's.
+*Grammar fixes to campaign/normal speech texts (double-spacing, ect...).
+*Corrected some campaign/mission texts to accurately match the dialogue.
+*Fixed R2-D2's single-unit tooltip. R2 by himself isn't a "duo."
+
+
+===================================================================================================
+v1.1
 ===================================================================================================
 ---
 
@@ -461,16 +479,6 @@ F: "Advanced..."
 ----
 
 *TEXT_UNIT_MOBILE_DEFENSE_UNIT_EMPIRE/REBEL/UNDERWORLD - Added periods to complete the sentence.
-
-----
-
-*
-
-O: ""
-
-F: ""
-
-----
 
 ===================================================================================================
 

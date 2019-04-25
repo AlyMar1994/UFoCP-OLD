@@ -50,15 +50,15 @@
 			Generic_Corrupt_Militia_Corruption_Upgrade,
 			Generic_Bribery_Corruption_Upgrade,
 			Generic_Black_Market_Corruption_Upgrade,
-			Generic_Bonded_Citizens_Corruption_Upgrade,
+			Generic_Bonded_Citizens_Corruption_Upgrade
 		</Automatic_Planetary_Corruption_Upgrade_Type>
 		<Displayed_Tech_Level_Adjustment> 0 </Displayed_Tech_Level_Adjustment>
-		<Infantry_Icon_Name>i_button_pirate_soldier.tga</Infantry_Icon_Name>
+		<Infantry_Icon_Name>i_button_ui_mercenary_infantry.tga</Infantry_Icon_Name>
 		<Vehicle_Icon_Name>i_r_vehicle.tga</Vehicle_Icon_Name>
 		<Carrier_Icon_Name>i_r_carrier.tga</Carrier_Icon_Name>
 		<Frigate_Icon_Name>i_r_frigate.tga</Frigate_Icon_Name>
 		<Corvette_Icon_Name>i_r_corvette.tga</Corvette_Icon_Name>
-		<Fighter_Icon_Name>i_button_virago.tga</Fighter_Icon_Name>
+		<Fighter_Icon_Name>i_button_uv_starviper.tga</Fighter_Icon_Name>
 		<Tech_Tree_Dialog_Name>IDD_TECH_TREE_BLACKMARKET</Tech_Tree_Dialog_Name>
 		<Helper_Icon_Name>i_underworld_help_droid.tga</Helper_Icon_Name>
 		<Space_Retreat_Countdown_Seconds> 4.99 </Space_Retreat_Countdown_Seconds>
@@ -288,8 +288,8 @@
 		<SFXEvent_Unit_Type_Spotted>Obi_Wan_Kenobi,						Unit_Announce_ObiWan_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
 		<SFXEvent_Unit_Type_Spotted>Generic_Field_Commander_Rebel,	    Unit_Announce_Enemy_Field_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
 		<SFXEvent_Unit_Type_Spotted>Han_Solo,							Unit_Announce_Solo_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
-    <SFXEvent_Unit_Type_Spotted>Darth_Vader,						Unit_Announce_Vader_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
-		<SFXEvent_Unit_Type_Spotted>Darth_Vader_Expansion,						Unit_Announce_Vader_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
+		<SFXEvent_Unit_Type_Spotted>Darth_Vader,						Unit_Announce_Vader_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
+		<SFXEvent_Unit_Type_Spotted>Darth_Vader_Expansion,				Unit_Announce_Vader_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
 		<SFXEvent_Unit_Type_Spotted>General_Veers,						Unit_Announce_Veers_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
 
         <SFXEvent_Unit_Type_Spotted>Tyber_Zann,		                    Unit_Announce_Tyber_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
@@ -298,7 +298,7 @@
         <SFXEvent_Unit_Type_Spotted>IG-88,                              Unit_Announce_IG88_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
 
         <SFXEvent_Unit_Type_Spotted>Silri,		                        Unit_Announce_Silri_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
-        <SFXEvent_Unit_Type_Spotted>Admonitor_Star_Destroyer,		        Unit_Announce_Thrawn_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
+        <SFXEvent_Unit_Type_Spotted>Admonitor_Star_Destroyer,		    Unit_Announce_Thrawn_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
         <SFXEvent_Unit_Type_Spotted>Executor_Super_Star_Destroyer,		Unit_Announce_Executor_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
         <SFXEvent_Unit_Type_Spotted>Yoda,		                        Unit_Announce_Yoda_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
         <SFXEvent_Unit_Type_Spotted>Luke_Skywalker_Jedi,		        Unit_Announce_Luke_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>

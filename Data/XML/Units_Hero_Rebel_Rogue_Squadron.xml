@@ -77,7 +77,7 @@
 				<Type>POWER_TO_WEAPONS</Type>
 				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.50f</Mod_Multiplier>
 				<Mod_Multiplier>SPEED_MULTIPLIER, 2</Mod_Multiplier>
-				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER , 2.5</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 2.5</Mod_Multiplier>
 				<Recharge_Seconds>60</Recharge_Seconds>
 				<Expiration_Seconds>10</Expiration_Seconds>
 				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_STRIKE_NAME</Alternate_Name_Text>
@@ -273,7 +273,7 @@
 				<Type>POWER_TO_WEAPONS</Type>
 				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.50f</Mod_Multiplier>
 				<Mod_Multiplier>SPEED_MULTIPLIER, 2</Mod_Multiplier>
-				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER , 2.5</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 2.5</Mod_Multiplier>
 				<Recharge_Seconds>60</Recharge_Seconds>
 				<Expiration_Seconds>10</Expiration_Seconds>
 				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_STRIKE_NAME</Alternate_Name_Text>
@@ -370,7 +370,7 @@
 				<Type>POWER_TO_WEAPONS</Type>
 				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.50f</Mod_Multiplier>
 				<Mod_Multiplier>SPEED_MULTIPLIER, 2</Mod_Multiplier>
-				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER , 2.5</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 2.5</Mod_Multiplier>
 				<Recharge_Seconds>50</Recharge_Seconds>
 				<Expiration_Seconds>8</Expiration_Seconds>
 				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_STRIKE_NAME</Alternate_Name_Text>

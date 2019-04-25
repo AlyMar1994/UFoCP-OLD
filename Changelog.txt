@@ -18,6 +18,129 @@ Whenever the AI is edited, it's not labeled based on specific changed units with
 
 
 =========================================================================================
+v1.2
+=========================================================================================
+There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT Changelog.txt" in the game directory to see!
+
+
+==================
+A.I. (Galactic Conquest)
+==================
+-AI_Plan_ExpansionGeneric_RemoveCorruption – Fixed AI trying to call "Darth_Team" (EaW), and "Grand_Admiral_Thrawn_Team" (a cut political unit that originally replaced Tarkin). Replaced Vader's with "Darth_Team_Expansion" (a team-tag added last update), and Thrawn's with "Admonitor_Star_Destroyer" to fix Vader and Thrawn's Remove Corruption AI.
+
+-DeathStarPlan – Modified GameObject plan to avoid "Rouge_Squadron_Space" (Rouge Squadron) instead of "Luke_Team" (Luke Skywalker).
+
+-UpgradeStarbasePlan – Added all Rebel, Empire and Underworld starbases to the list of buildable/upgradable starbases. The A.I. will likely start building past Lvl. 1 or 2 now.
+
+-BuildGroundForcesPlan – Removed commented units from update v1.1, and removed their reference from the file entirely so the game doesn't try to build non-existant units.
+-BuildSpaceForcesPlan – Removed added units from update v1.1.
+**This was a larger mistake on my end. I didn't use my decision-making skills effectively, and implemented these flavor changes. They have been corrected.
+
+
+==================
+Factions
+==================
+-Rebels – Fixed faction-based orbital ion bombardment. Since the Alliance Assault Frigate nor the Nebulon-B Frigates have ion cannons (just lasers/turbolasers), they have been removed from the list of units that can start a Rebel ion bombardment (the only remaining units are the Home One and the Mon Calamari Cruiser).
+
+-Underworld – Fixed generic faction infantry icon (seen in battle prompt) being the Black Sun Pirates infantry instead of the generic infantry unit (Grenadier) for the Underworld.
+-Underworld – Fixed generic faction fighter icon being an unused fighter named "Virago" to the Starviper Fighter.
+
+-Rebels/Empire – Modified factions file with some spacing changes (mainly conditionals).
+
+
+==================
+Maps (Space)
+==================
+**For space station adjustments (and what they mean), see update changelog 1.1!
+
+
+-Geonosis – Adjusted space station position.
+
+-Myrkr – Adjusted space station position.
+
+-Nal Hutta – Adjusted space station position.
+
+-Shola – Adjusted space station position.
+
+
+==================
+Structures (Land)
+==================
+-Repulserlift Jammer – Fixed Underworld VO. Removed lines from queue that still imply Imperial use of the jammer, or that the Underworld destroys the jammer when owned (e.g., removed line "The Imperials are using a Gravity Well Generator!" when the Underworld is the only faction to use it).
+
+-Turbolaser Towers – Fixed Underworld VO for use of Skirmish turbotowers. Changed from Rebel VO to Underworld VO.
+-Turbolaser Towers – Fixed Rebel and Underworld turbotower laser color. Muzzle flash was green, laser red (laser has now been made green in the base template, as the muzzle flash can't be changed).
+
+
+==================
+Units (Space)
+==================
+-Acclamator Assault Ship – Fixed build sounds for Underworld-built Acclamators (was Empire, now Underworld).
+
+-A-wing – Fixed build sounds for Underworld-built A-wings (was Rebel, now Underworld).
+-A-wing – Fixed Underworld-type A-wing being "good against"/"vulnerable to" own faction's units. Replaced "Crusader_Gunship" with "Corellian_Corvette" and "Skipray_Blastboat" to "Y-wing."
+-A-wing – Updated original A-wing, gave squadron same "good against"/"vulnerable to" the FoC expansion gave individual units.
+-A-wing – Fixed A-wing attack sounds; A-wings now comment when attacking hanger bays.
+
+-Boba Fett – Attempted a unit re-code to fix an object contestation error (grossly named "Boba Mine Glitch"), as reported in the main thread, since that's aparently how all the cool kids are handling this issue.
+
+-Broadside-class Cruiser – Fixed build sounds for Underworld-built Broadsides (was Empire, now Underworld).
+
+-Corellian Corvette – Fixed build sounds for Underworld-built Corellian Corvettes (was Empire, now Underworld).
+
+-Marauder-class Cruiser – Fixed build sounds for Underworld-built Marauders (was Rebel, now Underworld).
+
+-Moldy Crow (Kyle Katarn) – Fixed "Is_Escort" indicator being "np" instead of "no."
+
+-Nebulon-B Frigate – Fixed build sounds for Underworld-built Nebulons (was Rebel, now Underworld).
+
+-Rouge Squadron – Changed conditionals back to "Wedge_XWing_Rouge."
+
+-Tartan Patrol Cruiser – Fixed build sounds for Underworld-built Tartans (was Empire, now Underworld).
+
+-TIE defender – Fixed build sounds for Underworld-built TIE defenders (was Empire, now Underworld).
+
+-Tyber Zann – Fixed Zann's attack sounds; Zann now comments when attacking hanger bays and gravity-control-generators.
+
+-Y-wing – Fixed squadron "Is_Escort" type being "Nos" instead of "no."
+
+==================
+Units (Land)
+==================
+-Canderous Assault Tank – Fixed amount of shots fired per-burst. The animation showed extra shots/recoil from the barrels, when in reality nothing shoots (leaving the tank shooting 2 times-per-fire with extra recoil). This has been fixed so the shot amounts line with the animation (shoots 3 times-a-pulse instead of 2).
+
+-General Veers – Added an extra death clone for when killed by a Snowspeeder cable attack.
+-General Veers – Modified death clones with the "IMPOSING_PRESENCE" behavior (and presence range), so Rebel Infantry units now respond properly with their "celebrate" "presence induced animation."
+
+-Imperial Guard(s) – Fixed "presence induced animations" (i.e. standing at attention) in-front of Darth Vader, by adding the "Darth_Vader_Expansion" (FoC) tag with the original "Darth_Vader" (EaW).
+
+-Rebel Infantry – Fixed "presence induced animations" for General Veers (Empire hero AT-AT) by adding death clones to Rebel "celebrate" animations.
+
+-Rebel PLEX – Fixed "presence induced animations" for General Veers' dead AT-AT.
+
+-Scout Troopers – Fixed "presence induced animations" for "Darth_Vader_Expansion."
+
+-Snowspeeder – Fixed Veers's AT-AT not being targetable. Added Veers's AT-AT walker to the tow-cable-attack ability, so the speeder can properly target him.
+
+-Stormtrooper(s) – Fixed "presence induced animations" for "Darth_Vader_Expansion."
+
+
+==================
+Units (Galactic Conquest)
+==================
+-C-3P0 – Fixed unit tooltip using R2-D2's instead of his own.
+-C-3P0 – Fixed C-3P0 not having a unit icon (Petroglyph assumed R2 having an icon would give 3PO one). Gave C-3PO his own special icon.
+
+-R2-D2 – Fixed R2-D2's unit using both 3P0's and R2's icon instead of using their individual icons (hold over from copy+paste of unit container).
+**An unintended side-effect of these changes now makes it so R2-D2 and C-3P0 are now seperate units on the hero-bar at the top of the screen. The units still are their combined team, and lead to the same single-unit, but they appear as seperate units on the command bar with seperate tool-tips and images. This is the opposite when they die/are stealing technology, as they combine into a single icon again.
+
+-Kyle Katarn – Fixed improper defining in <Activated_Sabotage_Ability_Names>. No longer "Kyle_Katarn_Sabotage Saboteur_Galactic_Sabotage," now "Kyle_Katarn_Sabotage, Saboteur_Galactic_Sabotage".
+
+
+=========================================================================================
+
+
+=========================================================================================
 v1.1
 =========================================================================================
 There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT Changelog.txt" in the game directory to see!
