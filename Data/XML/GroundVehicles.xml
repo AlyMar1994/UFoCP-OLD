@@ -1326,7 +1326,7 @@
 
 				<!-- We only consider the following unit types "valid targets": -->
 				<!--  <Applicable_Unit_Categories>Vehicle</Applicable_Unit_Categories>  -->
-				<Applicable_Unit_Types>AT_AT_Walker, Veers_AT_AT_Walker</Applicable_Unit_Types>
+				<Applicable_Unit_Types>AT_AT_Walker</Applicable_Unit_Types>
 				
 				<!--This ability is canceled by movement-->
 				<Terminate_Effect_On_Move_Command>True</Terminate_Effect_On_Move_Command>

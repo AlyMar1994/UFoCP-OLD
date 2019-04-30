@@ -18,6 +18,21 @@ Whenever the AI is edited, it's not labeled based on specific changed units with
 
 
 =========================================================================================
+v1.3 - Super Hotfix
+=========================================================================================
+
+
+==================
+Units (Land)
+==================
+-General Veers – Fixed an accidental merge with another mod in-dev; reversed 1.2's ability to make General Veers killable with a Snowspeeder cable attack (everything else stays).
+
+-Snowspeeder – Reversed update from v1.2; made General Veers' AT-AT untargetable.
+
+
+=========================================================================================
+
+=========================================================================================
 v1.2
 =========================================================================================
 There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT Changelog.txt" in the game directory to see!

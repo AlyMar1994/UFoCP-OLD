@@ -300,7 +300,6 @@
 
 		<Death_Clone>Damage_Normal, Veers_AT_AT_Walker_Death_Clone</Death_Clone>
 		<Death_Clone>Damage_Normal_Deployed, Veers_AT_AT_Walker_Deployed_Death_Clone</Death_Clone>
-		<Death_Clone>Damage_Cable_Attack, Veers_AT_AT_Walker_Cable_Attack_Death_Clone</Death_Clone>
 	
 		<Idle_Chase_Range>0.0</Idle_Chase_Range>
 		<Guard_Chase_Range>200.0</Guard_Chase_Range>
@@ -387,33 +386,11 @@
 		<Variant_Of_Existing_Type>Veers_AT_AT_Walker</Variant_Of_Existing_Type>
 		<Specific_Death_Anim_Type>DEPLOYED_DIE</Specific_Death_Anim_Type>
 		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
-		<LandBehavior>HIDE_WHEN_FOGGED,IMPOSING_PRESENCE, LAND_OBSTACLE</LandBehavior>
-		<Obstacle_Width>40.0</Obstacle_Width>
-		<Obstacle_Height>40.0</Obstacle_Height>
-		<Obstacle_X_Offset>0.0</Obstacle_X_Offset>
-		<Obstacle_Y_Offset>-20.0</Obstacle_Y_Offset>
-		<Death_Persistence_Duration> 20 </Death_Persistence_Duration>
-		<Death_Explosions_End>Large_Explosion_Land</Death_Explosions_End>
-		<Death_SFXEvent_End_Die>Unit_Calamari_Death_SFX</Death_SFXEvent_End_Die>
-		<IsDeathClone> true </IsDeathClone>
-		<Presence_Range>200.0</Presence_Range>
-	</UniqueUnit>
-
-	<UniqueUnit Name="Veers_AT_AT_Walker_Cable_Attack_Death_Clone">
-		<Variant_Of_Existing_Type>Veers_AT_AT_Walker</Variant_Of_Existing_Type>
-		<Specific_Death_Anim_Type>CA_DIE</Specific_Death_Anim_Type>
-		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
 		<LandBehavior>HIDE_WHEN_FOGGED, IMPOSING_PRESENCE, LAND_OBSTACLE</LandBehavior>
-		
 		<Obstacle_Width>40.0</Obstacle_Width>
 		<Obstacle_Height>40.0</Obstacle_Height>
 		<Obstacle_X_Offset>0.0</Obstacle_X_Offset>
 		<Obstacle_Y_Offset>-20.0</Obstacle_Y_Offset>
-
-		<Custom_Hard_XExtent_Offset> 15.0 </Custom_Hard_XExtent_Offset>
-		<Custom_Hard_XExtent> 47.0 </Custom_Hard_XExtent>
-		<Custom_Hard_YExtent> 10.0 </Custom_Hard_YExtent>
-
 		<Death_Persistence_Duration> 20 </Death_Persistence_Duration>
 		<Death_Explosions_End>Large_Explosion_Land</Death_Explosions_End>
 		<Death_SFXEvent_End_Die>Unit_Calamari_Death_SFX</Death_SFXEvent_End_Die>
