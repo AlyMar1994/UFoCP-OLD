@@ -668,8 +668,7 @@
 				AT_AT_Walker_Death_Clone_01,
 				AT_AT_Walker_Death_Clone_02,
 				Veers_AT_AT_Walker_Death_Clone,
-				Veers_AT_AT_Walker_Deployed_Death_Clone,
-				Veers_AT_AT_Walker_Cable_Attack_Death_Clone
+				Veers_AT_AT_Walker_Deployed_Death_Clone
 		</Presence_Induced_Animations>		
 
 		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
@@ -887,8 +886,7 @@
 				AT_AT_Walker_Death_Clone_01,
 				AT_AT_Walker_Death_Clone_02,
 				Veers_AT_AT_Walker_Death_Clone,
-				Veers_AT_AT_Walker_Deployed_Death_Clone,
-				Veers_AT_AT_Walker_Cable_Attack_Death_Clone
+				Veers_AT_AT_Walker_Deployed_Death_Clone
 		</Presence_Induced_Animations>		
 		
 		<!-- Non-Hero unit abilities description -->
