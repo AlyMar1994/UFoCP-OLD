@@ -18,6 +18,33 @@ Whenever the AI is edited, it's not labeled based on specific changed units with
 
 
 =========================================================================================
+v1.5 - Imperatoria Evigilationem Significasse
+=========================================================================================
+
+
+==================
+A.I. (Galactic Conquest)
+==================
+-FireDeathStar – Modified A.I. to search for "Death_Star_II" (FoC) instead of "Death_Star" (EaW).
+
+-DeathStarPlan – Added "IG88_Team" to the list of units the Death Star II should avoid when going about, as IG-88 is a "superweapon killer" (can kill DS2), as with Rouge Squadron.
+
+
+==================
+General
+==================
+-Campaign – Fixed Consortium Land Mission #06: Dark Ally. The Empire would retreat when outnumbered, and has been corrected so the entire mission plays out.
+
+==================
+Factions
+==================
+-Empire – The Empire awakens. The Death Star II and Darth Vader (with the Executor) have been added to the Empire's tech-upgrade A.I. The Imperials will now build the Death Star II and Darth Vader as part of their progression. The A.I. will prioritize building Darth Vader first.
+
+
+=========================================================================================
+
+
+=========================================================================================
 v1.4 - Hotfix #3
 =========================================================================================
 
