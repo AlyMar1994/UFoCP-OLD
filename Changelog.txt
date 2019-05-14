@@ -35,10 +35,17 @@ General
 ==================
 -Campaign – Fixed Consortium Land Mission #06: Dark Ally. The Empire would retreat when outnumbered, and has been corrected so the entire mission plays out.
 
+
 ==================
 Factions
 ==================
 -Empire – The Empire awakens. The Death Star II and Darth Vader (with the Executor) have been added to the Empire's tech-upgrade A.I. The Imperials will now build the Death Star II and Darth Vader as part of their progression. The A.I. will prioritize building Darth Vader first.
+
+
+==================
+Units (Space)
+==================
+-Luke Skywalker – Changed Luke's X-wing tooltip from "TEXT_UNIT_LUKE_XWING" to "TEXT_UNIT_LUKE_XWING_01," to remove the "(Red 5)" indicator from the name (Red Squadron doesn't exist anymore, nor did Skywalker go under that callsign post-Endor).
 
 
 =========================================================================================
