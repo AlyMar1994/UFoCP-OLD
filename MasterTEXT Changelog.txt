@@ -30,6 +30,7 @@ Due to numerous untracked fixes and errors, I've redone the text edits from scra
 -De-capitalize any non-name-matched title for the bounty hunter assassination text.
 -All relevant instances of "Death Star" in FoC are now replaced with "Death Star II," the correct Death Star in-game.
 -All hint text has undergone some revamp; fixed improper capitalizations (i.e., "Space Station" --> "space station"), grammar fixes.
+-Most "indigenous objectives" have been space/grammar corrected (not posted, as they're all the same just slightly modified for each faction).
 
 -[EMPIRE_BM_TECH_1]: "Black Market Items available at Empire tech level one." --> "Black market items available at Empire tech level one."
 -[EMPIRE_BM_TECH_2]: "Black Market Items available at Empire tech level two." --> "Black market items available at Empire tech level two."
@@ -113,6 +114,40 @@ Due to numerous untracked fixes and errors, I've redone the text edits from scra
 -[TEXT_MAL_SWAP_DESCRIPTION]: "Swap between standard Concussion missiles and Carbonite Missiles; Carbonite missiles slow and damage their targets." --> "Swap between standard concussion missiles and carbonite missiles; carbonite missiles slow and damage their targets."
 -[TEXT_TOOLTIP_DEATH_STAR_II]: "A larger, more powerful version of the original Death Star; the new battle station includes enhanced targeting computers for the superlaser, allowing it to fire on slow-moving ships." --> "A larger, more powerful version of the original Death Star. The new battle station includes enhanced targeting computers for the superlaser, allowing it to fire on slow-moving ships."
 -[TEXT_UNIT_ROGUE_10]: "Rogue 10: Tarrub Datch" --> "Rogue 10: Tarrin Datch"
+-[TEXT_UNDERWORLD_ACT1_CRAWL_PART_2]: "However, the battles between the Empire and the Alliance are not the only conflicts playing out across the galaxy. Tyber Zann, crime lord and former associate of JABBA THE HUTT, works to free himself from the Spice Mines of Kessel and plots his revenge on an unknowing galaxy." --> "However, the battles between the Empire and the Alliance are not the only conflicts playing out across the galaxy. Tyber Zann, crime lord and former associate of JABBA THE HUTT, works to free himself from the spice mines of Kessel, and plots his revenge on an unknowing galaxy."
+-[TEXT_UNDERWORLD_ACT1_CRAWL_PART_3]: "While Tyber puts his plans in motion, his lieutenant Urai Fen speeds toward Kessel in a hired starship-- the Millennium Falcon...." --> "While Tyber puts his plans in motion, his lieutenant Urai Fen speeds toward Kessel in a hired starship: the Millennium Falcon...."
+-[TEXT_TOOLTIP_ABILITY_SUMMON_DESCRIPTION]: "Summons a Rancor to fight alongside Silri." --> "Summons a rancor to fight alongside Silri."
+-[TEXT_TOOLTIP_ABILITY_SUPER_LASER_DESCRIPTION]: "Allows the Death Star II to target capital ships and frigates with the Superlaser." --> "Allows the Death Star II to target capital ships and frigates with the superlaser."
+-[TEXT_TOOLTIP_Z95_HEADHUNTER]: "Out-dated fighter armed with light laser cannons. Unremarkable except for its ability to hyperspace without a carrier ship and low cost of production. 5 fighters per squadron." --> "Outdated fighter armed with light laser cannons. Unremarkable except for its ability to hyperspace without a carrier ship and low cost of production. 5 fighters per squadron."
+-[TEXT_TOOLTIP_TYBER_ZANN]: "Tyber Zann, criminal mastermind of the Zann Consortium. He is adept at using most weapons of war, and a tactical genius." --> "Tyber Zann, criminal mastermind of the Zann Consortium. He is adept at using most weapons of war, and is a tactical genius."
+-[TEXT_TOOLTIP_TECH_LEVEL_REBEL]: "The current tech level determines what units and structures can be built. The Rebellion advances their tech tree by stealing technology from the Empire with R2-D2 and C3P0. When all the units and structures are stolen for the current tech level, the Rebellion will advance to the next tech level." --> "The current tech level determines what units and structures can be built. The Rebellion advances their tech tree by stealing technology from the Empire with R2-D2 and C-3P0. When all the units and structures are stolen for the current tech level, the Rebellion will advance to the next tech level."
+-[TEXT_TOOLTIP_GARRISON_R_BARRACKS]: "Garrison: Rebel Soldier, PLEX Soldier" --> "Garrison: Rebel Soldier, Plex Soldier."
+-[TEXT_TOOLTIP_AV_TURRET]: "Anti-Vehicle turret capable of defeating most vehicle assaults." --> "Anti-vehicle turret capable of defeating most vehicle assaults."
+-[TEXT_TOOLTIP_ECLIPSE]: "The Emperor's ultimate expression of power, the Eclipse-class Star Destroyer boasted a planet's worth of weaponry, including a coaxial superlaser." --> "The emperor's ultimate expression of power, the Eclipse-class Star Destroyer boasted a planet's worth of weaponry, including a coaxial superlaser."
+-[TEXT_TOOLTIP_PALPATINE]: "Imperial leader. Strong in the dark side of the Force and capable of inflicting great damage.  The Emperor also drains the life and will from nearby enemy.  The Emperor's Force corrupt ability affects any nearby units." --> "Imperial leader. Strong in the dark side of the Force, and capable of inflicting great damage. The Emperor also drains the life and will from nearby enemy. The Emperor's 'Force Corrupt' ability affects any nearby units."
+-[TEXT_TOOLTIP_R2D2]: "A droid duo with a knack for acquiring sensitive information and being in the right place at the right time." --> "A droid with a knack for acquiring sensitive information, and being in the right place at the right time."
+-[TEXT_TACTICAL_PRIMARY_KILL_EVIL_LEADER]: "Kill The Emperor." --> "Kill the emperor."
+-[TEXT_TACTICAL_PRIMARY_PROTECT_EVIL_LEADER]: "The Emperor must survive." --> "The emperor must survive."
+-[TEXT_TOOLTIP_AA_TURRET]: "Anti-Aircraft turret capable of shooting down bombers and aircraft." --> "Anti-aircraft turret capable of shooting down bombers and aircraft."
+-[TEXT_UW_ACT01_G01_22]: "TASK: Use a Defiler to set up a Racketeering operation on Shola." --> "TASK: Use a Defiler to set up a racketeering operation on Shola."
+-[TEXT_UW_ACT01_G01_29]: "TASK: Choose the INTIMIDATION mission from the corruption menu." --> "TASK: Choose the 'intimidation' mission from the corruption menu."
+-[TEXT_UW_ACT01_G01_30]: "TASK: Corrupt Mandalore using PIRACY." --> "TASK: Corrupt Mandalore using piracy."
+-[TEXT_UW_ACT01_G05_01]: "TASK: Use a Defiler to establish a Black Market on Kuat." --> "TASK: Use a Defiler to establish a black market on Kuat."
+-[TEXT_UW_ACT01_G05_02]: "TASK: Drag Tyber Zann to the BUY slot on Kuat." --> "TASK: Drag Tyber Zann to the 'BUY' context-sensitive slot on Kuat."
+-[TEXT_UW_ACT01_G05_04]: "TASK: Purchase Disruptor Technology." --> "TASK: Purchase disruptor technology."
+-[TEXT_UW_ACT01_G06_10]: "Jabba the Hutt found a way to break into Tyber's communications system.  Luckily Tyber's techs managed to trace the signal to a relay station on Saleucami.  Jabba needs to be taught a lesson. I will use my strike team to establish a beachhead, so that our land forces can take Saleucami out from under him." --> "Jabba the Hutt found a way to break into Tyber's communications system. Luckily, Tyber's techs managed to trace the signal to a relay station on Saleucami. Jabba needs to be taught a lesson. I will use my strike team to establish a beachhead, so that our land forces can take Saleucami out from under him."
+-[TEXT_UW_ACT01_G06_11]: "TASK: Build a Defiler and drag it to the SABOTAGE context-sensitive slot on Saleucami." --> "TASK: Build a Defiler, and drag it to the 'SABOTAGE' context-sensitive slot on Saleucami."
+-[TEXT_UW_ACT01_M02_HINT_02]: "HINT: Destroy the Pirate Frigate to release the Data Pod. Avoid engaging the enemy forces." --> "HINT: Destroy the pirate frigate to release the data pod. Avoid engaging the enemy forces."
+-[TEXT_UW_ACT01_M03_GOAL_01]: "Recapture a reinforcement point." --> "Recapture the reinforcement point."
+-[TEXT_UW_ACT01_M03_GOAL_03]: "The Communications Stations must remain intact." --> "The communications station must remain intact."
+-[TEXT_UW_ACT01_M03_HINT_01]: "HINT: Use Urai Fen’s Personal Cloaking Field to sneak past the enemy blockade." --> "HINT: Use Urai Fen’s 'Personal Cloaking Field' ability to sneak past the enemy blockade."
+-[TEXT_UW_ACT01_M03_HINT_02]: "HINT: Use Urai Fen’s Sonic Stunner to incapacitate multiple infantry units simultaneously." --> "HINT: Use Urai Fen’s 'Sonic Stunner' ability to incapacitate multiple infantry units simultaneously."
+-[TEXT_UW_ACT02_G09_12]: "TASK: Defeat the Pirates orbiting Mandalore" --> "TASK: Defeat the pirates orbiting Mandalore."
+-[TEXT_UW_ACT02_G14_01]: "BONUS: Tyber Zann receives 50,000 credits from selling Tibanna Gas on the black market." --> "BONUS: Tyber Zann receives 50,000 credits from selling the tibanna gas on the black market."
+-[TEXT_UW_ACT03_M11_GOAL_10]: "Use Ysalamiri Cages to defeat the Master Force Adept." --> "HINT: Use ysalamiri cages to defeat the Master Force Adept."
+-[TEXT_UW_ACT03_M11_HINT_06]: "HINT: The MDUs Ysalamiri cage will keep force users from using their powers." --> "HINT: The MDU's ysalamiri cage will keep Force-users from using their powers."
+-[TEXT_UW_ACT03_M11_HINT_07]: "HINT: The Juggernaut's Point Laser Defense System destroys incoming missiles." --> "HINT: The Juggernaut's 'Point Laser Defense' system destroys incoming missiles."
+-[TEXT_UW_ACT03_M12_GOAL_03]: "Destroy the Millennium Falcon and drive the remaining Rebels from this sector." --> "Destroy the Millennium Falcon tp drive the remaining Rebels from this sector."
 
 
 ===================================================================================================

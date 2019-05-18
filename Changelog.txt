@@ -45,7 +45,7 @@ Factions
 ==================
 Units (Space)
 ==================
--Luke Skywalker – Changed Luke's X-wing tooltip from "TEXT_UNIT_LUKE_XWING" to "TEXT_UNIT_LUKE_XWING_01," to remove the "(Red 5)" indicator from the name (Red Squadron doesn't exist anymore, nor did Skywalker go under that callsign post-Endor).
+-Luke Skywalker – Changed Luke's X-wing tooltip from "TEXT_UNIT_LUKE_XWING" to custom "TEXT_UNIT_LUKE_XWING_01," to remove the "(Red 5)" indicator from the name (Red Squadron doesn't exist anymore, nor did Skywalker go under that callsign post-Yavin).
 
 
 =========================================================================================
