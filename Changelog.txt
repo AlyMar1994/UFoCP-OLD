@@ -35,6 +35,7 @@ A.I. (Galactic Conquest)
 General
 ==================
 -Campaign – Fixed Consortium Land Mission #06: Dark Ally. The Empire would retreat when outnumbered, and has been corrected so the entire mission plays out.
+-Campaign – Fixed Consortium Space Mission #12: "The Emperor's New Weapon." Removed broken characters from document (random "xxx" near bottom).
 
 
 ==================
