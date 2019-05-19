@@ -1,19 +1,13 @@
 ﻿<?xml version="1.0"?>
-
-
-
-
 <Rogue_Squadron_Data>
-
-
 
 <!-- *****                           ***** -->
 <!-- ***** Rogue Squadron Space Data ***** -->
 <!-- *****                           ***** -->
 
-
-	<!-- ROGUE SQUADRON SPACE - INDIVIDUAL UNIT -->
-
+<!-- ROGUE SQUADRON SPACE - INDIVIDUAL UNIT -->
+	
+	<!-- Rogue Leader: Wedge Antilles -->
 	<UniqueUnit Name="Wedge_XWing_Rogue">
 		<Variant_Of_Existing_Type>X-Wing</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_UNIT_WEDGE_01_XWING</Text_ID>
@@ -33,7 +27,7 @@
 		<Shield_Points>100</Shield_Points>
 		<Damage>40</Damage>
 
-        <!-- Wedge's X-Wing is a Death Star killer! -->		
+        <!-- Wedge's X-Wing is a Death Star killer! -->	
         <Is_Super_Weapon_Killer>Yes</Is_Super_Weapon_Killer>
 
 		<SpaceBehavior>FIGHTER_LOCOMOTOR, ABILITY_COUNTDOWN, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, NEBULA </SpaceBehavior>
@@ -156,18 +150,19 @@
 	</UniqueUnit>
 
 
-	<!-- Rogue Ten: Tarrub Datch -->
+	<!-- AM1994 (5/13/19): CORRECTION OF CHARACTER NAME: -->
+	<!-- Rouge Ten: Tarrin Datch -->
 	<UniqueUnit Name="Rogue_10_XWing">
 		<Variant_Of_Existing_Type>Wedge_XWing_Rogue</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_UNIT_ROGUE_10</Text_ID>
 		<Icon_Name>i_button_x_wing.tga</Icon_Name>
-		<SFXEvent_Assist_Move> </SFXEvent_Assist_Move>		
-		<SFXEvent_Assist_Attack> </SFXEvent_Assist_Attack>
-		<SFXEvent_Health_Low_Warning>  </SFXEvent_Health_Low_Warning>
-		<SFXEvent_Health_Critical_Warning>  </SFXEvent_Health_Critical_Warning>
-		<SFXEvent_Enemy_Health_Low_Warning>  </SFXEvent_Enemy_Health_Low_Warning>
-		<SFXEvent_Enemy_Health_Critical_Warning>  </SFXEvent_Enemy_Health_Critical_Warning>
-		<SFXEvent_Unit_Lost> </SFXEvent_Unit_Lost>
+		<SFXEvent_Assist_Move />
+		<SFXEvent_Assist_Attack />
+		<SFXEvent_Health_Low_Warning />
+		<SFXEvent_Health_Critical_Warning />
+		<SFXEvent_Enemy_Health_Low_Warning />
+		<SFXEvent_Enemy_Health_Critical_Warning />
+		<SFXEvent_Unit_Lost />
 		<Is_Named_Hero>No</Is_Named_Hero>
 	</UniqueUnit>
 
@@ -189,10 +184,7 @@
 
 
 
-
-
-	<!-- ROGUE SQUADRON SPACE - SQUADRON INFO -->
-	
+<!-- ROGUE SQUADRON SPACE - SQUADRON/TEAM INFO -->
 	<Squadron Name="Rogue_Squadron_Space">
 		<Text_ID>TEXT_HERO_ROGUE_SQUADRON</Text_ID>
 		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_ROGUE_SQUADRON</Encyclopedia_Text>
@@ -287,9 +279,7 @@
 
 
 
-	<!-- ROGUE SQUADRON SPACE - CONTAINER INFO -->
-
-
+<!-- ROGUE SQUADRON SPACE - CONTAINER INFO -->
 	<Container Name="Rogue_Squadron_Space_Container">
 		<Text_ID>TEXT_HERO_ROGUE_SQUADRON</Text_ID>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_FIGHTER_SQUADRON </Encyclopedia_Unit_Class>		
@@ -381,32 +371,4 @@
 		</Unit_Abilities_Data>
 		
 	</Container>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </Rogue_Squadron_Data>

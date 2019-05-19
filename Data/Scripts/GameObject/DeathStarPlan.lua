@@ -53,7 +53,7 @@ function Definitions()
 	-- Commander hit list.
 	Attack_Ability_Type_Names = { 
 		"Infantry", "Vehicle", "Air", "Structure",    		-- Attack these types.
-		"Rogue_Squadron_Space"  						-- Stay away from these types.
+		"Rogue_Squadron_Space", "IG88_Team"  						-- Stay away from these types.
 	}
 	Attack_Ability_Weights = { 
 		1, 1, 1, 10,      				-- attack type weights.

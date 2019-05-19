@@ -1,846 +1,152 @@
 ----
-Fixes are marked with an asterisk (*). If an explanation is required (or extra info included), it's expanded upon with a double-asterisk (**).
+*English-only text fixes, no localizers as-of-yet.
+----
 
-THESE EDITS FOLLOW THE STANDARDS OF AMERICAN ENGLISH! (Yes, I am a filthy American) Odd spacing is not changed in these edits, as that was intended (unless it is extremely jarring, like sex-tupple spacing in the middle of a paragraph). The double-space seperating "Our Defiler" and the triple-space at the end of the corruption dialogs stay.
+Fixes are marked with a hyphen (-), and written in this format: "-[DIALOG NAME]: 'Orig.' --> 'Fixed.'"
+
+THESE EDITS FOLLOW THE STANDARDS OF AMERICAN ENGLISH! Double-spacing where applicable is only fixed when generally inconsistient, wrong for the scenario or is totally broken.
 
 Last of note, I am a human being and I make mistakes. Please point out text errors in-game through bug reporting!
-----
-For any corruption mission briefings that are edited, their tooltips for the menus are also edited! They're not mentioned, though.
-----
 
-
-===================================================================================================
-v1.2
-===================================================================================================
-*Fixed all campaign pre-mission monologues; double spaced them since they were in the majority (compared to that which wasn't).
-*Fixed all single-player campaign mission holocron objectives. Mass period-placing, capitalization corrections, and other edits.
-*Due to a huge majority (from which I hadn't realized the last few updates), all "*CHARACTER* Must Survive" texts will be de-capitalized/period'd.
-*Fixed all bounty hunter texts; "bounty hunter" is no longer capitalized (and other titles that aren't proper in their context, "field commander," ect...).
-*Due to ignorance of species-capitalization, all species name (like "rancor") will now begin to be de-capitalized.
-*De-capitalized upgrade tooltips for improper nouns (e.g. "Fighters," "Infantry").
-*Corrected garrison texts to include a period after sentence (match with the rest).
-*De-capitalized more instances of "dark Force" and "emperor."
-*Fixed descriptions of anti-vehicle, anti-infantry and anti-aircraft turrets being capitalized/mispelled.
-*Modified AT-AT description to match AT-ST's and AT-AA's.
-*Grammar fixes to campaign/normal speech texts (double-spacing, ect...).
-*Corrected some campaign/mission texts to accurately match the dialogue.
-*Fixed R2-D2's single-unit tooltip. R2 by himself isn't a "duo."
+----
 
 
 ===================================================================================================
-v1.1
+v1.5 - Imperatoria Evigilationem Significasse
 ===================================================================================================
----
+Due to numerous untracked fixes and errors, I've redone the text edits from scratch.
+
+
+-For corruption dialogues/mission briefs, the random double-spacing between "Our Defiler" and the end of the briefing has been removed.
+-For corruption dialogues/mission briefs, corruption names have been de-capitalized.
+-For construction dialogues, periods have been added to complete the sentence.
+-For upgrade dialogues, periods have been added to complete the sentence.
+-Auto-resolve battle hint texts have periods added to complete the sentence.
+-Victory requirement text has had periods mass placed to complete the sentences.
+-Some variable dialogue (such as the "Corrupting..." text) has had periods placed to compelete the sentences.
+-De-capitalized various building descriptions for consistiency with building names.
+-Any text that uses broken elipses character will be replaced with the correct amount of periods.
+-Any text regarding "[Hero] Must Survive"-type capitalization will be de-capitalized to match other texts (where applicable).
+-De-capitalize any non-name-matched title for the bounty hunter assassination text.
+-All relevant instances of "Death Star" in FoC are now replaced with "Death Star II," the correct Death Star in-game.
+-All hint text has undergone some revamp; fixed improper capitalizations (i.e., "Space Station" --> "space station"), grammar fixes.
+-Most "indigenous objectives" have been space/grammar corrected (not posted, as they're all the same just slightly modified for each faction).
+
+-[EMPIRE_BM_TECH_1]: "Black Market Items available at Empire tech level one." --> "Black market items available at Empire tech level one."
+-[EMPIRE_BM_TECH_2]: "Black Market Items available at Empire tech level two." --> "Black market items available at Empire tech level two."
+-[EMPIRE_BM_TECH_3]: "Black Market Items available at Empire tech level three." --> "Black market items available at Empire tech level three."
+-[EMPIRE_BM_TECH_4]: "Black Market Items available at Empire tech level four." --> "Black market items available at Empire tech level four."
+-[EMPIRE_BM_TECH_5]: "Black Market Items available at Empire tech level five." --> "Black market items available at Empire tech level five."
+-[MB_LAND_PLANET_ALZOCIII_INTIMIDATION]: "The food Commissioner is an important behind the scenes power broker on the Planet. With him in our control, mining production levels can be changed at the whim of the Zann Consortium.  Our Defiler has assembled a strike team of our reservists to accomplish our goal." --> "The food commissioner is an important behind-the-scenes power broker on the planet. With him in our control, mining production levels can be changed at the whim of the Zann Consortium. Our Defiler has assembled a strike team of our reservists to accomplish our goal."
+-[MB_LAND_PLANET_BESTINE_KIDNAPPING]: "Massive ship yards fill the oceans of Bestine. Kidnapping commander Falan will bring the entire planet and its yards to their knees. The secrets that man holds are galaxy wide and soon to be ours.  Our Defiler has assembled a strike team of our reservists to accomplish our goal." --> "Massive ship yards fill the oceans of Bestine. Kidnapping Commander Falan will bring the entire planet and its yards to their knees. The secrets that man holds are galaxy-wide, and soon to be ours. Our Defiler has assembled a strike team of our reservists to accomplish our goal."
+-[MB_LAND_PLANET_BOTHAWUI_INTIMIDATION]: "Intimidating Galactic Senator Polo Se'Lab puts important information and the political power of many Bothawui connected planets into the hands of the Zann Consortium.  Our Defiler has assembled a strike team of our reservists to accomplish our goal." --> "Intimidating Galactic Senator Polo Se'Lab puts important information and the political power of many Bothawui-connected planets into the hands of the Zann Consortium. Our Defiler has assembled a strike team of our reservists to accomplish our goal."
+-[MB_LAND_PLANET_BYSS_KIDNAPPING]: "Byss, an extremely dangerous world, prized by the Emperor. Taking planetary governor Kirith can reap great rewards in credits.  Our Defiler has assembled a strike team of our reservists to accomplish our goal." --> "Byss, an extremely dangerous world prized by the emperor. Taking Planetary Governor Kirith can reap great rewards in credits. Our Defiler has assembled a strike team of our reservists to accomplish our goal."
+-[MB_LAND_PLANET_NALHUTTA_KIDNAPPING]: "Kidnapping the Space Port director will halt the flow of minerals to the moon of Nar Shaddaa. If the moon can't process those resources our enemies' ability to build warships will be drastically curtailed.  Our Defiler has assembled a strike team of our reservists to accomplish our goal." --> "Kidnapping the space port director will halt the flow of minerals to the moon of Nar Shaddaa. If the moon can't process those resources, our enemies' ability to build warships will be drastically curtailed. Our Defiler has assembled a strike team of our reservists to accomplish our goal."
+-[MB_LAND_PLANET_SALEUCAMI_INTIMIDATION]: "Governor Koong Eeth must be intimidated for the corruption of Saleucami to proceed. Maiming Eeth, and putting him in the hospital for several months regenerating his body parts, will put across the message that he should accommodate the Zann Consortium's special needs.  Our Defiler has assembled a strike team of our reservists to accomplish our goal." --> "Governor Koong Eeth must be intimidated for the corruption of Saleucami to proceed. Maiming Eeth, and putting him in the hospital for several months regenerating his body parts will put across the message that he should accommodate the Zann Consortium's special needs. Our Defiler has assembled a strike team of our reservists to accomplish our goal."
+-[MB_LAND_PLANET_TARIS_INTIMIDATION]: "A Gungan Duelist named Twitch is the perfect target for intimidation. If the Zann Consortium can frighten him, the rest of the world will fall quickly.  Our Defiler has assembled a strike team of our reservists to accomplish our goal." --> "A Gungan duelist named 'Twitch' is the perfect target for intimidation. If the Zann Consortium can frighten him, the rest of the world will fall quickly. Our Defiler has assembled a strike team of our reservists to accomplish our goal."
+-[MB_SPACE_PLANET_AETENII_PIRACY]: "Aeten II is known for its rare and dwindling supply Stygium Crystal deposits which are used in the construction of various ship based cloaking technologies. Setting up an Aeten II piracy ring on nearby moons brings valuable credits to the Consortium.  Our Defiler has assembled a strike team of our reservists to accomplish our goal. " --> "Aeten II is known for its rare and dwindling supply Stygium Crystal deposits, which are used in the construction of various ship-based cloaking technologies. Setting up an Aeten II piracy ring on nearby moons brings valuable credits to the Consortium. Our Defiler has assembled a strike team of our reservists to accomplish our goal."
+-[MB_SPACE_PLANET_BESPIN_PIRACY]: "Bespin provides the perfect set up for Piracy. The gas giant has many floating staging platforms where ships can hide. Tibanna gas is constantly being transported from the system and capturing some of the cargo transports is a perfect use for Zann associates.  Our Defiler has assembled a strike team of our reservists to accomplish our goal." --> "Bespin provides the perfect set up for piracy. The gas giant has many floating staging platforms where ships can hide. Tibanna gas is constantly being transported from the system, and capturing some of the cargo transports is a perfect use for Zann associates. Our Defiler has assembled a strike team of our reservists to accomplish our goal."
+-[MB_SPACE_PLANET_CORELLIA_PIRACY]: "There are many manufacturing satellites above Corellia, destroying several of them will establish our power over the planet. Additionally, our units will gain valuable experience.  Our Defiler has assembled a strike team of our reservists to accomplish our goal." --> "There are many manufacturing satellites above Corellia; destroying several of them will establish our power over the planet. Additionally, our units will gain valuable experience. Our Defiler has assembled a strike team of our reservists to accomplish our goal."
+-[MB_SPACE_PLANET_FONDOR_PIRACY]: "Several space stations are orbiting Fondor. In destroying one of them, we establish the Zann Consortium presence on the nearby world.  Our Defiler has assembled a strike team of our reservists to accomplish our goal." --> "veral space stations are orbiting Fondor. In destroying one of them, we establish the Zann Consortium's presence on the nearby world. Our Defiler has assembled a strike team of our reservists to accomplish our goal."
+-[MBTM02_SCRAMBLE]: "After escaping the Imperial assault on Kashyyyk, the Rebel Alliance must reinforce their holdings at several, nearby planets." --> "After escaping the Imperial assault on Kashyyyk, the Rebel Alliance must reinforce their holdings at several nearby planets."
+-[MBTM03_EMPIRE_AT_WAR] & [MBTM04_Imperial_Noose]: De-capitalized "officer."
+-[MBUM02_REMNANTS_OF_THE_DEATH_STAR]: "It seems the Rebels went and blew up the Emperor's Death Star while I was busy rebuilding in another part of the galaxy.  Lucky for me the corpse is relatively fresh, and the scavengers have yet to pick it clean.  If the crew ejected the data pods, and if I can recover them before the Rebels, they just might contain information on the Emperor's hidden vaults...." --> "It seems the Rebels went and blew up the emperor's Death Star while I was busy rebuilding in another part of the galaxy. Lucky for me, the corpse is relatively fresh, and the scavengers have yet to pick it clean. If the crew ejected the data pods, and if I can recover them before the Rebels, they just might contain information on the emperor's hidden vaults...."
+-[MBUM04_VISIONS_OF_THE_PAST]: "Jabba the Hutt has uncovered an old Clone Wars era factory built by the Geonosians that was never found by the old Republic.  If I can get there first, I can take a large prize out of Jabba's slimy hands, and gain a lot of firepower in the bargain.  Urai has gone ahead to scout while I gather some reinforcements.  What could possibly go wrong?" --> "Jabba the Hutt has uncovered an old Clone Wars-era factory built by the Geonosians, that was never found by the old Republic. If I can get there first, I can take a large prize out of Jabba's slimy hands, and gain a lot of firepower in the bargain. Urai has gone ahead to scout while I gather some reinforcements. What could possibly go wrong?"
+-[MBUM06_DARK_ALLY]: "I'm landing on Dathomir to search for a Dark Force user to unlock the Sith Artifact. I'm surprised to see the planet under strict Empire control. It seems there are many secrets here the Emperor himself wants to keep hidden. It will be interesting to see what Urai and I can find...." --> "I'm landing on Dathomir to search for a dark Force user to unlock the Sith artifact. I'm surprised to see the planet under strict Empire control. It seems there are many secrets here the emperor himself wants to keep hidden. It will be interesting to see what Urai and I can find...."
+-[MBUM07_CLOUD_CITY_CONFLICT]: "Darth Vader commands the forces on Bespin. I'm hoping to plant clues in the raid for the gas to make the Empire think Prince Xizor of the Black Sun is responsible. I want the gas for the ships I can build with it. Also the code breaking IG-88 can do for me is vital to the completion of my plan...." --> "Darth Vader commands the forces on Bespin. I'm hoping to plant clues in the raid for the gas to make the Empire think Prince Xizor of the Black Sun Pirates is responsible. I want the gas for the ships I can build with it. Also, what the code breaking IG-88 can do for me is vital to the completion of my plan...."
+-[MBUM11_RAIDERS_OF_THE_LOST_HOLOCRON]: "Urai, Silri, and I are raiding the Imperial Archive on Coruscant. I'm going to get the Emperor's personal passkey. I realize fully that Silri is going to be a problem, but for now I'll just watch her closely and make sure she does my bidding…." --> "Urai, Silri and I are raiding the Imperial archives on Coruscant. I'm going to get the emperor's personal passkey. I realize fully that Silri is going to be a problem, but for now I'll just watch her closely and make sure she does my bidding...."
+-[MBUM12_THE_EMPERORS_NEW_WEAPON]: "The Emperor's passkey is the key to unlocking my prize - the Emperor's vaults and enough wealth to gain control of the galaxy's criminal underworld.  All I have to do is fight my way through the remaining Imperial ships, not to mention fending off whatever Rebel forces come to investigate..." --> "The emperor's passkey is the key to unlocking my prize: the emperor's hidden vaults, and enough wealth to gain control of the galaxy's criminal underworld. All I have to do is fight my way through the remaining Imperial ships, not to mention fending off whatever Rebel forces come to investigate...."
+-[MP_TEXT_ENCYCLOPEDIA_ASTEROID_MINING_FACILITY_PAD_01]: "When operational, Asteroid Miners extract ore and precious minerals from space rocks and convert them into cash." --> "When operational, asteroid miners extract ore and precious minerals from space rocks and convert them into cash."
+-[MP_TEXT_ENCYCLOPEDIA_BARRACKS_PAD_UNDERWORLD_00]: "CLICK to construct Consortium Mercenary Barracks" --> "CLICK to construct Consortium Barracks."
+-[MT_SPACE_PLANET_CORELLIA_PIRACY]: "Raid the orbital Satellites over Corellia" --> "Raid the Orbital Satellites over Corellia"
+-[TEXT_CAMPAIGN_SINGLE_12_INTRO_E]: "The Empire wishes to use the Maw as a location for a research facility.  Both the Rebellion and the Zann Consortium also wish to use the location for their own purposes.  The Emperor instructs you to capture the Maw along with four other key planets to further his plans.  You have 60 galactic days to do this - fail at your own peril." --> "The Empire wishes to use the Maw as a location for a research facility.  Both the Rebellion and the Zann Consortium also wish to use the location for their own purposes.  The emperor instructs you to capture the Maw, along with four other key planets to further his plans.  You have 60 galactic days to do this; fail at your own peril."
+-[TEXT_CAMPAIGN_SINGLE_12_INTRO_R]: "We wish to wrest control of the Maw from the Zann Consortium; the location is ideal for a refuge due to the difficulty in navigating the area.  It would also be beneficial to the Alliance if we were to control four other key planets.  However, the Empire is attempting to interfere with our plans - we only have 60 galactic days to take control, or we lose everything.  May the Force be with you!" --> "We wish to wrest control of the Maw from the Zann Consortium; the location is ideal for a refuge due to the difficulty in navigating the area.  It would also be beneficial to the Alliance if we were to control four other key planets.  However, the Empire is attempting to interfere with our plans; we only have 60 galactic days to take control, or we lose everything.  May the Force be with you!"
+-[TEXT_CAMPAIGN_SINGLE_12_INTRO_U]: "The Maw is a location that attracts attention from all sides; the Empire wishes to produce a research facility in the location, while the Rebellion wants to use it as a refuge.  I want it because they want it.  With the Maw under consortium control along with four other key locations, my power will be absolute.  But we only have 60 days before the plan fails.  See to it!" --> "The Maw is a location that attracts attention from all sides; the Empire wishes to produce a research facility in the location, while the Rebellion wants to use it as a refuge.  I want it because they want it.  With the Maw under Consortium control, along with four other key locations, my power will be absolute, but we only have 60 days before the plan fails.  See to it!"
+-[TEXT_CAMPAIGN_SINGLE_21_INTRO_E]: "The galaxy is in turmoil following the Battle of Yavin.  Many of the planetary governments have seceded from the Empire, but are not ready to trust the Rebellion.  Meanwhile, there is a new force working in the background of the galaxy.  The Empire will not tolerate any interference - crush all who oppose us." --> "The galaxy is in turmoil following the Battle of Yavin.  Many of the planetary governments have seceded from the Empire, but are not ready to trust the Rebellion.  Meanwhile, there is a new force working in the background of the galaxy.  The Empire will not tolerate any interference, crush all who oppose us."
+-[TEXT_CAMPAIGN_SINGLE_21_INTRO_U]: "The galaxy is in turmoil following the Battle of Yavin.  Many of the planetary governments have seceded from the Empire, but are not ready to trust the Rebellion.  Meanwhile, there is a new force working in the background of the galaxy.  The galaxy is ripe for the picking." --> "The galaxy is in turmoil following the Battle of Yavin.  Many of the planetary governments have seceded from the Empire, but are not ready to trust the Rebellion.  Meanwhile, we're a new force working in the background of the galaxy.  The galaxy is ripe for the picking."
+-[TEXT_CAMPAIGN_SINGLE_33B_INTRO_E]: "The fools in the Rebellion and the Zann Consortium seek my life.  Let them play their games - I will play the rabbit for now while you go and seek their deaths instead.  Conquer Yavin 4 and Endor, and bring me proof that Mon Mothma and Tyber Zann will bother the Empire no longer." --> "The fools in the Rebellion and the Zann Consortium seek my life.  Let them play their games; I will play the rabbit for now while you go and seek their deaths instead.  Conquer Yavin 4 and Endor, and bring me proof that Mon Mothma and Tyber Zann will bother the Empire no longer."
+-[TEXT_CAMPAIGN_SINGLE_36_INTRO_E]: "While the heart of the Empire is relatively secure, the Outer Rim is a constant plague of corruption and disorder.  The Emperor wants the worlds of the Rim under control and his laws enforced; with the Rim in his control the Rebels and criminals will have nowhere left to run." --> "While the heart of the Empire is relatively secure, the Outer Rim is a constant plague of corruption and disorder.  The emperor wants the worlds of the Rim under control and his laws enforced; with the Rim in his control, the Rebels and criminals will have nowhere left to run."
+-[TEXT_CAMPAIGN_SINGLE_56_INTRO_E]: "During our battles with the Rebellion, we have noticed increased corruption and crime on many worlds.  The Emperor does not enjoy hearing that the funds meant for the advancement of his military are going to criminals, any more than he likes Rebel scum interfering with his rule.  Remove the Zann Consortium and the Rebellion from the galaxy by any means necessary.  Use your initial credits wisely to upgrade and expand your forces." --> "During our battles with the Rebellion, we have noticed increased corruption and crime on many worlds.  The emperor does not enjoy hearing that the funds meant for the advancement of his military are going to criminals any more than he likes Rebel scum interfering with his rule.  Remove the Zann Consortium and the Rebellion from the galaxy by any means necessary.  Use your initial credits wisely to upgrade and expand your forces."
+-[TEXT_CORRUPTION_AETENII_STORY_PIRACY]: "Aeten II is known for its rare and dwindling supply Stygium Crystal deposits which are used in the construction of various ship based cloaking technologies. Setting up an Aeten II piracy ring on nearby moons brings valuable credits to the Consortium." --> "Aeten II is known for its rare and dwindling supply stygium crystal deposits which are used in the construction of various ship-based cloaking technologies. Setting up an Aeten II piracy ring on nearby moons brings valuable credits to the Consortium."
+-[TEXT_CORRUPTION_AETENII_STORY_RACKETEER]: "Stygium Crystal miners on Aeten II are wealthy and highly susceptible to rigged games of chance as well as the special entertainments the Zann Consortium can bring to the world." --> "Stygium crystal miners on Aeten II are wealthy and highly susceptible to rigged games of chance, as well as the special entertainments the Zann Consortium can bring to the world."
+-[TEXT_CORRUPTION_ALZOCIII_STORY_BLACKMARKET]: "A Black Market organization on Alzoc III brings in important technologies in that section of space. The new ship specs from the Imperial and Rebel labs will greatly strengthen the Zann Consortium." --> "A black market organization on Alzoc III brings in important technologies in that section of space. The new ship specs from the Imperial and Rebel labs will greatly strengthen the Zann Consortium."
+-[TEXT_CORRUPTION_ALZOCIII_STORY_INTIMIDATION]: "The food Commissioner is an important behind the scenes power broker on the Planet. With him in our control, mining production levels can be changed at the whim of the Zann Consortium." --> "The food commissioner is an important behind-the-scenes power broker on the planet. With him in our control, mining production levels can be changed at the whim of the Zann Consortium."
+-[TEXT_CORRUPTION_ANAXES_STORY_BLACKMARKET]: "The Defender of the Core and its top of the line technology is a tough place to set up a Black Market, but if successful it will be well worth the trouble." --> "The 'Defender of the Core' and its top of the line technology is a tough place to set up a black market, but if successful it will be well worth the trouble."
+-[TEXT_CORRUPTION_ATZERRI_STORY_BLACKMARKET]: "The marketplaces of Atzerri are almost ready-made for Consortium Black Markets - we just need to provide a little organization." --> "The marketplaces of Atzerri are almost ready-made for Consortium black narkets; we just need to provide a little organization."
+-[TEXT_CORRUPTION_ATZERRI_STORY_RACKETEER]: "With the planet already seeded in racketeering organizations, all the Zann Consortium needs to do is take over control of those criminal elements and it becomes a win/win situation." --> "With the planet already seeded in racketeering organizations, all the Zann Consortium needs to do is take over control of those criminal elements and it becomes a win-win situation."
+-[TEXT_CORRUPTION_BESPIN_STORY_PIRACY]: "Bespin provides the perfect set up for Piracy. The gas giant has many floating staging platforms where ships can hide. Tibanna gas is constantly being transported from the system and capturing some of the cargo transports is a perfect use for Zann associates." --> "Bespin provides the perfect set up for piracy. The gas giant has many floating staging platforms where ships can hide. Tibanna gas is constantly being transported from the system, and capturing some of the cargo transports is a perfect use for Zann associates."
+-[TEXT_CORRUPTION_BESPIN_STORY_RACKETEER]: "The potential targets for Racketeering are all clustered on one level of the Bespin gas giant. The cloud city metropolis is a perfect  target for our consortium." --> "The potential targets for racketeering are all clustered on one level of the Bespin gas giant. The Cloud City metropolis is a perfect  target for our consortium."
+-[TEXT_CORRUPTION_BESTINE_STORY_BLACKMARKET]: "The on-planet shipyards are a virtual mine of technology, making a black market set up ideal on the planet." --> "The on-planet shipyards are a virtual mine of technology, making a black market set up ideal on the planet."
+-[TEXT_CORRUPTION_BESTINE_STORY_KIDNAP]: "Massive ship yards fill the oceans of Bestine. Kidnapping  commander Falan will bring the entire planet and its yards to their knees. The secrets that man holds are galaxy wide and soon to be ours." --> "Massive shipyards fill the oceans of Bestine. Kidnapping Commander Falan will bring the entire planet and its yards to their knees. The secrets that man holds are galaxy wide, and soon to be ours."
+-[TEXT_CORRUPTION_BLACK_MARKET_ENCYCLOPEDIA]: "This mission requires a Defiler to set up illegal black market trading  centers." --> "This mission requires a Defiler to set up illegal black market trading centers."
+-[TEXT_CORRUPTION_BONADAN_STORY_BLACKMARKET]: "This highly populated Corporate Sector world will be an ideal place to hide a Black Market right under the noses of the authorities." --> "This highly populated Corporate Sector world will be an ideal place to hide a black narket right under the noses of the authorities."
+-[TEXT_CORRUPTION_BONADAN_STORY_CORUPTMILITIA]: "On Bonadan they have odd rules about carrying weapons, making the corruption of their Militia a useful priority for the Zann Consortium. If you control the weapon users on the planet, you control the planet." --> "On Bonadan, they have odd rules about carrying weapons, making the corruption of their militia a useful priority for the Zann Consortium. If you control the weapon users on the planet, you control the planet."
+-[TEXT_CORRUPTION_BOTHAWUI_STORY_BLACKMARKET]: "The Bothans' neutrality will allow us to set up a Black Market without the usual obstacles found on Imperial and Alliance-controlled planets." --> "The Bothans' neutrality will allow us to set up a black market without the usual obstacles found on Imperial and Alliance-controlled planets."
+-[TEXT_CORRUPTION_BOTHAWUI_STORY_INTIMIDATION]: "Intimidating Galactic Senator Polo Se'Lab puts important information and the political power of many Bothawui connected planets into the hands of the Zann Consortium." --> "Intimidating Galactic Senator Polo Se'Lab puts important information and the political power of many Bothawui-connected planets into the hands of the Zann Consortium."
+-[TEXT_CORRUPTION_BYSS_STORY_KIDNAP]: "Byss, an extremely dangerous world, prized by the Emperor. Taking planetary governor Kirith can reap great rewards in credits." --> "Byss, an extremely dangerous world prized by the emperor. Taking Planetary Governor Kirith can reap great rewards in credits."
+-[TEXT_CORRUPTION_CARIDA_STORY_BLACKMARKET]: "Connecting into the Black Market of Carida gains us great power and prestige as well as new Imperial technology for our units." --> "Connecting into the black market of Carida gains us great power and prestige as well as new Imperial technology for our units."
+-[TEXT_CORRUPTION_CORULAG_STORY_PIRACY]: "One of the most powerful planets in the Bormea Sector, its system wide riches are ripe for Piracy efforts." --> "One of the most powerful planets in the Bormea Sector, its system wide riches are ripe for piracy efforts."
+-[TEXT_CORRUPTION_ERIADU_STORY_BLACKMARKET]: "Because Eriadu is on so many star trading lanes it's perfectly set up for Black Markets to be established on the moons and outer reaches of the capital world." --> "Because Eriadu is on so many star trading lanes, it's perfectly set up for black markets to be established on the moons and outer reaches of the capital world."
+-[TEXT_CORRUPTION_ERIADU_STORY_RACKETEER]: "The orbital habitats of Eriadu are perfect for racketeering organizations that can take advantage of the habitats isolated status." --> "The orbital habitats of Eriadu are perfect for racketeering organizations that can take advantage of the habitats' isolated status."
+-[TEXT_CORRUPTION_FELUCIA_STORY_RACKETEER]: "Only a successful infiltration of the Jiaozi facility will adequately allow the Consortium to set up the type of Racketeering organization Felucia needs." --> "Only a successful infiltration of the Jiaozi facility will adequately allow the Consortium to set up the type of racketeering organization Felucia needs."
+-[TEXT_CORRUPTION_HOTH_STORY_RACKETEER]: "An ice world, Racketeering organizations on this planet will have far reaching influence among the Rebel forces. " --> "An ice world, racketeering organizations on this planet will have far reaching influence among the Rebel forces."
+-[TEXT_CORRUPTION_ILUM_STORY_BRIBERY]: "A thinly populated world filled with ice caves, bribing members of the population could reveal many Jedi secrets about the planet's Adegan Crystals." --> "A thinly populated world filled with ice caves, bribing members of the population could reveal many Jedi secrets about the planet's Adegan crystals."
+-[TEXT_CORRUPTION_NALHUTTA_STORY_BLACKMARKET]: "The Hutt organization is rife with jealousy and politics. The Zann Consortium can easily set up a Black Market pulling data from Rebel and Imperial technologies." --> "The Hutt organization is rife with jealousy and politics. The Zann Consortium can easily set up a black market, pulling data from Rebel and Imperial technologies."
+-[TEXT_CORRUPTION_NALHUTTA_STORY_KIDNAP]: "Kidnapping the Space Port director will halt the flow of minerals to the moon of Nar Shaddaa. If the moon can't process those resources our enemies' ability to build warships will be drastically curtailed." --> "Kidnapping the Space Port Director will halt the flow of minerals to the moon of Nar Shaddaa. If the moon can't process those resources our enemies' ability to build warships will be drastically curtailed."
+-[TEXT_CORRUPTION_POLUS_STORY_BLACKMARKET]: "The normally xenophobic Pyn'gani love new and exotic technology; getting them to look the other way when we set up a Black Market shouldn't be too hard." --> "The normally xenophobic Pyn'gani love new and exotic technology; getting them to look the other way when we set up a black market shouldn't be too hard."
+-[TEXT_CORRUPTION_SALEUCAMI_STORY_INTIMIDATION]: "Governor Koong Eeth must be intimidated for the corruption of Saleucami to proceed. Maiming Eeth, and putting him in the hospital for several months regenerating his body parts, will put across the message that he should accommodate the Zann Consortium's special needs." --> "Governor Koong Eeth must be intimidated for the corruption of Saleucami to proceed. Maiming Eeth, and putting him in the hospital for several months regenerating his body parts will put across the message that he should accommodate the Zann Consortium's special needs."
+-[TEXT_CORRUPTION_TARIS_STORY_INTIMIDATION]: "A Gungan Duelist named Twitch is the perfect target for intimidation. If the Zann Consortium can frighten him, the rest of the world will fall quickly." --> "A Gungan duelist named 'Twitch' is the perfect target for intimidation. If the Zann Consortium can frighten him, the rest of the world will fall quickly."
+-[TEXT_CORRUPTION_TATOOINE_STORY_BLACKMARKET]: "Jabba's Palace is already set up to support a Black Market so our efforts should be easy on this world." --> "Jabba's Palace is already set up to support a black market, so our efforts should be easy on this world."
+-[TEXT_CORRUPTION_UTAPAU_STORY_BRIBERY]: "Dreadnaught Heavy Cruisers guard the planet and the solar system. Bribing them can gain the Zann Consortium unusual power." --> "Dreadnaught-class heavy cruisers guard the planet and the solar system. Bribing them can gain the Zann Consortium unusual power."
+-[TEXT_DROID_ADVISOR_UNDERWORLD_SPACE_06]: "Asteroid fields can damage large ships and limit your units' line of sight." --> "Asteroid fields can hide Consortium units without damaging their shields or hull."
+-[TEXT_ENCYCLOPEDIA_BARRACKS_REBEL_00]: "Trains Infantry Platoons and Plex Soldiers and enables the construction of Officer Academies." --> "Trains infantry platoons and plex soldiers, and enables the construction of officer academies."
+-[TEXT_ENCYCLOPEDIA_CLASS_DUELIST]: "Gungan Duelist" --> "Class: Gungan Duelist"
+-[TEXT_ENCYCLOPEDIA_CLASS_SUPER]: "Class: Super Weapon" --> "Class: Superweapon"
+-[TEXT_ENCYCLOPEDIA_DROIDWORKS_UNDERWORLD]: "Produces Destroyer Droids." --> "Builds: Destroyer Droids."
+-[TEXT_ENCYCLOPEDIA_FIGHTER_SQUADRON]: "Fighter Squadron" --> "Class: Fighter Squadron"
+-[TEXT_ENCYCLOPEDIA_MANDALORIAN_SPAWNER]: "Periodically creates Mandalorian Militiamen until destroyed." --> "Periodically creates Mandalorian militiamen until destroyed."
+-[TEXT_ENCYCLOPEDIA_PLANET_DESTROYED]: "Planetary Debris" --> "Planetary debris."
+-[TEXT_ENCYCLOPEDIA_R_SHIP_SPEED]: "Increases the movement speed of your team's Frigate and Capital class starships." --> "Increases the movement speed of your team's Frigate- and Capital-class starships."
+-[TEXT_ENCYCLOPEDIA_REMOTE_SENSOR_POD]: "Reveals Fog of War, while controlled, exposing enemy positions on the battlefield." --> "Reveals the fog of war while controlled, exposing enemy positions on the battlefield."
+-[TEXT_ENCYCLOPEDIA_YSALAMIRI_TREE]: "This tree houses many Ysalamiri families.  The Ysalamiri block all use of the Force in a large radius around the tree." --> "This tree houses many ysalamiri families. The ysalamiri block all use of the Force in a large radius around the tree."
+-[TEXT_GAME_DESCRIPTION_CAMPAIGN]: "The full campaign game for 2 players. Choose your side: The Galactic Empire, The Rebel Alliance, or The Zann Consortium." --> "The full campaign game for two players. Choose your side: the Galactic Empire, the Rebel Alliance, or the Zann Consortium."
+-[TEXT_HACK_SUPER_WEAPON_DESCRIPTION]: "IG-88 will download his AI consciousness in the data core of the Death Star resulting in a catastrophic overload of all systems. The Death Star, nearby enemy fleets, and the orbited planet, will all be destroyed. IG-88 will also be destroyed in the process." --> "IG-88 will download his AI consciousness in the data core of the Death Star II, resulting in a catastrophic overload of all systems. The Death Star II, nearby enemy fleets and the orbited planet will all be destroyed. IG-88 will also be destroyed in the process."
+-[TEXT_MAL_SWAP_DESCRIPTION]: "Swap between standard Concussion missiles and Carbonite Missiles; Carbonite missiles slow and damage their targets." --> "Swap between standard concussion missiles and carbonite missiles; carbonite missiles slow and damage their targets."
+-[TEXT_TOOLTIP_DEATH_STAR_II]: "A larger, more powerful version of the original Death Star; the new battle station includes enhanced targeting computers for the superlaser, allowing it to fire on slow-moving ships." --> "A larger, more powerful version of the original Death Star. The new battle station includes enhanced targeting computers for the superlaser, allowing it to fire on slow-moving ships."
+-[TEXT_UNIT_ROGUE_10]: "Rogue 10: Tarrub Datch" --> "Rogue 10: Tarrin Datch"
+-[TEXT_UNDERWORLD_ACT1_CRAWL_PART_2]: "However, the battles between the Empire and the Alliance are not the only conflicts playing out across the galaxy. Tyber Zann, crime lord and former associate of JABBA THE HUTT, works to free himself from the Spice Mines of Kessel and plots his revenge on an unknowing galaxy." --> "However, the battles between the Empire and the Alliance are not the only conflicts playing out across the galaxy. Tyber Zann, crime lord and former associate of JABBA THE HUTT, works to free himself from the spice mines of Kessel, and plots his revenge on an unknowing galaxy."
+-[TEXT_UNDERWORLD_ACT1_CRAWL_PART_3]: "While Tyber puts his plans in motion, his lieutenant Urai Fen speeds toward Kessel in a hired starship-- the Millennium Falcon...." --> "While Tyber puts his plans in motion, his lieutenant Urai Fen speeds toward Kessel in a hired starship: the Millennium Falcon...."
+-[TEXT_TOOLTIP_ABILITY_SUMMON_DESCRIPTION]: "Summons a Rancor to fight alongside Silri." --> "Summons a rancor to fight alongside Silri."
+-[TEXT_TOOLTIP_ABILITY_SUPER_LASER_DESCRIPTION]: "Allows the Death Star II to target capital ships and frigates with the Superlaser." --> "Allows the Death Star II to target capital ships and frigates with the superlaser."
+-[TEXT_TOOLTIP_Z95_HEADHUNTER]: "Out-dated fighter armed with light laser cannons. Unremarkable except for its ability to hyperspace without a carrier ship and low cost of production. 5 fighters per squadron." --> "Outdated fighter armed with light laser cannons. Unremarkable except for its ability to hyperspace without a carrier ship and low cost of production. 5 fighters per squadron."
+-[TEXT_TOOLTIP_TYBER_ZANN]: "Tyber Zann, criminal mastermind of the Zann Consortium. He is adept at using most weapons of war, and a tactical genius." --> "Tyber Zann, criminal mastermind of the Zann Consortium. He is adept at using most weapons of war, and is a tactical genius."
+-[TEXT_TOOLTIP_TECH_LEVEL_REBEL]: "The current tech level determines what units and structures can be built. The Rebellion advances their tech tree by stealing technology from the Empire with R2-D2 and C3P0. When all the units and structures are stolen for the current tech level, the Rebellion will advance to the next tech level." --> "The current tech level determines what units and structures can be built. The Rebellion advances their tech tree by stealing technology from the Empire with R2-D2 and C-3P0. When all the units and structures are stolen for the current tech level, the Rebellion will advance to the next tech level."
+-[TEXT_TOOLTIP_GARRISON_R_BARRACKS]: "Garrison: Rebel Soldier, PLEX Soldier" --> "Garrison: Rebel Soldier, Plex Soldier."
+-[TEXT_TOOLTIP_AV_TURRET]: "Anti-Vehicle turret capable of defeating most vehicle assaults." --> "Anti-vehicle turret capable of defeating most vehicle assaults."
+-[TEXT_TOOLTIP_ECLIPSE]: "The Emperor's ultimate expression of power, the Eclipse-class Star Destroyer boasted a planet's worth of weaponry, including a coaxial superlaser." --> "The emperor's ultimate expression of power, the Eclipse-class Star Destroyer boasted a planet's worth of weaponry, including a coaxial superlaser."
+-[TEXT_TOOLTIP_PALPATINE]: "Imperial leader. Strong in the dark side of the Force and capable of inflicting great damage.  The Emperor also drains the life and will from nearby enemy.  The Emperor's Force corrupt ability affects any nearby units." --> "Imperial leader. Strong in the dark side of the Force, and capable of inflicting great damage. The Emperor also drains the life and will from nearby enemy. The Emperor's 'Force Corrupt' ability affects any nearby units."
+-[TEXT_TOOLTIP_R2D2]: "A droid duo with a knack for acquiring sensitive information and being in the right place at the right time." --> "A droid with a knack for acquiring sensitive information, and being in the right place at the right time."
+-[TEXT_TACTICAL_PRIMARY_KILL_EVIL_LEADER]: "Kill The Emperor." --> "Kill the emperor."
+-[TEXT_TACTICAL_PRIMARY_PROTECT_EVIL_LEADER]: "The Emperor must survive." --> "The emperor must survive."
+-[TEXT_TOOLTIP_AA_TURRET]: "Anti-Aircraft turret capable of shooting down bombers and aircraft." --> "Anti-aircraft turret capable of shooting down bombers and aircraft."
+-[TEXT_UW_ACT01_G01_22]: "TASK: Use a Defiler to set up a Racketeering operation on Shola." --> "TASK: Use a Defiler to set up a racketeering operation on Shola."
+-[TEXT_UW_ACT01_G01_29]: "TASK: Choose the INTIMIDATION mission from the corruption menu." --> "TASK: Choose the 'intimidation' mission from the corruption menu."
+-[TEXT_UW_ACT01_G01_30]: "TASK: Corrupt Mandalore using PIRACY." --> "TASK: Corrupt Mandalore using piracy."
+-[TEXT_UW_ACT01_G05_01]: "TASK: Use a Defiler to establish a Black Market on Kuat." --> "TASK: Use a Defiler to establish a black market on Kuat."
+-[TEXT_UW_ACT01_G05_02]: "TASK: Drag Tyber Zann to the BUY slot on Kuat." --> "TASK: Drag Tyber Zann to the 'BUY' context-sensitive slot on Kuat."
+-[TEXT_UW_ACT01_G05_04]: "TASK: Purchase Disruptor Technology." --> "TASK: Purchase disruptor technology."
+-[TEXT_UW_ACT01_G06_10]: "Jabba the Hutt found a way to break into Tyber's communications system.  Luckily Tyber's techs managed to trace the signal to a relay station on Saleucami.  Jabba needs to be taught a lesson. I will use my strike team to establish a beachhead, so that our land forces can take Saleucami out from under him." --> "Jabba the Hutt found a way to break into Tyber's communications system. Luckily, Tyber's techs managed to trace the signal to a relay station on Saleucami. Jabba needs to be taught a lesson. I will use my strike team to establish a beachhead, so that our land forces can take Saleucami out from under him."
+-[TEXT_UW_ACT01_G06_11]: "TASK: Build a Defiler and drag it to the SABOTAGE context-sensitive slot on Saleucami." --> "TASK: Build a Defiler, and drag it to the 'SABOTAGE' context-sensitive slot on Saleucami."
+-[TEXT_UW_ACT01_M02_HINT_02]: "HINT: Destroy the Pirate Frigate to release the Data Pod. Avoid engaging the enemy forces." --> "HINT: Destroy the pirate frigate to release the data pod. Avoid engaging the enemy forces."
+-[TEXT_UW_ACT01_M03_GOAL_01]: "Recapture a reinforcement point." --> "Recapture the reinforcement point."
+-[TEXT_UW_ACT01_M03_GOAL_03]: "The Communications Stations must remain intact." --> "The communications station must remain intact."
+-[TEXT_UW_ACT01_M03_HINT_01]: "HINT: Use Urai Fen’s Personal Cloaking Field to sneak past the enemy blockade." --> "HINT: Use Urai Fen’s 'Personal Cloaking Field' ability to sneak past the enemy blockade."
+-[TEXT_UW_ACT01_M03_HINT_02]: "HINT: Use Urai Fen’s Sonic Stunner to incapacitate multiple infantry units simultaneously." --> "HINT: Use Urai Fen’s 'Sonic Stunner' ability to incapacitate multiple infantry units simultaneously."
+-[TEXT_UW_ACT02_G09_12]: "TASK: Defeat the Pirates orbiting Mandalore" --> "TASK: Defeat the pirates orbiting Mandalore."
+-[TEXT_UW_ACT02_G14_01]: "BONUS: Tyber Zann receives 50,000 credits from selling Tibanna Gas on the black market." --> "BONUS: Tyber Zann receives 50,000 credits from selling the tibanna gas on the black market."
+-[TEXT_UW_ACT03_M11_HINT_06]: "HINT: The MDUs Ysalamiri cage will keep force users from using their powers." --> "HINT: The MDU's ysalamiri cage will keep Force-users from using their powers."
+-[TEXT_UW_ACT03_M11_HINT_07]: "HINT: The Juggernaut's Point Laser Defense System destroys incoming missiles." --> "HINT: The Juggernaut's 'Point Laser Defense' system destroys incoming missiles."
+-[TEXT_UW_ACT03_M12_GOAL_03]: "Destroy the Millennium Falcon and drive the remaining Rebels from this sector." --> "Destroy the Millennium Falcon tp drive the remaining Rebels from this sector."
 
-*Adding periods to essentially all construction texts and upgrades to complete the sentence and keep consistiency (half didn't have them, half did).
-
-E.g.: "CLICK to construct Consortium Factory" --> "CLICK to construct Consortium Factory."
-
-----
-
-*MBTM02_SCRAMBLE (& MBTM02_Scramble) -- Fixed improper comma usage.
-
-O: "After escaping the Imperial assault on Kashyyyk, the Rebel Alliance must reinforce their holdings at several, nearby planets."
-
-F: "After escaping the Imperial assault on Kashyyyk, the Rebel Alliance must reinforce their holdings at several nearby planets."
-
-----
-
-*MP_TEXT_ENCYCLOPEDIA_ASTEROID_MINING_FACILITY_PAD_01 -- Fixed improper capitalization of "asteroid miners."
-
-O: "When operational, Asteroid Miners extract ore and precious minerals from space rocks and convert them into cash."
-
-F: "When operational, asteroid miners extract ore and precious minerals from space rocks and convert them into cash."
-
-----
-
-*TEXT_DROID_ADVISOR_EMPIRE_GALACTIC_23 -- Fixed improper capitalization of "emperor."
-
-O: "If the Emperor is captured, the Empire will fall."
-
-F: "If the emperor is captured, the Empire will fall."
-
-----
-
-*TEXT_DROID_ADVISOR_EMPIRE_LAND_11 -- Fixed improper capitalization of "emperor."
-
-O: "The Emperor can convert units to your control.  Use this ability when Rebel infantry units are present."
-
-F: "The emperor can convert units to your control.  Use this ability when Rebel infantry units are present."
-
-----
-
-*TEXT_DROID_ADVISOR_EMPIRE_SPACE_00 -- Fixed improper capitalization of "space station."
-
-O: "The Space Station's destruction will end this battle."
-
-F: "The space station's destruction will end this battle."
-
-----
-
-*TEXT_DROID_ADVISOR_EMPIRE_SPACE_01 -- Fixed improper capitalization of "space station."
-
-O: "If you're attacking a planet, destroy the Space Station.  If you're defending, protect the Space Station."
-
-F: "If you're attacking a planet, destroy the space station.  If you're defending, protect the space station."
-
-----
-
-*TEXT_DROID_ADVISOR_EMPIRE_SPACE_04 -- Fixed improper capitalization of "space station" and "hard points."
-
-O: "Attack Hard Points on large ships and Space Stations to take out critical systems such as shield generators."
-
-F: "Attack hard points on large ships and space stations to take out critical systems such as shield generators."
-
-----
-
-*TEXT_DROID_ADVISOR_EMPIRE_SPACE_07 -- Fixed improper capitalization of "asteroid."
-
-O: "Nebulae clouds disable shields and, like Asteroid fields, limit your units' line of sight."
-
-F: "Nebulae clouds disable shields and, like asteroid fields, limit your units' line of sight."
-
-----
-
-*TEXT_DROID_ADVISOR_EMPIRE_SPACE_09 -- Fixed improper capitalization of "station."
-
-O: "If you're defending, your space station can make combat upgrades during battle.  Click on the Station to select the upgrades."
-
-F: "If you're defending, your space station can make combat upgrades during battle.  Click on the station to select the upgrades."
-
-----
-
-*TEXT_DROID_ADVISOR_EMPIRE_SPACE_12 -- Added a period to complete the sentence, and fixed improper capitalization of "emperor."
-
-O: "If the Emperor is present, protect him  His death will mean the end for the Empire."
-
-F: "If the emperor is present, protect him.  His death will mean the end for the Empire."
-
-----
-
-*TEXT_DROID_ADVISOR_EMPIRE_SPACE_13 -- Fixed improper capitalization of "space stations."
-
-O: "Broadside Cruisers do great damage to enemy Space Stations."
-
-F: "Broadside Cruisers do great damage to enemy space stations."
-
-----
-
-*TEXT_DROID_ADVISOR_REBEL_GALACTIC_24 -- Fixed flow of the sentence. It wasn't correct without "the."
-
-O: "Mon Mothma must be protected.  If she dies, war is lost."
-
-F: "Mon Mothma must be protected.  If she dies, the war is lost."
-
-----
-
-*TEXT_DROID_ADVISOR_REBEL_SPACE_00 -- Fixed improper capitalization of "space station."
-
-O: "The Space Station's destruction will end this battle."
-
-F: "The space station's destruction will end this battle."
-
-----
-
-*TEXT_DROID_ADVISOR_REBEL_SPACE_01 -- Fixed improper capitalization of "space station."
-
-O: "If you're attacking a planet, destroy the Space Station.  If you're defending, protect the Space Station."
-
-F: "If you're attacking a planet, destroy the space station.  If you're defending, protect the space station."
-
-----
-
-*TEXT_DROID_ADVISOR_REBEL_SPACE_04 -- Fixed improper capitalization of "space station" and "hard points."
-
-O: "Attack Hard Points on large ships and Space Stations to take out critical systems such as shield generators."
-
-F: "Attack hard points on large ships and space stations to take out critical systems such as shield generators."
-
-----
-
-*TEXT_DROID_ADVISOR_REBEL_SPACE_07 -- Fixed improper capitalization of "asteroid."
-
-O: "Nebulae clouds disable shields and, like Asteroid fields, limit your units' line of sight."
-
-F: "Nebulae clouds disable shields and, like asteroid fields, limit your units' line of sight."
-
-----
-
-*TEXT_DROID_ADVISOR_REBEL_SPACE_09 -- Fixed improper capitalization of "station."
-
-O: "If you're defending, your space station can make combat upgrades during battle.  Click on the Station to select the upgrades."
-
-F: "If you're defending, your space station can make combat upgrades during battle.  Click on the station to select the upgrades."
-
-----
-
-*TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_00 -- Fixed improper capitalization of "enemy."
-
-O: "In order to defeat the Enemy, you must liberate every planet in the galaxy."
-
-F: "In order to defeat the enemy, you must liberate every planet in the galaxy."
-
-----
-
-*TEXT_DROID_ADVISOR_UNDERWORLD_LAND_15 -- Fixed non-capitalization of "Force."
-
-O: "Vornskrs are able to sense force disturbances in their surroundings.  This allows them to detect stealth units as well as Jedi and Sith."
-
-F: "Vornskrs are able to sense Force disturbances in their surroundings.  This allows them to detect stealth units as well as Jedi and Sith."
-
-----
-
-*For all Consortium space hints, fixed improper capitalizations of "asteroid," "space station" and "station."
-
-----
-
-*TEXT_DROID_ADVISOR_UNDERWORLD_SPACE_05 -- Fixed improper capitalization and spelling of "Skipray Blastboat."
-
-O: "Skipray Blast Boats can be used to great effect against shielded hard points."
-
-F: "Skipray Blastboats can be used to great effect against shielded hard points."
-
-----
-
-*TEXT_DROID_ADVISOR_UNDERWORLD_SPACE_12 -- Fixed improper pronoun for Tyber Zann. "her death," really Petroglyph?
-
-O: "If Tyber Zann is killed, her death will mean the end of the Zann Consortium."
-
-F: "If Tyber Zann is killed, his death will mean the end of the Zann Consortium."
-
-----
-
-*TEXT_EMPIRE_ACT1_CRAWL_PART_3 -- Fixed improper capitalization of "emperor" and broken period spacing.
-
-O: "Threatening to turn the tide of this struggle is an unknown Imperial traitor, who deals in military secrets.  The Emperor has tasked his apprentice, DARTH VADER, with tracking down and eliminating this double agent….  "
-
-F: "Threatening to turn the tide of this struggle is an unknown Imperial traitor, who deals in military secrets.  The emperor has tasked his apprentice, DARTH VADER, with tracking down and eliminating this double agent...."
-
-----
-
-*TEXT_ENCYCLOPEDIA_LOADING -- Fixed weird-character periods on "Loading..."
-
-O: "Loading…"
-
-F: "Loading..."
-
-----
-
-*TEXT_ENCYCLOPEDIA_RESEARCH_00 -- Fixed improper use of "Death Star."
-
-O: "Allows the Empire to advance their technology by researching components for the Death Star."
-
-F: "Allows the Empire to advance their technology by researching components for the Death Star II."
-
-----
-
-*TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE -- Added period to complete the sentence.
-
-O: "An indigenous unit enslaved to the will of the Zann Consortium"
-
-F: "An indigenous unit enslaved to the will of the Zann Consortium."
-
-----
-
-*TEXT_ENCYCLOPEDIA_STORY_BROKEN_SHIP -- Added period to complete the sentence.
-
-O: "This ship is unmanned, deactivated, and awaiting repairs"
-
-F: "This ship is unmanned, deactivated, and awaiting repairs."
-
-----
-
-*TEXT_ENCYCLOPEDIA_STORY_UNDER_CONSTRUCTION -- Added period to complete the sentence.
-
-O: "This ship is under construction and not functional"
-
-F: "This ship is under construction and not functional."
-
-----
-
-*Fixed all TEXT_ENCYCLOPEDIA_UPGRADE_LEVEL_ strings incorrectly capitalizing "space station."
-
-----
-
-*TEXT_ENCYCLOPEDIA_VORNSKR_SPAWNER -- Added period to complete the sentence.
-
-O: "Periodically creates Vornskrs until destroyed"
-
-F: "Periodically creates Vornskrs until destroyed."
-
-----
-
-*TEXT_ENCYCLOPEDIA_WAMPA_SPAWNER -- Added period to complete sentence and capitalized "Wampa."
-
-O: "Periodically creates a wampa until destroyed"
-
-F: "Periodically creates a Wampa until destroyed."
-
-----
-
-*TEXT_HACK_SUPER_WEAPON_DESCRIPTION -- Fixed reference to "Death Star." Corrected "in" to "into" and corrected comma usage.
-
-O: "IG-88 will download his AI consciousness in the data core of the Death Star resulting in a catastrophic overload of all systems. The Death Star, nearby enemy fleets, and the orbited planet, will all be destroyed. IG-88 will also be destroyed in the process."
-
-F: "IG-88 will download his AI consciousness into the data core of the Death Star II resulting in a catastrophic overload of all systems. The Death Star II, nearby enemy fleets and the orbited planet will all be destroyed. IG-88 will also be destroyed in the process."
-
-----
-
-*TEXT_KUAT_KIDNAPPING_OBJECTIVE_01 -- Capitalized "Must Survive" for consistiency with all other texts.
-
-O: "Bossk must survive."
-
-F: "Bossk Must Survive."
-
-----
-
-*TEXT_MAL_SWAP_DESCRIPTION -- Fixed improper use of semi-colon and improper capitalization of "missles."
-
-O: "Swap between standard Concussion missiles and Carbonite Missiles; Carbonite missiles slow and damage their targets."
-
-F: "Swap between standard Concussion missiles and Carbonite missiles. Carbonite missiles slow and damage their targets."
-
-----
-
-*TEXT_MANDALORE_PIRACY_OBJECTIVE_01 -- Capitalized "Must Survive" for consistiency with all other texts.
-
-O: "Tyber Zann must survive."
-
-F: "Tyber Zann Must Survive."
-
-----
-
-*TEXT_MUUNILINST_KIDNAPPING_OBJECTIVE_01 -- Capitalized "Must Survive" for consistiency with all other texts.
-
-O: "IG-88 must survive."
-
-F: "IG-88 Must Survive."
-
-----
-
-*TEXT_NALHUTTA_KIDNAPPING_OBJECTIVE_01 -- Capitalized "Must Survive" for consistiency with all other texts.
-
-O: "Urai Fen must survive."
-
-F: "Urai Fen Must Survive."
-
-----
-
-*TEXT_SAVELOAD_SAVING_MSG -- Fixed odd "…" character.
-
-O: "Saving…"
-
-F: "Saving..."
-
-----
-
-*MP_TEXT_ENCYCLOPEDIA_COMMAND_CENTER_REBEL_00 - Fixed non-use of a hyphen for "based."
-
-O: "The central structure of operations for Rebellion ground based forces. Command Centers allow the recruitment of hero units."
-
-F: "The central structure of operations for Rebellion ground-based forces. Command Centers allow the recruitment of hero units."
-
-----
-
-*TEXT_BESPIN_PIRACY_OBJECTIVE_01 - Fixing improper capitalization of "designated location."
-
-O: "Activate the Interdictor at the Designated Location."
-
-F: "Activate the Interdictor at the designated location."
-
-----
-
-*TEXT_BESPIN_PIRACY_OBJECTIVE_02 - Fixing improper capitalization of "shuttles carrying."
-
-O: "Destroy the Shuttles Carrying the Tibanna Gas."
-
-F: "Destroy the shuttles carrying the Tibanna Gas."
-
-----
-
-*TEXT_BESPIN_PIRACY_OBJECTIVE_03 - Fixed improper capitalization of "Tibana Gas shuttles."
-
-O: "Destroy the Tibanna Gas Shuttles in the second convoy."
-
-F: "Destroy the Tibanna Gas shuttles in the second convoy."
-
-----
-
-*TEXT_CAMPAIGN_DIRECTIONS2 - Fixed odd ellipses character use.
-
-O: "Choose your destiny…"
-
-F: "Choose your destiny..."
-
-----
-
-*TEXT_CORRUPTION_BONADAN_STORY_CORUPTMILITIA - Fixing improper capitalization of "militia."
-
-O: "On Bonadan they have odd rules about carrying weapons, making the corruption of their Militia a useful priority for the Zann Consortium. If you control the weapon users on the planet, you control the planet. "
-
-F: "On Bonadan they have odd rules about carrying weapons, making the corruption of their militia a useful priority for the Zann Consortium. If you control the weapon users on the planet, you control the planet. "
-
-----
-
-*TEXT_CORRUPTION_CARIDA_STORY_BRIBERY - Fixed improper capitalization of "trade route."
-
-O: "In bribing Tarlen Ten, the trade master of the Perlemian Trade Route, we gain a great deal of information and the powerful garrison of Carida will no longer produce units for our enemies. "
-
-F: "In bribing Tarlen Ten, the trade master of the Perlemian trade route, we gain a great deal of information and the powerful garrison of Carida will no longer produce units for our enemies. "
-
-----
-
-*TEXT_CORRUPTION_ERIADU_STORY_RACKETEER - Fixed non-pluralization of "habitats'"
-
-O: "The orbital habitats of Eriadu are perfect for racketeering organizations that can take advantage of the habitats isolated status. "
-
-F: "The orbital habitats of Eriadu are perfect for racketeering organizations that can take advantage of the habitats' isolated status. "
-
-----
-
-*TEXT_CORRUPTION_ILUM_STORY_BRIBERY - Fixed capitalization of "crystals."
-
-O: "A thinly populated world filled with ice caves, bribing members of the population could reveal many Jedi secrets about the planet's Adegan Crystals. "
-
-F: "A thinly populated world filled with ice caves, bribing members of the population could reveal many Jedi secrets about the planet's Adegan crystals. "
-
-----
-
-*TEXT_CORRUPTION_KORRIBAN_STORY_RACKETEER - Fixed improper capitalization of "dark."
-
-O: "Of all the things that could happen on this Dark Force planet, only racketeering could work, and even trying this could present great danger for the Consortium. "
-
-F: "Of all the things that could happen on this dark Force planet, only racketeering could work, and even trying this could present great danger for the Consortium. "
-
-----
-
-*TEXT_CORRUPTION_NALHUTTA_STORY_BLACKMARKET - Fixed improper capitalization of "black market."
-
-O: "The Hutt organization is rife with jealousy and politics. The Zann Consortium can easily set up a Black Market pulling data from Rebel and Imperial technologies. "
-
-F: "The Hutt organization is rife with jealousy and politics. The Zann Consortium can easily set up a black market pulling data from Rebel and Imperial technologies. "
-
-----
-
-*TEXT_CORRUPTION_RACKETEERING_BENEFIT - Fixing weird period placement.
-
-O: "BENEFITS: Automatically generates a large amount of credits on the galactic level; provides a salvage credit bonus for every enemy unit destroyed during tactical combat . "
-
-F: "BENEFITS: Automatically generates a large amount of credits on the galactic level; provides a salvage credit bonus for every enemy unit destroyed during tactical combat. "
-
-----
-
-*TEXT_ENCYCLOPEDIA_R_SHIP_SPEED - Adding hyphen for connected word.
-
-O: "Increases the movement speed of your team's Frigate and Capital class starships."
-
-F: "Increases the movement speed of your team's Frigate- and Capital-class starships."
-
-----
-
-*TEXT_ENCYCLOPEDIA_RANCOR_SPAWNER - Capitalized "Rancor."
-
-O: "Periodically creates a rancor until destroyed."
-
-F: "Periodically creates a Rancor until destroyed."
-
-----
-
-*TEXT_ENCYCLOPEDIA_REMOTE_SENSOR_POD - Fixed improper comma usage and improper capitalization of "fog of war."
-
-O: "Reveals Fog of War, while controlled, exposing enemy positions on the battlefield."
-
-F: "Reveals fog of war while controlled, exposing enemy positions on the battlefield."
-
-----
-
-*TEXT_GAME_DESCRIPTION_CAMPAIGN - Fixed improper capitalization of all three "the"s.
-
-O: "The full campaign game for 2 players. Choose your side: The Galactic Empire, The Rebel Alliance, or The Zann Consortium."
-
-F: "The full campaign game for 2 players. Choose your side: the Galactic Empire, the Rebel Alliance, or the Zann Consortium."
-
-----
-
-*TEXT_OBJECTIVE_UNDERWORLD_PIRACY_TUTORIAL_01 - Fixing improper capitalization of "right-clicking."
-
-O: "Destroy the Supreme Strategist’s engines by highlighting and Right-Clicking on the engine hardpoint of his ship."
-
-F: "Destroy the Supreme Strategist’s engines by highlighting and right-clicking on the engine hardpoint of his ship."
-
-----
-
-*TEXT_SELECT_OPTIONS - Fixed weird elipses character thing.
-
-O: "Advanced…"
-
-F: "Advanced..."
-
-----
-
-*TEXT_UNIT_MOBILE_DEFENSE_UNIT_EMPIRE/REBEL/UNDERWORLD - Added periods to complete the sentence.
-
-===================================================================================================
-
-
-===================================================================================================
-v1.0 - Petroglyph'd
-===================================================================================================
-*Adding periods (to complete the sentence) for all Empire tech level upgrades, and many other things that are applicable. Not every one will be recorded.
-
-----
-
-*Fixed improper capitalization of "production" in all Empire upgrade technologies.
-
-----
-*MB_LAND_PLANET_ALZOCIII_INTIMIDATION -- Fixed "Food Commissioner" as it's a title, added dashes in "behind the scenes," and fixed improper capitalization of "planet."
-
-O: "The food Commissioner is an important behind the scenes power broker on the Planet. With him in our control, mining production levels can be changed at the whim of the Zann Consortium.  Our Defiler has assembled a strike team of our reservists to accomplish our goal.  "
-
-F: "The Food Commissioner is an important behind-the-scenes power broker on the planet. With him in our control, mining production levels can be changed at the whim of the Zann Consortium.  Our Defiler has assembled a strike team of our reservists to accomplish our goal.  "
-
-----
-
-*MB_LAND_PLANET_BOTHAWUI_INTIMIDATION -- Fixed improper thingy that I can't figure out how to say but know this needs to be fixed.
-
-O: "Intimidating Galactic Senator Polo Se'Lab puts important information and the political power of many Bothawui connected planets into the hands of the Zann Consortium.  Our Defiler has assembled a strike team of our reservists to accomplish our goal. "
-
-F: "Intimidating Galactic Senator Polo Se'Lab puts important information and the political power of many Bothawui-connected planets into the hands of the Zann Consortium.  Our Defiler has assembled a strike team of our reservists to accomplish our goal. "
-
-----
-
-*MB_LAND_PLANET_BYSS_KIDNAPPING -- Fixed improper comma usage, improper capitalization of "emperor" and non-capitalization of title "Planetary Governer."
-
-O: "Byss, an extremely dangerous world, prized by the Emperor. Taking planetary governor Kirith can reap great rewards in credits.  Our Defiler has assembled a strike team of our reservists to accomplish our goal. "
-
-F: "Byss, an extremely dangerous world prized by the emperor. Taking Planetary Governor Kirith can reap great rewards in credits.  Our Defiler has assembled a strike team of our reservists to accomplish our goal. "
-
-----
-
-*MB_LAND_PLANET_NALHUTTA_KIDNAPPING -- Fixing improper non-capitalization of "director" in the title "Space Port Director"
-
-O: "Kidnapping the Space Port director will halt the flow of minerals to the moon of Nar Shaddaa. If the moon can't process those resources our enemies' ability to build warships will be drastically curtailed.  Our Defiler has assembled a strike team of our reservists to accomplish our goal. "
-
-F: "Kidnapping the Space Port Director will halt the flow of minerals to the moon of Nar Shaddaa. If the moon can't process those resources our enemies' ability to build warships will be drastically curtailed.  Our Defiler has assembled a strike team of our reservists to accomplish our goal. "
-
-----
-
-*MB_LAND_PLANET_TARIS_INTIMIDATION -- Fixed improper capitalization of profession.
-
-O: "A Gungan Duelist named Twitch is the perfect target for intimidation. If the Zann Consortium can frighten him, the rest of the world will fall quickly. Our Defiler has assembled a strike team of our reservists to accomplish our goal. "
-
-F: "A Gungan duelist named Twitch is the perfect target for intimidation. If the Zann Consortium can frighten him, the rest of the world will fall quickly. Our Defiler has assembled a strike team of our reservists to accomplish our goal. "
-
-----
-
-*MB_LAND_PLANET_UTAPAU_KIDNAPPING -- Fixed improper capitalization of "family."
-
-O: "The Fey Family has a long history of leadership on the planet. Taking someone like Garnak Fey shows the planet and the sector who they should really fear.  Our Defiler has assembled a strike team of our reservists to accomplish our goal. "
-
-F: "The Fey family has a long history of leadership on the planet. Taking someone like Garnak Fey shows the planet and the sector who they should really fear.  Our Defiler has assembled a strike team of our reservists to accomplish our goal. "
-
-----
-
-*MB_SPACE_PLANET_AETENII_PIRACY -- Another improper thingy I don't know how to say I fixed.
-
-O: "Aeten II is known for its rare and dwindling supply Stygium Crystal deposits which are used in the construction of various ship based cloaking technologies. Setting up an Aeten II piracy ring on nearby moons brings valuable credits to the Consortium.  Our Defiler has assembled a strike team of our reservists to accomplish our goal. "
-
-F: "Aeten II is known for its rare and dwindling supply Stygium Crystal deposits which are used in the construction of various ship-based cloaking technologies. Setting up an Aeten II piracy ring on nearby moons brings valuable credits to the Consortium.  Our Defiler has assembled a strike team of our reservists to accomplish our goal. "
-
-----
-
-*MB_SPACE_PLANET_BESPIN_PIRACY -- Fixed improper capitalization of "piracy."
-
-O: "Bespin provides the perfect set up for Piracy. The gas giant has many floating staging platforms where ships can hide. Tibanna gas is constantly being transported from the system and capturing some of the cargo transports is a perfect use for Zann associates.  Our Defiler has assembled a strike team of our reservists to accomplish our goal.  "
-
-F: "Bespin provides the perfect set up for piracy. The gas giant has many floating staging platforms where ships can hide. Tibanna gas is constantly being transported from the system and capturing some of the cargo transports is a perfect use for Zann associates.  Our Defiler has assembled a strike team of our reservists to accomplish our goal.  "
-
-----
-
-*MB_SPACE_PLANET_BESPIN_PIRACY_STORY -- Fixed improper capitalization of "piracy."
-
-O: "Bespin provides the perfect set up for Piracy. The gas giant has many floating staging platforms where ships can hide. Tibanna gas is constantly being transported from the system and capturing some of the cargo transports is a perfect use for Zann associates.  I will lead a strike team of our reservists to accomplish our goal.  "
-
-F: "Bespin provides the perfect set up for piracy. The gas giant has many floating staging platforms where ships can hide. Tibanna gas is constantly being transported from the system and capturing some of the cargo transports is a perfect use for Zann associates.  I will lead a strike team of our reservists to accomplish our goal.  "
-
-----
-
-*MB_SPACE_PLANET_CORULAG_PIRACY -- Fixed improper capitalization of "piracy," and hypenation of "system-wide."
-
-O: "One of the most powerful planets in the Bormea Sector, its system wide riches are ripe for Piracy efforts.  Our Defiler has assembled a strike team of our reservists to accomplish our goal.  "
-
-F: One of the most powerful planets in the Bormea Sector, its system-wide riches are ripe for piracy efforts.  Our Defiler has assembled a strike team of our reservists to accomplish our goal.  
-
-----
-
-*MB_SPACE_PLANET_KESSEL_PIRACY -- Fixing unnatural double-spacing.
-
-O: "Kessel is infamous for its political prisons which require massive communication satellites to maintain proper order.  These satellites are weak to an assault by our Defilers. Controlling them will trick Consortium enemies into sending ships to Zann controlled docks. Tariffs that would have been paid while moving through the system will be paid to the Zann Consortium instead.  Our Defiler has assembled a strike team of our reservists to accomplish our goal. "
-
-F: "Kessel is infamous for its political prisons which require massive communication satellites to maintain proper order. These satellites are weak to an assault by our Defilers. Controlling them will trick Consortium enemies into sending ships to Zann controlled docks. Tariffs that would have been paid while moving through the system will be paid to the Zann Consortium instead.  Our Defiler has assembled a strike team of our reservists to accomplish our goal. "
-
-----
-
-*MB_SPACE_PLANET_MANDALORE_PIRACY_STORY -- Fixing spacing/extra period.
-
-O: "Piracy is going to be especially dangerous to set up around Mandalore. I will have to personally take charge to make this mission work against the vicious inhabitants of Mandalore and their brand of space fighters. .  Our Defiler has assembled a strike team of our reservists to accomplish our goal. "
-
-F: "Piracy is going to be especially dangerous to set up around Mandalore. I will have to personally take charge to make this mission work against the vicious inhabitants of Mandalore and their brand of space fighters.  Our Defiler has assembled a strike team of our reservists to accomplish our goal. "
-
-----
-
-*TEXT_CAMPAIGN_SINGLE_12_INTRO_E -- Fixed improper dash usage in the Empire version of "Heart of the Maw"'s intro, and improper capitalization of "emperor."
-
-O: "The Empire wishes to use the Maw as a location for a research facility.  Both the Rebellion and the Zann Consortium also wish to use the location for their own purposes.  The Emperor instructs you to capture the Maw along with four other key planets to further his plans.  You have 60 galactic days to do this - fail at your own peril."
-
-F: "The Empire wishes to use the Maw as a location for a research facility.  Both the Rebellion and the Zann Consortium also wish to use the location for their own purposes.  The emperor instructs you to capture the Maw along with four other key planets to further his plans.  You have 60 galactic days to do this—fail at your own peril."
-
-----
-
-*TEXT_CAMPAIGN_SINGLE_12_INTRO_R -- Fixed improper dash usage in the Rebellion's version of "Heart of the Maw"'s intro.
-
-O: "We wish to wrest control of the Maw from the Zann Consortium; the location is ideal for a refuge due to the difficulty in navigating the area.  It would also be beneficial to the Alliance if we were to control four other key planets.  However, the Empire is attempting to interfere with our plans - we only have 60 galactic days to take control, or we lose everything.  May the Force be with you!"
-
-F: "We wish to wrest control of the Maw from the Zann Consortium; the location is ideal for a refuge due to the difficulty in navigating the area.  It would also be beneficial to the Alliance if we were to control four other key planets.  However, the Empire is attempting to interfere with our plans—we only have 60 galactic days to take control, or we lose everything.  May the Force be with you!"
-
-----
-
-*TEXT_CAMPAIGN_SINGLE_21_INTRO_E -- Fixed improper dash usage in the Empire version of "Origin of Corruption"'s intro.
-
-O: "The galaxy is in turmoil following the Battle of Yavin.  Many of the planetary governments have seceded from the Empire, but are not ready to trust the Rebellion.  Meanwhile, there is a new force working in the background of the galaxy.  The Empire will not tolerate any interference - crush all who oppose us."
-
-F: "The galaxy is in turmoil following the Battle of Yavin.  Many of the planetary governments have seceded from the Empire, but are not ready to trust the Rebellion.  Meanwhile, there is a new force working in the background of the galaxy.  The Empire will not tolerate any interference—crush all who oppose us."
-
-----
-
-*TEXT_CAMPAIGN_SINGLE_33B_INTRO_E -- Fixed improper dash usage in the Empire version of "Clusters"'s intro.
-
-O: "The fools in the Rebellion and the Zann Consortium seek my life.  Let them play their games - I will play the rabbit for now while you go and seek their deaths instead.  Conquer Yavin 4 and Endor, and bring me proof that Mon Mothma and Tyber Zann will bother the Empire no longer."
-
-F: "The fools in the Rebellion and the Zann Consortium seek my life.  Let them play their games—I will play the rabbit for now while you go and seek their deaths instead.  Conquer Yavin 4 and Endor, and bring me proof that Mon Mothma and Tyber Zann will bother the Empire no longer."
-
-----
-
-*TEXT_CORRUPTION_BESPIN_STORY_PIRACY -- Fixed improper capitalization of "piracy."
-
-O: "Bespin provides the perfect set up for Piracy. The gas giant has many floating staging platforms where ships can hide. Tibanna gas is constantly being transported from the system and capturing some of the cargo transports is a perfect use for Zann associates. "
-
-F: "Bespin provides the perfect set up for piracy. The gas giant has many floating staging platforms where ships can hide. Tibanna gas is constantly being transported from the system and capturing some of the cargo transports is a perfect use for Zann associates. "
-
-----
-
-*TEXT_CORRUPTION_BESPIN_STORY_RACKETEER -- Fixed improper capitalization of "racketeering," improper spacing between "perfect" and "target," and non-capitalization of Cloud City's name.
-
-O: "The potential targets for Racketeering are all clustered on one level of the Bespin gas giant. The cloud city metropolis is a perfect  target for our consortium. "
-
-F: "The potential targets for racketeering are all clustered on one level of the Bespin gas giant. The Cloud City metropolis is a perfect target for our consortium. "
-
-----
-
-*TEXT_CORRUPTION_BESTINE_STORY_KIDNAP -- Fixing improper capitalization of "commander" as a title, and spacing between "Kidnapping" and "Commander."
-
-O: "Massive ship yards fill the oceans of Bestine. Kidnapping  commander Falan will bring the entire planet and its yards to their knees. The secrets that man holds are galaxy wide and soon to be ours."
-
-F: "Massive ship yards fill the oceans of Bestine. Kidnapping Commander Falan will bring the entire planet and its yards to their knees. The secrets that man holds are galaxy wide and soon to be ours."
-
-----
-
-*TEXT_CORRUPTION_BLACK_MARKET_ENCYCLOPEDIA -- Fixing improper double-space.
-
-O: "This mission requires a Defiler to set up illegal black market trading  centers."
-
-F: "This mission requires a Defiler to set up illegal black market trading centers."
-
-----
-
-*TEXT_CORRUPTION_BONADAN_STORY_BLACKMARKET -- Fixing improper capitalization of "black market."
-
-O: "This highly populated Corporate Sector world will be an ideal place to hide a Black Market right under the noses of the authorities."
-
-F: "This highly populated Corporate Sector world will be an ideal place to hide a black market right under the noses of the authorities."
-
-----
-
-*TEXT_CORRUPTION_BOTHAWUI_STORY_BLACKMARKET -- Fixing improper capitalization of "black market."
-
-O: "The Bothans' neutrality will allow us to set up a Black Market without the usual obstacles found on Imperial and Alliance-controlled planets."
-
-F: "The Bothans' neutrality will allow us to set up a black market without the usual obstacles found on Imperial and Alliance-controlled planets."
-
-----
-
-*TEXT_CORRUPTION_BOTHAWUI_STORY_BONDEDCITIZENS -- Fixing improper double-spacing.
-
-O: "Bothawui is a powerful world, providing access to large populations.  It is an ideal place to collect slaves."
-
-F: "Bothawui is a powerful world, providing access to large populations. It is an ideal place to collect slaves."
-
-----
-
-*TEXT_CORRUPTION_BOTHAWUI_STORY_INTIMIDATION -- Fixing hyphen stuff I don't know how to say it.
-
-O: "Intimidating Galactic Senator Polo Se'Lab puts important information and the political power of many Bothawui connected planets into the hands of the Zann Consortium."
-
-F: "Intimidating Galactic Senator Polo Se'Lab puts important information and the political power of many Bothawui-connected planets into the hands of the Zann Consortium."
-
-----
-
-*TEXT_CORRUPTION_TARIS_INT_GOAL_01 -- Making consistient with the rest, capitalizing "must survive."
-
-O: "Silri must survive."
-
-F: "Silri Must Survive."
-
-----
-
-*TEXT_CORRUPTION_UTAPAU_STORY_KIDNAP_OBJECTIVE_01 -- Making consistient with the rest, capitalizing "must survive."
-
-O: "Silri must survive."
-
-F: "Silri Must Survive."
-
-----
-
-*TEXT_CORULAG_PIRACY_OBJECTIVE_01 -- Making consistient with the rest, capitalizing "must survive."
-
-O: "The IG-2000 must survive."
-
-F: "The IG-2000 Must Survive."
-
-----
-
-*MBUM02_REMNANTS_OF_THE_DEATH_STAR -- Fixing improper capitalization of "emperor's."
-
-O: "It seems the Rebels went and blew up the Emperor's Death Star while I was busy rebuilding in another part of the galaxy.  Lucky for me the corpse is relatively fresh, and the scavengers have yet to pick it clean.  If the crew ejected the data pods, and if I can recover them before the Rebels, they just might contain information on the Emperor's hidden vaults...."
-
-F: "It seems the Rebels went and blew up the emperor's Death Star while I was busy rebuilding in another part of the galaxy.  Lucky for me the corpse is relatively fresh, and the scavengers have yet to pick it clean.  If the crew ejected the data pods, and if I can recover them before the Rebels, they just might contain information on the emperor's hidden vaults...."
-
-----
-
-*MBUM04_VISIONS_OF_THE_PAST -- Fixed non-hyphening of "Clone Wars-era."
-
-O: "Jabba the Hutt has uncovered an old Clone Wars-era factory built by the Geonosians that was never found by the old Republic.  If I can get there first, I can take a large prize out of Jabba's slimy hands, and gain a lot of firepower in the bargain.  Urai has gone ahead to scout while I gather some reinforcements.  What could possibly go wrong?"
-
-F: "Jabba the Hutt has uncovered an old Clone Wars-era factory built by the Geonosians that was never found by the old Republic.  If I can get there first, I can take a large prize out of Jabba's slimy hands, and gain a lot of firepower in the bargain.  Urai has gone ahead to scout while I gather some reinforcements.  What could possibly go wrong?"
-
-----
-
-*MBUM06_DARK_ALLY -- Fixed improper capitalization of "emperor."
-
-O: "I'm landing on Dathomir to search for a Dark Force user to unlock the Sith Artifact. I'm surprised to see the planet under strict Empire control. It seems there are many secrets here the Emperor himself wants to keep hidden. It will be interesting to see what Urai and I can find...."
-
-F: "I'm landing on Dathomir to search for a Dark Force user to unlock the Sith Artifact. I'm surprised to see the planet under strict Empire control. It seems there are many secrets here the emperor himself wants to keep hidden. It will be interesting to see what Urai and I can find...."
-
-----
-
-*MBUM09_BAITING_THE_HOOK -- Fixing capitalization of "Sith Artifact." It generally doesn't matter if it is or not, but consistiency does!
-
-O: "According to my plans I'm meeting the Imperial contact on Carida, supposedly to sell the Sith artifact.  I'm naturally expecting a double cross by everyone I'm meeting. After all, it's what I would do if I were meeting them.  But a trap you know about is one you can use to your advantage...."
-
-F: "According to my plans I'm meeting the Imperial contact on Carida, supposedly to sell the Sith Artifact.  I'm naturally expecting a double cross by everyone I'm meeting. After all, it's what I would do if I were meeting them.  But a trap you know about is one you can use to your advantage...."
-
-----
-
-*MBUM11_RAIDERS_OF_THE_LOST_HOLOCRON -- Fixed capitalization of "archive" and "emperor," and fixing the broken triple-period usage.
-
-O: "Urai, Silri, and I are raiding the Imperial Archive on Coruscant. I'm going to get the Emperor's personal passkey. I realize fully that Silri is going to be a problem, but for now I'll just watch her closely and make sure she does my bidding…."
-
-F: "Urai, Silri, and I are raiding the Imperial archive on Coruscant. I'm going to get the emperor's personal passkey. I realize fully that Silri is going to be a problem, but for now I'll just watch her closely and make sure she does my bidding...."
-
-----
-
-*MBUM12_THE_EMPERORS_NEW_WEAPON -- Fixed improper capitalization of "emperor" and dash usage.
-
-O: "The Emperor's passkey is the key to unlocking my prize - the Emperor's vaults and enough wealth to gain control of the galaxy's criminal underworld.  All I have to do is fight my way through the remaining Imperial ships, not to mention fending off whatever Rebel forces come to investigate..."
-
-F: "The emperor's passkey is the key to unlocking my prize—the emperor's vaults and enough wealth to gain control of the galaxy's criminal underworld.  All I have to do is fight my way through the remaining Imperial ships, not to mention fending off whatever Rebel forces come to investigate..."
-
-----
-
-*MT_SPACE_PLANET_CORELLIA_PIRACY -- Fixing improper capitalization of "satellites."
-
-O: "Raid the orbital satellites over Corellia"
-
-F: "Raid the orbital Satellites over Corellia"
-
-----
-
-*TEXT_CAMPAIGN_SINGLE_36_INTRO_E -- Fixing improper capitalization of "emperor."
-
-O: "While the heart of the Empire is relatively secure, the Outer Rim is a constant plague of corruption and disorder.  The Emperor wants the worlds of the Rim under control and his laws enforced; with the Rim in his control the Rebels and criminals will have nowhere left to run."
-
-F: "While the heart of the Empire is relatively secure, the Outer Rim is a constant plague of corruption and disorder.  The emperor wants the worlds of the Rim under control and his laws enforced; with the Rim in his control the Rebels and criminals will have nowhere left to run."
-
-----
-
-*TEXT_CAMPAIGN_SINGLE_56_INTRO_E -- Fixed improper capitalization of "emperor." 
-
-O: "During our battles with the Rebellion, we have noticed increased corruption and crime on many worlds.  The Emperor does not enjoy hearing that the funds meant for the advancement of his military are going to criminals, any more than he likes Rebel scum interfering with his rule.  Remove the Zann Consortium and the Rebellion from the galaxy by any means necessary.  Use your initial credits wisely to upgrade and expand your forces."
-
-F: "During our battles with the Rebellion, we have noticed increased corruption and crime on many worlds.  The emperor does not enjoy hearing that the funds meant for the advancement of his military are going to criminals, any more than he likes Rebel scum interfering with his rule.  Remove the Zann Consortium and the Rebellion from the galaxy by any means necessary.  Use your initial credits wisely to upgrade and expand your forces."
-
-----
-
-*TEXT_ENCYCLOPEDIA_TECH_UPGRADE_05 -- Fixing reference to the Death Star (EaW) instead of Death Star II (FoC).
-
-O: "Allows Production (with pre-requisites) of: The Death Star"
-
-F: "Allows Production (with pre-requisites) of: the Death Star II"
-
-----
-
-*TEXT_UW_ACT03_M11_GOAL_00 -- Making "must survive." consistient.
-
-O: "Tyber, Urai, and Silri must survive."
-
-F: "Tyber, Urai, and Silri Must Survive."
-
-----
-
-*TEXT_UW_ACT02_M07_GOAL_05 -- Making "must survive." consistient.
-
-O: "Urai Fen must survive."
-
-F: "Urai Fen Must Survive."
-
-----
-
-*TEXT_UW_ACT02_M07_GOAL_06 -- Making "must survive." consistient.
-
-O: "IG-88 must survive."
-
-F: "IG-88 Must Survive."
-
-----
-
-*TEXT_UW_ACT02_M07_GOAL_04 -- Making "must survive." consistient with the rest.
-
-O: "Tyber, Urai, and IG-88 must survive."
-
-F: "Tyber, Urai, and IG-88 Must Survive."
-
-----
-
-*TEXT_STORY_TRANSMISSION_TYBER -- Made consistient with the others (this was the only one out).
-
-O: "Incoming transmission from Tyber Zann"
-
-F: "Incoming Transmission from Tyber Zann"
-
-----
-
-*TEXT_TOOLTIP_UNIT_BEVEL_LEMELISK -- Fixed odd spacing.
-
-O: "Bevel Lemelisk is  a genius ship designer."
-
-F: "Bevel Lemelisk is a genius ship designer."
-
-----
-
-*TEXT_TOOLTIP_YODA -- Fixed improper capitalization of "emperor."
-
-O: "Yoda was a Jedi Master and part of the Jedi Council before the fall of the Republic.  He has been in hiding from the Emperor since the end of the Clone Wars."
-
-F: "Yoda was a Jedi Master and part of the Jedi Council before the fall of the Republic.  He has been in hiding from the emperor since the end of the Clone Wars."
 
 ===================================================================================================

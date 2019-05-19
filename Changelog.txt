@@ -18,6 +18,43 @@ Whenever the AI is edited, it's not labeled based on specific changed units with
 
 
 =========================================================================================
+v1.5 - Imperatoria Evigilationem Significasse
+=========================================================================================
+There are TONS of MasterTextEnglish edits due to the re-work! Be sure to check "MasterTEXT Changelog.txt" for all the changes!
+
+
+==================
+A.I. (Galactic Conquest)
+==================
+-FireDeathStar – Modified A.I. to search for "Death_Star_II" (FoC) instead of "Death_Star" (EaW).
+
+-DeathStarPlan – Added "IG88_Team" to the list of units the Death Star II should avoid when going about, as IG-88 is a "superweapon killer" (can kill DS2), as with Rouge Squadron.
+
+
+==================
+General
+==================
+-Campaign – Fixed Consortium Land Mission #06: Dark Ally. The Empire would retreat when outnumbered, and has been corrected so the entire mission plays out.
+-Campaign – Fixed Consortium Space Mission #12: "The Emperor's New Weapon." Removed broken characters from document (random "xxx" near bottom).
+
+
+==================
+Factions
+==================
+-Empire – The Empire awakens. The Death Star II and Darth Vader (with the Executor) have been added to the Empire's tech-upgrade A.I. The Imperials will now build the Death Star II and Darth Vader as part of their progression. The A.I. will prioritize building Darth Vader first.
+
+
+==================
+Units (Space)
+==================
+-Luke Skywalker – Changed Luke's X-wing tooltip from "TEXT_UNIT_LUKE_XWING" to custom "TEXT_UNIT_LUKE_XWING_01," to remove the "(Red 5)" indicator from the name (Red Squadron doesn't exist anymore, nor did Skywalker go under that callsign post-Yavin).
+-Luke Skywalker – Fixed Luke getting attached to any random available ship when he has a usable space fighter.
+
+
+=========================================================================================
+
+
+=========================================================================================
 v1.4 - Hotfix #3
 =========================================================================================
 
