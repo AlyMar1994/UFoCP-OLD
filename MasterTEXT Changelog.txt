@@ -12,7 +12,7 @@ Last of note, I am a human being and I make mistakes. Please point out text erro
 
 
 ===================================================================================================
-v1.5
+v1.5 - Imperatoria Evigilationem Significasse
 ===================================================================================================
 Due to numerous untracked fixes and errors, I've redone the text edits from scratch.
 
