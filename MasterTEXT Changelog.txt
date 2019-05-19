@@ -144,7 +144,6 @@ Due to numerous untracked fixes and errors, I've redone the text edits from scra
 -[TEXT_UW_ACT01_M03_HINT_02]: "HINT: Use Urai Fen’s Sonic Stunner to incapacitate multiple infantry units simultaneously." --> "HINT: Use Urai Fen’s 'Sonic Stunner' ability to incapacitate multiple infantry units simultaneously."
 -[TEXT_UW_ACT02_G09_12]: "TASK: Defeat the Pirates orbiting Mandalore" --> "TASK: Defeat the pirates orbiting Mandalore."
 -[TEXT_UW_ACT02_G14_01]: "BONUS: Tyber Zann receives 50,000 credits from selling Tibanna Gas on the black market." --> "BONUS: Tyber Zann receives 50,000 credits from selling the tibanna gas on the black market."
--[TEXT_UW_ACT03_M11_GOAL_10]: "Use Ysalamiri Cages to defeat the Master Force Adept." --> "HINT: Use ysalamiri cages to defeat the Master Force Adept."
 -[TEXT_UW_ACT03_M11_HINT_06]: "HINT: The MDUs Ysalamiri cage will keep force users from using their powers." --> "HINT: The MDU's ysalamiri cage will keep Force-users from using their powers."
 -[TEXT_UW_ACT03_M11_HINT_07]: "HINT: The Juggernaut's Point Laser Defense System destroys incoming missiles." --> "HINT: The Juggernaut's 'Point Laser Defense' system destroys incoming missiles."
 -[TEXT_UW_ACT03_M12_GOAL_03]: "Destroy the Millennium Falcon and drive the remaining Rebels from this sector." --> "Destroy the Millennium Falcon tp drive the remaining Rebels from this sector."
