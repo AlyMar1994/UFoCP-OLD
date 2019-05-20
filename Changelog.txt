@@ -20,6 +20,17 @@ Whenever the AI is edited, it's not labeled based on specific changed units with
 =========================================================================================
 v1.5 - Imperatoria Evigilationem Significasse
 =========================================================================================
+
+
+==================
+Units (Space)
+==================
+-Luke Skywalker – Fixed audio events. Skywalker still said EaW line "Red 5 here!" when selected in space. This no longer happens.
+
+
+=========================================================================================
+v1.5 - Imperatoria Evigilationem Significasse
+=========================================================================================
 There are TONS of MasterTextEnglish edits due to the re-work! Be sure to check "MasterTEXT Changelog.txt" for all the changes!
 
 
