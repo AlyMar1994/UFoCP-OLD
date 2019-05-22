@@ -293,6 +293,8 @@
 
 <!-- Space Unit Data -->
 	<UniqueUnit Name="Luke_Jedi_XWing">
+		<Variant_Of_Existing_Type>X-Wing</Variant_Of_Existing_Type>
+
 		<LOD_Bias>5</LOD_Bias>
 		<Text_ID>TEXT_UNIT_LUKE_XWING_01</Text_ID>
 		<Encyclopedia_Good_Against> TIE_Fighter TIE_Bomber </Encyclopedia_Good_Against>
@@ -437,7 +439,6 @@
 				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ability_On_Luke</SFXEvent_GUI_Unit_Ability_Activated>
 				<SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Ability_Off_Luke</SFXEvent_GUI_Unit_Ability_Deactivated>
 			</Unit_Ability>
-
 		</Unit_Abilities_Data>
 
 		<Abilities SubObjectList="Yes">

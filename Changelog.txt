@@ -13,19 +13,47 @@ Vocab.:
 -Conditional(s) – "If this, then this will happen"-type code.
 -Death Clone – The version of a ship that lingers in a map when destroyed.
 ----
-Whenever the AI is edited, it's not labeled based on specific changed units with the A.I., but it's labelled based on the file.
+Whenever the AI is edited, it's not labeled based on specific changed units with the A.I., but it's labelled based on the name of the file.
 ----
 
 
 =========================================================================================
-v1.5 - Imperatoria Evigilationem Significasse
+v1.6 
 =========================================================================================
+
+
+==================
+Units (Galactic Conquest)
+==================
+-Rogue Squadron – Fixed galactic-level sounds. Rouge Squadron wouldn't play any sounds when moving or the like, as they were applied only to Wedge's fighter. They've now been applied to the entire container, so sounds play on the galactic level.
+
+-Tyber Zann – Removed duplicate tags in object file (no in-game change).
 
 
 ==================
 Units (Space)
 ==================
+-Acclamator Assault Ship – Fixed Underworld-type Acclamator ship being "good against"/"vulnerable to" own faction's units. Replaced "good against" Crusader Gunship with Tartan Patrol Cruiser, and replaced "vulnerable to" Skipray Blastboat with TIE bomber.
+
+-A-wing – Fixed Underworld-type A-wing being "good against"/"vulnerable to" indicators for each fighter with the squadron's original list, so the normal fighers can't display info about being good against its own faction with developer-intended units (this fixes a regression from update v1.2). "Good Against" is now (by replacing the second one from "Y-wing") TIE fighters, TIE scouts and TIE bombers. "Vulnerable To" is now (by removing the Corellian Corvette) soley the Tartan Patrol Cruiser.
+
+-Broadside Cruiser – Fixed Underworld-type Broadside Cruiser being "good against"/"vulnerable to" own faction's units. Replaced "good against" Skipray Blastboat with TIE bombers and "vulnerable to" Vengance Frigate to Victory Star Destroyer.
+
+-Corellian Corvette – Fixed Underworld-type Corellian Corvette being "good against"/"vulnerable to" own faction's units. Replaced "good against" Starviper Fighter with X-wings, replaced "vulnerable to" Vengance Frigate with Alliance Assault Ship.
+
 -Luke Skywalker – Fixed audio events. Skywalker still said EaW line "Red 5 here!" when selected in space. This no longer happens.
+-Luke Skywalker – Made Skywalker's X-wing a variant of the original X-wing unit. This fixes multiple bugs: where Luke's unit image would display twice, Luke's fighter not hyperspace jumping into battle, and the extended health bar. No other stats to him have been modified, except undefined stats which are replaced by the X-wing template.
+
+-Marauder Cruiser – Fixed Underworld-type Marauder Cruiser being "good against"/"vulnerable to" own faction's units. Replaced "good against" Starviper Fighter with X-wings and "vulnerable to" Vengance Frigate to Alliance Assault Ship.
+
+-Nebulon-B Frigate – Fixed Underworld-type Nebulon-B Frigate being "good against"/"vulnerable to" own faction's units. Replaced "good against" Crusader Gunboat with Corellian Corvette, and "vulnerable to" Vengance Frigate to Victory Star Destroyer.
+
+-Tartan Patrol Cruiser – Fixed Underworld-type Tartan Patrol Cruiser being "good against"/"vulnerable to" own faction's units. Replaced "good against" Starviper Fighter with TIE Interceptor and "vulnerable to" Vengance Frigate to Victory Star Destroyer.
+
+-TIE defender – Fixed Underworld-type TIE defender being "good against"/"vulnerable to" indicators for each fighter with the squadron's original list, so the normal fighers can't display info about being good against its own faction with developer-intended units (this fixes a regression from update v1.2). "Good Against" is now (instead of the Mon Calamari cruiser and the Aggressor-class Star Destroyer) the A-wing, Nebulon-B Frigate, and the Mon Calamari cruiser. "Vulnerable To" is now (instead of having the Crusader Gunship and Buzz Droids included) now just the Corellian Corvette.
+
+
+=========================================================================================
 
 
 =========================================================================================
@@ -153,6 +181,39 @@ Structures (Land)
 
 
 ==================
+Units (Galactic Conquest)
+==================
+-C-3P0 – Fixed unit tooltip using R2-D2's instead of his own.
+-C-3P0 – Fixed C-3P0 not having a unit icon (Petroglyph assumed R2 having an icon would give 3PO one). Gave C-3PO his own special icon.
+
+-R2-D2 – Fixed R2-D2's unit using both 3P0's and R2's icon instead of using their individual icons (hold over from copy+paste of unit container).
+**An unintended side-effect of these changes now makes it so R2-D2 and C-3P0 are now seperate units on the hero-bar at the top of the screen. The units still are their combined team, and lead to the same single-unit, but they appear as seperate units on the command bar with seperate tool-tips and images. This is the opposite when they die/are stealing technology, as they combine into a single icon again.
+
+-Kyle Katarn – Fixed improper defining in <Activated_Sabotage_Ability_Names>. No longer "Kyle_Katarn_Sabotage Saboteur_Galactic_Sabotage," now "Kyle_Katarn_Sabotage, Saboteur_Galactic_Sabotage".
+
+
+==================
+Units (Land)
+==================
+-Canderous Assault Tank – Fixed amount of shots fired per-burst. The animation showed extra shots/recoil from the barrels, when in reality nothing shoots (leaving the tank shooting 2 times-per-fire with extra recoil). This has been fixed so the shot amounts line with the animation (shoots 3 times-a-pulse instead of 2).
+
+-General Veers – Added an extra death clone for when killed by a Snowspeeder cable attack.
+-General Veers – Modified death clones with the "IMPOSING_PRESENCE" behavior (and presence range), so Rebel Infantry units now respond properly with their "celebrate" "presence induced animation."
+
+-Imperial Guard(s) – Fixed "presence induced animations" (i.e. standing at attention) in-front of Darth Vader, by adding the "Darth_Vader_Expansion" (FoC) tag with the original "Darth_Vader" (EaW).
+
+-Rebel Infantry – Fixed "presence induced animations" for General Veers (Empire hero AT-AT) by adding death clones to Rebel "celebrate" animations.
+
+-Rebel PLEX – Fixed "presence induced animations" for General Veers' dead AT-AT.
+
+-Scout Troopers – Fixed "presence induced animations" for "Darth_Vader_Expansion."
+
+-Snowspeeder – Fixed Veers's AT-AT not being targetable. Added Veers's AT-AT walker to the tow-cable-attack ability, so the speeder can properly target him.
+
+-Stormtrooper(s) – Fixed "presence induced animations" for "Darth_Vader_Expansion."
+
+
+==================
 Units (Space)
 ==================
 -Acclamator Assault Ship – Fixed build sounds for Underworld-built Acclamators (was Empire, now Underworld).
@@ -183,38 +244,6 @@ Units (Space)
 -Tyber Zann – Fixed Zann's attack sounds; Zann now comments when attacking hanger bays and gravity-control-generators.
 
 -Y-wing – Fixed squadron "Is_Escort" type being "Nos" instead of "no."
-
-==================
-Units (Land)
-==================
--Canderous Assault Tank – Fixed amount of shots fired per-burst. The animation showed extra shots/recoil from the barrels, when in reality nothing shoots (leaving the tank shooting 2 times-per-fire with extra recoil). This has been fixed so the shot amounts line with the animation (shoots 3 times-a-pulse instead of 2).
-
--General Veers – Added an extra death clone for when killed by a Snowspeeder cable attack.
--General Veers – Modified death clones with the "IMPOSING_PRESENCE" behavior (and presence range), so Rebel Infantry units now respond properly with their "celebrate" "presence induced animation."
-
--Imperial Guard(s) – Fixed "presence induced animations" (i.e. standing at attention) in-front of Darth Vader, by adding the "Darth_Vader_Expansion" (FoC) tag with the original "Darth_Vader" (EaW).
-
--Rebel Infantry – Fixed "presence induced animations" for General Veers (Empire hero AT-AT) by adding death clones to Rebel "celebrate" animations.
-
--Rebel PLEX – Fixed "presence induced animations" for General Veers' dead AT-AT.
-
--Scout Troopers – Fixed "presence induced animations" for "Darth_Vader_Expansion."
-
--Snowspeeder – Fixed Veers's AT-AT not being targetable. Added Veers's AT-AT walker to the tow-cable-attack ability, so the speeder can properly target him.
-
--Stormtrooper(s) – Fixed "presence induced animations" for "Darth_Vader_Expansion."
-
-
-==================
-Units (Galactic Conquest)
-==================
--C-3P0 – Fixed unit tooltip using R2-D2's instead of his own.
--C-3P0 – Fixed C-3P0 not having a unit icon (Petroglyph assumed R2 having an icon would give 3PO one). Gave C-3PO his own special icon.
-
--R2-D2 – Fixed R2-D2's unit using both 3P0's and R2's icon instead of using their individual icons (hold over from copy+paste of unit container).
-**An unintended side-effect of these changes now makes it so R2-D2 and C-3P0 are now seperate units on the hero-bar at the top of the screen. The units still are their combined team, and lead to the same single-unit, but they appear as seperate units on the command bar with seperate tool-tips and images. This is the opposite when they die/are stealing technology, as they combine into a single icon again.
-
--Kyle Katarn – Fixed improper defining in <Activated_Sabotage_Ability_Names>. No longer "Kyle_Katarn_Sabotage Saboteur_Galactic_Sabotage," now "Kyle_Katarn_Sabotage, Saboteur_Galactic_Sabotage".
 
 
 =========================================================================================
@@ -269,21 +298,6 @@ Structures (Space)
 
 
 ==================
-Units (Space)
-==================
--B-Wing – Fixed shot-laser color from green to red. Muzzleflash was red, lasers were green.
-
--Crusader Gunship – Fixed death clone's Z-axis offset. The corvette should now explode and fall from its actual place in the world.
-
--Darth Vader – Edited squadron container so all of it says its good against/bad against the same thing.
-
--Rouge Squadron – Edited Rouge Squadron's conditionals for being in-battle with the Death Star II to "Rouge_Squadon_Space" as an attempt to get it to work.
-
--Vengance Frigate – Fixed death clone's Z-axis offset from -90 units to -100.
--Vengance Frigate – Fixed death clone's scale size from 0.76 to 0.9 (the model's actual size). The model should now retain size when destroyed.
-
-
-==================
 Units (Galactic Conquest)
 ==================
 -Admiral Ackbar – Fixed remove corruption ability. It already existed (and essentially referenced in every file needed), but wasn't added to GameConstants.XML.
@@ -297,6 +311,22 @@ Units (Galactic Conquest)
 -Maximillian Veers – Fixed remove corruption ability (added it to GameConstants.XML).
 
 *** While untested, it's possible that the AI will be a tad more aggressive in their corruption-undoing, now that the Rebels and Empire have more units to remove it instead of just juggling around the same 2-3 originally.
+
+
+==================
+Units (Space)
+==================
+-B-Wing – Fixed shot-laser color from green to red. Muzzleflash was red, lasers were green.
+
+-Crusader Gunship – Fixed death clone's Z-axis offset. The corvette should now explode and fall from its actual place in the world.
+
+-Darth Vader – Edited squadron container so all of it says its good against/bad against the same thing.
+
+-Rouge Squadron – Edited Rouge Squadron's conditionals for being in-battle with the Death Star II to "Rouge_Squadon_Space" as an attempt to get it to work.
+
+-Vengance Frigate – Fixed death clone's Z-axis offset from -90 units to -100.
+-Vengance Frigate – Fixed death clone's scale size from 0.76 to 0.9 (the model's actual size). The model should now retain size when destroyed.
+
 
 =========================================================================================
 
@@ -314,6 +344,7 @@ Units (Land)
 
 -Darth Vader – Updated Vader's space Skirmish unit file so it has the same good against and weak against encyclopedia markers as the regular TIE Advanced x1 unit does.
 **This change added the StarViper Fighter to the "Good Against" list, and replaces the X-Wing with the Crusader Gunship in the "Vulnerable To" list.
+
 
 =========================================================================================
 
@@ -367,7 +398,7 @@ Units (Land)
 ==================
 Units (Space)
 ==================
--Acclamator Cruiser – Fixed the back-right turbolaser's damage type. Was normal laser damage ("Damage_Acclamator"), now it's turbolaser damage ("Damage_Acclamator_TL").
+-Acclamator Assault Ship – Fixed the back-right turbolaser's damage type. Was normal laser damage ("Damage_Acclamator"), now it's turbolaser damage ("Damage_Acclamator_TL").
 
 -Executor Super Star Destroyer – Fixing the SSD armor type. It's now properly seperated and should work.
 
@@ -383,5 +414,6 @@ Units (Galactic Conquest)
 -Grand Admiral Thrawn – Fixed Thrawn's remove corruption ability sound from the Rebels' to the Empire's.
 -Grand Admiral Thrawn – Fixed Thrawn's "complete" sound. It'll now play his own designated "complete" sound.
 -Grand Admiral Thrawn – Fixed "object spotted announcement" for Thrawn for all factions. Was searching for "Grand_Admiral_Thrawn" instead of "Admonitor_Star_Destroyer."
+
 
 =========================================================================================

@@ -1,11 +1,5 @@
 <?xml version="1.0"?>
 <Tyber_Zann_Data>
-
-
-
-
-
-
 	<HeroUnit Name="Tyber_Zann">
 		<LOD_Bias>4</LOD_Bias>
 		<Text_ID>TEXT_HERO_TYBER_ZANN</Text_ID>
@@ -129,7 +123,7 @@
 
 		<!-- Non-Hero unit abilities description -->
 		<Unit_Abilities_Data SubObjectList="Yes">
-		
+
 			<!-- Primary ability -->
             <Unit_Ability>
                 <Type>TACTICAL_BRIBE</Type>
@@ -148,11 +142,9 @@
                 <GUI_Activated_Ability_Name>Stealth_Tyber_Zann</GUI_Activated_Ability_Name> 
                 <SFXEvent_GUI_Unit_Ability_Activated>Unit_Cloak_Tyber_Zann</SFXEvent_GUI_Unit_Ability_Activated>
             </Unit_Ability>
-
 		</Unit_Abilities_Data>
 
         <Abilities SubObjectList="Yes">
-
             <Galactic_Stealth_Ability Name="Tyber_Galactic_Stealth">
 				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
 			</Galactic_Stealth_Ability>
@@ -184,10 +176,7 @@
                 <SFXEvent_Success>GUI_Bribe_SFX</SFXEvent_Success>
                 <SFXEvent_Fail>Unit_Bribe_Fail_Tyber_Zann</SFXEvent_Fail>
             </Tactical_Bribe_Ability>
-
         </Abilities>
-
-
 	</HeroUnit>
 
 	<HeroUnit Name="Tyber_Zann_Passenger">
@@ -356,17 +345,7 @@
 
 
 
-
-
-
-
-
-
-
-
 	<!-- Hero Company Data -->
-
-
 	<HeroCompany Name="Tyber_Zann_Team">
 		<Text_ID>TEXT_HERO_TYBER_ZANN</Text_ID>
 		<Encyclopedia_Text> TEXT_TOOLTIP_TYBER_ZANN TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
@@ -417,7 +396,6 @@
 		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
 	</HeroCompany>
 
-
 	<HeroCompany Name="Tyber_Zann_Team_No_Peacebringer">
 		<Text_ID>TEXT_HERO_TYBER_ZANN</Text_ID>
 		<Encyclopedia_Text> TEXT_TOOLTIP_TYBER_ZANN TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY </Encyclopedia_Text>
@@ -461,15 +439,15 @@
 		<Unit_Abilities_Data SubObjectList="Yes"> </Unit_Abilities_Data>
 	</HeroCompany>
 
-	<!--Prologue Tyber-->
-	
+
+
+	<!--Prologue Tyber-->	
 	<HeroCompany Name="Tyber_Zann_Team_Prologue">
 		<Variant_Of_Existing_Type>Tyber_Zann_Team_No_Peacebringer</Variant_Of_Existing_Type>
 		<Company_Units>Tyber_Zann_Prologue</Company_Units>
 		<Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
 	</HeroCompany>
-	
-	
+
 	<UniqueUnit Name="Tyber_Zann_Boarding_Shuttle_Prologue">
 
 		<Variant_Of_Existing_Type>Underworld_Infantry_Droid_Shuttle</Variant_Of_Existing_Type>
@@ -518,12 +496,7 @@
 
 
 
-
-
-
-
 	<!-- Tyber's Flagship  -->
-
 	<UniqueUnit Name="The_Peacebringer">
 
 		<Variant_Of_Existing_Type>Krayt_Class_Destroyer</Variant_Of_Existing_Type>
@@ -601,7 +574,6 @@
 		<SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>Unit_Select_Tyber_Zann</SFXEvent_Build_Complete>
 		<SFXEvent_Hero_Respawned>Unit_Select_Tyber_Zann</SFXEvent_Hero_Respawned>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Tyber_Zann</SFXEvent_Fleet_Move>
 
 
 		<Death_Clone>Damage_Normal, Peacebringer_Death_Clone </Death_Clone>
@@ -707,11 +679,11 @@
 		<Glory_Cinematics />
 		<Remove_Upon_Death>true</Remove_Upon_Death>
 	</UniqueUnit>
-	
-	
+
+
+
 <!--jdg this is a one-off of Tyber for UM06 because I need him to have stealth (for now..haha)-->
 	<HeroUnit Name="UM06_Tyber_Zann">
 		<Variant_Of_Existing_Type> Tyber_Zann </Variant_Of_Existing_Type>
 	</HeroUnit>
-
 </Tyber_Zann_Data>
