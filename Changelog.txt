@@ -31,6 +31,14 @@ Units (Galactic Conquest)
 
 
 ==================
+Units (Land)
+==================
+-Dark Trooper (Phase I) – Fixed inconsistient 'Sprint' ability. The modifier to take less damage when sprinting was ".5" in the group section, and ".75" for the individual unit. It has now been corrected to ".75" for both. Dark Trooper Phase Is will now only take .75x damage when sprinting, instead of .5x.
+
+-Dark Trooper (Phase II) – Removed duplicate setting "is visible on radar" and "space layer."
+
+
+==================
 Units (Space)
 ==================
 -Acclamator Assault Ship – Fixed Underworld-type Acclamator ship being "good against"/"vulnerable to" own faction's units. Replaced "good against" Crusader Gunship with Tartan Patrol Cruiser, and replaced "vulnerable to" Skipray Blastboat with TIE bomber.

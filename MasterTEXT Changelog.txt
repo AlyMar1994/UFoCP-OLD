@@ -12,6 +12,27 @@ Last of note, I am a human being and I make mistakes. Please point out text erro
 
 
 ===================================================================================================
+v1.6
+===================================================================================================
+
+
+-Fixed some ability tooltips (such as Bossk's "swap weapons" ability) by completing the sentence (adding periods).
+-For garrison/production dialogues, periods have been added to complete the sentence.
+-Any text that uses broken elipses character will be replaced with the correct amount of periods.
+
+-[REBEL_BM_TECH_1]: "Black Market Items available at Rebel tech level one." --> "Black market items available at Rebel tech level one."
+-[REBEL_BM_TECH_2]: "Black Market Items available at Rebel tech level two." --> "Black market items available at Rebel tech level two."
+-[REBEL_BM_TECH_3]: "Black Market Items available at Rebel tech level three." --> "Black market items available at Rebel tech level three."
+-[REBEL_BM_TECH_4]: "Black Market Items available at Rebel tech level four." --> "Black market items available at Rebel tech level four."
+-[REBEL_BM_TECH_5]: "Black Market Items available at Rebel tech level five." --> "Black market items available at Rebel tech level five."
+-[TEXT_BOTH_MOUSE_BUTTONS_ROTATE]: "Both mouse buttons rotate" --> "Both mouse buttons rotate the camera.
+-[TEXT_BOUNTY_HUNTER_NEUTRALIZES_GENERIC_BOUNTY_HUNTER_E]: "A bounty hunter has neutralized a Bounty Hunter! Location:" --> "A bounty hunter has neutralized another bounty hunter! Location:"
+
+
+===================================================================================================
+
+
+===================================================================================================
 v1.5 - Imperatoria Evigilationem Significasse
 ===================================================================================================
 Due to numerous untracked fixes and errors, I've redone the text edits from scratch.
@@ -20,7 +41,7 @@ Due to numerous untracked fixes and errors, I've redone the text edits from scra
 -For corruption dialogues/mission briefs, the random double-spacing between "Our Defiler" and the end of the briefing has been removed.
 -For corruption dialogues/mission briefs, corruption names have been de-capitalized.
 -For construction dialogues, periods have been added to complete the sentence.
--For upgrade dialogues, periods have been added to complete the sentence.
+-For upgrade dialogues and garrison/production dialogues, periods have been added to complete the sentence.
 -Auto-resolve battle hint texts have periods added to complete the sentence.
 -Victory requirement text has had periods mass placed to complete the sentences.
 -Some variable dialogue (such as the "Corrupting..." text) has had periods placed to compelete the sentences.
