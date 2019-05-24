@@ -50,7 +50,7 @@ function Definitions()
 	TaskForce = {
 	{
 		"TechForce",
-		"DS_Primary_Hyperdrive | DS_Shield_Gen | DS_Superlaser_Core | DS_Durasteel | Darth_Vader_Expansion | Death_Star_II = 1"
+		"DS_Primary_Hyperdrive | DS_Shield_Gen | DS_Superlaser_Core | DS_Durasteel | Darth_Team_Executor | Death_Star_II = 1"
 	}
 }
 

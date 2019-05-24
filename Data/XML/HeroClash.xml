@@ -33,7 +33,6 @@
 
     <First_Hero_Win_Speech>Hero_Clash_Obiwan_Vader__Vader_Win</First_Hero_Win_Speech>
     <Second_Hero_Win_Speech>Hero_Clash_Obiwan_Vader__Obiwan_Win</Second_Hero_Win_Speech>
-
   </Hero_Clash>
 
   <!-- ALYMAR1994 - These two hero clashes are broken fundamentally; -->
@@ -376,5 +375,4 @@
 
     </Clash_Actions>
   </Hero_Clash> -->
-
 </Hero_Clashes>

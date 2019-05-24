@@ -27,6 +27,7 @@ v1.6
 -[REBEL_BM_TECH_5]: "Black Market Items available at Rebel tech level five." --> "Black market items available at Rebel tech level five."
 -[TEXT_BOTH_MOUSE_BUTTONS_ROTATE]: "Both mouse buttons rotate" --> "Both mouse buttons rotate the camera.
 -[TEXT_BOUNTY_HUNTER_NEUTRALIZES_GENERIC_BOUNTY_HUNTER_E]: "A bounty hunter has neutralized a Bounty Hunter! Location:" --> "A bounty hunter has neutralized another bounty hunter! Location:"
+-[TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE]: "An indigenous unit enslaved to the will of the Zann Consortium" --> "An indigenous unit enslaved to the will of the Zann Consortium."
 
 
 ===================================================================================================
