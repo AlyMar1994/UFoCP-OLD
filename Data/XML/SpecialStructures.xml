@@ -2716,6 +2716,8 @@
 		<Required_Planets />
 		<Icon_Name>i_button_turbolaser_tower.tga</Icon_Name>
 
+		<Projectile_Types>Proj_Ground_Turbolaser_Green</Projectile_Types>
+
 		<Sabotage_Cost_Credits>8000</Sabotage_Cost_Credits>
 
 		<CategoryMask> Structure | AntiVehicle</CategoryMask>

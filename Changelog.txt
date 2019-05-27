@@ -35,11 +35,16 @@ A.I. (Galactic Conquest)
 
 -AI_Plan_ExpansionGeneric_RemoveCorruption - Fixed AI trying to call now-invalid tag "Darth_Team_Expansion" instead of "Darth_Team_Executor."
 
+
+==================
+Structures (Land)
+==================
+-Turbolaser Towers – Fixed the template for the Galactic defense-type by adding the green laser as the default (as muzzle flash can't be changed).
+
+
 ==================
 Units (Galactic Conquest)
 ==================
--Rogue Squadron – Fixed galactic-level sounds. Rouge Squadron wouldn't play any sounds when moving or the like, as they were applied only to Wedge's fighter. They've now been applied to the entire container, so sounds play on the galactic level.
-
 -R2-D2 & C-3P0 – Fixed Galactic tooltips not having units' original description, only the tooltip if the unit can capture build pads or not.
 
 -Han Solo & Chewbacca – Fixed Galactic tooltip description not indicating if unit can capture build pads or not (does not apply to space unit).
@@ -68,6 +73,10 @@ Units (Space)
 -Broadside Cruiser – Fixed Underworld-type Broadside Cruiser being "good against"/"vulnerable to" own faction's units. Replaced "good against" Skipray Blastboat with TIE bombers and "vulnerable to" Vengance Frigate to Victory Star Destroyer.
 
 -Corellian Corvette – Fixed Underworld-type Corellian Corvette being "good against"/"vulnerable to" own faction's units. Replaced "good against" Starviper Fighter with X-wings, replaced "vulnerable to" Vengance Frigate with Alliance Assault Ship.
+
+-IPV Patrol Craft – Fixed unit having no selection UI ring when selected.
+-IPV Patrol Craft – Fixed unit using incorrectly assigned "power to weapons" ability sound (was Corellian Corvette, now IPV).
+-IPV Patrol Craft – Added the Underworld to the list of affiliated factions with this unit.
 
 -Luke Skywalker – Fixed audio events. Skywalker still said EaW line "Red 5 here!" when selected in space. This no longer happens.
 -Luke Skywalker – Made Skywalker's X-wing a variant of the original X-wing unit. This fixes multiple bugs: where Luke's unit image would display twice, Luke's fighter not hyperspace jumping into battle, and the extended health bar. No other stats to him have been modified, except undefined stats which are replaced by the X-wing template.
