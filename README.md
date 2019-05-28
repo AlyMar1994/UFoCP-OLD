@@ -1,9 +1,7 @@
 # UFoCP
 UFoCP, the Unofficial Forces of Corruption Patch for Petroglyph's "STAR WARS: Empire at War – Forces of Corruption."
 
-UFoCP is a fan-patch for "STAR WARS: Empire at War – Forces of Corruption," (FoC) which aims to fix numerous bugs within FoC without adding any "flavor patches"—fixes which are based upon personal preference and or wants. An exerpt from [half11](https://www.nexusmods.com/morrowind/users/36879320) puts this ideal into words with his "[Patch For Purists](https://www.nexusmods.com/morrowind/mods/45096/)" on the [MorrowindNEXUS](https://www.nexusmods.com/morrowind/):
-
-*"'What distinguishes the Patch for Purists from existing player made patches?,' you may ask. My purist approach kept me from introducing debatable and unnecessary changes: balance changes based on personal preferences, so-called improvements in gameplay, and adding of unnecessary stuff. These are changes which, according to me, do not belong in a bugfixing patch because they go beyond fixing unintentional immersion breaking issues. Unfortunately, these are the exact changes that plague most player made patches. These patches force purists to play an outdated version of the game and alter the experience of new players who are not aware of these unnecessary changes to the original game, as was intended by the developers."*
+A comprehensive bug-fixing mod for Petroglyph's "STAR WARS: Empire at War – Forces of Corruption" ("FoC") expansion. The goal of the Unofficial Forces of Corruption Patch (also "UFoCP") is to correct as many errors that Petroglyph ignored within FoC as possible, to whatever limit is available within the Alamo engine and community-developed tools, in one package.
 
 ---
 
