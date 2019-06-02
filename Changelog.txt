@@ -20,6 +20,7 @@ Whenever the AI is edited, it's not labeled based on specific changed units with
 =========================================================================================
 v1.6 
 =========================================================================================
+There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT Changelog.txt" in the game directory to see!
 
 
 ==================
@@ -34,6 +35,8 @@ A.I. (Galactic Conquest)
 -EmpireAdvanceTechPlan – Fixed Empire build AI to actually build Darth Vader. Forgot to port over a change changing the build priority to "Darth_Team_Executor" instead of "Darth_Vader_Expansion."
 
 -AI_Plan_ExpansionGeneric_RemoveCorruption - Fixed AI trying to call now-invalid tag "Darth_Team_Expansion" instead of "Darth_Team_Executor."
+
+-GalacticFreeStore - Defined Tyber Zann as the leader of the Underworld.
 
 
 ==================

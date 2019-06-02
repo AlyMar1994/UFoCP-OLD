@@ -19,6 +19,7 @@ v1.6
 -Fixed some ability tooltips (such as Bossk's "swap weapons" ability) by completing the sentence (adding periods).
 -For garrison/production dialogues, periods have been added to complete the sentence.
 -Any text that uses broken elipses character will be replaced with the correct amount of periods.
+-Many planet text tooltips (in the base/space slot view and planet history) have been corrected to fix grammar errors/inconsistient text (i.e. improper capitalization of "emperor").
 
 -[REBEL_BM_TECH_1]: "Black Market Items available at Rebel tech level one." --> "Black market items available at Rebel tech level one."
 -[REBEL_BM_TECH_2]: "Black Market Items available at Rebel tech level two." --> "Black market items available at Rebel tech level two."
@@ -27,7 +28,9 @@ v1.6
 -[REBEL_BM_TECH_5]: "Black Market Items available at Rebel tech level five." --> "Black market items available at Rebel tech level five."
 -[TEXT_BOTH_MOUSE_BUTTONS_ROTATE]: "Both mouse buttons rotate" --> "Both mouse buttons rotate the camera.
 -[TEXT_BOUNTY_HUNTER_NEUTRALIZES_GENERIC_BOUNTY_HUNTER_E]: "A bounty hunter has neutralized a Bounty Hunter! Location:" --> "A bounty hunter has neutralized another bounty hunter! Location:"
+-[MT_SPACE_PLANET_MANDALORE_PIRACY]: "Raid Mandal Hypernautics Shipments" --> "Raid Mandal Hypernautics' Shipments"
 -[TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE]: "An indigenous unit enslaved to the will of the Zann Consortium" --> "An indigenous unit enslaved to the will of the Zann Consortium."
+
 
 
 ===================================================================================================
