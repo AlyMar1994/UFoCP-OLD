@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Luke_Skywalker_Hero_Files>
-<!-- Base/Ground Infantry Unit -->
+	<!-- MAIN - Land Unit -->
 	<HeroUnit Name="Luke_Skywalker_Jedi">
 		<LOD_Bias>5</LOD_Bias>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
@@ -234,7 +234,9 @@
 		</Abilities>
 	</HeroUnit>
 
-<!-- Team/Company/Container Data -->
+
+
+	<!-- MAIN - Company Data -->
 	<HeroCompany Name="Luke_Skywalker_Jedi_Team">
 		<LOD_Bias>5</LOD_Bias>
 		<Text_ID>TEXT_HERO_LUKE_SKYWALKER_JEDI_TEAM</Text_ID>
@@ -283,7 +285,9 @@
 		<Unit_Abilities_Data SubObjectList="Yes" />
 	</HeroCompany>
 
-<!-- Space Unit Data -->
+
+
+	<!-- MAIN - Space Unit -->
 	<UniqueUnit Name="Luke_Jedi_XWing">
 		<Variant_Of_Existing_Type>X-Wing</Variant_Of_Existing_Type>
 

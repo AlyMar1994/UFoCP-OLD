@@ -48,6 +48,8 @@ Structures (Land)
 ==================
 Units (Galactic Conquest)
 ==================
+-Grand Admiral Thrawn – Fixed the unused Galactic-only unit. Fixed the wrong unit being referenced in the team, and fixed the icon of the team.
+
 -R2-D2 & C-3P0 – Fixed Galactic tooltips not having units' original description, only the tooltip if the unit can capture build pads or not.
 
 -Han Solo & Chewbacca – Fixed Galactic tooltip description not indicating if unit can capture build pads or not (does not apply to space unit).
@@ -64,6 +66,9 @@ Units (Land)
 
 -Yoda – Fixed Galactic tooltips not indicating if unit can capture build pads or not.
 
+-Urai Fen – Fixed Urai's Cortosis Blades (yes, that's what they are) "block lightsaber" ability not having a chance to block the Campaign Force Adept's lightsaber attacks, even though Urai has a chance to deflect all other lightsaber-using hero's attacks.
+-Urai Fen – Fixed Cortosis Blades' "block lightsaber" ability not blocking Silri's lightsaber whip during Consortium v. Consortium battles in Skrimish.
+
 
 ==================
 Units (Space)
@@ -77,6 +82,10 @@ Units (Space)
 
 -Corellian Corvette – Fixed Underworld-type Corellian Corvette being "good against"/"vulnerable to" own faction's units. Replaced "good against" Starviper Fighter with X-wings, replaced "vulnerable to" Vengance Frigate with Alliance Assault Ship.
 
+-Corellian Gunship – Fixed tooltip by fixing number of laser cannons in description. Now mentions the 4 laser cannons, instead of 2.
+
+-Interceptor IV Frigate – Fixed laser cannons on ship. Was registering damage type "Damage_Acclamator" (anti-starfighter lasers) instead of "Damage_Acclamator_TL" (anti-ship turbolasers), as all other values in the hardpoints point towards the cannons being turbolasers instead of lasers.
+
 -IPV Patrol Craft – Fixed unit having no selection UI ring when selected.
 -IPV Patrol Craft – Fixed unit using incorrectly assigned "power to weapons" ability sound (was Corellian Corvette, now IPV).
 -IPV Patrol Craft – Added the Underworld to the list of affiliated factions with this unit.
@@ -87,6 +96,8 @@ Units (Space)
 -Marauder Cruiser – Fixed Underworld-type Marauder Cruiser being "good against"/"vulnerable to" own faction's units. Replaced "good against" Starviper Fighter with X-wings and "vulnerable to" Vengance Frigate to Alliance Assault Ship.
 
 -Nebulon-B Frigate – Fixed Underworld-type Nebulon-B Frigate being "good against"/"vulnerable to" own faction's units. Replaced "good against" Crusader Gunboat with Corellian Corvette, and "vulnerable to" Vengance Frigate to Victory Star Destroyer.
+
+-Skipray Blastboat – Evened out "good against" indicators on squadron/fighter. Individual fighters now have the same good against types the squadron does.
 
 -Tartan Patrol Cruiser – Fixed Underworld-type Tartan Patrol Cruiser being "good against"/"vulnerable to" own faction's units. Replaced "good against" Starviper Fighter with TIE Interceptor and "vulnerable to" Vengance Frigate to Victory Star Destroyer.
 

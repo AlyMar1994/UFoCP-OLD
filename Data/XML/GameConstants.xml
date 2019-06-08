@@ -3841,7 +3841,7 @@
 	<Credits_Spacing> 0.04 </Credits_Spacing>
 	<Credits_Scroll_Rate> -0.05 </Credits_Scroll_Rate> 
 	<Credits_Font> Arial Medium </Credits_Font>
-	<!-- 12.16.2005 Blue text colors per LucasArts --> 	
+	<!-- 12.16.2005 Blue text colors per LucasArts --> 
 	<Credits_Header_Top_Color> 0, 0.72, 0.8 </Credits_Header_Top_Color>
 	<Credits_Header_Bottom_Color>0, 0.72, 0.8  </Credits_Header_Bottom_Color>
  	<Credits_Top_Color> 0, 0.72, 0.8  </Credits_Top_Color>

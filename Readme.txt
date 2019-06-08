@@ -64,12 +64,6 @@ Diamondback – Music (Credits_Ep3.mp3)
 
 
 ================
-Graphics
-================
-Nekyn – Support (Workshop page)
-
-
-================
 Support
 ================
 KadVenku – Tons of help on GitHub for issues with FoC.

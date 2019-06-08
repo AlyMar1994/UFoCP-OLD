@@ -61,12 +61,12 @@ function Definitions()
 		1, 1, 1, 10, -- ATTACK-type weights.
 		BAD_WEIGHT -- FEARED-type weights.
 	}
-	Attack_Ability_Types=WeightedTypeList.Create()
+	Attack_Ability_Types = WeightedTypeList.Create()
 	Attack_Ability_Types.Parse(Attack_Ability_Type_Names, Attack_Ability_Weights)
 
 	-- Prefer task forces with these units:
-	Escort_Ability_Type_Names = {"Fighter", "Capital", "Frigate", "Super"}
-	Escort_Ability_Weights = {1, 5, 4, 6}
+	Escort_Ability_Type_Names = { "Fighter", "Capital", "Frigate", "Super" }
+	Escort_Ability_Weights = { 1, 5, 4, 6 }
 	Escort_Ability_Types = WeightedTypeList.Create()
 	Escort_Ability_Types.Parse(Escort_Ability_Type_Names, Escort_Ability_Weights)
 end

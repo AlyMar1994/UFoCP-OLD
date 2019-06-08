@@ -186,7 +186,7 @@ function Find_Ground_Unit_Target(object)
 
 	if FreeStore.Is_Unit_Safe(object) == false then
 		my_planet = nil
-	end	
+	end
 	
 	if leader_object then
 		leader_planet = leader_object.Get_Planet_Location()

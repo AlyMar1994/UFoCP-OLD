@@ -44,14 +44,15 @@ function Definitions()
 	Category = "Build_Ground_Forces"
 	IgnoreTarget = true
 	
-	TaskForce = {
+	TaskForce =
 	{
-		"ReserveForce",
-		"Infantry = 0,2",
-		"Vehicle = 0,2",
-		"Air = 0,2"
+		{
+			"ReserveForce",
+			"Infantry = 0,2",
+			"Vehicle = 0,2",
+			"Air = 0,2"
+		}
 	}
-}
 
 	RequiredCategories = { "Vehicle" }
 	AllowFreeStoreUnits = false

@@ -617,9 +617,9 @@
 		          
 	<HeroCompany Name="Darth_Team_Space_MP">
 		<Variant_Of_Existing_Type>Darth_Team</Variant_Of_Existing_Type>
-    <Encyclopedia_Good_Against> Y-Wing Z-95_Headhunter_Rebel Starviper_Fighter</Encyclopedia_Good_Against>
-    <Encyclopedia_Vulnerable_To> Corellian_Corvette Crusader_Gunship A-Wing </Encyclopedia_Vulnerable_To>
-		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR </Encyclopedia_Unit_Class>
+    <Encyclopedia_Good_Against>Y-Wing Z-95_Headhunter_Rebel Starviper_Fighter</Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To>Corellian_Corvette Crusader_Gunship A-Wing </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR</Encyclopedia_Unit_Class>
 		<Tactical_Build_Cost_Multiplayer>2500</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>38</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites />

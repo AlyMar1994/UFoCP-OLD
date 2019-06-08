@@ -20,6 +20,9 @@ v1.6
 -For garrison/production dialogues, periods have been added to complete the sentence.
 -Any text that uses broken elipses character will be replaced with the correct amount of periods.
 -Many planet text tooltips (in the base/space slot view and planet history) have been corrected to fix grammar errors/inconsistient text (i.e. improper capitalization of "emperor").
+-Finished off autoresolve texts by adding punctuation to complete the sentences.
+-Fixed tutorial texts by de-capitalizing incorrect spots (such as "'Spread Corruption' Slot..."), and period placement being outside the annotation marks, among many changes and consistiency modifications.
+-Fixed most weather descriptions with proper ending punctuation.
 
 -[REBEL_BM_TECH_1]: "Black Market Items available at Rebel tech level one." --> "Black market items available at Rebel tech level one."
 -[REBEL_BM_TECH_2]: "Black Market Items available at Rebel tech level two." --> "Black market items available at Rebel tech level two."
@@ -30,6 +33,23 @@ v1.6
 -[TEXT_BOUNTY_HUNTER_NEUTRALIZES_GENERIC_BOUNTY_HUNTER_E]: "A bounty hunter has neutralized a Bounty Hunter! Location:" --> "A bounty hunter has neutralized another bounty hunter! Location:"
 -[MT_SPACE_PLANET_MANDALORE_PIRACY]: "Raid Mandal Hypernautics Shipments" --> "Raid Mandal Hypernautics' Shipments"
 -[TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE]: "An indigenous unit enslaved to the will of the Zann Consortium" --> "An indigenous unit enslaved to the will of the Zann Consortium."
+-[TEXT_STORY_UW_ACT02_M06_53]: "Tyber Zann, Urai Fen, and Silri must survive." --> "Tyber Zann, Urai Fen and Silri must survive."
+-[TEXT_STORY_UW_ACT02_M06_54]: "NOTICE: The Imperial Governor has begun sending for reinforcements.  Destroy the three Imperial Uplink Stations to prevent further landings." --> "NOTICE: The Imperial Governor has begun sending for reinforcements.  Destroy the three Imperial uplink stations to prevent further landings."
+-[TEXT_STORY_UW_ACT02_M06_55]: "NOTICE: Uplink Station destroyed." --> "NOTICE: Uplink station destroyed."
+-[TEXT_STRUCTURE_STYGIUM_CRYSTAL_CONTAINER]: "Stores Stygium Crystals for transport." --> "Stores stygium crystals for transport."
+-[TEXT_TOOLTIP_ABILITY_DESTROY_PLANET_DESCRIPTION]: "Activate the Death Star to destroy the nearby planet." --> "Activate the Death Star II to destroy the nearby planet."
+-[TEXT_TOOLTIP_AI_TURRET]: "Anti-Infantry turret capable of defeating enemy infantry assaults." --> "Anti-infantry turret capable of defeating enemy infantry assaults."
+-[TEXT_TOOLTIP_ATAA]: "All Terrain Anti Aircraft walker armed with flak cannons capable of defeating flying threats with ease. Can emit a field that disrupts missile guidance systems.  3 vehicles per company." --> "All Terrain Anti Aircraft walker armed with flak cannons capable of defeating flying threats with ease. Can emit a field that disrupts missile guidance systems. 3 vehicles per-company."
+-[TEXT_TOOLTIP_BASE_LEVEL_FILTER]: "Display/Hide a planet's space station level and ground structure slots on the galactic map." --> "Display/hide a planet's space station level and ground structure slots on the galactic map."
+-[TEXT_TOOLTIP_BM_CLOAKING_TECH]: "Vehicle Cloaking technology allows both land and space vehicles to become invisible to normal sensors.  Some enemy units will be able to detect cloaked units.  Cloaking generally is detrimental to shields or energy." --> "Vehicle cloaking technology allows both land and space vehicles to become invisible to normal sensors. Some enemy units will be able to detect cloaked units. Cloaking generally is detrimental to shields or energy."
+-[TEXT_TOOLTIP_BROADSIDE]: "Missile frigate armed with incredibly long ranged Diamond-Boron missiles able to inflict great damage. Suffers from low accuracy, weak armor, and poor maneuverability." --> "Missile frigate armed with incredibly long ranged diamond boron missiles able to inflict great damage. Suffers from low accuracy, weak armor and poor maneuverability."
+-[TEXT_TOOLTIP_CORELLIAN_GUNBOAT]: "Fast patrol cruiser armed with 2 laser cannons and 4 concussion missile launchers. Dominant missile weaponry can damage enemy ships even if their shields are up." --> "Fast patrol cruiser armed with 4 laser cannons and 4 concussion missile launchers. Dominant missile weaponry can damage enemy ships even if their shields are up."
+-[TEXT_TOOLTIP_G-HTT_TRANSPORT]: "The Gallofree Heavy Troop Transport (HTT) is an atmospheric troop transport that can carry infantry quickly across the battlefield." --> "The Gallofree Heavy Troop Transport (H.T.T.) is an atmospheric troop transport that can carry infantry quickly across the battlefield."
+-[TEXT_TOOLTIP_INTERRUPTED_PRODUCTION]: "An enemy fleet has interrupted space production at: %s" --> "An enemy fleet has interrupted space production at: %s!"
+-[TEXT_TOOLTIP_MARA_JADE]: "Mara Jade was raised under the tutelage of Emperor Palpatine and trained as one of his special agents known as the Emperor's Hands.  She is deadly in combat and has a direct connection to the Emperor via the Force.  Mara's Force corrupt ability will only affect nearby infantry." --> "Mara Jade was raised under the tutelage of Emperor Palpatine, and trained as one of his special agents known as the 'Emperor's Hands.' She is deadly in combat and has a direct connection to the Emperor via the Force. Mara's 'Force Corrupt' ability will only affect nearby infantry."
+-[TEXT_TOOLTIP_MARAUDER]: "Missile frigate armed with incredibly long ranged Diamond-Boron missiles able to inflict great damage. Suffers from low accuracy, weak armor, and poor maneuverability." --> "Missile frigate armed with incredibly long ranged diamond boron missiles, able to inflict great damage. Suffers from low accuracy, weak armor and poor maneuverability."
+-[TEXT_TOOLTIP_PIRATE]: "Black Sun Pirate mercenary. Ruthless and deadly. 3 squads (of 3 soldiers each) per company." --> "Black Sun pirate mercenary. Ruthless and deadly. 3 squads (of 3 soldiers each) per company."
+-[TEXT_TOOLTIP_TORP_TURRET]: "The Torpedo Turret fires four ground-based proton torpedoes at fairly long range." --> "The torpedo turret fires four ground-based proton torpedoes at fairly long range."
 
 
 
