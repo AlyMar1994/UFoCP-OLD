@@ -40,6 +40,22 @@ A.I. (Galactic Conquest)
 
 
 ==================
+Maps (Galactic)
+==================
+-Jabiim – Fixed the land unit backdrop. It was showing the green grass/temperate mountains overlay when it should be swamp.
+
+-Nal Hutta – Fixed main planet (and all variants) being defined as "Temperate" when it's clearly a swamp.
+-Nal Hutta – Fixed all variants of the planet using the urban/Coruscant land unit backdrop when it should use swamp (main planet used swamp backdrop by default).
+
+
+==================
+Maps (Land)
+==================
+-Carida – Fixed rancor spawning den at the bottom of the map. The den wasn't fully covered by the hill behind it, leaving a hole where you could see through the den. The hill size has been vertically increased to address this.
+-Carida – Fixed rancor NPCs not spawning. Faction owner for the extra rancors being "Hutts" instead of "hostile." The extra rancors should now appear.
+
+
+==================
 Structures (Land)
 ==================
 -Turbolaser Towers – Fixed the template for the Galactic defense-type by adding the green laser as the default (as muzzle flash can't be changed).
@@ -62,11 +78,13 @@ Units (Land)
 
 -Darth Vader – Fixed unit type (again). Replaced my custom-made "Darth_Team_Expansion" tag with the official "Darth_Team_Executor" tag that was hiding in the Executor's unit file. The change should reletively be pointless; Darth Vader's FoC variant should still replace land battles in Skirmish, with the same results.
 
+-General Veers – Added a hero blob insignia to unit, as Veers was the only one not to have one. Veers now has the Empire symbol ring when highlighted/selected.
+
 -Luke Skywalker – Fixed Galactic tooltips not indicating if unit can capture build pads or not (does not apply to space unit).
 
 -Yoda – Fixed Galactic tooltips not indicating if unit can capture build pads or not.
 
--Urai Fen – Fixed Urai's Cortosis Blades (yes, that's what they are) "block lightsaber" ability not having a chance to block the Campaign Force Adept's lightsaber attacks, even though Urai has a chance to deflect all other lightsaber-using hero's attacks.
+-Urai Fen – Fixed Urai's Cortosis Blades' "block lightsaber" ability not having a chance to block the Campaign Force Adept's lightsaber attacks, even though Urai has a chance to deflect all other lightsaber-using hero's attacks.
 -Urai Fen – Fixed Cortosis Blades' "block lightsaber" ability not blocking Silri's lightsaber whip during Consortium v. Consortium battles in Skrimish.
 
 

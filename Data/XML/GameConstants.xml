@@ -986,7 +986,7 @@
         Shield_Corvette,
         Shield_Fighter,
         Shield_Tank,		 <!-- T2B and 2M -->
-        Shield_SSD,			<!-- Shield for Executor --> 
+        Shield_SSD,			<!-- Shield for Executor -->
 		Armor_Transport, 
 		Armor_Fighter, 
 		Armor_Hero_Transport,
@@ -1032,7 +1032,6 @@
 		Armor_Destroyer_Droid,
 		Armor_Bunker,		<!-- Bunkers and pillboxes -->
 		Armor_SSD			<!-- Armor for the Executor and other SSDs-->
-				
 	</Armor_Types>
 
 	<!-- DAMAGE vs. ARMOR Matrix -->

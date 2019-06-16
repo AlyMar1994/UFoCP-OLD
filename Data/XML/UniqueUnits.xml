@@ -222,7 +222,10 @@
 		<MinimumPushReturnDistance> 100 </MinimumPushReturnDistance>
 		<Min_Speed> .1 </Min_Speed>
 		<MovementPredictionInterval> 5.0 </MovementPredictionInterval>		
-		<MovementBoxExpansionFactor> 8.0 </MovementBoxExpansionFactor>	
+		<MovementBoxExpansionFactor> 8.0 </MovementBoxExpansionFactor>
+
+		<Selection_Blob_Material_Name>Selection_Empire_Hero</Selection_Blob_Material_Name>
+        <Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
 
 		<!--<Is_Sprite>No</Is_Sprite>-->
 		<Type>Walk</Type>

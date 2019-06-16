@@ -4,7 +4,7 @@
 <!--*****						SLAVERY UNITS							*****-->
 <!--*************************************************************************-->
 
-<!-- BOTHANS -->
+	<!-- BOTHANS -->
 	<Slave_Unit Name="Bothan_Slave">
 		<Text_ID>TEXT_INDIG_BOTHAN_CIV</Text_ID>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
@@ -193,7 +193,7 @@
 	</Container>
 
 
-<!-- GEONOSIAN -->
+	<!-- GEONOSIAN -->
 	<Slave_Unit Name="Geonosian_Slave">
 		<Text_ID>TEXT_INDIG_GEONOSIAN</Text_ID>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
@@ -381,7 +381,7 @@
 	</Container>
 
 
-<!-- WOOKIEE -->
+	<!-- WOOKIEE -->
 	<Slave_Unit Name="Wookiee_Slave">
 		<LOD_Bias>5</LOD_Bias>
 		<Text_ID>TEXT_INDIG_WOOKIE</Text_ID>
@@ -562,7 +562,7 @@
 	</Container>
 
 
-<!-- GUNGAN -->
+	<!-- GUNGAN -->
 	<Slave_Unit Name="Gungan_Slave">
 		<Text_ID>TEXT_INDIG_GUNGAN</Text_ID>
 		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
@@ -748,7 +748,7 @@
 	</Container>
 
 
-<!-- PYN'GANI -->
+	<!-- PYN'GANI -->
 	<Slave_Unit Name="Pyngani_Slave">
 		<Land_Model_Anim_Override_Name>NI_GMale_Urban_A.ALO</Land_Model_Anim_Override_Name>
 		<Text_ID>TEXT_INDIG_PYNGANI</Text_ID>
@@ -932,7 +932,7 @@
 	</Container>
 
 
-<!-- TWI'LEK -->
+	<!-- TWI'LEK -->
 	<Slave_Unit Name="Twilek_Slave">
 		<Text_ID>TEXT_INDIG_TWILEK_CIV</Text_ID>
 		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
@@ -1118,7 +1118,7 @@
 	</Container>
 
 
-<!-- SULLUSTAN -->
+	<!-- SULLUSTAN -->
 	<Slave_Unit Name="Sullustan_Slave">
 		<Text_ID>TEXT_INDIG_SULLUSTAN</Text_ID>
 		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
@@ -1303,7 +1303,7 @@
 	</Container>
 
 
-<!-- MON CALAMARI -->
+	<!-- MON CALAMARI -->
 	<Slave_Unit Name="Mon_Calamari_Slave">
 		<Text_ID>TEXT_INDIG_MONCAL_CIV</Text_ID>
 		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
@@ -1618,6 +1618,7 @@
 		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
 	</SpaceUnit>
 
+
 	<SpaceUnit Name="A-Wing_Underworld">
 		<Variant_Of_Existing_Type>A-Wing</Variant_Of_Existing_Type>
 
@@ -1681,6 +1682,7 @@
 			</Unit_Ability>
 		</Unit_Abilities_Data>
 	</Squadron>
+
 
 	<SpaceUnit Name="TIE_Defender_Underworld">
 		<Variant_Of_Existing_Type>TIE_Defender</Variant_Of_Existing_Type>

@@ -4,7 +4,7 @@
 
 Fixes are marked with a hyphen (-), and written in this format: "-[DIALOG NAME]: 'Orig.' --> 'Fixed.'"
 
-THESE EDITS FOLLOW THE STANDARDS OF AMERICAN ENGLISH! Double-spacing where applicable is only fixed when generally inconsistient, wrong for the scenario or is totally broken.
+THESE EDITS FOLLOW THE STANDARDS OF AMERICAN ENGLISH! Double-spacing where applicable is only fixed when generally inconsistient, wrong for the scenario or is totally broken. These edits/fixes follow the rules of trying to stay consistient and correct.
 
 Last of note, I am a human being and I make mistakes. Please point out text errors in-game through bug reporting!
 
@@ -23,6 +23,8 @@ v1.6
 -Finished off autoresolve texts by adding punctuation to complete the sentences.
 -Fixed tutorial texts by de-capitalizing incorrect spots (such as "'Spread Corruption' Slot..."), and period placement being outside the annotation marks, among many changes and consistiency modifications.
 -Fixed most weather descriptions with proper ending punctuation.
+-Added entry "TEXT_NONE" so the debug client would stop yelling at me for not having this text entry available. Contains text "None."
+-Added entry "NONE" so the debug client would stop yelling at me. Same as above.
 
 -[REBEL_BM_TECH_1]: "Black Market Items available at Rebel tech level one." --> "Black market items available at Rebel tech level one."
 -[REBEL_BM_TECH_2]: "Black Market Items available at Rebel tech level two." --> "Black market items available at Rebel tech level two."
@@ -32,10 +34,23 @@ v1.6
 -[TEXT_BOTH_MOUSE_BUTTONS_ROTATE]: "Both mouse buttons rotate" --> "Both mouse buttons rotate the camera.
 -[TEXT_BOUNTY_HUNTER_NEUTRALIZES_GENERIC_BOUNTY_HUNTER_E]: "A bounty hunter has neutralized a Bounty Hunter! Location:" --> "A bounty hunter has neutralized another bounty hunter! Location:"
 -[MT_SPACE_PLANET_MANDALORE_PIRACY]: "Raid Mandal Hypernautics Shipments" --> "Raid Mandal Hypernautics' Shipments"
+-[TEXT_DROID_ADVISOR_UNDERWORLD_LAND_12]: "If you have a squadron of Skipray blastboats in orbit over the planet, they can be used for bombing runs during a land battle." --> "If you have a squadron of Skipray Blastboats in orbit over the planet, they can be used for bombing runs during a land battle."
 -[TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE]: "An indigenous unit enslaved to the will of the Zann Consortium" --> "An indigenous unit enslaved to the will of the Zann Consortium."
 -[TEXT_STORY_UW_ACT02_M06_53]: "Tyber Zann, Urai Fen, and Silri must survive." --> "Tyber Zann, Urai Fen and Silri must survive."
 -[TEXT_STORY_UW_ACT02_M06_54]: "NOTICE: The Imperial Governor has begun sending for reinforcements.  Destroy the three Imperial Uplink Stations to prevent further landings." --> "NOTICE: The Imperial Governor has begun sending for reinforcements.  Destroy the three Imperial uplink stations to prevent further landings."
 -[TEXT_STORY_UW_ACT02_M06_55]: "NOTICE: Uplink Station destroyed." --> "NOTICE: Uplink station destroyed."
+-[TEXT_STORY_UNDERWORLD_ACT02_MISSION_SEVEN_01]: "Fill and return 10 Tibanna gas droids" --> "Fill and return 10 tibanna gas droids."
+-[TEXT_STORY_UNDERWORLD_ACT02_MISSION_SEVEN_02]: "Hack the Bespin server cluster with IG-88" --> "Hack the Bespin server cluster with IG-88."
+-[TEXT_STORY_UNDERWORLD_ACT02_MISSION_SEVEN_03]: "Plant Evidence at 4 Guard outposts with Tyber Zann" --> "Plant evidence at 4 guard outposts with Tyber Zann."
+-[TEXT_STORY_UNDERWORLD_ACT02_MISSION_SIX_05]: "Lead the Nightsisters to Rancor to mount them." --> "Lead the Nightsisters to rancor to mount them."
+-[TEXT_STORY_UNDERWORLD_ACT02_MISSION_SIX_06]: "NOTICE: Misty Falls Prison's power generator destroyed, defense turrets are now off-line." --> "NOTICE: Misty Falls Prison's power generator destroyed, defense turrets are now offline."
+-[TEXT_STORY_UNDERWORLD_ACT02_MISSION_SIX_07]: "NOTICE: Governor's Quarters' power generator destroyed, defense turrets are now off-line." --> "NOTICE: Governor's Quarters' power generator destroyed, defense turrets are now offline."
+-[TEXT_STORY_UNDERWORLD_ACT02_MISSION_SIX_08]: "Destroy the three Imperial Uplink Stations." --> "Destroy the three Imperial uplink stations."
+-[TEXT_STORY_UW_ACT02_M06_49]: "Destroy the Singing Mountain prison's power generator." --> "Destroy the Singing Mountain Prison's power generator."
+-[TEXT_STORY_UW_ACT02_M06_50]: "NOTICE: Singing Mountain Prison's power generator destroyed, defense turrets are now off-line." --> "NOTICE: Singing Mountain Prison's power generator destroyed, defense turrets are now offline."
+-[TEXT_STORY_UW_ACT02_M06_52]: "NOTICE: Frenzied River Prison's power generator destroyed, defense turrets are now off-line." --> "NOTICE: Frenzied River Prison's power generator destroyed, defense turrets are now offline."
+-[TEXT_SUMMARY_BOUNTY_COLLECTED]: "Salvage collected: $ %d" --> "Salvage Collected: $ %d"
+-[TEXT_TACTICAL_PLANETARY_CREDIT_BONUS]: "Capture Planet to Gain Immediate Income:  %d" --> "Capture the planet to gain immediate income: %d."
 -[TEXT_STRUCTURE_STYGIUM_CRYSTAL_CONTAINER]: "Stores Stygium Crystals for transport." --> "Stores stygium crystals for transport."
 -[TEXT_TOOLTIP_ABILITY_DESTROY_PLANET_DESCRIPTION]: "Activate the Death Star to destroy the nearby planet." --> "Activate the Death Star II to destroy the nearby planet."
 -[TEXT_TOOLTIP_AI_TURRET]: "Anti-Infantry turret capable of defeating enemy infantry assaults." --> "Anti-infantry turret capable of defeating enemy infantry assaults."
@@ -49,8 +64,13 @@ v1.6
 -[TEXT_TOOLTIP_MARA_JADE]: "Mara Jade was raised under the tutelage of Emperor Palpatine and trained as one of his special agents known as the Emperor's Hands.  She is deadly in combat and has a direct connection to the Emperor via the Force.  Mara's Force corrupt ability will only affect nearby infantry." --> "Mara Jade was raised under the tutelage of Emperor Palpatine, and trained as one of his special agents known as the 'Emperor's Hands.' She is deadly in combat and has a direct connection to the Emperor via the Force. Mara's 'Force Corrupt' ability will only affect nearby infantry."
 -[TEXT_TOOLTIP_MARAUDER]: "Missile frigate armed with incredibly long ranged Diamond-Boron missiles able to inflict great damage. Suffers from low accuracy, weak armor, and poor maneuverability." --> "Missile frigate armed with incredibly long ranged diamond boron missiles, able to inflict great damage. Suffers from low accuracy, weak armor and poor maneuverability."
 -[TEXT_TOOLTIP_PIRATE]: "Black Sun Pirate mercenary. Ruthless and deadly. 3 squads (of 3 soldiers each) per company." --> "Black Sun pirate mercenary. Ruthless and deadly. 3 squads (of 3 soldiers each) per company."
+-[TEXT_TOOLTIP_T2B]: "Medium tank armed with 4 rapid-fire laser cannons. Repulsorlift engines allow it to maneuver quickly. Vulnerable to Imperial Gravity Control Generator. 5 vehicles per company." --> "Medium tank armed with 4 rapid-fire laser cannons. Repulsorlift engines allow it to maneuver quickly. Vulnerable to gravity control generators. 5 vehicles per-company."
+-[TEXT_TOOLTIP_TARKIN_01]: "Commander of the Empire’s military effort to defeat the Rebellion. Boosts effectiveness of ships in space combat by 25%. Reduces the production cost of Research Facilities by 25% at his current location.  Unable to contemplate retreat as a viable option." --> "Commander of the Empire’s military effort to defeat the Rebellion. Boosts effectiveness of ships in space combat by 25%. Reduces the production cost of Research Facilities by 25% at his current location. Unable to contemplate retreat as a viable option."
 -[TEXT_TOOLTIP_TORP_TURRET]: "The Torpedo Turret fires four ground-based proton torpedoes at fairly long range." --> "The torpedo turret fires four ground-based proton torpedoes at fairly long range."
-
+-[TEXT_UW_ACT01_G01_08]: "TASK: Drag your new Defiler unit to Honoghr and drop him in the 'SPREAD CORRUPTION' context-sensitive slot." --> "TASK: Drag your new Defiler unit to Honoghr and drop him in the 'Spread Corruption' context-sensitive slot."
+-[TEXT_UW_ACT01_G01_29]: "TASK: Choose the 'intimidation' mission from the corruption menu." --> "TASK: Choose the "Intimidation' mission from the corruption menu."
+-[TEXT_UW_ACT01_G05_02]: "TASK: Drag Tyber Zann to the 'BUY' context-sensitive slot on Kuat." --> "TASK: Drag Tyber Zann to the 'Buy' context-sensitive slot on Kuat."
+-[TEXT_UW_ACT01_G06_11]: "TASK: Build a Defiler, and drag it to the 'SABOTAGE' context-sensitive slot on Saleucami." --> "TASK: Build a Defiler, and drag it to the 'Sabotage' context-sensitive slot on Saleucami."
 
 
 ===================================================================================================
