@@ -142,13 +142,13 @@
 		<Debug_Ground_Structures>
 			U_Ground_Barracks
 		</Debug_Ground_Structures>
-		
+
 		<Superweapon_Win_Movie />
 		<Generic_Win_Movie />
 		<Finale_Movie />
 		<Finale_Movie_2 />
 		<Post_Credits_Movie />
-		
+
 		<Victory_Text>TEXT_UNDERWORLD_VICTORY</Victory_Text>
 		<Defeat_Text>TEXT_UNDERWORLD_DEFEAT</Defeat_Text>
 		<Space_Win_Image>i_us_win.tga</Space_Win_Image>

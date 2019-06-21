@@ -17,11 +17,11 @@
 	</MusicEvent> -->
 
 	<!-- <MusicEvent Name="Cinematic_Empire_Intro_Music_Event">
-			<Files>CIN_ROTJ_Approaching_The_Death_Star.mp3</Files>
-			<Volume_Percent>70</Volume_Percent>
-			<Fade_In_Seconds>2.0</Fade_In_Seconds>
-			<Fade_Out_Previous_Seconds>2.0</Fade_Out_Previous_Seconds>
-			<Loop>No</Loop>
+		<Files>CIN_ROTJ_Approaching_The_Death_Star.mp3</Files>
+		<Volume_Percent>70</Volume_Percent>
+		<Fade_In_Seconds>2.0</Fade_In_Seconds>
+		<Fade_Out_Previous_Seconds>2.0</Fade_Out_Previous_Seconds>
+		<Loop>No</Loop>
 	</MusicEvent> -->
 
 

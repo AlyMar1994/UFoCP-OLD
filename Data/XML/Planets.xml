@@ -2347,7 +2347,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 
 	<Planet Name="Honoghr"> <!-- EXPANSION PLANET -->
 		<Zoomed_Terrain_Index>1</Zoomed_Terrain_Index>
-		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_Honoghr</Text_ID>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_HONOGHR</Text_ID>
 		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
 		<Always_Instantiate_Galactic>Yes</Always_Instantiate_Galactic>
 		<Galactic_Model_Name>W_planet_Desert01.alo</Galactic_Model_Name>
@@ -2382,18 +2382,18 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Slice_Affinity_Types />
 		<Planet_Black_Market_Modifier>500</Planet_Black_Market_Modifier>
 
-		<Describe_Population>TEXT_PLANET_Honoghr_INFO_POP</Describe_Population>
-		<Describe_Wildlife>TEXT_PLANET_Honoghr_INFO_WL</Describe_Wildlife>
-		<Describe_Terrain>TEXT_PLANET_Honoghr_INFO_TER</Describe_Terrain>
-		<Describe_Weather>TEXT_PLANET_Honoghr_INFO_WEA</Describe_Weather>
-		<Describe_Tactical>TEXT_PLANET_Honoghr_INFO_TAC</Describe_Tactical>
-		<Describe_Advantage>TEXT_PLANET_Honoghr_INFO_ADV</Describe_Advantage>
-		<Describe_History>TEXT_PLANET_Honoghr_INFO_HIS</Describe_History>
+		<Describe_Population>TEXT_PLANET_HONOGHR_INFO_POP</Describe_Population>
+		<Describe_Wildlife>TEXT_PLANET_HONOGHR_INFO_WL</Describe_Wildlife>
+		<Describe_Terrain>TEXT_PLANET_HONOGHR_INFO_TER</Describe_Terrain>
+		<Describe_Weather>TEXT_PLANET_HONOGHR_INFO_WEA</Describe_Weather>
+		<Describe_Tactical>TEXT_PLANET_HONOGHR_INFO_TAC</Describe_Tactical>
+		<Describe_Advantage>TEXT_PLANET_HONOGHR_INFO_ADV</Describe_Advantage>
+		<Describe_History>TEXT_PLANET_HONOGHR_INFO_HIS</Describe_History>
 
-		<Planet_Ability_Name>TEXT_PLANET_Honoghr_INFO_ADV</Planet_Ability_Name>
-		<Planet_Ability_Description>TEXT_PLANET_Honoghr_ENCYC</Planet_Ability_Description>
+		<Planet_Ability_Name>TEXT_PLANET_HONOGHR_INFO_ADV</Planet_Ability_Name>
+		<Planet_Ability_Description>TEXT_PLANET_HONOGHR_ENCYC</Planet_Ability_Description>
 
-		<Encyclopedia_Text>TEXT_PLANET_Honoghr_ENCYC</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_PLANET_HONOGHR_ENCYC</Encyclopedia_Text>
 		<Encyclopedia_Weather_Icon>i_pa_weather_sun.tga</Encyclopedia_Weather_Icon>
 		<Encyclopedia_Weather_Name>TEXT_WEATHER_NAME_SUN</Encyclopedia_Weather_Name>
 		<Encyclopedia_Weather_Info>TEXT_TACTICAL_WEATHER_OBJECTIVE_SUN</Encyclopedia_Weather_Info>
@@ -2404,9 +2404,9 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 
 		 <!-- Reduce reinfocement point capture time. -->
 		<Abilities SubObjectList="Yes">
-			<Galaxy_Wide_Upgrade_Ability Name="Honoghr_Upgrade_Bonus">
+			<Galaxy_Wide_Upgrade_Ability Name="HONOGHR_Upgrade_Bonus">
 				<Space_Upgrade_Type />
-				<Land_Upgrade_Type>Honoghr_Planetary_Advantage</Land_Upgrade_Type>
+				<Land_Upgrade_Type>HONOGHR_Planetary_Advantage</Land_Upgrade_Type>
 			</Galaxy_Wide_Upgrade_Ability>
 		</Abilities>
 
@@ -2415,14 +2415,14 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Corruption_1_Required_Unit_Type>Urai_Fen</Corruption_1_Required_Unit_Type>
 		<Corruption_1_Required_Unit_Count>1</Corruption_1_Required_Unit_Count>
 		<Corruption_1_Tactical_Game_Mode>Land</Corruption_1_Tactical_Game_Mode>
-		<Corruption_1_Tactical_Map_Name>_Land_Planet_Honoghr_Intimidate.ted</Corruption_1_Tactical_Map_Name>
-		<Corruption_1_Tactical_Script_Name>Story_Plots_Underworld_Honoghr_Intimidation.xml</Corruption_1_Tactical_Script_Name>
-		<Corruption_1_Mission_Commencing_Speech_Event>Honoghr_INT_LOAD_COR25_01</Corruption_1_Mission_Commencing_Speech_Event>
-		<Corruption_1_Success_Speech_Event>Honoghr_INT_VICTORY_COR25_04</Corruption_1_Success_Speech_Event>
+		<Corruption_1_Tactical_Map_Name>_Land_Planet_HONOGHR_Intimidate.ted</Corruption_1_Tactical_Map_Name>
+		<Corruption_1_Tactical_Script_Name>Story_Plots_Underworld_HONOGHR_Intimidation.xml</Corruption_1_Tactical_Script_Name>
+		<Corruption_1_Mission_Commencing_Speech_Event>HONOGHR_INT_LOAD_COR25_01</Corruption_1_Mission_Commencing_Speech_Event>
+		<Corruption_1_Success_Speech_Event>HONOGHR_INT_VICTORY_COR25_04</Corruption_1_Success_Speech_Event>
 		<Corruption_1_Success_Bink_Hologram_Name>Urai_Loop</Corruption_1_Success_Bink_Hologram_Name>
-		<Corruption_1_Failure_Speech_Event>Honoghr_INT_LOSS_COR25_05</Corruption_1_Failure_Speech_Event>
+		<Corruption_1_Failure_Speech_Event>HONOGHR_INT_LOSS_COR25_05</Corruption_1_Failure_Speech_Event>
 		<Corruption_1_Failure_Bink_Hologram_Name>Urai_Loop</Corruption_1_Failure_Bink_Hologram_Name>
-		<Corruption_1_Mission_Briefing>TEXT_CORRUPTION_Honoghr_STORY_INTIMIDATION</Corruption_1_Mission_Briefing>
+		<Corruption_1_Mission_Briefing>TEXT_CORRUPTION_HONOGHR_STORY_INTIMIDATION</Corruption_1_Mission_Briefing>
 
 		<Corruption_2_Type>Corruption_Racketeering</Corruption_2_Type>
 		<Corruption_2_Credit_Cost>300</Corruption_2_Credit_Cost>
@@ -2432,16 +2432,16 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Corruption_2_Required_Mission_Count>2</Corruption_2_Required_Mission_Count>
 		<Corruption_2_Required_Unit_Type>Underworld_Disruptor_Merc</Corruption_2_Required_Unit_Type>
 		<Corruption_2_Required_Unit_Count>2</Corruption_2_Required_Unit_Count>
-		<Corruption_2_Success_Speech_Event>Honoghr_RKT_VICTORY_COR25_06</Corruption_2_Success_Speech_Event>
+		<Corruption_2_Success_Speech_Event>HONOGHR_RKT_VICTORY_COR25_06</Corruption_2_Success_Speech_Event>
 		<Corruption_2_Success_Bink_Hologram_Name>Saboteur_Loop</Corruption_2_Success_Bink_Hologram_Name>
-		<Corruption_2_Mission_Briefing>TEXT_CORRUPTION_Honoghr_STORY_RACKETEER</Corruption_2_Mission_Briefing>
+		<Corruption_2_Mission_Briefing>TEXT_CORRUPTION_HONOGHR_STORY_RACKETEER</Corruption_2_Mission_Briefing>
 
 		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
 	</Planet>
 
 	<Planet Name="Honoghr_Story"> <!-- Variant for the campaign. -->
 		<Zoomed_Terrain_Index>1</Zoomed_Terrain_Index>
-		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_Honoghr</Text_ID>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_HONOGHR</Text_ID>
 		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
 		<Always_Instantiate_Galactic>Yes</Always_Instantiate_Galactic>
 		<Galactic_Model_Name>W_planet_Desert01.alo</Galactic_Model_Name>
@@ -2476,18 +2476,18 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Slice_Affinity_Types />
 		<Planet_Black_Market_Modifier>500</Planet_Black_Market_Modifier>
 
-		<Describe_Population>TEXT_PLANET_Honoghr_INFO_POP</Describe_Population>
-		<Describe_Wildlife>TEXT_PLANET_Honoghr_INFO_WL</Describe_Wildlife>
-		<Describe_Terrain>TEXT_PLANET_Honoghr_INFO_TER</Describe_Terrain>
-		<Describe_Weather>TEXT_PLANET_Honoghr_INFO_WEA</Describe_Weather>
-		<Describe_Tactical>TEXT_PLANET_Honoghr_INFO_TAC</Describe_Tactical>
-		<Describe_Advantage>TEXT_PLANET_Honoghr_INFO_ADV</Describe_Advantage>
-		<Describe_History>TEXT_PLANET_Honoghr_INFO_HIS</Describe_History>
+		<Describe_Population>TEXT_PLANET_HONOGHR_INFO_POP</Describe_Population>
+		<Describe_Wildlife>TEXT_PLANET_HONOGHR_INFO_WL</Describe_Wildlife>
+		<Describe_Terrain>TEXT_PLANET_HONOGHR_INFO_TER</Describe_Terrain>
+		<Describe_Weather>TEXT_PLANET_HONOGHR_INFO_WEA</Describe_Weather>
+		<Describe_Tactical>TEXT_PLANET_HONOGHR_INFO_TAC</Describe_Tactical>
+		<Describe_Advantage>TEXT_PLANET_HONOGHR_INFO_ADV</Describe_Advantage>
+		<Describe_History>TEXT_PLANET_HONOGHR_INFO_HIS</Describe_History>
 
-		<Planet_Ability_Name>TEXT_PLANET_Honoghr_INFO_ADV</Planet_Ability_Name>
-		<Planet_Ability_Description>TEXT_PLANET_Honoghr_ENCYC</Planet_Ability_Description>
+		<Planet_Ability_Name>TEXT_PLANET_HONOGHR_INFO_ADV</Planet_Ability_Name>
+		<Planet_Ability_Description>TEXT_PLANET_HONOGHR_ENCYC</Planet_Ability_Description>
 
-		<Encyclopedia_Text>TEXT_PLANET_Honoghr_ENCYC</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_PLANET_HONOGHR_ENCYC</Encyclopedia_Text>
 		<Encyclopedia_Weather_Icon>i_pa_weather_sun.tga</Encyclopedia_Weather_Icon>
 		<Encyclopedia_Weather_Name>TEXT_WEATHER_NAME_SUN</Encyclopedia_Weather_Name>
 		<Encyclopedia_Weather_Info>TEXT_TACTICAL_WEATHER_OBJECTIVE_SUN</Encyclopedia_Weather_Info>
@@ -2498,9 +2498,9 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 
 		 <!-- Reduce reinforcement point capture time. -->
 		<Abilities SubObjectList="Yes">
-			<Galaxy_Wide_Upgrade_Ability Name="Honoghr_Upgrade_Bonus">
+			<Galaxy_Wide_Upgrade_Ability Name="HONOGHR_Upgrade_Bonus">
 				<Space_Upgrade_Type />
-				<Land_Upgrade_Type>Honoghr_Planetary_Advantage</Land_Upgrade_Type>
+				<Land_Upgrade_Type>HONOGHR_Planetary_Advantage</Land_Upgrade_Type>
 			</Galaxy_Wide_Upgrade_Ability>
 		</Abilities>
 
@@ -2509,14 +2509,14 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Corruption_1_Required_Unit_Type>Urai_Fen</Corruption_1_Required_Unit_Type>
 		<Corruption_1_Required_Unit_Count>1</Corruption_1_Required_Unit_Count>
 		<Corruption_1_Tactical_Game_Mode>Land</Corruption_1_Tactical_Game_Mode>
-		<Corruption_1_Tactical_Map_Name>_Land_Planet_Honoghr_Intimidate_Story.ted</Corruption_1_Tactical_Map_Name>
-		<Corruption_1_Tactical_Script_Name>Story_Plots_Underworld_Honoghr_Intimidation_Story.xml</Corruption_1_Tactical_Script_Name>
-		<Corruption_1_Mission_Commencing_Speech_Event>Honoghr_INT_LOAD_COR25_01</Corruption_1_Mission_Commencing_Speech_Event>
-		<Corruption_1_Success_Speech_Event>Honoghr_INT_VICTORY_COR25_04</Corruption_1_Success_Speech_Event>
+		<Corruption_1_Tactical_Map_Name>_Land_Planet_HONOGHR_Intimidate_Story.ted</Corruption_1_Tactical_Map_Name>
+		<Corruption_1_Tactical_Script_Name>Story_Plots_Underworld_HONOGHR_Intimidation_Story.xml</Corruption_1_Tactical_Script_Name>
+		<Corruption_1_Mission_Commencing_Speech_Event>HONOGHR_INT_LOAD_COR25_01</Corruption_1_Mission_Commencing_Speech_Event>
+		<Corruption_1_Success_Speech_Event>HONOGHR_INT_VICTORY_COR25_04</Corruption_1_Success_Speech_Event>
 		<Corruption_1_Success_Bink_Hologram_Name>Urai_Loop</Corruption_1_Success_Bink_Hologram_Name>
-		<Corruption_1_Failure_Speech_Event>Honoghr_INT_LOSS_COR25_05</Corruption_1_Failure_Speech_Event>
+		<Corruption_1_Failure_Speech_Event>HONOGHR_INT_LOSS_COR25_05</Corruption_1_Failure_Speech_Event>
 		<Corruption_1_Failure_Bink_Hologram_Name>Urai_Loop</Corruption_1_Failure_Bink_Hologram_Name>
-		<Corruption_1_Mission_Briefing>TEXT_CORRUPTION_Honoghr_STORY_INTIMIDATION</Corruption_1_Mission_Briefing>
+		<Corruption_1_Mission_Briefing>TEXT_CORRUPTION_HONOGHR_STORY_INTIMIDATION</Corruption_1_Mission_Briefing>
 
 		<Corruption_2_Type>Corruption_Racketeering</Corruption_2_Type>
 		<Corruption_2_Credit_Cost>0</Corruption_2_Credit_Cost>
@@ -2524,9 +2524,9 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Corruption_2_Required_Mission_Count>2</Corruption_2_Required_Mission_Count>
 		<Corruption_2_Required_Unit_Type>Underworld_Disruptor_Merc</Corruption_2_Required_Unit_Type>
 		<Corruption_2_Required_Unit_Count>2</Corruption_2_Required_Unit_Count>
-		<Corruption_2_Success_Speech_Event>Honoghr_RKT_VICTORY_COR25_06</Corruption_2_Success_Speech_Event>
+		<Corruption_2_Success_Speech_Event>HONOGHR_RKT_VICTORY_COR25_06</Corruption_2_Success_Speech_Event>
 		<Corruption_2_Success_Bink_Hologram_Name>Saboteur_Loop</Corruption_2_Success_Bink_Hologram_Name>
-		<Corruption_2_Mission_Briefing>TEXT_CORRUPTION_Honoghr_STORY_RACKETEER</Corruption_2_Mission_Briefing>
+		<Corruption_2_Mission_Briefing>TEXT_CORRUPTION_HONOGHR_STORY_RACKETEER</Corruption_2_Mission_Briefing>
 	</Planet>
 
 

@@ -54,20 +54,25 @@ See "_Changelog.txt" and "_MasterTEXT Changelog.txt" for changes per-update, in 
 ================
 Developers
 ================
-AlyMar1994 – Lead developer
+AlyMar1994
+	– Lead developer.
 
 
 ================
 Audio
 ================
-Diamondback – Music (Credits_Ep3.mp3)
+Diamondback
+	– Music (Credits_Ep3.mp3).
 
 
 ================
 Support
 ================
--KadVenku – Tons of help on GitHub for issues with FoC.
--STAR WARS: Empire at War Community Discord (specif. Galyana, Lany & Nikomer) – FoC technical help.
+-KadVenku 
+	– Tons of help on GitHub for issues with FoC.
+
+-STAR WARS: Empire at War Community Discord (specif. Galyana, Lany & Nikomer)
+	– FoC technical help.
 
 =========================================================================================
 

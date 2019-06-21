@@ -54,6 +54,20 @@ Maps (Land)
 -Carida – Fixed rancor spawning den at the bottom of the map. The den wasn't fully covered by the hill behind it, leaving a hole where you could see through the den. The hill size has been vertically increased to address this.
 -Carida – Fixed rancor NPCs not spawning. Faction owner for the extra rancors being "Hutts" instead of "hostile." The extra rancors should now appear.
 
+-Honoghr – Flattened some land and changed some passability brushing near the top-right most building placement point, so units (specifically Droideka MK. IIs) don't get stuck permanently on the slope south of it.
+
+-Tatooine – The land where the saarlac inhabited in EaW wasn't flattened out when the saarlac was removed, leaving a huge indent in the ground. This has been fixed.
+
+==================
+Maps (Space)
+==================
+**For space station adjustments (and what they mean), see update changelog 1.1!
+
+
+-Honoghr – Adjusted space station position.
+
+-Felucia – Adjusted space station position.
+
 
 ==================
 Structures (Land)
@@ -78,7 +92,7 @@ Units (Land)
 
 -Darth Vader – Fixed unit type (again). Replaced my custom-made "Darth_Team_Expansion" tag with the official "Darth_Team_Executor" tag that was hiding in the Executor's unit file. The change should reletively be pointless; Darth Vader's FoC variant should still replace land battles in Skirmish, with the same results.
 
--General Veers – Added a hero blob insignia to unit, as Veers was the only one not to have one. Veers now has the Empire symbol ring when highlighted/selected.
+-General Veers – Added a hero blob insignia to Veers's AT-AT, as he was the only Empire hero not to have one. Veers now has the Empire symbol ring when highlighted/selected/stagnant by default.
 
 -Luke Skywalker – Fixed Galactic tooltips not indicating if unit can capture build pads or not (does not apply to space unit).
 
@@ -102,7 +116,7 @@ Units (Space)
 
 -Corellian Gunship – Fixed tooltip by fixing number of laser cannons in description. Now mentions the 4 laser cannons, instead of 2.
 
--Interceptor IV Frigate – Fixed laser cannons on ship. Was registering damage type "Damage_Acclamator" (anti-starfighter lasers) instead of "Damage_Acclamator_TL" (anti-ship turbolasers), as all other values in the hardpoints point towards the cannons being turbolasers instead of lasers.
+-Interceptor IV Frigate – Fixed turbolaser cannons on ship. Was registering damage type "Damage_Acclamator" (anti-starfighter lasers) instead of "Damage_Acclamator_TL" (anti-ship turbolasers), as all other values in the hardpoints point towards the cannons being turbolasers instead of lasers.
 
 -IPV Patrol Craft – Fixed unit having no selection UI ring when selected.
 -IPV Patrol Craft – Fixed unit using incorrectly assigned "power to weapons" ability sound (was Corellian Corvette, now IPV).
