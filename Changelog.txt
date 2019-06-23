@@ -40,26 +40,17 @@ A.I. (Galactic Conquest)
 
 
 ==================
-Maps (Galactic)
-==================
--Jabiim – Fixed the land unit backdrop. It was showing the green grass/temperate mountains overlay when it should be swamp.
-
--Nal Hutta – Fixed main planet (and all variants) being defined as "Temperate" when it's clearly a swamp.
--Nal Hutta – Fixed all variants of the planet using the urban/Coruscant land unit backdrop when it should use swamp (main planet used swamp backdrop by default).
-
-
-==================
-Maps (Land)
+Maps/Planets (Land)
 ==================
 -Carida – Fixed rancor spawning den at the bottom of the map. The den wasn't fully covered by the hill behind it, leaving a hole where you could see through the den. The hill size has been vertically increased to address this.
 -Carida – Fixed rancor NPCs not spawning. Faction owner for the extra rancors being "Hutts" instead of "hostile." The extra rancors should now appear.
 
 -Honoghr – Flattened some land and changed some passability brushing near the top-right most building placement point, so units (specifically Droideka MK. IIs) don't get stuck permanently on the slope south of it.
 
--Tatooine – The land where the saarlac inhabited in EaW wasn't flattened out when the saarlac was removed, leaving a huge indent in the ground. This has been fixed.
+-Tatooine – The land where the saarlac inhabited in EaW wasn't flattened out when the saarlac was removed, leaving a huge indent in the ground. This has been fixed, and the base layout map in-game has been fixed to address this.
 
 ==================
-Maps (Space)
+Maps/Planets (Space)
 ==================
 **For space station adjustments (and what they mean), see update changelog 1.1!
 
@@ -67,6 +58,21 @@ Maps (Space)
 -Honoghr – Adjusted space station position.
 
 -Felucia – Adjusted space station position.
+
+
+==================
+Maps/Planets (Galactic)
+==================
+-Bespin – Fixed a holdover from EaW when Bespin had no land map. Changed Bespin and its campaign varaiant's weather icon to the "Sunny/Clear" icon, instead of the "None" weather (that space-only maps like the Maw and Vergesso Asteroids use).
+
+-Carida – Fixed planets 20% infantry price reduction not applying to Underworld infantry. Like the Rebel infiltrator, this applies to Defilers.
+
+-Corulag – Fixed planet's 20% infantry price reduction not applying to Underworld infantry. Like the Rebel infiltrator, this applies to Defilers.
+
+-Jabiim – Fixed the land unit backdrop. It was showing the green grass/temperate mountains overlay when it should be swamp.
+
+-Nal Hutta – Fixed main planet (and all variants) being defined as "Temperate" when it's clearly a swamp.
+-Nal Hutta – Fixed all variants of the planet using the urban/Coruscant land unit backdrop when it should use swamp (main planet used swamp backdrop by default).
 
 
 ==================
@@ -105,10 +111,18 @@ Units (Land)
 ==================
 Units (Space)
 ==================
+**The Expansion Hardpoints file has undergone an overhaul! All expansion units/hardpoints that didn't originally have a damage type assigned to them now does, which may affect their balance/performance (e.g. Bossk's lasers may now do half-as-much damage as before, due to having no damage type at all being changed to Damage_Fighter). Most of these changes won't be put in the changelog, but major ones will.
+
+
 -Acclamator Assault Ship – Fixed Underworld-type Acclamator ship being "good against"/"vulnerable to" own faction's units. Replaced "good against" Crusader Gunship with Tartan Patrol Cruiser, and replaced "vulnerable to" Skipray Blastboat with TIE bomber.
+
+-Rom Mohc (Arc Hammer) – Gave laser cannons damage type "Damage_Acclamator." The Arc Hammer's laser cannons and now matched up with the Acclamator's.
+-Rom Mohc (Arc Hammer) – Gave turbolasers damage type "Damage_Star_Destroyer." The Arc Hammer's turbolasers will now match other Star Destroyers like it.
 
 -A-wing – Fixed Underworld-type A-wing being "good against"/"vulnerable to" indicators for each fighter with the squadron's original list, so the normal fighers can't display info about being good against its own faction with developer-intended units (this fixes a regression from update v1.2). "Good Against" is now (by replacing the second one from "Y-wing") TIE fighters, TIE scouts and TIE bombers. "Vulnerable To" is now (by removing the Corellian Corvette) soley the Tartan Patrol Cruiser.
 -A-wing – Re-fixed incorrect build/cancel sounds for the Underworld-type A-wing. It will now play Underworld sounds.
+
+-Bossk (Hound's Tooth) – Gave fighter laser cannons damage type "Damage_Fighter." Bossk will now do half (if not 75% less) his normal damage to most heavier shielded units (Tartan Patrol Cruiser onwards).
 
 -Broadside Cruiser – Fixed Underworld-type Broadside Cruiser being "good against"/"vulnerable to" own faction's units. Replaced "good against" Skipray Blastboat with TIE bombers and "vulnerable to" Vengance Frigate to Victory Star Destroyer.
 
@@ -116,7 +130,11 @@ Units (Space)
 
 -Corellian Gunship – Fixed tooltip by fixing number of laser cannons in description. Now mentions the 4 laser cannons, instead of 2.
 
+-Crusader Gunship – Gave laser cannons a damage type. Instead of doing full damage against everything, they now have the same damage type as the Corellian Corvette.
+
 -Interceptor IV Frigate – Fixed turbolaser cannons on ship. Was registering damage type "Damage_Acclamator" (anti-starfighter lasers) instead of "Damage_Acclamator_TL" (anti-ship turbolasers), as all other values in the hardpoints point towards the cannons being turbolasers instead of lasers.
+
+-IG-88 (IG-2000) – Gave fighter laser cannons damage type "Damage_Fighter." IG-88 will now do half (if not 75% less) his normal damage to most heavier shielded units (Tartan Patrol Cruiser onwards).
 
 -IPV Patrol Craft – Fixed unit having no selection UI ring when selected.
 -IPV Patrol Craft – Fixed unit using incorrectly assigned "power to weapons" ability sound (was Corellian Corvette, now IPV).
@@ -127,6 +145,8 @@ Units (Space)
 
 -Marauder Cruiser – Fixed Underworld-type Marauder Cruiser being "good against"/"vulnerable to" own faction's units. Replaced "good against" Starviper Fighter with X-wings and "vulnerable to" Vengance Frigate to Alliance Assault Ship.
 
+-MC30c Frigate – Added laser cannon damage type. Gave the ship the same laser cannons as the Rebellion assault frigate.
+
 -Nebulon-B Frigate – Fixed Underworld-type Nebulon-B Frigate being "good against"/"vulnerable to" own faction's units. Replaced "good against" Crusader Gunboat with Corellian Corvette, and "vulnerable to" Vengance Frigate to Victory Star Destroyer.
 
 -Skipray Blastboat – Evened out "good against" indicators on squadron/fighter. Individual fighters now have the same good against types the squadron does.
@@ -134,6 +154,8 @@ Units (Space)
 -Tartan Patrol Cruiser – Fixed Underworld-type Tartan Patrol Cruiser being "good against"/"vulnerable to" own faction's units. Replaced "good against" Starviper Fighter with TIE Interceptor and "vulnerable to" Vengance Frigate to Victory Star Destroyer.
 
 -TIE defender – Fixed Underworld-type TIE defender being "good against"/"vulnerable to" indicators for each fighter with the squadron's original list, so the normal fighers can't display info about being good against its own faction with developer-intended units (this fixes a regression from update v1.2). "Good Against" is now (instead of the Mon Calamari cruiser and the Aggressor-class Star Destroyer) the A-wing, Nebulon-B Frigate, and the Mon Calamari cruiser. "Vulnerable To" is now (instead of having the Crusader Gunship and Buzz Droids included) now just the Corellian Corvette.
+
+-Tyber Zann (The Merciless) – Fixed plasma ball type. Original plasma blast was the Star Destroyer turbolaser type, now it's the default Aggressor-class plasma shot damage.
 
 
 =========================================================================================
@@ -240,7 +262,7 @@ Factions
 
 
 ==================
-Maps (Space)
+Maps/Planets (Space)
 ==================
 **For space station adjustments (and what they mean), see update changelog 1.1!
 
@@ -347,7 +369,7 @@ A.I. (Galactic Conquest)
 
 
 ==================
-Maps (Space)
+Maps/Planets (Space)
 ==================
 -Alzoc III (Alzoc 3) – Adjusted space station position so it points towards the attackers (for Empire/Consortium stations).
 **These few maps edited are tests for community feedback.

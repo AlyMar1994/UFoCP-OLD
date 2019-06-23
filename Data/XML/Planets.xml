@@ -36,7 +36,7 @@ of the techNological advancement level of the indigeNous species.  A sample plan
 a guide.  The number after the rating is used for the Underworld Black Market modifier.
 
 	0	=	No Tech, Primitive Culture (Ewoks on Endor)					(+500)
-	1	=	Low Tech, Colonists with little access (Gamorr)				(+400)
+	1	=	Low Tech, Colonists with little access (Honoghr)			(+400)
 	2	=	Back-Water, Little access to high tech (Tatooine)			(+300)
 	3	=	Average, Average citizens of the galaxy (Alderaan)			(+100)
 	4	=	Semi-Urban, Large population with plentifiul Tech (Sullust)	(0)
@@ -130,7 +130,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Describe_Wildlife>TEXT_PLANET_ABREGADORAE_INFO_WL</Describe_Wildlife>
 		<Describe_Terrain>TEXT_PLANET_ABREGADORAE_INFO_TER</Describe_Terrain>
 		<Describe_Weather>TEXT_PLANET_ABREGADORAE_INFO_WEA</Describe_Weather>
-		<Describe_Tactical>TEXT_PLANET_ABREGADORAE_ENCYC_01</Describe_Tactical>
+		<Describe_Tactical>TEXT_PLANET_ABREGADORAE_INFO_TAC</Describe_Tactical>
 		<Describe_Advantage>TEXT_PLANET_ABREGADORAE_INFO_ADV_01</Describe_Advantage>
 		<Describe_History>TEXT_PLANET_ABREGADORAE_INFO_HIS_01</Describe_History>
 
@@ -653,7 +653,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Ability_Description>TEXT_PLANET_BESPIN_INFO_ADV_00</Planet_Ability_Description>
 
 		<Encyclopedia_Text>TEXT_PLANET_BESPIN_ENCYC_00</Encyclopedia_Text>
-		<Encyclopedia_Weather_Icon>i_pa_weather_None.tga</Encyclopedia_Weather_Icon>
+		<Encyclopedia_Weather_Icon>i_pa_weather_sun.tga</Encyclopedia_Weather_Icon>
 		<Encyclopedia_Weather_Name>TEXT_WEATHER_NAME_SUN</Encyclopedia_Weather_Name>
 		<Encyclopedia_Weather_Info>TEXT_TACTICAL_WEATHER_OBJECTIVE_SUN</Encyclopedia_Weather_Info>
 		<Planet_Ability_Icon>i_pa_improved_weapons.tga</Planet_Ability_Icon>
@@ -829,7 +829,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Describe_Wildlife>TEXT_PLANET_BESTINE_INFO_WL</Describe_Wildlife>
 		<Describe_Terrain>TEXT_PLANET_BESTINE_INFO_TER</Describe_Terrain>
 		<Describe_Weather>TEXT_PLANET_BESTINE_INFO_WEA</Describe_Weather>
-		<Describe_Tactical>TEXT_PLANET_BESTINE_ENCYC_01</Describe_Tactical>
+		<Describe_Tactical>TEXT_PLANET_BESTINE_INFO_TAC</Describe_Tactical>
 		<Describe_Advantage>TEXT_PLANET_BESTINE_INFO_ADV_01</Describe_Advantage>
 		<Describe_History>TEXT_PLANET_BESTINE_INFO_HIS_01</Describe_History>
 
@@ -922,7 +922,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Describe_Wildlife>TEXT_PLANET_BONADAN_INFO_WL</Describe_Wildlife>
 		<Describe_Terrain>TEXT_PLANET_BONADAN_INFO_TER</Describe_Terrain>
 		<Describe_Weather>TEXT_PLANET_BONADAN_INFO_WEA</Describe_Weather>
-		<Describe_Tactical>TEXT_PLANET_BONADAN_INFO_ADV</Describe_Tactical>
+		<Describe_Tactical>TEXT_PLANET_BONADAN_INFO_TAC</Describe_Tactical>
 		<Describe_Advantage>TEXT_PLANET_BONADAN_INFO_ADV_01</Describe_Advantage>
 		<Describe_History>TEXT_PLANET_BONADAN_INFO_HIS_01</Describe_History>
 
@@ -1132,7 +1132,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Describe_Wildlife>TEXT_PLANET_BYSS_INFO_WL</Describe_Wildlife>
 		<Describe_Terrain>TEXT_PLANET_BYSS_INFO_TER</Describe_Terrain>
 		<Describe_Weather>TEXT_PLANET_BYSS_INFO_WEA</Describe_Weather>
-		<Describe_Tactical>TEXT_PLANET_BYSS_ENCYC_02</Describe_Tactical>
+		<Describe_Tactical>TEXT_PLANET_BYSS_INFO_TAC</Describe_Tactical>
 		<Describe_Advantage>TEXT_PLANET_BYSS_INFO_ADV_01</Describe_Advantage>
 		<Describe_History>TEXT_PLANET_BYSS_INFO_HIS_01</Describe_History>
 
@@ -1247,7 +1247,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 			<Reduce_Production_Price_Ability Name="Carida_Infantry_Production_Boost">
 				<Unit_Strength_Category />
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>Rebel_Infantry_Squad Rebel_Tank_Buster_Squad Rebel_Infiltrator_Team Imperial_Stormtrooper_Squad Imperial_Light_Scout_Squad</Applicable_Unit_Types>
+				<Applicable_Unit_Types>Rebel_Infantry_Squad, Rebel_Tank_Buster_Squad, Rebel_Infiltrator_Team, Imperial_Stormtrooper_Squad, Imperial_Light_Scout_Squad, Underworld_Merc_Squad, Underworld_Disruptor_Merc_Squad, Underworld_Saboteur_Team</Applicable_Unit_Types>
 				<Price_Reduction_Percentage>0.20</Price_Reduction_Percentage>
 				<Stacking_Category>9</Stacking_Category>
 				<Galaxy_Wide>Yes</Galaxy_Wide>
@@ -1328,7 +1328,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Describe_Wildlife>TEXT_PLANET_CORELLIA_INFO_WL</Describe_Wildlife>
 		<Describe_Terrain>TEXT_PLANET_CORELLIA_INFO_TER</Describe_Terrain>
 		<Describe_Weather>TEXT_PLANET_CORELLIA_INFO_WEA</Describe_Weather>
-		<Describe_Tactical>TEXT_PLANET_CORELLIA_ENCYC_01</Describe_Tactical>
+		<Describe_Tactical>TEXT_PLANET_CORELLIA_INFO_TAC</Describe_Tactical>
 		<Describe_Advantage>TEXT_PLANET_CORELLIA_INFO_ADV_01</Describe_Advantage>
 		<Describe_History>TEXT_PLANET_CORELLIA_INFO_HIS_01</Describe_History>
 
@@ -1445,7 +1445,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 			<Reduce_Production_Price_Ability Name="Corulag_Infantry_Production_Boost">
 				<Unit_Strength_Category />
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>Rebel_Infantry_Squad Rebel_Tank_Buster_Squad Rebel_Infiltrator_Team Imperial_Stormtrooper_Squad Imperial_Light_Scout_Squad</Applicable_Unit_Types>
+				<Applicable_Unit_Types>Rebel_Infantry_Squad, Rebel_Tank_Buster_Squad, Rebel_Infiltrator_Team, Imperial_Stormtrooper_Squad, Imperial_Light_Scout_Squad, Underworld_Merc_Squad, Underworld_Disruptor_Merc_Squad, Underworld_Saboteur_Team</Applicable_Unit_Types>
 				<Price_Reduction_Percentage>0.20</Price_Reduction_Percentage>
 				<Stacking_Category>9</Stacking_Category>
 				<Galaxy_Wide>Yes</Galaxy_Wide>
@@ -1521,7 +1521,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Describe_Terrain>TEXT_PLANET_CORUSCANT_INFO_TER</Describe_Terrain>
 		<Describe_Weather>TEXT_PLANET_CORUSCANT_INFO_WEA</Describe_Weather>
 		<Describe_Tactical>TEXT_PLANET_CORUSCANT_INFO_TAC</Describe_Tactical>
-		<Describe_Advantage>TEXT_PLANET_BONADAN_INFO_ADV_01</Describe_Advantage>
+		<Describe_Advantage>TEXT_PLANET_CORUSCANT_INFO_ADV_01</Describe_Advantage>
 		<Describe_History>TEXT_PLANET_CORUSCANT_INFO_HIS_01</Describe_History>
 
 		<Planet_Ability_Name>TEXT_PLANET_BONADAN_INFO_ADV_01</Planet_Ability_Name>
@@ -1557,100 +1557,6 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 
 		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
 	</Planet>
-
-
-	<Planet Name="Dathomir"> <!-- EXPANSION PLANET -->
-		<Zoomed_Terrain_Index>2</Zoomed_Terrain_Index>
-		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_DATHOMIR</Text_ID>
-		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
-		<Always_Instantiate_Galactic>Yes</Always_Instantiate_Galactic>
-		<Galactic_Model_Name>W_planet_Forest01.alo</Galactic_Model_Name>
-		<Destroyed_Galactic_Model_Name>W_planet_Asteroids.alo</Destroyed_Galactic_Model_Name>
-		<GUI_Model_Name>W_planet_Forest01.alo</GUI_Model_Name>
-		<Mass>1.0</Mass>
-		<Scale_Factor>1.8</Scale_Factor>
-		<Mouse_Collide_Override_Sphere_Radius>19.77</Mouse_Collide_Override_Sphere_Radius>
-		<Show_Name>Yes</Show_Name>
-		<Name_Adjust>-12 -12 0.1</Name_Adjust>
-		<Behavior>SELECTABLE PLANET PRODUCTION</Behavior>
-		<Pre_Lit>No</Pre_Lit>
-		<Political_Control>0</Political_Control>
-		<Camera_Aligned>Yes</Camera_Aligned>
-		<Facing_Adjust>0.0 0.0 0.0</Facing_Adjust>
-		<Terrain>Forest</Terrain>
-		<Planet_Credit_Value>85</Planet_Credit_Value>
-		<Planet_Destroyed_Credit_Value>7</Planet_Destroyed_Credit_Value>
-		<Galactic_Position>80.0 300.0 10.0</Galactic_Position>
-		<Special_Structures_Land>5</Special_Structures_Land>
-		<Special_Structures_Space>2</Special_Structures_Space>
-		<Max_Space_Base>5</Max_Space_Base>
-		<The_Force>Neutral</The_Force>
-		<Force_Strength>0.0</Force_Strength>
-		<Land_Tactical_Map>_Land_Planet_Dathomir_01.ted</Land_Tactical_Map>
-		<Space_Tactical_Map>_Space_Planet_Dathomir_01.ted</Space_Tactical_Map>
-		<Destroyed_Space_Tactical_Map />
-		<Planet_Surface_Accessible>Yes</Planet_Surface_Accessible>
-		<Planet_Capture_Bonus_Reward>2300</Planet_Capture_Bonus_Reward>
-		<Planet_Slice_Difficulty_Rating>5</Planet_Slice_Difficulty_Rating>
-		<Planet_Tech_Availability_Rating>2</Planet_Tech_Availability_Rating>
-		<Planet_Slice_Affinity_Types />
-		<Planet_Groundbase_Stealth>Yes</Planet_Groundbase_Stealth>
-		<Planet_Black_Market_Modifier>1300</Planet_Black_Market_Modifier>
-
-		<Describe_Population>TEXT_PLANET_DATHOMIR_INFO_POP</Describe_Population>
-		<Describe_Wildlife>TEXT_PLANET_DATHOMIR_INFO_WL</Describe_Wildlife>
-		<Describe_Terrain>TEXT_PLANET_DATHOMIR_INFO_TER</Describe_Terrain>
-		<Describe_Weather>TEXT_PLANET_DATHOMIR_INFO_WEA</Describe_Weather>
-		<Describe_Tactical>TEXT_PLANET_DATHOMIR_INFO_TAC</Describe_Tactical>
-		<Describe_Advantage>TEXT_PLANET_DATHOMIR_INFO_ADV</Describe_Advantage>
-		<Describe_History>TEXT_PLANET_DATHOMIR_INFO_HIS</Describe_History>
-
-		<Planet_Ability_Name>TEXT_PLANET_DATHOMIR_INFO_ADV</Planet_Ability_Name>
-		<Planet_Ability_Description>TEXT_PLANET_DATHOMIR_ENCYC</Planet_Ability_Description>
-
-		<Encyclopedia_Text>TEXT_PLANET_DATHOMIR_ENCYC</Encyclopedia_Text>
-		<Encyclopedia_Weather_Icon>i_pa_weather_rain.tga</Encyclopedia_Weather_Icon>
-		<Encyclopedia_Weather_Name>TEXT_WEATHER_NAME_RAIN</Encyclopedia_Weather_Name>
-		<Encyclopedia_Weather_Info>TEXT_TACTICAL_WEATHER_OBJECTIVE_RAIN</Encyclopedia_Weather_Info>
-		<Planet_Ability_Icon>i_pa_base_stealth_ground.tga</Planet_Ability_Icon>
-		<Native_Icon_Name>load_urban.tga</Native_Icon_Name>
-
-		<Additional_Population_Capacity>5</Additional_Population_Capacity>
-
-		 <!-- Unlock Witches of Dathomir for Underworld. -->
-		<Abilities SubObjectList="Yes" />
-
-		<Corruption_1_Type>Corruption_Bribery</Corruption_1_Type>
-		<Corruption_1_Credit_Cost>1000</Corruption_1_Credit_Cost>
-		<Corruption_1_Required_Mission_Type>Corruption_Kidnapping</Corruption_1_Required_Mission_Type>
-		<Corruption_1_Required_Mission_Count>1</Corruption_1_Required_Mission_Count>
-		<Corruption_1_Success_Speech_Event>DATHOMIR_BRB_VICTORY_COR17_01</Corruption_1_Success_Speech_Event>
-		<Corruption_1_Success_Bink_Hologram_Name>Saboteur_Loop</Corruption_1_Success_Bink_Hologram_Name>
-		<Corruption_1_Mission_Briefing>TEXT_CORRUPTION_DATHOMIR_STORY_BRIBERY</Corruption_1_Mission_Briefing>
-
-		<Corruption_2_Type>Corruption_Corrupt_Militia</Corruption_2_Type>
-		<Corruption_2_Credit_Cost>800</Corruption_2_Credit_Cost>
-		<Corruption_2_Required_Unit_Type>Destroyer_Droid</Corruption_2_Required_Unit_Type>
-		<Corruption_2_Required_Unit_Count>1</Corruption_2_Required_Unit_Count>
-		<Corruption_2_Required_Mission_Type>Corruption_Bribery</Corruption_2_Required_Mission_Type>
-		<Corruption_2_Required_Mission_Count>2</Corruption_2_Required_Mission_Count>
-		<Corruption_2_Success_Speech_Event>DATHOMIR_CRM_VICTORY_COR17_02</Corruption_2_Success_Speech_Event>
-		<Corruption_2_Success_Bink_Hologram_Name>Saboteur_Loop</Corruption_2_Success_Bink_Hologram_Name>
-		<Corruption_2_Mission_Briefing>TEXT_CORRUPTION_DATHOMIR_STORY_CORUPTMILITIA</Corruption_2_Mission_Briefing>
-
-		<Corruption_3_Type>Corruption_Racketeering</Corruption_3_Type>
-		<Corruption_3_Credit_Cost>500</Corruption_3_Credit_Cost>
-		<Corruption_3_Required_Mission_Type>Corruption_Intimidation</Corruption_3_Required_Mission_Type>
-		<Corruption_3_Required_Mission_Count>1</Corruption_3_Required_Mission_Count>
-		<Corruption_3_Required_Unit_Type>Underworld_Mobile_Defense_Unit</Corruption_3_Required_Unit_Type>
-		<Corruption_3_Required_Unit_Count>1</Corruption_3_Required_Unit_Count>
-		<Corruption_3_Success_Speech_Event>SHOLA_RKT_VICTORY_COR44_01</Corruption_3_Success_Speech_Event>
-		<Corruption_3_Success_Bink_Hologram_Name>Saboteur_Loop</Corruption_3_Success_Bink_Hologram_Name>
-		<Corruption_3_Mission_Briefing>TEXT_CORRUPTION_DATHOMIR_STORY_RACKETEER</Corruption_3_Mission_Briefing>
-
-		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
-	</Planet>
-
 
 	<Planet Name="Dagobah">
 		<Zoomed_Terrain_Index>2</Zoomed_Terrain_Index>
@@ -1697,9 +1603,9 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Describe_History>TEXT_PLANET_DAGOBAH_INFO_HIS_01</Describe_History>
 
 		<Planet_Ability_Name>TEXT_PLANET_DAGOBAH_INFO_ADV</Planet_Ability_Name>
-		<Planet_Ability_Description>TEXT_PLANET_GROUND_BASE_STEALTH_DESC</Planet_Ability_Description>
+		<Planet_Ability_Description>TEXT_PLANET_DAGOBAH_ENCYC</Planet_Ability_Description>
 
-		<Encyclopedia_Text>TEXT_PLANET_GROUND_BASE_STEALTH_DESC</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_PLANET_DAGOBAH_ENCYC</Encyclopedia_Text>
 		<Encyclopedia_Weather_Icon>i_pa_weather_rain.tga</Encyclopedia_Weather_Icon>
 		<Encyclopedia_Weather_Name>TEXT_WEATHER_NAME_RAIN</Encyclopedia_Weather_Name>
 		<Encyclopedia_Weather_Info>TEXT_TACTICAL_WEATHER_OBJECTIVE_RAIN</Encyclopedia_Weather_Info>
@@ -1800,6 +1706,99 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Corruption_2_Success_Speech_Event>DANTOOINE_BRB_VICTORY_COR16_05</Corruption_2_Success_Speech_Event>
 		<Corruption_2_Success_Bink_Hologram_Name>Saboteur_Loop</Corruption_2_Success_Bink_Hologram_Name>
 		<Corruption_2_Mission_Briefing>TEXT_CORRUPTION_DANTOOINE_STORY_BRIBERY</Corruption_2_Mission_Briefing>
+
+		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
+	</Planet>
+
+
+	<Planet Name="Dathomir"> <!-- EXPANSION PLANET -->
+		<Zoomed_Terrain_Index>2</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_DATHOMIR</Text_ID>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Always_Instantiate_Galactic>Yes</Always_Instantiate_Galactic>
+		<Galactic_Model_Name>W_planet_Forest01.alo</Galactic_Model_Name>
+		<Destroyed_Galactic_Model_Name>W_planet_Asteroids.alo</Destroyed_Galactic_Model_Name>
+		<GUI_Model_Name>W_planet_Forest01.alo</GUI_Model_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.8</Scale_Factor>
+		<Mouse_Collide_Override_Sphere_Radius>19.77</Mouse_Collide_Override_Sphere_Radius>
+		<Show_Name>Yes</Show_Name>
+		<Name_Adjust>-12 -12 0.1</Name_Adjust>
+		<Behavior>SELECTABLE PLANET PRODUCTION</Behavior>
+		<Pre_Lit>No</Pre_Lit>
+		<Political_Control>0</Political_Control>
+		<Camera_Aligned>Yes</Camera_Aligned>
+		<Facing_Adjust>0.0 0.0 0.0</Facing_Adjust>
+		<Terrain>Forest</Terrain>
+		<Planet_Credit_Value>85</Planet_Credit_Value>
+		<Planet_Destroyed_Credit_Value>7</Planet_Destroyed_Credit_Value>
+		<Galactic_Position>80.0 300.0 10.0</Galactic_Position>
+		<Special_Structures_Land>5</Special_Structures_Land>
+		<Special_Structures_Space>2</Special_Structures_Space>
+		<Max_Space_Base>5</Max_Space_Base>
+		<The_Force>Neutral</The_Force>
+		<Force_Strength>0.0</Force_Strength>
+		<Land_Tactical_Map>_Land_Planet_Dathomir_01.ted</Land_Tactical_Map>
+		<Space_Tactical_Map>_Space_Planet_Dathomir_01.ted</Space_Tactical_Map>
+		<Destroyed_Space_Tactical_Map />
+		<Planet_Surface_Accessible>Yes</Planet_Surface_Accessible>
+		<Planet_Capture_Bonus_Reward>2300</Planet_Capture_Bonus_Reward>
+		<Planet_Slice_Difficulty_Rating>5</Planet_Slice_Difficulty_Rating>
+		<Planet_Tech_Availability_Rating>2</Planet_Tech_Availability_Rating>
+		<Planet_Slice_Affinity_Types />
+		<Planet_Groundbase_Stealth>Yes</Planet_Groundbase_Stealth>
+		<Planet_Black_Market_Modifier>1300</Planet_Black_Market_Modifier>
+
+		<Describe_Population>TEXT_PLANET_DATHOMIR_INFO_POP</Describe_Population>
+		<Describe_Wildlife>TEXT_PLANET_DATHOMIR_INFO_WL</Describe_Wildlife>
+		<Describe_Terrain>TEXT_PLANET_DATHOMIR_INFO_TER</Describe_Terrain>
+		<Describe_Weather>TEXT_PLANET_DATHOMIR_INFO_WEA</Describe_Weather>
+		<Describe_Tactical>TEXT_PLANET_DATHOMIR_INFO_TAC</Describe_Tactical>
+		<Describe_Advantage>TEXT_PLANET_DATHOMIR_INFO_ADV</Describe_Advantage>
+		<Describe_History>TEXT_PLANET_DATHOMIR_INFO_HIS</Describe_History>
+
+		<Planet_Ability_Name>TEXT_PLANET_DATHOMIR_INFO_ADV</Planet_Ability_Name>
+		<Planet_Ability_Description>TEXT_PLANET_DATHOMIR_ENCYC</Planet_Ability_Description>
+
+		<Encyclopedia_Text>TEXT_PLANET_DATHOMIR_ENCYC</Encyclopedia_Text>
+		<Encyclopedia_Weather_Icon>i_pa_weather_rain.tga</Encyclopedia_Weather_Icon>
+		<Encyclopedia_Weather_Name>TEXT_WEATHER_NAME_RAIN</Encyclopedia_Weather_Name>
+		<Encyclopedia_Weather_Info>TEXT_TACTICAL_WEATHER_OBJECTIVE_RAIN</Encyclopedia_Weather_Info>
+		<Planet_Ability_Icon>i_pa_base_stealth_ground.tga</Planet_Ability_Icon>
+		<Native_Icon_Name>load_urban.tga</Native_Icon_Name>
+
+		<Additional_Population_Capacity>5</Additional_Population_Capacity>
+
+		 <!-- Unlock Witches of Dathomir for Underworld. -->
+		<Abilities SubObjectList="Yes" />
+
+		<Corruption_1_Type>Corruption_Bribery</Corruption_1_Type>
+		<Corruption_1_Credit_Cost>1000</Corruption_1_Credit_Cost>
+		<Corruption_1_Required_Mission_Type>Corruption_Kidnapping</Corruption_1_Required_Mission_Type>
+		<Corruption_1_Required_Mission_Count>1</Corruption_1_Required_Mission_Count>
+		<Corruption_1_Success_Speech_Event>DATHOMIR_BRB_VICTORY_COR17_01</Corruption_1_Success_Speech_Event>
+		<Corruption_1_Success_Bink_Hologram_Name>Saboteur_Loop</Corruption_1_Success_Bink_Hologram_Name>
+		<Corruption_1_Mission_Briefing>TEXT_CORRUPTION_DATHOMIR_STORY_BRIBERY</Corruption_1_Mission_Briefing>
+
+		<Corruption_2_Type>Corruption_Corrupt_Militia</Corruption_2_Type>
+		<Corruption_2_Credit_Cost>800</Corruption_2_Credit_Cost>
+		<Corruption_2_Required_Unit_Type>Destroyer_Droid</Corruption_2_Required_Unit_Type>
+		<Corruption_2_Required_Unit_Count>1</Corruption_2_Required_Unit_Count>
+		<Corruption_2_Required_Mission_Type>Corruption_Bribery</Corruption_2_Required_Mission_Type>
+		<Corruption_2_Required_Mission_Count>2</Corruption_2_Required_Mission_Count>
+		<Corruption_2_Success_Speech_Event>DATHOMIR_CRM_VICTORY_COR17_02</Corruption_2_Success_Speech_Event>
+		<Corruption_2_Success_Bink_Hologram_Name>Saboteur_Loop</Corruption_2_Success_Bink_Hologram_Name>
+		<Corruption_2_Mission_Briefing>TEXT_CORRUPTION_DATHOMIR_STORY_CORUPTMILITIA</Corruption_2_Mission_Briefing>
+
+		<Corruption_3_Type>Corruption_Racketeering</Corruption_3_Type>
+		<Corruption_3_Credit_Cost>500</Corruption_3_Credit_Cost>
+		<Corruption_3_Required_Mission_Type>Corruption_Intimidation</Corruption_3_Required_Mission_Type>
+		<Corruption_3_Required_Mission_Count>1</Corruption_3_Required_Mission_Count>
+		<Corruption_3_Required_Unit_Type>Underworld_Mobile_Defense_Unit</Corruption_3_Required_Unit_Type>
+		<Corruption_3_Required_Unit_Count>1</Corruption_3_Required_Unit_Count>
+		<Corruption_3_Success_Speech_Event>SHOLA_RKT_VICTORY_COR44_01</Corruption_3_Success_Speech_Event>
+		<Corruption_3_Success_Bink_Hologram_Name>Saboteur_Loop</Corruption_3_Success_Bink_Hologram_Name>
+		<Corruption_3_Mission_Briefing>TEXT_CORRUPTION_DATHOMIR_STORY_RACKETEER</Corruption_3_Mission_Briefing>
 
 		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
 	</Planet>
@@ -2310,7 +2309,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Potential_Indigenous_Power>Geonosian 1200</Potential_Indigenous_Power>
 
 		<Abilities SubObjectList="Yes">
-			<Reduce_Production_Price_Ability Name="GEONOSIS_MPTL_Production_Boost">
+			<Reduce_Production_Price_Ability Name="Geonosis_MPTL_Production_Boost">
 				<Unit_Strength_Category />
 				<Applicable_Unit_Categories />
 				<Applicable_Unit_Types>Rebel_Artillery_Brigade</Applicable_Unit_Types>
@@ -2402,11 +2401,11 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 
 		<Additional_Population_Capacity>5</Additional_Population_Capacity>
 
-		 <!-- Reduce reinfocement point capture time. -->
+		<!-- Reduce reinfocement point capture time. -->
 		<Abilities SubObjectList="Yes">
-			<Galaxy_Wide_Upgrade_Ability Name="HONOGHR_Upgrade_Bonus">
+			<Galaxy_Wide_Upgrade_Ability Name="Honoghr_Upgrade_Bonus">
 				<Space_Upgrade_Type />
-				<Land_Upgrade_Type>HONOGHR_Planetary_Advantage</Land_Upgrade_Type>
+				<Land_Upgrade_Type>Honoghr_Planetary_Advantage</Land_Upgrade_Type>
 			</Galaxy_Wide_Upgrade_Ability>
 		</Abilities>
 
@@ -2498,9 +2497,9 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 
 		 <!-- Reduce reinforcement point capture time. -->
 		<Abilities SubObjectList="Yes">
-			<Galaxy_Wide_Upgrade_Ability Name="HONOGHR_Upgrade_Bonus">
+			<Galaxy_Wide_Upgrade_Ability Name="Honoghr_Upgrade_Bonus">
 				<Space_Upgrade_Type />
-				<Land_Upgrade_Type>HONOGHR_Planetary_Advantage</Land_Upgrade_Type>
+				<Land_Upgrade_Type>Honoghr_Planetary_Advantage</Land_Upgrade_Type>
 			</Galaxy_Wide_Upgrade_Ability>
 		</Abilities>
 
@@ -2663,7 +2662,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 				<Unit_Strength_Category />
 				<Applicable_Unit_Categories>Vehicle</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
-				<Excluded_Unit_Types>DarkTrooper_P1_Company DarkTrooper_P2_Company DarkTrooper_P3_Company Destroyer_Droid_Company</Excluded_Unit_Types>
+				<Excluded_Unit_Types>DarkTrooper_P1_Company, DarkTrooper_P2_Company, DarkTrooper_P3_Company, Destroyer_Droid_Company</Excluded_Unit_Types>
 				<Time_Reduction_Percentage>0.25</Time_Reduction_Percentage>
 				<Stacking_Category>9</Stacking_Category>
 				<Galaxy_Wide>Yes</Galaxy_Wide>
@@ -2919,8 +2918,8 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Describe_Wildlife>TEXT_PLANET_KAMINO_INFO_WL_00</Describe_Wildlife>
 		<Describe_Terrain>TEXT_PLANET_KAMINO_INFO_TER</Describe_Terrain>
 		<Describe_Weather>TEXT_PLANET_KAMINO_INFO_WEA</Describe_Weather>
-		<Describe_Tactical>TEXT_PLANET_KAMINO_INFO_ADV_00</Describe_Tactical>
-		<Describe_Advantage>TEXT_PLANET_KAMINO_INFO_TAC_00</Describe_Advantage>
+		<Describe_Tactical>TEXT_PLANET_KAMINO_INFO_TAC_00</Describe_Tactical>
+		<Describe_Advantage>TEXT_PLANET_KAMINO_INFO_ADV_00</Describe_Advantage>
 		<Describe_History>TEXT_PLANET_KAMINO_INFO_HIS</Describe_History>
 
 		<Encyclopedia_Text>TEXT_PLANET_KAMINO_ENCYC_00</Encyclopedia_Text>
@@ -2937,17 +2936,17 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 				<Unit_Strength_Category />
 				<Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
-				<Excluded_Unit_Types>Night_Sister_Company Vornskr_Wolf_Pack</Excluded_Unit_Types>
+				<Excluded_Unit_Types>Night_Sister_Company, Vornskr_Wolf_Pack</Excluded_Unit_Types>
 				<Price_Reduction_Percentage>0.99999</Price_Reduction_Percentage>
 				<Stacking_Category>9</Stacking_Category>
 				<Galaxy_Wide>No</Galaxy_Wide>
 			</Reduce_Production_Price_Ability>
 
-			<Reduce_Production_Time_Ability Name="KAMINO_Infantry_Production_Time_Penalty">
+			<Reduce_Production_Time_Ability Name="Kamino_Infantry_Production_Time_Penalty">
 				<Unit_Strength_Category />
 				<Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
-				<Excluded_Unit_Types>Night_Sister_Company Vornskr_Wolf_Pack</Excluded_Unit_Types>
+				<Excluded_Unit_Types>Night_Sister_Company, Vornskr_Wolf_Pack</Excluded_Unit_Types>
 				<Time_Reduction_Percentage>-0.15</Time_Reduction_Percentage> <!-- 15% longer build times. -->
 				<Stacking_Category>9</Stacking_Category>
 				<Galaxy_Wide>No</Galaxy_Wide>
@@ -3004,8 +3003,8 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Force_Strength>0.0</Force_Strength>
 		<Planet_Surface_Accessible>Yes</Planet_Surface_Accessible>
 		<Planet_Capture_Bonus_Reward>600</Planet_Capture_Bonus_Reward>
-		<Land_Tactical_Map>_Land_Planet_KAMINO_Prologue.ted</Land_Tactical_Map>
-		<Space_Tactical_Map>_Space_Planet_KAMINO_01.ted</Space_Tactical_Map>
+		<Land_Tactical_Map>_Land_Planet_Kamino_Prologue.ted</Land_Tactical_Map>
+		<Space_Tactical_Map>_Space_Planet_Kamino_01.ted</Space_Tactical_Map>
 		<Destroyed_Space_Tactical_Map />
 		<Planet_Slice_Difficulty_Rating>5</Planet_Slice_Difficulty_Rating>
 		<Planet_Tech_Availability_Rating>2</Planet_Tech_Availability_Rating>
@@ -3016,8 +3015,8 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Describe_Wildlife>TEXT_PLANET_KAMINO_INFO_WL_00</Describe_Wildlife>
 		<Describe_Terrain>TEXT_PLANET_KAMINO_INFO_TER</Describe_Terrain>
 		<Describe_Weather>TEXT_PLANET_KAMINO_INFO_WEA</Describe_Weather>
-		<Describe_Tactical>TEXT_PLANET_KAMINO_INFO_ADV_00</Describe_Tactical>
-		<Describe_Advantage>TEXT_PLANET_KAMINO_INFO_TAC_00</Describe_Advantage>
+		<Describe_Tactical>TEXT_PLANET_KAMINO_INFO_TAC_00</Describe_Tactical>
+		<Describe_Advantage>TEXT_PLANET_KAMINO_INFO_ADV_00</Describe_Advantage>
 		<Describe_History>TEXT_PLANET_KAMINO_INFO_HIS</Describe_History>
 
 		<Encyclopedia_Text>TEXT_PLANET_KAMINO_ENCYC_00</Encyclopedia_Text>
@@ -3030,21 +3029,21 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 
 		 <!-- Need to add production time increase. -->
 		<Abilities SubObjectList="Yes">
-			<Reduce_Production_Price_Ability Name="KAMINO_Infantry_Production_Cost_Bonus">
+			<Reduce_Production_Price_Ability Name="Kamino_Infantry_Production_Cost_Bonus">
 				<Unit_Strength_Category />
 				<Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
-				<Excluded_Unit_Types>Night_Sister_Company Vornskr_Wolf_Pack</Excluded_Unit_Types>
+				<Excluded_Unit_Types>Night_Sister_Company, Vornskr_Wolf_Pack</Excluded_Unit_Types>
 				<Price_Reduction_Percentage>0.99999</Price_Reduction_Percentage>
 				<Stacking_Category>9</Stacking_Category>
 				<Galaxy_Wide>No</Galaxy_Wide>
 			</Reduce_Production_Price_Ability>
 
-			<Reduce_Production_Time_Ability Name="KAMINO_Infantry_Production_Time_Penalty">
+			<Reduce_Production_Time_Ability Name="Kamino_Infantry_Production_Time_Penalty">
 				<Unit_Strength_Category />
 				<Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
-				<Excluded_Unit_Types>Night_Sister_Company Vornskr_Wolf_Pack</Excluded_Unit_Types>
+				<Excluded_Unit_Types>Night_Sister_Company, Vornskr_Wolf_Pack</Excluded_Unit_Types>
 				<Time_Reduction_Percentage>-0.15</Time_Reduction_Percentage> <!-- 15% longer build times. -->
 				<Stacking_Category>9</Stacking_Category>
 				<Galaxy_Wide>No</Galaxy_Wide>
@@ -3536,7 +3535,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 			<Reduce_Production_Price_Ability Name="Mandalore_Price_Reduction">
 				<Unit_Strength_Category />
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>StarViper_Squadron Crusader_Gunship Kedalbe_Battleship Canderous_Assault_Tank_Company</Applicable_Unit_Types>
+				<Applicable_Unit_Types>StarViper_Squadron, Crusader_Gunship, Kedalbe_Battleship, Canderous_Assault_Tank_Company</Applicable_Unit_Types>
 				<Price_Reduction_Percentage>0.20</Price_Reduction_Percentage>
 				<Stacking_Category>9</Stacking_Category>
 				<Galaxy_Wide>Yes</Galaxy_Wide>
@@ -3632,7 +3631,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 			<Reduce_Production_Price_Ability Name="Mandalore_Price_Reduction">
 				<Unit_Strength_Category />
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>StarViper_Squadron Crusader_Gunship Kedalbe_Battleship Canderous_Assault_Tank_Company</Applicable_Unit_Types>
+				<Applicable_Unit_Types>StarViper_Squadron, Crusader_Gunship, Kedalbe_Battleship, Canderous_Assault_Tank_Company</Applicable_Unit_Types>
 				<Price_Reduction_Percentage>0.20</Price_Reduction_Percentage>
 				<Stacking_Category>9</Stacking_Category>
 				<Galaxy_Wide>Yes</Galaxy_Wide>
@@ -3724,7 +3723,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 			<Reduce_Production_Price_Ability Name="Mandalore_Price_Reduction">
 				<Unit_Strength_Category />
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>StarViper_Squadron Crusader_Gunship Kedalbe_Battleship Canderous_Assault_Tank_Company</Applicable_Unit_Types>
+				<Applicable_Unit_Types>StarViper_Squadron, Crusader_Gunship, Kedalbe_Battleship, Canderous_Assault_Tank_Company</Applicable_Unit_Types>
 				<Price_Reduction_Percentage>0.20</Price_Reduction_Percentage>
 				<Stacking_Category>9</Stacking_Category>
 				<Galaxy_Wide>Yes</Galaxy_Wide>
@@ -3918,7 +3917,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 			<Reduce_Production_Time_Ability Name="Mustafar_Capital_Ship_Production_Time_Reduction">
 				<Unit_Strength_Category />
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>Calamari_Cruiser Star_Destroyer Kedalbe_Battleship Krayt_Class_Destroyer</Applicable_Unit_Types>
+				<Applicable_Unit_Types>Calamari_Cruiser, Star_Destroyer, Kedalbe_Battleship, Krayt_Class_Destroyer</Applicable_Unit_Types>
 				<Excluded_Unit_Types />
 				<Time_Reduction_Percentage>0.25</Time_Reduction_Percentage>
 				<Stacking_Category>9</Stacking_Category>
@@ -4930,11 +4929,11 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Describe_Wildlife>TEXT_PLANET_SHOLA_INFO_WL</Describe_Wildlife>
 		<Describe_Terrain>TEXT_PLANET_SHOLA_INFO_TER</Describe_Terrain>
 		<Describe_Weather>TEXT_PLANET_SHOLA_INFO_WEA</Describe_Weather>
-		<Describe_Tactical>TEXT_PLANET_SHOLA_ENCYC</Describe_Tactical>
+		<Describe_Tactical>TEXT_PLANET_SHOLA_INFO_TAC</Describe_Tactical>
 		<Describe_Advantage>TEXT_PLANET_SHOLA_INFO_ADV</Describe_Advantage>
 		<Describe_History>TEXT_PLANET_SHOLA_INFO_HIS_01</Describe_History>
 
-		<Planet_Ability_Name>TEXT_PLANET_SHOLA_INFO_TAC</Planet_Ability_Name>
+		<Planet_Ability_Name>TEXT_PLANET_SHOLA_INFO_ADV</Planet_Ability_Name>
 		<Planet_Ability_Description>TEXT_PLANET_SHOLA_ENCYC</Planet_Ability_Description>
 
 		<Encyclopedia_Text>TEXT_PLANET_SHOLA_ENCYC</Encyclopedia_Text>
@@ -5301,7 +5300,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 
 		<Additional_Population_Capacity>3</Additional_Population_Capacity>
 
-		 <!-- Need research reduction - lower slicing research and black market prices. -->
+		<!-- Need research reduction - lower slicing research and black market prices. -->
 		<Abilities SubObjectList="Yes">
 			<Reduce_Technology_Price_Ability Name="Maw_Tech_Price_Reduction_Planetary_Advantage">
 				<Price_Reduction_Percentage>0.15</Price_Reduction_Percentage>
@@ -5452,7 +5451,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 
 		<Additional_Population_Capacity>5</Additional_Population_Capacity>
 
-		 <!-- Kedalbe gets a shield bonus. -->
+		<!-- Kedalbe gets a shield bonus. -->
 		<Abilities SubObjectList="Yes">
 			<Galaxy_Wide_Upgrade_Ability Name="Utapau_Upgrade_Bonus">
 				<Space_Upgrade_Type>Utapau_Kedalbe_Shield_Upgrade</Space_Upgrade_Type>

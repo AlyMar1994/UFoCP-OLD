@@ -861,26 +861,26 @@
 		 -Oksana   --> 
 
 	<Damage_Types> 
-		Damage_Default, 
+		Damage_Default,
 		Damage_ATST,
 		Damage_ATAT,
 		Damage_Fighter,
 		Damage_Assault_Frigate,
-		Damage_Diamond_Missile, 
-		Damage_IonCannon, 
-		Damage_IonCannon_LRG, 
-		Damage_Proton_Torp, 
-		Damage_Proton_Torp_Light, 
-		Damage_Con_Missile, 
-		Damage_Turbolaser, 
-		Damage_Blaster_Hand, 
-		Damage_PLEX, 
-		Damage_Sniper, 
-		Damage_Lightning, 
-		Damage_Lightsaber, 
-		Damage_ThermDet, 
-		Damage_Wookiee, 
-		Damage_Jawa, 
+		Damage_Diamond_Missile,
+		Damage_IonCannon,
+		Damage_IonCannon_LRG,
+		Damage_Proton_Torp,
+		Damage_Proton_Torp_Light,
+		Damage_Con_Missile,
+		Damage_Turbolaser,
+		Damage_Blaster_Hand,
+		Damage_PLEX,
+		Damage_Sniper,
+		Damage_Lightning,
+		Damage_Lightsaber,
+		Damage_ThermDet,
+		Damage_Wookiee,
+		Damage_Jawa,
 		Damage_StickyBomb,
 		Damage_Hero_StickyBomb,
 		Damage_Blaster_Cannon, 
@@ -917,7 +917,7 @@
 		Damage_Turbo_GRND,
 		Damage_Wall_Destruction,
 		Damage_Self_Destruct,
-    Damage_AWing,
+		Damage_AWing,
 		Damage_Force_Pike,
 		Damage_BugBite,
 		Damage_StarBase_Self_Destruct,
@@ -940,8 +940,8 @@
 		Damage_Mass_Driver_Space,
 		Damage_MDU_Rocket,
 		Damage_MDU_Grenade,
-		
-		
+
+
 		<!-- PLEASE add your new damage types ABOVE this point.
 			 The damage types below are from hard-coded damage enumeration. You can specify Armor type for them if you want
 			 (and understand how and where these are applied).
