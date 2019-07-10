@@ -1,0 +1,369 @@
+<?xml version="1.0"?>
+<Hero_Clashes>
+	<Hero_Clash Name="Vader_ObiWan">
+		<Clash_Type>Melee_Duel</Clash_Type>
+		<Involved_Hero_Types>Darth_Vader_Expansion, Obi_Wan_Kenobi</Involved_Hero_Types>
+		<Clash_Range>100.0</Clash_Range>
+		<Play_Conversation_Events>No</Play_Conversation_Events>
+
+		<First_Hero_Type>Darth_Vader_Expansion</First_Hero_Type>
+		<Second_Hero_Type>Obi_Wan_Kenobi</Second_Hero_Type>
+		<Combat_Distance>17.65</Combat_Distance>
+
+		<!-- Damage Inflicted Per Exchange = LoserMaxHealth * DamagePercentage + DamageAmount -->
+		<Damage_Amount>0.00</Damage_Amount>
+		<Damage_Percentage>0.15</Damage_Percentage>
+		<First_Hero_Damage_Multiplier>2.50</First_Hero_Damage_Multiplier>
+		<Second_Hero_Damage_Multiplier>1.00</Second_Hero_Damage_Multiplier>
+
+		<!-- NOTE: These "Win" chances refer to the chance to win an EXCHANGE, not the whole hero clash! -->
+		<!-- Any leftover amount (1.0 - First_Hero_Win_Chance - Second_Hero_Win_Chance) will be the DRAW case. -->
+		<First_Hero_Win_Exchange_Chance>0.40</First_Hero_Win_Exchange_Chance>
+		<Second_Hero_Win_Exchange_Chance>0.30</Second_Hero_Win_Exchange_Chance>
+
+		<First_Hero_Win_Anim_Type>HC_WIN</First_Hero_Win_Anim_Type>
+		<First_Hero_Lose_Anim_Type>HC_LOSE</First_Hero_Lose_Anim_Type>
+		<First_Hero_Draw_Anim_Type>HC_DRAW</First_Hero_Draw_Anim_Type>
+		<First_Hero_Conversation_Anim_Type>IDLE</First_Hero_Conversation_Anim_Type>
+		<Second_Hero_Win_Anim_Type>HC_WIN</Second_Hero_Win_Anim_Type>
+		<Second_Hero_Lose_Anim_Type>HC_LOSE</Second_Hero_Lose_Anim_Type>
+		<Second_Hero_Draw_Anim_Type>HC_DRAW</Second_Hero_Draw_Anim_Type>
+		<Second_Hero_Conversation_Anim_Type>IDLE</Second_Hero_Conversation_Anim_Type>
+		
+		<First_Hero_Win_Speech>Hero_Clash_Obiwan_Vader__Vader_Win</First_Hero_Win_Speech>
+		<Second_Hero_Win_Speech>Hero_Clash_Obiwan_Vader__Obiwan_Win</Second_Hero_Win_Speech>
+	</Hero_Clash>
+
+
+	<!-- ALYMAR1994 (6/27/19): Due to fundamental errors with both these -->
+	<!-- clashes and being permanently broken, I'm going to cease them by commenting -->
+	<!-- them out from the file.. -->
+<!--	<Hero_Clash Name="ObiWan_BobaFett">
+		<Clash_Type>Action_Driven</Clash_Type>
+		<Involved_Hero_Types>Obi_Wan_Kenobi, Boba_Fett</Involved_Hero_Types>
+		<Clash_Range>0.00</Clash_Range>
+
+		<First_Hero_Type>Obi_Wan_Kenobi</First_Hero_Type>
+		<Second_Hero_Type>Boba_Fett</Second_Hero_Type>
+
+		<Clash_Actions SubObjectList="Yes">
+			<Attack_Action Name="ObiWan_Lightsaber_Attack">
+				<Action_Object>Obi_Wan_Kenobi</Action_Object>
+				<Action_Target>Boba_Fett</Action_Target>
+				<Action_Relevance_Type>Distance_From_Target_Curve</Action_Relevance_Type>
+				<Action_Distance_From_Target_Curve>0.00, 1.00, 16.00, 1.00, 16.001, 0.00, 100000.00, 0.00</Action_Distance_From_Target_Curve>
+
+				<Attack_Projectile_Type>Proj_ObiWan_Lightsaber_Vs_BobaFett_Hero_Clash</Attack_Projectile_Type>
+				<Attack_Animation_Type>Attack</Attack_Animation_Type>
+				<Attack_Animation_Subindex>-1</Attack_Animation_Subindex>
+				<Attack_Animation_Speedup>1.0</Attack_Animation_Speedup>
+				<Attack_Firing_Bone_Name>ROOT</Attack_Firing_Bone_Name>
+				<Attack_Number_Of_Shots>1</Attack_Number_Of_Shots>
+				<Attack_Accuracy_Modifier>1.00</Attack_Accuracy_Modifier>
+				<Attack_SFXEvent></Attack_SFXEvent>
+			</Attack_Action>
+
+			<Move_Action Name="ObiWan_Force_Run">
+				<Action_Object>Obi_Wan_Kenobi</Action_Object>
+				<Action_Target>Boba_Fett</Action_Target>
+				<Action_Relevance_Type>Distance_From_Target_Curve_Times_Health_Percentage_Curve</Action_Relevance_Type>
+				<Action_Distance_From_Target_Curve>0.00, 0.00, 50.00, 0.00, 100.00, 1.00, 100000.00, 1.00</Action_Distance_From_Target_Curve>
+				<Action_Health_Percentage_Curve>0.00, 1.00, 0.40, 1.00, 0.80, 0.00, 1.00, 0.00</Action_Health_Percentage_Curve>
+
+				<Move_Type>Move_To_Target</Move_Type>
+				<Wait_For_Finish_If_Target_Using_Jetpack>Yes</Wait_For_Finish_If_Target_Using_Jetpack>
+				<Move_Speed>2.5</Move_Speed>
+				<Move_Animation_Override>Yes</Move_Animation_Override>
+				<Move_Animation_Type>Force_Run</Move_Animation_Type>
+				<Move_Animation_Subindex>-1</Move_Animation_Subindex>
+				<Move_Animation_Speedup>1.00</Move_Animation_Speedup>
+				<Move_Min_Distance>10.00</Move_Min_Distance>
+				<Move_Max_Distance>16.00</Move_Max_Distance>
+			</Move_Action>
+
+			<Move_Action Name="ObiWan_Move_To_BobaFett">
+				<Action_Object>Obi_Wan_Kenobi</Action_Object>
+				<Action_Target>Boba_Fett</Action_Target>
+				<Action_Relevance_Type>Distance_From_Target_Curve</Action_Relevance_Type>
+				<Action_Distance_From_Target_Curve>0.00, 0.00, 16.00, 0.00, 16.001, 1.00, 200.00, 0.00, 100000.00, 0.00</Action_Distance_From_Target_Curve>
+
+				<Move_Type>Move_To_Target</Move_Type>
+				<Move_Speed>-1.0</Move_Speed>
+				<Move_Animation_Override>No</Move_Animation_Override>
+				<Move_Animation_Type>Move</Move_Animation_Type>
+				<Move_Animation_Subindex>-1</Move_Animation_Subindex>
+				<Move_Animation_Speedup>1.00</Move_Animation_Speedup>
+				<Move_Min_Distance>10.00</Move_Min_Distance>
+				<Move_Max_Distance>16.00</Move_Max_Distance>
+			</Move_Action>
+
+			<Move_Action Name="BobaFett_Jetpack_Jump">
+				<Action_Object>Boba_Fett</Action_Object>
+				<Action_Target>Obi_Wan_Kenobi</Action_Target>
+				<Action_Relevance_Type>Distance_From_Target_Curve_Times_Health_Percentage_Curve</Action_Relevance_Type>
+				<Action_Distance_From_Target_Curve>0.0, 1.0, 20.0, 1.0, 50.0, 0.0, 100000.0, 0.0</Action_Distance_From_Target_Curve>
+				<Action_Health_Percentage_Curve>0.00, 1.00, 0.40, 1.00, 0.80, 0.00, 1.00, 0.00</Action_Health_Percentage_Curve>
+
+				<Move_Type>Move_Past_Target</Move_Type>
+				<Move_Use_Jetpack>Yes</Move_Use_Jetpack>
+				<Move_Min_Distance>100.00</Move_Min_Distance> <!- - Stop to closer than this from the target. - ->
+				<Move_Max_Distance>140.00</Move_Max_Distance> <!- - Stop no further than this from the target. - ->
+			</Move_Action>
+
+			<Special_Ability_Action Name="BobaFett_Flamethrower_Attack">
+				<Action_Object>Boba_Fett</Action_Object>
+				<Action_Target>Obi_Wan_Kenobi</Action_Target>
+				<Action_Relevance_Type>Distance_From_Target_Curve_Times_Health_Percentage_Curve</Action_Relevance_Type>
+				<Action_Distance_From_Target_Curve>0.00, 1.00, 40.00, 1.00, 50.00, 0.00, 100000.00, 0.00</Action_Distance_From_Target_Curve>
+				<Action_Health_Percentage_Curve>0.00, 0.00, 0.30, 0.00, 1.00, 1.00</Action_Health_Percentage_Curve>
+
+				<!- - Activate the flamethrower ability and wait 'X' seconds for it to "complete." - ->
+				<Ability_Name>Boba_Fett_Flame_Thrower</Ability_Name>
+				<Ability_Cooldown_Time_In_Secs>1.50</Ability_Cooldown_Time_In_Secs>
+			</Special_Ability_Action>
+
+			<Attack_Action Name="BobaFett_Blaster_Attack">
+				<Action_Object>Boba_Fett</Action_Object>
+				<Action_Target>Obi_Wan_Kenobi</Action_Target>
+				<Action_Relevance_Type>Distance_From_Target_Curve</Action_Relevance_Type>
+				<Action_Distance_From_Target_Curve>0.00, 0.20, 30.00, 0.50, 149.50, 0.50, 150.00, 0.00, 100000.00, 0.00</Action_Distance_From_Target_Curve>
+
+				<Attack_Projectile_Type>Proj_BobaFett_Blaster_Vs_ObiWan_Hero_Clash</Attack_Projectile_Type>
+				<Attack_Animation_Type>Attack</Attack_Animation_Type>
+				<Attack_Animation_Subindex>-1</Attack_Animation_Subindex>
+				<Attack_Animation_Speedup>1.00</Attack_Animation_Speedup>
+				<Attack_Firing_Bone_Name>MUZZLEA_00</Attack_Firing_Bone_Name>
+				<Attack_Number_Of_Shots>1</Attack_Number_Of_Shots>
+				<Attack_Accuracy_Modifier>1.00</Attack_Accuracy_Modifier>
+				<Attack_SFXEvent>Unit_Storm_Trooper_Fire</Attack_SFXEvent>
+			</Attack_Action>
+
+			<Attack_Action Name="BobaFett_Burst_Fire_Attack">
+				<Action_Object>Boba_Fett</Action_Object>
+				<Action_Target>Obi_Wan_Kenobi</Action_Target>
+				<Action_Relevance_Type>Distance_From_Target_Curve_Times_Health_Percentage_Curve</Action_Relevance_Type>
+				<Action_Distance_From_Target_Curve>0.0, 0.5, 100.0, 0.5, 100.5, 0.0, 100000.0, 0.0</Action_Distance_From_Target_Curve>
+				<Action_Health_Percentage_Curve>0.0, 1.0, 0.75, 1.0, 0.76, 0.0, 1.0, 0.0</Action_Health_Percentage_Curve>
+
+				<Attack_Projectile_Type>Proj_BobaFett_Blaster_Vs_ObiWan_Hero_Clash</Attack_Projectile_Type>
+				<Attack_Animation_Type>Attack</Attack_Animation_Type>
+				<Attack_Animation_Subindex>-1</Attack_Animation_Subindex>
+				<Attack_Animation_Speedup>12.0</Attack_Animation_Speedup>
+				<Attack_Firing_Bone_Name>MUZZLEA_00</Attack_Firing_Bone_Name>
+				<Attack_Number_Of_Shots>4</Attack_Number_Of_Shots>
+				<Attack_Accuracy_Modifier>1.0</Attack_Accuracy_Modifier>
+				<Attack_SFXEvent>Unit_Storm_Trooper_Fire</Attack_SFXEvent>
+			</Attack_Action>
+		</Clash_Actions>
+	</Hero_Clash> -->
+
+<!--	<Hero_Clash Name="ObiWan_BobaFett">
+		<Clash_Type>Action_Driven</Clash_Type>
+		<Involved_Hero_Types>Boba_Fett, Han_Solo, Chewbacca</Involved_Hero_Types>
+		<Clash_Range>0.00</Clash_Range>
+
+		<First_Hero_Type>Boba_Fett</First_Hero_Type>
+		<Second_Hero_Type>Han_Solo</Second_Hero_Type> <!- - Used to be the Vehicle_Thief_Team. This hero clash is broken now so I'm disabling it. - ->
+
+		<Clash_Actions SubObjectList="Yes">
+			<Attack_Action Name="BobaFett_Blaster_Attack_Han">
+				<Action_Object>Boba_Fett</Action_Object>
+				<Action_Target>Han_Solo</Action_Target>
+				<Action_Relevance_Type>Distance_From_Target_Curve</Action_Relevance_Type>
+				<Action_Distance_From_Target_Curve>0.00, 0.20, 30.00, 0.50, 149.50, 0.50, 150.00, 0.00, 100000.00, 0.00</Action_Distance_From_Target_Curve>
+
+				<Attack_Projectile_Type>Proj_BobaFett_Blaster_Vs_Han_And_Chewie_Hero_Clash</Attack_Projectile_Type>
+				<Attack_Animation_Type>Attack</Attack_Animation_Type>
+				<Attack_Animation_Subindex>-1</Attack_Animation_Subindex>
+				<Attack_Animation_Speedup>1.00</Attack_Animation_Speedup>
+				<Attack_Firing_Bone_Name>MUZZLEA_00</Attack_Firing_Bone_Name>
+				<Attack_Number_Of_Shots>1</Attack_Number_Of_Shots>
+				<Attack_Accuracy_Modifier>1.00</Attack_Accuracy_Modifier>
+				<Attack_SFXEvent>Unit_Storm_Trooper_Fire</Attack_SFXEvent>
+			</Attack_Action>
+
+			<Attack_Action Name="BobaFett_Blaster_Attack_Chewie">
+				<Action_Object>Boba_Fett</Action_Object>
+				<Action_Target>Chewbacca</Action_Target>
+				<Action_Relevance_Type>Distance_From_Target_Curve</Action_Relevance_Type>
+				<Action_Distance_From_Target_Curve>0.00, 0.20, 30.00, 0.50, 149.50, 0.50, 150.00, 0.00, 100000.00, 0.00</Action_Distance_From_Target_Curve>
+
+				<Attack_Projectile_Type>Proj_BobaFett_Blaster_Vs_Han_And_Chewie_Hero_Clash</Attack_Projectile_Type>
+				<Attack_Animation_Type>Attack</Attack_Animation_Type>
+				<Attack_Animation_Subindex>-1</Attack_Animation_Subindex>
+				<Attack_Animation_Speedup>1.00</Attack_Animation_Speedup>
+				<Attack_Firing_Bone_Name>MUZZLEA_00</Attack_Firing_Bone_Name>
+				<Attack_Number_Of_Shots>1</Attack_Number_Of_Shots>
+				<Attack_Accuracy_Modifier>1.00</Attack_Accuracy_Modifier>
+				<Attack_SFXEvent>Unit_Storm_Trooper_Fire</Attack_SFXEvent>
+			</Attack_Action>
+
+			<Attack_Action Name="BobaFett_Burst_Fire_Attack_Han">
+				<Action_Object>Boba_Fett</Action_Object>
+				<Action_Target>Han_Solo</Action_Target>
+				<Action_Relevance_Type>Distance_From_Target_Curve_Times_Health_Percentage_Curve</Action_Relevance_Type>
+				<Action_Distance_From_Target_Curve>0.00, 0.50, 100.00, 0.50, 100.50, 0.00, 100000.00, 0.00</Action_Distance_From_Target_Curve>
+				<Action_Health_Percentage_Curve>0.00, 1.00, 0.75, 1.00, 0.76, 0.00, 1.00, 0.00</Action_Health_Percentage_Curve>
+
+				<Attack_Projectile_Type>Proj_BobaFett_Blaster_Vs_Han_And_Chewie_Hero_Clash</Attack_Projectile_Type>
+				<Attack_Animation_Type>Attack</Attack_Animation_Type>
+				<Attack_Animation_Subindex>-1</Attack_Animation_Subindex>
+				<Attack_Animation_Speedup>12.00</Attack_Animation_Speedup>
+				<Attack_Firing_Bone_Name>MUZZLEA_00</Attack_Firing_Bone_Name>
+				<Attack_Number_Of_Shots>4</Attack_Number_Of_Shots>
+				<Attack_Accuracy_Modifier>1.00</Attack_Accuracy_Modifier>
+				<Attack_SFXEvent>Unit_Storm_Trooper_Fire</Attack_SFXEvent>
+			</Attack_Action>
+
+			<Attack_Action Name="BobaFett_Burst_Fire_Attack_Chewie">
+				<Action_Object>Boba_Fett</Action_Object>
+				<Action_Target>Chewbacca</Action_Target>
+				<Action_Relevance_Type>Distance_From_Target_Curve_Times_Health_Percentage_Curve</Action_Relevance_Type>
+				<Action_Distance_From_Target_Curve>0.00, 0.50, 100.00, 0.50, 100.50, 0.00, 100000.00, 0.00</Action_Distance_From_Target_Curve>
+				<Action_Health_Percentage_Curve>0.00, 1.00, 0.75, 1.00, 0.76, 0.00, 1.00, 0.00</Action_Health_Percentage_Curve>
+
+				<Attack_Projectile_Type>Proj_BobaFett_Blaster_Vs_Han_And_Chewie_Hero_Clash</Attack_Projectile_Type>
+				<Attack_Animation_Type>Attack</Attack_Animation_Type>
+				<Attack_Animation_Subindex>-1</Attack_Animation_Subindex>
+				<Attack_Animation_Speedup>12.00</Attack_Animation_Speedup>
+				<Attack_Firing_Bone_Name>MUZZLEA_00</Attack_Firing_Bone_Name>
+				<Attack_Number_Of_Shots>4</Attack_Number_Of_Shots>
+				<Attack_Accuracy_Modifier>1.00</Attack_Accuracy_Modifier>
+				<Attack_SFXEvent>Unit_Storm_Trooper_Fire</Attack_SFXEvent>
+			</Attack_Action>
+
+			<Special_Ability_Action Name="BobaFett_Flamethrower_Attack_Han">
+				<Action_Object>Boba_Fett</Action_Object>
+				<Action_Target>Han_Solo</Action_Target>
+				<Action_Relevance_Type>Distance_From_Target_Curve_Times_Health_Percentage_Curve</Action_Relevance_Type>
+				<Action_Distance_From_Target_Curve>0.00, 1.00, 40.00, 1.00, 50.00, 0.00, 100000.00, 0.00</Action_Distance_From_Target_Curve>
+				<Action_Health_Percentage_Curve>0.00, 0.00, 0.30, 0.00, 1.00, 1.00</Action_Health_Percentage_Curve>
+
+				<!- - Activate the flamethrower ability and wait 'X' seconds for it to "complete." - ->
+				<Ability_Name>Boba_Fett_Flame_Thrower</Ability_Name>
+				<Ability_Cooldown_Time_In_Secs>1.50</Ability_Cooldown_Time_In_Secs>
+			</Special_Ability_Action>
+
+			<Special_Ability_Action Name="BobaFett_Flamethrower_Attack_Chewie">
+				<Action_Object>Boba_Fett</Action_Object>
+				<Action_Target>Chewbacca</Action_Target>
+				<Action_Relevance_Type>Distance_From_Target_Curve_Times_Health_Percentage_Curve</Action_Relevance_Type>
+				<Action_Distance_From_Target_Curve>0.00, 1.00, 40.00, 1.00, 50.00, 0.00, 100000.00, 0.00</Action_Distance_From_Target_Curve>
+				<Action_Health_Percentage_Curve>0.00, 0.00, 0.30, 0.00, 1.00, 1.00</Action_Health_Percentage_Curve>
+
+				<!- - Activate the flamethrower ability and wait 'X' seconds for it to "complete." - ->
+				<Ability_Name>Boba_Fett_Flame_Thrower</Ability_Name>
+				<Ability_Cooldown_Time_In_Secs>1.50</Ability_Cooldown_Time_In_Secs>
+			</Special_Ability_Action>
+
+			<Move_Action Name="BobaFett_Jetpack_Jump_Han">
+				<Action_Object>Boba_Fett</Action_Object>
+				<Action_Target>Han_Solo</Action_Target>
+				<Action_Relevance_Type>Distance_From_Target_Curve_Times_Health_Percentage_Curve</Action_Relevance_Type>
+				<Action_Distance_From_Target_Curve>0.00, 0.80, 30.00, 0.90, 60.00, 0.00, 100000.00, 0.00</Action_Distance_From_Target_Curve>
+				<Action_Health_Percentage_Curve>0.00, 1.00, 0.40, 1.00, 0.80, 0.00, 1.00, 0.00</Action_Health_Percentage_Curve>
+
+				<Move_Type>Move_Past_Target</Move_Type>
+				<Move_Use_Jetpack>Yes</Move_Use_Jetpack>
+				<Move_Min_Distance>80.00</Move_Min_Distance>	<!- - Stop no closer than this from the target. - ->
+				<Move_Max_Distance>120.00</Move_Max_Distance> <!- - Stop no further than this from the target. - ->
+			</Move_Action>
+
+			<Move_Action Name="BobaFett_Jetpack_Jump_Chewie">
+				<Action_Object>Boba_Fett</Action_Object>
+				<Action_Target>Chewbacca</Action_Target>
+				<Action_Relevance_Type>Distance_From_Target_Curve_Times_Health_Percentage_Curve</Action_Relevance_Type>
+				<Action_Distance_From_Target_Curve>0.00, 0.70, 30.00, 0.80, 60.00, 0.00, 100000.00, 0.00</Action_Distance_From_Target_Curve>
+				<Action_Health_Percentage_Curve>0.00, 1.00, 0.40, 1.00, 0.80, 0.00, 1.00, 0.00</Action_Health_Percentage_Curve>
+
+				<Move_Type>Move_Past_Target</Move_Type>
+				<Move_Use_Jetpack>Yes</Move_Use_Jetpack>
+				<Move_Min_Distance>80.00</Move_Min_Distance>	<!- - Stop no closer than this from the target. - ->
+				<Move_Max_Distance>120.00</Move_Max_Distance> <!- - Stop no further than this from the target. - ->
+			</Move_Action>
+
+			<Attack_Action Name="HanSolo_Blaster_Attack_BobaFett">
+				<Action_Object>Han_Solo</Action_Object>
+				<Action_Target>Boba_Fett</Action_Target>
+				<Action_Relevance_Type>Distance_From_Target_Curve</Action_Relevance_Type>
+				<Action_Distance_From_Target_Curve>0.00, 0.20, 30.00, 0.50, 150.00, 0.50, 1000.00, 0.00, 100000.00, 0.00</Action_Distance_From_Target_Curve>
+
+				<Attack_Projectile_Type>Proj_HanSolo_Blaster_Vs_BobaFett_Hero_Clash</Attack_Projectile_Type>
+				<Attack_Animation_Type>Attack</Attack_Animation_Type>
+				<Attack_Animation_Subindex>-1</Attack_Animation_Subindex>
+				<Attack_Animation_Speedup>1.00</Attack_Animation_Speedup>
+				<Attack_Firing_Bone_Name>MUZZLEA_00</Attack_Firing_Bone_Name>
+				<Attack_Number_Of_Shots>1</Attack_Number_Of_Shots>
+				<Attack_Accuracy_Modifier>1.00</Attack_Accuracy_Modifier>
+				<Attack_SFXEvent>Unit_Storm_Trooper_Fire</Attack_SFXEvent>
+			</Attack_Action>
+
+			<Attack_Action Name="HanSolo_Burst_Fire_Attack_BobaFett">
+				<Action_Object>Han_Solo</Action_Object>
+				<Action_Target>Boba_Fett</Action_Target>
+				<Action_Relevance_Type>Distance_From_Target_Curve</Action_Relevance_Type>
+				<Action_Distance_From_Target_Curve>0.00, 0.30, 100.00, 0.30, 100.50, 0.00, 100000.00, 0.00</Action_Distance_From_Target_Curve>
+
+				<Attack_Projectile_Type>Proj_HanSolo_Blaster_Vs_BobaFett_Hero_Clash</Attack_Projectile_Type>
+				<Attack_Animation_Type>Attack</Attack_Animation_Type>
+				<Attack_Animation_Subindex>-1</Attack_Animation_Subindex>
+				<Attack_Animation_Speedup>8.00</Attack_Animation_Speedup>
+				<Attack_Firing_Bone_Name>MUZZLEA_00</Attack_Firing_Bone_Name>
+				<Attack_Number_Of_Shots>3</Attack_Number_Of_Shots>
+				<Attack_Accuracy_Modifier>1.00</Attack_Accuracy_Modifier>
+				<Attack_SFXEvent>Unit_Storm_Trooper_Fire</Attack_SFXEvent>
+			</Attack_Action>
+
+			<Attack_Action Name="Chewbacca_Blaster_Attack_BobaFett">
+				<Action_Object>Chewbacca</Action_Object>
+				<Action_Target>Boba_Fett</Action_Target>
+				<Action_Relevance_Type>Distance_From_Target_Curve</Action_Relevance_Type>
+				<Action_Distance_From_Target_Curve>0.00, 0.20, 30.00, 0.50, 150.00, 0.50, 1000.00, 0.00, 100000.00, 0.00</Action_Distance_From_Target_Curve>
+
+				<Attack_Projectile_Type>Proj_Chewbacca_Blaster_Vs_BobaFett_Hero_Clash</Attack_Projectile_Type>
+				<Attack_Animation_Type>Attack</Attack_Animation_Type>
+				<Attack_Animation_Subindex>-1</Attack_Animation_Subindex>
+				<Attack_Animation_Speedup>1.00</Attack_Animation_Speedup>
+				<Attack_Firing_Bone_Name>MUZZLEA_00</Attack_Firing_Bone_Name>
+				<Attack_Number_Of_Shots>1</Attack_Number_Of_Shots>
+				<Attack_Accuracy_Modifier>1.00</Attack_Accuracy_Modifier>
+				<Attack_SFXEvent>Unit_Storm_Trooper_Fire</Attack_SFXEvent>
+			</Attack_Action>
+
+			<Move_Action Name="HanSolo_Move_To_BobaFett">
+				<Action_Object>Han_Solo</Action_Object>
+				<Action_Target>Boba_Fett</Action_Target>
+				<Action_Relevance_Type>Distance_From_Target_Curve</Action_Relevance_Type>
+				<Action_Distance_From_Target_Curve>0.00, 0.00, 70.00, 0.00, 100.00, 1.00, 100000.00, 1.00</Action_Distance_From_Target_Curve>
+
+				<Move_Type>Move_To_Target</Move_Type>
+				<Wait_For_Finish_If_Target_Using_Jetpack>No</Wait_For_Finish_If_Target_Using_Jetpack>
+				<Move_Speed>2.00</Move_Speed>
+				<Move_Animation_Override>Yes</Move_Animation_Override>
+				<Move_Animation_Type>Move</Move_Animation_Type>
+				<Move_Animation_Subindex>-1</Move_Animation_Subindex>
+				<Move_Animation_Speedup>2.00</Move_Animation_Speedup>
+				<Move_Min_Distance>30.00</Move_Min_Distance>
+				<Move_Max_Distance>50.00</Move_Max_Distance>
+			</Move_Action>
+
+			<Move_Action Name="Chewbacca_Move_To_BobaFett">
+				<Action_Object>Chewbacca</Action_Object>
+				<Action_Target>Boba_Fett</Action_Target>
+				<Action_Relevance_Type>Distance_From_Target_Curve</Action_Relevance_Type>
+				<Action_Distance_From_Target_Curve>0.00, 0.00, 100.00, 0.00, 150.00, 1.00, 100000.00, 1.00</Action_Distance_From_Target_Curve>
+
+				<Move_Type>Move_To_Target</Move_Type>
+				<Wait_For_Finish_If_Target_Using_Jetpack>No</Wait_For_Finish_If_Target_Using_Jetpack>
+				<Move_Speed>1.50</Move_Speed>
+				<Move_Animation_Override>Yes</Move_Animation_Override>
+				<Move_Animation_Type>Move</Move_Animation_Type>
+				<Move_Animation_Subindex>-1</Move_Animation_Subindex>
+				<Move_Animation_Speedup>1.05</Move_Animation_Speedup>
+				<Move_Min_Distance>60.00</Move_Min_Distance>
+				<Move_Max_Distance>80.00</Move_Max_Distance>
+			</Move_Action>
+
+		</Clash_Actions>
+	</Hero_Clash> -->
+</Hero_Clashes>
