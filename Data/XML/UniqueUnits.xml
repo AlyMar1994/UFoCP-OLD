@@ -471,7 +471,7 @@
 	</UniqueUnit>
 
 	<!-- Special version - Rebel rescue Falcon mission! -->
-	<!-- (Model'srotationoriginspinnedaround180*.) -->
+	<!-- (Model's rotation origin spinned around 180*.) -->
 	<UniqueUnit Name="Millenium_Falcon_Backwards">
 		<Variant_Of_Existing_Type>Millennium_Falcon</Variant_Of_Existing_Type>
 
@@ -2322,16 +2322,31 @@
 	<!-- Rebel -->
 	<UniqueUnit Name="V-wing_Fighter_R">
 		<Variant_Of_Existing_Type>V-Wing_Fighter</Variant_Of_Existing_Type>
+
+		<Affiliation>Rebel</Affiliation>
+		<SFXEvent_Tactical_Build_Started>RHD_Reinforcements_En_Route</SFXEvent_Tactical_Build_Started>		
+		<SFXEvent_Tactical_Build_Complete>RHD_Reinforcements_Available</SFXEvent_Tactical_Build_Complete>		
+		<SFXEvent_Tactical_Build_Cancelled>RHD_Reinforcements_Cancelled</SFXEvent_Tactical_Build_Cancelled>
 	</UniqueUnit>
 
 	<!-- Empire -->
 	<UniqueUnit Name="V-wing_Fighter_E">
 		<Variant_Of_Existing_Type>V-Wing_Fighter</Variant_Of_Existing_Type>
+		
+		<Affiliation>Empire</Affiliation>
+		<SFXEvent_Tactical_Build_Started>EHD_Reinforcements_En_Route</SFXEvent_Tactical_Build_Started>		
+		<SFXEvent_Tactical_Build_Complete>EHD_Reinforcements_Available</SFXEvent_Tactical_Build_Complete>		
+		<SFXEvent_Tactical_Build_Cancelled>EHD_Reinforcements_Cancelled</SFXEvent_Tactical_Build_Cancelled>
 	</UniqueUnit>
 
 	<!-- Hostile/BlackSunPirates -->
 	<UniqueUnit Name="V-wing_Fighter_P">
 		<Variant_Of_Existing_Type>V-Wing_Fighter</Variant_Of_Existing_Type>
+
+		<Affiliation>Pirates</Affiliation>
+		<SFXEvent_Tactical_Build_Started>UHD_Reinforcements_En_Route</SFXEvent_Tactical_Build_Started>		
+		<SFXEvent_Tactical_Build_Complete>UHD_Reinforcements_Available</SFXEvent_Tactical_Build_Complete>		
+		<SFXEvent_Tactical_Build_Cancelled>UHD_Reinforcements_Cancelled</SFXEvent_Tactical_Build_Cancelled>
 	</UniqueUnit>
 
 

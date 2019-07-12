@@ -181,7 +181,7 @@
 		<Land_Surrender_SFXEvent>RHD_Retreat_Started_land</Land_Surrender_SFXEvent>
 
 		<Reinforcements_Selection_SFXEvent>RHD_Choose_Reinforcements</Reinforcements_Selection_SFXEvent>
-		<Reinforcements_Pick_Landing_Zone_SFXEvent>SFXEvent_Name</Reinforcements_Pick_Landing_Zone_SFXEvent>
+		<Reinforcements_Pick_Landing_Zone_SFXEvent />
 		<Reinforcements_Enroute_SFXEvent>RHD_Reinforcements_En_Route</Reinforcements_Enroute_SFXEvent>
 		<Reinforcements_Cancelled_SFXEvent>RHD_Reinforcements_Cancelled</Reinforcements_Cancelled_SFXEvent>
 		<Reinforcements_Requesting_SFXEvent>RHD_Request_Assistance</Reinforcements_Requesting_SFXEvent>
@@ -1001,7 +1001,7 @@
 		<Land_Retreat_Countdown_Color_RGBA>255, 255, 255, 255</Land_Retreat_Countdown_Color_RGBA>
 		<Land_Retreat_Countdown_Text_ID>TEXT_RETREAT_LAND_EMPIRE_COUNTDOWN</Land_Retreat_Countdown_Text_ID>
 		<Land_Retreat_Begin_SFXEvent>EHD_Retreat_Started_Land</Land_Retreat_Begin_SFXEvent>
-		<Land_Retreat_Enemy_Begin_SFXEvent>SFXEvent_Name</Land_Retreat_Enemy_Begin_SFXEvent>
+		<Land_Retreat_Enemy_Begin_SFXEvent />
 		<Land_Retreat_Cancel_SFXEvent>EHD_Retreat_Cancelled</Land_Retreat_Cancel_SFXEvent>
 		<Land_Retreat_Not_Allowed_SFXEvent>EHD_Retreat_Not_Allowed</Land_Retreat_Not_Allowed_SFXEvent>
 		<Land_Retreat_Not_Allowed_Reason_1_SFXEvent /> <!-- Reason 1: Gravity Well -->							
@@ -1420,7 +1420,7 @@
 		<SFXEvent_HUD_Lost_Space_Battle>EHD_Defeated</SFXEvent_HUD_Lost_Space_Battle> <!-- We lost the space battle... -->
 
 		<!-- Corruption-only SFX -->
-		<SFXEvent_HUD_Won_Tactical_Corruption_Mission>SFXEvent_Name</SFXEvent_HUD_Won_Tactical_Corruption_Mission> <!-- We won the corruption mission! -->
+		<SFXEvent_HUD_Won_Tactical_Corruption_Mission /> <!-- We won the corruption mission! -->
 
 		<SFXEvent_HUD_Won_Land_Battle_Enemy_TSW_Present>EHD_Battle_End</SFXEvent_HUD_Won_Land_Battle_Enemy_TSW_Present> <!-- We won the land battle with enemy tactical superweapon present! -->
 		<SFXEvent_HUD_Lost_Land_Battle_Enemy_TSW_Present>EHD_Defeated</SFXEvent_HUD_Lost_Land_Battle_Enemy_TSW_Present> <!-- We lost the land battle with enemy tactical superweapon present... -->
@@ -1437,8 +1437,8 @@
 		<SFXEvent_HUD_Special_Weapon_Ready /> <!-- Index 2 = Magnepulse Cannon - If entry here, must have 2 above even if stub! -->
 
 		<SFXEvent_HUD_Special_Weapon_Charging>EHD_Hypervelocity_Charging</SFXEvent_HUD_Special_Weapon_Charging> <!-- Index 0 = Hypervelocity Gun -->
-		<SFXEvent_HUD_Special_Weapon_Charging>SFXEvent_Name</SFXEvent_HUD_Special_Weapon_Charging> <!-- Index 1 = Ion Cannon - If entry here, must have 1 above even if stub! -->
-		<SFXEvent_HUD_Special_Weapon_Charging>SFXEvent_Name</SFXEvent_HUD_Special_Weapon_Charging> <!-- Index 2 = Magnepulse Cannon - If entry here, must have 2 above even if stub! -->
+		<SFXEvent_HUD_Special_Weapon_Charging /> <!-- Index 1 = Ion Cannon - If entry here, must have 1 above even if stub! -->
+		<SFXEvent_HUD_Special_Weapon_Charging /> <!-- Index 2 = Magnepulse Cannon - If entry here, must have 2 above even if stub! -->
 
 		<SFXEvent_HUD_Special_Weapon_Firing>EHD_Hypervelocity_Firing</SFXEvent_HUD_Special_Weapon_Firing> <!-- Index 0 = Hypervelocity Gun -->
 		<SFXEvent_HUD_Special_Weapon_Firing /> <!-- Index 1 = Ion Cannon - If entry here, must have 1 above even if stub! -->
@@ -1675,7 +1675,7 @@
 
 		<Ground_Base_Icon_Name>GroundBase_Icon.tga</Ground_Base_Icon_Name>
 		<Star_Base_Icon_Name>SpaceStation_Icon.tga</Star_Base_Icon_Name>
-		<Ground_Transport_Icon_Name>Trooper_Icon.tga</Ground_Transport_Icon_Name>>
+		<Ground_Transport_Icon_Name>Trooper_Icon.tga</Ground_Transport_Icon_Name>
 
 		<!-- Galactic Fleet Icons -->
 		<Fleet_Icon_Name>I_Icon_Fleet.tga</Fleet_Icon_Name>
@@ -1700,7 +1700,7 @@
 			Empire,
 			Underworld,
 			Hostile,
-			Sarlaac,
+			Sarlacc,
 			Hutts
 		</Enemies>
 		<Primary_Enemy />
@@ -1737,7 +1737,7 @@
 
 		<Ground_Base_Icon_Name>GroundBase_Icon.tga</Ground_Base_Icon_Name>
 		<Star_Base_Icon_Name>SpaceStation_Icon.tga</Star_Base_Icon_Name>
-		<Ground_Transport_Icon_Name>Trooper_Icon.tga</Ground_Transport_Icon_Name>>
+		<Ground_Transport_Icon_Name>Trooper_Icon.tga</Ground_Transport_Icon_Name>
 
 		<!-- Galactic Fleet Icons -->
 		<Fleet_Icon_Name>GalacticFleetIcon.tga</Fleet_Icon_Name>
@@ -1788,7 +1788,7 @@
 
 		<Ground_Base_Icon_Name>GroundBase_Icon.tga</Ground_Base_Icon_Name>
 		<Star_Base_Icon_Name>SpaceStation_Icon.tga</Star_Base_Icon_Name>
-		<Ground_Transport_Icon_Name>Trooper_Icon.tga</Ground_Transport_Icon_Name>>
+		<Ground_Transport_Icon_Name>Trooper_Icon.tga</Ground_Transport_Icon_Name>
 
 		<!-- Galactic Fleet Icons -->
 		<Fleet_Icon_Name>GalacticFleetIcon.tga</Fleet_Icon_Name>
@@ -1813,7 +1813,8 @@
 			Empire,
 			Underworld,
 			Pirates,
-			Sarlaac
+			Sarlacc,
+			Hutts
 		</Enemies>
 		<Primary_Enemy />
 		<Is_Neutral>No</Is_Neutral>
@@ -1848,7 +1849,7 @@
 
 		<Ground_Base_Icon_Name>GroundBase_Icon.tga</Ground_Base_Icon_Name>
 		<Star_Base_Icon_Name>SpaceStation_Icon.tga</Star_Base_Icon_Name>
-		<Ground_Transport_Icon_Name>Trooper_Icon.tga</Ground_Transport_Icon_Name>>
+		<Ground_Transport_Icon_Name>Trooper_Icon.tga</Ground_Transport_Icon_Name>
 
 		<!-- Galactic Fleet Icons -->
 		<Fleet_Icon_Name>GalacticFleetIcon.tga</Fleet_Icon_Name>

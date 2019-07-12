@@ -313,7 +313,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Ability_Name>TEXT_PLANET_VERGESSO_INFO_ADV</Planet_Ability_Name>
 		<Planet_Ability_Description>TEXT_PLANET_VERGESSO_ENCYC</Planet_Ability_Description>
 
-		<Encyclopedia_Text>TEXT_PLANET_VERGESSO_ENCYCTEXT_PLANET_UNCORRUPTABLE</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_PLANET_VERGESSO_ENCYC TEXT_PLANET_UNCORRUPTABLE</Encyclopedia_Text>
 		<Encyclopedia_Weather_Icon>I_PA_Weather_None.tga</Encyclopedia_Weather_Icon>
 		<Encyclopedia_Weather_Name>TEXT_WEATHER_NAME_RAIN</Encyclopedia_Weather_Name>
 		<Encyclopedia_Weather_Info>TEXT_TACTICAL_WEATHER_OBJECTIVE_RAIN</Encyclopedia_Weather_Info>
@@ -5293,7 +5293,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Ability_Name>TEXT_PLANET_THEMAW_INFO_ADV</Planet_Ability_Name>
 		<Planet_Ability_Description>TEXT_PLANET_THEMAW_ENCYC</Planet_Ability_Description>
 
-		<Encyclopedia_Text>TEXT_PLANET_THEMAW_ENCYCTEXT_PLANET_UNCORRUPTABLE</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_PLANET_THEMAW_ENCYC TEXT_PLANET_UNCORRUPTABLE</Encyclopedia_Text>
 		<Encyclopedia_Weather_Icon>I_PA_Weather_None.tga</Encyclopedia_Weather_Icon>
 		<Encyclopedia_Weather_Name>TEXT_WEATHER_NAME_SUN</Encyclopedia_Weather_Name>
 		<Encyclopedia_Weather_Info>TEXT_TACTICAL_WEATHER_OBJECTIVE_SUN</Encyclopedia_Weather_Info>
@@ -5541,7 +5541,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Ability_Name>TEXT_PLANET_VERGESSO_INFO_ADV_01</Planet_Ability_Name>
 		<Planet_Ability_Description>TEXT_PLANET_VERGESSO_ENCYC_01</Planet_Ability_Description>
 
-		<Encyclopedia_Text>TEXT_PLANET_VERGESSO_ENCYC_01TEXT_PLANET_UNCORRUPTABLE</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_PLANET_VERGESSO_ENCYC_01 TEXT_PLANET_UNCORRUPTABLE</Encyclopedia_Text>
 		<Encyclopedia_Weather_Icon>I_PA_Weather_None.tga</Encyclopedia_Weather_Icon>
 		<Encyclopedia_Weather_Name>TEXT_WEATHER_NAME_SUN</Encyclopedia_Weather_Name>
 		<Encyclopedia_Weather_Info>TEXT_TACTICAL_WEATHER_OBJECTIVE_SUN</Encyclopedia_Weather_Info>

@@ -28,11 +28,16 @@ There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT 
 ==================
 General
 ==================
--Underworld – Fixed generic "lose battle" music refrencing "Rebel_Lose_Tactical/Strategic_Event." It now references the "Underworld_" variant of that. The same music still plays, but at least it's properly checking for the right thing.
--Underworld – Fixed unit callouts for Tyber Zann. Underworld VO would say (for land) "Tyber Zann has landed!" as his space callout. This callout overall has been removed.
-
 -Campaign – Fixed a bug on Underworld Land Mission 06: 'Dark Ally,' by replacing the icon for the Governor's Quarters from the prison icon to the proper Governor's Quarters icon.
 -Campaign – Fixed a bug on Underworld Land Mission 06: 'Dark Ally.' The Guard Towers had no icons, and have now been given one.
+-Campaign – Fixed a bug on Underworld Land Mission 06: 'Dark Ally.' Due to bad "passability" brushing on slopes and certain hills, units could get stuck or fall through the map. Lots of slope passability brushing has been fixed/improved.
+
+-Hostile – Fixed faction "Hostile" (hostile to all factions faction) not having the Hutts as an added enemy.
+
+-Hutts – Fixed faction not having the Black Sun Pirates as enemies, but was vice versa.
+
+-Underworld – Fixed generic "lose battle" music refrencing "Rebel_Lose_Tactical/Strategic_Event." It now references the "Underworld_" variant of that. The same music still plays, but at least it's properly checking for the right thing.
+-Underworld – Fixed unit callouts for Tyber Zann. Underworld VO would say (for land) "Tyber Zann has landed!" as his space callout. This callout overall has been removed.
 
 
 ==================
@@ -93,6 +98,7 @@ Units (Land)
 -Dark Trooper (Phase I) – Fixed inconsistient 'Sprint' ability. The modifier to take less damage when sprinting was ".50" in the group section, and ".75" for the individual unit. It has now been corrected to ".50" for both. Dark Trooper Phase Is will now only take .50x damage when sprinting, instead of .75x, to make them less of a crappy meat shield and more of a good anti-infantry unit. In addition, the speed multiplier has been equalized at a 1.50x increase instead of x2.00.
 
 -Darth Vader – Fixed unit type (again). Replaced my custom-made "Darth_Team_Expansion" tag with the official "Darth_Team_Executor" tag that was hiding in the Executor's unit file. The change should reletively be pointless; Darth Vader's FoC variant should still replace land battles in Skirmish, with the same results.
+-Darth Vader – Fixed ambiant breathing SFX. Gave unit proper behavior to process ambiant SFX sounds, so now Vader's ambiant breathing should play randomly.
 
 -General Veers – Added a hero blob insignia to Veers's AT-AT, as he was the only Empire hero not to have one. Veers now has the Empire symbol ring when highlighted/selected/stagnant by default.
 
@@ -114,13 +120,11 @@ Units (Space)
 
 -Acclamator Assault Ship – Fixed Underworld-type Acclamator ship being "good against"/"vulnerable to" own faction's units. Replaced "good against" Crusader Gunship with Tartan Patrol Cruiser, and replaced "vulnerable to" Skipray Blastboat with TIE bomber.
 
--Rom Mohc (Arc Hammer) – Gave laser cannons damage type "Damage_Acclamator." The Arc Hammer's laser cannons and now matched up with the Acclamator's.
--Rom Mohc (Arc Hammer) – Gave turbolasers damage type "Damage_Star_Destroyer." The Arc Hammer's turbolasers will now match other Star Destroyers like it.
+-Arc Hammer – Gave laser cannons damage type "Damage_Acclamator." The Arc Hammer's laser cannons and now matched up with the Acclamator's.
+-Arc Hammer – Gave turbolasers damage type "Damage_Star_Destroyer." The Arc Hammer's turbolasers will now match other Star Destroyers like it.
 
 -A-wing – Fixed Underworld-type A-wing being "good against"/"vulnerable to" indicators for each fighter with the squadron's original list, so the normal fighers can't display info about being good against its own faction with developer-intended units (this fixes a regression from update v1.2). "Good Against" is now (by replacing the second one from "Y-wing") TIE fighters, TIE scouts and TIE bombers. "Vulnerable To" is now soley the Tartan Patrol Cruiser.
 -A-wing – Re-fixed incorrect build/cancel sounds for the Underworld-type A-wing. It will now play Underworld sounds.
-
--Bossk (Hound's Tooth) – Gave fighter laser cannons damage type "Damage_Fighter." Bossk will now do half (if not 75% less) his normal damage to most heavier shielded units (Tartan Patrol Cruiser onwards).
 
 -Broadside Cruiser – Fixed Underworld-type Broadside Cruiser being "good against"/"vulnerable to" own faction's units. Replaced "good against" Skipray Blastboat with TIE bombers and "vulnerable to" Vengance Frigate to Victory Star Destroyer.
 
@@ -129,6 +133,8 @@ Units (Space)
 -Corellian Gunship – Fixed tooltip by fixing number of laser cannons in description. Now mentions the 4 laser cannons, instead of 2.
 
 -Crusader Gunship – Gave laser cannons a damage type. Instead of doing full damage against everything, they now have the same damage type as the Corellian Corvette.
+
+-Hound's Tooth – Gave fighter laser cannons damage type "Damage_Fighter." Bossk will now do half (if not 75% less) his normal damage to most heavier shielded units (Tartan Patrol Cruiser onwards).
 
 -Interceptor IV Frigate – Fixed turbolaser cannons on ship. Was registering damage type "Damage_Acclamator" (anti-starfighter lasers) instead of "Damage_Acclamator_TL" (anti-ship turbolasers), as all other values in the hardpoints point towards the cannons being turbolasers instead of lasers.
 
@@ -147,18 +153,25 @@ Units (Space)
 
 -MC30c Frigate – Added laser cannon damage type. Gave the ship the same laser cannons as the Rebellion assault frigate.
 
+-Merciless – Fixed plasma ball type. Original plasma blast was the Star Destroyer turbolaser type, now it's the default Aggressor-class plasma shot damage.
+
 -Millenium Falcon – Fixed weapon innacuracy distances. There were duplicate values; changed "super"-class ships innacuracy to 30.00 from copied value (1).
 
 -Nebulon-B Frigate – Fixed Underworld-type Nebulon-B Frigate being "good against"/"vulnerable to" own faction's units. Replaced "good against" Crusader Gunboat with Corellian Corvette, and "vulnerable to" Vengance Frigate to Victory Star Destroyer.
 
 -Skipray Blastboat – Evened out "good against" indicators on squadron/fighter. Individual fighters now have the same good against types the squadron does.
+-Skipray Blastboat – Gave damage type "Damage_Fighter" to the laser hardpoint.
+-Skipray Blastboat – Fixed ion cannon being labeled as a laser.
 
 -Tartan Patrol Cruiser – Fixed Underworld-type Tartan Patrol Cruiser being "good against"/"vulnerable to" own faction's units. Replaced "good against" Starviper Fighter with TIE Interceptor and "vulnerable to" Vengance Frigate to Victory Star Destroyer.
 
 -TIE defender – Fixed Underworld-type TIE defender being "good against"/"vulnerable to" indicators for each fighter with the squadron's original list, so the normal fighers can't display info about being good against its own faction with developer-intended units (this fixes a regression from update v1.2). "Good Against" is now (instead of the Mon Calamari cruiser and the Aggressor-class Star Destroyer) the A-wing, Nebulon-B Frigate, and the Mon Calamari cruiser. "Vulnerable To" is now (instead of having the Crusader Gunship and Buzz Droids included) now just the Corellian Corvette.
+-TIE defender – Fixed hardpoints. The two ion hardpoints registered as proton torpedoes; so while they launched, sounded and acted like torpedoes, their damage was that of an ion cannon shot (as the values were copied and pasted from above). Their stats have been fixed to look and sound like ion cannon shots.
+-TIE defender – Fixed Defenders not having engine sounds as they do fly-bys.
+-TIE defender – Removed unused "attack hardpoint" line.
+-TIE defender – Set squadron tag "Is_Bomber" to yes as it is a bomber.
 
--The Merciless – Fixed plasma ball type. Original plasma blast was the Star Destroyer turbolaser type, now it's the default Aggressor-class plasma shot damage.
-
+-V-wing – Fixed Rebellion, Empire and Pirate V-wings to be affiliated/have correct build sounds per-faction.
 
 =========================================================================================
 

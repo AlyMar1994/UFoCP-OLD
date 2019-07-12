@@ -1657,7 +1657,7 @@
 									  <Use_Preset>Preset_UR</Use_Preset>
 									  <Samples>U000_GUS1701_ENG.wav</Samples>
 										  <Localize> Yes </Localize>
-										  <Text_ID>TEXT_SFX_GUS_GRAVGEN_OFF_1, TEXT_SFX_GUS_GRAVGEN_OFF_2, TEXT_SFX_GUS_GRAVGEN_OFF_3, TEXT_SFX_GUS_GRAVGEN_OFF_4</Text_ID>
+										  <Text_ID>TEXT_SFX_GUS_GRAVGEN_OFF_1</Text_ID>
 									  <Overlap_Test> Unit_GravGen </Overlap_Test>
 								</SFXEvent>
 

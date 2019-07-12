@@ -831,7 +831,7 @@
 
 		<Ground_Base_Icon_Name>GroundBase_Icon.tga</Ground_Base_Icon_Name>
 		<Star_Base_Icon_Name>SpaceStation_Icon.tga</Star_Base_Icon_Name>
-		<Ground_Transport_Icon_Name>Trooper_Icon.tga</Ground_Transport_Icon_Name>>
+		<Ground_Transport_Icon_Name>Trooper_Icon.tga</Ground_Transport_Icon_Name>
 
 		<!-- Galactic Fleet Icons -->
 		<Fleet_Icon_Name>I_Icon_Fleet.tga</Fleet_Icon_Name>
@@ -855,8 +855,9 @@
 			Rebel,
 			Empire,
 			Underworld,
+			Pirates,
 			Hostile,
-			Sarlaac
+			Sarlacc
 		</Enemies>
 		<Primary_Enemy>Underworld</Primary_Enemy>
 		<Is_Neutral>No</Is_Neutral>

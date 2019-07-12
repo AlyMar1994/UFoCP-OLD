@@ -1611,7 +1611,7 @@
 		<Affiliation>Underworld</Affiliation>
 	</SpaceUnit>
 
-	<Squadron NAme="Underworld_A_Wing_Squadron">
+	<Squadron Name="Underworld_A_Wing_Squadron">
 		<Text_ID>TEXT_A_WING_SQUADRON</Text_ID>
 		<Encyclopedia_Good_Against>TIE_Fighter TIE_Scout TIE_Bomber</Encyclopedia_Good_Against>
 		<Encyclopedia_Text>TEXT_TOOLTIP_A_WING</Encyclopedia_Text>
@@ -1678,7 +1678,7 @@
 		<Affiliation>Underworld</Affiliation>
 	</SpaceUnit>
 
-	<Squadron NAme="Underworld_TIE_Defender_Squadron">
+	<Squadron Name="Underworld_TIE_Defender_Squadron">
 		<Text_ID>TEXT_TIE_DEFENDER_SQUADRON</Text_ID>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>TEXT_TOOLTIP_TIE_DEFENDER</Encyclopedia_Text>
