@@ -1,0 +1,527 @@
+<?xml version="1.0" ?>
+<Story>
+<!-- ===== Underworld Act II Mission 09: Baiting the Hook ===== -->
+<!-- Preliminary setup -->
+	<Event Name="Underworld_A02M09_Begin">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Underworld_A02M09_Prevent_Auto_Victory">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_VICTORY</Reward_Type>
+		<Reward_Param1>0</Reward_Param1>
+		<Prereq>Underworld_A02M09_Begin</Prereq>
+	</Event>
+
+	<Event Name="Underworld_A02M09_Autoresolve_Off">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>HIDE_AUTORESOLVE</Reward_Type>
+		<Prereq>Underworld_A02M09_Begin</Prereq>
+	</Event>
+
+	<Event Name="Underworld_A02M09_Allow_Reinforcements">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_REINFORCEMENTS</Reward_Type>
+		<Reward_Param1>0</Reward_Param1>
+		<Prereq>Underworld_A02M09_Begin</Prereq>
+	</Event>
+
+	<!-- AM1994 (7/12/19): Fixing broken sequences by disabling retreat for both sides. -->
+	<!-- This should repair the mission so the Empire doesn't retreat before Thrawn gets the Sith Artifact! -->
+	<Event Name="Underworld_A02M09_Prevent_Retreat">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>UNDERWORLD</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Underworld_A02M09_Begin</Prereq>
+	</Event>
+
+	<Event Name="Empire_A02M09_Prevent_Retreat">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>EMPIRE</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Underworld_A02M09_Begin</Prereq>
+	</Event>
+
+<!-- Turn off advisor -->
+	<Event Name="Underworld_A02M09_Turn_Off_Land_Advisor">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_ADVISOR</Reward_Type>
+		<Reward_Param1>0</Reward_Param1>
+		<Prereq>Underworld_A02M09_Begin</Prereq>
+	</Event>
+
+<!-- Give Mission Objectives -->
+	<Event Name="Underworld_A02M09_State_Misson_Goal_00">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_STORY_UNDERWORLD_ACT02_MISSION_NINE_01</Reward_Param1>
+		<Prereq>Underworld_A02M09_Begin</Prereq>
+	</Event>
+	
+	<Event Name="Underworld_A02M09_State_Misson_Goal_01">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_UW_ACT02_M09_GOAL_01</Reward_Param1>
+		<Prereq>Underworld_A02M09_Begin</Prereq>
+	</Event>
+
+<!-- Intro Cinematic Dialog -->
+
+<!-- Thrawn: Ah, Tyber, nice to see you again. -->
+	<Event Name="Mission_9_Intro_Dialog_00">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>INTRO_DIALOG_00</Event_Param2>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_00</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M09_00</Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Underworld_A02M09_Begin</Prereq>
+		<Branch>INTRO_DIALOG</Branch>
+	</Event>
+	
+				<Event Name="Mission_9_Intro_Dialog_00_Speech_Done">
+            		<Event_Type>STORY_SPEECH_DONE</Event_Type>
+            		<Event_Param1>UW_ACT02_M09_00</Event_Param1>
+            		<Reward_Type>SCREEN_TEXT</Reward_Type>
+            		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_00</Reward_Param1>
+            		<Reward_Param4>Remove</Reward_Param4>	
+            		<Prereq>Underworld_A02M09_Begin</Prereq>
+					<Branch>INTRO_DIALOG</Branch>
+				</Event>
+
+<!-- Tyber: Well this explains things.  You are our Imperial contact? -->
+	<Event Name="Mission_9_Intro_Dialog_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>INTRO_DIALOG_01</Event_Param2>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_01</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M09_01</Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Underworld_A02M09_Begin</Prereq>
+		<Branch>INTRO_DIALOG</Branch>
+	</Event>
+	
+				<Event Name="Mission_9_Intro_Dialog_01_Speech_Done">
+            		<Event_Type>STORY_SPEECH_DONE</Event_Type>
+            		<Event_Param1>UW_ACT02_M09_01</Event_Param1>
+            		<Reward_Type>SCREEN_TEXT</Reward_Type>
+            		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_01</Reward_Param1>
+            		<Reward_Param4>Remove</Reward_Param4>	
+            		<Prereq>Underworld_A02M09_Begin</Prereq>
+					<Branch>INTRO_DIALOG</Branch>
+				</Event>
+				
+<!-- Thrawn: In a manner of speaking.  You have been overstepping your bounds again and it's time to end it.
+Oh, and I'm to collect a certain artifact on behalf of the Emperor. -->
+	<Event Name="Mission_9_Intro_Dialog_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>INTRO_DIALOG_02</Event_Param2>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_02</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M09_02</Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Underworld_A02M09_Begin</Prereq>
+		<Branch>INTRO_DIALOG</Branch>
+	</Event>
+	
+				<Event Name="Mission_9_Intro_Dialog_02_Speech_Done">
+            		<Event_Type>STORY_SPEECH_DONE</Event_Type>
+            		<Event_Param1>UW_ACT02_M09_02</Event_Param1>
+            		<Reward_Type>SCREEN_TEXT</Reward_Type>
+            		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_02</Reward_Param1>
+            		<Reward_Param4>Remove</Reward_Param4>	
+            		<Prereq>Underworld_A02M09_Begin</Prereq>
+					<Branch>INTRO_DIALOG</Branch>
+				</Event>
+
+<!-- Tyber: Really.  You didn't think I came unprepared, did you? -->
+	<Event Name="Mission_9_Intro_Dialog_03">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>INTRO_DIALOG_03</Event_Param2>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_03</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M09_03</Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Underworld_A02M09_Begin</Prereq>
+		<Branch>INTRO_DIALOG</Branch>
+	</Event>
+	
+				<Event Name="Mission_9_Intro_Dialog_03_Speech_Done">
+            		<Event_Type>STORY_SPEECH_DONE</Event_Type>
+            		<Event_Param1>UW_ACT02_M09_03</Event_Param1>
+            		<Reward_Type>SCREEN_TEXT</Reward_Type>
+            		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_03</Reward_Param1>
+            		<Reward_Param4>Remove</Reward_Param4>	
+            		<Prereq>Underworld_A02M09_Begin</Prereq>
+					<Branch>INTRO_DIALOG</Branch>
+				</Event>
+
+<!-- Thrawn: Well done.  But then you couldn’t have known about the hypervelocity gun on the surface, could you? -->
+	<Event Name="Mission_9_Intro_Dialog_04">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>INTRO_DIALOG_04</Event_Param2>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_04</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M09_04</Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Underworld_A02M09_Begin</Prereq>
+		<Branch>INTRO_DIALOG</Branch>
+	</Event>
+	
+				<Event Name="Mission_9_Intro_Dialog_04_Speech_Done">
+            		<Event_Type>STORY_SPEECH_DONE</Event_Type>
+            		<Event_Param1>UW_ACT02_M09_04</Event_Param1>
+            		<Reward_Type>SCREEN_TEXT</Reward_Type>
+            		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_04</Reward_Param1>
+            		<Reward_Param4>Remove</Reward_Param4>	
+            		<Prereq>Underworld_A02M09_Begin</Prereq>
+					<Branch>INTRO_DIALOG</Branch>
+				</Event>
+
+<!-- Tyber: Unfortunate.  But then you aren’t the only one with toys... -->
+	<Event Name="Mission_9_Intro_Dialog_05">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>INTRO_DIALOG_05</Event_Param2>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_05</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M09_05</Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Underworld_A02M09_Begin</Prereq>
+		<Branch>INTRO_DIALOG</Branch>
+	</Event>
+	
+				<Event Name="Mission_9_Intro_Dialog_05_Speech_Done">
+            		<Event_Type>STORY_SPEECH_DONE</Event_Type>
+            		<Event_Param1>UW_ACT02_M09_05</Event_Param1>
+            		<Reward_Type>SCREEN_TEXT</Reward_Type>
+            		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_05</Reward_Param1>
+            		<Reward_Param4>Remove</Reward_Param4>	
+            		<Prereq>Underworld_A02M09_Begin</Prereq>
+					<Branch>INTRO_DIALOG</Branch>
+				</Event>
+				
+<!-- Disable the intro dialog branch if the intro is skipped.-->
+	<Event Name="Mission_9_Disable_Intro_Branch">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>DISABLE_INTRO_BRANCH</Event_Param2>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>INTRO_DIALOG</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Underworld_A02M09_Begin</Prereq>
+	</Event>
+	
+<!-- Thrawn: This is actually proving interesting.  Why don’t we begin? -->
+	<Event Name="Mission_9_Intro_Dialog_06">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>INTRO_DIALOG_06</Event_Param2>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_06</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M09_06</Reward_Param8>
+		<Reward_Param9>Thrawn_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M09_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Mission_9_Intro_Dialog_06_Speech_Done">
+            		<Event_Type>STORY_SPEECH_DONE</Event_Type>
+            		<Event_Param1>UW_ACT02_M09_06</Event_Param1>
+            		<Reward_Type>SCREEN_TEXT</Reward_Type>
+            		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_06</Reward_Param1>
+            		<Reward_Param4>Remove</Reward_Param4>	
+            		<Prereq>Underworld_A02M09_Begin</Prereq>
+				</Event>
+
+<!-- Tyber: Agreed, your kind has never failed to amuse me. -->
+	<Event Name="Mission_9_Intro_Dialog_07">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>INTRO_DIALOG_07</Event_Param2>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_07</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M09_07</Reward_Param8>
+		<Reward_Param9>Tyber_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M09_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Mission_9_Intro_Dialog_07_Speech_Done">
+            		<Event_Type>STORY_SPEECH_DONE</Event_Type>
+            		<Event_Param1>UW_ACT02_M09_07</Event_Param1>
+            		<Reward_Type>SCREEN_TEXT</Reward_Type>
+            		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_07</Reward_Param1>
+            		<Reward_Param4>Remove</Reward_Param4>	
+            		<Prereq>Underworld_A02M09_Begin</Prereq>
+				</Event>
+
+				<Event Name="Mission_9_Intro_Dialog_07_Stop_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>	
+					<Prereq>Mission_9_Intro_Dialog_07_Speech_Done</Prereq>
+				</Event>
+
+<!-- Midtro Dialog -->
+	<Event Name="Mission_9_Midtro_Dialog_00">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>BOSSK_MIDTRO</Event_Param2>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_08</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M09_08</Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Underworld_A02M09_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Mission_9_Midtro_Dialog_00_Speech_Done">
+            		<Event_Type>STORY_SPEECH_DONE</Event_Type>
+            		<Event_Param1>UW_ACT02_M09_08</Event_Param1>
+            		<Reward_Type>SCREEN_TEXT</Reward_Type>
+            		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_08</Reward_Param1>
+            		<Reward_Param4>Remove</Reward_Param4>	
+            		<Prereq>Underworld_A02M09_Begin</Prereq>
+				</Event>
+
+	<Event Name="Mission_9_Midtro_Dialog_01">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_09</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M09_09</Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>0</Reward_Param10>
+		<Prereq>Mission_9_Midtro_Dialog_00_Speech_Done</Prereq>
+	</Event>
+	
+				<Event Name="Mission_9_Midtro_Dialog_01_Speech_Done">
+            		<Event_Type>STORY_SPEECH_DONE</Event_Type>
+            		<Event_Param1>UW_ACT02_M09_09</Event_Param1>
+            		<Reward_Type>SCREEN_TEXT</Reward_Type>
+            		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_09</Reward_Param1>
+            		<Reward_Param4>Remove</Reward_Param4>	
+            		<Prereq>Underworld_A02M09_Begin</Prereq>
+				</Event>
+
+<!-- Thrawn Midtro Dialog -->
+	<Event Name="Mission_9_Midtro_Dialog_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>THRAWN_ENDTRO</Event_Param2>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_10</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M09_10</Reward_Param8>
+		<Reward_Param9>Thrawn_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M09_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Mission_9_Midtro_Dialog_02_Speech_Done">
+            		<Event_Type>STORY_SPEECH_DONE</Event_Type>
+            		<Event_Param1>UW_ACT02_M09_10</Event_Param1>
+            		<Reward_Type>SCREEN_TEXT</Reward_Type>
+            		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_10</Reward_Param1>
+            		<Reward_Param4>Remove</Reward_Param4>	
+            		<Prereq>Underworld_A02M09_Begin</Prereq>
+				</Event>
+
+	<Event Name="Mission_9_Midtro_Dialog_02A">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_11</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M09_11</Reward_Param8>
+		<Reward_Param9>Tyber_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Mission_9_Midtro_Dialog_02_Speech_Done</Prereq>
+	</Event>
+	
+				<Event Name="Mission_9_Midtro_Dialog_02A_Speech_Done">
+            		<Event_Type>STORY_SPEECH_DONE</Event_Type>
+            		<Event_Param1>UW_ACT02_M09_11</Event_Param1>
+            		<Reward_Type>SCREEN_TEXT</Reward_Type>
+            		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_11</Reward_Param1>
+            		<Reward_Param4>Remove</Reward_Param4>	
+            		<Prereq>Underworld_A02M09_Begin</Prereq>
+				</Event>
+
+	<Event Name="Mission_9_Midtro_Dialog_03">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_12</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M09_12</Reward_Param8>
+		<Reward_Param9>Thrawn_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Mission_9_Midtro_Dialog_02A_Speech_Done</Prereq>
+	</Event>
+
+				<Event Name="Mission_9_Midtro_Dialog_03_Speech_Done">
+            		<Event_Type>STORY_SPEECH_DONE</Event_Type>
+            		<Event_Param1>UW_ACT02_M09_12</Event_Param1>
+            		<Reward_Type>SCREEN_TEXT</Reward_Type>
+            		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_12</Reward_Param1>
+            		<Reward_Param4>Remove</Reward_Param4>	
+            		<Prereq>Underworld_A02M09_Begin</Prereq>
+				</Event>
+
+	<Event Name="Mission_9_Midtro_Dialog_04">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_13</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M09_13</Reward_Param8>
+		<Reward_Param9>Tyber_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Mission_9_Midtro_Dialog_03_Speech_Done</Prereq>
+	</Event>
+
+				<Event Name="Mission_9_Midtro_Dialog_04_Speech_Done">
+            		<Event_Type>STORY_SPEECH_DONE</Event_Type>
+            		<Event_Param1>UW_ACT02_M09_13</Event_Param1>
+            		<Reward_Type>SCREEN_TEXT</Reward_Type>
+            		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_13</Reward_Param1>
+            		<Reward_Param4>Remove</Reward_Param4>	
+            		<Prereq>Underworld_A02M09_Begin</Prereq>
+				</Event>
+
+	<Event Name="Mission_9_Midtro_Dialog_05">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_14</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M09_14</Reward_Param8>
+		<Reward_Param9>Thrawn_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Mission_9_Midtro_Dialog_04_Speech_Done</Prereq>
+	</Event>
+
+				<Event Name="Mission_9_Midtro_Dialog_05_Speech_Done">
+            		<Event_Type>STORY_SPEECH_DONE</Event_Type>
+            		<Event_Param1>UW_ACT02_M09_14</Event_Param1>
+            		<Reward_Type>SCREEN_TEXT</Reward_Type>
+            		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_14</Reward_Param1>
+            		<Reward_Param4>Remove</Reward_Param4>	
+            		<Prereq>Underworld_A02M09_Begin</Prereq>
+				</Event>
+
+	<Event Name="Mission_9_Midtro_Dialog_06">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_15</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M09_15</Reward_Param8>
+		<Reward_Param9>Underworld_soldier_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Mission_9_Midtro_Dialog_05_Speech_Done</Prereq>
+	</Event>
+
+				<Event Name="Mission_9_Midtro_Dialog_06_Speech_Done">
+            		<Event_Type>STORY_SPEECH_DONE</Event_Type>
+            		<Event_Param1>UW_ACT02_M09_15</Event_Param1>
+            		<Reward_Type>SCREEN_TEXT</Reward_Type>
+            		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_15</Reward_Param1>
+            		<Reward_Param4>Remove</Reward_Param4>	
+            		<Prereq>Underworld_A02M09_Begin</Prereq>
+				</Event>
+
+	<Event Name="Mission_9_Midtro_Dialog_07">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_16</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M09_16</Reward_Param8>
+		<Reward_Param9>Tyber_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Mission_9_Midtro_Dialog_06_Speech_Done</Prereq>
+	</Event>
+
+				<Event Name="Mission_9_Midtro_Dialog_07_Speech_Done">
+            		<Event_Type>STORY_SPEECH_DONE</Event_Type>
+            		<Event_Param1>UW_ACT02_M09_16</Event_Param1>
+            		<Reward_Type>SCREEN_TEXT</Reward_Type>
+            		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M09_16</Reward_Param1>
+            		<Reward_Param4>Remove</Reward_Param4>	
+            		<Prereq>Underworld_A02M09_Begin</Prereq>
+				</Event>
+
+				<Event Name="Mission_9_Midtro_Dialog_07_Stop_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>	
+					<Prereq>Mission_9_Midtro_Dialog_07_Speech_Done</Prereq>
+				</Event>
+
+<!-- Defeat Achieved -->
+	<Event Name="Mission_9_Defeat_Tyber">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>M09_DEFEAT_TYBER</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+   		<Prereq>Underworld_A02M09_Begin</Prereq>
+   	</Event>
+   	
+			<Event Name="Mission_9_Defeat_Tyber_Mission_Failed">
+				<Event_Type>STORY_TRIGGER</Event_Type>
+				<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M09_GOAL_01</Reward_Param1>
+				<Prereq>Mission_9_Defeat_Tyber</Prereq>
+			</Event>
+   	   	
+<!-- Victory Achieved -->
+	<Event Name="Underworld_A02M09_Enable_Auto_Victory">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>10</Event_Param1>
+		<Reward_Type>ENABLE_VICTORY</Reward_Type>
+		<Reward_Param1>1</Reward_Param1>
+		<Prereq>Mission_9_Midtro_Dialog_02</Prereq>
+	</Event>
+
+	<Event Name="Force_Set_Victory_Flag">
+		<Event_Type>STORY_VICTORY</Event_Type>
+		<Event_Param1>UNDERWORLD</Event_Param1>
+		<Reward_Type>SET_FLAG</Reward_Type>
+		<Reward_Param1>Underworld_Mission_09_Win</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<!-- AM1994 (7/12/19): Re-enabling retreat after mission ends! -->
+	<Event Name="Underworld_A02M09_Re-Enable_Retreat">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>UNDERWORLD</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Force_Set_Victory_Flag</Prereq>
+	</Event>
+
+	<Event Name="Empire_A02M09_Re-Enable_Retreat">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>EMPIRE</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Force_Set_Victory_Flag</Prereq>
+	</Event>
+</Story>

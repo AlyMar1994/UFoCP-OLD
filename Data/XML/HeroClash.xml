@@ -37,7 +37,7 @@
 
 	<!-- ALYMAR1994 (6/27/19): Due to fundamental errors with both these -->
 	<!-- clashes and being permanently broken, I'm going to cease them by commenting -->
-	<!-- them out from the file.. -->
+	<!-- them out from the file. -->
 <!--	<Hero_Clash Name="ObiWan_BobaFett">
 		<Clash_Type>Action_Driven</Clash_Type>
 		<Involved_Hero_Types>Obi_Wan_Kenobi, Boba_Fett</Involved_Hero_Types>

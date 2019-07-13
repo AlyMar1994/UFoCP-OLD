@@ -4,12 +4,12 @@
 -- ORIGINAL AUTHOR (Petroglyph): Steve Copeland
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 6/28/19, 2:27 PM
+-- LAST REVISION DATE: 7/12/19, 12:49 PM
 -- ======================================================================
 -- Self Attachment plan is currently unused; the Death Star has a plan that names it in the task force.
 require("HeroPlanAttach")
 
-functionDefinitions()
+function Definitions()
 	DebugMessage("%s -- In Definitions", tostring(Script))
 
 	-- Only join plans that meet our expense requirements.
@@ -25,13 +25,13 @@ functionDefinitions()
 
 	Attack_Ability_Weights =
 	{
-		1, 1, 1, 10,	--ATTACK-type Weights.
-		BAD_WEIGHT		--FEARED-type Weights.
+		1, 1, 1, 10,	-- ATTACK-type Weights.
+		BAD_WEIGHT		-- FEARED-type Weights.
 	}
 	Attack_Ability_Types = WeightedTypeList.Create()
 	Attack_Ability_Types.Parse(Attack_Ability_Type_Names, Attack_Ability_Weights)
 
-	--Prefertaskforceswiththeseunits.
+	-- Prefer task forces with these units:
 	Escort_Ability_Type_Names = { "Fighter", "Capital", "Frigate", "Super" }
 	Escort_Ability_Weights = { 1, 5, 4, 6 }
 	Escort_Ability_Types = WeightedTypeList.Create()
@@ -48,5 +48,3 @@ end
 
 function HeroService()
 end
-
-

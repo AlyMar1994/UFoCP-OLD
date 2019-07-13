@@ -31,6 +31,7 @@ General
 -Campaign – Fixed a bug on Underworld Land Mission 06: 'Dark Ally,' by replacing the icon for the Governor's Quarters from the prison icon to the proper Governor's Quarters icon.
 -Campaign – Fixed a bug on Underworld Land Mission 06: 'Dark Ally.' The Guard Towers had no icons, and have now been given one.
 -Campaign – Fixed a bug on Underworld Land Mission 06: 'Dark Ally.' Due to bad "passability" brushing on slopes and certain hills, units could get stuck or fall through the map. Lots of slope passability brushing has been fixed/improved.
+-Campaign – Fixed a bug on Underworld Space Mission 09 (technically 08): 'Baiting the Hook.' Fixed a super bad sequence where the Empire could outright retreat at the start of the mission, causing the entire sequence to break. Retreat for both sides has now been disabled.
 
 -Hostile – Fixed faction "Hostile" (hostile to all factions faction) not having the Hutts as an added enemy.
 
@@ -85,11 +86,15 @@ Maps/Planets (Galactic)
 ==================
 Units (Galactic Conquest)
 ==================
--Grand Admiral Thrawn – Fixed the unused Galactic-only unit. Fixed the wrong unit being referenced in the team, and fixed the icon of the team.
+-Grand Admiral Thrawn – Fixed the unused Galactic-only unit. Fixed the wrong unit being referenced in the team, and fixed the icon of the team. If someone wanted to use Grand Admiral Thrawn as a replacer-unit for Tarkin in GCs, they now can do so.
 
 -R2-D2 & C-3P0 – Fixed Galactic tooltips not having units' original description, only the tooltip if the unit can capture build pads or not.
 
--Han Solo & Chewbacca – Fixed Galactic tooltip description not indicating if unit can capture build pads or not (does not apply to space unit).
+-Han Solo & Chewbacca – Fixed Galactic tooltips not indicating if unit can capture build pads or not (does not apply to space unit).
+
+-Yoda – Fixed Galactic tooltips not indicating if unit can capture build pads or not.
+
+-Luke Skywalker – Fixed Galactic tooltips not indicating if unit can capture build pads or not (does not apply to space unit).
 
 
 ==================
@@ -97,16 +102,16 @@ Units (Land)
 ==================
 -Dark Trooper (Phase I) – Fixed inconsistient 'Sprint' ability. The modifier to take less damage when sprinting was ".50" in the group section, and ".75" for the individual unit. It has now been corrected to ".50" for both. Dark Trooper Phase Is will now only take .50x damage when sprinting, instead of .75x, to make them less of a crappy meat shield and more of a good anti-infantry unit. In addition, the speed multiplier has been equalized at a 1.50x increase instead of x2.00.
 
+-Dark Trooper (Phase II) – Fixed inconsistient tagging; collision-type was set to "Large Vehicle" and "Infantry" simaltaneously. It is now soley "Infantry."
+
+-Dark Trooper (Phase III) – Fixed inconsistient tagging; collision-type was set to "Large Vehicle" and "Infantry" simaltaneously. It is now soley "Infantry."
+
 -Darth Vader – Fixed unit type (again). Replaced my custom-made "Darth_Team_Expansion" tag with the official "Darth_Team_Executor" tag that was hiding in the Executor's unit file. The change should reletively be pointless; Darth Vader's FoC variant should still replace land battles in Skirmish, with the same results.
 -Darth Vader – Fixed ambiant breathing SFX. Gave unit proper behavior to process ambiant SFX sounds, so now Vader's ambiant breathing should play randomly.
 
 -General Veers – Added a hero blob insignia to Veers's AT-AT, as he was the only Empire hero not to have one. Veers now has the Empire symbol ring when highlighted/selected/stagnant by default.
 
--Luke Skywalker – Fixed Galactic tooltips not indicating if unit can capture build pads or not (does not apply to space unit).
-
 -R2D2 & C3P0 – Fixed R2's "Hack Turret" ability not working on Skirmish-owned Underworld turbolaser towers.
-
--Yoda – Fixed Galactic tooltips not indicating if unit can capture build pads or not.
 
 -Urai Fen – Fixed Urai's Cortosis Blades' "block lightsaber" ability not having a chance to block the Campaign Force Adept's lightsaber attacks, even though Urai has a chance to deflect all other lightsaber-using hero's attacks.
 -Urai Fen – Fixed Cortosis Blades' "block lightsaber" ability not blocking Silri's lightsaber whip during Consortium v. Consortium battles in Skrimish.
@@ -168,7 +173,7 @@ Units (Space)
 -TIE defender – Fixed Underworld-type TIE defender being "good against"/"vulnerable to" indicators for each fighter with the squadron's original list, so the normal fighers can't display info about being good against its own faction with developer-intended units (this fixes a regression from update v1.2). "Good Against" is now (instead of the Mon Calamari cruiser and the Aggressor-class Star Destroyer) the A-wing, Nebulon-B Frigate, and the Mon Calamari cruiser. "Vulnerable To" is now (instead of having the Crusader Gunship and Buzz Droids included) now just the Corellian Corvette.
 -TIE defender – Fixed hardpoints. The two ion hardpoints registered as proton torpedoes; so while they launched, sounded and acted like torpedoes, their damage was that of an ion cannon shot (as the values were copied and pasted from above). Their stats have been fixed to look and sound like ion cannon shots.
 -TIE defender – Fixed Defenders not having engine sounds as they do fly-bys.
--TIE defender – Removed unused "attack hardpoint" line.
+-TIE defender – Removed unused "attack hardpoint" line for Gravity Wells.
 -TIE defender – Set squadron tag "Is_Bomber" to yes as it is a bomber.
 
 -V-wing – Fixed Rebellion, Empire and Pirate V-wings to be affiliated/have correct build sounds per-faction.

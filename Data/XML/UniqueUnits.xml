@@ -1673,7 +1673,7 @@
 		<Has_Pre_Turn_Anim>Yes</Has_Pre_Turn_Anim>
 		<Min_Speed_Fraction_For_Turn>.10</Min_Speed_Fraction_For_Turn>
 		<Space_Layer>Land</Space_Layer>
-		<UnitCollisionClass>GiantVehicle</UnitCollisionClass>
+		<UnitCollisionClass>Giant Vehicle</UnitCollisionClass>
 		<Custom_Hard_XExtent>28.00</Custom_Hard_XExtent>
 		<Custom_Hard_YExtent>10.00</Custom_Hard_YExtent>
 		<FormationGrouping>Solo</FormationGrouping>
@@ -2590,7 +2590,7 @@
 		<Has_Pre_Turn_Anim>Yes</Has_Pre_Turn_Anim>
 		<Min_Speed_Fraction_For_Turn>.40</Min_Speed_Fraction_For_Turn>
 		<Space_Layer>Land</Space_Layer>
-		<UnitCollisionClass>LargeVehicle</UnitCollisionClass>
+		<UnitCollisionClass>Large Vehicle</UnitCollisionClass>
 		<Custom_Hard_XExtent>9.00</Custom_Hard_XExtent>
 		<Custom_Hard_YExtent>12.00</Custom_Hard_YExtent>
 		<MovementPredictionInterval>12</MovementPredictionInterval>

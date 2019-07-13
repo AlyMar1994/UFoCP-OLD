@@ -590,7 +590,6 @@
 		<Base_Shield_Penetration_Particle>Shield_Penetration_Effect_Particle</Base_Shield_Penetration_Particle>
 
 		<Space_Layer>Land</Space_Layer>
-		<UnitCollisionClass>LargeVehicle</UnitCollisionClass>
 		<Custom_Hard_XExtent>8.00</Custom_Hard_XExtent>
 		<Custom_Hard_YExtent>6.00</Custom_Hard_YExtent>
 		<MinimumPushReturnDistance>100</MinimumPushReturnDistance>
@@ -888,7 +887,6 @@
 		<Base_Shield_Penetration_Particle>Shield_Penetration_Effect_Particle</Base_Shield_Penetration_Particle>
 
 		<Space_Layer>Land</Space_Layer>
-		<UnitCollisionClass>LargeVehicle</UnitCollisionClass>
 		<Custom_Hard_XExtent>8.00</Custom_Hard_XExtent>
 		<Custom_Hard_YExtent>6.00</Custom_Hard_YExtent>
 		<MinimumPushReturnDistance>100</MinimumPushReturnDistance>

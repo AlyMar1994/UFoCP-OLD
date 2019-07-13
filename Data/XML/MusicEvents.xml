@@ -54,6 +54,25 @@
 
 
 
+	<!-- ===== CINEMATIC MUSIC EVENTS ===== -->
+	<MusicEvent Name="Cinematic_Empire_Intro_Music_Event_2">	
+		<Files>Empire_Intro_3_Mix.mp3</Files>
+		<Volume_Percent>70</Volume_Percent>
+		<Fade_In_Seconds>0.0</Fade_In_Seconds>
+		<Fade_Out_Previous_Seconds>0.0</Fade_Out_Previous_Seconds>
+		<Loop>No</Loop>
+	</MusicEvent>
+
+	<MusicEvent Name="Cinematic_Rebel_Intro_Music_Event_1">	
+		<Files>Rebel_Intro_1_Mix.mp3</Files>
+		<Volume_Percent>70</Volume_Percent>
+		<Fade_In_Seconds>0.0</Fade_In_Seconds>
+		<Fade_Out_Previous_Seconds>0.0</Fade_Out_Previous_Seconds>
+		<Loop>No</Loop>
+	</MusicEvent>
+
+
+
 	<!-- ===== GALACTIC VIEW MUSIC EVENTS ===== -->
 	<MusicEvent Name="Galactic_Map_Rebel_Music_Event">
 		<Files>AOTC_Ambush_On_Coruscant.mp3, ROTJ_Alliance_Assembly.mp3, ROTJ_Shuttle_Tydirium_Appraches_Endor.mp3, ANH_Tales_of_a_Jedi_Knight.mp3, ANH_Millenium_Falcon.mp3</Files>
@@ -85,25 +104,6 @@
 		<Fade_In_Seconds>2.0</Fade_In_Seconds>
 		<Fade_Out_Previous_Seconds>2.0</Fade_Out_Previous_Seconds>
 		<Loop>Yes</Loop>
-	</MusicEvent>
-
-
-
-	<!-- ===== CINEMATIC MUSIC EVENTS ===== -->
-	<MusicEvent Name="Cinematic_Empire_Intro_Music_Event_2">	
-		<Files>Empire_Intro_3_Mix.mp3</Files>
-		<Volume_Percent>70</Volume_Percent>
-		<Fade_In_Seconds>0.0</Fade_In_Seconds>
-		<Fade_Out_Previous_Seconds>0.0</Fade_Out_Previous_Seconds>
-		<Loop>No</Loop>
-	</MusicEvent>
-
-	<MusicEvent Name="Cinematic_Rebel_Intro_Music_Event_1">	
-		<Files>Rebel_Intro_1_Mix.mp3</Files>
-		<Volume_Percent>70</Volume_Percent>
-		<Fade_In_Seconds>0.0</Fade_In_Seconds>
-		<Fade_Out_Previous_Seconds>0.0</Fade_Out_Previous_Seconds>
-		<Loop>No</Loop>
 	</MusicEvent>
 
 

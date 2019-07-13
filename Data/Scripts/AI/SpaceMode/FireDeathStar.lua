@@ -38,6 +38,7 @@ function MainForce_Thread()
 	until ds.Is_Tactical_Superweapon_Ready() and (Evaluate_In_Galactic_Context("Want_To_Fire_DS", PlayerObject) ~= 0)
 
     ds.Fire_Tactical_Superweapon()
+
 	Sleep(30)
 
 	ScriptExit()

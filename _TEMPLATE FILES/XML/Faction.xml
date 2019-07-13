@@ -709,7 +709,7 @@
 		<!-- -->
 		<!-- EMPIRE																															-->
 		<!-- Palpatine (Empire Leader) OBJTypes (2): Emperor_Palpatine, Emperor_Palpatine_Team												-->
-		<!-- Death Star (Lvl. 5 Emprire) OBJTypes (2): Death_Star, Death_Star_II															-->
+		<!-- Death Star (Tech 5 Empire) OBJTypes (2): Death_Star, Death_Star_II																-->
 		<!-- -->
 		<!-- ...Conditional_Or: A (or) B present and C Not present																			-->
 		<!-- ...Conditional_And: A (and) B present and C Not present																		-->
@@ -770,9 +770,9 @@
 		</Space_Advisor_Hints>
 
 		<Land_Advisor_Hints>
-			TEXT_DROIDADVISOR_FACTION_LAND_01, 
-			TEXT_DROIDADVISOR_FACTION_LAND_02, 
-			TEXT_DROIDADVISOR_FACTION_LAND_03, 
+			TEXT_DROIDADVISOR_FACTION_LAND_01,
+			TEXT_DROIDADVISOR_FACTION_LAND_02,
+			TEXT_DROIDADVISOR_FACTION_LAND_03,
 			TEXT_DROIDADVISOR_ALL_LAND_01,
 			TEXT_DROIDADVISOR_ALL_LAND_02,
 			TEXT_DROIDADVISOR_ALL_LAND_03

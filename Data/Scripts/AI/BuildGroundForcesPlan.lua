@@ -4,11 +4,11 @@
 -- ORIGINAL AUTHOR (Petroglyph): James Yarrow
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 6/28/19, 3:24 PM
+-- LAST REVISION DATE: 7/12/19, 12:46 PM
 -- ======================================================================
 require("pgevents")
 
-function Definitions()	
+function Definitions()
 	Category = "Build_Ground_Forces"
 	IgnoreTarget = true
 
@@ -16,9 +16,9 @@ function Definitions()
 	{
 		{
 			"ReserveForce",
-			"Infantry = 0, 2",
-			"Vehicle = 0, 2",
-			"Air = 0, 2"
+			"Infantry = 0,2",
+			"Vehicle = 0,2",
+			"Air = 0,2"
 		}
 	}
 

@@ -470,6 +470,6 @@
 		<User_Bound_Max>700, 700, 1500</User_Bound_Max>
 		<Has_Space_Evaluator>False</Has_Space_Evaluator>
 		<Exclude_From_Distance_Fade>True</Exclude_From_Distance_Fade>
-		<UnitCollisionClass>LandingTransport</UnitCollisionClass>	
+		<UnitCollisionClass>Landing Transport</UnitCollisionClass>	
 	</TransportUnit>
 </Luke_Skywalker_Hero_Files>
