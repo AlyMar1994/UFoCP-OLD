@@ -13,7 +13,7 @@
 		<!-- <Political_Control>1</Political_Control> -->
 		<Political_Faction>Empire</Political_Faction>
 		<Pre_Lit>Yes</Pre_Lit>
-		<Layer_Z_Adjust>0.5</Layer_Z_Adjust>
+		<Layer_Z_Adjust>0.50</Layer_Z_Adjust>
 		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
 
 		<!-- "Scale" for containers' icons is the worls-space ACTUAL SIZE of these icons.			-->
@@ -52,6 +52,7 @@
 		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
 		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
 	</Container>
+
 
 
 	<!-- ===== EMPIRE ===== -->
@@ -239,6 +240,7 @@
 
 		<CategoryMask>Infantry</CategoryMask>
 	</Container>
+
 
 
 	<!-- ===== REBEL ===== -->
@@ -722,6 +724,7 @@
 			</Unit_Ability>
 		</Unit_Abilities_Data>
 	</Container>
+
 
 
 	<!-- ===== BLACK SUN PIRATES ===== -->

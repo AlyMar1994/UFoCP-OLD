@@ -42,7 +42,7 @@
 		<Movement_Animation_Speed>0.65</Movement_Animation_Speed>
 		<Walk_Animation_Speed>.366</Walk_Animation_Speed>
 		<Crouch_Animation_Speed>.537</Crouch_Animation_Speed>
-		<Max_Speed>1</Max_Speed> <!-- INCREASED from 0.8! -->
+		<Max_Speed>1</Max_Speed>
 		<Max_Rate_Of_Turn>20.00</Max_Rate_Of_Turn>
 		<Custom_Soft_Footprint_Radius>3.50</Custom_Soft_Footprint_Radius>
 		<Custom_Hard_XExtent>2.00</Custom_Hard_XExtent>
@@ -167,7 +167,7 @@
 				AT_AT_Walker_Death_Clone_02,
 				Veers_AT_AT_Walker_Death_Clone,
 				Veers_AT_AT_Walker_Deployed_Death_Clone
-		</Presence_Induced_Animations>		
+		</Presence_Induced_Animations>
 		
 		<!-- Non-Hero unit abilities description -->
 		<Unit_Abilities_Data SubObjectList="Yes">

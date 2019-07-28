@@ -110,7 +110,7 @@
 		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
 		<Ground_Infantry_Turret_Target>Yes</Ground_Infantry_Turret_Target>
 		<Attach_To_Flagship_During_Space_Battle>No</Attach_To_Flagship_During_Space_Battle>
-		<Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>		
+		<Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>
 
 		<Select_Box_Scale>27</Select_Box_Scale>
 		<Select_Box_Z_Adjust>3.00</Select_Box_Z_Adjust>
@@ -137,13 +137,15 @@
 
 		<Target_Stealth_Units>Yes</Target_Stealth_Units>
 
+		<Unique_Space_Unit>Luke_Jedi_XWing</Unique_Space_Unit>
+
 		<!-- Non-Hero unit abilities description -->
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<!-- Primary Ability. -->
 			<Unit_Ability>
 				<Type>SABER_THROW</Type>
 				<Recharge_Seconds>30.00</Recharge_Seconds>
-				<GUI_Activated_Ability_Name>Luke_Saber_Throw</GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+				<GUI_Activated_Ability_Name>Luke_Saber_Throw</GUI_Activated_Ability_Name> <!-- GUI Command Bar support. -->
 				<Effective_Radius>500.00</Effective_Radius>
 				<Supports_Autofire>True</Supports_Autofire>
 			</Unit_Ability>
@@ -153,7 +155,7 @@
 				<Type>FORCE_CLOAK</Type>
 				<Recharge_Seconds>10.00</Recharge_Seconds>
 				<Expiration_Seconds>60.00</Expiration_Seconds>
-				<GUI_Activated_Ability_Name>Luke_Force_Cloak</GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+				<GUI_Activated_Ability_Name>Luke_Force_Cloak</GUI_Activated_Ability_Name> <!-- GUI Command Bar support. -->
 				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Cloak_Luke_Land</SFXEvent_GUI_Unit_Ability_Activated>
 				<Effective_Radius>500.00</Effective_Radius>
 			</Unit_Ability>
@@ -304,7 +306,7 @@
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>TEXT_TOOLTIP_LUKE_SKYWALKER_JEDI</Encyclopedia_Text>
 
-		<Space_Model_Name>rv_XWing.ALO</Space_Model_Name>
+		<Space_Model_Name>RV_XWing.ALO</Space_Model_Name>
 		<Icon_Name>I_Button_RI_Skywalker.tga</Icon_Name>
 
 		<Scale_Factor>1.00</Scale_Factor>
@@ -419,13 +421,13 @@
 
 		<Landing_Transport_Variant>Luke_Jedi_Xwing_Landing</Landing_Transport_Variant>
 
-		<!-- Non-Herounitabilitiesdescription -->
+		<!-- Hero unit abilities descriptions: -->
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<!-- Primary Ability. -->
 			<Unit_Ability>
 				<Type>LUCKY_SHOT</Type>
 				<Recharge_Seconds>60.0</Recharge_Seconds>
-				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 600.0</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 600.00</Mod_Multiplier>
 				<Projectile_Types_Override>Proj_Ship_Lucky_Shot_Medium_Laser_Cannon_Red</Projectile_Types_Override>
 				<GUI_Activated_Ability_Name>Luke_Jedi_Lucky_Shot_Ability</GUI_Activated_Ability_Name>
 				<SFXEvent_Target_Ability>Unit_Lucky_Shot_Luke</SFXEvent_Target_Ability>

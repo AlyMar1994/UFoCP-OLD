@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <Story>
-<!-- ===== Underworld Act II Mission 09: Baiting the Hook ===== -->
-<!-- Preliminary setup -->
+	<!-- ===== Underworld Act II Mission 09: Baiting the Hook ===== -->
+	<!-- Preliminary setup -->
 	<Event Name="Underworld_A02M09_Begin">
 		<Event_Type>STORY_ELAPSED</Event_Type>
 		<Event_Param1>0</Event_Param1>

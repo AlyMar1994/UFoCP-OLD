@@ -7,11 +7,11 @@
 	<!-- By Connor 'AlyMar1994' Hess! -->
 
 	<SFXEvent Name="EventName">
-		<Use_Preset>Preset_</Use_Preset> <!-- In SFXEventPresets.xml -->
+		<Use_Preset>Preset_Name</Use_Preset> <!-- In SFXEventPresets.xml -->
 		<Samples>SoundName.file1, SoundName.file2, SoundName.file3</Samples>
-		<Text_ID>TEXT_SFX_REB_SEE_HERO_16</Text_ID>
-		<Localize>Yes</Localize>
-		<Play_Sequentially>Yes</Play_Sequentially>
-		<Overlap_Test>Unit_HUD</Overlap_Test>
+		<Text_ID>TEXT_ID_FOR_SUBTITLES_OF_SOUND</Text_ID> <!-- Unused, but the debug client still asks for it! -->
+		<Localize>Yes/No</Localize> <!-- Is there Localized audio for this? -->
+		<Play_Sequentially>Yes/No</Play_Sequentially>
+		<Overlap_Test>Unit_HUD</Overlap_Test> <!-- To this day, no one knows what the fuck this does. -->
 	</SFXEvent>
 </SFXEvents>

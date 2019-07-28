@@ -55,16 +55,16 @@
 		<!-- Main Faction Colors & Color Transparencies (0-255) -->
 		<Color>185, 40, 39, 255</Color>
 		<Display_Font_Color>185, 40, 39, 255</Display_Font_Color> <!-- Should be same as <Color>! -->
-		<Big_Fleet_Color>185, 40, 39, 150</Big_Fleet_Color> <!-- Should be same as <Color>! -->
+		<Big_Fleet_Color>185, 40, 39, 150</Big_Fleet_Color> <!-- Should be same as <Color>, usually with Transparency at 150! -->
 		<No_Colorization_Color>199, 105, 59, 255</No_Colorization_Color>
 
 		<!-- Defines leader of faction. -->
-		<!-- For Galactic Conquests bent on killing a leader and/or taking over a planet. -->
+		<!-- For Galactic Conquests bent on killing a leader and/or taking over their home planet (base of operations). -->
+		<!-- Can be very effective for mods like Thrawn's Revenge, which have permadeath heroes! -->
 		<Faction_Leader>Mon_Mothma</Faction_Leader>
 		<Faction_Leader_Company>Mon_Mothma_Team</Faction_Leader_Company>
-
-		<!-- AJA 03/04/2005 - Uncomment this block if you want the Empire to be able to win -->
-		<!-- the campaign by defeating Mon Mothma and capturing Alderaan. -->
+		<!-- Other than Hoth or Tatooine (which is inconsistient), like the Underworld, -->
+		<!-- the Rebels has no 'home planet,' unlike vanilla EaW. -->
 		<!-- <Home_Planet>Alderaan</Home_Planet> -->
 
 		<Superweapon_Win_Movie>Rebel_Win_DeathStar</Superweapon_Win_Movie>
@@ -892,14 +892,17 @@
 
 		<!-- Main Faction Colors & Color Transparencies (0-255) -->
 		<Color>54, 134, 242, 255</Color>
-		<Display_Font_Color>24, 133, 251, 255</Display_Font_Color> <!-- Should be same as <Color>! -->
+		<Display_Font_Color>24, 133, 251, 255</Display_Font_Color>
 		<Big_Fleet_Color>54, 134, 242, 150</Big_Fleet_Color> <!-- Should be same as <Color>! -->
 		<No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
 
 		<!-- Defines leader of faction. -->
-		<!-- For Galactic Conquests bent on killing a leader and/or taking over a planet. -->
+		<!-- For Galactic Conquests bent on killing a leader and/or taking over their home planet (base of operations). -->
+		<!-- Can be very effective for mods like Thrawn's Revenge, which have permadeath heroes! -->
 		<Faction_Leader>Emperor_Palpatine</Faction_Leader>
 		<Faction_Leader_Company>Emperor_Palpatine_Team</Faction_Leader_Company>
+		<!-- Unlike the Rebels or Underworld, the Empire (in every scenario) consistiently -->
+		<!-- owns Coruscant. This is their home planet. -->
 		<Home_Planet>Coruscant</Home_Planet>
 
 		<Superweapon_Win_Movie>Empire_Win_DeathStar</Superweapon_Win_Movie>

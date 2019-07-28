@@ -1,15 +1,7 @@
 <?xml version="1.0" ?>
-
-
 <Story>
-
-<!-- Underworld Act II Mission 12: The Emperor's Hidden Weapon -->
-
-
-
-
-<!-- Preliminary setup -->
-
+	<!-- ===== Underworld Act II Mission 12: The Emperor's Hidden Weapon ===== -->
+	<!-- Preliminary setup -->
 	<Event Name="Underworld_A03M12_Begin">
 		<Event_Type>STORY_ELAPSED</Event_Type>
 		<Event_Param1>0</Event_Param1>
@@ -21,7 +13,7 @@
 		<Prereq>Underworld_A03M12_Begin</Prereq>
 	</Event>
 
-<!-- Turn off advisor -->
+	<!-- Turn off advisor -->
 	<Event Name="Underworld_A03M12_Turn_Off_Land_Advisor">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>SET_ADVISOR</Reward_Type>
@@ -1009,7 +1001,7 @@ STILL ALLIED WITH THE REBELS-->
 				</Event>		
 
 			
-<!-- DIALOG REGARDING ECLIPSE...ATTACK WARNING AND LOSS MESSAGES-->			
+<!-- DIALOG REGARDING ECLIPSE...ATTACK WARNING AND LOSS MESSAGES-->
 	<Event Name="UM12_AI_NOTIFICATION_Eclipse_Being_Attacked">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
 		<Event_Param2>UM12_ECLIPSE_BEING_ATTACKED</Event_Param2>

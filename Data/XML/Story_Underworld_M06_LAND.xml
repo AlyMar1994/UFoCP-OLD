@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <Story>
-<!-- ===== Underworld Act II Mission 06: A Dark Ally ===== -->
-<!-- Preliminary setup -->
+	<!-- ===== Underworld Act II Mission 06: A Dark Ally ===== -->
+	<!-- Preliminary setup -->
 	<Event Name="Underworld_A02M06_Begin">
 		<Event_Type>STORY_ELAPSED</Event_Type>
 		<Event_Param1>0</Event_Param1>

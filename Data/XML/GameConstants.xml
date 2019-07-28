@@ -60,7 +60,7 @@
 	<Fleet_Maintenance_Update_Delay_Seconds>0.01</Fleet_Maintenance_Update_Delay_Seconds>
 	<Space_Auto_Resolve_Delay_Seconds>0.01</Space_Auto_Resolve_Delay_Seconds>
 	<Land_Auto_Resolve_Delay_Seconds>0.01</Land_Auto_Resolve_Delay_Seconds>
-	<Political_Control_Change_Time_Seconds>7.00</Political_Control_Change_Time_Seconds>
+	<Political_Control_Change_Time_Seconds>7</Political_Control_Change_Time_Seconds>
 	
 	<Melee_Cutoff_Range>51.00</Melee_Cutoff_Range>
 
@@ -72,7 +72,7 @@
 
 	<!-- Edge scrolling for strategic mode. -->
 	<Strategic_Edge_Scroll_Region>2</Strategic_Edge_Scroll_Region>
-	<Strategic_Max_Scroll_Speed>400</Strategic_Max_Scroll_Speed> <!-- Was 800! -->
+	<Strategic_Max_Scroll_Speed>400</Strategic_Max_Scroll_Speed>
 	<Strategic_Min_Scroll_Speed>80</Strategic_Min_Scroll_Speed>
 	<Strategic_Offscreen_Scroll_Region>50</Strategic_Offscreen_Scroll_Region>
 
@@ -87,7 +87,7 @@
 
 	<!-- AJA 9/28/2005: Disabling increased income per-base level. -->
 	<Political_Income_Curve>0, 0, 1, 1, 5, 1</Political_Income_Curve>
-	<Progressive_Taxation>1, 0, 5, .2, 10, .5</Progressive_Taxation>
+	<Progressive_Taxation>1, 0, 5, .20, 10, .50</Progressive_Taxation>
 	<Income_Redistribution>0.60</Income_Redistribution>
 	
 	<!-- No player can ever accumulate more than this number of credits times the number of planets he controls. -->
@@ -105,12 +105,12 @@
 -->
 
 
-	<Fiscal_Cycle_Time_In_Secs>45.0</Fiscal_Cycle_Time_In_Secs>
+	<Fiscal_Cycle_Time_In_Secs>45.00</Fiscal_Cycle_Time_In_Secs>
 	<Medium_Coin_Stack_Size>50</Medium_Coin_Stack_Size>
 	<Large_Coin_Stack_Size>150</Large_Coin_Stack_Size>
-	<Black_Market_Income_Mult_Min>1.0</Black_Market_Income_Mult_Min> <!-- AJA 09/30/2005: Removing negative factor from black market planetary effect. -->
-	<Black_Market_Income_Mult_Max>3.0</Black_Market_Income_Mult_Max>
-	
+	<Black_Market_Income_Mult_Min>1.00</Black_Market_Income_Mult_Min> <!-- AJA 09/30/2005: Removing negative factor from black market planetary effect. -->
+	<Black_Market_Income_Mult_Max>3.00</Black_Market_Income_Mult_Max>
+
 	<Num_Structures_For_Medium_Planet_Name>3</Num_Structures_For_Medium_Planet_Name>
 	<Num_Structures_For_Large_Planet_Name>5</Num_Structures_For_Large_Planet_Name>
 
@@ -150,8 +150,8 @@
 	<GUI_Movement_Click_Radar_Event_Name>Default_Click</GUI_Movement_Click_Radar_Event_Name>
 	<GUI_Movement_Double_Click_Radar_Event_Name>Default_Double_Click</GUI_Movement_Double_Click_Radar_Event_Name>	
 
-	<GUI_Move_Acknowledge_Scale_Land>1.0</GUI_Move_Acknowledge_Scale_Land>	
-	<GUI_Move_Acknowledge_Scale_Space>5.0</GUI_Move_Acknowledge_Scale_Space>
+	<GUI_Move_Acknowledge_Scale_Land>1.00</GUI_Move_Acknowledge_Scale_Land>	
+	<GUI_Move_Acknowledge_Scale_Space>5.00</GUI_Move_Acknowledge_Scale_Space>
 	
 	<MaximumPoliticalControl>5</MaximumPoliticalControl>
 	<MaximumStarbaseLevel>5</MaximumStarbaseLevel>
@@ -173,7 +173,7 @@
 	<AIUsesFogOfWarLand>False</AIUsesFogOfWarLand>
 	<SetupPhaseEnabled>False</SetupPhaseEnabled>
 	<ShowUnitAIPlanAttachment>False</ShowUnitAIPlanAttachment>
-	<AITechLevelProductionTimeWeight>1.0</AITechLevelProductionTimeWeight>
+	<AITechLevelProductionTimeWeight>1.00</AITechLevelProductionTimeWeight>
 	
 	<!-- Default is NO. Set to YES to always engage in tactical battles, and -->
 	<!-- skip auto-resolve battles (even instant overrun ones). -->
@@ -196,15 +196,15 @@
 	<!-- <Overrun_Auto_Resolve_Multiple>8.0f</Overrun_Auto_Resolve_Multiple> --> <!-- Comment out to disable overrun auto-resolve. -->
 
 	<!-- How long to count down before a tactical retreat is allowed: -->
-	<Space_Retreat_Allowed_Countdown_Seconds>30.0</Space_Retreat_Allowed_Countdown_Seconds>
-	<Land_Retreat_Allowed_Countdown_Seconds>30.0</Land_Retreat_Allowed_Countdown_Seconds>
+	<Space_Retreat_Allowed_Countdown_Seconds>30.00</Space_Retreat_Allowed_Countdown_Seconds>
+	<Land_Retreat_Allowed_Countdown_Seconds>30.00</Land_Retreat_Allowed_Countdown_Seconds>
 
-	<!-- Howlongtocountdownbeforeobjectsbecomecaptureable -->
-	<Space_Capture_Allowed_Countdown_Seconds>30.0</Space_Capture_Allowed_Countdown_Seconds>
-	<Land_Capture_Allowed_Countdown_Seconds>30.0</Land_Capture_Allowed_Countdown_Seconds>
+	<!-- How long to count down before objects become captureable. -->
+	<Space_Capture_Allowed_Countdown_Seconds>30.00</Space_Capture_Allowed_Countdown_Seconds>
+	<Land_Capture_Allowed_Countdown_Seconds>30.00</Land_Capture_Allowed_Countdown_Seconds>
 
 
-	<GripperCombatGridSnapDistance>35.0</GripperCombatGridSnapDistance>
+	<GripperCombatGridSnapDistance>35.00</GripperCombatGridSnapDistance>
 
 	<PlayModeSwitchMovies>Yes</PlayModeSwitchMovies>
 	<MaxInfluenceTransitionAlignmentBonus>0.50</MaxInfluenceTransitionAlignmentBonus>
@@ -226,16 +226,16 @@
 	<Galactic_Zoom_In_Station_Offset>-2.51, -9.11, 14.93</Galactic_Zoom_In_Station_Offset>
 	<Galactic_Zoom_In_Station_Rotation>0.04</Galactic_Zoom_In_Station_Rotation>
 
-	<Starting_Galactic_Camera_Position>0.0, 0.0, 0.0</Starting_Galactic_Camera_Position>
-	<Camera_Stop_Left>-50.0</Camera_Stop_Left>
-	<Camera_Stop_Right>50.0</Camera_Stop_Right>
-	<Camera_Z_Position>-80.0</Camera_Z_Position>
+	<Starting_Galactic_Camera_Position>0.00, 0.00, 0.00</Starting_Galactic_Camera_Position>
+	<Camera_Stop_Left>-50.00</Camera_Stop_Left>
+	<Camera_Stop_Right>50.00</Camera_Stop_Right>
+	<Camera_Z_Position>-80.00</Camera_Z_Position>
 
 	<!-- Display of game monetary credits balance: -->
 	<Credits_Display_Font_Name>Arial</Credits_Display_Font_Name>
 	<Credits_Display_Font_Size>8</Credits_Display_Font_Size>
 
-	<!-- Randomstorygeneration -->
+	<!-- Random story generation: -->
 	<Random_Story_Triggers>STORY_ENTER, STORY_LAND_ON, STORY_CONQUER, STORY_CONSTRUCT, STORY_CONSTRUCT_LEVEL, STORY_DESTROY, STORY_DESTROY_BASE, STORY_DEPLOY, STORY_MOVE, STORY_ACCUMULATE, STORY_DEFEAT_HERO, STORY_WIN_BATTLES</Random_Story_Triggers>
 	<Random_Story_Max_Triggers>3</Random_Story_Max_Triggers>
 	<Random_Story_Rebel_Construction>Corellian_Corvette</Random_Story_Rebel_Construction>
@@ -254,9 +254,9 @@
 	<Land_Tactical_Camera_Locked>True</Land_Tactical_Camera_Locked>	<!-- True for default, can be False for demo purposes. -->
 
 	<!-- Shields and Power Recharge -->
-	<ShieldRechargeIntervalInSecs>3.0</ShieldRechargeIntervalInSecs>
-	<EnergyRechargeIntervalInSecs>5.0</EnergyRechargeIntervalInSecs>
-	<EnergyToShieldExchangeRate>5.0</EnergyToShieldExchangeRate>
+	<ShieldRechargeIntervalInSecs>3.00</ShieldRechargeIntervalInSecs>
+	<EnergyRechargeIntervalInSecs>5.00</EnergyRechargeIntervalInSecs>
+	<EnergyToShieldExchangeRate>5.00</EnergyToShieldExchangeRate>
 
 	
 	<!-- HardpointFriendly and EmemyReticleTextures by HardpointType: -->
@@ -479,7 +479,7 @@
 	<Terrain_Resurface_Tolerance>.03</Terrain_Resurface_Tolerance>
 
 	<Max_Ground_Forces_On_Planet>10</Max_Ground_Forces_On_Planet>
-	<!-- UNUSED - unit cap is now per-faction in Factions.xml and ExpansionFactions.xml. -->
+	<!-- UNUSED - Unit cap is now per-faction in Factions and ExpansionFactions.xml. -->
 	<!-- <Space_Tactical_Unit_Cap>40</Space_Tactical_Unit_Cap> -->
 	<Allow_Reinforcement_Percentage_Normalized>0.00</Allow_Reinforcement_Percentage_Normalized>
 	<Default_Hero_Respawn_Time>360.00</Default_Hero_Respawn_Time>
@@ -501,7 +501,7 @@
 	
 	<Water_Render_Target_Resolution>512</Water_Render_Target_Resolution>
 	<Water_Clip_Plane_Offset>0.00</Water_Clip_Plane_Offset>
-	
+
 	<Occlusion_Silhouettes_Enabled>True</Occlusion_Silhouettes_Enabled>
 	<Laser_Beam_Z_Scale_Factor>8.00</Laser_Beam_Z_Scale_Factor>
 	<Laser_Kite_Z_Scale_Factor>1.20</Laser_Kite_Z_Scale_Factor>
@@ -509,8 +509,8 @@
 
 	<AI_SpaceEvaluatorRegionSize>2000.00</AI_SpaceEvaluatorRegionSize>
 	<AI_LandEvaluatorRegionSize>2000.00</AI_LandEvaluatorRegionSize>
-	
-	<AI_SpaceThreatDistanceFactor>0.05</AI_SpaceThreatDistanceFactor>
+
+	<AI_SpaceThreatDistanceFactor>0.50</AI_SpaceThreatDistanceFactor>
 	<AI_LandThreatDistanceFactor>0.50</AI_LandThreatDistanceFactor>
 	<AI_SpaceThreatTurnRateFactor>4.00</AI_SpaceThreatTurnRateFactor>
 	<AI_LandThreatTurnRateFactor>10.00</AI_LandThreatTurnRateFactor>
@@ -527,7 +527,7 @@
 	<AI_SpaceThreatDecayStep>0.05</AI_SpaceThreatDecayStep>
 
 	<AI_BuildTaskReservationSeconds>15.00</AI_BuildTaskReservationSeconds>
-	
+
 	<MinimumDragSelectDistance>100.00</MinimumDragSelectDistance>
 	<MinimumDragDistance>4.00</MinimumDragDistance>
 
@@ -541,7 +541,7 @@
 	<GUI_Planet_Flash_Level>10.00</GUI_Planet_Flash_Level>
 	<GUI_Planet_Fade_Duration>0.50</GUI_Planet_Fade_Duration>
 
-	<CB_Flash_Duration>1.0f</CB_Flash_Duration>
+	<CB_Flash_Duration>1.00</CB_Flash_Duration>
 	<CB_Flash_Count>4</CB_Flash_Count>
 
 	<Good_Side_Name>Rebel</Good_Side_Name>
@@ -583,7 +583,7 @@
 	<!-- Note: There could be mutliple timers simultaneously in a vertical list! -->
 	<GUI_Tactical_Countdown_Timers_Screen_X>0.005</GUI_Tactical_Countdown_Timers_Screen_X>
 	<GUI_Tactical_Countdown_Timers_Screen_Y>0.10</GUI_Tactical_Countdown_Timers_Screen_Y>
-	<GUI_Tactical_Countdown_Timers_Screen_Spacing>0.050</GUI_Tactical_Countdown_Timers_Screen_Spacing>
+	<GUI_Tactical_Countdown_Timers_Screen_Spacing>0.05</GUI_Tactical_Countdown_Timers_Screen_Spacing>
 
 	<GUI_Strategic_Countdown_Timers_Screen_X>0.005</GUI_Strategic_Countdown_Timers_Screen_X>
 	<GUI_Strategic_Countdown_Timers_Screen_Y>0.02</GUI_Strategic_Countdown_Timers_Screen_Y>
@@ -604,7 +604,7 @@
 
 	<!-- Pathfinding and Movement -->
 	<SpacePathfindMaxExpansions>3500</SpacePathfindMaxExpansions>
-	<CurrentPathCostCoefficientSpace>.66</CurrentPathCostCoefficientSpace>	
+	<CurrentPathCostCoefficientSpace>.66</CurrentPathCostCoefficientSpace>
 
 	<SpacePathfindFrameDelayDelta>2</SpacePathfindFrameDelayDelta>
 	
@@ -615,7 +615,7 @@
 	<SpacePathingTries>6</SpacePathingTries>
 
 	<SpaceStaticObstacleAvoidanceBonusDistance>0</SpaceStaticObstacleAvoidanceBonusDistance>		
-		
+
 	<MinObstacleCostSpace>15.00</MinObstacleCostSpace>
 	<MaxObstacleCostSpace>15.00</MaxObstacleCostSpace>
 	<ObstacleAreaOverlapForMaxSpace>1.00</ObstacleAreaOverlapForMaxSpace>
@@ -640,7 +640,7 @@
 	<ShouldDisplayPredictionPaths>False</ShouldDisplayPredictionPaths>
 	<ShouldDisplaySyncedPaths>False</ShouldDisplaySyncedPaths>
 	<SyncedFrameInterval>75.00</SyncedFrameInterval>
-	<LandPredictionTimeInterval>2.00</LandPredictionTimeInterval>	
+	<LandPredictionTimeInterval>2.00</LandPredictionTimeInterval>
 	<RepushDistance>6.00</RepushDistance>
 	<MinLandPredictionDistance>60.00</MinLandPredictionDistance>
 	<ShouldSkipLandFormup>True</ShouldSkipLandFormup>
@@ -651,7 +651,7 @@
 	<DynamicObstacleOverlapPenalty>15.00</DynamicObstacleOverlapPenalty>
 	<DynamicAvoidanceRectangleBound>3</DynamicAvoidanceRectangleBound>
 	<ShouldDisplayPotentialPath>False</ShouldDisplayPotentialPath>
-	
+
 	<TurnInPlaceSlowdownCorvette>2.00</TurnInPlaceSlowdownCorvette>
 	<TurnInPlaceSlowdownFrigate>3.00</TurnInPlaceSlowdownFrigate>
 	<TurnInPlaceSlowdownCapital>4.00</TurnInPlaceSlowdownCapital>
@@ -664,12 +664,12 @@
 	<MovingVsMovingLookAheadTime>1.50</MovingVsMovingLookAheadTime>
 	<LandTemporaryDestinationProximity>20.00</LandTemporaryDestinationProximity>
 	<LandDestinationProximity>60.00</LandDestinationProximity>
-	<BetweenFormationSpacing>5.00</BetweenFormationSpacing>	
-	
+	<BetweenFormationSpacing>5.00</BetweenFormationSpacing>
+
 	<Destination_Collision_Query_Extension>60</Destination_Collision_Query_Extension>
-	
+
 	<FramesPerPositionApproximationRebuild>8</FramesPerPositionApproximationRebuild>
-	<FramesPerCollisionCheck>4</FramesPerCollisionCheck> <!-- Each object only checks for path find collisions every 'n' frames. -->	
+	<FramesPerCollisionCheck>4</FramesPerCollisionCheck> <!-- Each object only checks for path find collisions every 'n' frames. -->
 	<MovementReevaluationFrameCount>10</MovementReevaluationFrameCount>
 	
 	<DynamicLandComplexityQuota>100</DynamicLandComplexityQuota>
@@ -677,13 +677,13 @@
 	
 	<FinalFormationFacingMinimumAngle>10.00</FinalFormationFacingMinimumAngle>
 	<FinalFormationFacingDeltaCoefficient>.50</FinalFormationFacingDeltaCoefficient>
-	
+
 	<WalkAnimationCutoff>.60</WalkAnimationCutoff>
-	
+
 	<DoubleClickMoveMaxSpeedRatio>1.25</DoubleClickMoveMaxSpeedRatio>
-	
+
 	<Fleeing_Infantry_Speed_Bonus>2</Fleeing_Infantry_Speed_Bonus>
-	
+
 	<IdleWalkBlendTime>.50</IdleWalkBlendTime>
 	<CrouchIdleWalkBlendTime>.50</CrouchIdleWalkBlendTime>
 	<MoveBlendTime>.50</MoveBlendTime>
@@ -727,12 +727,12 @@
 	<Battle_Pending_Message_Font>EmpireAtWar-Bold</Battle_Pending_Message_Font>
 	<Battle_Pending_Message_Font_Size>14</Battle_Pending_Message_Font_Size>
 	<Battle_Pending_Message_Color>255, 32, 32, 240</Battle_Pending_Message_Color>
-	<Battle_Pending_Message_Pos_X>-1.0</Battle_Pending_Message_Pos_X> <!-- -1 means center, 0.0+ means use position. -->
+	<Battle_Pending_Message_Pos_X>-1.00</Battle_Pending_Message_Pos_X> <!-- -1 means center, 0.0+ means use position. -->
 	<Battle_Pending_Message_Pos_Y>0.0001</Battle_Pending_Message_Pos_Y>
 	
 	
 	<!-- Control Point Domination Victory Condition (Multiplayer Tactical): How long do you need to hold all control points before you win? -->
-	<Control_Point_Domination_Victory_Time_In_Secs>30.0</Control_Point_Domination_Victory_Time_In_Secs>
+	<Control_Point_Domination_Victory_Time_In_Secs>30.00</Control_Point_Domination_Victory_Time_In_Secs>
 	
 	<!-- Controls the height of each of the letter box bands done on cinematics as a percentage of the screen. -->
 	<Camera_FX_Manager_Letterbox_Height>.085</Camera_FX_Manager_Letterbox_Height>
@@ -774,28 +774,28 @@
 	<Display_Bink_Movie_Frames>False</Display_Bink_Movie_Frames>
 
 	<!-- Global speed modifier to everything with engines, and when they are destroyed. -->
-	<Engines_Disabled_Speed_Modifier>0.4</Engines_Disabled_Speed_Modifier>
+	<Engines_Disabled_Speed_Modifier>0.40</Engines_Disabled_Speed_Modifier>
 
 	<Crouch_Move_Fire_Angle_Cutoff>20</Crouch_Move_Fire_Angle_Cutoff>
-	
+
 	<Max_Move_Frame_Delay>6</Max_Move_Frame_Delay>
-	
-	<Spread_Out_Spacing_Coefficient>1.8</Spread_Out_Spacing_Coefficient>
 
-	<Max_Formation_Area>14.0</Max_Formation_Area>	
-	
-	<Short_Range_Attack_Formation_Coefficient>1.6</Short_Range_Attack_Formation_Coefficient>
+	<Spread_Out_Spacing_Coefficient>1.80</Spread_Out_Spacing_Coefficient>
 
-	<Solo_Attack_Range>60.0</Solo_Attack_Range>
-
-	<Base_Land_Targeting_Arc_Angle_Coefficient>.2</Base_Land_Targeting_Arc_Angle_Coefficient>	
+	<Max_Formation_Area>14.00</Max_Formation_Area>	
 	
+	<Short_Range_Attack_Formation_Coefficient>1.60</Short_Range_Attack_Formation_Coefficient>
+
+	<Solo_Attack_Range>60.00</Solo_Attack_Range>
+
+	<Base_Land_Targeting_Arc_Angle_Coefficient>.20</Base_Land_Targeting_Arc_Angle_Coefficient>	
+
 	<Rotate_Formation_Facing_Moves>True</Rotate_Formation_Facing_Moves>
-	
+
 	<ShouldUseSpaceIdleMovement>False</ShouldUseSpaceIdleMovement>
-	<SpaceIdleMovementSpeed>0.0</SpaceIdleMovementSpeed>
-	<SpaceIdlePathCullCoefficient>3.0</SpaceIdlePathCullCoefficient>
-	<IdleMovementFrames>30.0</IdleMovementFrames>
+	<SpaceIdleMovementSpeed>0.00</SpaceIdleMovementSpeed>
+	<SpaceIdlePathCullCoefficient>3.00</SpaceIdlePathCullCoefficient>
+	<IdleMovementFrames>30.00</IdleMovementFrames>
 
 	<!-- Colors to use for the reinforcements terrain overlay (r, g, b, a) -->
 	<ReinforcementOverlayGoodColor>0, 128, 0, 128</ReinforcementOverlayGoodColor>
@@ -813,7 +813,6 @@
 	<!-- The difference, if positive, has the following effect: Difference 0 = 100%, difference 1 = 90%, difference 2 = 75%, -->
 	<!-- difference 3 = 55%, difference 4 = 45%. Thus a level 1 base builds all objects at 100% listed speed. -->
 	<!-- A level 5 base builds tech level 1 items in 45% of the time it would take a level 1 base. -->
-
 	<Production_Speed_Mod_Base_Vs_Tech_0>1.00</Production_Speed_Mod_Base_Vs_Tech_0> <!-- 100% if difference (base level 1 - 5 minus tech level 0-5-1)is 0 or less. -->
 	<Production_Speed_Mod_Base_Vs_Tech_1>0.90</Production_Speed_Mod_Base_Vs_Tech_1> <!-- 90% if difference is 1 -->
 	<Production_Speed_Mod_Base_Vs_Tech_2>0.75</Production_Speed_Mod_Base_Vs_Tech_2> <!-- 75% if difference is 2 -->
@@ -828,7 +827,7 @@
 	<Space_Collidable_Grid_Cull_Size>500.00</Space_Collidable_Grid_Cull_Size>
 	<Space_Large_Ship_Grid_Cull_Size>500.00</Space_Large_Ship_Grid_Cull_Size>
 	<Land_Collidable_Grid_Cull_Size>64.00</Land_Collidable_Grid_Cull_Size>
-	
+
 	<!-- Settings to define a "Raid Force" (i.e. a land combat force that can bypass space combat). -->
 	<Raid_Force_Required_Faction>Rebel</Raid_Force_Required_Faction>
 	<Raid_Force_Limited_Object_Category_Mask>Infantry | Vehicle | Air</Raid_Force_Limited_Object_Category_Mask>
@@ -840,7 +839,7 @@
 	<Health_Low_Percent_Threshold>0.33</Health_Low_Percent_Threshold>
 	<Health_Critical_Percent_Threshold>0.10</Health_Critical_Percent_Threshold>
 
-	<Under_Construction_Damage_Multiplier>2.0</Under_Construction_Damage_Multiplier>
+	<Under_Construction_Damage_Multiplier>2.00</Under_Construction_Damage_Multiplier>
 
 	<!--  -->
 	<!-- ARMOR AND DAMAGE SECTION -->
@@ -3637,10 +3636,9 @@
 	<Damage_To_Armor_Mod>Damage_MDU_Grenade, Armor_Vornskr, 1.5</Damage_To_Armor_Mod>
 	<Damage_To_Armor_Mod>Damage_MDU_Grenade, Armor_Destroyer_Droid, 1.0</Damage_To_Armor_Mod>
 	<Damage_To_Armor_Mod>Damage_MDU_Grenade, Armor_Bunker, 0.25</Damage_To_Armor_Mod>
-
-	<!--  -->
-	<!-- END ARMOR AND DAMAGE SECTION -->
-	<!--  -->
+	<!--									-->
+	<!--	END ARMOR AND DAMAGE SECTION	-->
+	<!-- 									-->
 
 
 	<!-- Demo_Attract_Maps>Demo_Attract_Kamino.ted, Demo_Attract_Korriban.ted</Demo_Attract_Maps -->
@@ -3649,15 +3647,15 @@
 	<!-- Demo_Attract_Map_Cycle_Delay_Seconds>1000000, 1000, 1000</Demo_Attract_Map_Cycle_Delay_Seconds -->
 	<Demo_Attract_Map_Cycle_Delay_Seconds>1200</Demo_Attract_Map_Cycle_Delay_Seconds>
 
-	
+
 	<Battle_Pending_Timeout_Seconds>15</Battle_Pending_Timeout_Seconds>
-	
+
 	<Message_Of_The_Day_URL>http://216.120.238.87/EAWMOTD</Message_Of_The_Day_URL>
-	
+
 	<Skirmish_Buy_Credits>2000</Skirmish_Buy_Credits>
 	<Skirmish_Reinforcement_Delay_Frames>90</Skirmish_Reinforcement_Delay_Frames>
 	<Distribute_Credit_Quantum>1000</Distribute_Credit_Quantum>
-	
+
 	<Diminishing_Firepower>0, 0.60, 0.30, 0.70, 0.90, 0.90, 1, 1, 2, 1</Diminishing_Firepower> <!-- Mild effect -->
 	<!-- <Diminishing_Firepower>0, 1, 1, 1</Diminishing_Firepower> --> <!-- Turned Off by CR -->
 
@@ -3667,15 +3665,15 @@
 	<Depleted_Shield_Disable_Time>5.00</Depleted_Shield_Disable_Time>
 	<Depleted_Shield_Damage_Increment>0.00</Depleted_Shield_Damage_Increment>
 	<Depleted_Shield_Regen_Cap>0.25</Depleted_Shield_Regen_Cap>
-	
+
 	<!-- When ships go into nebula, they are tinted/faded using the following settings: -->
 	<Nebula_Effect_Color>255, 255, 255, 64</Nebula_Effect_Color>
-	
+
 	<Base_Shield_Speed_Modifier>0.50</Base_Shield_Speed_Modifier>
 	<Base_Shield_Vulnerability_Modifier>2.00</Base_Shield_Vulnerability_Modifier>
-	
+
 	<Hardpoint_Recharge_Cutoff_For_Opportunity_Fire>3.00</Hardpoint_Recharge_Cutoff_For_Opportunity_Fire>
-	
+
 	<Battle_Load_Planet_Viewport>0.00, 1.00, 1.00, 0.00</Battle_Load_Planet_Viewport>
 	<Battle_Load_Planet_Direction>0, 0.75, 0.55</Battle_Load_Planet_Direction>
 	<Battle_Load_Planet_Ambient>0.10, 0.10, 0.13</Battle_Load_Planet_Ambient>
@@ -3686,7 +3684,7 @@
 	<Saliency_Health>1.00</Saliency_Health>
 	<Saliency_Targets>1.50</Saliency_Targets>
 	<Saliency_Speed>1.00</Saliency_Speed>
-	
+
 	<Planet_Reveal_Delay_Time>0.50</Planet_Reveal_Delay_Time>
 	<Base_Shield_Delay_Time>10.00</Base_Shield_Delay_Time>
 
@@ -3713,12 +3711,12 @@
 	<!-- Multiplayer Data Begin -->
 	<Min_Skirmish_Credits>2000</Min_Skirmish_Credits>
 	<Max_Skirmish_Credits>8000</Max_Skirmish_Credits>
-	
+
 	<!-- Gameplay option defaults -->
 	<MP_Default_Credits>6000</MP_Default_Credits>
 	<MP_Default_Start_Tech_Level>1</MP_Default_Start_Tech_Level>
 	<MP_Default_Max_Tech_Level>5</MP_Default_Max_Tech_Level>
-	
+
 	<!-- Auto_Resolve Values: 0 == Always, 1 == Never, 2 == Ask, 3 == Overwhelming odds -->
 	<MP_Default_Allow_Auto_Resolve>2</MP_Default_Allow_Auto_Resolve>
 	<MP_Default_Game_Timer>0</MP_Default_Game_Timer>
@@ -3732,19 +3730,19 @@
 	<MP_Default_Free_Starting_Units>Yes</MP_Default_Free_Starting_Units>
 	<MP_Default_Land_Tactical_Win_Condition>SKIRMISH_ALL_ENEMY_BASE_COMPONENTS_DESTROYED</MP_Default_Land_Tactical_Win_Condition>
 	<MP_Default_Space_Tactical_Win_Condition>SKIRMISH_SPACE_ENEMY_STARBASE_DESTROYED</MP_Default_Space_Tactical_Win_Condition>
-	
+
 	<!-- Multiplayer Data End -->
 
 	<!-- This entry can be used to artificially make build times faster -->
 	<!-- in tactical mode when debugging. -->
-	<Tactical_Build_Time_Multiplier>1.0</Tactical_Build_Time_Multiplier>
-	
+	<Tactical_Build_Time_Multiplier>1.00</Tactical_Build_Time_Multiplier>
+
 	<Health_Bar_Scale>1500.00</Health_Bar_Scale>
 	<Land_Health_Bar_Scale>500.00</Land_Health_Bar_Scale>
 	<Min_Health_Bar_Scale>1.00</Min_Health_Bar_Scale>
-	
+
 	<Team_Healthbar_Offset>20</Team_Healthbar_Offset>
-	
+
 	<!-- Common list of object model bone names to look for when trying to attach visual status particles, like stun, heal, corrupted, invulnerable, etc. -->
 	<Object_Visual_Status_Particle_Attach_Bone_Names>B_HEAD, Turret_00, B_Turret_00, B_Turret, B_Turret_Base, ROOT</Object_Visual_Status_Particle_Attach_Bone_Names>
 
@@ -3752,21 +3750,22 @@
 	<Tractor_Beam_Frames>10</Tractor_Beam_Frames>
 	<Tractor_Beam_Texture>tractor_beam00.tga</Tractor_Beam_Texture>
 	<Tractor_Beam_Color>0, 75, 0</Tractor_Beam_Color>
-	
+
 	<Energy_Beam_Width>30.00</Energy_Beam_Width>
 	<Energy_Beam_Frames>10</Energy_Beam_Frames>
 	<Energy_Beam_Texture>tractor_beam00.tga</Energy_Beam_Texture>
 	<Energy_Beam_Color>255, 75, 0</Energy_Beam_Color>
-	
-	<MP_Color_Blue>78, 150, 237</MP_Color_Blue>	
-	<MP_Color_Red>237, 78, 78</MP_Color_Red>		
-	<MP_Color_Green>119, 237, 78</MP_Color_Green>	
+
+	<MP_Color_Blue>78, 150, 237</MP_Color_Blue>
+	<MP_Color_Red>237, 78, 78</MP_Color_Red>
+	<MP_Color_Green>119, 237, 78</MP_Color_Green>
 	<MP_Color_Orange>237, 149, 78</MP_Color_Orange>
-	<MP_Color_Cyan>111, 217, 224</MP_Color_Cyan>	
+	<MP_Color_Cyan>111, 217, 224</MP_Color_Cyan>
 	<MP_Color_Purple>224, 111, 209</MP_Color_Purple>
 	<MP_Color_Yellow>224, 215, 111</MP_Color_Yellow>
-	<MP_Color_Gray>109, 75, 5</MP_Color_Gray>	
-	<MP_Color_Eight>65, 129, 42</MP_Color_Eight>	
+	<MP_Color_Gray>109, 75, 5</MP_Color_Gray>
+	<MP_Color_Eight>65, 129, 42</MP_Color_Eight>
+
 
 	<!-- Localized splash screen asset names -->
 	<Localized_Splash_Screen>ENGLISH, 	Splash.tga</Localized_Splash_Screen>
@@ -3782,8 +3781,7 @@
 	<Localized_Splash_Screen>THAI, 		Splash_uk.tga</Localized_Splash_Screen>
 	<Localized_UK_English_Splash_Screen>splash_uk.dds</Localized_UK_English_Splash_Screen>
 
-
-	<!-- Localizedmainmenubackgroundoverlayassetnames -->
+	<!-- Localized main menu background overlay asset names: -->
 	<Localized_Menu_Overlay>ENGLISH, 	Menuback_Overlay.tga</Localized_Menu_Overlay>
 	<Localized_Menu_Overlay>GERMAN, 	Menuback_Overlay_german_french.tga</Localized_Menu_Overlay>
 	<Localized_Menu_Overlay>FRENCH, 	Menuback_Overlay_german_french.tga</Localized_Menu_Overlay>
@@ -3796,7 +3794,8 @@
 	<Localized_Menu_Overlay>POLISH, 	Menuback_Overlay_german_french.tga</Localized_Menu_Overlay>
 	<Localized_Menu_Overlay>THAI, 		Menuback_Overlay_german_french.tga</Localized_Menu_Overlay>
 
-	<!-- Preferredchoiceofpathfinderforinvading.Non-herounitsarealwayspreferred -->
+
+	<!-- Preferred choice of pathfinder for invading. Non-hero units are always preferred! -->
 	<Preferred_Pathfinder_Types>
 		Imperial_Stormtrooper_Squad,
 		Imperial_Light_Scout_Squad,
@@ -3821,11 +3820,13 @@
 		MZ8_Pulse_Cannon_Tank_Company
 	</Preferred_Pathfinder_Types>
 
+
 	<!-- Game credits -->
 	<Credits_Spacing>0.04</Credits_Spacing>
 	<Credits_Scroll_Rate>-0.05</Credits_Scroll_Rate>
-	<Credits_Font>ArialMedium</Credits_Font>
-	<!-- 12.16.2005 Blue text colors per-LucasArts -->	
+	<Credits_Font>Arial Medium</Credits_Font>
+
+	<!-- 12.16.2005 Blue text colors per-LucasArts: -->
 	<Credits_Header_Top_Color>0, 0.72, 0.80</Credits_Header_Top_Color>
 	<Credits_Header_Bottom_Color>0, 0.72, 0.80</Credits_Header_Bottom_Color>
 	<Credits_Top_Color>0, 0.72, 0.80</Credits_Top_Color>
@@ -3844,24 +3845,24 @@
 	<Credits_Logo_3_Width>0.20</Credits_Logo_3_Width>
 	<Credits_Logo_3_Height>0.20</Credits_Logo_3_Height>
 	<Credits_Logo_3_Y_Offset>0.06</Credits_Logo_3_Y_Offset>
-	
-	
+
+
 	<!-- Files for custom ship names -->
 	<ShipNameTextFiles>
-		Calamari_Cruiser, 					Data\Calamari_Cruiser.txt, 
-		Generic_Star_Destroyer, 			Data\Star_Destroyer.txt, 
-		Star_Destroyer, 					Data\Star_Destroyer.txt, 
-		Star_Destroyer_Tractor_Fighters,	Data\Star_Destroyer.txt, 
-		Corellian_Corvette, 				Data\Corellian_Corvette.txt, 
-		Corellian_Gunboat, 					Data\Corellian_Gunboat.txt, 
-		Broadside_Class_Cruiser, 			Data\Broadside_Class_Cruiser.txt, 
-		Marauder_Missile_Cruiser, 			Data\Marauder_Missile_Cruiser.txt, 
-		Nebulon_B_Frigate, 					Data\Nebulon_B_Frigate.txt, 
-		Alliance_Assault_Frigate, 			Data\Alliance_Assault_Frigate.txt, 
-		Victory_Destroyer_No_Fighters, 		Data\Victory_Destroyer.txt, 
-		Victory_Destroyer, 					Data\Victory_Destroyer.txt, 
-		Acclamator_Assault_Ship, 			Data\Acclamator_Assault_Ship.txt, 
-		Interdictor_Cruiser, 				Data\Interdictor_Cruiser.txt, 
+		Calamari_Cruiser, 					Data\Calamari_Cruiser.txt,
+		Generic_Star_Destroyer, 			Data\Star_Destroyer.txt,
+		Star_Destroyer, 					Data\Star_Destroyer.txt,
+		Star_Destroyer_Tractor_Fighters,	Data\Star_Destroyer.txt,
+		Corellian_Corvette, 				Data\Corellian_Corvette.txt,
+		Corellian_Gunboat, 					Data\Corellian_Gunboat.txt,
+		Broadside_Class_Cruiser, 			Data\Broadside_Class_Cruiser.txt,
+		Marauder_Missile_Cruiser, 			Data\Marauder_Missile_Cruiser.txt,
+		Nebulon_B_Frigate, 					Data\Nebulon_B_Frigate.txt,
+		Alliance_Assault_Frigate, 			Data\Alliance_Assault_Frigate.txt,
+		Victory_Destroyer_No_Fighters, 		Data\Victory_Destroyer.txt,
+		Victory_Destroyer, 					Data\Victory_Destroyer.txt,
+		Acclamator_Assault_Ship, 			Data\Acclamator_Assault_Ship.txt,
+		Interdictor_Cruiser, 				Data\Interdictor_Cruiser.txt,
 		Tartan_Patrol_Cruiser,				Data\Tartan_Patrol_Cruiser.txt
 	</ShipNameTextFiles>
 
@@ -3902,7 +3903,7 @@
 		TEXT_PA_BASE_STEALTH_SPACE,
 		TEXT_PA_BLACK_MARKET_INFLUENCES,
 		TEXT_PA_COMBAT_ARMOR_GALACTIC,
-		TEXT_PA_ENHANCED_FIGHTER_SHIELDS 
+		TEXT_PA_ENHANCED_FIGHTER_SHIELDS,
 		TEXT_PA_ENHANCED_T4B_DAMAGE,
 		TEXT_PA_GALACTIC_PRODUCTION_BOOST,
 		TEXT_PA_HIGH_CREDIT_VALUE,
@@ -3959,7 +3960,7 @@
 	<Droid_Encyclopedia_Offset>24, -179</Droid_Encyclopedia_Offset>
 
 	<Indigenous_Spawn_Destruction_Reward>500</Indigenous_Spawn_Destruction_Reward>
-	
+
 	<Advisor_Hint_Interval>300</Advisor_Hint_Interval>
 	<Advisor_Hint_Duration>0.10</Advisor_Hint_Duration>
 

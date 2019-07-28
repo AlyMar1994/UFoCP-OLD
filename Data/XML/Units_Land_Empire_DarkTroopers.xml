@@ -337,8 +337,8 @@
 				<Type>SPRINT</Type>
 				<Expiration_Seconds>8.00</Expiration_Seconds>
 				<Recharge_Seconds>35.00</Recharge_Seconds>
-				<Mod_Multiplier>SPEED_MULTIPLIER,		1.50</Mod_Multiplier>
-				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.50</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		2.00</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75</Mod_Multiplier>
 				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Sprint_Dark_Trooper_1</SFXEvent_GUI_Unit_Ability_Activated>
 			</Unit_Ability>
 		</Unit_Abilities_Data>
@@ -425,8 +425,8 @@
 				<Type>SPRINT</Type>
 				<Expiration_Seconds>8.00</Expiration_Seconds>
 				<Recharge_Seconds>35.00</Recharge_Seconds>
-				<Mod_Multiplier>SPEED_MULTIPLIER,		1.50</Mod_Multiplier>
-				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.50</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		2.00</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75</Mod_Multiplier>
 				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Sprint_Dark_Trooper_1</SFXEvent_GUI_Unit_Ability_Activated>
 			</Unit_Ability>
 		</Unit_Abilities_Data>

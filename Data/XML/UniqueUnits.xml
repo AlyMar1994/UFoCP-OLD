@@ -1390,11 +1390,12 @@
 		<SFXEvent_Attack>Unit_Attack_Vader_Ship</SFXEvent_Attack>
 		<SFXEvent_Guard>Unit_Guard_Vader</SFXEvent_Guard>
 		<Death_SFXEvent_Start_Die>Unit_Defeat_Vader</Death_SFXEvent_Start_Die>
+
 		<SFXEvent_Ambient_Moving>Unit_Tie_Fighter_Fly_By</SFXEvent_Ambient_Moving>
 		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>5</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
 		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>10</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
-		
 		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_TIE_Fighter_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
 		<Death_Explosions>Medium_Explosion_Space_Empire</Death_Explosions>
 		<Spin_Away_On_Death>Yes</Spin_Away_On_Death>
 		<Spin_Away_On_Death_Chance>0.40</Spin_Away_On_Death_Chance>
@@ -1646,7 +1647,7 @@
 		<Encyclopedia_Vulnerable_To>Snowspeeder Plex_Soldier Underworld_Disruptor_Merc</Encyclopedia_Vulnerable_To>
 		<Land_Model_Name>EV_AT-AT.ALO</Land_Model_Name>
 		<Behavior>SELECTABLE</Behavior>
-		<LandBehavior>ABILITY_COUNTDOWN, DEPLOY_TROOPERS, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, TURRET, POWERED, REVEAL, HIDE_WHEN_FOGGED, SQUASH, AFFECTED_BY_SHIELD, STUNNABLE, DAMAGE_TRACKING</LandBehavior>
+		<LandBehavior>ABILITY_COUNTDOWN, DEPLOY_TROOPERS, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, TURRET, POWERED, REVEAL, HIDE_WHEN_FOGGED, SQUASH, AFFECTED_BY_SHIELD, STUNNABLE, DAMAGE_TRACKING, AMBIENT_SFX</LandBehavior>
 		<Is_Supercrusher>Yes</Is_Supercrusher>
 		<Property_Flags>IsSupercrusher</Property_Flags>
 		<Property_Flags>GoodInfantryCrusher</Property_Flags>

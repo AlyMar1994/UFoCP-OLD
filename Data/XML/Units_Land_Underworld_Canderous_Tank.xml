@@ -130,8 +130,8 @@
 
 		<Death_SFXEvent_Start_Die>Unit_Tank_Death_SFX</Death_SFXEvent_Start_Die>
 		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
-		<Overall_Length>40.00</Overall_Length> <!--For vehicle pitching up and down on terrain. -->
-		<Overall_Width>25.00</Overall_Width> <!--For vehicle rolling left and right on terrain (30 by geometry). -->
+		<Overall_Length>40.00</Overall_Length> <!-- For vehicle pitching up and down on terrain. -->
+		<Overall_Width>25.00</Overall_Width> <!-- For vehicle rolling left and right on terrain (30 by geometry). -->
 		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
 		<AI_Combat_Power>200</AI_Combat_Power>
 
@@ -222,7 +222,7 @@
 				<Max_Number_Of_Pulses>40</Max_Number_Of_Pulses>
 				<Particle_Effect>canderous_lure</Particle_Effect>
 	
-				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.25f</Mod_Multiplier> <!-- Invulnerable -->
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.25</Mod_Multiplier> <!-- "Invulnerable." -->
 			</Unit_Ability>
 		</Unit_Abilities_Data>
 	</GroundVehicle>
@@ -305,7 +305,7 @@
 				<Max_Number_Of_Pulses>40</Max_Number_Of_Pulses>
 				<Particle_Effect>Lure_Ability_Particle</Particle_Effect>
 	
-				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.25f</Mod_Multiplier> <!-- Invulnerable. -->
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.25</Mod_Multiplier> <!-- "Invulnerable." -->
 			</Unit_Ability>
 			
 			<!-- Secondary Ability. -->
@@ -441,7 +441,7 @@
 				<Max_Number_Of_Pulses>40</Max_Number_Of_Pulses>
 				<Particle_Effect>canderous_lure</Particle_Effect>
 
-				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.25f</Mod_Multiplier> <!-- Invulnerable. -->
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.25</Mod_Multiplier> <!-- "Invulnerable." -->
 			</Unit_Ability>
 		</Unit_Abilities_Data>
 	</GroundCompany>

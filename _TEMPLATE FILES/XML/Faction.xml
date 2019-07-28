@@ -59,13 +59,14 @@
 		<!-- Main Faction Colors & Color Transparencies (0-255) -->
 		<Color>Red#, Green#, Blue#, Transparency#</Color>
 		<Display_Font_Color>Red#, Green#, Blue#, Transparency#</Display_Font_Color> <!-- Should be same as <Color>! -->
-		<Big_Fleet_Color>Red#, Green#, Blue#, Transparency#</Big_Fleet_Color> <!-- Should be same as <Color>! -->
+		<Big_Fleet_Color>Red#, Green#, Blue#, Transparency#</Big_Fleet_Color> <!-- Should be same as <Color>, usually with Transparency at 150! -->
 		<No_Colorization_Color>Red#, Green#, Blue#, Transparency#</No_Colorization_Color>
 
 		<!-- Defines leader of faction. -->
-		<!-- For Galactic Conquests bent on killing a leader and/or taking over a planet. -->
+		<!-- For Galactic Conquests bent on killing a leader and/or taking over their home planet (base of operations). -->
+		<!-- Can be very effective for mods like Thrawn's Revenge, which have permadeath heroes! -->
 		<Faction_Leader>Unit_Name</Faction_Leader>
-		<Faction_Leader_Company>Unit_Team_Name</Faction_Leader_Company>
+		<Faction_Leader_Company>Unit_Name_Team</Faction_Leader_Company>
 		<Home_Planet>PlanetName</Home_Planet>
 
 		<Superweapon_Win_Movie>GC_Faction_Win_Superweapon</Superweapon_Win_Movie>

@@ -524,7 +524,6 @@
 	</MusicEvent>
 
 
-
 	<!-- Music event that plays along with the marketing splash screen for E3. -->
 <!--
 	<MusicEvent Name="Splash_E3_Music_Event">
@@ -535,7 +534,6 @@
 		<Loop>Yes</Loop>
 	</MusicEvent>
 -->
-
 
 
 <!--

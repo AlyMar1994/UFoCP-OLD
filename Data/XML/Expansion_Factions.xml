@@ -55,7 +55,8 @@
 		<No_Colorization_Color>231, 221, 67, 255</No_Colorization_Color>
 
 		<!-- Defines leader of faction. -->
-		<!-- For Galactic Conquests bent on killing a leader and/or taking over a planet. -->
+		<!-- For Galactic Conquests bent on killing a leader and/or taking over their home planet (base of operations). -->
+		<!-- Can be very effective for mods like Thrawn's Revenge, which have permadeath heroes! -->
 		<Faction_Leader>Tyber_Zann</Faction_Leader>
 		<Faction_Leader_Company>Tyber_Zann_Team</Faction_Leader_Company>
 		<!-- Other than Ryloth or Hypori (which is inconsistient), like the Rebels, -->
@@ -630,35 +631,35 @@
 		<SFXEvent_HUD_Reinforcement_Point_Enemy_Owned_05_Seconds>UHD_Enemy_Control_Point_5_Seconds</SFXEvent_HUD_Reinforcement_Point_Enemy_Owned_05_Seconds>
 		<SFXEvent_HUD_Reinforcement_Point_Contested>UHD_Reinforcement_Contested</SFXEvent_HUD_Reinforcement_Point_Contested>
 	
-		<SFXEvent_Tactical_Lose_Friendly_Control>Skirmish_Build_Pad, UHD_Build_Pad_Lost</SFXEvent_Tactical_Lose_Friendly_Control>		
-		<SFXEvent_Tactical_Gain_Friendly_Control>Skirmish_Build_Pad, UHD_Build_Pad_Captured</SFXEvent_Tactical_Gain_Friendly_Control>
-		<SFXEvent_Tactical_Lose_Friendly_Control>Secondary_Mining_Facility, UHD_Lost_Mining</SFXEvent_Tactical_Lose_Friendly_Control>
-		<SFXEvent_Tactical_Gain_Friendly_Control>Secondary_Mining_Facility, UHD_Capture_Mining</SFXEvent_Tactical_Gain_Friendly_Control>	
-		<SFXEvent_Tactical_Lose_Friendly_Control>Secondary_Heavy_Factory_R, UHD_Lost_Heavy_Vehicle</SFXEvent_Tactical_Lose_Friendly_Control>
-		<SFXEvent_Tactical_Gain_Friendly_Control>Secondary_Heavy_Factory_R, UHD_Capture_Heavy_Vehicle</SFXEvent_Tactical_Gain_Friendly_Control>
-		<SFXEvent_Tactical_Lose_Friendly_Control>Secondary_Heavy_Factory_E, UHD_Lost_Heavy_Vehicle</SFXEvent_Tactical_Lose_Friendly_Control>
-		<SFXEvent_Tactical_Gain_Friendly_Control>Secondary_Heavy_Factory_E, UHD_Capture_Heavy_Vehicle</SFXEvent_Tactical_Gain_Friendly_Control>
-		<SFXEvent_Tactical_Lose_Friendly_Control>Secondary_Abandoned_Sensor, UHD_Lost_Sensor</SFXEvent_Tactical_Lose_Friendly_Control>
-		<SFXEvent_Tactical_Gain_Friendly_Control>Secondary_Abandoned_Sensor, UHD_Capture_Sensor</SFXEvent_Tactical_Gain_Friendly_Control>
-		<SFXEvent_Tactical_Lose_Friendly_Control>Secondary_Abandoned_Turbolaser_Tower, UHD_Lost_Turbo</SFXEvent_Tactical_Lose_Friendly_Control>
-		<SFXEvent_Tactical_Gain_Friendly_Control>Secondary_Abandoned_Turbolaser_Tower, UHD_Capture_Turbo</SFXEvent_Tactical_Gain_Friendly_Control>
-		<SFXEvent_Tactical_Lose_Friendly_Control>Secondary_Mercenary_Outfitter, UHD_Lost_Mercenaries</SFXEvent_Tactical_Lose_Friendly_Control>
-		<SFXEvent_Tactical_Gain_Friendly_Control>Secondary_Mercenary_Outfitter, UHD_Capture_Mercenaries</SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Skirmish_Build_Pad,					UHD_Build_Pad_Lost</SFXEvent_Tactical_Lose_Friendly_Control>		
+		<SFXEvent_Tactical_Gain_Friendly_Control>Skirmish_Build_Pad,					UHD_Build_Pad_Captured</SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Secondary_Mining_Facility,				UHD_Lost_Mining</SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Secondary_Mining_Facility,				UHD_Capture_Mining</SFXEvent_Tactical_Gain_Friendly_Control>	
+		<SFXEvent_Tactical_Lose_Friendly_Control>Secondary_Heavy_Factory_R,				UHD_Lost_Heavy_Vehicle</SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Secondary_Heavy_Factory_R,				UHD_Capture_Heavy_Vehicle</SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Secondary_Heavy_Factory_E,				UHD_Lost_Heavy_Vehicle</SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Secondary_Heavy_Factory_E,				UHD_Capture_Heavy_Vehicle</SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Secondary_Abandoned_Sensor,			UHD_Lost_Sensor</SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Secondary_Abandoned_Sensor,			UHD_Capture_Sensor</SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Secondary_Abandoned_Turbolaser_Tower,	UHD_Lost_Turbo</SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Secondary_Abandoned_Turbolaser_Tower,	UHD_Capture_Turbo</SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Secondary_Mercenary_Outfitter,			UHD_Lost_Mercenaries</SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Secondary_Mercenary_Outfitter,			UHD_Capture_Mercenaries</SFXEvent_Tactical_Gain_Friendly_Control>
 
-		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point, UHD_Landing_Zone_Lost</SFXEvent_Tactical_Lose_Friendly_Control>
-		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point, UHD_Landing_Zone_Captured</SFXEvent_Tactical_Gain_Friendly_Control>	
-		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus1_Cap, UHD_Landing_Zone_Lost</SFXEvent_Tactical_Lose_Friendly_Control>
-		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus1_Cap, UHD_Landing_Zone_Captured</SFXEvent_Tactical_Gain_Friendly_Control>
-		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus2_Cap, UHD_Landing_Zone_Lost</SFXEvent_Tactical_Lose_Friendly_Control>
-		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus2_Cap, UHD_Landing_Zone_Captured</SFXEvent_Tactical_Gain_Friendly_Control>
-		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus3_Cap, UHD_Landing_Zone_Lost</SFXEvent_Tactical_Lose_Friendly_Control>
-		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus3_Cap, UHD_Landing_Zone_Captured</SFXEvent_Tactical_Gain_Friendly_Control>
-		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus4_Cap, UHD_Landing_Zone_Lost</SFXEvent_Tactical_Lose_Friendly_Control>
-		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus4_Cap, UHD_Landing_Zone_Captured</SFXEvent_Tactical_Gain_Friendly_Control>
-		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus5_Cap, UHD_Landing_Zone_Lost</SFXEvent_Tactical_Lose_Friendly_Control>
-		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus5_Cap, UHD_Landing_Zone_Captured</SFXEvent_Tactical_Gain_Friendly_Control>
-		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus10_Cap, UHD_Landing_Zone_Lost</SFXEvent_Tactical_Lose_Friendly_Control>
-		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus10_Cap, UHD_Landing_Zone_Captured</SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point,				UHD_Landing_Zone_Lost</SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point,				UHD_Landing_Zone_Captured</SFXEvent_Tactical_Gain_Friendly_Control>	
+		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus1_Cap,		UHD_Landing_Zone_Lost</SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus1_Cap,		UHD_Landing_Zone_Captured</SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus2_Cap,		UHD_Landing_Zone_Lost</SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus2_Cap,		UHD_Landing_Zone_Captured</SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus3_Cap,		UHD_Landing_Zone_Lost</SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus3_Cap,		UHD_Landing_Zone_Captured</SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus4_Cap,		UHD_Landing_Zone_Lost</SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus4_Cap,		UHD_Landing_Zone_Captured</SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus5_Cap,		UHD_Landing_Zone_Lost</SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus5_Cap,		UHD_Landing_Zone_Captured</SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus10_Cap,	UHD_Landing_Zone_Lost</SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus10_Cap,	UHD_Landing_Zone_Captured</SFXEvent_Tactical_Gain_Friendly_Control>
 
 		<!-- Faction-generic 3D World SFX - Physical SFX! -->
 		<SFXEvent_Tactical_Object_Building_Started>Structure_Buildable_Start</SFXEvent_Tactical_Object_Building_Started> <!-- An object is just starting construction in the world. -->
@@ -767,7 +768,7 @@
 			TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_23,
 			TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_24,
 			TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_25,
-			TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_26,				
+			TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_26,
 			TEXT_DROID_ADVISOR_UNDERWORLD_GALACTIC_27
 		</Galactic_Advisor_Hints>
 
