@@ -1,10 +1,9 @@
 <?xml version="1.0"?>
 <GameConstants>
-
 	<!-- Ordered list of hotkey fast load debug maps for keys CTRL+SHIFT+1 through CTRL+SHIFT+9 -->
 	<!-- Note: Map names cannot have SPACES in them due to XML parsing! Also, keep ordered CTRL+SHIFT+1 through CTRL+SHIFT+9 -->
 	<!-- CTRL+SHIFT+0 is a special key for loading the galactic campaign named in the Debug_Hot_Key_Load_Campaign tag. -->
-   <!-- Each map should be paired with a script name entry even if the entry is empty -->
+	<!-- Each map should be paired with a script name entry even if the entry is empty -->
 
 		<Debug_Hot_Key_Load_Map> .\\Data\\Art\\Maps\\!End_Cine_Test.ted </Debug_Hot_Key_Load_Map>
 		<Debug_Hot_Key_Load_Map_Script> Story_Plots_UM00_CIN_Test.xml </Debug_Hot_Key_Load_Map_Script>
@@ -554,7 +553,7 @@
 	<Corrupt_Side_Name>UNDERWORLD</Corrupt_Side_Name>
 	<Good_Side_Leader_Name>Mon_Mothma</Good_Side_Leader_Name>
 	<Evil_Side_Leader_Name>Emperor_Palpatine</Evil_Side_Leader_Name>
-	<Corrupt_Side_Leader_Name>Tyber_Zann Tyber_Zann_Team The_Peacebringer Tyber_Zann_Team_No_Peacebringer</Corrupt_Side_Leader_Name>
+	<Corrupt_Side_Leader_Name>Tyber_Zann</Corrupt_Side_Leader_Name>
 
 	<Ships_Per_Stack>5</Ships_Per_Stack>
 
@@ -570,18 +569,18 @@
    <Min_Accuracy_For_Icon> 0.4 </Min_Accuracy_For_Icon>
    <Min_Sight_Range_For_Icon> 0.5 </Min_Sight_Range_For_Icon>
 
-   <Left_Queue_Tint>128, 128, 255, 215</Left_Queue_Tint>
-   <Right_Queue_Tint>255, 128, 128, 215</Right_Queue_Tint>
+   <Left_Queue_Tint>128 128 255 215</Left_Queue_Tint>
+   <Right_Queue_Tint>255 128 128 215</Right_Queue_Tint>
 
 	<Icons_Per_Column>13</Icons_Per_Column>
 
-	<Hint_Text_Color>0, 193, 91</Hint_Text_Color>
-	<System_Text_Color>255, 24, 39</System_Text_Color>
-	<Task_Text_Color>109, 247, 255</Task_Text_Color>
-	<Speech_Text_Color>255, 255, 255</Speech_Text_Color>
+	<Hint_Text_Color>0 193 91</Hint_Text_Color>
+	<System_Text_Color>255 24 39</System_Text_Color>
+	<Task_Text_Color>109 247 255</Task_Text_Color>
+	<Speech_Text_Color>255 255 255</Speech_Text_Color>
 
-	<CB_Movie_Offset>0, 200</CB_Movie_Offset>
-	<CB_Movie_Color>255, 255, 255, 220</CB_Movie_Color>
+	<CB_Movie_Offset>0 200</CB_Movie_Offset>
+	<CB_Movie_Color>255 255 255 220</CB_Movie_Color>
 
 	<!-- Top left positions of vertical countdown timers list - like production, retreat, death star range, -->
 	<!-- Note: There could be mutliple timers simultaneously in a vertical list -->
@@ -772,7 +771,7 @@
 
 	<Auto_Rotate_For_Space_Targeting>False</Auto_Rotate_For_Space_Targeting>
 
-	<In_Game_Cinematics>True</In_Game_Cinematics>
+	<In_Game_Cinematics>True</In_Game_Cinematics>	
 	<Display_Bink_Movie_Frames>False</Display_Bink_Movie_Frames>  
 
 	<!-- Global speed modifier to everything with engines, and when they are destroyed -->
@@ -861,7 +860,7 @@
 		 -Oksana   --> 
 
 	<Damage_Types> 
-		Damage_Default, 
+		Damage_Default,
 		Damage_ATST,
 		Damage_ATAT,
 		Damage_Fighter,
@@ -917,7 +916,7 @@
 		Damage_Turbo_GRND,
 		Damage_Wall_Destruction,
 		Damage_Self_Destruct,
-    Damage_AWing,
+        Damage_AWing,
 		Damage_Force_Pike,
 		Damage_BugBite,
 		Damage_StarBase_Self_Destruct,
@@ -1032,11 +1031,9 @@
 		Armor_Destroyer_Droid,
 		Armor_Bunker,		<!-- Bunkers and pillboxes -->
 		Armor_SSD			<!-- Armor for the Executor and other SSDs-->
-				
 	</Armor_Types>
 
 	<!-- DAMAGE vs. ARMOR Matrix -->
-
 	<!-- Default Damage Type -->
 	<Damage_To_Armor_Mod> Damage_Default, Armor_Default, 1 </Damage_To_Armor_Mod>
 	<Damage_To_Armor_Mod> Damage_Default, Shield_Default, 1 </Damage_To_Armor_Mod>
@@ -3667,7 +3664,7 @@
 	
 	<Battle_Pending_Timeout_Seconds> 15 </Battle_Pending_Timeout_Seconds>
 	
-	<Message_Of_The_Day_URL>http://www.petroglyphgames.com/eawmotd/</Message_Of_The_Day_URL>
+	<Message_Of_The_Day_URL>http://216.120.238.87/EAWMOTD</Message_Of_The_Day_URL>
 	
 	<Skirmish_Buy_Credits>2000</Skirmish_Buy_Credits>
 	<Skirmish_Reinforcement_Delay_Frames>90</Skirmish_Reinforcement_Delay_Frames>
@@ -3721,7 +3718,7 @@
 	<Activated_System_Spy_Ability_Names> Probe_Droid_System_Spy </Activated_System_Spy_Ability_Names>
 	<Activated_Destroy_Planet_Ability_Names> Death_Star_Planet_Destruction </Activated_Destroy_Planet_Ability_Names>
 	<Activated_Corrupt_Planet_Ability_Names> Corruptor_Corrupt_Planet_1, Saboteur_Corruption </Activated_Corrupt_Planet_Ability_Names>
-	<Activated_Remove_Corruption_Ability_Names> Mothma_Remove_Corruption, Emperor_Remove_Corruption, ObiWan_Remove_Corruption, Vader_Remove_Corruption, Thrawn_Remove_Corruption, Veers_Remove_Corruption, Mara_Remove_Corruption, Luke_Remove_Corruption, Yoda_Remove_Corruption, Akbar_Remove_Corruption, Hansolo_Remove_Corruption, Kyle_Remove_Corruption </Activated_Remove_Corruption_Ability_Names>
+	<Activated_Remove_Corruption_Ability_Names>Mothma_Remove_Corruption, ObiWan_Remove_Corruption, Luke_Remove_Corruption, Yoda_Remove_Corruption, Akbar_Remove_Corruption, Hansolo_Remove_Corruption, Kyle_Remove_Corruption, Emperor_Remove_Corruption, Mara_Remove_Corruption, Vader_Remove_Corruption, Thrawn_Remove_Corruption, Veers_Remove_Corruption</Activated_Remove_Corruption_Ability_Names>
 	<Activated_Hack_Super_Weapon_Ability_Names> IG88_Hack_Death_Star </Activated_Hack_Super_Weapon_Ability_Names>
 	
 	<Use_Reinforcement_Points>True</Use_Reinforcement_Points>
@@ -3732,24 +3729,23 @@
 	
 	<!-- Gameplay option defaults -->
 		
-	<MP_Default_Credits> 6000 </MP_Default_Credits>
-	<MP_Default_Start_Tech_Level> 1	</MP_Default_Start_Tech_Level>
-	<MP_Default_Max_Tech_Level> 5 </MP_Default_Max_Tech_Level>
+	<MP_Default_Credits>6000</MP_Default_Credits>
+	<MP_Default_Start_Tech_Level>1</MP_Default_Start_Tech_Level>
+	<MP_Default_Max_Tech_Level>5</MP_Default_Max_Tech_Level>
 	
 	<!-- Auto_Resolve Values, 0 == Always, 1 == Never, 2 == Ask, 3 == Overwhelming odds -->
-	<MP_Default_Allow_Auto_Resolve>	2 </MP_Default_Allow_Auto_Resolve>
-	<MP_Default_Game_Timer>	0 </MP_Default_Game_Timer>
-	<MP_Default_Win_Condition> 0 </MP_Default_Win_Condition>
-	<MP_Default_Win_Condition_Int_Param> 0 </MP_Default_Win_Condition_Int_Param>
-	<MP_Default_Win_Condition_Float_Param> 0.0 </MP_Default_Win_Condition_Float_Param>
-	<MP_Default_Allow_Heroes> yes </MP_Default_Allow_Heroes>
-	<MP_Default_Allow_SuperWeapons>	yes </MP_Default_Allow_SuperWeapons>
-	<MP_Default_Pre_Built_Base> yes	</MP_Default_Pre_Built_Base>
-	<MP_Default_Allow_Random_Events> no	</MP_Default_Allow_Random_Events>
-	<MP_Default_Free_Starting_Units> yes </MP_Default_Free_Starting_Units>
+	<MP_Default_Allow_Auto_Resolve>2</MP_Default_Allow_Auto_Resolve>
+	<MP_Default_Game_Timer>0</MP_Default_Game_Timer>
+	<MP_Default_Win_Condition>0</MP_Default_Win_Condition>
+	<MP_Default_Win_Condition_Int_Param>0</MP_Default_Win_Condition_Int_Param>
+	<MP_Default_Win_Condition_Float_Param>0.0</MP_Default_Win_Condition_Float_Param>
+	<MP_Default_Allow_Heroes>yes</MP_Default_Allow_Heroes>
+	<MP_Default_Allow_SuperWeapons>yes</MP_Default_Allow_SuperWeapons>
+	<MP_Default_Pre_Built_Base>yes</MP_Default_Pre_Built_Base>
+	<MP_Default_Allow_Random_Events>no</MP_Default_Allow_Random_Events>
+	<MP_Default_Free_Starting_Units>yes</MP_Default_Free_Starting_Units>
 	<MP_Default_Land_Tactical_Win_Condition>SKIRMISH_ALL_ENEMY_BASE_COMPONENTS_DESTROYED</MP_Default_Land_Tactical_Win_Condition>
 	<MP_Default_Space_Tactical_Win_Condition>SKIRMISH_SPACE_ENEMY_STARBASE_DESTROYED</MP_Default_Space_Tactical_Win_Condition>
-	
 	<!-- Multiplayer Data End -->
 
 	<!-- This entry can be used to artificially make build times faster in tactical mode when debugging. -->
@@ -3790,7 +3786,7 @@
 	<Localized_Splash_Screen> FRENCH, 	Splash_french.TGA </Localized_Splash_Screen>
 	<Localized_Splash_Screen> SPANISH, 	Splash_spanish.TGA </Localized_Splash_Screen>
 	<Localized_Splash_Screen> ITALIAN, 	Splash_italian.TGA </Localized_Splash_Screen>
-	<Localized_Splash_Screen> JAPANESE, Splash_uk.TGA </Localized_Splash_Screen>
+	<Localized_Splash_Screen> JAPANESE, 	Splash_uk.TGA </Localized_Splash_Screen>
 	<Localized_Splash_Screen> KOREAN, 	Splash_uk.TGA </Localized_Splash_Screen>
 	<Localized_Splash_Screen> CHINESE, 	Splash_uk.TGA </Localized_Splash_Screen>
 	<Localized_Splash_Screen> POLISH, 	Splash_polish.TGA </Localized_Splash_Screen>
@@ -3903,13 +3899,13 @@
         i_pa_spy_network.tga,
         i_pa_stamina_boost.tga,
         i_pa_tactical_auto_damage.tga,
-        i_pa_tactical_heal_Infantry.tga,
-	i_pa_tactical_cloning.tga,
-	i_pa_tactical_secure.tga,
-	i_pa_tactical_research.tga,
-	i_pa_tactical_damage.tga,
-	i_pa_tactical_environment.tga,
-	i_pa_tactical_shields.tga,
+        i_pa_tactical_heal_Infantry.tga
+	i_pa_tactical_cloning.tga
+	i_pa_tactical_secure.tga
+	i_pa_tactical_research.tga
+	i_pa_tactical_damage.tga
+	i_pa_tactical_environment.tga
+	i_pa_tactical_shields.tga
 	i_pa_tactical_force.tga
     </Planet_Ability_Icon_Names>
     <Planet_Ability_Text_IDs>
@@ -3930,13 +3926,13 @@
         TEXT_PA_SPY_NETWORK,
         TEXT_PA_STAMINA_BOOST,
         TEXT_PA_TACTICAL_AUTO_DAMAGE,
-        TEXT_PA_TACTICAL_HEAL_INFANTRY,
-	TEXT_PA_CLONING_VATS,
-	TEXT_PA_SECURE_AREA,
-	TEXT_PA_RESEARCH_ADVANCES,
-	TEXT_PA_DAMAGE_BONUS,
-	TEXT_PA_ENVIRONMENTAL_TRAINING,
-	TEXT_PA_ADVANCED_SHIELDS,
+        TEXT_PA_TACTICAL_HEAL_INFANTRY
+	TEXT_PA_CLONING_VATS
+	TEXT_PA_SECURE_AREA
+	TEXT_PA_RESEARCH_ADVANCES
+	TEXT_PA_DAMAGE_BONUS
+	TEXT_PA_ENVIRONMENTAL_TRAINING
+	TEXT_PA_ADVANCED_SHIELDS
 	TEXT_PA_FORCE_NEGATION
      </Planet_Ability_Text_IDs>
     <Planet_Ability_RGBs>
@@ -3966,10 +3962,10 @@
         0, 255, 100,
         0, 255, 100
     </Planet_Ability_RGBs>
-    <Droid_Date_Color>255, 0, 0</Droid_Date_Color>
-    <Droid_Text_Color>255, 255, 255</Droid_Text_Color>
-    <Droid_Seperator_Color>128, 128, 128</Droid_Seperator_Color>
-    <Droid_Encyclopedia_Offset>24, -179</Droid_Encyclopedia_Offset>
+    <Droid_Date_Color>255 0 0</Droid_Date_Color>
+    <Droid_Text_Color>255 255 255</Droid_Text_Color>
+    <Droid_Seperator_Color>128 128 128</Droid_Seperator_Color>
+    <Droid_Encyclopedia_Offset>24 -179</Droid_Encyclopedia_Offset>
 
 	<Indigenous_Spawn_Destruction_Reward>500</Indigenous_Spawn_Destruction_Reward>
 	
@@ -4079,89 +4075,89 @@
 		7. Corruption_Bonded_Citizens
 	-->
    <Corruption_Choice_Icon_Name>
-		i_button_corruption_assassination_a.tga,
-		i_button_corruption_piracy_a.tga,
-		i_button_corruption_kidnapping_a.tga,
-		i_button_corruption_racketeering_a.tga,
-		i_button_corruption_drug_a.tga,
-		i_button_corruption_bribery_a.tga,
-		i_button_corruption_black_market_a.tga,
+		i_button_corruption_assassination_a.tga
+		i_button_corruption_piracy_a.tga
+		i_button_corruption_kidnapping_a.tga
+		i_button_corruption_racketeering_a.tga
+		i_button_corruption_drug_a.tga
+		i_button_corruption_bribery_a.tga
+		i_button_corruption_black_market_a.tga
 		i_button_corruption_slavery_a.tga
 	</Corruption_Choice_Icon_Name>
    <Corruption_Choice_Name>
-		TEXT_CORRUPTION_ASSASSINATION,
-		TEXT_CORRUPTION_PIRACY,
-		TEXT_CORRUPTION_KIDNAPPING,
-		TEXT_CORRUPTION_RACKETEERING,
-		TEXT_CORRUPTION_DRUG_DISTRIBUTION,
-		TEXT_CORRUPTION_BRIBERY,
-		TEXT_CORRUPTION_BLACK_MARKET,
+		TEXT_CORRUPTION_ASSASSINATION
+		TEXT_CORRUPTION_PIRACY
+		TEXT_CORRUPTION_KIDNAPPING
+		TEXT_CORRUPTION_RACKETEERING
+		TEXT_CORRUPTION_DRUG_DISTRIBUTION
+		TEXT_CORRUPTION_BRIBERY
+		TEXT_CORRUPTION_BLACK_MARKET
 		TEXT_CORRUPTION_SLAVERY
 	</Corruption_Choice_Name>
    <Corruption_Choice_Benefit>
-		TEXT_CORRUPTION_ASSASSINATION_BENEFIT,
-		TEXT_CORRUPTION_PIRACY_BENEFIT,
-		TEXT_CORRUPTION_KIDNAPPING_BENEFIT,
-		TEXT_CORRUPTION_RACKETEERING_BENEFIT,
-		TEXT_CORRUPTION_DRUG_DISTRIBUTION_BENEFIT,
-		TEXT_CORRUPTION_BRIBERY_BENEFIT,
-		TEXT_CORRUPTION_BLACK_MARKET_BENEFIT,
+		TEXT_CORRUPTION_ASSASSINATION_BENEFIT
+		TEXT_CORRUPTION_PIRACY_BENEFIT
+		TEXT_CORRUPTION_KIDNAPPING_BENEFIT
+		TEXT_CORRUPTION_RACKETEERING_BENEFIT
+		TEXT_CORRUPTION_DRUG_DISTRIBUTION_BENEFIT
+		TEXT_CORRUPTION_BRIBERY_BENEFIT
+		TEXT_CORRUPTION_BLACK_MARKET_BENEFIT
 		TEXT_CORRUPTION_SLAVERY_BENEFIT
 	</Corruption_Choice_Benefit>
    <Corruption_Mission_Requirement_Icon_Name>
-		i_button_corruption_assassination_b.tga,
-		i_button_corruption_piracy_b.tga,
-		i_button_corruption_kidnapping_b.tga,
-		i_button_corruption_racketeering_b.tga,
-		i_button_corruption_drug_b.tga,
-		i_button_corruption_bribery_b.tga,
-		i_button_corruption_black_market_b.tga,
-		i_button_corruption_slavery_b.tga,
-      i_button_corruption_generic_planet.tga,
+		i_button_corruption_assassination_b.tga
+		i_button_corruption_piracy_b.tga
+		i_button_corruption_kidnapping_b.tga
+		i_button_corruption_racketeering_b.tga
+		i_button_corruption_drug_b.tga
+		i_button_corruption_bribery_b.tga
+		i_button_corruption_black_market_b.tga
+		i_button_corruption_slavery_b.tga
+      i_button_corruption_generic_planet.tga
       i_button_saboteur.tga
 	</Corruption_Mission_Requirement_Icon_Name>
    <Corruption_Choice_Encyclopedia>
-		TEXT_CORRUPTION_ASSASSINATION_ENCYCLOPEDIA,
-		TEXT_CORRUPTION_PIRACY_ENCYCLOPEDIA,
-		TEXT_CORRUPTION_KIDNAPPING_ENCYCLOPEDIA,
-		TEXT_CORRUPTION_RACKETEERING_ENCYCLOPEDIA,
-		TEXT_CORRUPTION_DRUG_DISTRIBUTION_ENCYCLOPEDIA,
-		TEXT_CORRUPTION_BRIBERY_ENCYCLOPEDIA,
-		TEXT_CORRUPTION_BLACK_MARKET_ENCYCLOPEDIA,
+		TEXT_CORRUPTION_ASSASSINATION_ENCYCLOPEDIA
+		TEXT_CORRUPTION_PIRACY_ENCYCLOPEDIA
+		TEXT_CORRUPTION_KIDNAPPING_ENCYCLOPEDIA
+		TEXT_CORRUPTION_RACKETEERING_ENCYCLOPEDIA
+		TEXT_CORRUPTION_DRUG_DISTRIBUTION_ENCYCLOPEDIA
+		TEXT_CORRUPTION_BRIBERY_ENCYCLOPEDIA
+		TEXT_CORRUPTION_BLACK_MARKET_ENCYCLOPEDIA
 		TEXT_CORRUPTION_SLAVERY_ENCYCLOPEDIA
 	</Corruption_Choice_Encyclopedia>
 	<Corruption_Choice_Income_Percentage> 0.5, 0.8, 0.4, 4.5, 0.5, 0.5, 0.8, 1.0 </Corruption_Choice_Income_Percentage>
 	<Bribery_Fleet_Reveal_Range> 75.0 </Bribery_Fleet_Reveal_Range>
 
    <Corruption_Planet_Icon>
-		i_button_corruption_Assassination_g.tga,
-		i_button_corruption_Piracy_g.tga,
-		i_button_corruption_Kidnapping_g.tga,
-		i_button_corruption_Racketeering_g.tga,
-		i_button_corruption_Drug_g.tga,
-		i_button_corruption_Bribery_g.tga,
-		i_button_corruption_Black_Market_g.tga,
-		i_button_corruption_Slavery_g.tga,
+		i_button_corruption_Assassination_g.tga
+		i_button_corruption_Piracy_g.tga
+		i_button_corruption_Kidnapping_g.tga
+		i_button_corruption_Racketeering_g.tga
+		i_button_corruption_Drug_g.tga
+		i_button_corruption_Bribery_g.tga
+		i_button_corruption_Black_Market_g.tga
+		i_button_corruption_Slavery_g.tga
       i_icon_corruption_info.tga
    </Corruption_Planet_Icon>
    <Corruption_Planet_Icon_Encyclopedia_Name>
-		TEXT_CORRUPTION_ASSASSINATION,
-		TEXT_CORRUPTION_PIRACY,
-		TEXT_CORRUPTION_KIDNAPPING,
-		TEXT_CORRUPTION_RACKETEERING,
-		TEXT_CORRUPTION_DRUG_DISTRIBUTION,
-		TEXT_CORRUPTION_BRIBERY,
-		TEXT_CORRUPTION_BLACK_MARKET,
+		TEXT_CORRUPTION_ASSASSINATION
+		TEXT_CORRUPTION_PIRACY
+		TEXT_CORRUPTION_KIDNAPPING
+		TEXT_CORRUPTION_RACKETEERING
+		TEXT_CORRUPTION_DRUG_DISTRIBUTION
+		TEXT_CORRUPTION_BRIBERY
+		TEXT_CORRUPTION_BLACK_MARKET
 		TEXT_CORRUPTION_SLAVERY
    </Corruption_Planet_Icon_Encyclopedia_Name>
    <Corruption_Planet_Icon_Encyclopedia_Desc>
-		TEXT_CORRUPTION_ASSASSINATION_ENCYCLOPEDIA,
-		TEXT_CORRUPTION_PIRACY_ENCYCLOPEDIA,
-		TEXT_CORRUPTION_KIDNAPPING_ENCYCLOPEDIA,
-		TEXT_CORRUPTION_RACKETEERING_ENCYCLOPEDIA,
-		TEXT_CORRUPTION_DRUG_DISTRIBUTION_ENCYCLOPEDIA,
-		TEXT_CORRUPTION_BRIBERY_ENCYCLOPEDIA,
-		TEXT_CORRUPTION_BLACK_MARKET_ENCYCLOPEDIA,
+		TEXT_CORRUPTION_ASSASSINATION_ENCYCLOPEDIA
+		TEXT_CORRUPTION_PIRACY_ENCYCLOPEDIA
+		TEXT_CORRUPTION_KIDNAPPING_ENCYCLOPEDIA
+		TEXT_CORRUPTION_RACKETEERING_ENCYCLOPEDIA
+		TEXT_CORRUPTION_DRUG_DISTRIBUTION_ENCYCLOPEDIA
+		TEXT_CORRUPTION_BRIBERY_ENCYCLOPEDIA
+		TEXT_CORRUPTION_BLACK_MARKET_ENCYCLOPEDIA
 		TEXT_CORRUPTION_SLAVERY_ENCYCLOPEDIA
    </Corruption_Planet_Icon_Encyclopedia_Desc>
 

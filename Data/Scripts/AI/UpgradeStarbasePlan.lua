@@ -1,44 +1,11 @@
--- $Id: //depot/Projects/StarWars_Expansion/Run/Data/Scripts/AI/UpgradeStarbasePlan.lua#1 $
---/////////////////////////////////////////////////////////////////////////////////////////////////
+-- ======================================================================
+-- UFoCP (by AlyMar1994) SCRIPT FILE.
 --
--- (C) Petroglyph Games, Inc.
+-- ORIGINAL AUTHOR (Petroglyph): James Yarrow
+-- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
---
---  *****           **                          *                   *
---  *   **          *                           *                   *
---  *    *          *                           *                   *
---  *    *          *     *                 *   *          *        *
---  *   *     *** ******  * **  ****      ***   * *      * *****    * ***
---  *  **    *  *   *     **   *   **   **  *   *  *    * **   **   **   *
---  ***     *****   *     *   *     *  *    *   *  *   **  *    *   *    *
---  *       *       *     *   *     *  *    *   *   *  *   *    *   *    *
---  *       *       *     *   *     *  *    *   *   * **   *   *    *    *
---  *       **       *    *   **   *   **   *   *    **    *  *     *   *
--- **        ****     **  *    ****     *****   *    **    ***      *   *
---                                          *        *     *
---                                          *        *     *
---                                          *       *      *
---                                      *  *        *      *
---                                      ****       *       *
---
---/////////////////////////////////////////////////////////////////////////////////////////////////
--- C O N F I D E N T I A L   S O U R C E   C O D E -- D O   N O T   D I S T R I B U T E
---/////////////////////////////////////////////////////////////////////////////////////////////////
---
---              $File: //depot/Projects/StarWars_Expansion/Run/Data/Scripts/AI/UpgradeStarbasePlan.lua $
---
---    Original Author: James Yarrow
---
---            $Author: Andre_Arsenault $
---
---            $Change: 37816 $
---
---          $DateTime: 2006/02/15 15:33:33 $
---
---          $Revision: #1 $
---
---/////////////////////////////////////////////////////////////////////////////////////////////////
-
+-- LAST REVISION DATE: 6/28/19,  3:24 PM
+-- ======================================================================
 require("pgevents")
 
 -- Tell the script pooling system to pre-cache this number of scripts.
@@ -46,14 +13,15 @@ ScriptPoolCount = 16
 
 function Definitions()
 	DebugMessage("%s -- In Definitions", tostring(Script))
-	
+
 	Category = "Upgrade_Starbase | Build_Initial_Starbase_Only"
 	IgnoreTarget = true
-	TaskForce = {
+	TaskForce =
 	{
-		"BaseForce",
-		"Rebel_Star_Base_1 | Rebel_Star_Base_2 | Rebel_Star_Base_3 | Rebel_Star_Base_4 | Rebel_Star_Base_5 | Empire_Star_Base_1 | Empire_Star_Base_2 | Empire_Star_Base_3 | Empire_Star_Base_4 | Empire_Star_Base_5 | Underworld_Star_Base_1 | Underworld_Star_Base_2 | Underworld_Star_Base_3 | Underworld_Star_Base_4 | Underworld_Star_Base_5 = 1"
-	}
+		{
+			"BaseForce",
+			"Rebel_Star_Base_1 | Rebel_Star_Base_2 | Rebel_Star_Base_3 | Rebel_Star_Base_4 | Rebel_Star_Base_5 | Empire_Star_Base_1 | Empire_Star_Base_2 | Empire_Star_Base_3 | Empire_Star_Base_4 | Empire_Star_Base_5 | Underworld_Star_Base_1 | Underworld_Star_Base_2 | Underworld_Star_Base_3 | Underworld_Star_Base_4 | Underworld_Star_Base_5 = 1"
+		}
 	}
 
 	DebugMessage("%s -- Done Definitions", tostring(Script))
@@ -64,9 +32,8 @@ function BaseForce_Thread()
 	
 	BaseForce.Set_As_Goal_System_Removable(false)
 	AssembleForce(BaseForce)
-	
 	BaseForce.Set_Plan_Result(true)
-	DebugMessage("%s -- BaseForce done!", tostring(Script));
+	DebugMessage("%s -- Base Force done!", tostring(Script));
 	ScriptExit()
 end
 

@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <SpecialStructures>
-
 	<SpecialStructure Name="Ground_Ion_Cannon">
 		<GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
 		<Text_ID>TEXT_GROUND_ION_CANNON</Text_ID>
@@ -2631,6 +2630,7 @@
 
 	<SpecialStructure Name="E_Ground_Turbolaser_Tower">
 		<Variant_Of_Existing_Type>Template_Ground_Turbolaser_Tower</Variant_Of_Existing_Type>
+
 		<Tactical_Additional_Structure_Type>Power_Generator_E</Tactical_Additional_Structure_Type>
 		<Obstacle_Proxy_Type> E_Ground_Turbolaser_Tower_Build_Pad </Obstacle_Proxy_Type>
 
@@ -2647,6 +2647,7 @@
 
 	<SpecialStructure Name="R_Ground_Turbolaser_Tower">
 		<Variant_Of_Existing_Type>Template_Ground_Turbolaser_Tower</Variant_Of_Existing_Type>
+
 		<Tactical_Additional_Structure_Type>Power_Generator_R</Tactical_Additional_Structure_Type>
 		<Obstacle_Proxy_Type> R_Ground_Turbolaser_Tower_Build_Pad </Obstacle_Proxy_Type>
 
@@ -2663,6 +2664,7 @@
 	
 	<SpecialStructure Name="U_Ground_Turbolaser_Tower">
 		<Variant_Of_Existing_Type>Template_Ground_Turbolaser_Tower</Variant_Of_Existing_Type>
+
 		<Tactical_Additional_Structure_Type>U_Ground_Palace</Tactical_Additional_Structure_Type>
 		<Obstacle_Proxy_Type> U_Ground_Turbolaser_Tower_Build_Pad </Obstacle_Proxy_Type>
 
@@ -2674,7 +2676,7 @@
 		<SFXEvent_Unit_Under_Attack> UHD_Turbo_Tower_Under_Attack </SFXEvent_Unit_Under_Attack>
 		<SFXEvent_Unit_Lost> UHD_Turbo_Tower_Destroyed </SFXEvent_Unit_Lost>
 		<SFXEvent_Select> Structure_Turret_Select_SFX </SFXEvent_Select>
-		<SFXEvent_Turret_Rotating_Loop> Structure_Turret_Motor_Turbo </SFXEvent_Turret_Rotating_Loop>	<!-- Event for turret while rotating to fire  -->
+		<SFXEvent_Turret_Rotating_Loop> Structure_Turret_Motor_Turbo </SFXEvent_Turret_Rotating_Loop> <!-- Event for turret while rotating to fire  -->
 	</SpecialStructure>
 
 
@@ -6328,7 +6330,4 @@
 
 		<Score_Cost_Credits> 300 </Score_Cost_Credits>
 	</SpecialStructure>
-
-
-
 </SpecialStructures>

@@ -1,8 +1,7 @@
 <?xml version="1.0" ?>
 <Story>
-<!-- Underworld Act II Mission 06: A Dark Ally -->
-<!-- Preliminary setup -->
-
+	<!-- ===== Underworld Act II Mission 06: A Dark Ally ===== -->
+	<!-- Preliminary setup -->
 	<Event Name="Underworld_A02M06_Begin">
 		<Event_Type>STORY_ELAPSED</Event_Type>
 		<Event_Param1>0</Event_Param1>
@@ -14,7 +13,7 @@
 		<Prereq>Underworld_A02M06_Begin</Prereq>
 	</Event>
 
-<!-- Turn off advisor -->
+	<!-- Turn off advisor -->
 	<Event Name="Underworld_A02M06_Turn_Off_Land_Advisor">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>SET_ADVISOR</Reward_Type>
@@ -30,8 +29,8 @@
 		<Prereq>Underworld_A02M06_Begin</Prereq>
 	</Event>
 
-<!-- AM1994 (5/8/19): Prevent Empire from retreating from story mission. Fix bug #14. -->
-
+	<!-- AM1994 (6/29/19): Fixing error that the Empire can retreat -->
+	<!-- at any point during the mission, when they shouldn't. -->
 	<Event Name="Empire_A02M06_Prevent_Retreat">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>DISABLE_RETREAT</Reward_Type>
@@ -97,23 +96,24 @@
 		<Prereq>Underworld_A02M06_Governors_Destroyed</Prereq>
 	</Event>
 
-	<Event Name="Underworld_A02M06_Re-Enable_Retreat">
-		<Event_Type>STORY_TRIGGER</Event_Type>
-		<Reward_Type>DISABLE_RETREAT</Reward_Type>
-		<Reward_Param1>UNDERWORLD</Reward_Param1>
-		<Reward_Param2>0</Reward_Param2>
-		<Prereq>Underworld_A02M06_Governors_Destroyed</Prereq>
-	</Event>
+			<Event Name="Underworld_A02M06_Re-Enable_Retreat">
+				<Event_Type>STORY_TRIGGER</Event_Type>
+				<Reward_Type>DISABLE_RETREAT</Reward_Type>
+				<Reward_Param1>UNDERWORLD</Reward_Param1>
+				<Reward_Param2>0</Reward_Param2>
+				<Prereq>Underworld_A02M06_Governors_Destroyed</Prereq>
+			</Event>
 
-<!-- AM1994 (5/8/19): Re-enable Empire ability to retreat for campaign. -->
-
-	<Event Name="Empire_A02M06_Re-Enable_Retreat">
-		<Event_Type>STORY_TRIGGER</Event_Type>
-		<Reward_Type>DISABLE_RETREAT</Reward_Type>
-		<Reward_Param1>EMPIRE</Reward_Param1>
-		<Reward_Param2>0</Reward_Param2>
-		<Prereq>Underworld_A02M06_Governors_Destroyed</Prereq>
-	</Event>
+			<!-- AM1994 (6/29/19): Fixing error that the Empire can retreat -->
+			<!-- at any point during the mission, when they shouldn't. -->
+			<!-- This re-enables Empire retreat totally when mission is done. -->
+			<Event Name="Empire_A02M06_Re-Enable_Retreat">
+				<Event_Type>STORY_TRIGGER</Event_Type>
+				<Reward_Type>DISABLE_RETREAT</Reward_Type>
+				<Reward_Param1>EMPIRE</Reward_Param1>
+				<Reward_Param2>0</Reward_Param2>
+				<Prereq>Underworld_A02M06_Governors_Destroyed</Prereq>
+			</Event>
 
 
 	<Event Name="Underworld_A02M06_Victory_Trigger">

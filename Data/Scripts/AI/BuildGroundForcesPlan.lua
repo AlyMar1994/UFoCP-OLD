@@ -1,65 +1,33 @@
--- $Id: //depot/Projects/StarWars_Expansion/Run/Data/Scripts/AI/BuildGroundForcesPlan.lua#4 $
---/////////////////////////////////////////////////////////////////////////////////////////////////
+-- ======================================================================
+-- UFoCP (by AlyMar1994) SCRIPT FILE.
 --
--- (C) Petroglyph Games, Inc.
+-- ORIGINAL AUTHOR (Petroglyph): James Yarrow
+-- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
---
---  *****           **                          *                   *
---  *   **          *                           *                   *
---  *    *          *                           *                   *
---  *    *          *     *                 *   *          *        *
---  *   *     *** ******  * **  ****      ***   * *      * *****    * ***
---  *  **    *  *   *     **   *   **   **  *   *  *    * **   **   **   *
---  ***     *****   *     *   *     *  *    *   *  *   **  *    *   *    *
---  *       *       *     *   *     *  *    *   *   *  *   *    *   *    *
---  *       *       *     *   *     *  *    *   *   * **   *   *    *    *
---  *       **       *    *   **   *   **   *   *    **    *  *     *   *
--- **        ****     **  *    ****     *****   *    **    ***      *   *
---                                          *        *     *
---                                          *        *     *
---                                          *       *      *
---                                      *  *        *      *
---                                      ****       *       *
---
---/////////////////////////////////////////////////////////////////////////////////////////////////
--- C O N F I D E N T I A L   S O U R C E   C O D E -- D O   N O T   D I S T R I B U T E
---/////////////////////////////////////////////////////////////////////////////////////////////////
---
---              $File: //depot/Projects/StarWars_Expansion/Run/Data/Scripts/AI/BuildGroundForcesPlan.lua $
---
---    Original Author: James Yarrow
---
---            $Author: James_Yarrow $
---
---            $Change: 56727 $
---
---          $DateTime: 2006/10/24 14:14:26 $
---
---          $Revision: #4 $
---
---/////////////////////////////////////////////////////////////////////////////////////////////////
-
+-- LAST REVISION DATE: 7/12/19, 12:46 PM
+-- ======================================================================
 require("pgevents")
 
-
-function Definitions()	
+function Definitions()
 	Category = "Build_Ground_Forces"
 	IgnoreTarget = true
-	
-	TaskForce = {
+
+	TaskForce =
 	{
-		"ReserveForce",
-		"Infantry = 0,2",
-		"Vehicle = 0,2",
-		"Air = 0,2"
+		{
+			"ReserveForce",
+			"Infantry = 0,2",
+			"Vehicle = 0,2",
+			"Air = 0,2"
+		}
 	}
-}
+
 	RequiredCategories = { "Vehicle" }
 	AllowFreeStoreUnits = false
 end
 
-function ReserveForce_Thread()		
+function ReserveForce_Thread()
 	ReserveForce.Set_As_Goal_System_Removable(false)
 	BlockOnCommand(ReserveForce.Produce_Force())
-	ReserveForce.Set_Plan_Result(true)	
+	ReserveForce.Set_Plan_Result(true)
 end

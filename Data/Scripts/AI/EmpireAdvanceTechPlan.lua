@@ -1,58 +1,25 @@
--- $Id: //depot/Projects/StarWars_Expansion/Run/Data/Scripts/AI/EmpireAdvanceTechPlan.lua#1 $
---/////////////////////////////////////////////////////////////////////////////////////////////////
+-- ======================================================================
+-- UFoCP (by AlyMar1994) SCRIPT FILE.
 --
--- (C) Petroglyph Games, Inc.
+-- ORIGINAL AUTHOR (Petroglyph): James Yarrow
+-- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
---
---  *****           **                          *                   *
---  *   **          *                           *                   *
---  *    *          *                           *                   *
---  *    *          *     *                 *   *          *        *
---  *   *     *** ******  * **  ****      ***   * *      * *****    * ***
---  *  **    *  *   *     **   *   **   **  *   *  *    * **   **   **   *
---  ***     *****   *     *   *     *  *    *   *  *   **  *    *   *    *
---  *       *       *     *   *     *  *    *   *   *  *   *    *   *    *
---  *       *       *     *   *     *  *    *   *   * **   *   *    *    *
---  *       **       *    *   **   *   **   *   *    **    *  *     *   *
--- **        ****     **  *    ****     *****   *    **    ***      *   *
---                                          *        *     *
---                                          *        *     *
---                                          *       *      *
---                                      *  *        *      *
---                                      ****       *       *
---
---/////////////////////////////////////////////////////////////////////////////////////////////////
--- C O N F I D E N T I A L   S O U R C E   C O D E -- D O   N O T   D I S T R I B U T E
---/////////////////////////////////////////////////////////////////////////////////////////////////
---
---              $File: //depot/Projects/StarWars_Expansion/Run/Data/Scripts/AI/EmpireAdvanceTechPlan.lua $
---
---    Original Author: James Yarrow
---
---            $Author: Andre_Arsenault $
---
---            $Change: 37816 $
---
---          $DateTime: 2006/02/15 15:33:33 $
---
---          $Revision: #1 $
---
---/////////////////////////////////////////////////////////////////////////////////////////////////
-
+-- LAST REVISION DATE: 6/29/19, 1:08 PM
+-- ======================================================================
 require("pgevents")
-
 
 function Definitions()
 	DebugMessage("%s -- In Definitions", tostring(Script))
-	
+
 	Category = "Advance_Tech_Empire"
 	IgnoreTarget = true
-	TaskForce = {
+	TaskForce =
 	{
-		"TechForce",
-		"DS_Primary_Hyperdrive | DS_Shield_Gen | DS_Superlaser_Core | DS_Durasteel | Darth_Vader_Expansion | Death_Star_II = 1"
+		{
+			"TechForce",
+			"DS_Primary_Hyperdrive | DS_Shield_Gen | DS_Superlaser_Core | DS_Durasteel | Darth_Team_Executor | Death_Star_II = 1"
+		}
 	}
-}
 
 	DebugMessage("%s -- Done Definitions", tostring(Script))
 end
@@ -61,16 +28,14 @@ function TechForce_Thread()
 	DebugMessage("%s -- In TechForce_Thread.", tostring(Script))
 	
 	-- Ensure that all goal feasability will be reevaluated based on the new production budgetting conditions
-	-- (production underway that is already paid for and remains affordable under new budgets should continue)
+	-- (production underway that is already paid for and remains affordable under new budgets should continue).
 	Purge_Goals(PlayerObject)
 
 	TechForce.Set_As_Goal_System_Removable(false)
-	
 	Sleep(1)
-	
 	BlockOnCommand(TechForce.Produce_Force())
 	TechForce.Set_Plan_Result(true)
-	
+
 	DebugMessage("%s -- TechForce done!", tostring(Script));
 	ScriptExit()
 end

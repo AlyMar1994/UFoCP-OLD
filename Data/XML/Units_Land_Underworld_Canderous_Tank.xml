@@ -1,51 +1,46 @@
 <?xml version="1.0"?>
-
-
-
 <Canderous_Tank_Data>
-
-
-
+	<!-- MAIN: LAND UNIT -->
 	<GroundVehicle Name="Canderous_Assault_Tank">
 		<Text_ID>TEXT_UNIT_CANDEROUS_TANK</Text_ID>
-		<Encyclopedia_Good_Against> Snowspeeder AT_AT_Walker M1_Repulsor_Tank  </Encyclopedia_Good_Against>
-		<Encyclopedia_Vulnerable_To> T4B_Tank MPTL SPMAT_Walker </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Good_Against>Snowspeeder AT_AT_Walker M1_Repulsor_Tank</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>T4B_Tank MPTL SPMAT_Walker</Encyclopedia_Vulnerable_To>
 		<Encyclopedia_Text>TEXT_TOOLTIP_TEXT_UNIT_CANDEROUS_TANK</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
-		<Icon_Name> i_button_uv_cander_tank.tga </Icon_Name>
+		<Icon_Name>I_Button_UV_Cander_Tank.tga</Icon_Name>
 
 		<Land_Model_Name>UV_CanderousAssaultTank.alo</Land_Model_Name>
-		<Mass>1.0</Mass>
+		<Mass>1.00</Mass>
 		<Scale_Factor>0.17</Scale_Factor>
 		<Select_Box_Scale>540</Select_Box_Scale>
-		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<Select_Box_Z_Adjust>3.00</Select_Box_Z_Adjust>
 
 		<Affiliation>Underworld</Affiliation>
-        
+
 		<Max_Speed>1.25</Max_Speed>
-		<Movement_Animation_Speed> 1.0 </Movement_Animation_Speed>
-		<Max_Rate_Of_Turn>4.5</Max_Rate_Of_Turn>
-		<Space_Layer> Land </Space_Layer>
+		<Movement_Animation_Speed>1.00</Movement_Animation_Speed>
+		<Max_Rate_Of_Turn>4.50</Max_Rate_Of_Turn>
+		<Space_Layer>Land</Space_Layer>
 		<Size_Value>60</Size_Value>
-		<UnitCollisionClass> Vehicle </UnitCollisionClass>
-		<OverrideAcceleration> .1 </OverrideAcceleration>
-		<OverrideDeceleration> .1 </OverrideDeceleration>
+		<UnitCollisionClass>Vehicle</UnitCollisionClass>
+		<OverrideAcceleration>.10</OverrideAcceleration>
+		<OverrideDeceleration>.10</OverrideDeceleration>
 
-		<Behavior> SELECTABLE </Behavior>
-		<LandBehavior>ABILITY_COUNTDOWN, LURE, AFFECTED_BY_SHIELD, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, TURRET, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TELEKINESIS_TARGET,STUNNABLE, WIND_DISTURBANCE, SURFACE_FX,DAMAGE_TRACKING,SQUASH</LandBehavior>
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>ABILITY_COUNTDOWN, LURE, AFFECTED_BY_SHIELD, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, TURRET, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TELEKINESIS_TARGET, STUNNABLE, WIND_DISTURBANCE, SURFACE_FX, DAMAGE_TRACKING, SQUASH</LandBehavior>
 
-		<Is_Affected_By_Gravity_Control_Field> Yes </Is_Affected_By_Gravity_Control_Field>
+		<Is_Affected_By_Gravity_Control_Field>Yes</Is_Affected_By_Gravity_Control_Field>
 		<Base_Shield_Penetration_Particle>Shield_Penetration_Effect_Particle</Base_Shield_Penetration_Particle>
 
-		<Armor_Type> Armor_T4B </Armor_Type>
-        <Shield_Armor_Type>Shield_Tank</Shield_Armor_Type>
+		<Armor_Type>Armor_T4B</Armor_Type>
+		<Shield_Armor_Type>Shield_Tank</Shield_Armor_Type>
 
 		<Tactical_Health>425</Tactical_Health>
 		<Shield_Points>300</Shield_Points>
 		<Shield_Refresh_Rate>17</Shield_Refresh_Rate>
 		<Energy_Capacity>999</Energy_Capacity>
 		<Energy_Refresh_Rate>999</Energy_Refresh_Rate>
-		<Ranged_Target_Z_Adjust>12.0</Ranged_Target_Z_Adjust>
+		<Ranged_Target_Z_Adjust>12.00</Ranged_Target_Z_Adjust>
 		<Damage>10</Damage>
 
 		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
@@ -56,23 +51,23 @@
 		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
 		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
 		
-		<Turret_Targets_Ground_Vehicles> 1 </Turret_Targets_Ground_Vehicles>
-		<Turret_Targets_Ground_Infantry> 3 </Turret_Targets_Ground_Infantry>
-		<Turret_Targets_Air_Vehicles> 2 </Turret_Targets_Air_Vehicles>
-		<Turret_Targets_Anything_Else> 4 </Turret_Targets_Anything_Else>
+		<Turret_Targets_Ground_Vehicles>1</Turret_Targets_Ground_Vehicles>
+		<Turret_Targets_Ground_Infantry>3</Turret_Targets_Ground_Infantry>
+		<Turret_Targets_Air_Vehicles>2</Turret_Targets_Air_Vehicles>
+		<Turret_Targets_Anything_Else>4</Turret_Targets_Anything_Else>
 
 		<Projectile_Types>Proj_Mass_Driver_Tank</Projectile_Types>
 		<Projectile_Fire_Pulse_Count>3</Projectile_Fire_Pulse_Count>
-		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
-		<Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.20</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>1.00</Projectile_Fire_Recharge_Seconds>
 		
-		<Land_FOW_Reveal_Range>260.0</Land_FOW_Reveal_Range>
-		<Targeting_Max_Attack_Distance>250.0</Targeting_Max_Attack_Distance>
+		<Land_FOW_Reveal_Range>260.00</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>250.00</Targeting_Max_Attack_Distance>
 
-		<Targeting_Fire_Inaccuracy> Infantry, 15.0 </Targeting_Fire_Inaccuracy>
-		<Targeting_Fire_Inaccuracy> Vehicle, 1.0 </Targeting_Fire_Inaccuracy>
-		<Targeting_Fire_Inaccuracy> Air, 5.0 </Targeting_Fire_Inaccuracy>
-		<Targeting_Fire_Inaccuracy> Structure, 5.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy>Infantry,	15.00</Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy>Vehicle,		1.00</Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy>Air,			5.00</Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy>Structure,	5.00</Targeting_Fire_Inaccuracy>
 
 		<SurfaceFX_Name>Hover</SurfaceFX_Name>
 		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
@@ -81,25 +76,25 @@
 
 		<Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
 		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
-		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
-        <Remove_Upon_Death>true</Remove_Upon_Death>
+		<Land_Damage_SFX>null, SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+		<Remove_Upon_Death>True</Remove_Upon_Death>
 
-		<CategoryMask> Vehicle </CategoryMask>
+		<CategoryMask>Vehicle</CategoryMask>
 		<MovementClass>Hover</MovementClass>
 		<OccupationStyle>1x1</OccupationStyle>
-		<Victory_Relevant>yes</Victory_Relevant>
+		<Victory_Relevant>Yes</Victory_Relevant>
 		<No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>3</No_Refraction_Below_Detail_Level>
 		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
 		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
-		<Blob_Shadow_Scale>65.0, 65.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Scale>65.00, 65.00</Blob_Shadow_Scale>
 		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
-		<Ground_Vehicle_Turret_Target> Yes </Ground_Vehicle_Turret_Target>
+		<Ground_Vehicle_Turret_Target>Yes</Ground_Vehicle_Turret_Target>
 		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
 
 		<Wind_Disturbance_Radius>50</Wind_Disturbance_Radius>
 		<Wind_Disturbance_Strength>10</Wind_Disturbance_Strength>
-		<Wind_Disturbance_Sphere_Alpha>0.4</Wind_Disturbance_Sphere_Alpha>
+		<Wind_Disturbance_Sphere_Alpha>0.40</Wind_Disturbance_Sphere_Alpha>
 
 		<SFXEvent_Fire>Unit_Tank_Repulsor_Fire</SFXEvent_Fire>
 		<SFXEvent_Select>Unit_Select_Canderous_Tank</SFXEvent_Select>
@@ -107,232 +102,231 @@
 		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Canderous_Tank</SFXEvent_Fleet_Move>
 		<SFXEvent_Attack>Unit_Attack_Canderous_Tank</SFXEvent_Attack>
 		<SFXEvent_Guard>Unit_Guard_Canderous_Tank</SFXEvent_Guard>
-		<SFXEvent_Turret_Rotating_Loop> Vehicle_Turret_Motor </SFXEvent_Turret_Rotating_Loop>
-		<SFXEvent_Engine_Idle_Loop> Unit_2M_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
-		<SFXEvent_Engine_Moving_Loop> Unit_2M_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
-		<SFXEvent_Assist_Move> Unit_Assist_Move_Canderous_Tank </SFXEvent_Assist_Move>		
-		<SFXEvent_Assist_Attack> Unit_Assist_Attack_Canderous_Tank</SFXEvent_Assist_Attack>
-		<SFXEvent_Unit_Lost> UHD_Unit_Destroyed </SFXEvent_Unit_Lost>
-		<SFXEvent_Tactical_Build_Started> UHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>		
-		<SFXEvent_Tactical_Build_Complete> UHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>		
-		<SFXEvent_Tactical_Build_Cancelled> UHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+		<SFXEvent_Turret_Rotating_Loop>Vehicle_Turret_Motor</SFXEvent_Turret_Rotating_Loop>
+		<SFXEvent_Engine_Idle_Loop>Unit_2M_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_2M_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Assist_Move>Unit_Assist_Move_Canderous_Tank</SFXEvent_Assist_Move>		
+		<SFXEvent_Assist_Attack>Unit_Assist_Attack_Canderous_Tank</SFXEvent_Assist_Attack>
+		<SFXEvent_Unit_Lost>UHD_Unit_Destroyed</SFXEvent_Unit_Lost>
+		<SFXEvent_Tactical_Build_Started>UHD_Reinforcements_En_Route</SFXEvent_Tactical_Build_Started>		
+		<SFXEvent_Tactical_Build_Complete>UHD_Reinforcements_Available</SFXEvent_Tactical_Build_Complete>		
+		<SFXEvent_Tactical_Build_Cancelled>UHD_Reinforcements_Cancelled</SFXEvent_Tactical_Build_Cancelled>
 
-        <Ranking_In_Category>6</Ranking_In_Category>
-        <FormationSpacing> 2.75 </FormationSpacing>
-		<FormationOrder> 5 </FormationOrder>
-		<FormationGrouping> Standard </FormationGrouping>
-		<FormationRaggedness> 1 </FormationRaggedness>
-		<MaxJiggleDistance> 0 </MaxJiggleDistance>
-		<MinimumPushReturnDistance> 100 </MinimumPushReturnDistance>
-		<UseSecondaryFacing> true </UseSecondaryFacing>
-		<SecondaryTurnInPlaceROTCoefficient> .4 </SecondaryTurnInPlaceROTCoefficient>
-		<SecondaryTurnAngle> 90 </SecondaryTurnAngle>
-		<MinSecondaryTurnROTCoefficient> .4 </MinSecondaryTurnROTCoefficient>
-		<MaxSecondaryTurnROTCoefficient> .9 </MaxSecondaryTurnROTCoefficient>
-		<SecondaryTurnLookaheadDistance> 60 </SecondaryTurnLookaheadDistance>
-		<Custom_Hard_XExtent> 55.0 </Custom_Hard_XExtent>
-		<Custom_Hard_YExtent> 35.0 </Custom_Hard_YExtent>
+		<Ranking_In_Category>6</Ranking_In_Category>
+		<FormationSpacing>2.75</FormationSpacing>
+		<FormationOrder>5</FormationOrder>
+		<FormationGrouping>Standard</FormationGrouping>
+		<FormationRaggedness>1</FormationRaggedness>
+		<MaxJiggleDistance>0</MaxJiggleDistance>
+		<MinimumPushReturnDistance>100</MinimumPushReturnDistance>
+		<UseSecondaryFacing>True</UseSecondaryFacing>
+		<SecondaryTurnInPlaceROTCoefficient>.40</SecondaryTurnInPlaceROTCoefficient>
+		<SecondaryTurnAngle>90</SecondaryTurnAngle>
+		<MinSecondaryTurnROTCoefficient>.40</MinSecondaryTurnROTCoefficient>
+		<MaxSecondaryTurnROTCoefficient>.90</MaxSecondaryTurnROTCoefficient>
+		<SecondaryTurnLookaheadDistance>60</SecondaryTurnLookaheadDistance>
+		<Custom_Hard_XExtent>55.00</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>35.00</Custom_Hard_YExtent>
 
 		<Death_SFXEvent_Start_Die>Unit_Tank_Death_SFX</Death_SFXEvent_Start_Die>
 		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
-		<Overall_Length>40.0</Overall_Length> <!-- For vehicle pitching up and down on terrain -->
-		<Overall_Width>25.0</Overall_Width> <!-- For vehicle rolling left and right on terrain (30 by geometry)-->
+		<Overall_Length>40.00</Overall_Length> <!-- For vehicle pitching up and down on terrain. -->
+		<Overall_Width>25.00</Overall_Width> <!-- For vehicle rolling left and right on terrain (30 by geometry). -->
 		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
 		<AI_Combat_Power>200</AI_Combat_Power>
 
-		<Idle_Chase_Range>0.0</Idle_Chase_Range>
-		<Guard_Chase_Range>200.0</Guard_Chase_Range>
-		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
-		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Idle_Chase_Range>0.00</Idle_Chase_Range>
+		<Guard_Chase_Range>200.00</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.00</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.00</Targeting_Stickiness_Time_Threshold>
 		<Targeting_Priority_Set>Anti_All_Attack_Priority</Targeting_Priority_Set>
-		<Autonomous_Move_Extension_Vs_Attacker>100.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Autonomous_Move_Extension_Vs_Attacker>100.00</Autonomous_Move_Extension_Vs_Attacker>
 
 		<Weather_Category>Hover</Weather_Category>
 		<Score_Cost_Credits>125</Score_Cost_Credits>
-		<Influences_Capture_Point> False </Influences_Capture_Point>
-		
-        <Converted_To_Enemy_Die_Time_Seconds>45</Converted_To_Enemy_Die_Time_Seconds>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Converted_To_Enemy_Die_Time_Seconds>45</Converted_To_Enemy_Die_Time_Seconds>
 		<Vehicle_Thief_Inside_Clone>Canderous_Assault_Tank_Captured</Vehicle_Thief_Inside_Clone>
 
 		<Tactical_Bribe_Cost>100</Tactical_Bribe_Cost>
 
-		<!-- Non-Hero unit abilities description -->
+		<!-- Non-Hero unit abilities description. -->
 		<Unit_Abilities_Data SubObjectList="Yes">
-			<!-- Primary ability -->
+			<!-- Primary Ability. -->
 			<Unit_Ability>
 				<Type>LURE</Type>
 				<Alternate_Name_Text>TEXT_TOOLTIP_SYSTEM_CONTROL</Alternate_Name_Text>
 				<Alternate_Description_Text>TEXT_SYSTEM_CONTROL_DESCRIPTION</Alternate_Description_Text>
 
-
-				<!-- If you change this - please make sure you communicate the change to artists (to Mike specifically).
-				     Any change to this radius will require a manual adjustment to the particle effect. Thank you. -->
+				<!-- If you change this - please make sure you communicate the change to artists (to Mike specifically). -->
+				<!-- Any change to this radius will require a manual adjustment to the particle effect. Thank you. -->
 				<Effective_Radius>350</Effective_Radius>
 
 				<Target_Types>
-						AT_AT_Walker,
-						AT_ST_Walker,
-						AT_AA_Walker,
-						SPMAT_Walker,
-						Snowspeeder,
-						MPTL,
-						T2B_Tank,
-						T4B_Tank,
-						TIE_Crawler,
-						M1_Repulsor_Tank,
-						Pirate_Skiff,
-						Pirate_Skiff_E,
-						Pirate_Skiff_R,
-						Pirate_Skiff_U,
-						Empire_Anti_Infantry_Turret,
-						Rebel_Anti_Infantry_Turret,
-						Pirate_Anti_Infantry_Turret,
-						Empire_Anti_Vehicle_Turret,
-						Rebel_Anti_Vehicle_Turret,
-						Pirate_Anti_Vehicle_Turret,
-						Underworld_Mass_Driver_Turret,
-						Underworld_Torpedo_Turret,
-						Underworld_Rocket_Pod,
-						Empire_Grenade_Mortar,
-						Hutt_Grenade_Mortar,
-						Rebel_Rapid_Fire_Laser_Turret,
-						Hutt_Rapid_Fire_Laser_Turret,
-						Dark_Trooper_PhaseI,
-						Dark_Trooper_PhaseII,
-						Dark_Trooper_PhaseIII,
-						HAV_Juggernaut,
-						Lancet_Air_Artillery,
-						Gallofree_HTT_Transport,
-						Canderous_Assault_Tank,
-						Destroyer_Droid,
-						MAL_Rocket_Vehicle,
-						MZ8_Pulse_Cannon_Tank,
-						Swamp_Speeder_E,
-						Swamp_Speeder_R,
-						Swamp_Speeder_U,
-						Swamp_Speeder_P,
-						Pod_Walker_Rebel,
-						Pod_Walker_Empire,
-						Pod_Walker_Underworld,
-						Pod_Walker_Pirate,
-						Hutt_Pod_Walker,
-						Hutt_Skiff,
-						Hutt_Swamp_Speeder
+					AT_AT_Walker,
+					AT_ST_Walker,
+					AT_AA_Walker,
+					SPMAT_Walker,
+					Snowspeeder,
+					MPTL,
+					T2B_Tank,
+					T4B_Tank,
+					TIE_Crawler,
+					M1_Repulsor_Tank,
+					Pirate_Skiff,
+					Pirate_Skiff_E,
+					Pirate_Skiff_R,
+					Pirate_Skiff_U,
+					Empire_Anti_Infantry_Turret,
+					Rebel_Anti_Infantry_Turret,
+					Pirate_Anti_Infantry_Turret,
+					Empire_Anti_Vehicle_Turret,
+					Rebel_Anti_Vehicle_Turret,
+					Pirate_Anti_Vehicle_Turret,
+					Underworld_Mass_Driver_Turret,
+					Underworld_Torpedo_Turret,
+					Underworld_Rocket_Pod,
+					Empire_Grenade_Mortar,
+					Hutt_Grenade_Mortar,
+					Rebel_Rapid_Fire_Laser_Turret,
+					Hutt_Rapid_Fire_Laser_Turret,
+					Dark_Trooper_PhaseI,
+					Dark_Trooper_PhaseII,
+					Dark_Trooper_PhaseIII,
+					HAV_Juggernaut,
+					Lancet_Air_Artillery,
+					Gallofree_HTT_Transport,
+					Canderous_Assault_Tank,
+					Destroyer_Droid,
+					MAL_Rocket_Vehicle,
+					MZ8_Pulse_Cannon_Tank,
+					Swamp_Speeder_E,
+					Swamp_Speeder_R,
+					Swamp_Speeder_U,
+					Swamp_Speeder_P,
+					Pod_Walker_Rebel,
+					Pod_Walker_Empire,
+					Pod_Walker_Underworld,
+					Pod_Walker_Pirate,
+					Hutt_Pod_Walker,
+					Hutt_Skiff,
+					Hutt_Swamp_Speeder
 				</Target_Types>
 
 				<Recharge_Seconds>50</Recharge_Seconds>
 				<Expiration_Seconds>6</Expiration_Seconds>
-				
+
 				<Is_Pulsing>Yes</Is_Pulsing>
 				<Pulse_Frequency_Secs>0.5</Pulse_Frequency_Secs>
 				<Max_Number_Of_Pulses>40</Max_Number_Of_Pulses>
 				<Particle_Effect>canderous_lure</Particle_Effect>
 	
-				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER,	0.25f</Mod_Multiplier><!-- Invulnerable -->
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.25</Mod_Multiplier> <!-- "Invulnerable." -->
 			</Unit_Ability>
-			
 		</Unit_Abilities_Data>
-
 	</GroundVehicle>
 
+	<!-- SECONDARY: VARIANTS -->
 	<GroundVehicle Name="Canderous_Assault_Tank_Captured">
 		<Variant_Of_Existing_Type>Canderous_Assault_Tank</Variant_Of_Existing_Type>
-		<Icon_Name>i_button_chewbacca_uv_cander_tank.tga</Icon_Name>
 
-		<!-- MUST have same abilities PLUS EJECT_THIEF -->
+		<Icon_Name>I_Button_Chewbacca_UV_Cander_Tank.tga</Icon_Name>
+
+		<!-- MUST have same abilities PLUS EJECT_THIEF! -->
 		<!-- Non-Hero unit abilities description -->
 		<Unit_Abilities_Data SubObjectList="Yes">
-			<!-- Primary ability -->
+			<!-- Primary Ability. -->
 			<Unit_Ability>
 				<Type>LURE</Type>
 				<Alternate_Name_Text>TEXT_TOOLTIP_SYSTEM_CONTROL</Alternate_Name_Text>
 				<Alternate_Description_Text>TEXT_SYSTEM_CONTROL_DESCRIPTION</Alternate_Description_Text>
-				<!-- If you change this - please make sure you communicate the change to artists (to Mike specifically).
-				     Any change to this radius will require a manual adjustment to the particle effect. Thank you. -->
+
+				<!-- If you change this - please make sure you communicate the change to artists (to Mike specifically). -->
+				<!-- Any change to this radius will require a manual adjustment to the particle effect. Thank you. -->
 				<Effective_Radius>350</Effective_Radius>
 
 				<Target_Types>
-						AT_AT_Walker,
-						AT_ST_Walker,
-						AT_AA_Walker,
-						SPMAT_Walker,
-						Snowspeeder,
-						MPTL,
-						T2B_Tank,
-						T4B_Tank,
-						TIE_Crawler,
-						M1_Repulsor_Tank,
-						Pirate_Skiff,
-						Pirate_Skiff_E,
-						Pirate_Skiff_R,
-						Pirate_Skiff_U,
-						Empire_Anti_Infantry_Turret,
-						Rebel_Anti_Infantry_Turret,
-						Pirate_Anti_Infantry_Turret,
-						Empire_Anti_Vehicle_Turret,
-						Rebel_Anti_Vehicle_Turret,
-						Pirate_Anti_Vehicle_Turret,
-						Underworld_Mass_Driver_Turret,
-						Underworld_Torpedo_Turret,
-						Underworld_Rocket_Pod,
-						Empire_Grenade_Mortar,
-						Hutt_Grenade_Mortar,
-						Rebel_Rapid_Fire_Laser_Turret,
-						Hutt_Rapid_Fire_Laser_Turret,
-						Dark_Trooper_PhaseI,
-						Dark_Trooper_PhaseII,
-						Dark_Trooper_PhaseIII,
-						HAV_Juggernaut,
-						Lancet_Air_Artillery,
-						Gallofree_HTT_Transport,
-						Canderous_Assault_Tank,
-						Destroyer_Droid,
-						MAL_Rocket_Vehicle,
-						MZ8_Pulse_Cannon_Tank,
-						Swamp_Speeder_E,
-						Swamp_Speeder_R,
-						Swamp_Speeder_U,
-						Swamp_Speeder_P,
-						Pod_Walker_Rebel,
-						Pod_Walker_Empire,
-						Pod_Walker_Underworld,
-						Pod_Walker_Pirate,
-						Hutt_Pod_Walker,
-						Hutt_Skiff,
-						Hutt_Swamp_Speeder
+					AT_AT_Walker,
+					AT_ST_Walker,
+					AT_AA_Walker,
+					SPMAT_Walker,
+					Snowspeeder,
+					MPTL,
+					T2B_Tank,
+					T4B_Tank,
+					TIE_Crawler,
+					M1_Repulsor_Tank,
+					Pirate_Skiff,
+					Pirate_Skiff_E,
+					Pirate_Skiff_R,
+					Pirate_Skiff_U,
+					Empire_Anti_Infantry_Turret,
+					Rebel_Anti_Infantry_Turret,
+					Pirate_Anti_Infantry_Turret,
+					Empire_Anti_Vehicle_Turret,
+					Rebel_Anti_Vehicle_Turret,
+					Pirate_Anti_Vehicle_Turret,
+					Underworld_Mass_Driver_Turret,
+					Underworld_Torpedo_Turret,
+					Underworld_Rocket_Pod,
+					Empire_Grenade_Mortar,
+					Hutt_Grenade_Mortar,
+					Rebel_Rapid_Fire_Laser_Turret,
+					Hutt_Rapid_Fire_Laser_Turret,
+					Dark_Trooper_PhaseI,
+					Dark_Trooper_PhaseII,
+					Dark_Trooper_PhaseIII,
+					HAV_Juggernaut,
+					Lancet_Air_Artillery,
+					Gallofree_HTT_Transport,
+					Canderous_Assault_Tank,
+					Destroyer_Droid,
+					MAL_Rocket_Vehicle,
+					MZ8_Pulse_Cannon_Tank,
+					Swamp_Speeder_E,
+					Swamp_Speeder_R,
+					Swamp_Speeder_U,
+					Swamp_Speeder_P,
+					Pod_Walker_Rebel,
+					Pod_Walker_Empire,
+					Pod_Walker_Underworld,
+					Pod_Walker_Pirate,
+					Hutt_Pod_Walker,
+					Hutt_Skiff,
+					Hutt_Swamp_Speeder
 				</Target_Types>
 
 				<Recharge_Seconds>50</Recharge_Seconds>
 				<Expiration_Seconds>6</Expiration_Seconds>
 				
 				<Is_Pulsing>Yes</Is_Pulsing>
-				<Pulse_Frequency_Secs>0.5</Pulse_Frequency_Secs>
+				<Pulse_Frequency_Secs>0.50</Pulse_Frequency_Secs>
 				<Max_Number_Of_Pulses>40</Max_Number_Of_Pulses>
 				<Particle_Effect>Lure_Ability_Particle</Particle_Effect>
 	
-				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER,	0.25f</Mod_Multiplier><!-- Invulnerable -->
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.25</Mod_Multiplier> <!-- "Invulnerable." -->
 			</Unit_Ability>
 			
-			<!-- Primary ability -->
+			<!-- Secondary Ability. -->
 			<Unit_Ability>
 				<Type>EJECT_VEHICLE_THIEF</Type>
-				<Recharge_Seconds>10</Recharge_Seconds> <!-- time that the user can't eject thief, kicks in right away -->
+				<Recharge_Seconds>10</Recharge_Seconds><!-- Time that the user can't eject thief, kicks in right away. -->
 			</Unit_Ability>
-			
 		</Unit_Abilities_Data>
 	</GroundVehicle>
 
 
-
+	<!--MAIN: TEAM-->
 	<GroundCompany Name="Canderous_Assault_Tank_Company">
 		<Text_ID>TEXT_UNIT_CANDEROUS_TANK_COMPANY</Text_ID>
-		<Encyclopedia_Good_Against> Snowspeeder AT_AT_Walker M1_Repulsor_Tank  </Encyclopedia_Good_Against>
-		<Encyclopedia_Vulnerable_To> T4B_Tank MPTL SPMAT_Walker </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Good_Against>Snowspeeder AT_AT_Walker M1_Repulsor_Tank</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>T4B_Tank MPTL SPMAT_Walker</Encyclopedia_Vulnerable_To>
 		<Encyclopedia_Text>TEXT_TOOLTIP_TEXT_UNIT_CANDEROUS_TANK</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
-		<Icon_Name>i_button_uv_cander_tank.tga</Icon_Name>
+		<Icon_Name>I_Button_UV_Cander_Tank.tga</Icon_Name>
 
-		<GUI_Row> 1 </GUI_Row>
+		<GUI_Row>1</GUI_Row>
 		<Is_Dummy>Yes</Is_Dummy>
 		<Damage>20</Damage>
 		<Autoresolve_Health>100</Autoresolve_Health>
@@ -340,7 +334,7 @@
 		<Affiliation>Underworld</Affiliation>
 		<Build_Cost_Credits>2000</Build_Cost_Credits>
 		<Build_Time_Seconds>20</Build_Time_Seconds>
-		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Time_Reduced_By_Multiple_Factories>Yes</Build_Time_Reduced_By_Multiple_Factories>
 		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
 		<Tech_Level>1</Tech_Level>
 		<Required_Timeline>0</Required_Timeline>
@@ -351,11 +345,11 @@
 
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
 		<Formation_Priority>2</Formation_Priority>
-		<Is_Escort>yes</Is_Escort>
-		<Ship_Class>tank</Ship_Class>
+		<Is_Escort>Yes</Is_Escort>
+		<Ship_Class>Tank</Ship_Class>
 		<Company_Transport_Unit>Underworld_Vehicle_Transport</Company_Transport_Unit>
 		<Company_Units>Canderous_Assault_Tank, Canderous_Assault_Tank, Canderous_Assault_Tank</Company_Units>
-		<Max_Squad_Size> 1 </Max_Squad_Size>
+		<Max_Squad_Size>1</Max_Squad_Size>
 		<Score_Cost_Credits>180</Score_Cost_Credits>
 		<Population_Value>1</Population_Value>
 		<Maintenance_Cost>0.05</Maintenance_Cost>
@@ -368,130 +362,87 @@
 		<SFXEvent_Build_Complete>Unit_Complete_Canderous_Tank</SFXEvent_Build_Complete>
 		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Canderous_Tank</SFXEvent_Fleet_Move>
 
-		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<!-- MULTIPLAYER SKIRMISH VALUES START -->
 		<Tactical_Build_Cost_Multiplayer>1800</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites>UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
-		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
-		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
-		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+		<!-- <Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player> -->
+		<!-- <Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player> -->
 
 		<!-- Non-Hero unit abilities description -->
 		<Unit_Abilities_Data SubObjectList="Yes">
-			<!-- Primary ability -->
+			<!-- Primary Ability. -->
 			<Unit_Ability>
 				<Type>LURE</Type>
 				<Alternate_Name_Text>TEXT_TOOLTIP_SYSTEM_CONTROL</Alternate_Name_Text>
 				<Alternate_Description_Text>TEXT_SYSTEM_CONTROL_DESCRIPTION</Alternate_Description_Text>
-				<!-- If you change this - please make sure you communicate the change to artists (to Mike specifically).
-				     Any change to this radius will require a manual adjustment to the particle effect. Thank you. -->
+
+				<!-- If you change this - please make sure you communicate the change to artists (to Mike specifically). -->
+				<!-- Any change to this radius will require a manual adjustment to the particle effect. Thank you. -->
 				<Effective_Radius>350</Effective_Radius>
 
 				<Target_Types>
-						AT_AT_Walker,
-						AT_ST_Walker,
-						AT_AA_Walker,
-						SPMAT_Walker,
-						Snowspeeder,
-						MPTL,
-						T2B_Tank,
-						T4B_Tank,
-						TIE_Crawler,
-						M1_Repulsor_Tank,
-						Pirate_Skiff,
-						Pirate_Skiff_E,
-						Pirate_Skiff_R,
-						Pirate_Skiff_U,
-						Empire_Anti_Infantry_Turret,
-						Rebel_Anti_Infantry_Turret,
-						Pirate_Anti_Infantry_Turret,
-						Empire_Anti_Vehicle_Turret,
-						Rebel_Anti_Vehicle_Turret,
-						Pirate_Anti_Vehicle_Turret,
-						Underworld_Mass_Driver_Turret,
-						Underworld_Torpedo_Turret,
-						Underworld_Rocket_Pod,
-						Empire_Grenade_Mortar,
-						Hutt_Grenade_Mortar,
-						Rebel_Rapid_Fire_Laser_Turret,
-						Hutt_Rapid_Fire_Laser_Turret,
-						Dark_Trooper_PhaseI,
-						Dark_Trooper_PhaseII,
-						Dark_Trooper_PhaseIII,
-						HAV_Juggernaut,
-						Lancet_Air_Artillery,
-						Gallofree_HTT_Transport,
-						Canderous_Assault_Tank,
-						Destroyer_Droid,
-						MAL_Rocket_Vehicle,
-						MZ8_Pulse_Cannon_Tank,
-						Swamp_Speeder_E,
-						Swamp_Speeder_R,
-						Swamp_Speeder_U,
-						Swamp_Speeder_P,
-						Pod_Walker_Rebel,
-						Pod_Walker_Empire,
-						Pod_Walker_Underworld,
-						Pod_Walker_Pirate,
-						Hutt_Pod_Walker,
-						Hutt_Skiff,
-						Hutt_Swamp_Speeder
+					AT_AT_Walker,
+					AT_ST_Walker,
+					AT_AA_Walker,
+					SPMAT_Walker,
+					Snowspeeder,
+					MPTL,
+					T2B_Tank,
+					T4B_Tank,
+					TIE_Crawler,
+					M1_Repulsor_Tank,
+					Pirate_Skiff,
+					Pirate_Skiff_E,
+					Pirate_Skiff_R,
+					Pirate_Skiff_U,
+					Empire_Anti_Infantry_Turret,
+					Rebel_Anti_Infantry_Turret,
+					Pirate_Anti_Infantry_Turret,
+					Empire_Anti_Vehicle_Turret,
+					Rebel_Anti_Vehicle_Turret,
+					Pirate_Anti_Vehicle_Turret,
+					Underworld_Mass_Driver_Turret,
+					Underworld_Torpedo_Turret,
+					Underworld_Rocket_Pod,
+					Empire_Grenade_Mortar,
+					Hutt_Grenade_Mortar,
+					Rebel_Rapid_Fire_Laser_Turret,
+					Hutt_Rapid_Fire_Laser_Turret,
+					Dark_Trooper_PhaseI,
+					Dark_Trooper_PhaseII,
+					Dark_Trooper_PhaseIII,
+					HAV_Juggernaut,
+					Lancet_Air_Artillery,
+					Gallofree_HTT_Transport,
+					Canderous_Assault_Tank,
+					Destroyer_Droid,
+					MAL_Rocket_Vehicle,
+					MZ8_Pulse_Cannon_Tank,
+					Swamp_Speeder_E,
+					Swamp_Speeder_R,
+					Swamp_Speeder_U,
+					Swamp_Speeder_P,
+					Pod_Walker_Rebel,
+					Pod_Walker_Empire,
+					Pod_Walker_Underworld,
+					Pod_Walker_Pirate,
+					Hutt_Pod_Walker,
+					Hutt_Skiff,
+					Hutt_Swamp_Speeder
 				</Target_Types>
 
 				<Recharge_Seconds>50</Recharge_Seconds>
 				<Expiration_Seconds>6</Expiration_Seconds>
-				
+
 				<Is_Pulsing>Yes</Is_Pulsing>
-				<Pulse_Frequency_Secs>0.5</Pulse_Frequency_Secs>
+				<Pulse_Frequency_Secs>0.50</Pulse_Frequency_Secs>
 				<Max_Number_Of_Pulses>40</Max_Number_Of_Pulses>
 				<Particle_Effect>canderous_lure</Particle_Effect>
-	
-				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER,	0.25f</Mod_Multiplier><!-- Invulnerable -->
+
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.25</Mod_Multiplier> <!-- "Invulnerable." -->
 			</Unit_Ability>
-			
 		</Unit_Abilities_Data>
 	</GroundCompany>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </Canderous_Tank_Data>
