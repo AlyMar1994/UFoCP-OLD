@@ -29,8 +29,8 @@
 		<Prereq>Underworld_A02M06_Begin</Prereq>
 	</Event>
 
-	<!-- ALYMAR1994 (6/29/19): Fixing error that the Empire can retreat -->
-	<!-- at any point during the mission, when they shouldn't.			-->
+	<!-- AM1994 (6/29/19): Fixing error that the Empire can retreat -->
+	<!-- at any point during the mission, when they shouldn't. -->
 	<Event Name="Empire_A02M06_Prevent_Retreat">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>DISABLE_RETREAT</Reward_Type>
@@ -104,8 +104,8 @@
 				<Prereq>Underworld_A02M06_Governors_Destroyed</Prereq>
 			</Event>
 
-			<!-- ALYMAR1994 (6/29/19): Fixing error that the Empire can retreat -->
-			<!-- at any point during the mission, when they shouldn't.			-->
+			<!-- AM1994 (6/29/19): Fixing error that the Empire can retreat -->
+			<!-- at any point during the mission, when they shouldn't. -->
 			<!-- This re-enables Empire retreat totally when mission is done. -->
 			<Event Name="Empire_A02M06_Re-Enable_Retreat">
 				<Event_Type>STORY_TRIGGER</Event_Type>

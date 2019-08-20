@@ -29,7 +29,7 @@
 		<Second_Hero_Lose_Anim_Type>HC_LOSE</Second_Hero_Lose_Anim_Type>
 		<Second_Hero_Draw_Anim_Type>HC_DRAW</Second_Hero_Draw_Anim_Type>
 		<Second_Hero_Conversation_Anim_Type>IDLE</Second_Hero_Conversation_Anim_Type>
-		
+
 		<First_Hero_Win_Speech>Hero_Clash_Obiwan_Vader__Vader_Win</First_Hero_Win_Speech>
 		<Second_Hero_Win_Speech>Hero_Clash_Obiwan_Vader__Obiwan_Win</Second_Hero_Win_Speech>
 	</Hero_Clash>

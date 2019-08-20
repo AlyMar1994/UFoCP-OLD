@@ -32,9 +32,7 @@ function TechForce_Thread()
 	Purge_Goals(PlayerObject)
 
 	TechForce.Set_As_Goal_System_Removable(false)
-
 	Sleep(1)
-
 	BlockOnCommand(TechForce.Produce_Force())
 	TechForce.Set_Plan_Result(true)
 

@@ -92,7 +92,7 @@
 		</Enemies>
 		<Primary_Enemy>Empire</Primary_Enemy>
 		<Is_Neutral>No</Is_Neutral>
-		<Force_Alignment>Light</Force_Alignment>
+		<Force_Alignment>Light</Force_Alignment> <!-- Unused, as planets once had special effects for force alignments. -->
 
 		<Multiplayer_Campaign_Heroes>
 			Mon_Mothma_Team,
@@ -930,7 +930,7 @@
 		</Enemies>
 		<Primary_Enemy>Rebel</Primary_Enemy>
 		<Is_Neutral>No</Is_Neutral>
-		<Force_Alignment>Dark</Force_Alignment>
+		<Force_Alignment>Dark</Force_Alignment> <!-- Unused, as planets once had special effects for force alignments. -->
 
 		<Multiplayer_Campaign_Heroes>
 			Grand_Moff_Tarkin_Team,
@@ -1708,7 +1708,7 @@
 		</Enemies>
 		<Primary_Enemy />
 		<Is_Neutral>No</Is_Neutral>
-		<Force_Alignment>Neutral</Force_Alignment>
+		<Force_Alignment>Neutral</Force_Alignment> <!-- Unused, as planets once had special effects for force alignments. -->
 
 		<Space_Tactical_Unit_Cap>40</Space_Tactical_Unit_Cap>
 		<Maintenance_Cost>0.00</Maintenance_Cost>
@@ -1763,7 +1763,7 @@
 		<Enemies />
 		<Primary_Enemy />
 		<Is_Neutral>Yes</Is_Neutral>
-		<Force_Alignment>Neutral</Force_Alignment>
+		<Force_Alignment>Neutral</Force_Alignment> <!-- Unused, as planets once had special effects for force alignments. -->
 
 		<Space_Tactical_Unit_Cap>40</Space_Tactical_Unit_Cap>
 		<Maintenance_Cost>0.00</Maintenance_Cost>
@@ -1821,7 +1821,7 @@
 		</Enemies>
 		<Primary_Enemy />
 		<Is_Neutral>No</Is_Neutral>
-		<Force_Alignment>Neutral</Force_Alignment>
+		<Force_Alignment>Neutral</Force_Alignment> <!-- Unused, as planets once had special effects for force alignments. -->
 
 		<Space_Tactical_Unit_Cap>40</Space_Tactical_Unit_Cap>
 		<Maintenance_Cost>0.00</Maintenance_Cost>
@@ -1882,7 +1882,7 @@
 		</Enemies>
 		<Primary_Enemy />
 		<Is_Neutral>No</Is_Neutral>
-		<Force_Alignment>Neutral</Force_Alignment>
+		<Force_Alignment>Neutral</Force_Alignment> <!-- Unused, as planets once had special effects for force alignments. -->
 
 		<Space_Tactical_Unit_Cap>40</Space_Tactical_Unit_Cap>
 		<Maintenance_Cost>0.00</Maintenance_Cost>

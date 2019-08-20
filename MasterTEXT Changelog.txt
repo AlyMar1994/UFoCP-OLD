@@ -16,6 +16,8 @@ v1.6
 ===================================================================================================
 
 
+-Dialogue has undegone a large overhaul, and most (if not all) Underworld campaign (and tutorial) dialogue has been corrected, double-spaced and improved (most texts aren't double spaced, but dialogue is because of the non-serif pseudo-capitalized text being hard to read if not).
+-Normalized the Darth Vader-Obi-Wan Kenobi duel dialogue, by adding character indicators (e.g. "Obi-Wan Kenobi: ") in-front of the dialogue.
 -Fixed some ability tooltips (such as Bossk's "swap weapons" ability) by completing the sentence (adding periods).
 -For garrison/production dialogues, periods have been added to complete the sentence.
 -Any text that uses broken elipses character will be replaced with the correct amount of periods.

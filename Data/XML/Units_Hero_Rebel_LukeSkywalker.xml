@@ -137,8 +137,6 @@
 
 		<Target_Stealth_Units>Yes</Target_Stealth_Units>
 
-		<Unique_Space_Unit>Luke_Jedi_XWing</Unique_Space_Unit>
-
 		<!-- Non-Hero unit abilities description -->
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<!-- Primary Ability. -->

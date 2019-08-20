@@ -65,8 +65,8 @@
 
 		<Superweapon_Win_Movie />
 		<Generic_Win_Movie />
-		<Finale_Movie />
-		<Finale_Movie_2 />
+		<Finale_Movie>Underworld_Win_Story_Campaign</Finale_Movie>
+		<Finale_Movie_2>Underworld_Win_Story_Campaign_Part2</Finale_Movie_2>
 		<Post_Credits_Movie />
 		<Victory_Text>TEXT_UNDERWORLD_VICTORY</Victory_Text>
 		<Defeat_Text>TEXT_UNDERWORLD_DEFEAT</Defeat_Text>
@@ -88,7 +88,7 @@
 		</Enemies>
 		<Primary_Enemy />
 		<Is_Neutral>No</Is_Neutral>
-		<Force_Alignment>Light</Force_Alignment>
+		<Force_Alignment>Light</Force_Alignment> <!-- Unused, as planets once had special effects for force alignments. -->
 
 		<Multiplayer_Campaign_Heroes />
 
@@ -862,7 +862,7 @@
 		</Enemies>
 		<Primary_Enemy>Underworld</Primary_Enemy>
 		<Is_Neutral>No</Is_Neutral>
-		<Force_Alignment>Neutral</Force_Alignment>
+		<Force_Alignment>Neutral</Force_Alignment> <!-- Unused, as planets once had special effects for force alignments. -->
 
 		<Space_Tactical_Unit_Cap>40</Space_Tactical_Unit_Cap>
 		<Maintenance_Cost>0.00</Maintenance_Cost>

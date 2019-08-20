@@ -20,7 +20,7 @@ Whenever the AI is edited, it's not labeled based on specific changed units with
 =========================================================================================
 v1.6
 =========================================================================================
-** IMPORTANT ** With this update, the entire mod's undergone a heavy structural overhaul: all fixes have been re-written from scratch, files completely reorganized (for readability) and the like. Any changes that have NOT worked or survived are removed from the log. General file stuctures have also undergone organization improvements to help the discerning modder, this means duplicate tags, bad spacing and other things will be removed.
+** IMPORTANT ** With this update, the entire mod's undergone a heavy structural overhaul: all fixes have been re-written from scratch, most files completely reorganized (for readability) and the like. Any changes that have NOT worked or survived are removed from the log. General file stuctures have also undergone organization improvements to help the discerning modder, this means duplicate tags, bad spacing and other things will be removed.
 
 There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT Changelog.txt" in the game directory to see!
 
@@ -28,29 +28,46 @@ There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT 
 ==================
 General
 ==================
+-Campaign – Fixed a bug on Underworld Land Mission 01: 'A Crimelord Unleashed.' Fixed bad passability brushing, resulting in the player being able to direct Tyber Zann, Urai Fen or the rioteers to walk into solid objects (such as the power box and antenna right behind Tyber's cell, or on-ground objects). This has been fixed, and passability brushing on the entire map has been improved as well, to help movement and prevent stuck-bugs (less restricting on flat ground, ect).
 -Campaign – Fixed a bug on Underworld Land Mission 06: 'Dark Ally,' by replacing the icon for the Governor's Quarters from the prison icon to the proper Governor's Quarters icon.
 -Campaign – Fixed a bug on Underworld Land Mission 06: 'Dark Ally.' The Guard Towers had no icons, and have now been given one.
--Campaign – Fixed a bug on Underworld Land Mission 06: 'Dark Ally.' Due to bad "passability" brushing on slopes and certain hills, units could get stuck or fall through the map. Lots of slope passability brushing has been fixed/improved (this was especially noticeable with the Singing Mountain Prison's power generator area, where rancor-mounted Nightsisters could push a rancor very far up the north hill, pushing it through the map).
--Campaign – Fixed a bug on Underworld Space Mission 09 (technically 08): 'Baiting the Hook.' Fixed a super bad sequence where the Empire could outright retreat at the start of the mission (if outnumbered), causing the game to break. Retreat for both sides has now been disabled.
+-Campaign – Fixed a bug on Underworld Land Mission 06: 'Dark Ally.' Fixed bad passability brushing on slopes and certain hills where units could get stuck or (aparently) fall through the map (this was especially noticeable with the Singing Mountain Prison's power generator area, where rancor-mounted Nightsisters could push a rancor very far up the north hill, breaking it). This has been fixed, and passability brushing on the entire map has been improved as well, similar to the treatment Mission 01 got.
+-Campaign – Fixed a bug on Underworld Land Mission 06: 'Dark Ally.' Some trees, roots and other objects were floating in-air due to bad placement (this was especially noticeable on the rancor den at the middle-left hand of the map). This has been fixed (for the most part).
+-Campaign – Fixed a bug on Underworld Space Mission 09: 'Baiting the Hook.' Fixed a super bad sequence where the Empire could outright retreat at any point during the mission (if outnumbered) before Thrawn retreats, causing the game to break. Retreat for both sides has now been disabled.
+-Campaign – Fixed a regression where the finale movies for the main Underworld campaign wouldn't play.
 
 -Hostile – Fixed faction (hostile to all factions faction) not having the Hutts as an added enemy.
 
 -Hutts – Fixed faction not having the Black Sun Pirates as enemies, but was vice versa.
 
+-Maps – Removed file imbedded preview images. All maps should be *somewhat* smaller, and any maps that had any major terrain changes will get new maps in-game.
+
 -Underworld – Fixed generic "lose battle" music refrencing "Rebel_Lose_Tactical/Strategic_Event." It now references the "Underworld_" variant of that. The same music still plays, but at least it's properly checking for the right thing.
--Underworld – Fixed unit callouts for Tyber Zann. Underworld VO would say (for land) "Tyber Zann has landed!" as his space callout. This callout overall has been removed.
+-Underworld – Fixed unit callouts for Tyber Zann. Underworld VO would say (for land) "Tyber Zann has landed!" as his space callout. This callout overall has been removed (as Zann has no proper space unit callout).
+-Underworld – Normalized Underworld leader by removing all extra tags from the GameConstants file regarding Underworld leader (now soley "Tyber_Zann").
 
 
 ==================
 A.I. (Galactic Conquest)
 ==================
--EmpireAdvanceTechPlan – Fixed Empire build AI to actually build Darth Vader. Forgot to port over a change changing the build priority to "Darth_Team_Executor" instead of "Darth_Vader_Expansion."
+-EmpireAdvanceTechPlan – Fixed Empire build AI to actually build Darth Vader. Forgot to port over a change changing the build priority to "Darth_Team_Executor" instead of "Darth_Vader_Expansion." They *should* prioritize him as a build object now.
 
 -AI_Plan_ExpansionGeneric_RemoveCorruption - Fixed AI trying to call now-invalid tag "Darth_Team_Expansion" instead of "Darth_Team_Executor."
 
--GalacticFreeStore - Defined Tyber Zann as the leader of the Underworld.
+-GalacticFreeStore - Added checks for the AI to search for Tyber Zann, and label him as the leader of the Underworld and apply freestore AI to him.
 
 -WedgePlan – Modified Rogue Squadron's AI plan to prioritize attacking the Death Star II. If the Rebellion wins a battle against the DS2 with Wedge's X-wing alive in Rogue Squadron, the DS2 will be destroyed!
+
+
+==================
+Maps/Planets (Galactic)
+==================
+-Bespin – Fixed a holdover from EaW when Bespin had no land map. Changed Bespin and its campaign varaiant's weather icon to the "Sunny/Clear" icon, instead of the "None" weather (that space-only maps like the Maw and Vergesso Asteroids use).
+
+-Jabiim – Fixed the land unit backdrop. It was showing the green grass/temperate mountains overlay when it should be swamp.
+
+-Nal Hutta – Fixed planet (and all variants) being defined as "Temperate" when it's clearly a swamp. Infantry should display the proper swamp clothing models in land combat for the planet.
+-Nal Hutta – Fixed planet (and all variants) using the urban/Coruscant land unit backdrop when it should use swamp (main planet used swamp backdrop by default).
 
 
 ==================
@@ -58,10 +75,14 @@ Maps/Planets (Land)
 ==================
 -Carida – Fixed rancor spawning den at the bottom of the map. The den wasn't fully covered by the hill behind it, leaving a hole where you could see through the den. The hill size has been vertically increased to address this.
 -Carida – Fixed rancor NPCs not spawning. Faction owner for the extra rancors being "Hutts" instead of "hostile." The extra rancors should now appear.
+-Carida – In addition to the campaign maps, fixed passability brushing on Carida. The entire map should be more consistient, and better at restricted/free movement across land. Water that wasn't marked using the "Water" brush should now show up on the minimap, and overall be smoothened.
 
 -Honoghr – Flattened some land and changed some passability brushing near the top-right most building placement point, so units (specifically Droideka MK. IIs) don't get stuck permanently on the slope south of it.
+-Honoghr – Fixed passability brushing on Honoghr.
 
--Tatooine – The land where the saarlac inhabited in EaW wasn't flattened out when the saarlac was removed, leaving a huge indent in the ground. This has been fixed, and the base layout map in-game has been fixed to address this.
+-Tatooine – The land where the saarlac inhabited in EaW wasn't flattened out when the saarlac was removed for FoC, leaving a huge, walkable indent in the ground. This has been fixed, and the base layout map in-game has been fixed to address this.
+-Tatooine – Fixed passability brushing on Tatooine.
+
 
 ==================
 Maps/Planets (Space)
@@ -72,17 +93,6 @@ Maps/Planets (Space)
 -Honoghr – Adjusted space station position.
 
 -Felucia – Adjusted space station position.
-
-
-==================
-Maps/Planets (Galactic)
-==================
--Bespin – Fixed a holdover from EaW when Bespin had no land map. Changed Bespin and its campaign varaiant's weather icon to the "Sunny/Clear" icon, instead of the "None" weather (that space-only maps like the Maw and Vergesso Asteroids use).
-
--Jabiim – Fixed the land unit backdrop. It was showing the green grass/temperate mountains overlay when it should be swamp.
-
--Nal Hutta – Fixed main planet (and all variants) being defined as "Temperate" when it's clearly a swamp.
--Nal Hutta – Fixed all variants of the planet using the urban/Coruscant land unit backdrop when it should use swamp (main planet used swamp backdrop by default).
 
 
 ==================
@@ -111,21 +121,19 @@ Units (Land)
 -Darth Vader – Fixed unit type (again). Replaced my custom-made "Darth_Team_Expansion" tag with the official "Darth_Team_Executor" tag that was hiding in the Executor's unit file. The change should reletively be pointless; Darth Vader's FoC variant should still replace land battles in Skirmish, with the same results.
 -Darth Vader – Fixed ambient breathing SFX for both EaW and FoC unit. Gave units proper behavior to process ambient SFX sounds, so now Vader's ambient breathing should play randomly while moving.
 
--General Veers – Added a hero blob insignia to Veers's AT-AT, as he was the only Empire hero not to have one. Veers now has the Empire symbol ring when highlighted/selected/stagnant by default.
+-General Veers – Added a hero insignia to differentiate Veers's AT-AT (he was the only Empire hero not to have one). Veers now has the Empire land ring when highlighted/selected/stagnant by default.
 -General Veers – Fixed ambient SFX not playing; unit didn't have AMBIENT_SFX behavior to use.
 
--Luke Skywalker – Gave unit "Unique_Space_Unit" tag pointing to his X-wing, like all other land units with space units do. This change *might* be useless.
+-R2D2 & C3P0 – Fixed R2's "hack turret" ability not working on Skirmish Underworld-owned turbolaser towers.
 
--R2D2 & C3P0 – Fixed R2's "Hack Turret" ability not working on Skirmish-owned Underworld turbolaser towers.
-
--Urai Fen – Fixed Urai's Cortosis Blades' "block lightsaber" ability not having a chance to block the Campaign Force Adept's lightsaber attacks, even though Urai has a chance to deflect all other lightsaber-using hero's attacks.
--Urai Fen – Fixed Cortosis Blades' "block lightsaber" ability not blocking Silri's lightsaber whip during Consortium v. Consortium battles in Skrimish.
+-Urai Fen – Fixed "block lightsaber" ability not being able to block the Campaign Force Adept's lightsaber attacks, even though Urai has a chance to deflect all other lightsaber-using hero's attacks.
+-Urai Fen – Fixed "block lightsaber" ability not blocking Silri's lightsaber whip during Consortium v. Consortium battles in Skrimish.
 
 
 ==================
 Units (Space)
 ==================
-**The Expansion Hardpoints file has undergone an overhaul! All expansion units/hardpoints that didn't originally have a damage type assigned to them now does, which may affect their balance/performance (e.g. Bossk's lasers may now do half-as-much damage as before, due to having no damage type at all being changed to Damage_Fighter). Most of these changes won't be put in the changelog, but major ones will.
+**The Expansion Hardpoints file has undergone an overhaul! All expansion units/hardpoints that didn't originally have a damage type assigned to them now does, which may affect their balance/performance. Most of these changes won't be put in the changelog, but major ones will.
 
 
 -Acclamator Assault Ship – Fixed Underworld-type Acclamator ship being "good against"/"vulnerable to" own faction's units. Replaced "good against" Crusader Gunship with Tartan Patrol Cruiser, and replaced "vulnerable to" Skipray Blastboat with TIE bomber.
@@ -137,7 +145,7 @@ Units (Space)
 -A-wing – Re-fixed incorrect build/cancel sounds for the Underworld-type A-wing. It will now play Underworld sounds.
 
 -B-wing – Fixed fighter trying to use only one ion weapon, twice. Instead of two references to "HP_BWING_ION_00," it's now "HP_BWING_ION_00" and "HP_BWING_ION_01" so both ion weapons fire.
--B-wing – Fixed squadron's tags. "Is_Escort" (essentially, is anti-fighter fighter?) was set to "Nos" instead of "No."
+-B-wing – Fixed squadron's tags. "Is_Escort" was set to "Nos" instead of "No."
 
 -Broadside Cruiser – Fixed Underworld-type Broadside Cruiser being "good against"/"vulnerable to" own faction's units. Replaced "good against" Skipray Blastboat with TIE bombers and "vulnerable to" Vengance Frigate to Victory Star Destroyer.
 
@@ -149,22 +157,22 @@ Units (Space)
 
 -Hound's Tooth – Gave fighter laser cannons damage type "Damage_Fighter." Bossk will now do half (if not 75% less) his normal damage to most heavier shielded units (Tartan Patrol Cruiser onwards).
 
--Interceptor IV Frigate – Fixed turbolaser cannons on ship. Was registering damage type "Damage_Acclamator" (anti-starfighter lasers) instead of "Damage_Acclamator_TL" (anti-ship turbolasers), as all other values in the hardpoints point towards the cannons being turbolasers instead of lasers.
+-Interceptor IV Frigate – Fixed turbolaser cannons on ship. Was registering damage type "Damage_Acclamator" (anti-starfighter lasers) instead of "Damage_Acclamator_TL" (anti-ship turbolasers), and all other values in the hardpoints point towards the cannons being turbolasers instead of lasers.
 
--IG-2000 – Gave fighter laser cannons damage type "Damage_Fighter." IG-88 will now do half (if not 75% less) his normal damage to most heavier shielded units (Tartan Patrol Cruiser onwards).
+-IG-2000 – Gave fighter laser cannons damage type "Damage_Fighter." IG-88 will now do half (if not 75% less) his normal damage to most heavier shielded units (Tartan Patrol Cruiser onwards), but will still be an effective anti-fighter unit.
 
 -IPV Patrol Craft – Fixed unit having no selection UI ring when selected.
 -IPV Patrol Craft – Fixed unit using incorrectly assigned "power to weapons" ability sound (was Corellian Corvette, now IPV).
 -IPV Patrol Craft – Added the Underworld to the list of affiliated factions with this unit.
 
 -Luke Skywalker (Standalone) – Fixed audio events. Skywalker still said EaW line "Red 5 here!" when selected in space. This no longer happens.
--Luke Skywalker (Standalone) – Made Skywalker's X-wing a variant of the original X-wing unit. This fixes multiple bugs: where Luke's unit image would display twice, Luke's fighter not hyperspace jumping into battle, and the extended health bar. No other stats to him have been modified, except undefined stats which are replaced by the X-wing template.
+-Luke Skywalker (Standalone) – Made Skywalker's X-wing a variant of the original X-wing unit. This fixes multiple bugs: Luke's fighter not hyperspace jumping into battle, and the extended health bar. No other stats to him have been modified, except undefined stats which are replaced by the X-wing template.
 
 -Luke Skywalker (Red Squadron) - Fixed Luke Skywalker's Red Squadron X-wing, by making it a variant of the original X-wing. Some gameplay issues have been resolved with him.
 
 -Marauder Cruiser – Fixed Underworld-type Marauder Cruiser being "good against"/"vulnerable to" own faction's units. Replaced "good against" Starviper Fighter with X-wings and "vulnerable to" Vengance Frigate to Alliance Assault Ship.
 
--MC30c Frigate – Added laser cannon damage type. Gave the ship the same laser cannons as the Rebellion assault frigate.
+-MC30c Frigate – Gave laser cannon damage type. Gave the ship the same laser cannons as the Rebellion assault frigate.
 
 -Merciless – Fixed plasma ball type. Original plasma blast was the Star Destroyer turbolaser type, now it's the default Aggressor-class plasma shot damage.
 

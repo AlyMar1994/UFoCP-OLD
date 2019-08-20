@@ -32,7 +32,6 @@ function BaseForce_Thread()
 	
 	BaseForce.Set_As_Goal_System_Removable(false)
 	AssembleForce(BaseForce)
-	
 	BaseForce.Set_Plan_Result(true)
 	DebugMessage("%s -- Base Force done!", tostring(Script));
 	ScriptExit()

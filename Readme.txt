@@ -69,10 +69,10 @@ Diamondback
 Support
 ================
 -KadVenku 
-	– Tons of help on GitHub for issues with FoC.
+	– Lots of help on GitHub for issues with FoC.
 
 -STAR WARS: Empire at War Community Discord (specif. Galyana, Lany & Nikomer)
-	– FoC technical help.
+	– Technical help.
 
 =========================================================================================
 

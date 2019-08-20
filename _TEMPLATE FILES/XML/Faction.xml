@@ -91,7 +91,7 @@
 		</Enemies>
 		<Primary_Enemy>FactionName</Primary_Enemy>
 		<Is_Neutral>Yes/No</Is_Neutral>
-		<Force_Alignment>Light/Neutral/Dark</Force_Alignment>
+		<Force_Alignment>Light/Neutral/Dark</Force_Alignment> <!-- Unused, as planets once had special effects for force alignments. -->
 
 		<Multiplayer_Campaign_Heroes>
 			HeroName_One_Team,

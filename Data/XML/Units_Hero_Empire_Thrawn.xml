@@ -193,15 +193,15 @@
 		<Variant_Of_Existing_Type>Admonitor_Star_Destroyer</Variant_Of_Existing_Type>
 
 		<HardPoints>
-			HP_Thrawn_SD_Weapon_FL, 
-			HP_Thrawn_SD_Weapon_FR, 
-			HP_Thrawn_SD_Weapon_BL, 
-			HP_Thrawn_SD_Weapon_BR, 
-			HP_Thrawn_SD_Weapon_ML, 
-			HP_Thrawn_SD_Weapon_MR, 
-			HP_Thrawn_SD_Shield_Generator, 
-			HP_Thrawn_SD_Engines_No_Target, 
-			HP_Thrawn_SD_Fighter_Bay, 
+			HP_Thrawn_SD_Weapon_FL,
+			HP_Thrawn_SD_Weapon_FR,
+			HP_Thrawn_SD_Weapon_BL,
+			HP_Thrawn_SD_Weapon_BR,
+			HP_Thrawn_SD_Weapon_ML,
+			HP_Thrawn_SD_Weapon_MR,
+			HP_Thrawn_SD_Shield_Generator,
+			HP_Thrawn_SD_Engines_No_Target,
+			HP_Thrawn_SD_Fighter_Bay,
 			HP_Thrawn_SD_Tractor_Beam
 		</HardPoints>
 	</UniqueUnit>
