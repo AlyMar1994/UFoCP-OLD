@@ -18,6 +18,44 @@ Whenever the AI is edited, it's not labeled based on specific changed units with
 
 
 =========================================================================================
+v1.7 - Hotfix #4
+=========================================================================================
+
+
+==================
+Maps/Planets (Galactic)
+==================
+-Honoghr – Fixed the campaign and prologue variants of the planet not having the Noghri warrior as the population icon. It was the default urban human.
+
+-Mandalore – Fixed the campaign and prologue variants of the planet not having the Mandalorian warrior as the population icon. It was the default urban human.
+
+
+==================
+Maps/Planets (Galactic)
+==================
+-Anaxes – Adjusted space station position
+
+
+==================
+Units (Galactic)
+==================
+-Boba Fett – Fixed unit tooltip. It was labeled as "[MISSING]" due to an in-seperation of two tooltip texts in one.
+
+-Emperor Palpatine – Fixed unit tooltip. It was labeled as "[MISSING]" due to an in-seperation of two tooltip texts in one.
+
+
+==================
+Units (Land)
+==================
+-Emperor Palpatine – Fixed tooltip not indicating if unit can capture build pads or not.
+
+-Mara Jade – Fixed tooltip not indicating if unit can capture build pads or not.
+
+
+=========================================================================================
+
+
+=========================================================================================
 v1.6
 =========================================================================================
 ** IMPORTANT ** With this update, the entire mod's undergone a heavy structural overhaul: all fixes have been re-written from scratch, most files completely reorganized (for readability) and the like. Any changes that have NOT worked or survived are removed from the log. General file stuctures have also undergone organization improvements to help the discerning modder, this means duplicate tags, bad spacing and other things will be removed.

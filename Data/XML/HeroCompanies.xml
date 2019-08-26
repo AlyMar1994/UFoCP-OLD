@@ -1116,7 +1116,7 @@
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
 		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
 
-		<Encyclopedia_Text>TEXT_TOOLTIP_PALPATINE_01</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_TOOLTIP_PALPATINE_01 TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SITH_LORD</Encyclopedia_Unit_Class>
 
 		<CategoryMask>LandHero</CategoryMask>
@@ -1161,7 +1161,7 @@
 				<Type>MAXIMUM_FIREPOWER</Type>
 				<Expiration_Seconds>4</Expiration_Seconds>
 				<Recharge_Seconds>30</Recharge_Seconds>
-				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.3f</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.30</Mod_Multiplier>
 				<GUI_Activated_Ability_Name>AT_AT_Maximum_Firepower_Attack</GUI_Activated_Ability_Name><!-- GUI Command Bar support. -->
 				<Projectile_Types_Override>Proj_Veers_AT_AT_Max_Power_Laser_Red</Projectile_Types_Override>
 				<Mod_Flag>ALLOW_TARGET_DIMINISHING_FIREPOWER, false</Mod_Flag>
@@ -1266,7 +1266,7 @@
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
 		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
 
-		<Encyclopedia_Text>TEXT_TOOLTIP_MARA_JADE</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_TOOLTIP_MARA_JADE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR</Encyclopedia_Unit_Class>
 
 		<CategoryMask>LandHero</CategoryMask>

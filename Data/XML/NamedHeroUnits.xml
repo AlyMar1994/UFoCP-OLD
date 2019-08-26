@@ -1363,7 +1363,7 @@
 
 		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
 		<Score_Cost_Credits>10000</Score_Cost_Credits>
-		<Encyclopedia_Text>TEXT_TOOLTIP_BOBA_FETTTEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_TOOLTIP_BOBA_FETT TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOUNTY_HUNTER</Encyclopedia_Unit_Class>
 		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
 
@@ -1539,7 +1539,7 @@
 
 		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
 		<Score_Cost_Credits>10000</Score_Cost_Credits>
-		<Encyclopedia_Text>TEXT_TOOLTIP_BOBA_FETTTEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_TOOLTIP_BOBA_FETT TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOUNTY_HUNTER</Encyclopedia_Unit_Class>
 		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
 
@@ -2234,7 +2234,7 @@
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Is_Force_Sensitive>Yes</Is_Force_Sensitive>
 		<Text_ID>TEXT_HERO_EMPEROR_PALPATINE</Text_ID>
-		<Encyclopedia_Text>TEXT_TOOLTIP_PALPATINE_01TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_TOOLTIP_PALPATINE_01 TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SITH_LORD</Encyclopedia_Unit_Class>
 		
 		<Land_Model_Name>EI_Palpatine.ALO</Land_Model_Name>

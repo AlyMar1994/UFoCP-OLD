@@ -2521,7 +2521,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Encyclopedia_Weather_Name>TEXT_WEATHER_NAME_SUN</Encyclopedia_Weather_Name>
 		<Encyclopedia_Weather_Info>TEXT_TACTICAL_WEATHER_OBJECTIVE_SUN</Encyclopedia_Weather_Info>
 		<Planet_Ability_Icon>i_pa_tactical_secure.tga</Planet_Ability_Icon>
-		<Native_Icon_Name>load_urban.tga</Native_Icon_Name>
+		<Native_Icon_Name>load_noghri.tga</Native_Icon_Name>
 
 		<Additional_Population_Capacity>5</Additional_Population_Capacity>
 
@@ -3670,7 +3670,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Encyclopedia_Weather_Name>TEXT_WEATHER_NAME_RAIN</Encyclopedia_Weather_Name>
 		<Encyclopedia_Weather_Info>TEXT_TACTICAL_WEATHER_OBJECTIVE_RAIN</Encyclopedia_Weather_Info>
 		<Planet_Ability_Icon>i_pa_galactic_production_boost.tga</Planet_Ability_Icon>
-		<Native_Icon_Name>load_urban.tga</Native_Icon_Name>
+		<Native_Icon_Name>load_mandalorian.tga</Native_Icon_Name>
 
 		<Additional_Population_Capacity>5</Additional_Population_Capacity>
 
@@ -3763,7 +3763,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Encyclopedia_Weather_Name>TEXT_WEATHER_NAME_RAIN</Encyclopedia_Weather_Name>
 		<Encyclopedia_Weather_Info>TEXT_TACTICAL_WEATHER_OBJECTIVE_RAIN</Encyclopedia_Weather_Info>
 		<Planet_Ability_Icon>i_pa_galactic_production_boost.tga</Planet_Ability_Icon>
-		<Native_Icon_Name>load_urban.tga</Native_Icon_Name>
+		<Native_Icon_Name>load_mandalorian.tga</Native_Icon_Name>
 
 		<Additional_Population_Capacity>5</Additional_Population_Capacity>
 
