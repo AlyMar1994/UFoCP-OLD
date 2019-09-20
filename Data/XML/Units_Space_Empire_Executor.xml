@@ -330,6 +330,7 @@
 
 	<!-- MAIN - Darth Vader Team -->
 	<HeroCompany Name="Darth_Team_Executor">
+		<GUI_Row>1</GUI_Row>
 		<Text_ID>TEXT_HERO_VADER_TEAM</Text_ID>
 		<Encyclopedia_Text>TEXT_TOOLTIP_DARTH_VADER TEXT_TOOLTIP_EXECUTOR</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SITH_LORD</Encyclopedia_Unit_Class>

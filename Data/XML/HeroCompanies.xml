@@ -1038,6 +1038,8 @@
 	<HeroCompany Name="Darth_Team_Land_MP">
 		<Variant_Of_Existing_Type>Darth_Team_Executor</Variant_Of_Existing_Type>
 
+		<Tech_Level>99</Tech_Level>
+
 		<Tactical_Build_Cost_Multiplayer>2500</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>33</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>

@@ -22,6 +22,21 @@ v1.8
 =========================================================================================
 
 
+==================
+Maps/Planets (Space)
+==================
+**For space station adjustments (and what they mean), see update changelog 1.1!
+
+-Bestine – Adjusted space station position.
+
+
+==================
+Units (Galactic)
+==================
+-Darth Vader – Fixed two versions of Darth Vader being buildable as the Empire. Also fixed nurmerous debug issues, where Vader would have no defined icon position on the build GUI.
+
+
+=========================================================================================
 
 
 =========================================================================================
