@@ -36,7 +36,7 @@
 
 		<!-- Specialized Faction Unit Icons -->
 		<!-- (Can be specific unit buttons, too!) -->
-		<Infantry_Icon_Name>i_Button_UI_Mercenary_Infantry.tga</Infantry_Icon_Name>
+		<Infantry_Icon_Name>I_Button_UI_Mercenary_Infantry.tga</Infantry_Icon_Name>
 		<Vehicle_Icon_Name>I_R_Vehicle.tga</Vehicle_Icon_Name>
 		<Carrier_Icon_Name>I_R_Carrier.tga</Carrier_Icon_Name>
 		<Frigate_Icon_Name>I_R_Frigate.tga</Frigate_Icon_Name>
@@ -105,12 +105,12 @@
 		
 		<!-- Underworld Corruption Settings (on this Faction) -->
 		<Benefits_From_Corruption>Yes</Benefits_From_Corruption>
-		<Corruption_Galactic_Production_Time_Multipliers>1.0, 1.0</Corruption_Galactic_Production_Time_Multipliers>
-		<Corruption_Galactic_Production_Price_Multipliers>1.0, 1.0</Corruption_Galactic_Production_Price_Multipliers>
-		<Corruption_Tactical_Production_Time_Multipliers>1.0, 1.0</Corruption_Tactical_Production_Time_Multipliers>
-		<Corruption_Tactical_Production_Price_Multipliers>1.0, 1.0</Corruption_Tactical_Production_Price_Multipliers>
-		<Corruption_Tactical_Build_Pad_Time_Multipliers>1.0, 1.0</Corruption_Tactical_Build_Pad_Time_Multipliers>
-		<Corruption_Tactical_Build_Pad_Price_Multipliers>1.0, 1.0</Corruption_Tactical_Build_Pad_Price_Multipliers>
+		<Corruption_Galactic_Production_Time_Multipliers>1.00, 1.00</Corruption_Galactic_Production_Time_Multipliers>
+		<Corruption_Galactic_Production_Price_Multipliers>1.00, 1.00</Corruption_Galactic_Production_Price_Multipliers>
+		<Corruption_Tactical_Production_Time_Multipliers>1.00, 1.00</Corruption_Tactical_Production_Time_Multipliers>
+		<Corruption_Tactical_Production_Price_Multipliers>1.00, 1.00</Corruption_Tactical_Production_Price_Multipliers>
+		<Corruption_Tactical_Build_Pad_Time_Multipliers>1.00, 1.00</Corruption_Tactical_Build_Pad_Time_Multipliers>
+		<Corruption_Tactical_Build_Pad_Price_Multipliers>1.00, 1.00</Corruption_Tactical_Build_Pad_Price_Multipliers>
 		<!-- The Underworld doesn't bribe themselves... -->
 		<!-- <Easily_Bribed>Yes/No</Easily_Bribed> -->
 		<Bribed_Color>155, 153, 119, 255</Bribed_Color>
