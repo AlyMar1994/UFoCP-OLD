@@ -186,7 +186,7 @@
 		<Radar_Icon_Name>I_Radar_Executor.tga</Radar_Icon_Name>
 		<Radar_Icon_Scale_Land>1.00</Radar_Icon_Scale_Land>
 		<Radar_Icon_Scale_Space>1.00</Radar_Icon_Scale_Space>
-		<Radar_Icon_Size>0.40.4</Radar_Icon_Size>
+		<Radar_Icon_Size>0.4, 0.4</Radar_Icon_Size>
 
 		<Space_Override_Population_Value>3</Space_Override_Population_Value>
 

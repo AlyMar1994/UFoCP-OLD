@@ -643,7 +643,7 @@
 		<SFXEvent_Tactical_Gain_Friendly_Control>Secondary_Abandoned_Sensor,			UHD_Capture_Sensor</SFXEvent_Tactical_Gain_Friendly_Control>
 		<SFXEvent_Tactical_Lose_Friendly_Control>Secondary_Abandoned_Turbolaser_Tower,	UHD_Lost_Turbo</SFXEvent_Tactical_Lose_Friendly_Control>
 		<SFXEvent_Tactical_Gain_Friendly_Control>Secondary_Abandoned_Turbolaser_Tower,	UHD_Capture_Turbo</SFXEvent_Tactical_Gain_Friendly_Control>
-		<SFXEvent_Tactical_Lose_Friendly_Control>Secondary_Mercenary_Outfitter,			UHD_Lost_Mercenaries</SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Secondary_Mercenary_Outfitter, </SFXEvent_Tactical_Lose_Friendly_Control>
 		<SFXEvent_Tactical_Gain_Friendly_Control>Secondary_Mercenary_Outfitter,			UHD_Capture_Mercenaries</SFXEvent_Tactical_Gain_Friendly_Control>
 
 		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point,				UHD_Landing_Zone_Lost</SFXEvent_Tactical_Lose_Friendly_Control>

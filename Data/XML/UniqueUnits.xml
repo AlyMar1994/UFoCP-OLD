@@ -413,16 +413,14 @@
 		<Remove_Upon_Death>True</Remove_Upon_Death>
 	</UniqueUnit>
 
-	<!-- Special version - End of Rebel campaign! -->
-	<UniqueUnit Name="Millennium_Falcon_Space">
+	<UniqueUnit Name="Millennium_Falcon_Space"> <!-- Special version - End of Rebel campaign! -->
 		<Variant_Of_Existing_Type>Millennium_Falcon</Variant_Of_Existing_Type>
 
 		<Behavior>DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
 		<Icon_Name>I_Button_Millennium_Falcon.tga</Icon_Name>
 	</UniqueUnit>
 
-	<!-- Special version - Rebel Kashyyyk mission (as prop)! -->
-	<UniqueUnit Name="Millennium_Falcon_Ground">
+	<UniqueUnit Name="Millennium_Falcon_Ground"> 	<!-- Special version - Rebel Kashyyyk mission (as prop)! -->
 		<Variant_Of_Existing_Type>Millennium_Falcon</Variant_Of_Existing_Type>
 
 		<!-- <Behavior>DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior> -->
@@ -470,9 +468,7 @@
 		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Falcon_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
 	</UniqueUnit>
 
-	<!-- Special version - Rebel rescue Falcon mission! -->
-	<!-- (Model's rotation origin spinned around 180*.) -->
-	<UniqueUnit Name="Millenium_Falcon_Backwards">
+	<UniqueUnit Name="Millenium_Falcon_Backwards"> 	<!-- Special version - Rebel rescue Falcon mission! (Model's rotation origin spinned around 180*.) -->
 		<Variant_Of_Existing_Type>Millennium_Falcon</Variant_Of_Existing_Type>
 
 		<Space_Model_Name>RV_MFalcon_Backwards.alo</Space_Model_Name>
@@ -1647,7 +1643,7 @@
 		<Encyclopedia_Vulnerable_To>Snowspeeder Plex_Soldier Underworld_Disruptor_Merc</Encyclopedia_Vulnerable_To>
 		<Land_Model_Name>EV_AT-AT.ALO</Land_Model_Name>
 		<Behavior>SELECTABLE</Behavior>
-		<LandBehavior>ABILITY_COUNTDOWN, DEPLOY_TROOPERS, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, TURRET, POWERED, REVEAL, HIDE_WHEN_FOGGED, SQUASH, AFFECTED_BY_SHIELD, STUNNABLE, DAMAGE_TRACKING, AMBIENT_SFX</LandBehavior>
+		<LandBehavior>ABILITY_COUNTDOWN, DEPLOY_TROOPERS, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, TURRET, POWERED, REVEAL, HIDE_WHEN_FOGGED, SQUASH, AFFECTED_BY_SHIELD, STUNNABLE, DAMAGE_TRACKING</LandBehavior>
 		<Is_Supercrusher>Yes</Is_Supercrusher>
 		<Property_Flags>IsSupercrusher</Property_Flags>
 		<Property_Flags>GoodInfantryCrusher</Property_Flags>

@@ -9,9 +9,9 @@
 	<SFXEvent Name="EventName">
 		<Use_Preset>Preset_Name</Use_Preset> <!-- In SFXEventPresets.xml -->
 		<Samples>SoundName.file1, SoundName.file2, SoundName.file3</Samples>
-		<Text_ID>TEXT_ID_FOR_SUBTITLES_OF_SOUND</Text_ID> <!-- Unused, but the debug client still asks for it! -->
+		<Text_ID>TEXT_ID_FOR_SUBTITLES_OF_SOUND</Text_ID> <!-- Unused, but the debug client still creates debug errors 'en masse' without it! -->
 		<Localize>Yes/No</Localize> <!-- Is there Localized audio for this? -->
-		<Play_Sequentially>Yes/No</Play_Sequentially>
+		<Play_Sequentially>Yes/No</Play_Sequentially> <!-- Play in order of listed files? -->
 		<Overlap_Test>Unit_HUD</Overlap_Test> <!-- To this day, no one knows what the fuck this does. -->
 	</SFXEvent>
 </SFXEvents>

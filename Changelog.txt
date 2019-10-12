@@ -23,9 +23,17 @@ v1.8
 
 
 ==================
+General
+==================
+-Attempts have started to fix as many internal errors as possible, mainly with errors that don't lead anywhere (i.e. missing files).
+**Fixed Vader having no defined icon position on the build GUI, causing multiple debug issues.
+
+
+==================
 Maps/Planets (Space)
 ==================
-**For space station adjustments (and what they mean), see update changelog 1.1!
+**All space station maps in UFoCP this update have also been edited to be more practical, and have it's angle shifted to view the entire ahead map area; not soley focused on where the attackers spawn.
+
 
 -Bestine – Adjusted space station position.
 
@@ -33,10 +41,36 @@ Maps/Planets (Space)
 ==================
 Units (Galactic)
 ==================
--Darth Vader – Fixed two versions of Darth Vader being buildable as the Empire. Also fixed nurmerous debug issues, where Vader would have no defined icon position on the build GUI.
+-Darth Vader – Fixed two versions of Darth Vader being buildable as the Empire.
+
+
+==================
+Units (Land)
+==================
+-Bossk – Fixed land unit tooltip not having text relating to whether Bossk can capture build pads or no.
+
+-Hound's Tooth – Fixed land prop variant not being the same size as the normal landing variant.
+
+-Darth Vader – Fixed skirmish Vader's land tooltip. The land Vader no longer has the special text about the Super Star Destroyer Executor.
+-Darth Vader – Fixed regression in ambient SFX. Vader will now play his SFX randomly again.
+
+-General Veers – Fixed regression in ambient SFX. Veers should play his SFX again.
+
+-IG-2000 – Fixed land prop variant not being the same size as the normal landing variant.
+
+-Mara Jade – Fixed Jade's tooltip (again). Fixed inconsistient uses of the "this unit can capture build pads" text.
+
+
+==================
+Units (Space)
+==================
+-Hound's Tooth – Fixed space unit indicators. The unit's "vulnerable to" and "strong against" indicators should now match up with the MP team's indicators.
+
+-Executor Super Star Destroyer (Darth Vader) – Fixed icon on minimap. The culprit was improper UI coordinates ('0.40.4,' instead of '0.4, 0.4').
 
 
 =========================================================================================
+
 
 
 =========================================================================================
@@ -75,6 +109,7 @@ Units (Land)
 
 
 =========================================================================================
+
 
 
 =========================================================================================
@@ -258,6 +293,7 @@ Units (Space)
 =========================================================================================
 
 
+
 =========================================================================================
 v1.5 - Imperatoria Evigilationem Significasse
 =========================================================================================
@@ -295,6 +331,7 @@ Units (Space)
 =========================================================================================
 
 
+
 =========================================================================================
 v1.4 - Hotfix #3
 =========================================================================================
@@ -311,6 +348,7 @@ Units (Land)
 =========================================================================================
 
 
+
 =========================================================================================
 v1.3 - Super Hotfix #2
 =========================================================================================
@@ -325,6 +363,7 @@ Units (Land)
 
 
 =========================================================================================
+
 
 
 =========================================================================================
@@ -439,6 +478,7 @@ Units (Space)
 =========================================================================================
 
 
+
 =========================================================================================
 v1.1
 =========================================================================================
@@ -495,6 +535,7 @@ Units (Space)
 =========================================================================================
 
 
+
 =========================================================================================
 v1.0.1 - Hotfix #1
 =========================================================================================
@@ -507,6 +548,7 @@ Units (Land)
 
 
 =========================================================================================
+
 
 
 =========================================================================================
