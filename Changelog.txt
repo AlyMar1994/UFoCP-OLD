@@ -25,8 +25,6 @@ v1.8
 ==================
 General
 ==================
--Attempts have started to fix as many internal errors as possible, mainly with errors that don't lead anywhere (i.e. missing files).
-**Fixed Vader having no defined icon position on the build GUI, causing multiple debug issues.
 
 
 ==================
@@ -47,7 +45,7 @@ Units (Galactic)
 ==================
 Units (Land)
 ==================
--Bossk – Fixed land unit tooltip not having text relating to whether Bossk can capture build pads or no.
+-Bossk – Fixed land unit tooltip not having text relating to whether Bossk can capture build pads or not.
 
 -Hound's Tooth – Fixed land prop variant not being the same size as the normal landing variant.
 
