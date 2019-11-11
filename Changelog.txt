@@ -24,11 +24,6 @@ There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT 
 
 
 ==================
-General
-==================
-
-
-==================
 Maps/Planets (Space)
 ==================
 **All space station maps in UFoCP this update have also been edited to be more practical, and have it's angle shifted to view the entire ahead map area; not soley focused on where the attackers spawn.
