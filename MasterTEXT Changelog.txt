@@ -12,6 +12,22 @@ Last of note, I am a human being and I make mistakes. Please point out text erro
 
 
 ===================================================================================================
+v1.8
+===================================================================================================
+
+
+-Vanilla tutorial text dialogue has undergone a significant overhaul this update, including double-spacing, grammar fixes, and more accurate subtitles. These changes, for the sake of length, won't be mentioned here unless changes were extremely drastic.
+
+-[TEXT_BOSSK_FLAMETHROWER_DESCRIPTION]: "Activates Bossk's flamethrower, damaging units in front of him." --> "Activates Bossk's flamethrower, effectively damaging all units within range in a continuous spray of fire."
+-[TEXT_BOSSK_SWAP_DESCRIPTION]: "Swap between blaster and plasma grenades." --> "Swaps Bossk's ammunition between blaster bolts and plasma grenades. Plasma grenades cause devastating chemical fires at ground-zero, which damages infantry over time."
+-[TEXT_CAMPAIGN_SINGLE_21_INTRO_U]: "The galaxy is in turmoil following the Battle of Yavin.  Many of the planetary governments have seceded from the Empire, but are not ready to trust the Rebellion.  Meanwhile, we're a new force working in the background of the galaxy.  The galaxy is ripe for the picking." --> "The galaxy is in turmoil following the Battle of Yavin.  Many of the planetary governments have seceded from the Empire, but are not ready to trust the Rebellion.  Meanwhile, our operations consolidate strength, and are ready to corrupt nearby planets.  The galaxy is ripe for the picking."
+-[TEXT_CAMPAIGN_SINGLE_VICTORY_REBEL_03]: "Death Star II is destroyed." --> "The Death Star II is destroyed."
+-[TEXT_ENCYCLOPEDIA_VORNSKR_SPAWNER]: "Periodically creates Vornskrs until destroyed." --> "Periodically creates vornskrs until destroyed."
+-[TEXT_SPEECH_UW_ACT03_BOUNCE_CORUSCANT]: "Tyber Zann: A wanted fugitive from Kessel landing on Imperial Center?  I'm bold, but not stupid.  Perhaps another time..." --> "Tyber Zann: The Empire has a massive fleet in orbit.  They must be protecting something.  Stay clear until the time is right."
+-[TEXT_TOOLTIP_BOUNTYHUNTER]: "Travels the galaxy undetected by hostile fleets and can be deployed on enemy systems to find and neutralize minor Bounty Hunters, minor Smugglers, Defilers, Fleet Commanders and Field Commanders." --> "Travels the galaxy undetected by hostile fleets and can be deployed on enemy systems to find and neutralize minor bounty hunters, smugglers, Defilers, fleet commanders and field commanders."
+
+
+===================================================================================================
 v1.6
 ===================================================================================================
 
