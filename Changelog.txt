@@ -18,6 +18,25 @@ Whenever the AI is edited, it's not labeled based on specific changed units with
 
 
 =========================================================================================
+v1.9
+=========================================================================================
+There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT Changelog.txt" in the game directory to see!
+
+
+==================
+Maps/Planets (Space)
+==================
+-Endor – Adjusted space station position ~25* so it faces the attackers better.
+
+-Kessel – Fixed defender spawn points. Defenders shouldn't (if there are enough of them) spawn in the asteroid adjacent to the space station. The "ASTEROID HUGE" object has been moved a couple feet around the perimeter of the asteroid field.
+-Kessel – Adjusted space station position to face more of the entire map.
+
+
+=========================================================================================
+
+
+
+=========================================================================================
 v1.8
 =========================================================================================
 There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT Changelog.txt" in the game directory to see!

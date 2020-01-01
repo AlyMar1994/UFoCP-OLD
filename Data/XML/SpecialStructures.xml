@@ -4285,7 +4285,7 @@
 		<Space_Layer> Corvette </Space_Layer>
 		<Has_Land_Evaluator>True</Has_Land_Evaluator>
 		
-		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_RESEARCH_00  </Encyclopedia_Text>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_RESEARCH_01 </Encyclopedia_Text>
 		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_RESEARCH_00, MP_TEXT_ENCYCLOPEDIA_RESEARCH_01 </MP_Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
 		<Score_Cost_Credits> 12000 </Score_Cost_Credits>
