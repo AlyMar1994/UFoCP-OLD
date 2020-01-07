@@ -4,7 +4,7 @@
 -- ORIGINAL AUTHOR (Petroglyph): James Yarrow
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 6/28/19,  3:24 PM
+-- LAST REVISION DATE: 1/3/2020,  2:15 AM
 -- ======================================================================
 require("pgevents")
 
@@ -29,7 +29,7 @@ end
 
 function BaseForce_Thread()
 	DebugMessage("%s -- In BaseForce_Thread.", tostring(Script))
-	
+
 	BaseForce.Set_As_Goal_System_Removable(false)
 	AssembleForce(BaseForce)
 	BaseForce.Set_Plan_Result(true)

@@ -4,7 +4,7 @@
 -- ORIGINAL AUTHOR (Petroglyph): Steve Copeland
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 6/29/19, 12:50 PM
+-- LAST REVISION DATE: 1/3/2020, 2:17 AM
 -- ======================================================================
 require("pgevents")
 
@@ -29,7 +29,7 @@ function MainForce_Thread()
 
 	ds = Find_First_Object("Death_Star_II")
 	while not TestValid(ds) do
-		-- Death Star II isn't present, hang this plan indefinately!
+		-- Tactical Superweapon(s) aren't present, hang this plan indefinately!
 		Sleep(100)
 	end
 
@@ -37,7 +37,7 @@ function MainForce_Thread()
 		Sleep(1)
 	until ds.Is_Tactical_Superweapon_Ready() and (Evaluate_In_Galactic_Context("Want_To_Fire_DS", PlayerObject) ~= 0)
 
-    ds.Fire_Tactical_Superweapon()
+	ds.Fire_Tactical_Superweapon()
 
 	Sleep(30)
 
