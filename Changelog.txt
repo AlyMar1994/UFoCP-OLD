@@ -24,12 +24,33 @@ There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT 
 
 
 ==================
+Maps/Planets (Land)
+==================
+-Felucia – Removed entries for map properties "Map Name" and "Planet Name." The entries were filled only with spaces, and created naming errors internally.
+
+-UM06: Dark Ally – Fixed entry for map property "Map Name." Map was looking for "UM03_Dark_Ally." All map properties have been removed entirely.
+
+-Pyn'gani Prop House – Removed <Text_ID> as "TEXT_NONE" doesn't exist, nor can, and causes errors internally.
+
+
+==================
 Maps/Planets (Space)
 ==================
+-All of SpaceProps.xml has been cleaned of broken <Text_ID>s using "TEXT_NONE" as it causes internal errors.
+
+
 -Endor – Adjusted space station position ~25* so it faces the attackers better.
 
 -Kessel – Fixed defender spawn points. Defenders shouldn't (if there are enough of them) spawn in the asteroid adjacent to the space station. The "ASTEROID HUGE" object has been moved a couple feet around the perimeter of the asteroid field.
 -Kessel – Adjusted space station position to face more of the entire map.
+
+-Saleucami – Added orbital special structure markers, so built gravity-well generators/long-range scanners appear in battle. These positions are up for change.
+
+
+==================
+Units (Space)
+==================
+-Eclipse – Removed <Text_ID> "NONE" from death clone as it doesn't exist, nor can, and causes errors internally. Replaced with normal <Text_ID> from the normal unit, as all other units do.
 
 
 =========================================================================================
