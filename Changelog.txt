@@ -52,6 +52,30 @@ Units (Space)
 ==================
 -Eclipse – Removed <Text_ID> "NONE" from death clone as it doesn't exist, nor can, and causes errors internally. Replaced with normal <Text_ID> from the normal unit, as all other units do.
 
+-Home One - Admiral Ackbar – Fixed unit's name to be more consistient with other named space hero units. Now named "Home One - Admiral Ackbar" instead of soley "Home One."
+
+-Rogue Squadron - Updated unit Rouge 10: Tarrin Datch's <Text_ID> to use a fixed tag with his name. Was originally "Tarrub Datch."
+
+-The Accuser - Captian Piett – Fixed broken tooltips. In both GC and battle, Piett now uses a correct, merged tooltip for all his information, as the way his unit is handles cannot use two seperate tooltips for GC/battle.
+-The Accuser - Captian Piett – Corrected broken tooltip for death clone.
+
+-The Admonitor - Grand Admiral Thrawn – Fixed unit's name to be more consistient with other named Star Destroyer units of the same class. Now named "The Admonitor - Grand Admiral Thrawn" instead of soley "The Admonitor."
+-The Admonitor - Grand Admiral Thrawn – Fixed broken tooltips. In both GC and battle, Piett now uses a correct, merged tooltip for all his information, as the way his unit is handles cannot use two seperate tooltips for GC/battle.
+
+-The Arc Hammer - General Mohc – Fixed unit's name to be more consistient with other named Star Destroyer units of the same class. Now named "The Arc Hammer - General Mohc" instead of soley "Arc Hammer."
+
+-The Hound's Tooth - Bossk – Fixed unit's name to be more consistient with other named hero units of the same class. Now named "The Hound's Tooth - Bossk" instead of soley "Hound's Tooth."
+
+-The Merciless - Tyber Zann – Fixed unit's name to be more consistient with other named hero units of the same class. Now named "The Merciless - Tyber Zann" instead of soley "The Merciless."
+
+-The Sundered Heart - Captain Antillies – Fixed unit's name to be more consistient with other named hero units of the same class. Now named "The Sundered Heart - Captain Antilles" instead of soley "Sundered Heart."
+
+-IG-2000 - IG-88 – Fixed unit's name to be more consistient with other named hero units of the same class. Now named "IG2000 - IG-88" instead of soley "IG-2000."
+
+-The Millenium Falcon - Han Solo & Chewbacca – Fixed unit's name to be more consistient with other named hero units of the same class. Now named "The Millenium Falcon - Han Solo & Chewbacca" instead of soley "Millenium Falcon."
+
+-The Moldy Crow - Kyle Katarn – Fixed unit's name to be more consistient with other named hero units of the same class. Now named "The Moldy Crow - Kyle Katarn" instead of soley "The Moldy Crow."
+
 
 =========================================================================================
 

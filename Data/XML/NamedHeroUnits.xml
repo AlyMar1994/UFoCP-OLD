@@ -1590,7 +1590,7 @@
 		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
 		<Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
 
-		<Encyclopedia_Text>TEXT_TOOLTIP_PIET</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_TOOLTIP_PIETT</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
 
 		<Abilities SubObjectList="Yes">

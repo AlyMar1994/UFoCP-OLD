@@ -3,7 +3,7 @@
 	<!-- ===== REBELLION ===== -->
 	<!-- Home One (Rebel Major Hero) - Admiral Akbar during space battles. -->
 	<UniqueUnit Name="Home_One">
-		<Text_ID>TEXT_UNIT_HOME_ONE</Text_ID>
+		<Text_ID>TEXT_UNIT_HOME_ONE_01</Text_ID>
 		<Encyclopedia_Text>TEXT_TOOLTIP_HOME_ONE_01</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Good_Against>Acclamator_Assault_Ship Tartan_Patrol_Cruiser Interceptor4_Frigate</Encyclopedia_Good_Against>
@@ -208,7 +208,7 @@
 	</UniqueUnit>
 
 	<UniqueUnit Name="Home_One_Death_Clone">
-		<Text_ID>TEXT_UNIT_HOME_ONE</Text_ID>
+		<Text_ID>TEXT_UNIT_HOME_ONE_01</Text_ID>
 		<Space_Model_Name>RV_HOMEONE_D.ALO</Space_Model_Name>
 		<Death_SFXEvent_Start_Die>SFX_Death_Bombard</Death_SFXEvent_Start_Die>
 		<Scale_Factor>1.80</Scale_Factor>
@@ -227,7 +227,7 @@
 
 	<!-- Millennium Falcon (Rebel Major Hero) - Han Solo & Chewbacca during space battles. -->
 	<UniqueUnit Name="Millennium_Falcon">
-		<Text_ID>TEXT_UNIT_MILLENNIUM_FALCON</Text_ID>
+		<Text_ID>TEXT_UNIT_MILLENNIUM_FALCON_01</Text_ID>
 		<Encyclopedia_Good_Against>TIE_Fighter TIE_Scout Skipray_Blastboat</Encyclopedia_Good_Against>
 		<Encyclopedia_Vulnerable_To>Tartan_Patrol_Cruiser Crusader_Gunship</Encyclopedia_Vulnerable_To>
 		<Encyclopedia_Text>TEXT_TOOLTIP_MILLENNIUM_FALCON</Encyclopedia_Text>
@@ -400,7 +400,7 @@
 	</UniqueUnit>
 
 	<UniqueUnit Name="Millennium_Falcon_Death_Clone">
-		<Text_ID>TEXT_UNIT_MILLENNIUM_FALCON</Text_ID>
+		<Text_ID>TEXT_UNIT_MILLENNIUM_FALCON_01</Text_ID>
 		<Space_Model_Name>RV_MFalcon_D.alo</Space_Model_Name>
 		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
 		<Scale_Factor>0.50</Scale_Factor>
@@ -478,7 +478,7 @@
 	</UniqueUnit>
 
 	<UniqueUnit Name="Millennium_Falcon_Backwards_Death_Clone">
-		<Text_ID>TEXT_UNIT_MILLENNIUM_FALCON</Text_ID>
+		<Text_ID>TEXT_UNIT_MILLENNIUM_FALCON_01</Text_ID>
 		<Space_Model_Name>RV_MFalcon_backwards_D.alo</Space_Model_Name>
 		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
 		<Scale_Factor>0.50</Scale_Factor>
@@ -937,7 +937,7 @@
 
 	<!-- Sundered Heart (Rebel Major Hero) - Captain Antilles during space battles. -->
 	<UniqueUnit Name="Sundered_Heart">
-		<Text_ID>TEXT_UNIT_SUNDERED_HEART</Text_ID>
+		<Text_ID>TEXT_UNIT_SUNDERED_HEART_01</Text_ID>
 		<Encyclopedia_Good_Against>TIE_Bomber TIE_Fighter Starviper_Fighter</Encyclopedia_Good_Against>
 		<Encyclopedia_Vulnerable_To>Vengeance_Frigate Victory_Destroyer Acclamator_Assault_Ship</Encyclopedia_Vulnerable_To>
 		<Icon_Name>I_Button_Captain_Antillies.tga</Icon_Name>
@@ -1106,7 +1106,7 @@
 	</UniqueUnit>
 
 	<UniqueUnit Name="Sundered_Heart_Death_Clone">
-		<Text_ID>TEXT_UNIT_SUNDERED_HEART</Text_ID>
+		<Text_ID>TEXT_UNIT_SUNDERED_HEART_01</Text_ID>
 		<Space_Model_Name>RV_AntilliesVette_D.alo</Space_Model_Name>
 		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
 		<Scale_Factor>0.50</Scale_Factor>
@@ -1136,7 +1136,7 @@
 		<Prevents_Story_Campaign_Autoresolve>Yes</Prevents_Story_Campaign_Autoresolve>
 
 		<Text_ID>TEXT_UNIT_SD_ACCUSER</Text_ID>
-		<Encyclopedia_Text>TEXT_TOOLTIP_PIETT</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_TOOLTIP_PIETT_SD_02</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
 
 		<SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, ION_STUN_EFFECT, NEBULA, SPAWN_SQUADRON, DAMAGE_TRACKING</SpaceBehavior>
@@ -1285,7 +1285,7 @@
 	</UniqueUnit>
 	
 	<UniqueUnit Name="Accuser_Star_Destroyer_Death_Clone">
-		<Text_ID>TEXT_UNIT_SD_ACCUSER</Text_ID>
+		<Text_ID>TEXT_TOOLTIP_PIETT_SD_02</Text_ID>
 		<Space_Model_Name>EV_StarDestroyer_D.ALO</Space_Model_Name>
 		<xxxSpace_Model_Name>EV_StarDestroyer_Dead.ALO</xxxSpace_Model_Name>
 		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>

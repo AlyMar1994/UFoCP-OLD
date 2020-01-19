@@ -298,7 +298,8 @@
 
 	<HeroCompany Name="IG88_Team_Space_MP">
 		<Variant_Of_Existing_Type>IG88_Team</Variant_Of_Existing_Type>
-		<Text_ID>TEXT_UNIT_IG2000</Text_ID>
+
+		<Text_ID>TEXT_UNIT_IG2000_01</Text_ID>
 		<Encyclopedia_Good_Against>X-wing Y-Wing Z-95_Headhunter_Rebel</Encyclopedia_Good_Against>
 		<Encyclopedia_Vulnerable_To>Corellian_Corvette Corellian_Gunboat A-Wing</Encyclopedia_Vulnerable_To>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR</Encyclopedia_Unit_Class>
@@ -316,7 +317,7 @@
 
 	<!-- MAIN: SPACE UNIT -->
 	<UniqueUnit Name="IG-2000">
-		<Text_ID>TEXT_UNIT_IG2000</Text_ID>
+		<Text_ID>TEXT_UNIT_IG2000_01</Text_ID>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Encyclopedia_Good_Against>X-wing Y-Wing Z-95_Headhunter_Rebel</Encyclopedia_Good_Against>
 		<Encyclopedia_Vulnerable_To>Corellian_Corvette Corellian_Gunboat A-Wing</Encyclopedia_Vulnerable_To>
@@ -463,7 +464,7 @@
 
 	<!-- SECONDARY: VARIANTS -->
 	<UniqueUnit Name="IG2000_Death_Clone">
-		<Text_ID>TEXT_UNIT_IG2000</Text_ID>
+		<Text_ID>TEXT_UNIT_IG2000_01</Text_ID>
 		<Space_Model_Name>UV_IG2000_D.alo</Space_Model_Name>
 		<Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
 		<Scale_Factor>1.20</Scale_Factor>

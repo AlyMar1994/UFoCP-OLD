@@ -2,7 +2,7 @@
 <Dark_Trooper_Data>
 	<!-- MAIN - Space Unit (Builds Dark Troopers!) -->
 	<UniqueUnit Name="Arc_Hammer">
-		<Text_ID>TEXT_UNIT_ARC_HAMMER</Text_ID>
+		<Text_ID>TEXT_UNIT_ARC_HAMMER_01</Text_ID>
 		<Encyclopedia_Text>TEXT_TOOLTIP_ARC_HAMMER</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FACTORY_SHIP</Encyclopedia_Unit_Class>
 		<Encyclopedia_Good_Against>Corellian_Corvette Corellian_Gunboat Nebulon_B_Frigate</Encyclopedia_Good_Against>
