@@ -14,7 +14,7 @@ A comprehensive bug-fixing mod for Petroglyph's "STAR WARS: Empire at War – Fo
 ### Windows
 #### Editors
 Anything that can correctly parse .XML and .LUA will do.
-* (Recommended) [Visual Studio (2017+)](https://www.visualstudio.com/vs/community/)
+* (Recommended) [Visual Studio Code](https://code.visualstudio.com/)
 * [Notepad++](https://notepad-plus-plus.org/)
 
 #### Game Version
