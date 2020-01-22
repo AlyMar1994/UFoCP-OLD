@@ -1,11 +1,10 @@
 <?xml version="1.0"?>
 <Planets>
-
 	<Planet Name="Galaxy_Core_Art_Model">
 		<Text_ID />
 		<Galactic_Model_Name>w_galaxy00.alo</Galactic_Model_Name>
-        <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
-		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Always_Instantiate_Galactic>Yes</Always_Instantiate_Galactic>
 		<Mass>1.0</Mass>
 		<Scale_Factor>1.0</Scale_Factor>
 		<Show_Name>No</Show_Name>
@@ -18,7 +17,7 @@
 		<Planet_Credit_Value>0</Planet_Credit_Value>
 		<Galactic_Position>0.0, 0.0, 0.0</Galactic_Position>
 		<Special_Structures>0</Special_Structures>
-		<In_Background>yes</In_Background>
+		<In_Background>Yes</In_Background>
 		<Max_Ground_Base>0</Max_Ground_Base>
 		<Max_Space_Base>0</Max_Space_Base>
 	</Planet>
@@ -93,7 +92,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 -->
 
 	<Planet Name="Abregado_Rae">
- 		<Zoomed_Terrain_Index>0</Zoomed_Terrain_Index>
+		<Zoomed_Terrain_Index>0</Zoomed_Terrain_Index>
 		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_ABREGADORAE</Text_ID>
 		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
 		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
@@ -127,7 +126,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Slice_Difficulty_Rating>1</Planet_Slice_Difficulty_Rating>
 		<Planet_Tech_Availability_Rating>3</Planet_Tech_Availability_Rating>
 		<Planet_Slice_Affinity_Types />
-        <Planet_Black_Market_Modifier>300</Planet_Black_Market_Modifier>
+		<Planet_Black_Market_Modifier>300</Planet_Black_Market_Modifier>
 
 		<Describe_Population>TEXT_PLANET_ABREGADORAE_INFO_POP</Describe_Population>
 		<Describe_Wildlife>TEXT_PLANET_ABREGADORAE_INFO_WL</Describe_Wildlife>
@@ -175,6 +174,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
 
 	</Planet>
+
 
 	<Planet Name="AetenII">
  		<Zoomed_Terrain_Index>3</Zoomed_Terrain_Index>
@@ -263,6 +263,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		
 	</Planet>
 
+
 	<Planet Name="Alderaan">
  		<Zoomed_Terrain_Index>8</Zoomed_Terrain_Index>
 		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_ALDERAAN</Text_ID>
@@ -329,6 +330,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
 
 	</Planet>
+
 
 	<Planet Name="AlzocIII">
  		<Zoomed_Terrain_Index>4</Zoomed_Terrain_Index>
@@ -414,6 +416,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
 
 	</Planet>
+
 
 	<Planet Name="Anaxes">
  		<Zoomed_Terrain_Index>0</Zoomed_Terrain_Index>
@@ -521,6 +524,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		
 	</Planet>
 
+
 	<Planet Name="Atzerri">
  		<Zoomed_Terrain_Index>2</Zoomed_Terrain_Index>
 		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_ATZERRI</Text_ID>
@@ -611,6 +615,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
 
 	</Planet>
+
 
 	<Planet Name="Bespin">
  		<Zoomed_Terrain_Index>11</Zoomed_Terrain_Index>
@@ -797,7 +802,8 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Corruption_2_Mission_Briefing>TEXT_CORRUPTION_BESPIN_STORY_RACKETEER</Corruption_2_Mission_Briefing>
 
 	</Planet>
-	
+
+
 	<Planet Name="Bestine">
  		<Zoomed_Terrain_Index>7</Zoomed_Terrain_Index>
 		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_BESTINE</Text_ID>
@@ -894,6 +900,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 
 	</Planet>
 
+
 	<Planet Name="Bonadan">
  		<Zoomed_Terrain_Index>6</Zoomed_Terrain_Index>
 		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_BONADAN</Text_ID>
@@ -981,6 +988,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
 
 	</Planet>
+
 
 	<Planet Name="Bothawui">
  		<Zoomed_Terrain_Index>0</Zoomed_Terrain_Index>
@@ -1105,6 +1113,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 
 	</Planet>
 
+
 	<Planet Name="Byss">
  		<Zoomed_Terrain_Index>0</Zoomed_Terrain_Index>
 		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_BYSS</Text_ID>
@@ -1196,6 +1205,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
 
 	</Planet>
+
 
 	<Planet Name="Carida">
  		<Zoomed_Terrain_Index>0</Zoomed_Terrain_Index>
@@ -1303,6 +1313,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		
 	</Planet>
 
+
 	<Planet Name="Corellia">
  		<Zoomed_Terrain_Index>0</Zoomed_Terrain_Index>
 		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_CORELLIA</Text_ID>
@@ -1398,6 +1409,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
 
 	</Planet>
+
 
 	<Planet Name="Corulag">
  		<Zoomed_Terrain_Index>5</Zoomed_Terrain_Index>
@@ -1496,6 +1508,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
 
 	</Planet>
+
 
 	<Planet Name="Coruscant">
  		<Zoomed_Terrain_Index>6</Zoomed_Terrain_Index>
@@ -1740,6 +1753,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 
 	</Planet>
 
+
 	<Planet Name="Dantooine">
  		<Zoomed_Terrain_Index>0</Zoomed_Terrain_Index>
 		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_DANTOOINE</Text_ID>
@@ -1903,6 +1917,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
 
 	</Planet>
+
 
 	<Planet Name="Eriadu">
  		<Zoomed_Terrain_Index>1</Zoomed_Terrain_Index>
@@ -2185,6 +2200,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 
 	</Planet>
 
+
 	<Planet Name="Fresia">
  		<Zoomed_Terrain_Index>7</Zoomed_Terrain_Index>
 		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_FRESIA</Text_ID>
@@ -2276,6 +2292,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
 
 	</Planet>
+
 
 	<Planet Name="Geonosis">
  		<Zoomed_Terrain_Index>1</Zoomed_Terrain_Index>
@@ -2466,7 +2483,6 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
 		
 	</Planet>
-
 
 	<Planet Name="Honoghr_Story"> <!-- EXPANSION PLANET -->
  		<Zoomed_Terrain_Index>1</Zoomed_Terrain_Index>
@@ -2911,6 +2927,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 
 	</Planet>
 
+
 	<Planet Name="Kamino">
  		<Zoomed_Terrain_Index>9</Zoomed_Terrain_Index>
 		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_KAMINO</Text_ID>
@@ -3099,6 +3116,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 
 	</Planet>
 
+
 	<Planet Name="Kashyyyk">
  		<Zoomed_Terrain_Index>5</Zoomed_Terrain_Index>
 		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_KASHYYYK</Text_ID>
@@ -3182,6 +3200,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
 		
 	</Planet>
+
 
 	<Planet Name="Kessel">
  		<Zoomed_Terrain_Index>7</Zoomed_Terrain_Index>
@@ -3267,6 +3286,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 
 	</Planet>
 
+
 	<Planet Name="Korriban">
  		<Zoomed_Terrain_Index>1</Zoomed_Terrain_Index>
 		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_KORRIBAN</Text_ID>
@@ -3349,6 +3369,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
 
 	</Planet>
+
 
 	<Planet Name="Kuat">
  		<Zoomed_Terrain_Index>0</Zoomed_Terrain_Index>
@@ -3447,6 +3468,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
 		
 	</Planet>
+
 
 	<Planet Name="Manaan">
  		<Zoomed_Terrain_Index>6</Zoomed_Terrain_Index>
@@ -3614,8 +3636,6 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
 
 	</Planet>
-
-
 
 	<Planet Name="Mandalore_Prologue"> <!-- Variant created for the Prologue -->
  		<Zoomed_Terrain_Index>0</Zoomed_Terrain_Index>
@@ -3802,6 +3822,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Corruption_2_Mission_Briefing>TEXT_CORRUPTION_MANDALORE_STORY_BRIBERY</Corruption_2_Mission_Briefing>
 
 	</Planet>
+
 
 	<Planet Name="MonCalimari">
  		<Zoomed_Terrain_Index>7</Zoomed_Terrain_Index>
@@ -3997,7 +4018,6 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 	</Planet>
 
 
-
 	<Planet Name="Muunilinst"> <!-- EXPANSION PLANET -->
  		<Zoomed_Terrain_Index>6</Zoomed_Terrain_Index>
 		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_MUUNILINST</Text_ID>
@@ -4157,7 +4177,6 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 	</Planet>
 
 
-
 	<Planet Name="Naboo">
  		<Zoomed_Terrain_Index>0</Zoomed_Terrain_Index>
 		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_NABOO</Text_ID>
@@ -4253,6 +4272,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
 
 	</Planet>
+
 
 	<Planet Name="NalHutta">
  		<Zoomed_Terrain_Index>2</Zoomed_Terrain_Index>
@@ -4494,7 +4514,6 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 
 	</Planet>
 
-
 	<Planet Name="NalHutta_Story">
  		<Zoomed_Terrain_Index>2</Zoomed_Terrain_Index>
 		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_NALHUTTA</Text_ID>
@@ -4588,7 +4607,6 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 	</Planet>
 
 
-
 	<Planet Name="Polus">
 		<Native_Icon_Name>load_snow.tga</Native_Icon_Name>
  		<Zoomed_Terrain_Index>4</Zoomed_Terrain_Index>
@@ -4679,6 +4697,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		
 	</Planet>
 
+
 	<Planet Name="Ryloth">
  		<Zoomed_Terrain_Index>1</Zoomed_Terrain_Index>
 		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_RYLOTH</Text_ID>
@@ -4767,8 +4786,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
 		
 	</Planet>
-	
-	
+
 	<Planet Name="Ryloth_Prologue">
  		<Zoomed_Terrain_Index>1</Zoomed_Terrain_Index>
 		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_RYLOTH</Text_ID>
@@ -5028,6 +5046,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 
 	</Planet>
 
+
 	<Planet Name="Sullust">
  		<Zoomed_Terrain_Index>3</Zoomed_Terrain_Index>
 		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_SULLUST</Text_ID>
@@ -5121,6 +5140,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
 		
 	</Planet>
+
 
 	<Planet Name="Taris">
  		<Zoomed_Terrain_Index>6</Zoomed_Terrain_Index>
@@ -5220,6 +5240,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
 
 	</Planet>
+
 
 	<Planet Name="Tatooine">
  		<Zoomed_Terrain_Index>1</Zoomed_Terrain_Index>
@@ -5634,6 +5655,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 
 	</Planet>
 
+
 	<Planet Name="Wayland">
  		<Zoomed_Terrain_Index>0</Zoomed_Terrain_Index>
 		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_WAYLAND</Text_ID>
@@ -5722,6 +5744,7 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
 
 	</Planet>
+
 
 	<Planet Name="Yavin">
  		<Zoomed_Terrain_Index>5</Zoomed_Terrain_Index>
@@ -5813,14 +5836,4 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
 
 	</Planet>
-
-
-
-
-
-
-
-
-
-
 </Planets>

@@ -71,14 +71,14 @@
 		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Star_Destroyer_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
 
 		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>		
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>Unit_Complete_Thrawn</SFXEvent_Build_Complete>
 		<SFXEvent_Hero_Respawned>Unit_Select_Thrawn</SFXEvent_Hero_Respawned>
 
 		<!-- MULTIPLAYER SKIRMISH VALUES START -->
 		<Tactical_Build_Cost_Multiplayer>6200</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites/>
+		<Tactical_Build_Prerequisites />
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
 		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
@@ -134,7 +134,7 @@
 
 				<!-- Modifiers. If 0 - no modifier is applied, 1 - "100% increase or decrease." -->
 				<Target_Speed_Decrease_Percent>0.90</Target_Speed_Decrease_Percent>
-				<Stacking_Category>2</Stacking_Category>			
+				<Stacking_Category>2</Stacking_Category>
 			</Tractor_Beam_Attack_Ability>
 
 			<System_Spy_Ability Name="Admonitor_Ship_Reveal">

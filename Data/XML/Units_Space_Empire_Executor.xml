@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Executor_Files>
-	<!-- MAIN - Space Unit -->
+	<!-- MAIN: SPACE UNIT -->
 	<UniqueUnit Name="Executor_Super_Star_Destroyer">
 		<GUI_Bounds_Scale>0.01</GUI_Bounds_Scale>
 		<Text_ID>TEXT_UNIT_SSD_EXECUTOR</Text_ID>
@@ -274,7 +274,7 @@
 		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
 	</UniqueUnit>
 
-	<!-- SECONDARY - Variants -->
+	<!-- SECONDARY: VARIANTS -->
 	<UniqueUnit Name="Executor_Super_Star_Destroyer_No_Tractor_Beam">
 		<Variant_Of_Existing_Type>Executor_Super_Star_Destroyer</Variant_Of_Existing_Type>
 
@@ -328,7 +328,7 @@
 	</UniqueUnit>
 
 
-	<!-- MAIN - Darth Vader Team -->
+	<!-- MAIN: Darth Vader Team -->
 	<HeroCompany Name="Darth_Team_Executor">
 		<GUI_Row>1</GUI_Row>
 		<Text_ID>TEXT_HERO_VADER_TEAM</Text_ID>
