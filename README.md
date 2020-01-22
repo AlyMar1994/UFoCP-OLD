@@ -60,5 +60,5 @@ Anything that can correctly parse .XML and .LUA will do.
     along with this program.  If not, see https://www.gnu.org/licenses/.
 
 	This license applies to all files, source, and elseor all applicable mod-content, despite said files not being marked with license information.
-	
+
 ----
