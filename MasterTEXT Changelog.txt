@@ -45,6 +45,7 @@ Due to numerous untracked fixes, errors and inconsistiencies (AGAIN), I've redon
 -Created string "TEXT_UNIT_SD_ADMONITOR_01" to adjust full name to keep consistient with other named hero units of its class.
 -Created string "TEXT_UNIT_SUNDERED_HEART_01" to adjust full name to keep consistient with other named hero units of its class.
 -Created string "TEXT_HERO_PEACEBRINGER_01" to adjust full name to keep consistient with other named hero units of its class.
+-Created string "TEXT_TOOLTIP_ANNIHILATOR_01" to adjust full name to keep consistient with other named hero units of its class.
 
 
 -[EMPIRE_BM_TECH_1]: "Black Market Items available at Empire tech level one." --> "Black market items available at Empire tech level one."
@@ -987,12 +988,13 @@ Due to numerous untracked fixes, errors and inconsistiencies (AGAIN), I've redon
 -[TEXT_TOOLTIP_AA_TURRET]: "Anti-Aircraft turret capable of shooting down bombers and aircraft." --> "Anti-aircraft turret capable of shooting down bombers and aircraft."
 -[TEXT_TOOLTIP_ABILITY_AREA_EFFECT_STUN_DESCRIPTION]: "Activate EMP burst to disable nearby mechanical units." --> "Activates an EMP burst to disable nearby mechanical units."
 -[TEXT_TOOLTIP_ABILITY_BERSERKER_DESCRIPTION]: "When activated, Yoda bounces around the enemy doing major damage." --> "When activated, Yoda bounces around attacking the enemy doing major damage."
+-[TEXT_TOOLTIP_ABILITY_BUZZ_DROIDS_DESCRIPTION]: "Deploys droids that will attack nearby enemy craft. Fighters and corvettes will be severely damaged; frigates and larger ships are immune." --> "Deploys droids in a small area that will attack nearby enemy craft. Fighters and corvettes will be severely damaged; frigates and larger ships are immune."
 -[TEXT_TOOLTIP_ABILITY_FLAME_THROWER_DESCRIPTION]: "Use Boba Fett's flame thrower to burn the targeted enemy unit." --> "Use Boba Fett's flamethrower to burn the targeted enemy unit."
 -[TEXT_TOOLTIP_ABILITY_FLAME_THROWER_NAME]: "Flame Thrower" --> "Flamethrower"
 -[TEXT_TOOLTIP_ABILITY_FORCE_LIGHTNING_DESCRIPTION]: "Shoot lightning from the Emperor's fingertips at a targeted group of enemy infantry." --> "Shoot lightning from the emperor's fingertips at a targeted group of enemy infantry."
 -[TEXT_TOOLTIP_ABILITY_LEECH_SHIELDS_DESCRIPTION]: "Drains shielding power from enemy unit.  The drained shield power is re-routed to the attacker's weapons." --> "Drains shielding power from enemy unit. The drained shield power is rerouted to the attacker's weapons."
 -[TEXT_TOOLTIP_ABILITY_SABER_THROW_DESCRIPTION]: "When activated, Luke will throw his light saber cutting through enemy infantry and damaging enemy vehicles and structures." --> "When activated, Luke will throw his lightsaber cutting through enemy infantry and damaging enemy vehicles and structures."
--[TEXT_TOOLTIP_ABILITY_SENSOR_JAMMING_DESCRIPTION]: "Hides units from enemy radar." --> "Creates an area of effect where missiles and proton torpedoes cannot enter, and are redirected elsewhere."
+-[TEXT_TOOLTIP_ABILITY_SENSOR_JAMMING_DESCRIPTION]: "Hides units from enemy radar." --> "Creates a small area of effect around each Skipray, where missiles and proton torpedoes cannot enter and are redirected elsewhere."
 -[TEXT_TOOLTIP_ABILITY_SPOILER_LOCK_DESCRIPTION]: "Locks S-Foils together to provide increased speed.  While S-Foils are locked, this unit will have reduced firepower." --> "Locks S-foils together to provide increased speed. While S-foils are locked, this unit will have reduced firepower."
 -[TEXT_TOOLTIP_ABILITY_SPOILER_LOCK_NAME]: "Lock S-Foils" --> "Lock S-foils"
 -[TEXT_TOOLTIP_ABILITY_STRIKE_DESCRIPTION]: "This ability temporarily boosts Rogue Squadron’s rate of fire, movement speed, and damage." --> "This ability temporarily boosts Rogue Squadron's rate of fire, movement speed and damage."
@@ -1167,6 +1169,14 @@ Due to numerous untracked fixes, errors and inconsistiencies (AGAIN), I've redon
 -[TEXT_UW_ACT01_M03_HINT_02]: "HINT: Use Urai Fen’s Sonic Stunner to incapacitate multiple infantry units simultaneously." --> "HINT: Use Urai Fen's sonic stunner to incapacitate multiple infantry units simultaneously."
 -[TEXT_UW_ACT01_M04_HINT_02]: "HINT: Move Urai close to the droid works to capture it." --> "HINT: Move Urai close to the Droid Works to capture it."
 -[TEXT_UW_ACT02_G14_01]: "BONUS: Tyber Zann receives 50,000 credits from selling Tibanna Gas on the black market." --> "BONUS: Tyber Zann receives 50,000 credits from selling the tibanna gas on the black market."
+-[TEXT_UW_ACT02_M07_GOAL_00]: "Collect eight gas containers with the Gas Cargo Droids." --> "Collect eight gas containers with the gas cargo droids."
+-[TEXT_UW_ACT02_M07_GOAL_00b]: "Collect seven more gas containers with the Gas Cargo Droids." --> "Collect seven more gas containers with the gas cargo droids."
+-[TEXT_UW_ACT02_M07_GOAL_00c]: "Collect six more gas containers with the Gas Cargo Droids." --> "Collect six more gas containers with the gas cargo droids."
+-[TEXT_UW_ACT02_M07_GOAL_00d]: "Collect five more gas containers with the Gas Cargo Droids." --> "Collect five more gas containers with the gas cargo droids."
+-[TEXT_UW_ACT02_M07_GOAL_00e]: "Collect four more gas containers with the Gas Cargo Droids." --> "Collect four more gas containers with the gas cargo droids."
+-[TEXT_UW_ACT02_M07_GOAL_00f]: "Collect three more gas containers with the Gas Cargo Droids." --> "Collect three more gas containers with the gas cargo droids."
+-[TEXT_UW_ACT02_M07_GOAL_00g]: "Collect two more gas containers with the Gas Cargo Droids." --> "Collect two more gas containers with the gas cargo droids."
+-[TEXT_UW_ACT02_M07_GOAL_00h]: "Collect one more gas container with the Gas Cargo Droids." --> "Collect one more gas container with the gas cargo droids."
 -[TEXT_UW_ACT02_M07_GOAL_02]: "Use Tyber to plant evidence at three security outposts." --> "Use Tyber Zann to plant evidence at three security outposts."
 -[TEXT_UW_ACT02_M07_GOAL_04]: "Tyber, Urai, and IG-88 must survive." --> "Tyber Zann, Urai Fen and IG-88 must survive."
 -[TEXT_UW_ACT02_M07_GOAL_07]: "Use Tyber to plant evidence at two more security outposts." --> "Use Tyber Zann to plant evidence at two more security outposts."

@@ -174,7 +174,7 @@
 		<Land_Retreat_Enemy_Begin_SFXEvent>Unit_Enemy_Retreat_Rebel_Soldier</Land_Retreat_Enemy_Begin_SFXEvent>
 		<Land_Retreat_Cancel_SFXEvent>RHD_Retreat_Cancelled</Land_Retreat_Cancel_SFXEvent>
 		<Land_Retreat_Not_Allowed_SFXEvent>RHD_Retreat_Not_Allowed</Land_Retreat_Not_Allowed_SFXEvent>
-		<Land_Retreat_Not_Allowed_Reason_1_SFXEvent /> <!-- Reason 1: Gravity Well -->							
+		<Land_Retreat_Not_Allowed_Reason_1_SFXEvent /> <!-- Reason 1: Gravity Well -->
 		<Land_Retreat_Not_Allowed_Reason_2_SFXEvent /> <!-- Reason 2: Friendly Hero Preventing -->
 		<Land_Retreat_Not_Allowed_Reason_3_SFXEvent /> <!-- Reason 3: Tactical Superweapon Present -->
 

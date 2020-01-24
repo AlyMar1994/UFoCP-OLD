@@ -120,7 +120,7 @@
 		<Radar_Icon_Name>I_Radar_Executor.tga</Radar_Icon_Name>
 		<Radar_Icon_Scale_Land>1.00</Radar_Icon_Scale_Land>
 		<Radar_Icon_Scale_Space>1.00</Radar_Icon_Scale_Space>
-		<Radar_Icon_Size>0.40, 0.40</Radar_Icon_Size>
+		<Radar_Icon_Size>0.60, 0.60</Radar_Icon_Size>
 		<Score_Cost_Credits>100000</Score_Cost_Credits>
 		<Radar_Register_As_Foreground_Object>Yes</Radar_Register_As_Foreground_Object>
 

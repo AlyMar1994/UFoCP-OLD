@@ -1,0 +1,1727 @@
+<?xml version="1.0" ?>
+<Story>
+	<!-- ===== Underworld Act II Mission 07: Cloud City Conflict ===== -->
+	<!-- Preliminary setup -->
+	<Event Name="Underworld_A02M07_Begin">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+	
+	<Event Name="Underworld_A02M07_Autoresolve_Off">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>HIDE_AUTORESOLVE</Reward_Type>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+
+	<!-- Turn off advisor -->
+	<Event Name="Underworld_A02M07_Turn_Off_Land_Advisor">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_ADVISOR</Reward_Type>
+		<Reward_Param1>0</Reward_Param1>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+
+	<Event Name="Underworld_A02M07_Prevent_Retreat">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_RETREAT</Reward_Type>
+		<Reward_Param1>UNDERWORLD</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+	<!-- Turn off auto victory conditions -->
+
+	<Event Name="Underworld_A02M07_Prevent_Auto_Victory">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_VICTORY</Reward_Type>
+		<Reward_Param1>0</Reward_Param1>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+
+<!-- Give Mission Objectives -->
+	<!--TEXT_UW_ACT02_M07_GOAL_00
+	 Collect 8 gas containers with the Gas Cargo Droids-->
+	<Event Name="Underworld_A02M07_State_Misson_Goal_00">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_00</Reward_Param1>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+	<!--TEXT_UW_ACT02_M07_GOAL_X0
+	 After filling your droids at the refineries, return them to the shuttle to unload the gas.-->
+	<Event Name="Underworld_A02M07_State_Misson_Goal_00b_Return_To_Shuttle">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_X0</Reward_Param1>
+		<Prereq>Underworld_A02M07_State_Misson_Goal_00</Prereq>
+	</Event>
+	
+	
+	
+	<!--TEXT_UW_ACT02_M07_GOAL_11 
+	 Use Tyber to locate and plant evidence at the four security outposts.-->
+	<Event Name="Underworld_A02M07_State_Misson_Goal_00b">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_11 </Reward_Param1>
+		<Prereq>Underworld_A02M07_State_Misson_Goal_00b_Return_To_Shuttle</Prereq>
+	</Event>
+	
+	<!-- TEXT_UW_ACT02_M07_GOAL_04 
+	Tyber, Urai, and IG-88 must survive.-->
+	<Event Name="Underworld_A02M07_State_Misson_Goal_04">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_04</Reward_Param1>
+		<Prereq>Underworld_A02M07_State_Misson_Goal_00b</Prereq>
+	</Event>
+	
+	
+	<Event Name="UM07_ADD_OBJECTIVE_TYBER_HACKS_GUARD_OUTPOSTS_AI_NOTIFICATION">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>UM07_ADD_OBJECTIVE_TYBER_HACKS_GUARD_OUTPOSTS</Event_Param2>
+	</Event>
+	
+
+			<!--TEXT_UW_ACT02_M07_GOAL_02
+				Use Tyber to plant evidence at three more security outposts-->
+			<Event Name="UM07_UPDATE_OBJECTIVE_TYBER_TO_HACK_3_GUARD_OUTPOSTS">
+				<Event_Type>STORY_TRIGGER</Event_Type>
+				<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_11</Reward_Param1>
+				<Reward_Param2>TEXT_UW_ACT02_M07_GOAL_02</Reward_Param2>
+				<Prereq>UM07_ADD_OBJECTIVE_TYBER_HACKS_GUARD_OUTPOSTS_AI_NOTIFICATION</Prereq>
+			</Event>
+			
+	<Event Name="UM07_TYBER_IDENTIFIES_GUARD_OUTPOSTS_UPDATE_OBJECTIVE_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>UM07_TYBER_IDENTIFIES_GUARD_OUTPOSTS_UPDATE_OBJECTIVE_01</Event_Param2>
+	</Event>
+			
+			<!--TEXT_UW_ACT02_M07_GOAL_07
+			Use Tyber to plant evidence at two more security outposts.-->
+			<Event Name="UM07_UPDATE_OBJECTIVE_TYBER_T0_HACK_2_MORE_GUARD_OUTPOSTS">
+				<Event_Type>STORY_TRIGGER</Event_Type>
+				<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_02</Reward_Param1>
+				<Reward_Param2>TEXT_UW_ACT02_M07_GOAL_07</Reward_Param2>
+				<Prereq>UM07_TYBER_IDENTIFIES_GUARD_OUTPOSTS_UPDATE_OBJECTIVE_01</Prereq>
+			</Event>
+			
+	<Event Name="UM07_TYBER_IDENTIFIES_GUARD_OUTPOSTS_UPDATE_OBJECTIVE_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>UM07_TYBER_IDENTIFIES_GUARD_OUTPOSTS_UPDATE_OBJECTIVE_02</Event_Param2>
+	</Event>
+	
+
+			<!--TEXT_UW_ACT02_M07_GOAL_08
+			Use Tyber to plant evidence at one more security outpost.-->
+			<Event Name="UM07_UPDATE_OBJECTIVE_TYBER_T0_HACK_1_MORE_GUARD_OUTPOSTS">
+				<Event_Type>STORY_TRIGGER</Event_Type>
+				<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_07</Reward_Param1>
+				<Reward_Param2>TEXT_UW_ACT02_M07_GOAL_08</Reward_Param2>
+				<Prereq>UM07_TYBER_IDENTIFIES_GUARD_OUTPOSTS_UPDATE_OBJECTIVE_02</Prereq>
+			</Event>
+			
+			
+			
+	<!-- Evidence planted at 4 guard outposts!  Trigger Objective Complete! -->
+	<Event Name="Underworld_A02M07_Evidence_Planted">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TRIGGER_MISSION_07_EVIDENCE_PLANTED</Event_Param2>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_08</Reward_Param1>
+	</Event>
+	
+	<!-- removing objective to help keep interface clean -->
+			<Event Name="UM07_REMOVE_OBJECTIVE_Evidence_Planted">
+				<Event_Type>STORY_ELAPSED</Event_Type>
+				<Event_Param1>10</Event_Param1>
+				<Reward_Type>REMOVE_OBJECTIVE</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_08</Reward_Param1>
+				<Prereq>Underworld_A02M07_Evidence_Planted</Prereq>
+			</Event>
+			
+	
+
+
+	
+<!-- IG-88 hacked the server!  Trigger Objective Complete! -->
+
+	<Event Name="Underworld_A02M07_Server_Hacked">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TRIGGER_MISSION_07_SERVER_HACKED</Event_Param2>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_01</Reward_Param1>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+
+	
+	
+<!-- All 3 Objectives completed, Give Final Objective-->
+
+	<Event Name="Underworld_A02M07_State_Misson_Goal_03">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TRIGGER_MISSION_07_FINAL_OBJECTIVE</Event_Param2>
+		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+		<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_03</Reward_Param1>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+
+
+<!-- All heroes reached shuttle!  Trigger Objective Complete! -->
+
+	<Event Name="Underworld_A02M07_Heroes_At_Shuttle">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TRIGGER_MISSION_07_HEROES_AT_SHUTTLE</Event_Param2>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_03</Reward_Param1>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+	<!-- TEXT_UW_ACT02_M07_GOAL_04 
+	Tyber, Urai, and IG-88 must survive.-->
+	<Event Name="UM07_OBJECTIVE_COMPLETE_Heroes_Must_Survive">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+		<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_04</Reward_Param1>
+		<Prereq>Underworld_A02M07_Heroes_At_Shuttle</Prereq>
+	</Event>
+
+
+<!-- Trigger Victory -->
+
+	<Event Name="Underworld_A02M07_Trigger_Victory">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>VICTORY_TRIGGER</Event_Param2>
+		<Reward_Type>VICTORY</Reward_Type>
+		<Reward_Param1>UNDERWORLD</Reward_Param1>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+
+			<Event Name="Underworld_A02M07_Re-Enable_Retreat">
+				<Event_Type>STORY_TRIGGER</Event_Type>
+				<Reward_Type>DISABLE_RETREAT</Reward_Type>
+				<Reward_Param1>UNDERWORLD</Reward_Param1>
+				<Reward_Param2>0</Reward_Param2>
+				<Prereq>Underworld_A02M07_Trigger_Victory</Prereq>
+			</Event>
+
+	<!-- Set victory flag -->
+	<Event Name="Underworld_Set_Mission_Seven_Flag">
+		<Event_Type>STORY_VICTORY</Event_Type> 
+		<Event_Param1>Underworld</Event_Param1>
+		<Reward_Type>SET_FLAG</Reward_Type> 
+		<Reward_Param1>	Underworld_Mission_07_Win </Reward_Param1> 
+		<Reward_Param2>1</Reward_Param2> 
+	</Event>
+	
+	
+<!--Mission Failed Events-->
+
+	<Event Name="Underworld_A02M07_Droid_Objective_Failed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ALL_DROIDS_DEAD</Event_Param2>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_00</Reward_Param1>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+	<Event Name="Underworld_A02M07_Tyber_Killed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TYBER_KILLED</Event_Param2>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_04</Reward_Param1>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+		
+	<Event Name="Underworld_A02M07_Urai_Killed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>URAI_KILLED</Event_Param2>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_05</Reward_Param1>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+	<Event Name="Underworld_A02M07_IG88_Killed">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>IG88_KILLED</Event_Param2>
+		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
+		<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_06</Reward_Param1>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+
+		<Event Name="Underworld_A02M07_Mission_Failed">
+			<Event_Type>STORY_ELAPSED</Event_Type>
+			<Event_Param1>2</Event_Param1>
+			<Reward_Type>VICTORY</Reward_Type>
+			<Reward_Param1>EMPIRE</Reward_Param1>
+			<Prereq>Underworld_A02M07_Droid_Objective_Failed</Prereq>
+			<Prereq>Underworld_A02M07_Tyber_Killed</Prereq>
+			<Prereq>Underworld_A02M07_Urai_Killed</Prereq>
+			<Prereq>Underworld_A02M07_IG88_Killed</Prereq>
+		</Event>
+
+
+<!--**************************Gas Container Objective(s) Manipulation***************************-->
+<!--
+TEXT_UW_ACT02_M07_GOAL_00b	Collect seven more gas containers with the Gas Cargo Droids.
+TEXT_UW_ACT02_M07_GOAL_00c	Collect six more gas containers with the Gas Cargo Droids.
+TEXT_UW_ACT02_M07_GOAL_00d	Collect five more gas containers with the Gas Cargo Droids.
+TEXT_UW_ACT02_M07_GOAL_00e	Collect four more gas containers with the Gas Cargo Droids.
+TEXT_UW_ACT02_M07_GOAL_00f	Collect three more gas containers with the Gas Cargo Droids.
+TEXT_UW_ACT02_M07_GOAL_00g	Collect two more gas containers with the Gas Cargo Droids.
+TEXT_UW_ACT02_M07_GOAL_00h	Collect one more gas container with the Gas Cargo Droids.
+
+-->
+	<Event Name="UM07_AI_NOTIFICATION_SEVEN_CONTAINERS_LEFT">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>UM07_SEVEN_CONTAINERS_LEFT</Event_Param2>
+	</Event>
+	
+			<Event Name="UM07_SEVEN_CONTAINERS_LEFT_UPDATE_OBJECTIVE">
+				<Event_Type>STORY_TRIGGER</Event_Type>
+				<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_00</Reward_Param1>
+				<Reward_Param2>TEXT_UW_ACT02_M07_GOAL_00b</Reward_Param2>
+				<Prereq>UM07_AI_NOTIFICATION_SEVEN_CONTAINERS_LEFT</Prereq>
+			</Event> 
+			
+			
+			<!-- TEXT_UW_ACT02_M07_GASCOUNTER_01 
+			One gas container successfully collected-->
+			<Event Name="UM07_ONE_CONTAINER_COLLECTED_TRACKING_TEXT">
+				<Event_Type>STORY_TRIGGER</Event_Type>	
+				<Reward_Type>SCREEN_TEXT</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GASCOUNTER_01</Reward_Param1>
+				<Reward_Param2>-1</Reward_Param2>
+				<Reward_Param7>Hint</Reward_Param7><!-- TASK color coding - Blue -->
+				<Prereq>UM07_SEVEN_CONTAINERS_LEFT_UPDATE_OBJECTIVE</Prereq>
+			</Event>
+			
+	<Event Name="UM07_AI_NOTIFICATION_SIX_CONTAINERS_LEFT">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>UM07_SIX_CONTAINERS_LEFT</Event_Param2>
+	</Event>
+	
+			<Event Name="UM07_SIX_CONTAINERS_LEFT_UPDATE_OBJECTIVE">
+				<Event_Type>STORY_TRIGGER</Event_Type>
+				<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_00b</Reward_Param1>
+				<Reward_Param2>TEXT_UW_ACT02_M07_GOAL_00c</Reward_Param2>
+				<Prereq>UM07_AI_NOTIFICATION_SIX_CONTAINERS_LEFT</Prereq>
+			</Event> 
+			
+			<!--remove previous counter text
+			 TEXT_UW_ACT02_M07_GASCOUNTER_01 
+			One gas container successfully collected-->
+			<Event Name="UM07_ONE_CONTAINER_COLLECTED_TRACKING_REMOVE_TEXT">
+				<Event_Type>STORY_TRIGGER</Event_Type>
+				<Reward_Type>SCREEN_TEXT</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GASCOUNTER_01</Reward_Param1>
+				<Reward_Param4>remove</Reward_Param4>
+				<Prereq>UM07_SIX_CONTAINERS_LEFT_UPDATE_OBJECTIVE</Prereq>
+			</Event>
+				
+				<!-- TEXT_UW_ACT02_M07_GASCOUNTER_02 
+			Two gas containers successfully collected-->
+			<Event Name="UM07_TWO_CONTAINERS_COLLECTED_TRACKING_TEXT">
+				<Event_Type>STORY_TRIGGER</Event_Type>	
+				<Reward_Type>SCREEN_TEXT</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GASCOUNTER_02</Reward_Param1>
+				<Reward_Param2>-1</Reward_Param2>
+				<Reward_Param7>Hint</Reward_Param7><!-- Hint color coding - Green -->
+				<Prereq>UM07_ONE_CONTAINER_COLLECTED_TRACKING_REMOVE_TEXT</Prereq>
+			</Event>
+			
+	<Event Name="UM07_AI_NOTIFICATION_FIVE_CONTAINERS_LEFT">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>UM07_FIVE_CONTAINERS_LEFT</Event_Param2>
+	</Event>
+	
+			<Event Name="UM07_FIVE_CONTAINERS_LEFT_UPDATE_OBJECTIVE">
+				<Event_Type>STORY_TRIGGER</Event_Type>
+				<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_00c</Reward_Param1>
+				<Reward_Param2>TEXT_UW_ACT02_M07_GOAL_00d</Reward_Param2>
+				<Prereq>UM07_AI_NOTIFICATION_FIVE_CONTAINERS_LEFT</Prereq>
+			</Event> 
+			
+			<!--remove previous counter text
+			 TEXT_UW_ACT02_M07_GASCOUNTER_02 
+			Two gas container successfully collected-->
+			<Event Name="UM07_TWO_CONTAINERS_COLLECTED_TRACKING_REMOVE_TEXT">
+				<Event_Type>STORY_TRIGGER</Event_Type>
+				<Reward_Type>SCREEN_TEXT</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GASCOUNTER_02</Reward_Param1>
+				<Reward_Param4>remove</Reward_Param4>
+				<Prereq>UM07_FIVE_CONTAINERS_LEFT_UPDATE_OBJECTIVE</Prereq>
+			</Event>
+				
+				<!-- TEXT_UW_ACT02_M07_GASCOUNTER_03 
+			Three gas containers successfully collected-->
+			<Event Name="UM07_THREE_CONTAINERS_COLLECTED_TRACKING_TEXT">
+				<Event_Type>STORY_TRIGGER</Event_Type>	
+				<Reward_Type>SCREEN_TEXT</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GASCOUNTER_03</Reward_Param1>
+				<Reward_Param2>-1</Reward_Param2>
+				<Reward_Param7>Hint</Reward_Param7><!-- Hint color coding - Green -->
+				<Prereq>UM07_TWO_CONTAINERS_COLLECTED_TRACKING_REMOVE_TEXT</Prereq>
+			</Event>
+			
+	<Event Name="UM07_AI_NOTIFICATION_FOUR_CONTAINERS_LEFT">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>UM07_FOUR_CONTAINERS_LEFT</Event_Param2>
+	</Event>
+	
+			<Event Name="UM07_FOUR_CONTAINERS_LEFT_UPDATE_OBJECTIVE">
+				<Event_Type>STORY_TRIGGER</Event_Type>
+				<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_00d</Reward_Param1>
+				<Reward_Param2>TEXT_UW_ACT02_M07_GOAL_00e</Reward_Param2>
+				<Prereq>UM07_AI_NOTIFICATION_FOUR_CONTAINERS_LEFT</Prereq>
+			</Event> 
+			
+			<!--remove previous counter text
+			 TEXT_UW_ACT02_M07_GASCOUNTER_03 
+			Three gas container successfully collected-->
+			<Event Name="UM07_THREE_CONTAINERS_COLLECTED_TRACKING_REMOVE_TEXT">
+				<Event_Type>STORY_TRIGGER</Event_Type>
+				<Reward_Type>SCREEN_TEXT</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GASCOUNTER_03</Reward_Param1>
+				<Reward_Param4>remove</Reward_Param4>
+				<Prereq>UM07_FOUR_CONTAINERS_LEFT_UPDATE_OBJECTIVE</Prereq>
+			</Event>
+				
+				<!-- TEXT_UW_ACT02_M07_GASCOUNTER_04 
+			4 gas containers successfully collected-->
+			<Event Name="UM07_FOUR_CONTAINERS_COLLECTED_TRACKING_TEXT">
+				<Event_Type>STORY_TRIGGER</Event_Type>	
+				<Reward_Type>SCREEN_TEXT</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GASCOUNTER_04</Reward_Param1>
+				<Reward_Param2>-1</Reward_Param2>
+				<Reward_Param7>Hint</Reward_Param7><!-- Hint color coding - Green -->
+				<Prereq>UM07_THREE_CONTAINERS_COLLECTED_TRACKING_REMOVE_TEXT</Prereq>
+			</Event>
+	
+	<Event Name="UM07_AI_NOTIFICATION_THREE_CONTAINERS_LEFT">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>UM07_THREE_CONTAINERS_LEFT</Event_Param2>
+	</Event>
+	
+			<Event Name="UM07_THREE_CONTAINERS_LEFT_UPDATE_OBJECTIVE">
+				<Event_Type>STORY_TRIGGER</Event_Type>
+				<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_00e</Reward_Param1>
+				<Reward_Param2>TEXT_UW_ACT02_M07_GOAL_00f</Reward_Param2>
+				<Prereq>UM07_AI_NOTIFICATION_THREE_CONTAINERS_LEFT</Prereq>
+			</Event> 
+			
+			<!--remove previous counter text
+			 TEXT_UW_ACT02_M07_GASCOUNTER_04 
+			4 gas container successfully collected-->
+			<Event Name="UM07_FOUR_CONTAINERS_COLLECTED_TRACKING_REMOVE_TEXT">
+				<Event_Type>STORY_TRIGGER</Event_Type>
+				<Reward_Type>SCREEN_TEXT</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GASCOUNTER_04</Reward_Param1>
+				<Reward_Param4>remove</Reward_Param4>
+				<Prereq>UM07_THREE_CONTAINERS_LEFT_UPDATE_OBJECTIVE</Prereq>
+			</Event>
+				
+				<!-- TEXT_UW_ACT02_M07_GASCOUNTER_05 
+			5 gas containers successfully collected-->
+			<Event Name="UM07_FIVE_CONTAINERS_COLLECTED_TRACKING_TEXT">
+				<Event_Type>STORY_TRIGGER</Event_Type>	
+				<Reward_Type>SCREEN_TEXT</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GASCOUNTER_05</Reward_Param1>
+				<Reward_Param2>-1</Reward_Param2>
+				<Reward_Param7>Hint</Reward_Param7><!-- Hint color coding - Green -->
+				<Prereq>UM07_FOUR_CONTAINERS_COLLECTED_TRACKING_REMOVE_TEXT</Prereq>
+			</Event>
+	
+	<Event Name="UM07_AI_NOTIFICATION_TWO_CONTAINERS_LEFT">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>UM07_TWO_CONTAINERS_LEFT</Event_Param2>
+	</Event>
+	
+			<Event Name="UM07_TWO_CONTAINERS_LEFT_UPDATE_OBJECTIVE">
+				<Event_Type>STORY_TRIGGER</Event_Type>
+				<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_00f</Reward_Param1>
+				<Reward_Param2>TEXT_UW_ACT02_M07_GOAL_00g</Reward_Param2>
+				<Prereq>UM07_AI_NOTIFICATION_TWO_CONTAINERS_LEFT</Prereq>
+			</Event> 
+			
+			<!--remove previous counter text
+			 TEXT_UW_ACT02_M07_GASCOUNTER_05 
+			5 gas container successfully collected-->
+			<Event Name="UM07_FIVE_CONTAINERS_COLLECTED_TRACKING_REMOVE_TEXT">
+				<Event_Type>STORY_TRIGGER</Event_Type>
+				<Reward_Type>SCREEN_TEXT</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GASCOUNTER_05</Reward_Param1>
+				<Reward_Param4>remove</Reward_Param4>
+				<Prereq>UM07_TWO_CONTAINERS_LEFT_UPDATE_OBJECTIVE</Prereq>
+			</Event>
+				
+				<!-- TEXT_UW_ACT02_M07_GASCOUNTER_06 
+			6 gas containers successfully collected-->
+			<Event Name="UM07_SIX_CONTAINERS_COLLECTED_TRACKING_TEXT">
+				<Event_Type>STORY_TRIGGER</Event_Type>	
+				<Reward_Type>SCREEN_TEXT</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GASCOUNTER_06</Reward_Param1>
+				<Reward_Param2>-1</Reward_Param2>
+				<Reward_Param7>Hint</Reward_Param7><!-- Hint color coding - Green -->
+				<Prereq>UM07_FIVE_CONTAINERS_COLLECTED_TRACKING_REMOVE_TEXT</Prereq>
+			</Event>
+	
+	<Event Name="UM07_AI_NOTIFICATION_ONE_CONTAINER_LEFT">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>UM07_ONE_CONTAINER_LEFT</Event_Param2>
+	</Event>
+	
+			<Event Name="UM07_ONE_CONTAINER_LEFT_UPDATE_OBJECTIVE">
+				<Event_Type>STORY_TRIGGER</Event_Type>
+				<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_00g</Reward_Param1>
+				<Reward_Param2>TEXT_UW_ACT02_M07_GOAL_00h</Reward_Param2>
+				<Prereq>UM07_AI_NOTIFICATION_ONE_CONTAINER_LEFT</Prereq>
+			</Event> 
+			
+			<!--remove previous counter text
+			 TEXT_UW_ACT02_M07_GASCOUNTER_06 
+			6 gas container successfully collected-->
+			<Event Name="UM07_SIX_CONTAINERS_COLLECTED_TRACKING_REMOVE_TEXT">
+				<Event_Type>STORY_TRIGGER</Event_Type>
+				<Reward_Type>SCREEN_TEXT</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GASCOUNTER_06</Reward_Param1>
+				<Reward_Param4>remove</Reward_Param4>
+				<Prereq>UM07_ONE_CONTAINER_LEFT_UPDATE_OBJECTIVE</Prereq>
+			</Event>
+				
+				<!-- TEXT_UW_ACT02_M07_GASCOUNTER_07 
+			7 gas containers successfully collected-->
+			<Event Name="UM07_SEVEN_CONTAINERS_COLLECTED_TRACKING_TEXT">
+				<Event_Type>STORY_TRIGGER</Event_Type>	
+				<Reward_Type>SCREEN_TEXT</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GASCOUNTER_07</Reward_Param1>
+				<Reward_Param2>-1</Reward_Param2>
+				<Reward_Param7>Hint</Reward_Param7><!-- Hint color coding - Green -->
+				<Prereq>UM07_SIX_CONTAINERS_COLLECTED_TRACKING_REMOVE_TEXT</Prereq>
+			</Event>
+			
+	<!-- 8 Tibana droids returned!  Trigger Objective Complete! -->
+	<Event Name="UM07_AI_NOTIFICATION_All_Droids_Returned">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TRIGGER_MISSION_07_DROIDS_RETURNED</Event_Param2>
+	</Event>
+	
+			<Event Name="UM07_All_Droids_Returned_Complete_Objective">
+				<Event_Type>STORY_TRIGGER</Event_Type>
+				<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_00h</Reward_Param1>
+				<Prereq>UM07_AI_NOTIFICATION_All_Droids_Returned</Prereq>
+			</Event> 
+			
+			<!--removing objective to help keep interface clean -->
+			<Event Name="UM07_All_Droids_Returned_Remove_Objective">
+				<Event_Type>STORY_ELAPSED</Event_Type>
+				<Event_Param1>5</Event_Param1>
+				<Reward_Type>REMOVE_OBJECTIVE</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_00h</Reward_Param1>
+				<Prereq>UM07_All_Droids_Returned_Complete_Objective</Prereq>
+			</Event> 
+			
+			<!--TEXT_UW_ACT02_M07_GOAL_X0
+			After filling your droids at the refineries, return them to the shuttle to unload the gas.-->
+			<Event Name="UM07_Remove_Misson_Goal_00b_Return_To_Shuttle">
+				<Event_Type>STORY_TRIGGER</Event_Type>
+				<Reward_Type>REMOVE_OBJECTIVE</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_X0</Reward_Param1>
+				<Prereq>UM07_All_Droids_Returned_Remove_Objective</Prereq>
+			</Event>
+			
+			<!--remove previous counter text
+			 TEXT_UW_ACT02_M07_GASCOUNTER_07 
+			7 gas container successfully collected-->
+			<Event Name="UM07_SEVEN_CONTAINERS_COLLECTED_TRACKING_REMOVE_TEXT">
+				<Event_Type>STORY_TRIGGER</Event_Type>
+				<Reward_Type>SCREEN_TEXT</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GASCOUNTER_07</Reward_Param1>
+				<Reward_Param4>remove</Reward_Param4>
+				<Prereq>UM07_All_Droids_Returned_Complete_Objective</Prereq>
+			</Event>
+				
+				<!-- TEXT_UW_ACT02_M07_GASCOUNTER_08 
+			All gas containers successfully collected-->
+			<Event Name="UM07_ALL_CONTAINERS_COLLECTED_TRACKING_TEXT">
+				<Event_Type>STORY_TRIGGER</Event_Type>	
+				<Reward_Type>SCREEN_TEXT</Reward_Type>
+				<Reward_Param1>TEXT_UW_ACT02_M07_GASCOUNTER_08</Reward_Param1>
+				<Reward_Param2>10</Reward_Param2>
+				<Reward_Param7>Hint</Reward_Param7><!-- Hint color coding - Green -->
+				<Prereq>UM07_SEVEN_CONTAINERS_COLLECTED_TRACKING_REMOVE_TEXT</Prereq>
+			</Event>
+
+
+
+
+
+
+
+
+
+<!--**************************All Dialog Events***************************-->
+	<Event Name="UM07_Tyber_Identifies_Guard_Outposts_AI_NOTIFICATION">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>UM07_TYBER_IDENTIFIES_GUARD_OUTPOSTS</Event_Param2>
+	</Event>
+			<!--TEXT_SPEECH_UW_ACT02_M07_37
+			Tyber Zann: Here's one of the security outposts.  This will only take a minute.-->
+			<Event Name="UM07_Tyber_Identifies_Guard_Outposts_DIALOG">
+				<Event_Type>STORY_TRIGGER</Event_Type>
+				<Reward_Type>MULTIMEDIA</Reward_Type>
+				<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_37</Reward_Param1>
+				<Reward_Param2>-1</Reward_Param2>	
+				<Reward_Param8>UW_ACT02_M07_37</Reward_Param8>
+				<Reward_Param9>Tyber_Loop</Reward_Param9>
+				<Reward_Param10>1</Reward_Param10>
+				<Prereq>UM07_Tyber_Identifies_Guard_Outposts_AI_NOTIFICATION</Prereq>
+			</Event>
+					
+					<Event Name="UM07_Tyber_Identifies_Guard_Outposts_Remove_Text">
+						<!--<Event_Type>STORY_ELAPSED</Event_Type>
+						<Event_Param1>3</Event_Param1>-->
+						<Event_Type>STORY_SPEECH_DONE</Event_Type>
+						<Event_Param1>UW_ACT02_M07_37</Event_Param1>
+						<Reward_Type>SCREEN_TEXT</Reward_Type>
+						<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_37</Reward_Param1>
+						<Reward_Param4>remove</Reward_Param4>
+						<Prereq>UM07_Tyber_Identifies_Guard_Outposts_DIALOG</Prereq>
+					</Event>
+
+					<Event Name="UM07_Tyber_Identifies_Security_Stations_Remove_Movie">
+						<Event_Type>STORY_TRIGGER</Event_Type>
+						<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+						<Prereq>UM07_Tyber_Identifies_Guard_Outposts_Remove_Text</Prereq>
+					</Event>
+					
+					
+
+
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_00
+STORMTROOPER: I have no record of your scheduled arrival.  Your identification papers...  -->
+	<Event Name="Underworld_A02M07_Speech_Line_00">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_00</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_00</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_00</Reward_Param8>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+		<Branch>BRANCH_UM07_INTRO_DIALOG</Branch>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_00_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_00</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_00</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_00</Prereq>
+					<Branch>BRANCH_UM07_INTRO_DIALOG</Branch>
+				</Event>
+
+				
+				
+<!-- TEXT_SPEECH_UW_ACT02_M07_01
+TYBER ZANN: You don’t need to see my identification.  -->
+	<Event Name="Underworld_A02M07_Speech_Line_01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_01</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_01</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_01</Reward_Param8>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+		<Branch>BRANCH_UM07_INTRO_DIALOG</Branch>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_01_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_01</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_01</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_01</Prereq>
+					<Branch>BRANCH_UM07_INTRO_DIALOG</Branch>
+				</Event>
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_02
+STORMTROOPER: This one thinks he’s a Jedi.  And why wouldn’t I need to see your identification?  -->
+	<Event Name="Underworld_A02M07_Speech_Line_02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_02</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_02</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_02</Reward_Param8>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+		<Branch>BRANCH_UM07_INTRO_DIALOG</Branch>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_02_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_02</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_02</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_02</Prereq>
+					<Branch>BRANCH_UM07_INTRO_DIALOG</Branch>
+				</Event>
+
+				
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_03
+TYBER ZANN: Because you're dead.  -->
+	<Event Name="Underworld_A02M07_Speech_Line_03">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_03</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_03</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_03</Reward_Param8>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+		<Branch>BRANCH_UM07_INTRO_DIALOG</Branch>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_03_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_03</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_03</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_03</Prereq>
+					<Branch>BRANCH_UM07_INTRO_DIALOG</Branch>
+				</Event>
+
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_04
+TYBER ZANN: We don't have much time.  Urai, you see to the Tibanna Gas.  
+			I'll go plant the evidence.  IG-88, you get Vader's codes.  -->
+	<Event Name="Underworld_A02M07_Speech_Line_04">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_04</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_04</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_04</Reward_Param8>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+		<Branch>BRANCH_UM07_INTRO_DIALOG</Branch>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_04_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_04</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_04</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_04</Prereq>
+					<Branch>BRANCH_UM07_INTRO_DIALOG</Branch>
+				</Event>
+
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_05
+URAI FEN: Each Tibana gas collection facility is surrounded by four refineries.  
+			I'll need to escort the gas droids to to the refineries and they will 
+			procure the gas.  We'll need to return ten full droids for this mission 
+			to be a success.  -->
+	<Event Name="Underworld_A02M07_Speech_Line_05">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_05</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_05</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_05</Reward_Param8>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+		<Branch>BRANCH_UM07_INTRO_DIALOG</Branch>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_05_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_05</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_05</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_05</Prereq>
+					<Branch>BRANCH_UM07_INTRO_DIALOG</Branch>
+				</Event>
+
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_06
+IG-88: Hacking Bespin central server cluster required to access Vader's codes.  
+			Location of cluster unknown - search parameters required.  -->
+	<Event Name="Underworld_A02M07_Speech_Line_06">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_06</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_06</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_06</Reward_Param8>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+		<Branch>BRANCH_UM07_INTRO_DIALOG</Branch>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_06_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_06</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_06</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_06</Prereq>
+					<Branch>BRANCH_UM07_INTRO_DIALOG</Branch>
+				</Event>
+
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_07
+TYBER ZANN: I'll keep my eyes open.  To make this look like a Black Sun op, I'll 
+			need to sneak into the four security outposts and plant information 
+			that leaves no doubt that Xizor was involved in our little undertaking.  -->
+	<Event Name="Underworld_A02M07_Speech_Line_07">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_07</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_07</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_07</Reward_Param8>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+		<Branch>BRANCH_UM07_INTRO_DIALOG</Branch>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_07_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_07</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_07</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_07</Prereq>
+					<Branch>BRANCH_UM07_INTRO_DIALOG</Branch>
+				</Event>
+
+				
+<!-- killing opening dialog for escape key cine skipping -->		
+	<Event Name="UM07_ESCAPEKEY_PREVENT_INTRO_DIALOG_AI_NOTIFICATION">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>UM07_ESCAPEKEY_PREVENT_INTRO_DIALOG_AI_NOTIFICATION</Event_Param2>
+	</Event>
+	
+	<Event Name="UM07_ESCAPEKEY_PREVENT_INTRO_DIALOG">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>BRANCH_UM07_INTRO_DIALOG</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Prereq>UM07_ESCAPEKEY_PREVENT_INTRO_DIALOG_AI_NOTIFICATION</Prereq>
+	</Event>				
+				
+				
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_08
+TYBER ZANN: One outpost down, three to go.  -->
+	<Event Name="Underworld_A02M07_Speech_Line_08">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_08</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_08</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_08</Reward_Param8>
+		<Reward_Param9>Tyber_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_08_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_08</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_08</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_08</Prereq>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_08_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_08_Remove_Text</Prereq>
+				</Event>
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_09
+TYBER ZANN: That's two.  -->
+	<Event Name="Underworld_A02M07_Speech_Line_09">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_09</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_09</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_09</Reward_Param8>
+		<Reward_Param9>Tyber_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_09_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_09</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_09</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_09</Prereq>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_09_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_09_Remove_Text</Prereq>
+				</Event>
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_10
+TYBER ZANN: One outpost left.  -->
+	<Event Name="Underworld_A02M07_Speech_Line_10">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_10</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_10</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_10</Reward_Param8>
+		<Reward_Param9>Tyber_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_10_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_10</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_10</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_10</Prereq>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_10_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_10_Remove_Text</Prereq>
+				</Event>
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_11
+TYBER ZANN: That should leave no doubt as to who walked away with the Empire's gas.  -->
+	<Event Name="Underworld_A02M07_Speech_Line_11">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_11</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_11</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_11</Reward_Param8>
+		<Reward_Param9>Tyber_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_11_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_11</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_11</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_11</Prereq>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_11_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_11_Remove_Text</Prereq>
+				</Event>
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_12
+IG-88: Cluster located.  Proximity required for access.  -->
+	<Event Name="Underworld_A02M07_Speech_Line_12">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_12</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_12</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_12</Reward_Param8>
+		<Reward_Param9>IG-88_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_12_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_12</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_12</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_12</Prereq>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_12_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_12_Remove_Text</Prereq>
+				</Event>
+				
+<!-- jdg add server objective here
+	also manipulate hero must survive objective to force it to the bottom-->	
+	
+		<Event Name="UM07_REMOVE_OBJECTIVE_KeepHeroesAlive_Manipulation">
+			<Event_Type>STORY_TRIGGER</Event_Type>
+			<Reward_Type>REMOVE_OBJECTIVE</Reward_Type>
+			<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_04</Reward_Param1>xxx
+			<Prereq>Underworld_A02M07_Speech_Line_12_Remove_Movie</Prereq>
+		</Event>	
+
+			<!--TEXT_UW_ACT02_M07_GOAL_01
+				Use IG-88 to hack the central server cluster-->
+				<Event Name="Underworld_A02M07_State_Misson_Goal_01">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+					<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_01</Reward_Param1>
+					<Prereq>UM07_REMOVE_OBJECTIVE_KeepHeroesAlive_Manipulation</Prereq>
+				</Event>	
+				
+				<Event Name="UM07_RE-ADD_OBJECTIVE_KeepHeroesAlive">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>ADD_OBJECTIVE</Reward_Type>
+					<Reward_Param1>TEXT_UW_ACT02_M07_GOAL_04</Reward_Param1>
+					<Prereq>Underworld_A02M07_State_Misson_Goal_01</Prereq>
+				</Event>		
+				
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_13
+IG-88: Acquiring data…  -->
+	<Event Name="Underworld_A02M07_Speech_Line_13">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_13</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_13</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_13</Reward_Param8>
+		<Reward_Param9>IG-88_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_13_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_13</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_13</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_13</Prereq>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_13_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_13_Remove_Text</Prereq>
+				</Event>
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_14
+IG-88: Data secure.  -->
+	<Event Name="Underworld_A02M07_Speech_Line_14">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_14</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_14</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_14</Reward_Param8>
+		<Reward_Param9>IG-88_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_14_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_14</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_14</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_14</Prereq>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_14_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_14_Remove_Text</Prereq>
+				</Event>
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_15
+GAS CARGO DROID: Acquiring gas…  -->
+	<Event Name="Underworld_A02M07_Speech_Line_15">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_15</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_15</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_15</Reward_Param8>
+		<Reward_Param9>Collector_Droid_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+		<Perpetual>True</Perpetual>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_15_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_15</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_15</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_15</Prereq>
+					<Perpetual>True</Perpetual>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_15_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_15_Remove_Text</Prereq>
+					<Perpetual>True</Perpetual>
+				</Event>
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_16
+GAS CARGO DROID: Gas canister full.  -->
+	<Event Name="Underworld_A02M07_Speech_Line_16">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_16</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_16</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_16</Reward_Param8>
+		<Reward_Param9>Collector_Droid_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+		<Perpetual>True</Perpetual>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_16_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_16</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_16</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_16</Prereq>
+					<Perpetual>True</Perpetual>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_16_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_16_Remove_Text</Prereq>
+					<Perpetual>True</Perpetual>
+				</Event>
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_17
+GAS CARGO DROID: Transferring gas…  -->
+	<Event Name="Underworld_A02M07_Speech_Line_17">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_17</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_17</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_17</Reward_Param8>
+		<Reward_Param9>Collector_Droid_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+		<Perpetual>True</Perpetual>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_17_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_17</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_17</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_17</Prereq>
+					<Perpetual>True</Perpetual>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_17_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_17_Remove_Text</Prereq>
+					<Perpetual>True</Perpetual>
+				</Event>
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_18
+GAS CARGO DROID: Transfer successful.  -->
+	<Event Name="Underworld_A02M07_Speech_Line_18">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_18</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_18</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_18</Reward_Param8>
+		<Reward_Param9>Collector_Droid_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10> 
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+		<Perpetual>True</Perpetual>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_18_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_18</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_18</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_18</Prereq>
+					<Perpetual>True</Perpetual>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_18_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_18_Remove_Text</Prereq>
+					<Perpetual>True</Perpetual>
+				</Event>
+				
+				
+<!-- TEXT_SPEECH_UW_ACT02_M07_19
+Notice: Droid Lost!  -->
+	<Event Name="Underworld_A02M07_Text_Line_19">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_UW_ACT02_M07_19</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_UW_ACT02_M07_19</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>
+		<Reward_Param7>System</Reward_Param7><!-- System color coding - RED -->
+		<Reward_Param8></Reward_Param8>
+		<Reward_Param9></Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+		<Perpetual>True</Perpetual>
+	</Event>
+	
+				
+<!-- TEXT_SPEECH_UW_ACT02_M07_20
+TYBER ZANN: If you lose many more droids, this mission will be a complete failure.  -->
+	<Event Name="Underworld_A02M07_Speech_Line_20">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_20</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_20</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_20</Reward_Param8>
+		<Reward_Param9>Tyber_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_20_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_20</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_20</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_20</Prereq>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_20_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_20_Remove_Text</Prereq>
+				</Event>
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_21
+TYBER ZANN: Great, we lost all the droids.  There's no way we can get the gas now.  -->
+	<Event Name="Underworld_A02M07_Speech_Line_21">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_21</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_21</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_21</Reward_Param8>
+		<Reward_Param9>Tyber_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_21_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_21</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_21</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_21</Prereq>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_21_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_21_Remove_Text</Prereq>
+				</Event>
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_22
+URAI FEN: Tyber, we've collected enough gas.  All droids are returning to the shuttle.  -->
+	<Event Name="Underworld_A02M07_Speech_Line_22">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_22</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_22</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_22</Reward_Param8>
+		<Reward_Param9>Urai_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_22_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_22</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_22</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_22</Prereq>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_22_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_22_Remove_Text</Prereq>
+				</Event>
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_24
+UNDERWORLD SOLDIER: Sir, we've detected that Lord Vader's shuttle is on approach for landing at your location.  -->
+	<Event Name="Underworld_A02M07_Speech_Line_24">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_24</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_24</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_24</Reward_Param8>
+		<Reward_Param9>Underworld_Soldier_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_24_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_24</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_24</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_24</Prereq>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_24_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_24_Remove_Text</Prereq>
+				</Event>
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_25
+TYBER ZANN:	Thanks for the heads up.  We're going to have to move quick on the 
+			last task if we want to get out of here intact.  -->
+	<Event Name="Underworld_A02M07_Speech_Line_25">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_25</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_25</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_25</Reward_Param8>
+		<Reward_Param9>Tyber_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_25_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_25</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_25</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_25</Prereq>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_25_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_25_Remove_Text</Prereq>
+				</Event>
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_26
+FIELD COMMANDER: Sir, a group of smugglers have infiltrated our Tibana gas refining stations.  -->
+	<Event Name="Underworld_A02M07_Speech_Line_26">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_26</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_26</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_26</Reward_Param8>
+		<Reward_Param9>Commander_Moff_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_26_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_26</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_26</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_26</Prereq>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_26_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_26_Remove_Text</Prereq>
+				</Event>
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_27
+DARTH VADER: What measures have been taken to remove the smugglers?  -->
+	<Event Name="Underworld_A02M07_Speech_Line_27">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_27</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_27</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_27</Reward_Param8>
+		<Reward_Param9>Vader_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_27_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_27</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_27</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_27</Prereq>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_27_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_27_Remove_Text</Prereq>
+				</Event>
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_28
+FIELD COMMANDER: Sir, we're in trying to capture them as we speak, but they…(choke, gasp)  -->
+	<Event Name="Underworld_A02M07_Speech_Line_28">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_28</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_28</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_28</Reward_Param8>
+		<Reward_Param9>Commander_Moff_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_28_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_28</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_28</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_28</Prereq>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_28_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_28_Remove_Text</Prereq>
+				</Event>
+				
+	<Event Name="UM07_VaderCine_Start_Choking_SFX_AI_NOTIFICATION">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>UM07_VaderCine_Start_Choking_SFX_AI_NOTIFICATION</Event_Param2>
+
+	</Event>
+	
+			<Event Name="UM07_VaderCine_Start_Choking_SFX">
+				<Event_Type>STORY_TRIGGER</Event_Type>
+				<Reward_Type>MULTIMEDIA</Reward_Type>
+				<Reward_Param8>UW_ACT02_M07_CHOKE_SFX</Reward_Param8>
+				<Prereq>UM07_VaderCine_Start_Choking_SFX_AI_NOTIFICATION</Prereq>
+			</Event>
+			
+				<Event Name="UM07_VaderCine_Choking_SFX_Over">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_CHOKE_SFX</Event_Param1>
+					<Prereq>UM07_VaderCine_Start_Choking_SFX</Prereq>
+				</Event>
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_29
+DARTH VADER: I'm severely displeased with your incompetance.  I will see to these thieves myself.  -->
+	<Event Name="Underworld_A02M07_Speech_Line_29">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_29</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_29</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_29</Reward_Param8>
+		<Reward_Param9>Vader_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_29_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_29</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_29</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_29</Prereq>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_29_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_29_Remove_Text</Prereq>
+				</Event>
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_30
+TYBER ZANN: Good work.  Let's get back to the shuttle and get out of here.  -->
+	<Event Name="Underworld_A02M07_Speech_Line_30">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_30</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_30</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_30</Reward_Param8>
+		<Reward_Param9>Tyber_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_30_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_30</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_30</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_30</Prereq>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_30_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_30_Remove_Text</Prereq>
+				</Event>
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_31
+DARTH VADER: Well?  -->
+	<Event Name="Underworld_A02M07_Speech_Line_31">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_31</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_31</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_31</Reward_Param8>
+		<Reward_Param9>Vader_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_31_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_31</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_31</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_31</Prereq>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_31_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_31_Remove_Text</Prereq>
+				</Event>
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_32
+STORMTROOPER: They got away with a large supply of Tibanna gas.  With that much, 
+			they could supply a sizable fleet.  -->
+	<Event Name="Underworld_A02M07_Speech_Line_32">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_32</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_32</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_32</Reward_Param8>
+		<Reward_Param9>Stormtrooper_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_32_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_32</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_32</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_32</Prereq>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_32_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_32_Remove_Text</Prereq>
+				</Event>
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_33
+DARTH VADER: Have you identified them?  -->
+	<Event Name="Underworld_A02M07_Speech_Line_33">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_33</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_33</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_33</Reward_Param8>
+		<Reward_Param9>Vader_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_33_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_33</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_33</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_33</Prereq>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_33_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_33_Remove_Text</Prereq>
+				</Event>
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_34
+STORMTROOPER: We have found evidence that suggests the Black Sun criminal organization
+			was responsible.  We also have records that some of the local militia 
+			took bribes to let them land.  -->
+	<Event Name="Underworld_A02M07_Speech_Line_34">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_34</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_34</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_34</Reward_Param8>
+		<Reward_Param9>Stormtrooper_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_34_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_34</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_34</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_34</Prereq>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_34_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_34_Remove_Text</Prereq>
+				</Event>
+
+
+<!-- TEXT_SPEECH_UW_ACT02_M07_35
+DARTH VADER: Execute them immediately.  Xizor will pay for this…  -->
+	<Event Name="Underworld_A02M07_Speech_Line_35">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_35</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_35</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_35</Reward_Param8>
+		<Reward_Param9>Vader_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_35_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_35</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_35</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_35</Prereq>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_35_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_35_Remove_Text</Prereq>
+				</Event>
+
+			
+<!-- TEXT_SPEECH_UW_ACT02_M07_36
+TYBER ZANN: Hurry up, get those droids unloaded!  -->
+	<Event Name="Underworld_A02M07_Speech_Line_36">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>TEXT_SPEECH_UW_ACT02_M07_36</Event_Param2>
+		<Reward_Type>MULTIMEDIA</Reward_Type>
+		<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_36</Reward_Param1>
+		<Reward_Param2>-1</Reward_Param2>	
+		<Reward_Param8>UW_ACT02_M07_36</Reward_Param8>
+		<Reward_Param9>Vader_Loop</Reward_Param9>
+		<Reward_Param10>1</Reward_Param10>
+		<Prereq>Underworld_A02M07_Begin</Prereq>
+	</Event>
+	
+				<Event Name="Underworld_A02M07_Speech_Line_36_Remove_Text">
+					<Event_Type>STORY_SPEECH_DONE</Event_Type>
+					<Event_Param1>UW_ACT02_M07_36</Event_Param1>
+					<Reward_Type>SCREEN_TEXT</Reward_Type>
+					<Reward_Param1>TEXT_SPEECH_UW_ACT02_M07_36</Reward_Param1>
+					<Reward_Param4>remove</Reward_Param4>
+					<Prereq>Underworld_A02M07_Speech_Line_36</Prereq>
+				</Event>
+
+				<Event Name="Underworld_A02M07_Speech_Line_36_Remove_Movie">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
+					<Prereq>Underworld_A02M07_Speech_Line_36_Remove_Text</Prereq>
+				</Event>
+
+</Story>
