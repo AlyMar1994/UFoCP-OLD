@@ -286,9 +286,10 @@
 	<Container Name="Rogue_Squadron_Space_Container">
 		<Text_ID>TEXT_HERO_ROGUE_SQUADRON</Text_ID>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_FIGHTER_SQUADRON</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_ROGUE_SQUADRON</Encyclopedia_Text>
 		<Encyclopedia_Good_Against>TIE_Fighter TIE_Bomber Death_Star_II</Encyclopedia_Good_Against>
 		<Encyclopedia_Vulnerable_To>Tartan_Patrol_Cruiser</Encyclopedia_Vulnerable_To>
-		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_ROGUE_SQUADRON</Encyclopedia_Text>
+
 		<Show_Name>No</Show_Name>
 		<Icon_Name>I_Button_Wedge_Antilles.tga</Icon_Name>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
@@ -335,14 +336,6 @@
 		<Squadron_Offsets>-60.00, -60.00, 0.00</Squadron_Offsets>
 		<Squadron_Offsets>-30.00, 0.00, 0.00</Squadron_Offsets>
 
-		<!-- MULTIPLAYER SKIRMISH VALUES START -->
-		<Tactical_Build_Cost_Multiplayer>15000</Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Time_Seconds>120</Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites />
-		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
-		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
-		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
-
 		<!-- Hero unit abilities description: -->
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<!-- Primary Ability: -->
@@ -371,5 +364,13 @@
 				<Alternate_Icon_Name>I_SA_Strike.tga</Alternate_Icon_Name>
 			</Unit_Ability>
 		</Unit_Abilities_Data>
+
+		<!-- MULTIPLAYER SKIRMISH VALUES START: -->
+		<Tactical_Build_Cost_Multiplayer>15000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>120</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
 	</Container>
 </Rogue_Squadron_Data>

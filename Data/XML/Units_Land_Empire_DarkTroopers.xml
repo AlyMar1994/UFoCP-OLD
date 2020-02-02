@@ -26,7 +26,7 @@
 		<Mass>0.999</Mass>
 		<Dense_FOW_Reveal_Range_Multiplier>0.24</Dense_FOW_Reveal_Range_Multiplier>
 		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
-		
+
 		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
 
 		<Armor_Type>Armor_Star_Destroyer</Armor_Type>
@@ -70,13 +70,16 @@
 		<Build_Time_Seconds>100</Build_Time_Seconds>
 		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
 		<Size_Value>8</Size_Value>
-		
+
 		<!-- Set to spawn all units once and then not continue - no reserves. -->
 		<Starting_Spawned_Units_Tech_0>TIE_Interceptor_Squadron, 2</Starting_Spawned_Units_Tech_0>
 		<Starting_Spawned_Units_Tech_0>TIE_Phantom_Squadron, 1</Starting_Spawned_Units_Tech_0>
+
 		<Spawned_Squadron_Delay_Seconds>6</Spawned_Squadron_Delay_Seconds>
+
 		<Reserve_Spawned_Units_Tech_0>TIE_Interceptor_Squadron, 6</Reserve_Spawned_Units_Tech_0>
 		<Reserve_Spawned_Units_Tech_0>TIE_Phantom_Squadron, 3</Reserve_Spawned_Units_Tech_0>
+
 
 		<Behavior>SELECTABLE, DUMMY_STARSHIP</Behavior>
 		<SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
@@ -87,8 +90,8 @@
 
 		<Death_Clone>Damage_Normal, Arc_Hammer_Death_Clone</Death_Clone>
 
-		<Space_FOW_Reveal_Range>1200.0</Space_FOW_Reveal_Range>
-		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		<Space_FOW_Reveal_Range>1200.00</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>2000.00</Targeting_Max_Attack_Distance>
 
 		<HardPoints>
 			HP_ARC_HAMMER_CON_MISSILE,
@@ -121,14 +124,14 @@
 
 		<SFXEvent_Ambient_Loop>Unit_Star_Destroyer_Idle_Engine_Loop</SFXEvent_Ambient_Loop>
 
-		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_WEAPON_LASER,		Unit_Lost_Laser_Arc_Hammer</SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_WEAPON_LASER,			Unit_Lost_Laser_Arc_Hammer</SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_WEAPON_MISSILE, </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_WEAPON_TORPEDO, </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Arc_Hammer</SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_SHIELD_GENERATOR,	Unit_Lost_Shields_Arc_Hammer</SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_ENGINE,			Unit_Lost_Engines_Arc_Hammer</SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_WEAPON_ION_CANNON,		Unit_Lost_Ion_Arc_Hammer</SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_SHIELD_GENERATOR,		Unit_Lost_Shields_Arc_Hammer</SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_ENGINE,				Unit_Lost_Engines_Arc_Hammer</SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_GRAVITY_WELL, </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_FIGHTER_BAY,		Unit_Lost_Bay_Arc_Hammer</SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_FIGHTER_BAY,			Unit_Lost_Bay_Arc_Hammer</SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
 

@@ -59,6 +59,6 @@ Anything that can correctly parse .XML and .LUA will do.
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see https://www.gnu.org/licenses/.
 
-	This license applies to all files, source, and elseor all applicable mod-content, despite said files not being marked with license information.
+    This license applies to all files, source, and elseor all applicable mod-content, despite said files not being marked with license information.
 
 ----

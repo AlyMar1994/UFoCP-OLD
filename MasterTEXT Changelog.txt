@@ -18,7 +18,7 @@ Due to numerous untracked fixes, errors and inconsistiencies (AGAIN), I've redon
 
 
 -Spacing has now become far more consistient.  To prevent errors, all tooltips have been reverted, or fixed to single-spaced.  All dialogue, world descriptions, campaign journal entries, and scenario descriptions will be double-spaced so they're easily readable, and absent of spacing errors (for consistiency between the ones that are and are not).  This also means that all erenuous spacing will be removed.  All developer comments from now on is also going to be double-spaced.
--Dialogue from all tutorial campaigns, and the main story campaign have been fixed and improved upon.  They now are more consistient, and convey more (i.e. Tyber Zann: "...by selling it to the Empire! [Hearty Laughter")
+-Dialogue from all tutorial campaigns, and the main story campaign have been fixed and improved upon.  They now are more consistient, and convey more (i.e. Tyber Zann: "...by selling it to the Empire! [Hearty Laughter]")
 -All apostrophes have been fixed.  Instead of using the Apple-styled fancy curved apostrophes, they're now the natural '.
 -Fixed all capitalizations of "emperor."  In the '90s, Emperor Palpatine wasn't named.  From the Return of the Jedi, he was only "The Emperor," which became his name.  Now that The Phantom Menace and the Revenge of the Sith have been released, the Emperor's name became Palpatine.  As such, all improper capitalizations of "Emperor" that are referring to the man as a sole title are decapitalized.
 -All "Bounty Hunter" texts (i.e. "A Bounty Hunter has temporarily neutralized Boba Fett! Location:") have been decapitalized as "bounty hunter" is a profession, and is naming a hunter ambiguously, not directly.

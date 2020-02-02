@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <Droids_Data>
-	<!-- This file is a merge/first of a new concept dealing with taking base game items -->
-	<!-- and combining them into their own files for ease of access, and collectivization. -->
-	<!-- Read Changelog v1.9 as to why I chose Droids. -->
-
 	<!-- MAIN: LAND UNIT(S)-->
 	<HeroUnit Name="Droid_R2D2">
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Text_ID>TEXT_HERO_DROID_R2D2</Text_ID>
+
+		<Encyclopedia_Text>TEXT_TOOLTIP_R2D2 TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+
 		<Land_Model_Name>RI_R2.ALO</Land_Model_Name>
 		<Icon_Name>I_Button_R2D2.tga</Icon_Name>
 
@@ -86,8 +86,6 @@
 		<Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
 		<AI_Combat_Power>100</AI_Combat_Power>
 
-		<Encyclopedia_Text>TEXT_TOOLTIP_R2D2 TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
 		<Score_Cost_Credits>0</Score_Cost_Credits>
 
 		<Share_Damage_With_Teammates>Yes</Share_Damage_With_Teammates>
@@ -168,6 +166,10 @@
 	<HeroUnit Name="Droid_C3P0">
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Text_ID>TEXT_HERO_DROID_C3P0</Text_ID>
+
+		<Encyclopedia_Text>TEXT_TOOLTIP_C3P0 TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+
 		<Land_Model_Name>RI_C3PO.ALO</Land_Model_Name>
 
 		<!-- Leave icon name blank so only 1 icon shows up for R2 and 3P0. -->
@@ -252,8 +254,6 @@
 		<Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
 		<AI_Combat_Power>10</AI_Combat_Power>
 
-		<Encyclopedia_Text>TEXT_TOOLTIP_C3P0 TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
 		<Score_Cost_Credits>0</Score_Cost_Credits>
 
 		<Death_Fade_Time>0.25</Death_Fade_Time>
@@ -309,9 +309,9 @@
 		<Attack_Move_Response_Range>300.00</Attack_Move_Response_Range>
 		<Guard_Chase_Range>200.00</Guard_Chase_Range>
 		<Score_Cost_Credits>7000</Score_Cost_Credits>
-		
+
 		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>		
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>Unit_Respawn_C3PO</SFXEvent_Build_Complete>
 		<SFXEvent_Hero_Respawned>Unit_Respawn_C3PO</SFXEvent_Hero_Respawned>
 		<SFXEvent_Fleet_Move>Unit_Fleet_Move_C3PO</SFXEvent_Fleet_Move>
@@ -335,7 +335,7 @@
 			</Unit_Ability>
 		</Unit_Abilities_Data>
 
-		<!-- MULTIPLAYER SKIRMISH VALUES START -->
+		<!-- MULTIPLAYER SKIRMISH VALUES START: -->
 		<Tactical_Build_Cost_Multiplayer>850</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites />
@@ -362,7 +362,7 @@
 		<Garrison_Category>Infantry</Garrison_Category>
 		<Land_FOW_Reveal_Range>200.00</Land_FOW_Reveal_Range>
 		<MovementClass>Infantry</MovementClass>
-		
+
 		<Max_Speed>.80</Max_Speed>
 		<Max_Rate_Of_Turn>12.00</Max_Rate_Of_Turn>
 		<Space_Layer>Land</Space_Layer>
@@ -375,7 +375,7 @@
 		<Override_Acceleration>.10</Override_Acceleration>
 		<Override_Deceleration>.10</Override_Deceleration>
 		<FormationOrder>1</FormationOrder>
-		
+
 		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
 		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
 		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
@@ -418,7 +418,7 @@
 					Underworld_Torpedo_Turret,
 					Underworld_Rocket_Pod
 				</Applicable_Unit_Types>
-				
+
 				<!-- <Damage_Amount>0.00</Damage_Amount> -->
 				<!-- <Damage_Application_Time_In_Secs>2.3893</Damage_Application_Time_In_Secs> -->
 				<Lightning_Effect_Name>Hack_Electicity_Zaps</Lightning_Effect_Name>
@@ -445,7 +445,7 @@
 				<Activation_Min_Range>5.00</Activation_Min_Range>
 				<Activation_Max_Range>30.00</Activation_Max_Range>
 				<Applicable_Unit_Categories></Applicable_Unit_Categories>
-	
+
 				<!-- NOTE: We'll specify Empire units here since we want them to be repaired when they are hacked. -->
 				<!-- NOTE: Also add captured clones of Empire vehicles (vehicle thief ability). -->
 				<Applicable_Unit_Types>
@@ -470,7 +470,7 @@
 					Swamp_Speeder_Captured,
 					Pirate_Skiff_Captured
 				</Applicable_Unit_Types>
-				
+
 				<!-- <Damage_Amount>0.00</Damage_Amount> -->
 				<!-- <Damage_Application_Time_In_Secs>2.3893</Damage_Application_Time_In_Secs> -->
 				<Lightning_Effect_Name>Repair_Electicity_Zaps</Lightning_Effect_Name>

@@ -1,9 +1,9 @@
 <SFXEvents>
 	<!-- If a tag is unknown/unused, it's empty, -->
 	<!-- unless it can be filled in with a known value. Then the known values are displayed. -->
-	
+
 	<!-- NOTE: THESE VALUES ARE GENERALLY GENERIC! YOU CAN CHANGE THEM TO WHATEVER YOU WANT! -->
-	
+
 	<!-- By Connor 'AlyMar1994' Hess! -->
 
 	<SFXEvent Name="EventName">

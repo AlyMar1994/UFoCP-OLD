@@ -1,12 +1,17 @@
 <?xml version="1.0" ?>
-<!--  These objects are used for the technical      -->
-<!--  progression of the Empire as well as the      -->
-<!--  the final production of the Death Stat unit.  -->
 <TechBuildings>
+<!-- These objects are used for the technical		-->
+<!-- progression of the Empire as well as the		-->
+<!-- the final production of the Death Star unit.	-->
+
+	<!-- TECH 2 -->
 	<TechBuilding Name="DS_Primary_Hyperdrive">
 		<Text_ID>TEXT_DEATHSTAR_PART_SHIELDGEN</Text_ID>
-		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ADVANCE </Encyclopedia_Unit_Class>
-		<GUI_Row> 0 </GUI_Row>
+		<Icon_Name>I_Button_Death_Star_Build.tga</Icon_Name>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TECH_UPGRADE_02</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ADVANCE</Encyclopedia_Unit_Class>
+
+		<GUI_Row>0</GUI_Row>
 		<Is_Dummy>Yes</Is_Dummy>
 		<Affiliation>Empire</Affiliation>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
@@ -15,24 +20,25 @@
 		<Tech_Level>1</Tech_Level>
 		<Build_Cost_Credits>2000</Build_Cost_Credits>
 		<Build_Time_Seconds>200</Build_Time_Seconds>
-		<Build_Time_Reduced_By_Multiple_Factories> No </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Time_Reduced_By_Multiple_Factories>No</Build_Time_Reduced_By_Multiple_Factories>
 		<Build_Advances_Tech_Level>2</Build_Advances_Tech_Level>
 		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
-		<Behavior></Behavior>
-		<Icon_Name>i_button_death_star_build.tga</Icon_Name>
+		<Behavior />
+
 		<SFXEvent_Build_Started>EHD_Tech_Upgrade_Progress</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Tech_Upgrade_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>EHD_Tech_Upgrade_Complete</SFXEvent_Build_Complete>
-		
-		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_TECH_UPGRADE_02 </Encyclopedia_Text>
-		
 	</TechBuilding>
-	
-	
+
+
+	<!-- TECH 3 -->
 	<TechBuilding Name="DS_Shield_Gen">
 		<Text_ID>TEXT_DEATHSTAR_PART_SUPERLASER</Text_ID>
-		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ADVANCE </Encyclopedia_Unit_Class>
-		<GUI_Row> 0 </GUI_Row>
+		<Icon_Name>I_Button_Death_Star_Build.tga</Icon_Name>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TECH_UPGRADE_03</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ADVANCE</Encyclopedia_Unit_Class>
+
+		<GUI_Row>0</GUI_Row>
 		<Is_Dummy>Yes</Is_Dummy>
 		<Affiliation>Empire</Affiliation>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
@@ -41,24 +47,25 @@
 		<Tech_Level>2</Tech_Level>
 		<Build_Cost_Credits>4000</Build_Cost_Credits>
 		<Build_Time_Seconds>200</Build_Time_Seconds>
-		<Build_Time_Reduced_By_Multiple_Factories> No </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Time_Reduced_By_Multiple_Factories>No</Build_Time_Reduced_By_Multiple_Factories>
 		<Build_Advances_Tech_Level>3</Build_Advances_Tech_Level>
 		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
-		<Behavior></Behavior>
-		<Icon_Name>i_button_death_star_build.tga</Icon_Name>
+		<Behavior />
+
 		<SFXEvent_Build_Started>EHD_Tech_Upgrade_Progress</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Tech_Upgrade_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>EHD_Tech_Upgrade_Complete</SFXEvent_Build_Complete>
-		
-		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_TECH_UPGRADE_03 </Encyclopedia_Text>
-		
 	</TechBuilding>
-	
-	
+
+
+	<!-- TECH 4 -->
 	<TechBuilding Name="DS_Superlaser_Core">
 		<Text_ID>TEXT_DEATHSTAR_PART_DURASTEEL</Text_ID>
-		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ADVANCE </Encyclopedia_Unit_Class>
-		<GUI_Row> 0 </GUI_Row>
+		<Icon_Name>I_Button_Death_Star_Build.tga</Icon_Name>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TECH_UPGRADE_04</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ADVANCE</Encyclopedia_Unit_Class>
+
+		<GUI_Row>0</GUI_Row>
 		<Is_Dummy>Yes</Is_Dummy>
 		<Affiliation>Empire</Affiliation>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
@@ -67,24 +74,25 @@
 		<Tech_Level>3</Tech_Level>
 		<Build_Cost_Credits>6000</Build_Cost_Credits>
 		<Build_Time_Seconds>200</Build_Time_Seconds>
-		<Build_Time_Reduced_By_Multiple_Factories> No </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Time_Reduced_By_Multiple_Factories>No</Build_Time_Reduced_By_Multiple_Factories>
 		<Build_Advances_Tech_Level>4</Build_Advances_Tech_Level>
 		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
-		<Behavior></Behavior>
-		<Icon_Name>i_button_death_star_build.tga</Icon_Name>
+		<Behavior />
+
 		<SFXEvent_Build_Started>EHD_Tech_Upgrade_Progress</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Tech_Upgrade_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>EHD_Tech_Upgrade_Complete</SFXEvent_Build_Complete>
-		
-		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_TECH_UPGRADE_04 </Encyclopedia_Text>
-		
 	</TechBuilding>
-	
-	
+
+
+	<!-- TECH 5 -->
 	<TechBuilding Name="DS_Durasteel">
 		<Text_ID>TEXT_DEATHSTAR_PART_HYPERMATTER</Text_ID>
-		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ADVANCE </Encyclopedia_Unit_Class>
-		<GUI_Row> 0 </GUI_Row>
+		<Icon_Name>I_Button_Death_Star_Build.tga</Icon_Name>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TECH_UPGRADE_05_01</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ADVANCE</Encyclopedia_Unit_Class>
+
+		<GUI_Row>0</GUI_Row>
 		<Is_Dummy>Yes</Is_Dummy>
 		<Affiliation>Empire</Affiliation>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
@@ -93,24 +101,24 @@
 		<Tech_Level>4</Tech_Level>
 		<Build_Cost_Credits>8000</Build_Cost_Credits>
 		<Build_Time_Seconds>200</Build_Time_Seconds>
-		<Build_Time_Reduced_By_Multiple_Factories> No </Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Time_Reduced_By_Multiple_Factories>No</Build_Time_Reduced_By_Multiple_Factories>
 		<Build_Advances_Tech_Level>5</Build_Advances_Tech_Level>
 		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
-		<Behavior></Behavior>
-		<Icon_Name>i_button_death_star_build.tga</Icon_Name>
+		<Behavior />
+
 		<SFXEvent_Build_Started>EHD_Tech_Upgrade_Progress</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Tech_Upgrade_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>EHD_Tech_Upgrade_Complete</SFXEvent_Build_Complete>
-		
-		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_TECH_UPGRADE_05_01 </Encyclopedia_Text>
-		
 	</TechBuilding>
-	
-	
+
 	<!-- Currently Empire tech levels run from 0 to 4, so this tech is unused. -->
-	<!-- <TechBuilding Name="DS_Hypermatter_Power">
+<!-- <TechBuilding Name="DS_Hypermatter_Power">
 		<Text_ID>TEXT_DEATHSTAR_PART_HYPERMATTER</Text_ID>
-		<GUI_Row> 0 </GUI_Row>
+		<Icon_Name>I_Button_Death_Star_Build.tga</Icon_Name>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TECH_UPGRADE_05</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ADVANCE</Encyclopedia_Unit_Class>
+
+		<GUI_Row>0</GUI_Row>
 		<Is_Dummy>Yes</Is_Dummy>
 		<Affiliation>Empire</Affiliation>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
@@ -122,15 +130,11 @@
 		<Build_Time_Reduced_By_Multiple_Factories> No </Build_Time_Reduced_By_Multiple_Factories>
 		<Build_Advances_Tech_Level>5</Build_Advances_Tech_Level>
 		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
-		<Behavior></Behavior>
-		<Icon_Name>i_button_death_star_build.tga</Icon_Name>
+		<Behavior />
+
 		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Tech_Upgrade_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
-		
-		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_TECH_UPGRADE_05 </Encyclopedia_Text>
-		
-	</TechBuilding> -->
-	
-	
+	</TechBuilding>
+-->
 </TechBuildings>

@@ -88,6 +88,7 @@
 
 		<Spawned_Squadron_Delay_Seconds>8</Spawned_Squadron_Delay_Seconds>
 
+
 		<Behavior>SELECTABLE, DUMMY_STARSHIP</Behavior>
 		<SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
 
@@ -326,68 +327,4 @@
 		<Ship_Class>Super</Ship_Class>
 		<Remove_Upon_Death>True</Remove_Upon_Death>
 	</UniqueUnit>
-
-
-	<!-- MAIN: Darth Vader Team -->
-	<HeroCompany Name="Darth_Team_Executor">
-		<GUI_Row>1</GUI_Row>
-		<Text_ID>TEXT_HERO_VADER_TEAM</Text_ID>
-		<Encyclopedia_Text>TEXT_TOOLTIP_DARTH_VADER TEXT_TOOLTIP_EXECUTOR</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SITH_LORD</Encyclopedia_Unit_Class>
-		<Icon_Name>I_Button_Darth_Vader.tga</Icon_Name>
-
-		<Affiliation>Empire</Affiliation>
-		<Damage>100</Damage>
-		<Combat_Power_Value>0</Combat_Power_Value>
-		
-		<Tech_Level>5</Tech_Level>
-		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
-		<Required_Star_Base_Level>5</Required_Star_Base_Level>
-		<Required_Special_Structures/>
-		<Required_Planets/>
-		<Build_Time_Seconds>180</Build_Time_Seconds>
-		<Build_Cost_Credits>15000</Build_Cost_Credits>
-		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
-
-		<Is_Dummy>Yes</Is_Dummy>
-		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
-		<Company_Transport_Unit>Shuttle_Tyderium</Company_Transport_Unit>
-		<Company_Units>Darth_Vader_Expansion</Company_Units>
-		<Is_Named_Hero>Yes</Is_Named_Hero>
-		<Is_Force_Sensitive>Yes</Is_Force_Sensitive>
-		<Available_In_Skirmish>Yes</Available_In_Skirmish>
-		<Can_Be_Only_One>True</Can_Be_Only_One>
-		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
-
-		<CategoryMask>LandHero | SpaceHero</CategoryMask>
-		<Ranking_In_Category>3</Ranking_In_Category>
-		<Population_Value>3</Population_Value>
-		<Land_Override_Population_Value>1</Land_Override_Population_Value>
-		<Score_Cost_Credits>20000</Score_Cost_Credits>
-
-		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Respawn_Vader_Executor</SFXEvent_Build_Complete>
-		<SFXEvent_Hero_Respawned>Unit_Respawn_Vader_Executor</SFXEvent_Hero_Respawned>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Vader_Executor</SFXEvent_Fleet_Move>
-
-		<Unit_Abilities_Data SubObjectList="Yes">
-			<!-- Primary Ability: -->
-			<Unit_Ability>
-				<Type>FORCE_TELEKINESIS</Type>
-				<Recharge_Seconds>30.00</Recharge_Seconds>
-				<GUI_Activated_Ability_Name>Vader_Force_Telekinesis</GUI_Activated_Ability_Name> <!-- GUI Command Bar support. -->
-			</Unit_Ability>
-
-			<!-- Secondary Ability: -->
-			<Unit_Ability>
-				<Type>FORCE_WHIRLWIND</Type>
-				<Recharge_Seconds>30.00</Recharge_Seconds>
-				<GUI_Activated_Ability_Name>Vader_Force_Whirlwind</GUI_Activated_Ability_Name> <!-- GUI Command Bar support. -->
-				<Effective_Radius>500.00</Effective_Radius>
-				<Spawned_Object_Type>Force_Whirlwind_Particles</Spawned_Object_Type>
-			</Unit_Ability>
-		</Unit_Abilities_Data>
-	</HeroCompany>
 </Executor_Files>

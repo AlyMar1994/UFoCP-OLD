@@ -945,7 +945,7 @@
 		<Minimum_Visible_Base_Level>3</Minimum_Visible_Base_Level>
 		<Basic_AI>BasicEmpire</Basic_AI> <!-- Is defined per-Galactic Conquest aswell. -->
 		<Can_Win_By_Destroying_Super_Weapon>No</Can_Win_By_Destroying_Super_Weapon>
-		<Faction_Super_Weapon>Death_Star</Faction_Super_Weapon>
+		<Faction_Super_Weapon>Death_Star_II</Faction_Super_Weapon>
 		<Skirmish_Land_Bomber>TIE_Bomber_Bombing_Run</Skirmish_Land_Bomber>
 		<Space_Tactical_Unit_Cap>20</Space_Tactical_Unit_Cap>
 		<Maintenance_Cost>0.25</Maintenance_Cost>

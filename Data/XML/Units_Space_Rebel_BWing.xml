@@ -61,7 +61,7 @@
 		<Damage>5</Damage>
 		<Death_Explosions>Small_Explosion_Space</Death_Explosions>
 		<Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
-		
+
 		<Land_FOW_Reveal_Range>130.00</Land_FOW_Reveal_Range>
 		<Space_FOW_Reveal_Range>600.00</Space_FOW_Reveal_Range>
 		<Targeting_Max_Attack_Distance>500.00</Targeting_Max_Attack_Distance>
@@ -118,7 +118,7 @@
 		<Collision_Box_Modifier>2.00</Collision_Box_Modifier>
 		<Targeting_Priority_Set>Bomber</Targeting_Priority_Set>
 		<Targeting_Stickiness_Time_Threshold>5.00</Targeting_Stickiness_Time_Threshold>
-		
+
 		<Spin_Away_On_Death>Yes</Spin_Away_On_Death>
 		<Spin_Away_On_Death_Chance>0.20</Spin_Away_On_Death_Chance>
 		<Spin_Away_On_Death_Time>2.00</Spin_Away_On_Death_Time>
@@ -200,7 +200,7 @@
 		<Max_Squad_Size>6</Max_Squad_Size>
 		<Population_Value>1</Population_Value>
 		<Score_Cost_Credits>900</Score_Cost_Credits>
-		
+
 		<!-- Non-hero unit abilities descriptions: -->
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<!-- Primary Ability. -->
