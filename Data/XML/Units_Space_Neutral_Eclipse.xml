@@ -127,20 +127,21 @@
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<Unit_Ability>
 				<Type>SUPER_LASER</Type>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ECLIPSE_SL_DESCRIPTION</Alternate_Description_Text>
+
 				<Mod_Multiplier>SPEED_MULTIPLIER, 0.80</Mod_Multiplier>
 				<GUI_Activated_Ability_Name>Eclipse_Super_Laser_Attack_Ability</GUI_Activated_Ability_Name> <!-- GUI Command Bar Support. -->
 				<Recharge_Seconds>10</Recharge_Seconds>
 				<Expiration_Seconds>10</Expiration_Seconds>
 				<SFXEvent_Target_Ability>Unit_Attack_Tyber_Zann</SFXEvent_Target_Ability>
 				<SFXEvent_Special_Ability_Loop>Unit_Death_Star_2_Fire</SFXEvent_Special_Ability_Loop> 
-				<Alternate_Description_Text>TEXT_TOOLTIP_ECLIPSE_SL_DESCRIPTION</Alternate_Description_Text>
 			</Unit_Ability>
 		</Unit_Abilities_Data>
 
 		<Abilities SubObjectList="Yes">
 			<Super_Laser_Ability Name="Eclipse_Super_Laser_Attack_Ability">
 				<Activation_Style>User_Input</Activation_Style>
-				<Alternate_Description_Text>TEXT_TOOLTIP_ECLIPSE_SL_DESCRIPTION</Alternate_Description_Text>
+
 				<Applicable_Unit_Categories>Capital | Corvette | Frigate | Structure</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />
 				<Owner_Particle_Effect>Piet_Powerup_Particle_Effect</Owner_Particle_Effect>

@@ -84,6 +84,7 @@ Units (Space)
 
 -Eclipse – Removed <Text_ID> "NONE" from death clone as it doesn't exist, nor can, and causes errors internally. Replaced with normal <Text_ID> from the normal unit, as all other units do.
 -Eclipse – Fixed minimap icon being too small in comparison to the actual ship's size. Size has been increased from x0.4 to x0.6.
+-Eclipse – Fixed superlaser ability causing text errors internally due to an incorrect tag. It has been removed, albeit no gameplay changes were made.
 
 -Home One - Admiral Ackbar – Fixed unit's name to be more consistient with other named space hero units. Now named "Home One - Admiral Ackbar" instead of soley "Home One."
 
