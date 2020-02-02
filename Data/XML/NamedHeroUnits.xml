@@ -230,15 +230,18 @@
 					TIE_Crawler,
 					M1_Repulsor_Tank,
 					M1_Repulsor_Tank_00,
+					HAV_Juggernaut,
+
 					Pirate_Skiff,
 					Swamp_Speeder_E,
 					Swamp_Speeder_P,
 					Pod_Walker_Empire,
 					Pod_Walker_Pirate,
+
 					MPTL,
 					T2B_Tank,
 					T4B_Tank,
-					HAV_Juggernaut,
+
 					Canderous_Assault_Tank,
 					F9TZ_Cloaking_Transport,
 					MAL_Rocket_Vehicle,

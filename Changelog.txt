@@ -66,6 +66,12 @@ Maps/Planets (Space)
 ==================
 Units (Land)
 ==================
+-Fixed hacked Underworld land turrets/Chewbacca-captured tank units from being repaired by R2-D2 & C-3PO.
+-Fixed Empire grenade mortar turret not repariable after being hacked by R2-D2 & C-3PO.
+-Fixed Empire Empire Juggernaut transport not repariable after being hijacked by Chewbacca by R2-D2 & C-3PO.
+-Fixed Black Sun Pirate turrets not being repairable after being hacked by R2-D2 and C-3PO.
+-Fixed Rebel laser turret not being repariable by R2-D2 & C-3PO.
+
 -C-3PO – Fixed tooltip. Somehow, a regression occured where he used R2-D2's tooltip description.
 
 -Darth Vader – Fixed skirmish land tooltips not having information about capturing buildpads/structures.

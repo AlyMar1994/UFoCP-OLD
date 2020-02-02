@@ -101,24 +101,25 @@
 		<!-- the ability type, with no parameters). The ability should be DEFINED on the unit itself. This would be valid -->
 		<!-- if the ability was a TEAM ABILITY like IONCANNONSHOT. -->
 		<Unit_Abilities_Data SubObjectList="Yes">
-				<!-- Primary Ability: -->
-				<Unit_Ability>
-					<Type>TARGETED_HACK</Type>
-					<Recharge_Seconds>45.00</Recharge_Seconds>
-					<GUI_Activated_Ability_Name>R2D2_Hack_Ability</GUI_Activated_Ability_Name>
-					<SFXEvent_Target_Ability>Unit_Hack_Turret_C3PO</SFXEvent_Target_Ability>
-					<Supports_Autofire>True</Supports_Autofire>
-				</Unit_Ability>
+			<!-- Primary Ability: -->
+			<Unit_Ability>
+				<Type>TARGETED_HACK</Type>
+				<Recharge_Seconds>45.00</Recharge_Seconds>
+				<GUI_Activated_Ability_Name>R2D2_Hack_Ability</GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability>Unit_Hack_Turret_C3PO</SFXEvent_Target_Ability>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
 
-				<!-- Secondary Ability: -->
-				<Unit_Ability>
-					<Type>TARGETED_REPAIR</Type>
-					<Recharge_Seconds>35.00</Recharge_Seconds>
-					<GUI_Activated_Ability_Name>R2D2_Repair_Ability</GUI_Activated_Ability_Name>
-					<SFXEvent_Target_Ability>Unit_Hack_Turret_C3PO</SFXEvent_Target_Ability>
-					<Friendly_Ability>Yes</Friendly_Ability> <!-- Targeted ability to friendly units. -->
-				</Unit_Ability>
-			</Unit_Abilities_Data>
+			<!-- Secondary Ability: -->
+			<Unit_Ability>
+				<Type>TARGETED_REPAIR</Type>
+				<Recharge_Seconds>35.00</Recharge_Seconds>
+				<GUI_Activated_Ability_Name>R2D2_Repair_Ability</GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability>Unit_Hack_Turret_C3PO</SFXEvent_Target_Ability>
+				<Friendly_Ability>Yes</Friendly_Ability> <!-- Targeted ability to friendly units. -->
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
 
 		<Abilities SubObjectList="Yes">
 			<Galactic_Stealth_Ability Name="R2D2_Stealth">
@@ -317,7 +318,7 @@
 		<SFXEvent_Fleet_Move>Unit_Fleet_Move_C3PO</SFXEvent_Fleet_Move>
 
 		<Unit_Abilities_Data SubObjectList="Yes">
-		<!-- Primary Ability. -->
+			<!-- Primary Ability: -->
 			<Unit_Ability>
 				<Type>TARGETED_HACK</Type>
 				<Recharge_Seconds>45.00</Recharge_Seconds>
@@ -325,7 +326,7 @@
 				<SFXEvent_Target_Ability>Unit_Hack_Turret_C3PO</SFXEvent_Target_Ability>
 			</Unit_Ability>
 
-			<!-- Secondary Ability. -->
+			<!-- Secondary Ability: -->
 			<Unit_Ability>
 				<Type>TARGETED_REPAIR</Type>
 				<Recharge_Seconds>40.00</Recharge_Seconds>
@@ -446,19 +447,23 @@
 				<Activation_Max_Range>30.00</Activation_Max_Range>
 				<Applicable_Unit_Categories></Applicable_Unit_Categories>
 
-				<!-- NOTE: We'll specify Empire units here since we want them to be repaired when they are hacked. -->
-				<!-- NOTE: Also add captured clones of Empire vehicles (vehicle thief ability). -->
+				<!-- NOTE: We'll specify Empire turrets here since we want them to be repaired when they are hacked. -->
+				<!-- Also, add captured clones of Empire vehicles (vehicle thief ability). -->
+				<!-- ALYMAR1994 (2/2/2020): Also, adding Underworld turrets/clones so they can be equally repaired, -->
+				<!-- like the Empire items. -->
 				<Applicable_Unit_Types>
-					MPTL,
-					T2B_Tank,
-					T4B_Tank,
 					Rebel_Anti_Aircraft_Turret,
 					Rebel_Anti_Infantry_Turret,
 					Rebel_Anti_Vehicle_Turret,
+					Rebel_Rapid_Fire_Laser_Turret,
+					MPTL,
+					T2B_Tank,
+					T4B_Tank,
 
 					Empire_Anti_Aircraft_Turret,
 					Empire_Anti_Infantry_Turret,
 					Empire_Anti_Vehicle_Turret,
+					Empire_Grenade_Mortar,
 					M1_Repulsor_Tank_00_Captured,
 					M1_Repulsor_Tank_Captured,
 					TIE_Crawler_Captured,
@@ -466,9 +471,20 @@
 					AT_AA_Walker_Captured,
 					AT_AT_Walker_Captured,
 					AT_ST_Walker_Captured,
+					HAV_Juggernaut_Captured,
 
+					Pirate_Anti_Infantry_Turret,
+					Pirate_Anti_Vehicle_Turret,
 					Swamp_Speeder_Captured,
-					Pirate_Skiff_Captured
+					Pirate_Skiff_Captured,
+
+					Underworld_Mass_Driver_Turret,
+					Underworld_Torpedo_Turret,
+					Underworld_Rocket_Pod,
+					Canderous_Assault_Tank_Captured,
+					MZ8_Pulse_Cannon_Tank_Captured,
+					MAL_Captured,
+					F9TZ_Cloaking_Transport_Captured
 				</Applicable_Unit_Types>
 
 				<!-- <Damage_Amount>0.00</Damage_Amount> -->
