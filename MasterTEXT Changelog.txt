@@ -47,6 +47,8 @@ Due to numerous untracked fixes, errors and inconsistiencies (AGAIN), I've redon
 -Created string "TEXT_HERO_PEACEBRINGER_01" to adjust full name to keep consistient with other named hero units of its class.
 -Created string "TEXT_TOOLTIP_ANNIHILATOR_01" to adjust full name to keep consistient with other named hero units of its class.
 
+-Renamed string "TEXT_PLANET_AALDERAAN_ENCYC_01" to "TEXT_PLANET_ALDERAAN_ENCYC_01," so the lines are properly alphabetical in the editor. This has no real change.
+
 
 -[EMPIRE_BM_TECH_1]: "Black Market Items available at Empire tech level one." --> "Black market items available at Empire tech level one."
 -[EMPIRE_BM_TECH_2]: "Black Market Items available at Empire tech level two." --> "Black market items available at Empire tech level two."

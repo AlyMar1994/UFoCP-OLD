@@ -1,4 +1,71 @@
 <?xml version="1.0"?>
+<!--
+
+	NOTE: Planet Capture Bonus = (Max_Ground_Base + Max_Space_Base) x 2000
+
+	To that number add the following bonuses for planet type:
+
+		Desert/Barren		-3000
+		Arctic				-2000
+		Swamp				-1000
+		Gas Giant				0
+		Ocean					0
+		Volcanic			+1000
+		Forest				+2000
+		Temperate			+3000
+		Urban				+4000
+
+
+	Slice Difficulty Rating
+
+	This rating is a measurement of the law-level of a planet.  This can include Imperial control, but
+	can also include the indigenous forces and their ability (or willingness) to root out theft
+	and lawlessness.  The number after the rating is used for the Underworld Black Market modifier.
+
+		0	=	Incredibly Easy		(0)
+		1	=	Easy				(+200)
+		2	=	Average				(+400)
+		3	=	Somewhat Difficult	(+600)
+		4	=	Difficult			(+800)
+		5	=	Next to Impossible	(+1000)
+
+	Slicing Tech Availability Rating
+
+	This is a measurement of how much tech is available on the planet in question; generally a rating
+	of the technological advancement level of the indigenous species.  A sample planet is included for
+	a guide.  The number after the rating is used for the Underworld Black Market modifier.
+
+		0	=	No Tech, Primitive Culture (Ewoks on Endor)					(+500)
+		1	=	Low Tech, Colonists with little access (Gamorr)				(+400)
+		2	=	Back-Water, Little access to high tech (Tatooine)			(+300)
+		3	=	Average, Average citizens of the galaxy (Alderaan)			(+100)
+		4	=	Semi-Urban, Large population with plentifiul Tech (Sullust)	(0)
+		5	=	Megalopolis, Huge urban and industrial centers (Coruscant)	(-200)
+
+
+	Black Market Modifier
+
+	This modifier adds or subtracts from the base cost of items on the Underworld Black Market menu. It
+	is a sum of the two ratings in the above tech measurements.  It can also be further modified per planet
+	for special circumstances (such as the unlikelihood of finding a black market in The Maw).
+
+
+	Corruption Type Values
+
+	Supported planetary corruption types can be one of the following values:
+		* Corruption_Intimidation
+		* Corruption_Piracy
+		* Corruption_Kidnapping
+		* Corruption_Racketeering
+		* Corruption_Corrupt_Militia
+		* Corruption_Bribery
+		* Corruption_Black_Market
+		* Corruption_Bonded_Citizens
+
+	A tactical battle will be launched if the corruption choice has valid entries for:
+		<Corruption_X_Tactical_Game_Mode> and <Corruption_X_Tactical_Map_Name>
+
+-->
 <Planets>
 	<Planet Name="Galaxy_Core_Art_Model">
 		<Text_ID />
@@ -23,73 +90,6 @@
 	</Planet>
 
 
-<!--
-
-NOTE: Planet Capture Bonus = (Max_Ground_Base + Max_Space_Base) x 2000
-
-To that number add the following bonuses for planet type:
-
-	Desert/Barren		-3000
-	Arctic				-2000
-	Swamp				-1000
-	Gas Giant				0
-	Ocean					0
-	Volcanic			+1000
-	Forest				+2000
-	Temperate			+3000
-	Urban				+4000
-
-
-Slice Difficulty Rating
-
-This rating is a measurement of the law-level of a planet.  This can include Imperial control, but
-can also include the indigenous forces and their ability (or willingness) to root out theft
-and lawlessness.  The number after the rating is used for the Underworld Black Market modifier.
-
-	0	=	Incredibly Easy		(0)
-	1	=	Easy				(+200)
-	2	=	Average				(+400)
-	3	=	Somewhat Difficult	(+600)
-	4	=	Difficult			(+800)
-	5	=	Next to Impossible	(+1000)
-
-Slicing Tech Availability Rating
-
-This is a measurement of how much tech is available on the planet in question; generally a rating
-of the technological advancement level of the indigenous species.  A sample planet is included for
-a guide.  The number after the rating is used for the Underworld Black Market modifier.
-
-	0	=	No Tech, Primitive Culture (Ewoks on Endor)					(+500)
-	1	=	Low Tech, Colonists with little access (Gamorr)				(+400)
-	2	=	Back-Water, Little access to high tech (Tatooine)			(+300)
-	3	=	Average, Average citizens of the galaxy (Alderaan)			(+100)
-	4	=	Semi-Urban, Large population with plentifiul Tech (Sullust)	(0)
-	5	=	Megalopolis, Huge urban and industrial centers (Coruscant)	(-200)
-
-
-Black Market Modifier
-
-This modifier adds or subtracts from the base cost of items on the Underworld Black Market menu. It
-is a sum of the two ratings in the above tech measurements.  It can also be further modified per planet
-for special circumstances (such as the unlikelihood of finding a black market in The Maw).
-
-
-Corruption Type Values
-
-Supported planetary corruption types can be one of the following values:
-	* Corruption_Intimidation
-	* Corruption_Piracy
-	* Corruption_Kidnapping
-	* Corruption_Racketeering
-	* Corruption_Corrupt_Militia
-	* Corruption_Bribery
-	* Corruption_Black_Market
-	* Corruption_Bonded_Citizens
-
-A tactical battle will be launched if the corruption choice has valid entries for:
-	<Corruption_X_Tactical_Game_Mode> and <Corruption_X_Tactical_Map_Name>
-
--->
 
 	<Planet Name="Abregado_Rae">
 		<Zoomed_Terrain_Index>0</Zoomed_Terrain_Index>
@@ -263,8 +263,78 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 		
 	</Planet>
 
-
+	<!-- ALYMAR1994 (2/2/2020): Implemented using EaW values to fix a -->
+	<!-- Skirmish mode map. -->
 	<Planet Name="Alderaan">
+ 		<Zoomed_Terrain_Index>0</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_ALDERAAN</Text_ID>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Always_Instantiate_Galactic>Yes</Always_Instantiate_Galactic>
+		<Galactic_Model_Name>W_planet_alderaan_low.alo</Galactic_Model_Name>
+		<Destroyed_Galactic_Model_Name>W_planet_Asteroids.alo</Destroyed_Galactic_Model_Name>
+		<GUI_Model_Name>W_planet_Forest01.alo</GUI_Model_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.8</Scale_Factor>
+		<Mouse_Collide_Override_Sphere_Radius> 19.77 </Mouse_Collide_Override_Sphere_Radius>
+		<Show_Name>Yes</Show_Name>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Behavior>SELECTABLE, PLANET, PRODUCTION</Behavior>
+		<Pre_Lit>No</Pre_Lit>
+		<Political_Control>0</Political_Control>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Terrain>Temperate</Terrain>
+		<Planet_Credit_Value>20</Planet_Credit_Value>
+		<Planet_Destroyed_Credit_Value>7</Planet_Destroyed_Credit_Value>
+		<Galactic_Position>60.0, 5.0, 10.0</Galactic_Position>
+		<Special_Structures_Land>5</Special_Structures_Land>
+		<Special_Structures_Space>2</Special_Structures_Space>
+		<Max_Space_Base>5</Max_Space_Base>
+		<The_Force>Neutral</The_Force>
+		<Force_Strength>0.0</Force_Strength>
+
+		<Land_Tactical_Map>_Land_Planet_Alderaan_02.ted</Land_Tactical_Map>
+		<Space_Tactical_Map>_Space_Planet_Alderaan_01.ted</Space_Tactical_Map>
+		<Destroyed_Space_Tactical_Map />
+		<Planet_Surface_Accessible> Yes </Planet_Surface_Accessible>
+		<Planet_Capture_Bonus_Reward> 1000 </Planet_Capture_Bonus_Reward>
+		<Planet_Slice_Difficulty_Rating>2</Planet_Slice_Difficulty_Rating>
+		<Planet_Tech_Availability_Rating>3</Planet_Tech_Availability_Rating>
+		<Planet_Slice_Affinity_Types />
+
+		<Describe_Population>TEXT_PLANET_ALDERAAN_INFO_POP</Describe_Population>
+		<Describe_Wildlife>TEXT_PLANET_ALDERAAN_INFO_WL</Describe_Wildlife>
+		<Describe_Terrain>TEXT_PLANET_ALDERAAN_INFO_TER</Describe_Terrain>
+		<Describe_Weather>TEXT_PLANET_ALDERAAN_INFO_WEA</Describe_Weather>
+		<Describe_Tactical>TEXT_PLANET_ALDERAAN_INFO_TAC</Describe_Tactical>
+		<Describe_Advantage>TEXT_PLANET_ALDERAAN_INFO_ADV_01</Describe_Advantage>
+		<Describe_History>TEXT_PLANET_ALDERAAN_INFO_HIS_01</Describe_History>
+
+		<Planet_Ability_Name>TEXT_PLANET_ALDERAAN_INFO_ADV_01</Planet_Ability_Name>
+		<Planet_Ability_Description>TEXT_PLANET_ALDERAAN_ENCYC_01</Planet_Ability_Description>
+
+		<Encyclopedia_Text>TEXT_PLANET_ALDERAAN_ENCYC_01 TEXT_PLANET_UNCORRUPTABLE</Encyclopedia_Text>
+		<Encyclopedia_Weather_Icon>i_pa_weather_rain.tga</Encyclopedia_Weather_Icon>
+		<Encyclopedia_Weather_Name>TEXT_WEATHER_NAME_RAIN</Encyclopedia_Weather_Name>
+		<Encyclopedia_Weather_Info>TEXT_TACTICAL_WEATHER_OBJECTIVE_RAIN</Encyclopedia_Weather_Info>
+		<Planet_Ability_Icon>i_pa_combat_armor_galactic.tga</Planet_Ability_Icon>
+		<Native_Icon_Name>load_urban.tga</Native_Icon_Name>
+
+		<Additional_Population_Capacity>5</Additional_Population_Capacity>
+
+		<Abilities SubObjectList="Yes">
+			<Galaxy_Wide_Upgrade_Ability Name="Alderaan_Upgrade_Bonus">
+				<Space_Upgrade_Type />
+				<Land_Upgrade_Type> RL_Combat_Armor_L1_Upgrade </Land_Upgrade_Type>
+			</Galaxy_Wide_Upgrade_Ability>
+		</Abilities>
+	</Planet>
+
+	<!-- ALYMAR1994 (2/2/2020): EXPANSION PLANET (custom made) -->
+	<!-- A duplication of the original dead Alderaan, this is to -->
+	<!-- replace all instances of the alive Alderaan (above) in GC to -->
+	<!-- fix a Skirmish map. -->
+	<Planet Name="Alderaan_Dead">
  		<Zoomed_Terrain_Index>8</Zoomed_Terrain_Index>
 		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_ALDERAAN</Text_ID>
 		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
@@ -320,15 +390,14 @@ A tactical battle will be launched if the corruption choice has valid entries fo
 
 		<Encyclopedia_Text>TEXT_PLANET_VERGESSO_ENCYC TEXT_PLANET_UNCORRUPTABLE</Encyclopedia_Text>
 		<Encyclopedia_Weather_Icon>i_pa_weather_none.tga</Encyclopedia_Weather_Icon>
-		<Encyclopedia_Weather_Name>TEXT_WEATHER_NAME_RAIN</Encyclopedia_Weather_Name>
-		<Encyclopedia_Weather_Info>TEXT_TACTICAL_WEATHER_OBJECTIVE_RAIN</Encyclopedia_Weather_Info>
+		<Encyclopedia_Weather_Name>TEXT_WEATHER_NAME_SUN</Encyclopedia_Weather_Name>
+		<Encyclopedia_Weather_Info>TEXT_TACTICAL_WEATHER_OBJECTIVE_SUN</Encyclopedia_Weather_Info>
 		<Planet_Ability_Icon>i_pa_base_stealth_space.tga</Planet_Ability_Icon>
 		<Native_Icon_Name />
 
 		<Additional_Population_Capacity>3</Additional_Population_Capacity>
 		
 		<Planet_Corruption_Removal_Base_Cost>1500</Planet_Corruption_Removal_Base_Cost>
-
 	</Planet>
 
 

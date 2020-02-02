@@ -54,6 +54,9 @@ Maps/Planets (Space)
 ==================
 -All space props in SpaceProps.xml have been cleaned of broken <Text_ID>s using "TEXT_NONE" as it causes internal errors.
 
+-Alderaan – Added a new variant of planet, and fixed original. Original planet is "Alderaan," while the version now used by FoC is "Alderaan_Dead." This was to fix an issue with a skirmish map, where it would display a lively green Alderaan in the tactical map, yet the planet would be displayed asteroids.
+-Alderaan – Fixed all trade routes connecting to-and-from Alderaan mentioning "Alderaan" and not "Alderaan_Dead." All GC and such should use the proper destroyed planet.
+-Alderaan – Fixed _Dead variant of the planet still having weather indicators for rain, despite being destroyed asteroids. Switched to "Clear"/"Sunny," like the other space-only maps.
 
 -Endor – Adjusted space station position ~25* so it faces the attackers better.
 
