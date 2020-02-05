@@ -71,7 +71,7 @@
 		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
 		<Size_Value>8</Size_Value>
 
-		<!-- Set to spawn all units once and then not continue - no reserves. -->
+		<!-- Set to spawn all units once and then not continue - no more reserves past the 6 TIE/ints and 4 TIE/phants. -->
 		<Starting_Spawned_Units_Tech_0>TIE_Interceptor_Squadron, 2</Starting_Spawned_Units_Tech_0>
 		<Starting_Spawned_Units_Tech_0>TIE_Phantom_Squadron, 1</Starting_Spawned_Units_Tech_0>
 

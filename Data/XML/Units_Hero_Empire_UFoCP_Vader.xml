@@ -8,10 +8,9 @@
 
 		<Text_ID>TEXT_HERO_DARTH_VADER</Text_ID>
 		<!-- ALYMAR1994 (2/1/2020): Commenting this out to fix a bug in space skirmish where Vader's -->
-		<!-- herobar displayed the incorrect tooltips, and correcting it with the space tooltip. -->
-		<!-- HeroUnit "Darth Vader" is now only a space unit. -->
+		<!-- herobar displayed the incorrect tooltips. HeroUnit "Darth Vader" is now only a space unit. -->
 		<!-- <Encyclopedia_Text>TEXT_TOOLTIP_DARTH_VADER TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text> -->
-		<Encyclopedia_Text>TEXT_TOOLTIP_TIE_ADVANCED</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_TOOLTIP_DARTH_VADER</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SITH_LORD</Encyclopedia_Unit_Class>
 
 		<Land_Model_Name>EI_VADER.ALO</Land_Model_Name>
@@ -827,8 +826,8 @@
 		<Tech_Level>5</Tech_Level>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>5</Required_Star_Base_Level>
-		<Required_Special_Structures/>
-		<Required_Planets/>
+		<Required_Special_Structures />
+		<Required_Planets />
 		<Build_Time_Seconds>180</Build_Time_Seconds>
 		<Build_Cost_Credits>15000</Build_Cost_Credits>
 		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
@@ -881,6 +880,10 @@
 		<Encyclopedia_Text>TEXT_TOOLTIP_DARTH_VADER TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SITH_LORD</Encyclopedia_Unit_Class>
 
+		<!-- ALYMAR1994 (2/4/2020): Post-implementation comment, adding this so two versions	-->
+		<!-- of Vader aren't buildable in GC. As Vader became buildable in FoC, ref'ing his		-->
+		<!-- FoC variant caused some issues with building either the normal SP version, or the	-->
+		<!-- land skirmish version. This sets the GC build prereq to an unachieveable tech lvl.	-->
 		<Tech_Level>99</Tech_Level>
 
 		<Tactical_Build_Cost_Multiplayer>2500</Tactical_Build_Cost_Multiplayer>
@@ -913,6 +916,7 @@
 
 		<Icon_Name>I_Button_Darth_Vader.tga</Icon_Name>
 		<Encyclopedia_Text>TEXT_TOOLTIP_TIE_ADVANCED</Encyclopedia_Text>
+
 		<Squadron_Units>TIE_Prototype, Escort_TIE_Fighter, Escort_TIE_Fighter, Escort_TIE_Fighter</Squadron_Units>
 		<Squadron_Units>Escort_TIE_Fighter, Escort_TIE_Fighter, Escort_TIE_Fighter</Squadron_Units>
 
@@ -989,7 +993,7 @@
 
 		<Lua_Script>ObjectScript_VaderTIESquadron</Lua_Script>
 
-		<!-- Unit abilities description -->
+		<!-- Unit abilities description: -->
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<!-- Primary Ability: -->
 			<Unit_Ability>

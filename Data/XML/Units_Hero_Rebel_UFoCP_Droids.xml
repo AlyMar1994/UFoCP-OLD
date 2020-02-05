@@ -281,6 +281,7 @@
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>TEXT_TOOLTIP_R2D2_AND_C3P0 TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
 		<Icon_Name>I_Button_C3PO_R2D2.tga</Icon_Name>
+
 		<Is_Dummy>Yes</Is_Dummy>
 		<Affiliation>Rebel</Affiliation>
 		<Build_Time_Seconds>0</Build_Time_Seconds>
@@ -291,6 +292,8 @@
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Required_Special_Structures />
 		<Required_Planets />
+		<CategoryMask>LandHero</CategoryMask>
+		<Ranking_In_Category>3</Ranking_In_Category>
 
 		<!-- IMPORTANT FOR THE TEAM -->
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
@@ -342,10 +345,7 @@
 		<Tactical_Build_Prerequisites />
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>	
-
-		<CategoryMask>LandHero</CategoryMask>
-		<Ranking_In_Category>3</Ranking_In_Category>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
 	</HeroCompany>
 
 
@@ -356,6 +356,7 @@
 		<Text_ID>TEXT_HERO_DROIDS_TEAM</Text_ID>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>TEXT_TOOLTIP_R2D2_AND_C3P0 TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>I_Button_C3PO_R2D2.tga</Icon_Name>
 		<Show_Name>No</Show_Name>
 
 		<Behavior>TEAM, UNIT_AI</Behavior>
@@ -382,7 +383,6 @@
 		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
 		<GUI_Bracket_Size>0</GUI_Bracket_Size>
 
-		<Icon_Name>I_Button_C3PO_R2D2.tga</Icon_Name>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 
 		<Targeting_Max_Attack_Distance>150.00</Targeting_Max_Attack_Distance>

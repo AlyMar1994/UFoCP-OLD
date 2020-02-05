@@ -26,6 +26,12 @@ There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT 
 ==================
 General
 ==================
+-Deleted all non-essential <Text_ID>s from map editor markers. This should help fix internal errors, and not cause any visible in-game change.
+
+-All "TEXT_NONE" <Text_ID>s for the Props_Swamp file have been removed to fix internal errors.
+
+-Fixed a healing marker (for dockyards) in UM12: The Emperor's Hidden Weapon using an improper lighting tag, causing internal errors.
+
 -All projectiles in Projectiles.xml have been cleaned of broken <Text_ID>s using "TEXT_NONE" as it causes internal errors.
 
 -<Text_ID> for the generic team container has been removed as it causes internal errors.
@@ -33,7 +39,7 @@ General
 -Fixed regression where the Empire faction did not have their <Faction_Super_Weapon> set to "Death_Star_II."
 
 -All of R2-D2 & C-3PO and Darth Vader's unit information has been moved from various files (Containers, NamedHeroUnits.XML, ect...) into one file. This is an experiment to see how well this works, and if an internal reorgnization of files that are complicatedly-spread across multiple files would be a good idea.
-** This unit was the first to be chosen, as the droids' information is far spread between files, and would be far more convenient in one place. The new unit files are: Units_Hero_Rebel_UFoCP_Droids.xml, and Units_Hero_Empire_UFoCP_Vader.xml.
+** These units were the first to be chosen as the droids and Vader's unit info are far spread between files, and would be far more convenient in one place. The new unit files are: Units_Hero_Rebel_UFoCP_Droids.xml, and Units_Hero_Empire_UFoCP_Vader.xml.
 
 
 ==================
@@ -54,9 +60,10 @@ Maps/Planets (Space)
 ==================
 -All space props in SpaceProps.xml have been cleaned of broken <Text_ID>s using "TEXT_NONE" as it causes internal errors.
 
--Alderaan – Added a new variant of planet, and fixed original. Original planet is "Alderaan," while the version now used by FoC is "Alderaan_Dead." This was to fix an issue with a skirmish map, where it would display a lively green Alderaan in the tactical map, yet the planet would be displayed asteroids.
+-Alderaan – Added a new variant of planet, and fixed original. Original planet is "Alderaan," while the version now used by FoC is "Alderaan_Dead." This was to fix an issue with a skirmish map, where it would display a lively green Alderaan in the tactical map, yet the planet would be displayed as asteroids.
 -Alderaan – Fixed all trade routes connecting to-and-from Alderaan mentioning "Alderaan" and not "Alderaan_Dead." All GC and such should use the proper destroyed planet.
 -Alderaan – Fixed _Dead variant of the planet still having weather indicators for rain, despite being destroyed asteroids. Switched to "Clear"/"Sunny," like the other space-only maps.
+** A side effect, is that if anyone wants to use Alderaan (alive) for their GC, they may now do so without having to make another planet variant. The alive Alderaan lacks corruption/FoC new planet options, those must be implemented manually.
 
 -Endor – Adjusted space station position ~25* so it faces the attackers better.
 
@@ -64,6 +71,28 @@ Maps/Planets (Space)
 -Kessel – Adjusted space station position to face more of the entire map.
 
 -Saleucami – Added orbital special structure markers, so built gravity-well generators/long-range scanners appear in battle. These positions are up for change.
+
+
+==================
+Structures (Land)
+==================
+-Hutt Repair Facility – Fixed repair facility causing internal errors due to broken lighting effect tag.
+
+-Hutt UC Bacta Facility – Removed <Text_ID> as it causes errors internally.
+
+-Hutt UC Repair Facility – Removed <Text_ID> as it causes errors internally.
+
+-Rebel MDU Repair Facility – Fixed repair facility causing internal errors due to broken lighting effect tag.
+
+-Template Repair Facility – Fixed repair facilities causing internal errors due to broken lighting effect tag.
+
+-Reinforcement Point(s) – Fixed all reinforcement points not having icons.
+
+
+==================
+Structures (Space)
+==================
+-Rebel Repair Satellite – Fixed repair ability causing internal errors due to a lighting effect.
 
 
 ==================
@@ -83,13 +112,15 @@ Units (Land)
 
 -(UNUSED) Rieekan – Fixed unused field commander unit, since his <Text_ID> causes internal errors (TEXT_APRIL25DEMO_06). He has been given a proper ID as if he was a real hero unit, in case anyone wishes to use him in their mod (TEXT_HERO_GENERAL_RIEEKAN).
 
+-TIE crawler – Fixed self destruct unit and captured variant ability having a tag that caused internal errors.
+
 
 ==================
 Units (Space)
 ==================
 -Calamari Cruiser – Fixed death clone's <Ship_Class> from being "capital_ship" to just "Capital."
 
--Darth Vader – All spots where Vader's tooltip info was incorrect. It should now, consistiently, show space information (unit "Darth_Vader" is now soley a space unit).
+-Darth Vader – All spots where Vader's skirmish tooltip info was incorrect were fixed. It should now, consistiently, show space information (unit "Darth_Vader" is now soley a space unit).
 
 -Eclipse – Removed <Text_ID> "NONE" from death clone as it doesn't exist, nor can, and causes errors internally. Replaced with normal <Text_ID> from the normal unit, as all other units do.
 -Eclipse – Fixed minimap icon being too small in comparison to the actual ship's size. Size has been increased from x0.4 to x0.6.
@@ -107,7 +138,7 @@ Units (Space)
 -The Admonitor - Grand Admiral Thrawn – Fixed unit's name to be more consistient with other named Star Destroyer units of the same class. Now named "The Admonitor - Grand Admiral Thrawn" instead of soley "The Admonitor."
 -The Admonitor - Grand Admiral Thrawn – Fixed broken tooltips. In both GC and battle, Thrawn now uses a correct, merged tooltip for all his information, as the way his unit is handles cannot use two seperate tooltips for GC/battle.
 
--The Annihilator - Admiral Gaarn – Fixed unit's name to be more consistient with other named Star Destroyer units of the same class. Now named "The Annihilator - Admiral Gaarn" instead of soley "The Annihilator." (This ship is a story campaign ship at the end of the ZC campaign)
+-The Annihilator - Admiral Gaarn – Fixed unit's name to be more consistient with other named Star Destroyer units of the same class. Now named "The Annihilator - Admiral Gaarn" instead of soley "The Annihilator" (this ship is a story ship at the end of the ZC campaign).
 
 -The Arc Hammer - General Mohc – Fixed unit's name to be more consistient with other named Star Destroyer units of the same class. Now named "The Arc Hammer - General Mohc" instead of soley "Arc Hammer."
 

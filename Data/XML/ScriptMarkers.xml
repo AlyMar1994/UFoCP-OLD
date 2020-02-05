@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<ScriptMarkers>
+
+	<ScriptMarker Name="Generic_Marker_Land">
+		<Text_ID />
+		<Is_Marker> Yes </Is_Marker>
+		<Land_Model_Name> W_FLAG_MARKER_WHITE.ALO </Land_Model_Name>
+		<Behavior> MARKER, HINT </Behavior>
+	</ScriptMarker>
+
+	<ScriptMarker Name="Generic_Marker_Space">
+		<Text_ID />
+		<Is_Marker> Yes </Is_Marker>
+		<Space_Model_Name> W_FLAG_MARKER_WHITE.ALO </Space_Model_Name>
+		<Behavior> MARKER, HINT </Behavior>
+	</ScriptMarker>
+
+	<ScriptMarker Name="Test_Trigger_Marker">
+		 <Text_ID />
+		 <Is_Marker> Yes </Is_Marker>
+		 <Land_Model_Name> W_FLAG_MARKER_YELLOW.ALO </Land_Model_Name>
+		 <Behavior> MARKER, HINT </Behavior>
+		 <Lua_Script>MarkerTrigger</Lua_Script>
+	</ScriptMarker>
+
+	<ScriptMarker Name="E3Demo_Marker_Tanks">
+		 <Text_ID />
+		 <Is_Marker> Yes </Is_Marker>
+		 <Land_Model_Name> W_FLAG_MARKER_WHITE.ALO </Land_Model_Name>
+		 <Behavior> MARKER, HINT </Behavior>
+	</ScriptMarker>
+
+	<ScriptMarker Name="Patrol_Marker">
+		<Text_ID />
+		<Is_Marker> Yes </Is_Marker>
+		<Land_Model_Name> W_FLAG_MARKER_PURPLE.ALO </Land_Model_Name>
+		<Behavior> MARKER, HINT </Behavior>
+	</ScriptMarker>
+
+</ScriptMarkers>
