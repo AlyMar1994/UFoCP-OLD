@@ -54,7 +54,7 @@
 		<Build_Time_Seconds>15</Build_Time_Seconds>
 		<Size_Value>4</Size_Value>
 		<SpaceBehavior>FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA, ABILITY_COUNTDOWN</SpaceBehavior>
-			
+
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
 		<Damage>7</Damage>
 

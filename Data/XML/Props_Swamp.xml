@@ -1,0 +1,244 @@
+<?xml version="1.0" ?>
+<Props_Swamp>
+	<Props_Swamp Name="Prop_SwampGasEmitter">
+		<Text_ID />
+		<Land_Model_Name>W_SwampGasEmit.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Editor_Placed>false</Is_Editor_Placed>
+	</Props_Swamp>
+	
+	<Props_Swamp Name="Prop_Swamp_Bush00">
+		<Text_ID />
+		<Land_Model_Name>W_Bush_Swmp00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>99</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow_Light</Blob_Shadow_Material_Name>
+		
+		<Is_Editor_Placed>false</Is_Editor_Placed>
+		
+	</Props_Swamp>
+	
+	<Props_Swamp Name="Prop_Swamp_Vine00">
+		<Text_ID />
+		<Land_Model_Name>W_SwampVine00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Swamp>
+	
+	<Props_Swamp Name="Prop_Swamp_Vine01">
+		<Text_ID />
+		<Land_Model_Name>W_SwampVine01.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Swamp>
+	
+	<Props_Swamp Name="Prop_Swamp_Lightbeams">
+		<Text_ID />
+		<Land_Model_Name>W_lightbeams.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+	</Props_Swamp>
+	
+	<Props_Swamp Name="Prop_Swamp_Fern01">
+		<Text_ID />
+		<Land_Model_Name>W_Fern03.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>99</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow_Light</Blob_Shadow_Material_Name>
+	</Props_Swamp>
+	
+	<Props_Swamp Name="Prop_Swamp_Grass00">
+		<Text_ID />
+		<Land_Model_Name>W_SwampGrass00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>99</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+	</Props_Swamp>
+	
+	<Props_Swamp Name="Prop_Swamp_Fern00">
+		<Text_ID />
+		<Land_Model_Name>W_Fern02.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>Yes</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>99</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>35.0, 35.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow_Light</Blob_Shadow_Material_Name>
+	</Props_Swamp>
+	
+	<Props_Swamp Name="Prop_Swamp_Tree01a">
+		<Text_ID />
+		<Land_Model_Name>W_Tree_Swmp_00_HI.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow_Light</Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Swamp>
+
+	<Props_Swamp Name="Prop_Gnarl_Tree01">
+		<Text_ID />
+		<Land_Model_Name>W_Tree_Gnarl_00_HI.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow_Light</Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Swamp>
+
+	<Props_Swamp Name="Prop_Gnarl_Tree01a">
+		<Text_ID />
+		<Land_Model_Name>W_Tree_Gnarl_00_HI.ALO</Land_Model_Name>
+		<Scale_Factor>2.5</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow_Light</Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Swamp>
+
+	<Props_Swamp Name="Prop_Gnarl_Tree01_Obstacle">
+		<Text_ID />
+		<Land_Model_Name>W_Tree_Gnarl_00_HI.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> High Obstacle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 10.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 10.0 </Custom_Hard_YExtent>
+      <Custom_Hard_XExtent_Offset> 0.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_YExtent_Offset> 0.0 </Custom_Hard_YExtent_Offset>
+
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow_Light</Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Swamp>
+	
+	<Props_Swamp Name="Prop_Swamp_Tree01_Cluster">
+		<Text_ID />
+		<Land_Model_Name>W_Tree_Swmp_00_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow_Light</Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Swamp>
+
+	<Props_Swamp Name="Prop_Swamp_Tree01_Cluster_NoShadow">
+		<Text_ID />
+		<Land_Model_Name>W_Tree_Swmp_NS_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow_Light</Blob_Shadow_Material_Name>
+	</Props_Swamp>
+	
+	<Props_Swamp Name="Prop_Swamp_Tree02">
+		<Text_ID />
+		<Land_Model_Name>W_Tree_Swmp_00_HI.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow_Light</Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Swamp>
+	
+	<Props_Swamp Name="Prop_Swamp_Bamboo">
+		<Text_ID />
+		<Land_Model_Name>W_Tree_Bamboo_00_HI.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow_Light</Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Swamp>
+	
+	<Props_Swamp Name="Prop_Swamp_Bamboo_Cluster">
+		<Text_ID />
+		<Land_Model_Name>W_Tree_Bamboo_00_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow_Light</Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Swamp>
+
+	<Props_Swamp Name="Prop_Swamp_Bamboo_Cluster_NoShadow">
+		<Text_ID />
+		<Land_Model_Name>W_Tree_Bamboo_NS_Cluster.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>1</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>60.0, 60.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow_Light</Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Swamp>
+	
+	<Props_Swamp Name="Prop_Swamp_TreeCard00">
+		<Text_ID />
+		<Land_Model_Name>W_TreeSwampCard00.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Blob_Shadow_Below_Detail_Level>99</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>45.0, 45.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Tree_Shadow</Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+	</Props_Swamp>
+
+
+	<Props_Swamp Name="Dianoga">
+		<Text_ID>TEXT_INDIG_DIANOGA</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INDIGENOUS </Encyclopedia_Unit_Class>
+		<Land_Model_Name>AI_Dianoga.ALO</Land_Model_Name>
+		<LandBehavior>IDLE</LandBehavior>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Is_Decoration>Yes</Is_Decoration>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>0</No_Refraction_Below_Detail_Level>
+	</Props_Swamp>
+</Props_Swamp>

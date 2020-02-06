@@ -505,7 +505,7 @@
 	<UniqueUnit Name="The_Peacebringer">
 		<Variant_Of_Existing_Type>Krayt_Class_Destroyer</Variant_Of_Existing_Type>
 
-		<Text_ID>TEXT_HERO_PEACEBRINGER</Text_ID>
+		<Text_ID>TEXT_HERO_PEACEBRINGER_01</Text_ID>
 		<Encyclopedia_Text>TEXT_TOOLTIP_PEACEBRINGER</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CRIMELORD</Encyclopedia_Unit_Class>
 
@@ -651,6 +651,7 @@
 
 	<TransportUnit Name="Peacebringer_Landing">
 		<Variant_Of_Existing_Type>Underworld_Hero_Shuttle</Variant_Of_Existing_Type>
+
 		<Behavior>TRANSPORT</Behavior>
 		<Scale_Factor>1.00</Scale_Factor>
 		<LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
@@ -662,7 +663,7 @@
 	</TransportUnit>
 
 	<UniqueUnit Name="Peacebringer_Death_Clone">
-		<Text_ID>TEXT_HERO_PEACEBRINGER</Text_ID>
+		<Text_ID>TEXT_HERO_PEACEBRINGER_01</Text_ID>
 		<Space_Model_Name>UV_KRAYTCLASSDESTROYER_D_TYBER.ALO</Space_Model_Name>
 		<Death_SFXEvent_Start_Die>Unit_Calamari_Death_SFX</Death_SFXEvent_Start_Die>
 		<Scale_Factor>1.20</Scale_Factor>

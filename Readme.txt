@@ -1,6 +1,6 @@
 =================================================================
-===================     STAR WARS    ============================
-=================     EMPIRE AT WAR     =========================
+===================    STAR WARS    =============================
+=================    EMPIRE AT WAR     ==========================
 =============     FORCES OF CORRUPTION     ======================
 ============        UNOFFICIAL PATCH        =====================
 =================================================================
@@ -55,24 +55,24 @@ See "_Changelog.txt" and "_MasterTEXT Changelog.txt" for changes per-update, in 
 Developers
 ================
 AlyMar1994
-	– Lead developer.
+    – Lead developer.
 
 
 ================
 Audio
 ================
 Diamondback
-	– Music (Credits_Ep3.mp3).
+    – Music (Credits_Ep3.mp3).
 
 
 ================
 Support
 ================
 -KadVenku 
-	– Lots of help on GitHub for issues with FoC.
+    – Lots of help on GitHub for issues with FoC.
 
 -STAR WARS: Empire at War Community Discord (specif. Galyana, Lany & Nikomer)
-	– Technical help.
+    – Technical help.
 
 =========================================================================================
 
@@ -95,6 +95,6 @@ Support
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see https://www.gnu.org/licenses/.
 
-	This license applies to all files, source, and elseor all applicable mod-content, despite said files not being marked with license information.
+    This license applies to all files, source, and elseor all applicable mod-content, despite said files not being marked with license information.
 
 =========================================================================================

@@ -18,6 +18,154 @@ Whenever the AI is edited, it's not labeled based on specific changed units with
 
 
 =========================================================================================
+v1.9
+=========================================================================================
+There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT Changelog.txt" in the game directory to see!
+
+
+==================
+General
+==================
+-Deleted all non-essential <Text_ID>s from map editor markers. This should help fix internal errors, and not cause any visible in-game change.
+
+-All "TEXT_NONE" <Text_ID>s for the Props_Swamp file have been removed to fix internal errors.
+
+-Fixed a healing marker (for dockyards) in UM12: The Emperor's Hidden Weapon using an improper lighting tag, causing internal errors.
+
+-All projectiles in Projectiles.xml have been cleaned of broken <Text_ID>s using "TEXT_NONE" as it causes internal errors.
+
+-<Text_ID> for the generic team container has been removed as it causes internal errors.
+
+-Fixed regression where the Empire faction did not have their <Faction_Super_Weapon> set to "Death_Star_II."
+
+-All of R2-D2 & C-3PO and Darth Vader's unit information has been moved from various files (Containers, NamedHeroUnits.XML, ect...) into one file. This is an experiment to see how well this works, and if an internal reorgnization of files that are complicatedly-spread across multiple files would be a good idea.
+** These units were the first to be chosen as the droids and Vader's unit info are far spread between files, and would be far more convenient in one place. The new unit files are: Units_Hero_Rebel_UFoCP_Droids.xml, and Units_Hero_Empire_UFoCP_Vader.xml.
+
+
+==================
+Maps/Planets (Land)
+==================
+-Felucia – Removed entries for map properties "Map Name" and "Planet Name." The entries were filled only with spaces, and created naming errors internally.
+
+-UM06: Dark Ally – Fixed entry for map property "Map Name." Map was looking for "UM03_Dark_Ally." All map properties have been removed entirely.
+-UM06: Dark Ally – Another brush pass; attempting to fix holes in walking, and smooth out where one can move.
+
+-UM07: Cloud City Conflict – Fixed hologram advisor being a Black Sun pirate, when Darth Vader arrives and warns the player. The hologram is now, properly, a Zann Consortium soldier.
+
+-Pyn'gani Prop House – Removed <Text_ID> as "TEXT_NONE" doesn't exist, nor can, and causes errors internally.
+
+
+==================
+Maps/Planets (Space)
+==================
+-All space props in SpaceProps.xml have been cleaned of broken <Text_ID>s using "TEXT_NONE" as it causes internal errors.
+
+-Alderaan – Added a new variant of planet, and fixed original. Original planet is "Alderaan," while the version now used by FoC is "Alderaan_Dead." This was to fix an issue with a skirmish map, where it would display a lively green Alderaan in the tactical map, yet the planet would be displayed as asteroids.
+-Alderaan – Fixed all trade routes connecting to-and-from Alderaan mentioning "Alderaan" and not "Alderaan_Dead." All GC and such should use the proper destroyed planet.
+-Alderaan – Fixed _Dead variant of the planet still having weather indicators for rain, despite being destroyed asteroids. Switched to "Clear"/"Sunny," like the other space-only maps.
+** A side effect, is that if anyone wants to use Alderaan (alive) for their GC, they may now do so without having to make another planet variant. The alive Alderaan lacks corruption/FoC new planet options, those must be implemented manually.
+
+-Endor – Adjusted space station position ~25* so it faces the attackers better.
+
+-Kessel – Fixed defender spawn points. Defenders shouldn't (if there are enough of them) spawn in the asteroid adjacent to the space station. The "ASTEROID HUGE" object has been moved a couple feet around the perimeter of the asteroid field.
+-Kessel – Adjusted space station position to face more of the entire map.
+
+-Saleucami – Added orbital special structure markers, so built gravity-well generators/long-range scanners appear in battle. These positions are up for change.
+
+
+==================
+Structures (Land)
+==================
+-Hutt Repair Facility – Fixed repair facility causing internal errors due to broken lighting effect tag.
+
+-Hutt UC Bacta Facility – Removed <Text_ID> as it causes errors internally.
+
+-Hutt UC Repair Facility – Removed <Text_ID> as it causes errors internally.
+
+-Rebel MDU Repair Facility – Fixed repair facility causing internal errors due to broken lighting effect tag.
+
+-Template Repair Facility – Fixed repair facilities causing internal errors due to broken lighting effect tag.
+
+-Reinforcement Point(s) – Fixed all reinforcement points not having icons.
+
+
+==================
+Structures (Space)
+==================
+-Rebel Repair Satellite – Fixed repair ability causing internal errors due to a lighting effect.
+
+
+==================
+Units (Land)
+==================
+-Fixed hacked Underworld land turrets/Chewbacca-captured tank units from not being repaired by R2-D2 & C-3PO.
+-Fixed Empire grenade mortar turret not repariable after being hacked by R2-D2 & C-3PO.
+-Fixed Empire Juggernaut transport not repariable after being hijacked by Chewbacca by R2-D2 & C-3PO.
+-Fixed Black Sun Pirate turrets not being repairable after being hacked by R2-D2 and C-3PO.
+-Fixed Rebel laser turret not being repariable by R2-D2 & C-3PO.
+
+-C-3PO – Fixed tooltip. Somehow, a regression occured where he used R2-D2's tooltip description.
+
+-Darth Vader – Fixed skirmish land tooltips not having information about capturing buildpads/structures.
+
+-Force Adepts – Fixed attack sounds. When swinging a lightsaber, the Force Adepts will no longer make the generic infantry blaster fire sound.
+
+-(UNUSED) Rieekan – Fixed unused field commander unit, since his <Text_ID> causes internal errors (TEXT_APRIL25DEMO_06). He has been given a proper ID as if he was a real hero unit, in case anyone wishes to use him in their mod (TEXT_HERO_GENERAL_RIEEKAN).
+
+-TIE crawler – Fixed self destruct unit and captured variant ability having a tag that caused internal errors.
+
+
+==================
+Units (Space)
+==================
+-Calamari Cruiser – Fixed death clone's <Ship_Class> from being "capital_ship" to just "Capital."
+
+-Darth Vader – All spots where Vader's skirmish tooltip info was incorrect were fixed. It should now, consistiently, show space information (unit "Darth_Vader" is now soley a space unit).
+
+-Eclipse – Removed <Text_ID> "NONE" from death clone as it doesn't exist, nor can, and causes errors internally. Replaced with normal <Text_ID> from the normal unit, as all other units do.
+-Eclipse – Fixed minimap icon being too small in comparison to the actual ship's size. Size has been increased from x0.4 to x0.6.
+-Eclipse – Fixed superlaser ability causing text errors internally due to an incorrect tag. It has been removed, albeit no gameplay changes were made.
+
+-Home One - Admiral Ackbar – Fixed unit's name to be more consistient with other named space hero units. Now named "Home One - Admiral Ackbar" instead of soley "Home One."
+
+-Rogue Squadron - Updated unit Rouge 10: Tarrin Datch's <Text_ID> to use a fixed tag with his name. Was originally "Tarrub Datch."
+
+-Star Destroyer - Fixed death clone's <Ship_Class> from being "capital_ship" to just "Capital."
+
+-The Accuser - Captain Piett – Fixed broken tooltips. In both GC and battle, Piett now uses a correct, merged tooltip for all his information, as the way his unit is handles cannot use two seperate tooltips for GC/battle.
+-The Accuser - Captain Piett – Corrected broken tooltip for death clone.
+
+-The Admonitor - Grand Admiral Thrawn – Fixed unit's name to be more consistient with other named Star Destroyer units of the same class. Now named "The Admonitor - Grand Admiral Thrawn" instead of soley "The Admonitor."
+-The Admonitor - Grand Admiral Thrawn – Fixed broken tooltips. In both GC and battle, Thrawn now uses a correct, merged tooltip for all his information, as the way his unit is handles cannot use two seperate tooltips for GC/battle.
+
+-The Annihilator - Admiral Gaarn – Fixed unit's name to be more consistient with other named Star Destroyer units of the same class. Now named "The Annihilator - Admiral Gaarn" instead of soley "The Annihilator" (this ship is a story ship at the end of the ZC campaign).
+
+-The Arc Hammer - General Mohc – Fixed unit's name to be more consistient with other named Star Destroyer units of the same class. Now named "The Arc Hammer - General Mohc" instead of soley "Arc Hammer."
+
+-The Hound's Tooth - Bossk – Fixed unit's name to be more consistient with other named hero units of the same class. Now named "The Hound's Tooth - Bossk" instead of soley "Hound's Tooth."
+
+-The Merciless - Tyber Zann – Fixed unit's name to be more consistient with other named hero units of the same class. Now named "The Merciless - Tyber Zann" instead of soley "The Merciless."
+
+-The Sundered Heart - Captain Antillies – Fixed unit's name to be more consistient with other named hero units of the same class. Now named "The Sundered Heart - Captain Antilles" instead of soley "Sundered Heart."
+
+-IG-2000 - IG-88 – Fixed unit's name to be more consistient with other named hero units of the same class. Now named "IG2000 - IG-88" instead of soley "IG-2000."
+
+-The Millenium Falcon - Han Solo & Chewbacca – Fixed unit's name to be more consistient with other named hero units of the same class. Now named "The Millenium Falcon - Han Solo & Chewbacca" instead of soley "Millenium Falcon."
+
+-The Moldy Crow - Kyle Katarn – Fixed unit's name to be more consistient with other named hero units of the same class. Now named "The Moldy Crow - Kyle Katarn" instead of soley "The Moldy Crow."
+
+-Z-95 Headhunter (Rebel) – Fixed tag <Fires_Forward> being "Bo" instead of "No."
+
+-Z-95 Headhunter (Empire) – Fixed affiliation by adding proper tag.
+
+-Z-95 Headhunter (Underworld) – Fixed affiliation by adding proper tag.
+
+
+=========================================================================================
+
+
+
+=========================================================================================
 v1.8
 =========================================================================================
 There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT Changelog.txt" in the game directory to see!
@@ -83,7 +231,7 @@ Maps/Planets (Galactic)
 ==================
 Maps/Planets (Galactic)
 ==================
--Anaxes – Adjusted space station position
+-Anaxes – Adjusted space station position.
 
 
 ==================
@@ -189,7 +337,7 @@ Units (Galactic Conquest)
 ==================
 -Grand Admiral Thrawn – Fixed the unused Galactic-only unit. Fixed the wrong unit being referenced in the team, and fixed the icon of the team. If someone wanted to use Grand Admiral Thrawn as a replacer-unit for Tarkin in GCs, they now can do so.
 
--R2-D2 & C-3P0 – Fixed Galactic tooltips not having units' original description, only the tooltip if the unit can capture build pads or not.
+-R2-D2 & C-3PO – Fixed Galactic tooltips not having units' original description, only the tooltip if the unit can capture build pads or not.
 
 -Han Solo & Chewbacca – Fixed Galactic tooltips not indicating if unit can capture build pads or not (does not apply to space unit).
 
@@ -239,8 +387,6 @@ Units (Space)
 -Broadside Cruiser – Fixed Underworld-type Broadside Cruiser being "good against"/"vulnerable to" own faction's units. Replaced "good against" Skipray Blastboat with TIE bombers and "vulnerable to" Vengance Frigate to Victory Star Destroyer.
 
 -Corellian Corvette – Fixed Underworld-type Corellian Corvette being "good against"/"vulnerable to" own faction's units. Replaced "good against" Starviper Fighter with X-wings, replaced "vulnerable to" Vengance Frigate with Alliance Assault Ship.
-
--Corellian Gunship – Fixed tooltip by fixing number of laser cannons in description. Now mentions the 4 laser cannons, instead of 2.
 
 -Crusader Gunship – Gave laser cannons a damage type. Instead of doing full damage against everything, they now have the same damage type as the Corellian Corvette.
 
@@ -414,11 +560,11 @@ Structures (Land)
 ==================
 Units (Galactic Conquest)
 ==================
--C-3P0 – Fixed unit tooltip using R2-D2's instead of his own.
--C-3P0 – Fixed C-3P0 not having a unit icon.
+-C-3PO – Fixed unit tooltip using R2-D2's instead of his own.
+-C-3PO – Fixed C-3PO not having a unit icon.
 
 -R2-D2 – Fixed R2-D2's unit using both 3P0's and R2's icon instead of using their individual icons (hold over from copy+paste of unit container).
-**An unintended side-effect of these changes now makes it so R2-D2 and C-3P0 are now seperate units on the hero-bar at the top of the screen. The units still are their combined team, and lead to the same single-unit, but they appear as seperate units on the command bar with seperate tool-tips and images. This is the opposite when they die/are stealing technology, as they combine into a single icon again.
+**An unintended side-effect of these changes now makes it so R2-D2 and C-3PO are now seperate units on the hero-bar at the top of the screen. The units still are their combined team, and lead to the same single-unit, but they appear as seperate units on the command bar with seperate tool-tips and images. This is the opposite when they die/are stealing technology, as they combine into a single icon again.
 
 
 ==================
@@ -426,8 +572,8 @@ Units (Land)
 ==================
 -Canderous Assault Tank – Fixed amount of shots fired per-burst. The animation showed extra shots/recoil from the barrels, when in reality nothing shoots (leaving the tank shooting 2 times-per-fire with extra recoil). This has been fixed so the shot amounts line with the animation (shoots 3 times-a-pulse instead of 2).
 
--General Veers – Added an extra death clone for when killed by a Snowspeeder cable attack.
--General Veers – Modified death clones with the "IMPOSING_PRESENCE" behavior (and presence range), so Rebel Infantry units now respond properly with their "celebrate" "presence induced animation."
+-Colonel Veers – Added an extra death clone for when killed by a Snowspeeder cable attack.
+-Colonel Veers – Modified death clones with the "IMPOSING_PRESENCE" behavior (and presence range), so Rebel Infantry units now respond properly with their "celebrate" "presence induced animation."
 
 -Imperial Guard(s) – Fixed "presence induced animations" (i.e. standing at attention) in-front of Darth Vader, by changing the "Darth_Vader" (EaW) tag with "Darth_Vader_Expansion" (FoC).
 
@@ -573,7 +719,7 @@ Factions
 ==================
 Structures (Land)
 ==================
--Bunkers – Fixed the armor type of the bunkers in GameConstants not being properly seperated, breaking the type. It should work now.
+-Bunkers – Fixed the armor type of the bunkers in GameConstants not being properly seperated.
 
 
 ==================

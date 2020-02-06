@@ -4,7 +4,7 @@
 -- ORIGINAL AUTHOR (Petroglyph): James Yarrow
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 6/29/19, 1:08 PM
+-- LAST REVISION DATE: 1/3/2020, 2:16 AM
 -- ======================================================================
 require("pgevents")
 
@@ -26,7 +26,7 @@ end
 
 function TechForce_Thread()
 	DebugMessage("%s -- In TechForce_Thread.", tostring(Script))
-	
+
 	-- Ensure that all goal feasability will be reevaluated based on the new production budgetting conditions
 	-- (production underway that is already paid for and remains affordable under new budgets should continue).
 	Purge_Goals(PlayerObject)

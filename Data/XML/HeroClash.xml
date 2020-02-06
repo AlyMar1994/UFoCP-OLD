@@ -3,7 +3,7 @@
 	<Hero_Clash Name="Vader_ObiWan">
 		<Clash_Type>Melee_Duel</Clash_Type>
 		<Involved_Hero_Types>Darth_Vader_Expansion, Obi_Wan_Kenobi</Involved_Hero_Types>
-		<Clash_Range>100.0</Clash_Range>
+		<Clash_Range>100.00</Clash_Range>
 		<Play_Conversation_Events>No</Play_Conversation_Events>
 
 		<First_Hero_Type>Darth_Vader_Expansion</First_Hero_Type>
@@ -25,6 +25,7 @@
 		<First_Hero_Lose_Anim_Type>HC_LOSE</First_Hero_Lose_Anim_Type>
 		<First_Hero_Draw_Anim_Type>HC_DRAW</First_Hero_Draw_Anim_Type>
 		<First_Hero_Conversation_Anim_Type>IDLE</First_Hero_Conversation_Anim_Type>
+
 		<Second_Hero_Win_Anim_Type>HC_WIN</Second_Hero_Win_Anim_Type>
 		<Second_Hero_Lose_Anim_Type>HC_LOSE</Second_Hero_Lose_Anim_Type>
 		<Second_Hero_Draw_Anim_Type>HC_DRAW</Second_Hero_Draw_Anim_Type>
@@ -36,7 +37,7 @@
 
 
 	<!-- ALYMAR1994 (6/27/19): Due to fundamental errors with both these -->
-	<!-- clashes and being permanently broken, I'm going to cease them by commenting -->
+	<!-- clashes, and being permanently broken, I'm going to cease them by commenting -->
 	<!-- them out from the file. -->
 <!--	<Hero_Clash Name="ObiWan_BobaFett">
 		<Clash_Type>Action_Driven</Clash_Type>

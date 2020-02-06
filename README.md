@@ -5,7 +5,7 @@ A comprehensive bug-fixing mod for Petroglyph's "STAR WARS: Empire at War – Fo
 
 ---
 
-* Version: 1.8
+* Version: 1.9
 * License: AGPL-3.0 (please read the [License](https://github.com/AlyMar1994/UFoCP/blob/master/LICENSE) for more info, and/or end of this readme for a tl;dr)
 
 ---
@@ -14,7 +14,7 @@ A comprehensive bug-fixing mod for Petroglyph's "STAR WARS: Empire at War – Fo
 ### Windows
 #### Editors
 Anything that can correctly parse .XML and .LUA will do.
-* (Recommended) [Visual Studio (2017+)](https://www.visualstudio.com/vs/community/)
+* (Recommended) [Visual Studio Code](https://code.visualstudio.com/)
 * [Notepad++](https://notepad-plus-plus.org/)
 
 #### Game Version
@@ -59,6 +59,6 @@ Anything that can correctly parse .XML and .LUA will do.
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see https://www.gnu.org/licenses/.
 
-	This license applies to all files, source, and elseor all applicable mod-content, despite said files not being marked with license information.
-	
+    This license applies to all files, source, and elseor all applicable mod-content, despite said files not being marked with license information.
+
 ----

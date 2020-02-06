@@ -1843,13 +1843,13 @@
 	<Props_Story Name="UM05_ADEPTGENERIC">
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Is_Force_Sensitive>Yes</Is_Force_Sensitive>
-		<Victory_Relevant>yes</Victory_Relevant>
+		<Victory_Relevant>Yes</Victory_Relevant>
 		<Text_ID>TEXT_UNIT_DARKSIDE_ADEPT</Text_ID>
 		<Encyclopedia_Text> TEXT_TOOLTIP_DARKSIDE_ADEPT </Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DARKSIDE_ADEPT </Encyclopedia_Unit_Class>
 
 		<Land_Model_Name>NI_DarkSideAdepts.alo</Land_Model_Name>
-		<Icon_Name>i_button_sith.tga</Icon_Name>
+		<Icon_Name>I_Button_Sith.tga</Icon_Name>
 
 		<GalacticBehavior> SELECTABLE </GalacticBehavior>
 		<LandBehavior> SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, REVEAL, HIDE_WHEN_FOGGED, TARGETING, WEAPON, DAMAGE_TRACKING, UNIT_AI, ABILITY_COUNTDOWN, IMPOSING_PRESENCE, HOLSTER_WEAPON, GARRISON_UNIT </LandBehavior>
@@ -1926,7 +1926,6 @@
 		<SFXEvent_Assist_Move>Unit_Assist_Move_Bothan</SFXEvent_Assist_Move>
 		<SFXEvent_Assist_Attack>Unit_Assist_Attack_Bothan</SFXEvent_Assist_Attack>
 		<SFXEvent_Guard>Unit_Guard_Bothan</SFXEvent_Guard>
-		<SFXEvent_Fire>Unit_Rebel_Infantry_Fire</SFXEvent_Fire>
 		<Death_SFXEvent_Start_Die>Unit_Rebel_Soldier_Death</Death_SFXEvent_Start_Die>
 
 		<SFXEvent_Health_Low_Warning> Unit_Attack_Bothan </SFXEvent_Health_Low_Warning>
@@ -2434,7 +2433,6 @@
 				<Owner_Light_Effect_Color2 />
 				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
 				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
-				<Lighting_Effect_Name>Repair_Facility_Effect</Lighting_Effect_Name>
 			</Force_Healing_Ability>
 		</Abilities>
 	</Props_Story>
@@ -2443,27 +2441,25 @@
 	
 	
 	<Props_Story Name="UM12_SUPER_STAR_DESTROYER">
-		<!--<Variant_Of_Existing_Type>Executor_Super_Star_Destroyer</Variant_Of_Existing_Type>-->
-		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_ANNIHILATOR </Encyclopedia_Text>
-		<Text_ID>TEXT_TOOLTIP_ANNIHILATOR</Text_ID>
-		<Layer_Z_Adjust>-600.0</Layer_Z_Adjust>
-		
-		
-		
-		<GUI_Bounds_Scale>0.01</GUI_Bounds_Scale>
+		<!-- <Variant_Of_Existing_Type>Executor_Super_Star_Destroyer</Variant_Of_Existing_Type> -->
 
-		
+		<Text_ID>TEXT_TOOLTIP_ANNIHILATOR_01</Text_ID>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_ANNIHILATOR</Encyclopedia_Text>
 		<Encyclopedia_Good_Against> Calamari_Cruiser Rebel_Star_Base_5 Krayt_Class_Destroyer </Encyclopedia_Good_Against>
 		<Encyclopedia_Vulnerable_To> Y-wing B-Wing Skipray_Blastboat </Encyclopedia_Vulnerable_To>
-	
+
+		<Layer_Z_Adjust>-600.0</Layer_Z_Adjust>
+
+		<GUI_Bounds_Scale>0.01</GUI_Bounds_Scale>
+
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SSD </Encyclopedia_Unit_Class>
 
-        <Custom_Hard_XExtent> 100.0 </Custom_Hard_XExtent>
-        <Custom_Hard_YExtent> 100.0 </Custom_Hard_YExtent>
+		<Custom_Hard_XExtent> 100.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 100.0 </Custom_Hard_YExtent>
 
-		<Icon_Name>i_button_EV_ExecutorStarDestroyer.tga</Icon_Name>
+		<Icon_Name>I_Button_EV_ExecutorStarDestroyer.tga</Icon_Name>
 
-		<GUI_Row> 1 </GUI_Row>
+		<GUI_Row>1</GUI_Row>
 		<Space_Model_Name>EV_ExecutorStarDestroyer.ALO</Space_Model_Name>
 
 		<Ranking_In_Category>5</Ranking_In_Category>
@@ -2472,28 +2468,28 @@
 		<Select_Box_Scale>800</Select_Box_Scale>
 		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
 
-		<Scale_Factor>1.0</Scale_Factor>
+		<Scale_Factor>1.00</Scale_Factor>
 		<Mass>0.999</Mass>
 		<Dense_FOW_Reveal_Range_Multiplier>0.24</Dense_FOW_Reveal_Range_Multiplier>
 		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
-		
-		<Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
-		<Armor_Type> Armor_SSD </Armor_Type>
-		<Shield_Armor_Type> Shield_SSD </Shield_Armor_Type>
 
-		<Max_Speed>0.5</Max_Speed>
+		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
+		<Armor_Type>Armor_SSD</Armor_Type>
+		<Shield_Armor_Type>Shield_SSD</Shield_Armor_Type>
+
+		<Max_Speed>0.50</Max_Speed>
 		<Max_Rate_Of_Turn>0.02</Max_Rate_Of_Turn>
-		<MovementClass> Space </MovementClass>
-		<Space_Layer> SuperCapital </Space_Layer>
-		<Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>
+		<MovementClass>Space</MovementClass>
+		<Space_Layer>SuperCapital</Space_Layer>
+		<Max_Rate_Of_Roll>0.10</Max_Rate_Of_Roll>
 		<Bank_Turn_Angle>3</Bank_Turn_Angle>
-		<OverrideAcceleration> .02 </OverrideAcceleration>
-		<OverrideDeceleration> .02 </OverrideDeceleration>
-		
+		<OverrideAcceleration>.02</OverrideAcceleration>
+		<OverrideDeceleration>.02</OverrideDeceleration>
+
 		<Max_Thrust>0.05</Max_Thrust>
 		<Hyperspace>Yes</Hyperspace>
 		<Hyperspace_Speed>1</Hyperspace_Speed>
-		<Maintenance_Cost>0.3</Maintenance_Cost>
+		<Maintenance_Cost>0.30</Maintenance_Cost>
 
 		<Affiliation>Empire</Affiliation>
 		<Tech_Level>99</Tech_Level>
@@ -2503,14 +2499,13 @@
 		<Damage>70</Damage>
 		<Autoresolve_Health>18000</Autoresolve_Health>
 		<Shield_Points>7000</Shield_Points>
-		
 		<Tactical_Health>9000</Tactical_Health>
-		
+
 		<Shield_Refresh_Rate>150</Shield_Refresh_Rate>
 		<Energy_Capacity>99000</Energy_Capacity>
 		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
-		<Ship_Class>super</Ship_Class>
-		<Surface_Bombardment_Capable>yes</Surface_Bombardment_Capable>
+		<Ship_Class>Super</Ship_Class>
+		<Surface_Bombardment_Capable>Yes</Surface_Bombardment_Capable>
 
 		<Political_Faction>Empire</Political_Faction>
 		<Squadron_Capacity>40</Squadron_Capacity>
@@ -2519,24 +2514,24 @@
 		<Build_Time_Seconds>90</Build_Time_Seconds>
 		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
 		<Size_Value>8</Size_Value>
-		
+
 		<!-- Fighter Spawners -->
 		<Starting_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 4</Starting_Spawned_Units_Tech_0>
 		<Reserve_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 16</Reserve_Spawned_Units_Tech_0>
-		
+
 		<Starting_Spawned_Units_Tech_0>TIE_Interceptor_Squadron, 6</Starting_Spawned_Units_Tech_0>
 		<Reserve_Spawned_Units_Tech_0>TIE_Interceptor_Squadron, 24</Reserve_Spawned_Units_Tech_0>
-			
+
 		<Starting_Spawned_Units_Tech_0>TIE_Bomber_Squadron, 4</Starting_Spawned_Units_Tech_0>
 		<Reserve_Spawned_Units_Tech_0>TIE_Bomber_Squadron, 16</Reserve_Spawned_Units_Tech_0>
-		
+
 		<Starting_Spawned_Units_Tech_0>TIE_Defender_Squadron, 1</Starting_Spawned_Units_Tech_0>
 		<Reserve_Spawned_Units_Tech_0>TIE_Defender_Squadron, 5</Reserve_Spawned_Units_Tech_0>
-		
+
 		<Spawned_Squadron_Delay_Seconds>8</Spawned_Squadron_Delay_Seconds>
 
-		<Behavior> SELECTABLE, DUMMY_STARSHIP </Behavior>
-		<SpaceBehavior>ABILITY_COUNTDOWN,SIMPLE_SPACE_LOCOMOTOR, POWERED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		<Behavior>SELECTABLE, DUMMY_STARSHIP</Behavior>
+		<SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
 
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
 		<Death_Explosions>Large_Explosion_Space_Empire</Death_Explosions>
@@ -2579,31 +2574,30 @@
 			HP_EXECUTOR_FIGHTER_BAY_00
 		</HardPoints>
 
-
-
 		<SFXEvent_Select>Unit_Select_Vader_Executor</SFXEvent_Select>
 		<SFXEvent_Move>Unit_Move_Vader_Executor</SFXEvent_Move>
 		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Vader_Executor</SFXEvent_Fleet_Move>
 		<SFXEvent_Attack>Unit_Attack_Vader_Executor</SFXEvent_Attack>
 		<SFXEvent_Guard>Unit_Guard_Vader_Executor</SFXEvent_Guard>
 		<SFXEvent_Barrage>Unit_Barrage_Vader_Executor</SFXEvent_Barrage>
-		<SFXEvent_Move_Into_Asteroid_Field> Unit_Asteroids_Vader_Executor </SFXEvent_Move_Into_Asteroid_Field>
-		<SFXEvent_Move_Into_Nebula> Unit_Nebula_Vader_Executor </SFXEvent_Move_Into_Nebula>
-		<SFXEvent_Bombard_Select_Target>	EHD_Bombard_Select_Target </SFXEvent_Bombard_Select_Target>
-		<SFXEvent_Bombard_Incoming> EHD_Bombard_Incoming  </SFXEvent_Bombard_Incoming>
-		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Vader_Executor</SFXEvent_Health_Low_Warning>
-		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Vader_Executor </SFXEvent_Health_Critical_Warning>   
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Asteroids_Vader_Executor</SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula>Unit_Nebula_Vader_Executor</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Bombard_Select_Target>EHD_Bombard_Select_Target</SFXEvent_Bombard_Select_Target>
+		<SFXEvent_Bombard_Incoming>EHD_Bombard_Incoming</SFXEvent_Bombard_Incoming>
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Vader_Executor</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Vader_Executor</SFXEvent_Health_Critical_Warning>   
 		
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Vader_Executor </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Vader_Executor</SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Health_Critical_Vader_Executor </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Lost_Engines_Vader_Executor </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Health_Low_Vader_Executor</SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, Unit_Lost_Tractor_Vader_Executor</SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_WEAPON_LASER,			Unit_Lost_Laser_Vader_Executor</SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_WEAPON_MISSILE, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_WEAPON_TORPEDO, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_WEAPON_ION_CANNON,		Unit_Lost_Ion_Vader_Executor</SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_SHIELD_GENERATOR,		Unit_Health_Critical_Vader_Executor</SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_ENGINE, Unit_Lost_Engines_Vader_Executor </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_GRAVITY_WELL, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_FIGHTER_BAY,			Unit_Health_Low_Vader_Executor</SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_TRACTOR_BEAM,			Unit_Lost_Tractor_Vader_Executor</SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+
 		<SFXEvent_Build_Complete>Unit_Respawn_Vader_Executor</SFXEvent_Build_Complete>
 		<SFXEvent_Hero_Respawned>Unit_Respawn_Vader_Executor</SFXEvent_Hero_Respawned>
 		
@@ -2612,72 +2606,71 @@
 		<Death_SFXEvent_Start_Die>SFX_Death_Bombard</Death_SFXEvent_Start_Die>
 		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Engine_Idle_Loop> Unit_Star_Destroyer_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
-		<SFXEvent_Engine_Moving_Loop> Unit_Star_Destroyer_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
-		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Star_Destroyer_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<SFXEvent_Engine_Idle_Loop>Unit_Star_Destroyer_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Star_Destroyer_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Star_Destroyer_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
 
-		<CategoryMask> Capital | AntiFrigate </CategoryMask>
-		<Victory_Relevant>yes</Victory_Relevant>
-		<Space_Full_Stop_Command> Yes </Space_Full_Stop_Command>
+		<CategoryMask>Capital | AntiFrigate</CategoryMask>
+		<Victory_Relevant>Yes</Victory_Relevant>
+		<Space_Full_Stop_Command>Yes</Space_Full_Stop_Command>
 		<Has_Space_Evaluator>True</Has_Space_Evaluator>
-		 
-		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
-		<Idle_Chase_Range>0.0</Idle_Chase_Range>
-		<Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
-		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+
+		<Guard_Chase_Range>1000.00</Guard_Chase_Range>
+		<Idle_Chase_Range>0.00</Idle_Chase_Range>
+		<Attack_Move_Response_Range>400.00</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.00</Targeting_Stickiness_Time_Threshold>
 		<Targeting_Priority_Set>Capital</Targeting_Priority_Set>
 
-
 		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
-		<Radar_Icon_Name>i_radar_Executor.tga</Radar_Icon_Name>
-		<Radar_Icon_Scale_Land>1.0</Radar_Icon_Scale_Land>
-		<Radar_Icon_Scale_Space>1.0</Radar_Icon_Scale_Space>
-		<Radar_Icon_Size>0.4  0.4</Radar_Icon_Size>
+		<Radar_Icon_Name>I_Radar_Executor.tga</Radar_Icon_Name>
+		<Radar_Icon_Scale_Land>1.00</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>1.00</Radar_Icon_Scale_Space>
+		<Radar_Icon_Size>0.40, 0.40</Radar_Icon_Size>
 
 		<!-- Non-Hero unit abilities description -->
-	   <Unit_Abilities_Data SubObjectList="Yes">
-	      <!-- Primary ability -->
-	      <Unit_Ability>
-	            <Type>TRACTOR_BEAM</Type>
-	            <Mod_Multiplier>SPEED_MULTIPLIER, 0.8f</Mod_Multiplier>
-	            <GUI_Activated_Ability_Name>Executor_Tractor_Beam_Attack_Ability</GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
-	            <Recharge_Seconds>20</Recharge_Seconds>
-	            <SFXEvent_Target_Ability>Unit_Tractor_Beam_Vader_Executor</SFXEvent_Target_Ability>
-				<SFXEvent_Special_Ability_Loop> Unit_Star_Destroyer_Tractor_Beam </SFXEvent_Special_Ability_Loop>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary ability -->
+			<Unit_Ability>
+				<Type>TRACTOR_BEAM</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 0.80</Mod_Multiplier>
+				<GUI_Activated_Ability_Name>Executor_Tractor_Beam_Attack_Ability</GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+				<Recharge_Seconds>20</Recharge_Seconds>
+				<SFXEvent_Target_Ability>Unit_Tractor_Beam_Vader_Executor</SFXEvent_Target_Ability>
+				<SFXEvent_Special_Ability_Loop>Unit_Star_Destroyer_Tractor_Beam</SFXEvent_Special_Ability_Loop>
 				<Supports_Autofire>True</Supports_Autofire>
-	      </Unit_Ability>
-	      <Unit_Ability>
-                <Type>DEPLOY_SQUAD</Type>
-	            <Recharge_Seconds>5</Recharge_Seconds>
-	            <SFXEvent_GUI_Unit_Ability_Activated> Unit_Deploy_Squad_Vader_Executor </SFXEvent_GUI_Unit_Ability_Activated>
-          </Unit_Ability>
-	   </Unit_Abilities_Data>
+			</Unit_Ability>
 
-	   <Abilities SubObjectList="Yes">
-	      <Tractor_Beam_Attack_Ability Name="Executor_Tractor_Beam_Attack_Ability">
-	            <Activation_Style> User_Input </Activation_Style>
-	            <Applicable_Unit_Categories>Transport | Corvette | Frigate | Capital</Applicable_Unit_Categories>
-	            <Applicable_Unit_Types>Millennium_Falcon</Applicable_Unit_Types>
+			<Unit_Ability>
+				<Type>DEPLOY_SQUAD</Type>
+				<Recharge_Seconds>5</Recharge_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Deploy_Squad_Vader_Executor</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Tractor_Beam_Attack_Ability Name="Executor_Tractor_Beam_Attack_Ability">
+				<Activation_Style> User_Input </Activation_Style>
+				<Applicable_Unit_Categories>Transport | Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Applicable_Unit_Types>Millennium_Falcon</Applicable_Unit_Types>
 				<Excluded_Unit_Types>Buzz_Droids</Excluded_Unit_Types>
-	            <Activation_Min_Range>10</Activation_Min_Range>
-	            <Activation_Max_Range>2000</Activation_Max_Range>
+				<Activation_Min_Range>10</Activation_Min_Range>
+				<Activation_Max_Range>2000</Activation_Max_Range>
 
-	            <!-- Modifiers. If 0 - no modifier is applied, 1 - "100% increase or decrease" -->
-	            <Target_Speed_Decrease_Percent>0.8</Target_Speed_Decrease_Percent>
-	            <Stacking_Category>0</Stacking_Category>            
-	      </Tractor_Beam_Attack_Ability>
-	   </Abilities>
+				<!-- Modifiers. If 0 - no modifier is applied, 1 - "100% increase or decrease" -->
+				<Target_Speed_Decrease_Percent>0.80</Target_Speed_Decrease_Percent>
+				<Stacking_Category>0</Stacking_Category>
+			</Tractor_Beam_Attack_Ability>
+		</Abilities>
 
-		<Score_Cost_Credits> 100000</Score_Cost_Credits>
+		<Score_Cost_Credits>100000</Score_Cost_Credits>
 
-		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<!-- Multiplayer skirmish values start: -->
 		<Tactical_Build_Cost_Multiplayer>40000</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>90</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites />
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
 		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
-		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
 	</Props_Story>
 	
 	<Props_Story Name="UM12_STAR_BASE">

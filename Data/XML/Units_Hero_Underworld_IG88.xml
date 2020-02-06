@@ -7,6 +7,7 @@
 		<Text_ID>TEXT_HERO_IG88</Text_ID>
 		<Encyclopedia_Text>TEXT_TOOLTIP_IG88 TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOUNTY_HUNTER</Encyclopedia_Unit_Class>
+
 		<Land_Model_Name>UI_IG88.alo</Land_Model_Name>
 		<Icon_Name>I_Button_UI_IG88.tga</Icon_Name>
 		<Scale_Factor>1.80</Scale_Factor>
@@ -160,7 +161,7 @@
 				<Initially_Enabled>Yes</Initially_Enabled>		
 				<Activation_Style>Take_Damage</Activation_Style>
 
-				<!-- Redirection chance is rolled first. If failed, werollblockchance. If failed, we take the damage. -->
+				<!-- Redirection chance is rolled first. If failed, we roll block chance. If failed, we take the damage. -->
 				<Redirect_Chance>0.00</Redirect_Chance>
 				<Block_Chance>0.20</Block_Chance>
 				<Reaction_Arc_In_Degrees>360.00</Reaction_Arc_In_Degrees>
@@ -298,7 +299,8 @@
 
 	<HeroCompany Name="IG88_Team_Space_MP">
 		<Variant_Of_Existing_Type>IG88_Team</Variant_Of_Existing_Type>
-		<Text_ID>TEXT_UNIT_IG2000</Text_ID>
+
+		<Text_ID>TEXT_UNIT_IG2000_01</Text_ID>
 		<Encyclopedia_Good_Against>X-wing Y-Wing Z-95_Headhunter_Rebel</Encyclopedia_Good_Against>
 		<Encyclopedia_Vulnerable_To>Corellian_Corvette Corellian_Gunboat A-Wing</Encyclopedia_Vulnerable_To>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR</Encyclopedia_Unit_Class>
@@ -316,10 +318,13 @@
 
 	<!-- MAIN: SPACE UNIT -->
 	<UniqueUnit Name="IG-2000">
-		<Text_ID>TEXT_UNIT_IG2000</Text_ID>
+		<Text_ID>TEXT_UNIT_IG2000_01</Text_ID>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Encyclopedia_Text>TEXT_TOOLTIP_IG2000</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR</Encyclopedia_Unit_Class>
 		<Encyclopedia_Good_Against>X-wing Y-Wing Z-95_Headhunter_Rebel</Encyclopedia_Good_Against>
 		<Encyclopedia_Vulnerable_To>Corellian_Corvette Corellian_Gunboat A-Wing</Encyclopedia_Vulnerable_To>
+
 		<Land_Model_Name>UV_IG2000_LANDING.ALO</Land_Model_Name>
 		<Space_Model_Name>UV_IG2000.ALO</Space_Model_Name>
 		<Icon_Name>I_Button_UI_IG88.tga</Icon_Name>
@@ -356,6 +361,7 @@
 		<Behavior>DUMMY_STARSHIP, TRANSPORT, POWERED, SHIELDED</Behavior>
 		<SpaceBehavior>FIGHTER_LOCOMOTOR, TARGETING, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, UNIT_AI, NEBULA, SELECTABLE, ABILITY_COUNTDOWN</SpaceBehavior>
 		<LandBehavior>REVEAL, HIDE_WHEN_FOGGED, IDLE</LandBehavior>
+
 		<Victory_Relevant>Yes</Victory_Relevant>
 		<Hover_Offset>30.00</Hover_Offset>
 
@@ -378,9 +384,6 @@
 
 		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
 		<Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
-
-		<Encyclopedia_Text>TEXT_TOOLTIP_IG2000</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR</Encyclopedia_Unit_Class>
 
 		<Death_Clone>Damage_Normal, IG2000_Death_Clone</Death_Clone>
 
@@ -463,7 +466,7 @@
 
 	<!-- SECONDARY: VARIANTS -->
 	<UniqueUnit Name="IG2000_Death_Clone">
-		<Text_ID>TEXT_UNIT_IG2000</Text_ID>
+		<Text_ID>TEXT_UNIT_IG2000_01</Text_ID>
 		<Space_Model_Name>UV_IG2000_D.alo</Space_Model_Name>
 		<Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
 		<Scale_Factor>1.20</Scale_Factor>

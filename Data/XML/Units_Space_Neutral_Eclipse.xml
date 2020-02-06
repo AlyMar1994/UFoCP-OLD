@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<Eclipse_Files>
+	<!-- The Eclipse is the goal of the story campaign. -->
+	<!-- Woe be to any who seek to add this to the galactic -->
+	<!-- conquest game, for there shall be unbalance! -->
+
+	<!-- MAIN: SPACE UNIT -->
+	<UniqueUnit Name="Eclipse_Super_Star_Destroyer">
+		<GUI_Bounds_Scale>0.01</GUI_Bounds_Scale>
+		<Text_ID>TEXT_UNIT_SSD_ECLIPSE</Text_ID>
+
+		<Encyclopedia_Good_Against>Calamari_Cruiser Rebel_Star_Base_5</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>Y-wing B-Wing</Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text>TEXT_TOOLTIP_ECLIPSE</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SSD</Encyclopedia_Unit_Class>
+
+		<Icon_Name>I_Button_EV_Eclipse.tga</Icon_Name>
+
+		<GUI_Row>1</GUI_Row>
+		<Space_Model_Name>UV_Eclipse_UC.alo</Space_Model_Name>
+
+		<In_Background>Yes</In_Background>
+
+		<Ranking_In_Category>5</Ranking_In_Category>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+
+		<Select_Box_Scale>1600</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+
+		<Scale_Factor>1.50</Scale_Factor>
+		<Mass>0.999</Mass>
+		<Dense_FOW_Reveal_Range_Multiplier>0.24</Dense_FOW_Reveal_Range_Multiplier>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Exclude_From_Distance_Fade>True</Exclude_From_Distance_Fade>
+
+		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
+		<Armor_Type>Armor_Star_Destroyer</Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+
+		<Max_Speed>0.30</Max_Speed>
+		<Max_Rate_Of_Turn>0.01</Max_Rate_Of_Turn>
+		<MovementClass>Space</MovementClass>
+		<Space_Layer>SuperCapital</Space_Layer>
+
+		<Custom_Hard_XExtent>100.00</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>100.00</Custom_Hard_YExtent>
+
+		<Layer_Z_Adjust>-350.00</Layer_Z_Adjust>
+		<Max_Rate_Of_Roll>0.10</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>2</Bank_Turn_Angle>
+		<OverrideAcceleration>.02</OverrideAcceleration>
+		<OverrideDeceleration>.02</OverrideDeceleration>
+
+		<Max_Thrust>0.05</Max_Thrust>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Maintenance_Cost>0.30</Maintenance_Cost>
+
+		<Affiliation>Empire, Rebel, Underworld</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>5</Required_Star_Base_Level>
+		<Damage>70</Damage>
+		<Autoresolve_Health>18000</Autoresolve_Health>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>50000</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Ship_Class>Capital</Ship_Class>
+		<Surface_Bombardment_Capable>Yes</Surface_Bombardment_Capable>
+
+		<Squadron_Capacity>40</Squadron_Capacity>
+		<Build_Cost_Credits>15000</Build_Cost_Credits>
+		<AI_Combat_Power>5900</AI_Combat_Power>
+		<Build_Time_Seconds>90</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Size_Value>8</Size_Value>
+
+		<Tactical_Bribe_Cost>9999</Tactical_Bribe_Cost>
+
+		<Behavior> DUMMY_STARSHIP, SELECTABLE </Behavior>
+		<Not_Really_Selectable>True</Not_Really_Selectable>
+		<SpaceBehavior>ABILITY_COUNTDOWN, POWERED, SHIELDED, REVEAL, TARGETING, DUMMY_TOOLTIP, DAMAGE_TRACKING  </SpaceBehavior>
+
+		<Is_Valid_Target>Yes</Is_Valid_Target>
+		<Target_Bones>
+			Target_00,
+			Target_01,
+			Target_02,
+			Target_03,
+			Target_04
+		</Target_Bones>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
+
+		<!--<Death_Explosions>Large_Explosion_Space_Empire</Death_Explosions>-->
+		<Death_Clone>Damage_Normal, Eclipse_Super_Star_Destroyer_Death_Clone</Death_Clone>
+		<Space_FOW_Reveal_Range>15000.00</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>2200.00</Targeting_Max_Attack_Distance>
+
+		<SFXEvent_Attack>Unit_Attack_Tyber_Zann</SFXEvent_Attack>
+		<SFXEvent_Ambient_Loop>Unit_Star_Destroyer_Idle_Engine_Loop</SFXEvent_Ambient_Loop>
+
+		<CategoryMask>Capital | AntiFrigate</CategoryMask>
+		<Victory_Relevant>Yes</Victory_Relevant>
+		<Space_Full_Stop_Command>Yes</Space_Full_Stop_Command>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<Guard_Chase_Range>1000.00</Guard_Chase_Range>
+		<Idle_Chase_Range>0.00</Idle_Chase_Range>
+		<Attack_Move_Response_Range>400.00</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.00</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>Capital</Targeting_Priority_Set>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Name>I_Radar_Executor.tga</Radar_Icon_Name>
+		<Radar_Icon_Scale_Land>1.00</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>1.00</Radar_Icon_Scale_Space>
+		<Radar_Icon_Size>0.60, 0.60</Radar_Icon_Size>
+		<Score_Cost_Credits>100000</Score_Cost_Credits>
+		<Radar_Register_As_Foreground_Object>Yes</Radar_Register_As_Foreground_Object>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SUPER_LASER</Type>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ECLIPSE_SL_DESCRIPTION</Alternate_Description_Text>
+
+				<Mod_Multiplier>SPEED_MULTIPLIER, 0.80</Mod_Multiplier>
+				<GUI_Activated_Ability_Name>Eclipse_Super_Laser_Attack_Ability</GUI_Activated_Ability_Name> <!-- GUI Command Bar Support. -->
+				<Recharge_Seconds>10</Recharge_Seconds>
+				<Expiration_Seconds>10</Expiration_Seconds>
+				<SFXEvent_Target_Ability>Unit_Attack_Tyber_Zann</SFXEvent_Target_Ability>
+				<SFXEvent_Special_Ability_Loop>Unit_Death_Star_2_Fire</SFXEvent_Special_Ability_Loop> 
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Super_Laser_Ability Name="Eclipse_Super_Laser_Attack_Ability">
+				<Activation_Style>User_Input</Activation_Style>
+
+				<Applicable_Unit_Categories>Capital | Corvette | Frigate | Structure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Owner_Particle_Effect>Piet_Powerup_Particle_Effect</Owner_Particle_Effect>
+				<Owner_Particle_Bone_Name>MuzzleA_00</Owner_Particle_Bone_Name>
+				<Activation_Min_Range>0</Activation_Min_Range>
+				<Activation_Max_Range>20000</Activation_Max_Range>
+
+				<!-- Modifiers. If 0 - no modifier is applied, 1 - "100% increase or decrease." -->
+				<Damage_Per_Frame>400</Damage_Per_Frame>
+				<Fire_Frame>106</Fire_Frame>
+				<Beam_Texture_Name>Tractor_Beam01.tga</Beam_Texture_Name>
+				<Num_Anim_Frames>5</Num_Anim_Frames>
+				<Line_Width>45</Line_Width>
+				<Line_Color>0, 237, 119, 255</Line_Color>
+			</Super_Laser_Ability>
+		</Abilities>
+	</UniqueUnit>
+	
+	<UniqueUnit Name="Eclipse_Super_Star_Destroyer_Death_Clone">
+		<Text_ID>TEXT_UNIT_SSD_ECLIPSE</Text_ID>
+		<Space_Model_Name>UV_Eclipse_UC_DC.alo</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Calamari_Death_SFX</Death_SFXEvent_Start_Die>
+		<Scale_Factor>1.50</Scale_Factor>
+		<Layer_Z_Adjust>-350.00</Layer_Z_Adjust>
+
+		<Max_Speed>0.25</Max_Speed>
+		<Max_Rate_Of_Turn>0.40</Max_Rate_Of_Turn>
+		<Max_Thrust>0.05</Max_Thrust>
+		<Max_Rate_Of_Roll>0.02</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>5</Bank_Turn_Angle>
+		<Affiliation>Underworld</Affiliation>
+		<Ship_Class>Capital</Ship_Class>
+		<Glory_Cinematics />
+		<Remove_Upon_Death>True</Remove_Upon_Death>
+	</UniqueUnit>
+
+
+	<!-- SECONDARY: VARIANTS -->
+	<SpaceProp Name="Eclipse_Prop">
+		<Text_ID />
+		<Space_Model_Name>UV_Eclipse.alo</Space_Model_Name>
+		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Idle_Anim_00_Rate_Mod>1.00</Idle_Anim_00_Rate_Mod>
+		<Scale_Factor>1.50</Scale_Factor>
+		<Behavior>IDLE</Behavior>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Layer_Z_Adjust>-140.00</Layer_Z_Adjust>
+		<In_Background>Yes</In_Background>
+
+		<Space_Obstacle_Radius>280</Space_Obstacle_Radius>
+		<Space_Obstacle_Offset>0, 0, 0</Space_Obstacle_Offset> 
+		<Space_Layer>StaticObject</Space_Layer>
+		<CategoryMask>Structure</CategoryMask>
+		<Is_Valid_Target>No</Is_Valid_Target>
+	</SpaceProp>
+</Eclipse_Files>

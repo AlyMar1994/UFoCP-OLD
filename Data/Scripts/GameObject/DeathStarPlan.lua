@@ -4,7 +4,7 @@
 -- ORIGINAL AUTHOR (Petroglyph): Steve Copeland
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 7/12/19, 12:49 PM
+-- LAST REVISION DATE: 12/30/19, 2:05 AM
 -- ======================================================================
 -- Self Attachment plan is currently unused; the Death Star has a plan that names it in the task force.
 require("HeroPlanAttach")
@@ -28,6 +28,7 @@ function Definitions()
 		1, 1, 1, 10,	-- ATTACK-type Weights.
 		BAD_WEIGHT		-- FEARED-type Weights.
 	}
+
 	Attack_Ability_Types = WeightedTypeList.Create()
 	Attack_Ability_Types.Parse(Attack_Ability_Type_Names, Attack_Ability_Weights)
 

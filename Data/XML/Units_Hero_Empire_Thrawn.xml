@@ -4,8 +4,8 @@
 	<UniqueUnit Name="Admonitor_Star_Destroyer">
 		<Variant_Of_Existing_Type>Generic_Star_Destroyer</Variant_Of_Existing_Type>
 
-		<Text_ID>TEXT_UNIT_SD_ADMONITOR</Text_ID>
-		<Encyclopedia_Text>TEXT_TOOLTIP_SD_ADMONITOR</Encyclopedia_Text>
+		<Text_ID>TEXT_UNIT_SD_ADMONITOR_01</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_THRAWN_SD_01</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Good_Against>Kedalbe_Battleship Calamari_Cruiser</Encyclopedia_Good_Against>
 		<Encyclopedia_Vulnerable_To>B-Wing MC30_Frigate Skipray_Blastboat</Encyclopedia_Vulnerable_To>
@@ -71,14 +71,14 @@
 		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Star_Destroyer_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
 
 		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>		
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>Unit_Complete_Thrawn</SFXEvent_Build_Complete>
 		<SFXEvent_Hero_Respawned>Unit_Select_Thrawn</SFXEvent_Hero_Respawned>
 
 		<!-- MULTIPLAYER SKIRMISH VALUES START -->
 		<Tactical_Build_Cost_Multiplayer>6200</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites/>
+		<Tactical_Build_Prerequisites />
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
 		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
@@ -134,7 +134,7 @@
 
 				<!-- Modifiers. If 0 - no modifier is applied, 1 - "100% increase or decrease." -->
 				<Target_Speed_Decrease_Percent>0.90</Target_Speed_Decrease_Percent>
-				<Stacking_Category>2</Stacking_Category>			
+				<Stacking_Category>2</Stacking_Category>
 			</Tractor_Beam_Attack_Ability>
 
 			<System_Spy_Ability Name="Admonitor_Ship_Reveal">
@@ -171,7 +171,7 @@
 	</UniqueUnit>
 
 	<UniqueUnit Name="Admonitor_Star_Destroyer_Death_Clone">
-		<Text_ID>TEXT_UNIT_SD_ADMONITOR</Text_ID>
+		<Text_ID>TEXT_TOOLTIP_THRAWN_SD_01</Text_ID>
 		<Space_Model_Name>EV_StarDestroyer_Thrawn_D.alo</Space_Model_Name>
 		<!-- <Space_Model_Name>EV_StarDestroyer_Dead.ALO</Space_Model_Name> -->
 		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>

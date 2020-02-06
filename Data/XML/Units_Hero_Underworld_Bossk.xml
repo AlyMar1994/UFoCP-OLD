@@ -252,7 +252,7 @@
 	<HeroCompany Name="Bossk_Team_Space_MP">
 		<Variant_Of_Existing_Type>Bossk_Team</Variant_Of_Existing_Type>
 
-		<Text_ID>TEXT_UNIT_HOUNDSTOOTH</Text_ID>
+		<Text_ID>TEXT_UNIT_HOUNDSTOOTH_01</Text_ID>
 		<Encyclopedia_Text>TEXT_TOOLTIP_HOUNDSTOOTH</Encyclopedia_Text>
 
 		<Encyclopedia_Good_Against>X-wing Y-Wing Z-95_Headhunter_Rebel</Encyclopedia_Good_Against>
@@ -272,7 +272,7 @@
 
 	<!-- MAIN: SPACE UNIT -->
 	<UniqueUnit Name="Houndstooth">
-		<Text_ID>TEXT_UNIT_HOUNDSTOOTH</Text_ID>
+		<Text_ID>TEXT_UNIT_HOUNDSTOOTH_01</Text_ID>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Encyclopedia_Text>TEXT_TOOLTIP_HOUNDSTOOTH</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR</Encyclopedia_Unit_Class>
@@ -409,7 +409,7 @@
 
 	<!-- SECONDARY: VARIANTS -->
 	<UniqueUnit Name="Houndstooth_Death_Clone">
-		<Encyclopedia_Text>TEXT_TOOLTIP_HOUNDSTOOTH</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_UNIT_HOUNDSTOOTH_01</Encyclopedia_Text>
 		<Space_Model_Name>UV_HoundsTooth_D.alo</Space_Model_Name>
 		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
 		<Scale_Factor>1.20</Scale_Factor>
