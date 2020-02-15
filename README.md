@@ -5,7 +5,7 @@ A comprehensive bug-fixing mod for Petroglyph's "STAR WARS: Empire at War – Fo
 
 ---
 
-* Version: 1.9
+* Version: 1.10
 * License: AGPL-3.0 (please read the [License](https://github.com/AlyMar1994/UFoCP/blob/master/LICENSE) for more info, and/or end of this readme for a tl;dr)
 
 ---

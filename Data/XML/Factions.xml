@@ -78,8 +78,8 @@
 		<!-- Misc. -->
 		<Credits_Accumulation_Factor>0.95</Credits_Accumulation_Factor>
 		<Hyperspace_Speed_Factor>0.07</Hyperspace_Speed_Factor>
-		<Planet_Icon_Scale>10.0</Planet_Icon_Scale>
-		<Planet_Icon_Offset>10.0, 10.0, -1.1</Planet_Icon_Offset>
+		<Planet_Icon_Scale>10.00</Planet_Icon_Scale>
+		<Planet_Icon_Offset>10.00, 10.00, -1.10</Planet_Icon_Offset>
 
 		<Allies /> <!-- Shares all tactical information (like Skirmish) in all modes, but is generally broken. -->
 		<Enemies>

@@ -113,14 +113,6 @@
 		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
 		<Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
 
-		<!-- MULTIPLAYER SKIRMISH VALUES START -->
-		<Tactical_Build_Cost_Multiplayer>5300</Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Time_Seconds>38</Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites />
-		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
-		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
-
 		<!-- Hero unit abilities descriptions: -->
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<!-- Primary Ability. -->
@@ -205,6 +197,14 @@
 		<Targeting_Priority_Set>Capital</Targeting_Priority_Set>
 		<Has_Space_Evaluator>True</Has_Space_Evaluator>
 		<Lua_Script>ObjectScript_PowerToShields</Lua_Script>
+
+		<!-- MULTIPLAYER SKIRMISH VALUES START: -->
+		<Tactical_Build_Cost_Multiplayer>5300</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>38</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
 	</UniqueUnit>
 
 	<UniqueUnit Name="Home_One_Death_Clone">
@@ -295,7 +295,7 @@
 		<Death_Explosions>Medium_Explosion_Space</Death_Explosions>
 		<Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
 
-		<Projectile_Damage>16.0</Projectile_Damage>
+		<Projectile_Damage>16.00</Projectile_Damage>
 		<Projectile_Types>Proj_Ship_Medium_Laser_Cannon_Red</Projectile_Types>
 		<Projectile_Fire_Recharge_Seconds>0.50</Projectile_Fire_Recharge_Seconds>
 		<Projectile_Fire_Pulse_Count>8</Projectile_Fire_Pulse_Count>
@@ -361,14 +361,6 @@
 		<Targeting_Priority_Set>Corvette</Targeting_Priority_Set>
 		<Autonomous_Move_Extension_Vs_Attacker>300.00</Autonomous_Move_Extension_Vs_Attacker>
 
-		<!-- MULTIPLAYER SKIRMISH VAlUES START -->
-		<Tactical_Build_Cost_Multiplayer>3800</Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Time_Seconds>38</Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites />
-		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
-		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
-		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
-
 		<!-- Hero unit abilities descriptions: -->
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<!-- Primary Ability. -->
@@ -385,6 +377,14 @@
 		<Death_Clone>Damage_Normal, Millennium_Falcon_Death_Clone</Death_Clone>
 		<Lua_Script>ObjectScript_MillenniumFalcon</Lua_Script>
 		<Space_Override_Population_Value>1</Space_Override_Population_Value>
+
+		<!-- MULTIPLAYER SKIRMISH VAlUES START: -->
+		<Tactical_Build_Cost_Multiplayer>3800</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>38</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
 	</UniqueUnit>
 
 	<UniqueUnit Name="Millennium_Falcon_Landing">

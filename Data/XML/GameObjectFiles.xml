@@ -92,7 +92,8 @@
 	<File>Units_Space_Empire_TIE_Defender.xml</File>
 	<File>Units_Space_Empire_TIE_Interceptor.xml</File>
 	<File>Units_Space_Empire_TIE_Phantom.xml</File>
-	<File>Units_Space_Empire_Executor.xml</File>
+	<!-- <File>Units_Space_Empire_Executor.xml</File> - DEPRECATED -->
+	<File>Units_UFoCP_Hero_Empire_Vader.xml</File> <!-- Adding this to fix Executor issues. -->
 	
 	<File>Units_Land_Empire_DarkTroopers.xml</File>
 	<File>Units_Land_Empire_Lancet.xml</File>

@@ -112,12 +112,12 @@
 		
 		<!-- Underworld Corruption Settings (on this Faction) -->
 		<Benefits_From_Corruption>Yes/No</Benefits_From_Corruption>
-		<Corruption_Galactic_Production_Time_Multipliers>1.0, 0.95</Corruption_Galactic_Production_Time_Multipliers>
-		<Corruption_Galactic_Production_Price_Multipliers>1.0, 0.9</Corruption_Galactic_Production_Price_Multipliers>
-		<Corruption_Tactical_Production_Time_Multipliers>1.0, 1.0</Corruption_Tactical_Production_Time_Multipliers>
-		<Corruption_Tactical_Production_Price_Multipliers>1.0, 1.0</Corruption_Tactical_Production_Price_Multipliers>
-		<Corruption_Tactical_Build_Pad_Time_Multipliers>1.0, 1.0</Corruption_Tactical_Build_Pad_Time_Multipliers>
-		<Corruption_Tactical_Build_Pad_Price_Multipliers>1.0, 1.0</Corruption_Tactical_Build_Pad_Price_Multipliers>
+		<Corruption_Galactic_Production_Time_Multipliers>1.00, 0.95</Corruption_Galactic_Production_Time_Multipliers>
+		<Corruption_Galactic_Production_Price_Multipliers>1.00, 0.90</Corruption_Galactic_Production_Price_Multipliers>
+		<Corruption_Tactical_Production_Time_Multipliers>1.00, 1.00</Corruption_Tactical_Production_Time_Multipliers>
+		<Corruption_Tactical_Production_Price_Multipliers>1.00, 1.00</Corruption_Tactical_Production_Price_Multipliers>
+		<Corruption_Tactical_Build_Pad_Time_Multipliers>1.00, 1.00</Corruption_Tactical_Build_Pad_Time_Multipliers>
+		<Corruption_Tactical_Build_Pad_Price_Multipliers>1.00, 1.00</Corruption_Tactical_Build_Pad_Price_Multipliers>
 		<Easily_Bribed>Yes/No</Easily_Bribed>
 		<Bribed_Color>Red#, Green#, Blue#, Transparency#</Bribed_Color>
 

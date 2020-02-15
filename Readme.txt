@@ -68,7 +68,7 @@ Diamondback
 ================
 Support
 ================
--KadVenku 
+-KadVenku
     – Lots of help on GitHub for issues with FoC.
 
 -STAR WARS: Empire at War Community Discord (specif. Galyana, Lany & Nikomer)
@@ -96,5 +96,4 @@ Support
     along with this program.  If not, see https://www.gnu.org/licenses/.
 
     This license applies to all files, source, and elseor all applicable mod-content, despite said files not being marked with license information.
-
 =========================================================================================
