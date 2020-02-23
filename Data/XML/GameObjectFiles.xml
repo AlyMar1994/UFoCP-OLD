@@ -172,7 +172,5 @@
 
 
 	<!-- UFoCP Object Files -->
-	<File>Units_Hero_Rebel_UFoCP_Droids.xml</File>
-
-	<File>Units_Hero_Empire_UFoCP_Vader.xml</File>
+	<File>Units_UFoCP_Hero_Rebel_Droids.xml</File>
 </Game_Object_Files>
