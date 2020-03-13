@@ -1,0 +1,337 @@
+﻿<?xml version="1.0"?>
+<TIE_Defender_Files>
+	<!-- MAIN - Space Unit -->
+	<SpaceUnit Name="TIE_Defender">
+		<Text_ID>TEXT_UNIT_TIE_DEFENDER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_TIE_DEFENDER</Encyclopedia_Text>
+		<Encyclopedia_Good_Against>Calamari_Cruiser Krayt_Class_Destroyer</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>Corellian_Corvette Crusader_Gunship Buzz_Droids</Encyclopedia_Vulnerable_To>
+		<Space_Model_Name>EV_TIE_DEFENDER.ALO</Space_Model_Name>
+		<Icon_Name>I_Button_EV_TIE_Defender.tga</Icon_Name>
+
+		<Scale_Factor>0.70</Scale_Factor>
+		<Select_Box_Scale>70</Select_Box_Scale>
+		<Select_Box_Z_Adjust>1.00</Select_Box_Z_Adjust>
+		<Mouse_Collide_Override_Sphere_Radius>50.00</Mouse_Collide_Override_Sphere_Radius>
+
+		<Dense_FOW_Reveal_Range_Multiplier>0.50</Dense_FOW_Reveal_Range_Multiplier>
+		<Mass>0.98</Mass>
+		<Max_Speed>4.50</Max_Speed>
+		<Min_Speed>3.00</Min_Speed>
+		<Max_Rate_Of_Turn>4.50</Max_Rate_Of_Turn>
+		<Max_Thrust>1.00</Max_Thrust>
+		<Max_Rate_Of_Roll>5.50</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>40</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>300.00</Begin_Turn_Towards_Distance>
+		<Fires_Forward>No</Fires_Forward>
+
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.50</Hyperspace_Speed>
+		<Maintenance_Cost>0.10</Maintenance_Cost>
+		<Max_Lift>4</Max_Lift>
+		<Affiliation>Empire</Affiliation>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>3</Required_Star_Base_Level>
+		<Shield_Points>70</Shield_Points>
+		<Tactical_Health>100</Tactical_Health>
+		<Shield_Refresh_Rate>4</Shield_Refresh_Rate>
+		<Energy_Capacity>999</Energy_Capacity>
+		<Energy_Refresh_Rate>999</Energy_Refresh_Rate>
+
+		<Armor_Type>Armor_Fighter</Armor_Type>
+		<Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+
+		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
+		<Ship_Class>Fighter</Ship_Class>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>Yes</Is_Bomber>
+		<Political_Control>0</Political_Control>
+		<Squadron_Capacity>0</Squadron_Capacity>
+		<Number_per_Squadron>3</Number_per_Squadron>
+		<Build_Cost_Credits>100</Build_Cost_Credits>
+		<Build_Time_Seconds>15</Build_Time_Seconds>
+		<Size_Value>4</Size_Value>
+		<SpaceBehavior>FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA, ABILITY_COUNTDOWN</SpaceBehavior>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Damage>7</Damage>
+
+		<HardPoints>
+			HP_TIE_DEFENDER_TORP_00,
+			HP_TIE_DEFENDER_TORP_01,
+			HP_TIE_DEFENDER_ION_00,
+			HP_TIE_DEFENDER_ION_01
+		</HardPoints>
+
+		<Land_FOW_Reveal_Range>130.00</Land_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>600.00</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>600.00</Targeting_Max_Attack_Distance>
+		<Death_Explosions>Small_Explosion_Space</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Tie_Fighter_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Damage_Type>Damage_Fighter</Damage_Type>
+		<Projectile_Types>Proj_Ship_Small_Laser_Cannon_Green</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>3</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.50</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>2</Projectile_Fire_Recharge_Seconds>
+		
+		<Fire_Inaccuracy_Distance>Fighter,		25.00</Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance>Bomber,		20.00</Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance>Transport,	20.00</Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance>Corvette,		15.00</Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance>Frigate,		20.00</Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance>Capital,		25.00</Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance>Super,		30.00</Fire_Inaccuracy_Distance>
+
+		<Turret_Rotate_Extent_Degrees>45</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>45</Turret_Elevate_Extent_Degrees>
+
+		<Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
+
+		<SFXEvent_Fire>Unit_TIE_Fighter_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Tie_Defender</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Tie_Defender</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Tie_Defender</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Tie_Defender</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Tie_Defender</SFXEvent_Guard>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Asteroids_Tie_Defender</SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula>Unit_Nebula_Tie_Defender</SFXEvent_Move_Into_Nebula>
+
+		<SFXEvent_Attack_Hardpoint>HARD_POINT_WEAPON_LASER,			Unit_HP_LASER_Tie_Defender</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint>HARD_POINT_WEAPON_MISSILE,		Unit_HP_MISSILE_Tie_Defender</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint>HARD_POINT_WEAPON_TORPEDO,		Unit_HP_TORP_Tie_Defender</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint>HARD_POINT_WEAPON_ION_CANNON,	Unit_HP_ION_Tie_Defender</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint>HARD_POINT_SHIELD_GENERATOR,		Unit_HP_SHIELDS_Tie_Defender</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint>HARD_POINT_ENGINE,				Unit_HP_ENGINES_Tie_Defender</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint>HARD_POINT_GRAVITY_WELL, </SFXEvent_Attack_Hardpoint>
+
+		<!-- Test: Each TIE will play a 3D ambient "flyby" sound every X to Y seconds. -->
+		<!-- Note: To invoke SFXEvent_Ambient, AMBIENT_SFX behavior needs to be added to the behavior list. -->
+		<SFXEvent_Ambient_Moving>Unit_TIE_Fighter_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>5</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>10</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_TIE_Fighter_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<CategoryMask>Fighter | AntiBomber | AntiCapital</CategoryMask>
+
+		<Property_Flags>SmallShip</Property_Flags>
+		<Victory_Relevant>Yes</Victory_Relevant>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Custom_Footprint_Radius>7.00</Custom_Footprint_Radius>
+		<MovementClass>Space</MovementClass>
+		<FormationOrder>1</FormationOrder>
+		<Out_Of_Combat_Defense_Adjustment>-1.00</Out_Of_Combat_Defense_Adjustment>
+		<Minimum_Follow_Distance>25.00</Minimum_Follow_Distance>
+		<Create_Team>Yes</Create_Team>
+		<AI_Combat_Power>80</AI_Combat_Power>
+		<Collision_Box_Modifier>2.00</Collision_Box_Modifier>
+		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+
+		<Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+		<Spin_Away_On_Death_Chance>0.20</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Time>2.00</Spin_Away_On_Death_Time>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space</Spin_Away_On_Death_Explosion>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_Tie_Fighter_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>True</Remove_Upon_Death>
+		
+		<Strafe_Distance>500.00</Strafe_Distance>
+		<Population_Value>0</Population_Value>	
+		<No_Colorization_Color>75, 75, 75, 255</No_Colorization_Color>
+
+		<!-- Non-hero unit abilities descriptions: -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary Ability. -->
+			<Unit_Ability>
+				<Type>ION_CANNON_SHOT</Type>
+				<GUI_Activated_Ability_Name>Tie_Defender_Ion_Cannon_Shot</GUI_Activated_Ability_Name> <!-- GUI Command Bar support. -->
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ion_Cannon_Tie_Defender</SFXEvent_GUI_Unit_Ability_Activated>
+				<Projectile_Types_Override>Proj_Ion_Cannon_Medium_Laser_Blue</Projectile_Types_Override>
+				<Recharge_Seconds>25.00</Recharge_Seconds>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+			<!-- Secondary Ability. -->
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 			0.40</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER, 	-25.00</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER, 	1.00</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 	0.20</Mod_Multiplier>
+				<Recharge_Seconds>50</Recharge_Seconds>
+				<Expiration_Seconds>6</Expiration_Seconds>
+
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Tie_Defender</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Ion_Cannon_Shot_Attack_Ability Name="Tie_Defender_Ion_Cannon_Shot">
+				<Activation_Style>User_Input</Activation_Style>
+
+				<!-- We only consider the following unit types "valid targets:" -->
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+			</Ion_Cannon_Shot_Attack_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+	<!-- MAIN - Team -->
+	<Squadron Name="TIE_Defender_Squadron">
+		<Text_ID>TEXT_TIE_DEFENDER_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_TIE_DEFENDER</Encyclopedia_Text>
+		<Encyclopedia_Good_Against>Calamari_Cruiser Krayt_Class_Destroyer</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>Corellian_Corvette Crusader_Gunship Buzz_Droids</Encyclopedia_Vulnerable_To>
+		<Icon_Name>I_Button_EV_TIE_Defender.tga</Icon_Name>
+
+		<GUI_Row>1</GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>Yes</Is_Bomber>
+		<Autoresolve_Health>400</Autoresolve_Health>
+		<Damage>50</Damage>
+		<Affiliation>Empire</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>650</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Tech_Level>5</Tech_Level>
+		<Required_Star_Base_Level>3</Required_Star_Base_Level>
+
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Squadron_Units>TIE_Defender, TIE_Defender, TIE_Defender</Squadron_Units>
+		<Squadron_Offsets>60.00, 0.00, 0.00</Squadron_Offsets>
+		<Squadron_Offsets>0.00, 40.00, 0.00</Squadron_Offsets>
+		<Squadron_Offsets>0.00, -40.00, 0.00</Squadron_Offsets>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Defender</SFXEvent_Build_Complete>
+
+		<FormationOrder>1</FormationOrder>
+		<Squadron_Formation_Error_Tolerance>35.00</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>1000.00</Guard_Chase_Range>
+		<Idle_Chase_Range>200.00</Idle_Chase_Range>
+		<Attack_Move_Response_Range>300.00</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>500.00</Autonomous_Move_Extension_Vs_Attacker>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Score_Cost_Credits>1000</Score_Cost_Credits>
+
+		<Create_Team_Type>TIE_Defender_Squadron_Container</Create_Team_Type>
+		<Max_Squad_Size>3</Max_Squad_Size>
+
+		<Tactical_Bribe_Cost>600</Tactical_Bribe_Cost>
+
+		<!-- MULTIPLAYER SKIRMISH VALUES START -->
+		<Tactical_Build_Cost_Multiplayer>850</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<!-- <Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player> -->
+		<!-- <Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player> -->
+
+		<Population_Value>1</Population_Value>
+
+		<!-- Non-hero unit abilities descriptions: -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary Ability. -->
+			<Unit_Ability>
+				<Type>ION_CANNON_SHOT</Type>
+				<GUI_Activated_Ability_Name>Tie_Defender_Ion_Cannon_Shot</GUI_Activated_Ability_Name> <!-- GUI Command Bar support. -->
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ion_Cannon_Tie_Defender</SFXEvent_GUI_Unit_Ability_Activated>
+				<Projectile_Types_Override>Proj_Ion_Cannon_Medium_Laser_Blue</Projectile_Types_Override>
+				<Recharge_Seconds>25.00</Recharge_Seconds>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+			<!-- Secondary Ability. -->
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 			0.40</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER, 	-25.00</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER, 	1.00</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 	0.20</Mod_Multiplier>
+				<Recharge_Seconds>50</Recharge_Seconds>
+				<Expiration_Seconds>6</Expiration_Seconds>
+
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Tie_Defender</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Ion_Cannon_Shot_Attack_Ability Name="Tie_Defender_Ion_Cannon_Shot">
+				<Activation_Style>User_Input</Activation_Style>
+
+				<!-- We only consider the following unit types "valid targets:" -->
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+			</Ion_Cannon_Shot_Attack_Ability>
+		</Abilities>
+	</Squadron>
+
+	<!-- MAIN - Container -->
+	<Container Name="TIE_Defender_Squadron_Container">
+		<Variant_Of_Existing_Type>Darth_Vader_TIE_Fighter_Container</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_TIE_DEFENDER_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_TIE_DEFENDER</Encyclopedia_Text>
+		<Encyclopedia_Good_Against>Calamari_Cruiser Krayt_Class_Destroyer</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>Corellian_Corvette Crusader_Gunship Buzz_Droids</Encyclopedia_Vulnerable_To>
+		<Icon_Name>I_Button_EV_TIE_Defender.tga</Icon_Name>
+		
+		<Behavior>TEAM, TEAM_LOCOMOTOR, SELECTABLE, TARGETING, UNIT_AI</Behavior>
+		<SpaceBehavior>REVEAL, ABILITY_COUNTDOWN</SpaceBehavior>
+			
+		<CategoryMask>Fighter | AntiBomber | AntiCapital</CategoryMask>
+		<Max_Speed>5.00</Max_Speed>
+		<Min_Speed>3.50</Min_Speed>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.50</Hyperspace_Speed>
+
+		<!-- Non-hero unit abilities descriptions: -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary Ability. -->
+			<Unit_Ability>
+				<Type>ION_CANNON_SHOT</Type>
+				<GUI_Activated_Ability_Name>Tie_Defender_Ion_Cannon_Shot</GUI_Activated_Ability_Name>	<!-- GUI Command Bar support. -->
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ion_Cannon_Tie_Defender</SFXEvent_GUI_Unit_Ability_Activated>
+				<Projectile_Types_Override>Proj_Ion_Cannon_Medium_Laser_Blue</Projectile_Types_Override>
+				<Recharge_Seconds>25.00</Recharge_Seconds>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+			<!-- Secondary Ability. -->
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 			0.40</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER, 	-25.00</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER, 	1.00</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 	0.20</Mod_Multiplier>
+				<Recharge_Seconds>50</Recharge_Seconds>
+				<Expiration_Seconds>6</Expiration_Seconds>
+
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Tie_Defender</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Ion_Cannon_Shot_Attack_Ability Name="Tie_Defender_Ion_Cannon_Shot">
+				<Activation_Style>User_Input</Activation_Style>
+
+				<!-- We only consider the following unit types "valid targets": -->
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+			</Ion_Cannon_Shot_Attack_Ability>
+		</Abilities>
+	</Container>
+</TIE_Defender_Files>

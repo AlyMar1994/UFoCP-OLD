@@ -18,6 +18,27 @@ Whenever the AI is edited, it's not labeled based on specific changed units with
 
 
 =========================================================================================
+v1.11
+=========================================================================================
+
+
+==================
+General
+==================
+-Reorganized most of the mod's files in various ways, including the creation of some new ones: Units_UFoCP_Hero_Empire_Fett.xml.
+
+
+==================
+Units (Land)
+==================
+-Master Force Adept – Fixed Force Adept at the end of the Underworld campaign's AI: a non-existant variable resulted NIL, so the Adept would attack any unit in sight. This has been fixed to only target Underworld player units.
+
+
+=========================================================================================
+
+
+
+=========================================================================================
 v1.10
 =========================================================================================
 

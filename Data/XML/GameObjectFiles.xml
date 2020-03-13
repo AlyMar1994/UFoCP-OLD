@@ -82,47 +82,40 @@
 
 
 
-
-
-
 	<!-- Expansion Units: Empire -->
+	<File>Units\Empire\Units_Hero_Empire_Thrawn.xml</File>
 
-	<File>Units_Hero_Empire_Thrawn.xml</File>
-
-	<File>Units_Space_Empire_TIE_Defender.xml</File>
+	<File>Units\Empire\Units_Space_Empire_TIE_Defender.xml</File>
 	<File>Units_Space_Empire_TIE_Interceptor.xml</File>
 	<File>Units_Space_Empire_TIE_Phantom.xml</File>
-	<!-- <File>Units_Space_Empire_Executor.xml</File> - DEPRECATED -->
-	<File>Units_UFoCP_Hero_Empire_Vader.xml</File> <!-- Adding this to fix Executor issues. -->
+	<File>Units\Empire\Units_UFoCP_Hero_Empire_Vader.xml</File> <!-- AM1994 (2/26/2020): Placing this here to fix buying issues. -->
 	
-	<File>Units_Land_Empire_DarkTroopers.xml</File>
-	<File>Units_Land_Empire_Lancet.xml</File>
+	<File>Units\Empire\Units_Land_Empire_DarkTroopers.xml</File>
+	<File>Units\Empire\Units_Land_Empire_Lancet.xml</File>
 	<File>Units_Land_Empire_Noghri.xml</File>
 	<File>Units_Land_Empire_Juggernaut.xml</File>
 
 
 
 	<!-- Expansion Units: Rebel -->
-	
-	<File>Units_Hero_Rebel_Yoda.xml</File>
-	<File>Units_Hero_Rebel_LukeSkywalker.xml</File>
+	<File>Units\Rebel\Units_Hero_Rebel_Yoda.xml</File>
+	<File>Units\Rebel\Units_Hero_Rebel_LukeSkywalker.xml</File>
 	<File>Units_Hero_Rebel_Gargantuan.xml</File>
-	<File>Units_Hero_Rebel_Rogue_Squadron.xml</File>
+	<File>Units\Rebel\Units_Hero_Rebel_Rogue_Squadron.xml</File>
 
 	<File>Units_Land_Rebel_Gallofree_HTT.xml</File>
 
-	<File>Units_Space_Rebel_BWing.xml</File>	
+	<File>Units\Rebel\Units_Space_Rebel_BWing.xml</File>	
 	<File>Units_Space_Rebel_MC30_Frigate.xml</File>
 
 
 
 	<!-- Expansion Units: Underworld -->
-
-	<File>Units_Hero_Underworld_IG88.xml</File>
-	<File>Units_Hero_Underworld_Bossk.xml</File>
-	<File>Units_Hero_Underworld_Tyber_Zann.xml</File>
+	<File>Units\Underworld\Units_Hero_Underworld_IG88.xml</File>
+	<File>Units\Underworld\Units_Hero_Underworld_Bossk.xml</File>
+	<File>Units\Underworld\Units_Hero_Underworld_Tyber_Zann.xml</File>
 	<File>Units_Hero_Underworld_Silri.xml</File>
-	<File>Units_Hero_Underworld_Urai_Fen.xml</File>
+	<File>Units\Underworld\Units_Hero_Underworld_Urai_Fen.xml</File>
 
 	<File>Units_Land_Underworld_MercenaryInf.xml</File>
 	<File>Units_Land_Underworld_DisruptorInf.xml</File>
@@ -131,13 +124,13 @@
 	<File>Units_Land_Underworld_F9TZ_Transport.xml</File>
 	<File>Units_Land_Underworld_MAL.xml</File>
 	<File>Units_Land_Underworld_PulseTank.xml</File>
-	<File>Units_Land_Underworld_Canderous_Tank.xml</File>
+	<File>Units\Underworld\Units_Land_Underworld_Canderous_Tank.xml</File>
 	<File>Units_Land_Underworld_ScavengerDroids.xml</File>
 	<File>Units_Land_Underworld_NightSister.xml</File>
 	<File>Units_Land_Underworld_Ewok_Bomber.xml</File>
 
 	<File>Units_Space_Underworld_StarViper.xml</File>
-	<File>Units_Space_Underworld_Skipray.xml</File>
+	<File>Units\Underworld\Units_Space_Underworld_Skipray.xml</File>
 	<File>Units_Space_Underworld_Crusader_Gunship.xml</File>
 	<File>Units_Space_Underworld_Interceptor4.xml</File>
 	<File>Units_Space_Underworld_Vengeance.xml</File>	
@@ -151,14 +144,13 @@
 
 
 	<!-- Expansion Units: Neutral -->
-
-	<File>Units_Space_Neutral_Eclipse.xml</File>
+	<File>Units\Units_Space_Neutral_Eclipse.xml</File>
 	<File>Hutt_Faction_Units.xml</File>
 	<File>GroundBuildablesHutts.xml</File>
 
 
-	<!-- Expansion General Files -->
 
+	<!-- Expansion General Files -->
 	<File>SpaceProps_Underworld.xml</File>
 	<File>Underworld_TransportUnits.xml</File>
 	<File>Minor_Heroes_Expansion.xml</File>
@@ -171,6 +163,8 @@
 	<File>Corruption_Special_Units.XML</File>
 
 
+
 	<!-- UFoCP Object Files -->
-	<File>Units_UFoCP_Hero_Rebel_Droids.xml</File>
+	<File>Units\Rebel\Units_UFoCP_Hero_Rebel_Droids.xml</File>
+	<File>Units\Empire\Units_UFoCP_Hero_Empire_Fett.xml</File>
 </Game_Object_Files>
