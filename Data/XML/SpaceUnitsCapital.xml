@@ -4,7 +4,7 @@
 	<!-- Calamari Cruiser -->
 	<SpaceUnit Name="Calamari_Cruiser">
 		<Text_ID>TEXT_UNIT_CALAMARI_CRUISER</Text_ID>
-		<Encyclopedia_Text>TEXT_TOOLTIP_MON_CALAMARI_CRUISER TEXT_TOOLTIP_REQUIRED_PLANETS_CAPITAL_SHIPS</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_TOOLTIP_MON_CALAMARI_CRUISER TEXT_TOOLTIP_REQUIRED_PLANETS_CAPITAL_SHIPS_01</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPITAL</Encyclopedia_Unit_Class>
 		<Encyclopedia_Good_Against>Victory_Destroyer Acclamator_Assault_Ship Interceptor4_Frigate</Encyclopedia_Good_Against>
 		<Encyclopedia_Vulnerable_To>TIE_Bomber Skipray_Blastboat</Encyclopedia_Vulnerable_To>
@@ -210,7 +210,7 @@
 	<!-- Star Destroyer -->
 	<SpaceUnit Name="Generic_Star_Destroyer">
 		<Text_ID>TEXT_UNIT_STAR_DESTROYER</Text_ID>
-		<Encyclopedia_Text>TEXT_TOOLTIP_STAR_DESTROYER_01 TEXT_TOOLTIP_REQUIRED_PLANETS_CAPITAL_SHIPS</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_TOOLTIP_STAR_DESTROYER_01 TEXT_TOOLTIP_REQUIRED_PLANETS_CAPITAL_SHIPS_01</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPITAL</Encyclopedia_Unit_Class>
 		<Encyclopedia_Good_Against>Corellian_Corvette Interceptor4_Frigate Nebulon_B_Frigate</Encyclopedia_Good_Against>
 		<Encyclopedia_Vulnerable_To>Y-wing Skipray_Blastboat MC30_Frigate</Encyclopedia_Vulnerable_To>

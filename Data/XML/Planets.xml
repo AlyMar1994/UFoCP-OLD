@@ -2218,7 +2218,7 @@
 		<Planet_Ability_Name>TEXT_PLANET_FONDOR_INFO_ADV_01</Planet_Ability_Name>
 		<Planet_Ability_Description>TEXT_PLANET_FONDOR_ENCYC_01</Planet_Ability_Description>
 
-		<Encyclopedia_Text>TEXT_PLANET_FONDOR_ENCYC_01 TEXT_PLANET_CAPITAL_SHIP_PRODUCER</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_PLANET_FONDOR_ENCYC_01 TEXT_PLANET_CAPITAL_SHIP_PRODUCER_01</Encyclopedia_Text>
 		<Encyclopedia_Weather_Icon>i_pa_weather_wind.tga</Encyclopedia_Weather_Icon>
 		<Encyclopedia_Weather_Name>TEXT_WEATHER_NAME_SAND</Encyclopedia_Weather_Name>
 		<Encyclopedia_Weather_Info>TEXT_TACTICAL_WEATHER_OBJECTIVE_WIND</Encyclopedia_Weather_Info>
@@ -2765,7 +2765,7 @@
 		<Planet_Ability_Name>TEXT_PLANET_HYPORI_INFO_ADV</Planet_Ability_Name>
 		<Planet_Ability_Description>TEXT_PLANET_HYPORI_ENCYC</Planet_Ability_Description>
 
-		<Encyclopedia_Text>TEXT_PLANET_HYPORI_ENCYC TEXT_PLANET_CAPITAL_SHIP_PRODUCER</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_PLANET_HYPORI_ENCYC TEXT_PLANET_CAPITAL_SHIP_PRODUCER_01</Encyclopedia_Text>
 		<Encyclopedia_Weather_Icon>i_pa_weather_rain.tga</Encyclopedia_Weather_Icon>
 		<Encyclopedia_Weather_Name>TEXT_WEATHER_NAME_RAIN</Encyclopedia_Weather_Name>
 		<Encyclopedia_Weather_Info>TEXT_TACTICAL_WEATHER_OBJECTIVE_RAIN</Encyclopedia_Weather_Info>
@@ -3489,7 +3489,7 @@
 		<Planet_Ability_Name>TEXT_PLANET_KUAT_INFO_ADV_01</Planet_Ability_Name>
 		<Planet_Ability_Description>TEXT_PLANET_KUAT_ENCYC_01</Planet_Ability_Description>
 
-		<Encyclopedia_Text>TEXT_PLANET_KUAT_ENCYC_01 TEXT_PLANET_CAPITAL_SHIP_PRODUCER</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_PLANET_KUAT_ENCYC_01 TEXT_PLANET_CAPITAL_SHIP_PRODUCER_01</Encyclopedia_Text>
 		<Encyclopedia_Weather_Icon>i_pa_weather_rain.tga</Encyclopedia_Weather_Icon>
 		<Encyclopedia_Weather_Name>TEXT_WEATHER_NAME_RAIN</Encyclopedia_Weather_Name>
 		<Encyclopedia_Weather_Info>TEXT_TACTICAL_WEATHER_OBJECTIVE_RAIN</Encyclopedia_Weather_Info>
@@ -3657,7 +3657,7 @@
 		<Planet_Ability_Name>TEXT_PLANET_MANDALORE_INFO_ADV</Planet_Ability_Name>
 		<Planet_Ability_Description>TEXT_PLANET_MANDALORE_ENCYC</Planet_Ability_Description>
 
-		<Encyclopedia_Text>TEXT_PLANET_MANDALORE_ENCYC TEXT_PLANET_CAPITAL_SHIP_PRODUCER</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_PLANET_MANDALORE_ENCYC TEXT_PLANET_CAPITAL_SHIP_PRODUCER_01</Encyclopedia_Text>
 		<Encyclopedia_Weather_Icon>i_pa_weather_rain.tga</Encyclopedia_Weather_Icon>
 		<Encyclopedia_Weather_Name>TEXT_WEATHER_NAME_RAIN</Encyclopedia_Weather_Name>
 		<Encyclopedia_Weather_Info>TEXT_TACTICAL_WEATHER_OBJECTIVE_RAIN</Encyclopedia_Weather_Info>
@@ -3754,7 +3754,7 @@
 		<Planet_Ability_Name>TEXT_PLANET_MANDALORE_INFO_ADV</Planet_Ability_Name>
 		<Planet_Ability_Description>TEXT_PLANET_MANDALORE_ENCYC</Planet_Ability_Description>
 
-		<Encyclopedia_Text>TEXT_PLANET_MANDALORE_ENCYC TEXT_PLANET_CAPITAL_SHIP_PRODUCER</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_PLANET_MANDALORE_ENCYC TEXT_PLANET_CAPITAL_SHIP_PRODUCER_01</Encyclopedia_Text>
 		<Encyclopedia_Weather_Icon>i_pa_weather_rain.tga</Encyclopedia_Weather_Icon>
 		<Encyclopedia_Weather_Name>TEXT_WEATHER_NAME_RAIN</Encyclopedia_Weather_Name>
 		<Encyclopedia_Weather_Info>TEXT_TACTICAL_WEATHER_OBJECTIVE_RAIN</Encyclopedia_Weather_Info>
@@ -3847,7 +3847,7 @@
 		<Planet_Ability_Name>TEXT_PLANET_MANDALORE_INFO_ADV</Planet_Ability_Name>
 		<Planet_Ability_Description>TEXT_PLANET_MANDALORE_ENCYC</Planet_Ability_Description>
 
-		<Encyclopedia_Text>TEXT_PLANET_MANDALORE_ENCYC TEXT_PLANET_CAPITAL_SHIP_PRODUCER</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_PLANET_MANDALORE_ENCYC TEXT_PLANET_CAPITAL_SHIP_PRODUCER_01</Encyclopedia_Text>
 		<Encyclopedia_Weather_Icon>i_pa_weather_rain.tga</Encyclopedia_Weather_Icon>
 		<Encyclopedia_Weather_Name>TEXT_WEATHER_NAME_RAIN</Encyclopedia_Weather_Name>
 		<Encyclopedia_Weather_Info>TEXT_TACTICAL_WEATHER_OBJECTIVE_RAIN</Encyclopedia_Weather_Info>
@@ -3942,7 +3942,7 @@
 		<Planet_Ability_Name>TEXT_PLANET_MONCALAMARI_INFO_ADV_01</Planet_Ability_Name>
 		<Planet_Ability_Description>TEXT_PLANET_MONCALAMARI_ENCYC_01</Planet_Ability_Description>
 
-		<Encyclopedia_Text>TEXT_PLANET_MONCALAMARI_ENCYC_01 TEXT_PLANET_CAPITAL_SHIP_PRODUCER</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_PLANET_MONCALAMARI_ENCYC_01 TEXT_PLANET_CAPITAL_SHIP_PRODUCER_01</Encyclopedia_Text>
 		<Encyclopedia_Weather_Icon>i_pa_weather_rain.tga</Encyclopedia_Weather_Icon>
 		<Encyclopedia_Weather_Name>TEXT_WEATHER_NAME_RAIN</Encyclopedia_Weather_Name>
 		<Encyclopedia_Weather_Info>TEXT_TACTICAL_WEATHER_OBJECTIVE_RAIN</Encyclopedia_Weather_Info>
@@ -5165,7 +5165,7 @@
 		<Planet_Ability_Name>TEXT_PLANET_SULLUST_INFO_ADV_01</Planet_Ability_Name>
 		<Planet_Ability_Description>TEXT_PLANET_SULLUST_ENCYC_01</Planet_Ability_Description>
 
-		<Encyclopedia_Text>TEXT_PLANET_SULLUST_ENCYC_01 TEXT_PLANET_CAPITAL_SHIP_PRODUCER</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_PLANET_SULLUST_ENCYC_01 TEXT_PLANET_CAPITAL_SHIP_PRODUCER_01</Encyclopedia_Text>
 		<Encyclopedia_Weather_Icon>i_pa_weather_fire.tga</Encyclopedia_Weather_Icon>
 		<Encyclopedia_Weather_Name>TEXT_WEATHER_NAME_ASH</Encyclopedia_Weather_Name>
 		<Encyclopedia_Weather_Info>TEXT_TACTICAL_WEATHER_OBJECTIVE_ASH</Encyclopedia_Weather_Info>

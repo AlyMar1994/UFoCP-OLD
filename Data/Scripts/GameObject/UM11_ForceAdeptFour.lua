@@ -4,14 +4,14 @@
 -- ORIGINAL AUTHOR (Petroglyph): James Yarrow
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 3/13/2020, 11:47 AM
+-- LAST REVISION DATE: 3/13/2020, 3:46 PM
 -- ======================================================================
 require("PGStateMachine")
 
 function Definitions()
 	-- Object isn't valid at this point so don't do any operations that
-	-- would require it. State_Init is the first chance you have to do
-	-- operations on Object.
+	-- would require it.
+	-- State_Init is the first chance you have to do operations on Object.
 
 	DebugMessage("%s -- In Definitions", tostring(Script))
 	Define_State("State_Init", State_Init);
@@ -19,6 +19,9 @@ end
 
 function State_Init(message)
 	if message == OnEnter then
+		-- Initialized variables.
+		-- Teleport hints for the Master Force Adept (ultimate boss of UM11).
+		-- VAR = Find_Hint("TRIGGER_TYPE", "EDITOR-NAME")
 		warp1 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w1")
 		warp2 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w2")
 		warp3 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w3")
@@ -26,26 +29,24 @@ function State_Init(message)
 		warp5 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w5")
 		warp6 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w6")
 
-		-- AM1994 (3/13/2020): Adding variable "underworld_player" to search for
-		-- Underworld players so a once-broken <Find_Nearest> can be fixed at the bottom.
-		underworld_player = Find_Player("Underworld")
+		underworld_player = Find_Player("Underworld") -- AM1994 (3/13/2020): Adding variable to prevent calling the same faction twice later on.
 
 
-		-- Register a prox event that looks for any nearby units.
-		Register_Prox(Object, Unit_Prox, 100, underworld_player)
+		Register_Prox(Object, Unit_Prox, 100, underworld_player) -- Create a proximity event to search for Underworld player units (Urai, Tyber, Silri, Cuddles & MDUs).
 
 		closerange = false
+
 		Create_Thread("AdeptFour_AI")
 
 	elseif message == OnUpdate then
-		-- Do nothing
+		-- Do nothing.
 	elseif message == OnExit then
-		-- Do nothing
+		-- Do nothing.
 	end
 end
 
 function Unit_Prox(self_obj, trigger_obj)
-	DebugMessage("-- %s -- %s",tostring(Object.Get_Type()),tostring(Object.Get_Owner()))
+	DebugMessage("-- %s -- %s", tostring(Object.Get_Type()), tostring(Object.Get_Owner()))
 
 	if not trigger_obj then
 		DebugMessage("WARNING: prox received a nil trigger_obj.")
@@ -59,13 +60,13 @@ function AdeptFour_AI()
 
 	while TestValid(Object) do
 		noteleports = false
-
 		cage = Find_Nearest(Object,"Underworld_Ysalamiri_Cage")
+
 		if TestValid(cage) then
 			dist = Object.Get_Distance(cage)
 			if dist < 200 then
 				noteleports = true
-				Object.Override_Max_Speed(.100)
+				Object.Override_Max_Speed(.10)
 				Object.Attach_Particle_Effect("STUNNED_OBJECT")
 				Object.Set_Cannot_Be_Killed(false)
 			end

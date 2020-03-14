@@ -1845,8 +1845,8 @@
 		<Is_Force_Sensitive>Yes</Is_Force_Sensitive>
 		<Victory_Relevant>Yes</Victory_Relevant>
 		<Text_ID>TEXT_UNIT_DARKSIDE_ADEPT</Text_ID>
-		<Encyclopedia_Text> TEXT_TOOLTIP_DARKSIDE_ADEPT </Encyclopedia_Text>
-		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DARKSIDE_ADEPT </Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_TOOLTIP_DARKSIDE_ADEPT TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DARKSIDE_ADEPT</Encyclopedia_Unit_Class>
 
 		<Land_Model_Name>NI_DarkSideAdepts.alo</Land_Model_Name>
 		<Icon_Name>I_Button_Sith.tga</Icon_Name>
@@ -2062,7 +2062,7 @@
 		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
 	</Props_Story>
 
-<!-- jdg : um06 props..., Governor's_Quarters, Guard_Tower -->
+	<!-- jdg : um06 props..., Governor's_Quarters, Guard_Tower -->
 
 	<Props_Story Name="UM06_Governors_Quarters">
 		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
@@ -2159,7 +2159,7 @@
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 	</Props_Story>
-	
+
 	<Props_Story Name="Prop_Silri_Prison">
 		<Text_ID>TEXT_NONE</Text_ID>
 		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
@@ -2257,7 +2257,7 @@
 		<Tech_Level>9</Tech_Level>
 	</Props_Story>
 	
-<!-- jdg : um07 props..., cloud car flyover -->
+	<!-- jdg : um07 props..., cloud car flyover -->
 	<Props_Story Name="UM07_Cloud_City_Flyover">
 		<Variant_Of_Existing_Type>Shuttle_Tyderium</Variant_Of_Existing_Type>
 		<LandBehavior>REVEAL</LandBehavior>
@@ -2767,7 +2767,7 @@
 			HP_Empire_Station_One_Supply_Dock_Dummy
 		</HardPoints>
 
-<!-- Comm array and supply dock should be replaced by dummy hard points -->
+	<!-- Comm array and supply dock should be replaced by dummy hard points -->
 
 		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
@@ -3026,7 +3026,7 @@
 		<Overall_Width>5.0</Overall_Width> 		<!-- For vehicle rolling left and right on terrain (30 by geometry)-->
 	</Props_Story>
 	
-<!--  Corruption Objective Props -->
+	<!--  Corruption Objective Props -->
 	
 	<Props_Story Name="Govenor_Koong_Empire">
 		<Variant_Of_Existing_Type>Desert_Civilian_A</Variant_Of_Existing_Type>

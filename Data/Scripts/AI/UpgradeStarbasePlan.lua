@@ -4,7 +4,7 @@
 -- ORIGINAL AUTHOR (Petroglyph): James Yarrow
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 1/3/2020,  2:15 AM
+-- LAST REVISION DATE: 3/14/2020, 11:15 AM
 -- ======================================================================
 require("pgevents")
 
@@ -38,6 +38,6 @@ function BaseForce_Thread()
 end
 
 function BaseForce_Production_Failed(tf, failed_object_type)
-	DebugMessage("%s -- Abandonning plan owing to production failure.", tostring(Script))
+	DebugMessage("%s -- Abandoning plan owing to production failure.", tostring(Script))
 	ScriptExit()
 end

@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<Kedalbe_Battleship_Data>
+	<!-- MAIN: SPACE UNIT -->
+	<SpaceUnit Name="Kedalbe_Battleship">
+		<Text_ID>TEXT_UNIT_KEDALBE_BATTLESHIP</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_KEDALBE_BATTLESHIP TEXT_TOOLTIP_REQUIRED_PLANETS_CAPITAL_SHIPS_01</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPITAL</Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against>Victory_Destroyer Alliance_Assault_Frigate</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>TIE_Defender B-Wing</Encyclopedia_Vulnerable_To>
+		<Icon_Name>I_Button_Keldabe.tga</Icon_Name>
+
+		<GUI_Row>1</GUI_Row>
+		<Space_Model_Name>UV_KedalbeBattleship.alo</Space_Model_Name>
+		<Select_Box_Scale>890</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Mass>0.995</Mass>
+		<Scale_Factor>1.00</Scale_Factor>
+		<Size_Value>360</Size_Value>
+		<No_Colorization_Color>255, 255, 255, 255</No_Colorization_Color>
+
+		<Max_Speed>1.80</Max_Speed>
+		<Max_Rate_Of_Turn>0.40</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>0.20</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>25</Bank_Turn_Angle>	
+		<Max_Thrust>0.20</Max_Thrust>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Maintenance_Cost>0.30</Maintenance_Cost>
+		<MovementClass>Space</MovementClass>
+		<Space_Layer>Capital</Space_Layer>
+		<Ship_Class>Capital</Ship_Class>
+		<Layer_Z_Adjust>-290.00</Layer_Z_Adjust>
+		<OverrideAcceleration>.02</OverrideAcceleration>
+		<OverrideDeceleration>.02</OverrideDeceleration>
+
+		<Affiliation>Underworld</Affiliation>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>5</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets>MonCalimari, Kuat, Fondor, Sullust, Hypori, Mandalore</Required_Planets>
+		<Build_Cost_Credits>6000</Build_Cost_Credits>
+		<Build_Time_Seconds>75</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+
+		<Cheap_Bribe_Cost>200</Cheap_Bribe_Cost>
+		<Expensive_Bribe_Cost>400</Expensive_Bribe_Cost>
+		<Tactical_Bribe_Cost>3200</Tactical_Bribe_Cost>
+
+		<Armor_Type>Armor_Star_Destroyer</Armor_Type>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+		<Autoresolve_Health>7500</Autoresolve_Health>
+		<Tactical_Health>7500</Tactical_Health>
+		<Shield_Points>2200</Shield_Points>
+		<Shield_Refresh_Rate>45</Shield_Refresh_Rate>
+		<Energy_Capacity>99999</Energy_Capacity>
+		<Energy_Refresh_Rate>800</Energy_Refresh_Rate>
+		<Damage>60</Damage>
+		<AI_Combat_Power>4250</AI_Combat_Power>
+		<Formation_Priority>5</Formation_Priority>
+		<Squadron_Capacity>40</Squadron_Capacity>
+
+		<Behavior>SELECTABLE, DUMMY_STARSHIP</Behavior>
+		<SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, TARGETING, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
+		<Death_Clone>Damage_Normal, Kedalbe_Battleship_Death_Clone</Death_Clone>
+
+		<Space_FOW_Reveal_Range>1200.00</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>2000.00</Targeting_Max_Attack_Distance>
+		<Dense_FOW_Reveal_Range_Multiplier>0.24</Dense_FOW_Reveal_Range_Multiplier>
+
+		<HardPoints>
+			HP_KEDALBE_LEFT_TURBO_00,
+			HP_KEDALBE_LEFT_TURBO_01,
+			HP_KEDALBE_RIGHT_TURBO_00,
+			HP_KEDALBE_RIGHT_TURBO_01,
+			HP_KEDALBE_LEFT_ION_00,
+			HP_KEDALBE_RIGHT_ION_00,
+			HP_KEDALBE_MASS_DRIVER_FRONT,
+			HP_KEDALBE_MASS_DRIVER_BACK,
+			HP_KEDALBE_SHIELD_LEECH_00,
+			HP_KEDALBE_ENGINES_00,
+			HP_KEDALBE_ENGINES_01
+		</HardPoints>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Kadalbe</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Calamari_Moving_Engine_Loop</SFXEvent_Ambient_Loop>
+
+		<SFXEvent_Select>Unit_Select_Kadalbe</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Kadalbe</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Kadalbe</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Kadalbe</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Kadalbe</SFXEvent_Guard>
+		<SFXEvent_Barrage>Unit_Barrage_Kadalbe</SFXEvent_Barrage>
+		<SFXEvent_Move_Into_Nebula>Unit_Nebula_Kadalbe</SFXEvent_Move_Into_Nebula>
+
+		<SFXEvent_Attack_Hardpoint>HARD_POINT_WEAPON_LASER,			Unit_HP_LASER_Kadalbe</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint>HARD_POINT_WEAPON_MISSILE,		Unit_HP_MISSILE_Kadalbe</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint>HARD_POINT_WEAPON_TORPEDO,		Unit_HP_TORP_Kadalbe</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint>HARD_POINT_WEAPON_ION_CANNON,	Unit_HP_ION_Kadalbe</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint>HARD_POINT_SHIELD_GENERATOR,		Unit_HP_SHIELDS_Kadalbe</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint>HARD_POINT_ENGINE,				Unit_HP_ENGINES_Kadalbe</SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_WEAPON_LASER,		Unit_Lost_Laser_Kadalbe </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_WEAPON_MISSILE,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_WEAPON_TORPEDO,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_WEAPON_ION_CANNON, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_SHIELD_GENERATOR,	Unit_Lost_Shields_Kadalbe </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_ENGINE,			Unit_Lost_Engines_Kadalbe </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_GRAVITY_WELL, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_FIGHTER_BAY, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_TRACTOR_BEAM, </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Calamari_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Calamari_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Calamari_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Death_SFXEvent_Start_Die>Unit_Calamari_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<CategoryMask>Capital | AntiFrigate</CategoryMask>
+		<Space_Full_Stop_Command>Yes</Space_Full_Stop_Command>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>1.00</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>1.00</Radar_Icon_Scale_Space>
+		<Radar_Icon_Name>I_Radar_Capital_Ship.tga</Radar_Icon_Name>
+		<Guard_Chase_Range>1000.00</Guard_Chase_Range>
+		<Idle_Chase_Range>0.00</Idle_Chase_Range>
+		<Attack_Move_Response_Range>400.00</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.00</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>Capital</Targeting_Priority_Set>
+		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Ranking_In_Category>5</Ranking_In_Category>
+		<Score_Cost_Credits>42500</Score_Cost_Credits>
+		<Population_Value>4</Population_Value>
+		<Victory_Relevant>Yes</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<!-- Non-hero unit abilities description: -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary Ability: -->
+			<Unit_Ability>
+				<Type>LEECH_SHIELDS</Type>
+				<Recharge_Seconds>55.00</Recharge_Seconds>
+				<GUI_Activated_Ability_Name>Kadalbe_Leech_Shields</GUI_Activated_Ability_Name> <!-- GUI Command Bar support. -->
+				<Effective_Radius>500.00</Effective_Radius>
+
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Leech_Sheilds_Kadalbe</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_Target_Ability>Unit_Leech_Sheilds_Kadalbe</SFXEvent_Target_Ability>
+				<SFXEvent_Special_Ability_Loop>Unit_Star_Destroyer_Tractor_Beam</SFXEvent_Special_Ability_Loop>
+
+				<Must_Be_Bought_On_Black_Market>Yes</Must_Be_Bought_On_Black_Market>
+ 				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+				<Leech_Shields_Ability Name="Kadalbe_Leech_Shields">
+				<Activation_Style>User_Input</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Applicable_Unit_Types>Millennium_Falcon</Applicable_Unit_Types>
+				<Activation_Min_Range>10</Activation_Min_Range>
+				<Activation_Max_Range>2000</Activation_Max_Range>
+				<Duration_In_Secs>25.00</Duration_In_Secs>
+				<Shield_Damage_Per_Second>100.00</Shield_Damage_Per_Second>
+				<Damage_Multiplier>3.00</Damage_Multiplier>
+				<Beam_Color>34, 34, 235, 255</Beam_Color>
+				<Beam_Bone_Name>HP_SHL_00_BONE</Beam_Bone_Name>
+				<Beam_Frames>10</Beam_Frames>
+				<Beam_Width>40.00</Beam_Width>
+				<Beam_Texture_Name>tractor_beam00.tga</Beam_Texture_Name>
+				<Beam_Effect_Name>Leech_Shields</Beam_Effect_Name>
+				<Must_Be_Bought_On_Black_Market>Yes</Must_Be_Bought_On_Black_Market>
+				<Leech_Effect>Leech_Effect</Leech_Effect>
+			</Leech_Shields_Ability>
+		</Abilities>
+
+		<Abilities SubObjectList="Yes">
+			<Redirect_Blaster_Ability Name="US_Magnetically_Sealed_Armor_Bonus_L3">
+				<Initially_Enabled> No </Initially_Enabled> <!-- Must be enabled via the EL_Heavy_Reflective_Armor_L2_Upgrade. -->
+				<Activation_Style>Take_Damage</Activation_Style>
+
+				<!-- Redirection chance is rolled first. If failed, we roll block chance. If failed, we take the damage. -->
+				<Redirect_Chance>0.00</Redirect_Chance>
+				<Block_Chance>0.30</Block_Chance>
+				<Reaction_Arc_In_Degrees>360.00</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees>30.00</Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+
+				<!-- We can block/redirect shots from the following units types: -->
+				<Applicable_Unit_Categories>Fighter | Bomber | Corvette | Frigate | Capital | Structure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+		</Abilities>
+
+		<!-- MULTIPLAYER SKIRMISH VALUES START: -->
+		<Tactical_Build_Cost_Multiplayer>5300</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>28</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Kedalbe_Battleship_Death_Clone">
+		<Text_ID>TEXT_UNIT_KEDALBE_BATTLESHIP</Text_ID>
+		<Space_Model_Name>UV_KedalbeBattleship_D.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Calamari_Death_SFX</Death_SFXEvent_Start_Die>
+		<Scale_Factor>1.00</Scale_Factor>
+		<Layer_Z_Adjust>-290.00</Layer_Z_Adjust>
+		<Max_Speed>0.25</Max_Speed>
+		<Max_Rate_Of_Turn>0.40</Max_Rate_Of_Turn>
+		<Max_Thrust>0.05</Max_Thrust>
+		<Max_Rate_Of_Roll>0.02</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>5</Bank_Turn_Angle>
+		<Affiliation>Underworld</Affiliation>
+		<Ship_Class>Capital</Ship_Class>
+		<Remove_Upon_Death>True</Remove_Upon_Death>
+	</SpaceUnit>
+</Kedalbe_Battleship_Data>

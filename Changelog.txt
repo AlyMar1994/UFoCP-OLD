@@ -20,6 +20,7 @@ Whenever the AI is edited, it's not labeled based on specific changed units with
 =========================================================================================
 v1.11
 =========================================================================================
+There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT Changelog.txt" in the game directory to see!
 
 
 ==================
@@ -31,7 +32,16 @@ General
 ==================
 Units (Land)
 ==================
+-Force Adept – Fixed all Force Adepts not using the "capture buildpads" text in their tooltips, when they obviously can.
+
 -Master Force Adept – Fixed Force Adept at the end of the Underworld campaign's AI: a non-existant variable resulted NIL, so the Adept would attack any unit in sight. This has been fixed to only target Underworld player units.
+
+
+==================
+Units (Land)
+==================
+-Kedalbe-class Battleship – Fixed description not mentioning the six planets the Kedalbe can be built on.
+-Kedalbe-class Battleship – Fixed death clone's ship class being "capital_ship" when it should've been "Capital."
 
 
 =========================================================================================
@@ -53,7 +63,6 @@ General
 Units (Galactic)
 ==================
 -Darth Vader – Fixed Vader not being buildable in GC, due to various issues with the new files. The Executor's unit info has now been merged into Darth Vader's file (as it is Vader's FoC ship only), and its position in the GameObjects file has been shifted so Vader now appears in the GC build queue.
-** Vader also suffers from another bug: he no longer is affected by discounts. This will be left for now, but will eventually be corrected.
 
 
 =========================================================================================

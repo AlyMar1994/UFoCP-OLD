@@ -4,7 +4,7 @@
 -- ORIGINAL AUTHOR (Petroglyph): Steve Copeland
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 7/18/19, 6:50 AM
+-- LAST REVISION DATE: 3/13/2020, 3:48 PM
 -- ======================================================================
 require("HeroPlanAttach")
 
@@ -47,4 +47,5 @@ function Get_Escort_Ability_Weights(goal)
 end
 
 function HeroService()
+	-- Do nothing.
 end

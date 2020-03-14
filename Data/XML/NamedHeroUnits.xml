@@ -703,7 +703,7 @@
 
 	<HeroUnit Name="Obi_Wan_Kenobi">
 		<Text_ID>TEXT_HERO_OBI_WAN</Text_ID>
-		<Encyclopedia_Text>TEXT_TOOLTIP_OBI_WAN_01 TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_TOOLTIP_OBI_WAN TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_JEDI_MASTER</Encyclopedia_Unit_Class>
 		<Land_Model_Name>RI_OBIWAN.ALO</Land_Model_Name>
 		<Icon_Name>I_Button_Obi_Wan_Kenobi.tga</Icon_Name>

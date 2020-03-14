@@ -4,7 +4,7 @@
 -- ORIGINAL AUTHOR (Petroglyph): Steve Copeland
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 12/30/19, 2:05 AM
+-- LAST REVISION DATE: 3/13/2020, 3:48 PM
 -- ======================================================================
 -- Self Attachment plan is currently unused; the Death Star has a plan that names it in the task force.
 require("HeroPlanAttach")
@@ -48,4 +48,5 @@ function Get_Escort_Ability_Weights(goal)
 end
 
 function HeroService()
+	-- Do nothing.
 end

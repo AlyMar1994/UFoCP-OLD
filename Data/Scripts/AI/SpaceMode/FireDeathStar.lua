@@ -4,7 +4,7 @@
 -- ORIGINAL AUTHOR (Petroglyph): Steve Copeland
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 1/3/2020, 2:17 AM
+-- LAST REVISION DATE: 3/14/2020, 11:12 AM
 -- ======================================================================
 require("pgevents")
 
@@ -27,6 +27,7 @@ end
 function MainForce_Thread()
 	BlockOnCommand(MainForce.Produce_Force())
 
+	-- ds = Find_First_Object("Death_Star")
 	ds = Find_First_Object("Death_Star_II")
 	while not TestValid(ds) do
 		-- Tactical Superweapon(s) aren't present, hang this plan indefinately!

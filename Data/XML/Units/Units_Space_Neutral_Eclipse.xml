@@ -1,8 +1,6 @@
 <?xml version="1.0"?>
 <Eclipse_Files>
 	<!-- The Eclipse is the goal of the story campaign. -->
-	<!-- Woe be to any who seek to add this to the galactic -->
-	<!-- conquest game, for there shall be unbalance! -->
 
 	<!-- MAIN: SPACE UNIT -->
 	<UniqueUnit Name="Eclipse_Super_Star_Destroyer">
@@ -97,7 +95,6 @@
 
 		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
 
-		<!--<Death_Explosions>Large_Explosion_Space_Empire</Death_Explosions>-->
 		<Death_Clone>Damage_Normal, Eclipse_Super_Star_Destroyer_Death_Clone</Death_Clone>
 		<Space_FOW_Reveal_Range>15000.00</Space_FOW_Reveal_Range>
 		<Targeting_Max_Attack_Distance>2200.00</Targeting_Max_Attack_Distance>

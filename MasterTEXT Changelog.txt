@@ -2,13 +2,31 @@
 *English-only text fixes, no localizers as-of-yet.
 ----
 
-Fixes are marked with a hyphen (-), and written in this format: "-[DIALOG NAME]: 'Orig.' --> 'Fixed.'"
+Fixes are marked with a hyphen (-), and written in this format: "-[DIALOG NAME]: 'Orig.' --> 'Fix.'"
 
 THESE EDITS FOLLOW THE STANDARDS OF AMERICAN ENGLISH! Double-spacing where applicable is only fixed when generally inconsistient, wrong for the scenario or is totally broken.  These edits/fixes follow the rules of trying to stay consistient and American English-correct.
 
 Last of note, I am a human being and I make mistakes.  Please point out text errors in-game through bug reporting!
 
 ----
+
+
+===================================================================================================
+v1.11
+===================================================================================================
+
+-Created string "TEXT_TOOLTIP_REQUIRED_PLANETS_CAPITAL_SHIPS_01" to adjust text for expansion units and new planets that added in to build capital ships (like Star Destroyers) on.  Planet names also reorganized in alphabetical order.
+-Created string "TEXT_PLANET_CAPITAL_SHIP_PRODUCER_01" to adjust text for expansion unit Kedalbe-class Battleship.  It is now mentioned in the list of buildable things.
+
+-Deleted string "TEXT_TOOLTIP_OBI_WAN_01," as it is a duplicate of "TEXT_TOOLTIP_OBI_WAN" with a minor text adjustment not requiring a new tag.  Obi-Wan's tooltip text remains the same.
+
+-[TEXT_BLACK_MARKET_SLOTS]: "Pick Tech to purchase" --> "Pick Tech to Purchase:"
+-[TEXT_ENCYCLOPEDIA_VORNSKR_WOLF]: "Vornskrs are highly efficient hunters, especially when their prey is Force-sensitive." --> "Vornskrs are highly efficient hunters, especially when their prey is Force-sensitive. One pack (of three vornskrs each) per-company."
+-[]: "" --> ""
+
+
+===================================================================================================
+
 
 
 ===================================================================================================
