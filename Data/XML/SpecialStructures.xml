@@ -357,7 +357,7 @@
 		<Death_Clone>Damage_Normal, E_Gravity_Well_Station_Death_Clone</Death_Clone>
 		
 	</SpecialStructure>
-	
+
 
 	<SpecialStructure Name="Empire_Ground_Shutter_Shield">
 		<Select_Box_Scale>175</Select_Box_Scale>
@@ -462,7 +462,7 @@
 			</Force_Healing_Ability>
 		</Abilities>
 	</SpecialStructure>
-	
+
 	<SpecialStructure Name="Rebel_Ground_Shutter_Shield">
 		<Select_Box_Scale>175</Select_Box_Scale>
 		<Text_ID>TEXT_GROUND_SHUTTER_SHIELD</Text_ID>
@@ -569,7 +569,7 @@
 			</Force_Healing_Ability>
 		</Abilities>
 	</SpecialStructure>
-	
+
 	<SpecialStructure Name="Empire_Orbital_Long_Range_Scanner">
 		<Text_ID>TEXT_ORBITAL_LONG_RANGE_SCANNER</Text_ID>
 		<GUI_Row> 0 </GUI_Row>
@@ -4950,7 +4950,7 @@
 				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
 			</Redirect_Blaster_Ability>
  		</Abilities>
-   </SpecialStructure>
+	</SpecialStructure>
 
 	<SpecialStructure Name="Communications_Array_R">
 		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
@@ -5091,7 +5091,7 @@
 			</Redirect_Blaster_Ability>
 			
 		</Abilities>
-   </SpecialStructure>
+	</SpecialStructure>
 
 
 
@@ -5205,11 +5205,10 @@
 		<Tactical_Health>1000</Tactical_Health>
 		<Death_Clone_Is_Obstacle> false </Death_Clone_Is_Obstacle>
 	</SpecialStructure>
-	
-	
+
+
 	<SpecialStructure Name="Imperial_Prison_Kashyyyk">
 		<Variant_Of_Existing_Type>Imperial_Prison_Facility</Variant_Of_Existing_Type>
-<!--		<Destruction_Survivors> Kashyyyk_Wookie_War_Party, 1.0 </Destruction_Survivors> Spawned by script for mission EM05-->
 		<Land_FOW_Reveal_Range>0.0</Land_FOW_Reveal_Range>
 		<Tactical_Health>9000</Tactical_Health>
 	</SpecialStructure>
@@ -5311,7 +5310,7 @@
 		<Score_Cost_Credits> 8000 </Score_Cost_Credits>
 		<Property_Flags>InBase</Property_Flags>
 		<Base_Position>In_Base</Base_Position>
-   </SpecialStructure>
+	</SpecialStructure>
 
 
 	<SpecialStructure Name="Rebel_Command_Center">
@@ -5465,7 +5464,7 @@
 		</Abilities>
 		
 	
-    </SpecialStructure>
+	</SpecialStructure>
 
 	<SpecialStructure Name="Imperial_Command_Center">
 		<GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
@@ -5616,11 +5615,11 @@
 			</Redirect_Blaster_Ability>
 			
 		</Abilities>
-    </SpecialStructure>
+	</SpecialStructure>
 
-	
-    
-    <SpecialStructure Name="Civilian_Command_Center">
+
+
+	<SpecialStructure Name="Civilian_Command_Center">
 		<Variant_Of_Existing_Type>Imperial_Command_Center</Variant_Of_Existing_Type>
 		<Tactical_Health>100</Tactical_Health>
 		<Affiliation>Neutral</Affiliation>
@@ -5782,10 +5781,7 @@
 	-->
 
 
-<!--  TEST of destroyable asteroids getting progressivly smaller -->
-
-
-
+	<!--  TEST of destroyable asteroids getting progressivly smaller -->
 	<SpecialStructure Name="Destroyable_Asteroid_Small">
 		<Text_ID>TEXT_DESTROYABLE_ASTEROID</Text_ID>
 		<Space_Model_Name>w_asteroid02.alo</Space_Model_Name>

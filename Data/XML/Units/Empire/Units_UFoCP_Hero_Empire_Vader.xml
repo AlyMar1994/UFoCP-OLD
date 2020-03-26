@@ -7,9 +7,6 @@
 		<Is_Force_Sensitive>Yes</Is_Force_Sensitive>
 
 		<Text_ID>TEXT_HERO_DARTH_VADER</Text_ID>
-		<!-- ALYMAR1994 (2/1/2020): Commenting this out and replacing to fix a bug in space skirmish where Vader's -->
-		<!-- herobar displayed the incorrect tooltips. HeroUnit "Darth Vader" is now really only a space unit. -->
-		<!-- <Encyclopedia_Text>TEXT_TOOLTIP_DARTH_VADER TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text> -->
 		<Encyclopedia_Text>TEXT_TOOLTIP_DARTH_VADER</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SITH_LORD</Encyclopedia_Unit_Class>
 
@@ -615,8 +612,8 @@
 	<!-- MAIN: SPACE UNIT-->
 	<UniqueUnit Name="TIE_Prototype">
 		<GUI_Bracket_Size>0</GUI_Bracket_Size>
-		<Text_ID>TEXT_UNIT_TIE_PROTOTYPE</Text_ID>
-		<Encyclopedia_Text>TEXT_TOOLTIP_TIE_ADVANCED</Encyclopedia_Text>
+		<Text_ID>TEXT_UNIT_TIE_PROTOTYPE_01</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_DARTH_VADER TEXT_TOOLTIP_TIE_ADVANCED</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR</Encyclopedia_Unit_Class>
 		<Encyclopedia_Good_Against>Y-Wing Z-95_Headhunter_Rebel Starviper_Fighter</Encyclopedia_Good_Against>
 		<Encyclopedia_Vulnerable_To>Corellian_Corvette Crusader_Gunship A-Wing</Encyclopedia_Vulnerable_To>
@@ -750,17 +747,17 @@
 
 	<UniqueUnit Name="Executor_Super_Star_Destroyer">
 		<GUI_Bounds_Scale>0.01</GUI_Bounds_Scale>
-		<Text_ID>TEXT_UNIT_SSD_EXECUTOR</Text_ID>
+		<Text_ID>TEXT_UNIT_SSD_EXECUTOR_01</Text_ID>
 
 		<Encyclopedia_Good_Against>Calamari_Cruiser Rebel_Star_Base_5 Krayt_Class_Destroyer</Encyclopedia_Good_Against>
 		<Encyclopedia_Vulnerable_To>Y-wing B-Wing Skipray_Blastboat</Encyclopedia_Vulnerable_To>
-		<Encyclopedia_Text>TEXT_TOOLTIP_EXECUTOR</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_TOOLTIP_DARTH_VADER TEXT_TOOLTIP_EXECUTOR</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SSD</Encyclopedia_Unit_Class>
 
 		<Custom_Hard_XExtent>100.00</Custom_Hard_XExtent>
 		<Custom_Hard_YExtent>100.00</Custom_Hard_YExtent>
 
-		<Icon_Name>I_Button_EV_ExecutorStarDestroyer.tga</Icon_Name>
+		<Icon_Name>I_Button_Darth_Vader.tga</Icon_Name>
 
 		<GUI_Row>1</GUI_Row>
 		<Space_Model_Name>EV_ExecutorStarDestroyer.ALO</Space_Model_Name>
@@ -940,7 +937,7 @@
 
 		<!-- Non-hero unit abilities descriptions: -->
 		<Unit_Abilities_Data SubObjectList="Yes">
-		<!-- Primary Ability: -->
+			<!-- Primary Ability: -->
 			<Unit_Ability>
 				<Type>TRACTOR_BEAM</Type>
 				<Mod_Multiplier>SPEED_MULTIPLIER, 0.80</Mod_Multiplier>
@@ -1068,7 +1065,7 @@
 	</UniqueUnit>
 
 	<UniqueUnit Name="Executor_Death_Clone">
-		<Text_ID>TEXT_UNIT_SSD_EXECUTOR</Text_ID>
+		<Text_ID>TEXT_UNIT_SSD_EXECUTOR_01</Text_ID>
 		<Space_Model_Name>EV_ExecutorStarDestroyer_D.alo</Space_Model_Name>
 		<Death_SFXEvent_Start_Die>SFX_Death_Bombard</Death_SFXEvent_Start_Die>
 		<Scale_Factor>1.00</Scale_Factor>
@@ -1088,7 +1085,7 @@
 	<!-- MAIN: TEAM(S) -->
 	<HeroCompany Name="Darth_Team">
 		<Text_ID>TEXT_HERO_VADER_TEAM</Text_ID>
-		<Encyclopedia_Text>TEXT_TOOLTIP_TIE_ADVANCED</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_TOOLTIP_DARTH_VADER</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SITH_LORD</Encyclopedia_Unit_Class>
 
 		<Icon_Name>I_Button_Darth_Vader.tga</Icon_Name>
@@ -1250,7 +1247,7 @@
 		<Variant_Of_Existing_Type>TIE_Fighter_Squadron</Variant_Of_Existing_Type>
 
 		<Icon_Name>I_Button_Darth_Vader.tga</Icon_Name>
-		<Encyclopedia_Text>TEXT_TOOLTIP_TIE_ADVANCED</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_TOOLTIP_DARTH_VADER TEXT_TOOLTIP_TIE_ADVANCED</Encyclopedia_Text>
 
 		<Squadron_Units>TIE_Prototype, Escort_TIE_Fighter, Escort_TIE_Fighter, Escort_TIE_Fighter</Squadron_Units>
 		<Squadron_Units>Escort_TIE_Fighter, Escort_TIE_Fighter, Escort_TIE_Fighter</Squadron_Units>
@@ -1273,8 +1270,8 @@
 
 	<!-- MAIN: CONTAINER -->
 	<Container Name="Darth_Vader_TIE_Fighter_Container">
-		<Text_ID>TEXT_HERO_DARTH_VADER</Text_ID>
-		<Encyclopedia_Text>TEXT_TOOLTIP_TIE_ADVANCED</Encyclopedia_Text>
+		<Text_ID>TEXT_UNIT_TIE_PROTOTYPE_01</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_DARTH_VADER TEXT_TOOLTIP_TIE_ADVANCED</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR</Encyclopedia_Unit_Class>
 		<Encyclopedia_Good_Against>Y-Wing Z-95_Headhunter_Rebel</Encyclopedia_Good_Against>
 		<Encyclopedia_Vulnerable_To>Corellian_Corvette X-wing A-Wing</Encyclopedia_Vulnerable_To>

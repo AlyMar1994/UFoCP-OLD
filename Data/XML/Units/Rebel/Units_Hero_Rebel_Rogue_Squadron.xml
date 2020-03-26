@@ -155,7 +155,7 @@
 	<UniqueUnit Name="Rogue_10_XWing">
 		<Variant_Of_Existing_Type>Wedge_XWing_Rogue</Variant_Of_Existing_Type>
 
-		<Text_ID>TEXT_UNIT_ROGUE_10_01</Text_ID>
+		<Text_ID>TEXT_UNIT_ROGUE_10</Text_ID>
 		<Icon_Name>I_Button_X_Wing.tga</Icon_Name>
 
 		<SFXEvent_Assist_Move />

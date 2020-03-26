@@ -315,12 +315,12 @@
 
 	<!-- MAIN: SPACE UNIT(S) -->
 	<UniqueUnit Name="Slave_I">
-		<Text_ID>TEXT_UNIT_SLAVE_I</Text_ID>
+		<Text_ID>TEXT_UNIT_SLAVE_I_01</Text_ID>
 		<Encyclopedia_Good_Against>X-wing Y-Wing Starviper_Fighter</Encyclopedia_Good_Against>
 		<Encyclopedia_Vulnerable_To>Corellian_Corvette Corellian_Gunboat Crusader_Gunship</Encyclopedia_Vulnerable_To>
 		<Land_Model_Name>EV_SLAVE1.ALO</Land_Model_Name>
 		<Space_Model_Name>EV_SLAVE1_SPACE.ALO</Space_Model_Name>
-		<Icon_Name>I_Button_Slave1.tga</Icon_Name>
+		<Icon_Name>I_Button_Boba_Fett.tga</Icon_Name>
 		<Mass>0.995</Mass>
 		<Scale_Factor>1.20</Scale_Factor>
 		<Select_Box_Scale>80</Select_Box_Scale>
@@ -427,14 +427,6 @@
 		<Landing_Transport_Variant>Slave_I_Landing</Landing_Transport_Variant>
 		<Display_Contained_Hero_Grab_Bars>True</Display_Contained_Hero_Grab_Bars>
 
-		<!-- MULTIPLAYER SKIRMISH VALUES START -->
-		<Tactical_Build_Cost_Multiplayer>3200</Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites />
-		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
-		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
-		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
-
 		<Cheap_Bribe_Cost>2500</Cheap_Bribe_Cost>
 		<Space_Override_Population_Value>1</Space_Override_Population_Value>
 
@@ -452,10 +444,18 @@
 		</Unit_Abilities_Data>
 
 		<Lua_Script>Slave_I</Lua_Script>
+
+		<!-- MULTIPLAYER SKIRMISH VALUES START: -->
+		<Tactical_Build_Cost_Multiplayer>3200</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
 	</UniqueUnit>
 
 	<UniqueUnit Name="Slave_I_Death_Clone">
-		<Text_ID>TEXT_UNIT_SLAVE_I</Text_ID>
+		<Text_ID>TEXT_UNIT_SLAVE_I_01</Text_ID>
 		<Space_Model_Name>EV_Slave1_space_D.alo</Space_Model_Name>
 		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
 		<Scale_Factor>1.20</Scale_Factor>

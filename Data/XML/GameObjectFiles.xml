@@ -6,7 +6,7 @@
 	<File>GroundBases.xml</File>
 	<File>GroundStructures.xml</File>
 	<File>GroundTurrets.xml</File>
-	<File>GroundInfantry.xml</File>
+	<File>Units\GroundInfantry.xml</File>
 	<File>GroundVehicles.xml</File>
 	<File>GroundCompaniesRebel.xml</File>
 	<File>GroundCompaniesEmpire.xml</File>

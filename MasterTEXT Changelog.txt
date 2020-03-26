@@ -17,12 +17,17 @@ v1.11
 
 -Created string "TEXT_TOOLTIP_REQUIRED_PLANETS_CAPITAL_SHIPS_01" to adjust text for expansion units and new planets that added in to build capital ships (like Star Destroyers) on.  Planet names also reorganized in alphabetical order.
 -Created string "TEXT_PLANET_CAPITAL_SHIP_PRODUCER_01" to adjust text for expansion unit Kedalbe-class Battleship.  It is now mentioned in the list of buildable things.
+-Created string "TEXT_UNIT_SLAVE_I_01" to adjust full name to keep consistient with other named hero units of its class.
+-Created string "TEXT_UNIT_TIE_PROTOTYPE_01" to adjust full name to keep consistient with other named hero units of its class.
+-Created string "TEXT_UNIT_SSD_EXECUTOR_01" to adjust full name to keep consistient with other named hero units of its class.
 
 -Deleted string "TEXT_TOOLTIP_OBI_WAN_01," as it is a duplicate of "TEXT_TOOLTIP_OBI_WAN" with a minor text adjustment not requiring a new tag.  Obi-Wan's tooltip text remains the same.
+-Deleted string "TEXT_UNIT_ROGUE_10_01," as it was an unecessary duplicate to fix a minor text error.
 
 -[TEXT_BLACK_MARKET_SLOTS]: "Pick Tech to purchase" --> "Pick Tech to Purchase:"
 -[TEXT_ENCYCLOPEDIA_VORNSKR_WOLF]: "Vornskrs are highly efficient hunters, especially when their prey is Force-sensitive." --> "Vornskrs are highly efficient hunters, especially when their prey is Force-sensitive. One pack (of three vornskrs each) per-company."
--[]: "" --> ""
+-[TEXT_TOOLTIP_DEATH_STAR_II]: "A larger, more powerful version of the original Death Star; the new battle station includes enhanced targeting computers for the superlaser, allowing it to fire on slow-moving ships." --> "A larger, more powerful version of the original Death Star. The new battle station includes enhanced targeting computers for the superlaser, allowing it to fire on slow-moving ships."
+-[TEXT_TOOLTIP_TIE_ADVANCED]: "Darth Vader, a Sith Lord powerful with the dark side of the Force. Though an excellent pilot in his own right, his wingmen are recruited from the Empire's most skilled." --> "Though an excellent pilot in his own right, his wingmen are recruited from the Empire's most skilled."
 
 
 ===================================================================================================
