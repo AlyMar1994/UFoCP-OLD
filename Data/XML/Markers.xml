@@ -9,7 +9,7 @@
 		<Behavior>MARKER, HINT</Behavior>
 		<Land_FOW_Reveal_Range>600.0</Land_FOW_Reveal_Range>
 		<Reveal_For_Attacker>true</Reveal_For_Attacker>
-		<Is_Discardable>false</Is_Discardable>  
+		<Is_Discardable>false</Is_Discardable>
 		<Affiliation>Neutral</Affiliation>
 	</Marker>
 

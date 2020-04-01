@@ -1283,7 +1283,7 @@
 			</Tractor_Beam_Attack_Ability>
 		</Abilities>
 	</UniqueUnit>
-	
+
 	<UniqueUnit Name="Accuser_Star_Destroyer_Death_Clone">
 		<Text_ID>TEXT_TOOLTIP_PIETT_SD_02</Text_ID>
 		<Space_Model_Name>EV_StarDestroyer_D.ALO</Space_Model_Name>
@@ -1299,23 +1299,6 @@
 		<Affiliation>Empire</Affiliation>
 		<Ship_Class>Capital_Ship</Ship_Class>
 		<Remove_Upon_Death>True</Remove_Upon_Death>
-	</UniqueUnit>
-
-
-	<!-- Black Squadron (Empire Major Heroes) - Darth Vader's TIE squadron during space battles. -->
-	<!-- (Black Squadron was the Legends name of Vader's squad, not the in-game name) -->
-	<UniqueUnit Name="Escort_TIE_Fighter">
-		<Variant_Of_Existing_Type>TIE_Fighter</Variant_Of_Existing_Type>
-
-		<Scale_Factor>0.90</Scale_Factor>
-		<Tactical_Health>300</Tactical_Health>
-		<Fire_Inaccuracy_Distance>Fighter,		1.00</Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance>Bomber,		1.00</Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance>Transport,	1.00</Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance>Corvette,		1.00</Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance>Frigate,		1.00</Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance>Capital,		1.00</Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance>Super,		1.00</Fire_Inaccuracy_Distance>
 	</UniqueUnit>
 
 
@@ -1511,7 +1494,7 @@
 		<!-- Need this to prevent the AT-AT turn from looking awful. -->
 		<Close_Enough_Angle_For_Move_Start>30</Close_Enough_Angle_For_Move_Start>
 	</UniqueUnit>
-	
+
 	<UniqueUnit Name="Veers_AT_AT_Walker_Deployed_Death_Clone">
 		<Variant_Of_Existing_Type>Veers_AT_AT_Walker</Variant_Of_Existing_Type>
 
