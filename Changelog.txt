@@ -32,6 +32,10 @@ General
 ==================
 Units (Land)
 ==================
+-Field Commander (Empire) – Fixed galactic tooltip now containing text about being able to capture buildpads.
+
+-Field Commander (Rebel) – Fixed galactic tooltip now containing text about being able to capture buildpads.
+
 -Force Adept – Fixed all Force Adepts not using the "capture buildpads" text in their tooltips when they're capable of capturing build pads.
 
 -Master Force Adept – Fixed Force Adept at the end of the Underworld campaign's AI: a non-existant variable resulted NIL, so the Adept would attack any unit in sight. This has been fixed to only target Underworld player units.
