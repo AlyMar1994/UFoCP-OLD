@@ -28,6 +28,8 @@ General
 ==================
 -Reorganized most of the mod's files in various ways.
 
+-Undid most of previous update's "TEXT_NONE" fixes, and reimplemented an alternate fix. Created string "TEXT_NONE" so any "TEXT_NONE"-named object can stop throwing errors. If there's any visible text in-game that says "None.  If you see this description, hehe, you shouldn't!  Please report this object to 'https://github.com/alymar1994/ufocp' immediately." then please do report it.
+
 
 ==================
 Units (Land)

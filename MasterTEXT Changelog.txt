@@ -21,6 +21,7 @@ v1.11
 -Created string "TEXT_UNIT_TIE_PROTOTYPE_01" to adjust full name to keep consistient with other named hero units of its class.
 -Created string "TEXT_UNIT_SSD_EXECUTOR_01" to adjust full name to keep consistient with other named hero units of its class.
 -Created string "TEXT_HERO_VADER_TEAM_2" to adjust full name to keep consistient with other named hero units of its class.
+-Created string "TEXT_NONE" so any "TEXT_NONE"-named object can stop throwing errors.
 
 -Deleted string "TEXT_TOOLTIP_OBI_WAN_01," as it is a duplicate of "TEXT_TOOLTIP_OBI_WAN" with a minor text adjustment not requiring a new tag.  Obi-Wan's tooltip text remains the same.
 -Deleted string "TEXT_UNIT_ROGUE_10_01," as it was an unecessary duplicate to fix a minor text error.
