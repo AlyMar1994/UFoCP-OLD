@@ -22,9 +22,16 @@ v1.11
 -Created string "TEXT_UNIT_SSD_EXECUTOR_01" to adjust full name to keep consistient with other named hero units of its class.
 -Created string "TEXT_HERO_VADER_TEAM_2" to adjust full name to keep consistient with other named hero units of its class.
 -Created string "TEXT_NONE" so any "TEXT_NONE"-named object can stop throwing errors.
+-Created string "TEXT_CORRUPTION_TARIS_INT_OBJ_00" to fix bad objective string in Silri's Taris intimidation mission.
+-Created string "TEXT_CORRUPTION_NABOO_INT_OBJ_00" to fix bad objective string in Silri's Naboo intimidation mission.
+-Created string "TEXT_CORRUPTION_BYSS_KID_OBJ_00" to fix bad objective string in Silri's Byss kidnapping mission.
+
+-Renamed string "TEXT_CORRUPTION_TARIS_INT_GOAL_01" to "TEXT_CORRUPTION_INT_OBJ_SILRISURVIVE."  This string was used universally for Silri's corruption missions, to say "Silri must survive."  This has been changed in all missions.
+-Rename string "TEXT_BYSS_KIDNAPPING_OBJECTIVE_00" to "TEXT_CORRUPTION_BYSS_KID_OBJ_01" to keep consistency within file.
 
 -Deleted string "TEXT_TOOLTIP_OBI_WAN_01," as it is a duplicate of "TEXT_TOOLTIP_OBI_WAN" with a minor text adjustment not requiring a new tag.  Obi-Wan's tooltip text remains the same.
 -Deleted string "TEXT_UNIT_ROGUE_10_01," as it was an unecessary duplicate to fix a minor text error.
+-Deleted string "TEXT_CORRUPTION_UTAPAU_STORY_KIDNAP_OBJECTIVE_01" as it is a duplicate of "TEXT_CORRUPTION_INT_OBJ_SILRISURVIVE."
 
 -[TEXT_BLACK_MARKET_SLOTS]: "Pick Tech to purchase" --> "Pick Tech to Purchase:"
 -[TEXT_ENCYCLOPEDIA_VORNSKR_WOLF]: "Vornskrs are highly efficient hunters, especially when their prey is Force-sensitive." --> "Vornskrs are highly efficient hunters, especially when their prey is Force-sensitive. One pack (of three vornskrs each) per-company."

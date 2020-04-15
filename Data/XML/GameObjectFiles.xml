@@ -47,17 +47,17 @@
 
 	<File>SpecialEffects.xml</File>
 	<File>Particles.xml</File>
-	<File>Maps\Markers.xml</File>
+	<File>Markers.xml</File>
 	<File>Units\UniqueUnits.xml</File>
 	<File>Units\Containers.xml</File>
-	<File>Maps\ScriptMarkers.xml</File>
+	<File>ScriptMarkers.xml</File>
 
 	<File>MiscObjects.xml</File>
 	<File>UpgradeObjects.xml</File>
 	<File>SecondaryStructures.xml</File>
 
-	<File>Maps\Props_Temperate.xml</File>
-	<File>Maps\Props_Swamp.xml</File>
+	<File>Props_Temperate.xml</File>
+	<File>Props_Swamp.xml</File>
 	<File>Props_Volcanic.xml</File>
 	<File>Props_Forest.xml</File>
 	<File>Props_Snow.xml</File>

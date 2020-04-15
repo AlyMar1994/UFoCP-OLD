@@ -30,6 +30,14 @@ General
 
 -Undid most of previous update's "TEXT_NONE" fixes, and reimplemented an alternate fix. Created string "TEXT_NONE" so any "TEXT_NONE"-named object can stop throwing errors. If there's any visible text in-game that says "None.  If you see this description, hehe, you shouldn't!  Please report this object to 'https://github.com/alymar1994/ufocp' immediately." then please do report it.
 
+-Fixed bug on Underworld Taris Intimidation mission. If Silri dies, the intimidation objective would never fail due to looking for a non-existant variable.
+
+-Fixed bug on Underworld Naboo Intimidation mission objectives. Failing will now register.
+
+-Fixed bug on Underworld Byss Intimidation mission objectives. Failing will now register.
+-Fixed bug on Underworld Byss Intimidation mission objectives. "Silri must survive" will now be treated as complete when the mession ends.
+-Fixed bug on Underworld Byss Intimidation mission objectives. Escorting the governor to the transport will now register as complete when the mission ends.
+
 
 ==================
 Units (Land)
@@ -40,7 +48,7 @@ Units (Land)
 
 -Force Adept – Fixed all Force Adepts not using the "capture buildpads" text in their tooltips when they're capable of capturing build pads.
 
--Master Force Adept – Fixed Force Adept at the end of the Underworld campaign's AI: a non-existant variable resulted NIL, so the Adept would attack any unit in sight. This has been fixed to only target Underworld player units.
+-Master Force Adept – Fixed Master Force Adept at the end of the Underworld campaign's AI: a non-existant variable resulted NIL, so the Adept would attack any unit in sight. This has been fixed to only target Underworld player units.
 
 
 ==================
