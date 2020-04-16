@@ -66,7 +66,7 @@
 				<Event_Param2>COMPLETE_OBJECTIVE_00</Event_Param2>
 				<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
 				<Reward_Param1>TEXT_CORRUPTION_BYSS_KID_OBJ_01</Reward_Param1>
-				<Prereq>Byss_Kidnapping_Mission_Complete_Objective_01</Prereq>
+				<Prereq>Byss_Kidnapping_Mission_Complete_Objective_00</Prereq>
 			</Event>
 
 		<Event Name="Byss_Kidnapping_Mission_Complete_Victory_Trigger">
@@ -164,7 +164,7 @@
 				<Reward_Param1>REBEL</Reward_Param1>
 				<Reward_Param2>0</Reward_Param2>
 				<Prereq>Byss_Kidnapping_Enable_Retreat_Empire</Prereq>
-			</Event>	
+			</Event>
 
 <!-- *************************************************************** -->
 <!-- ***************All Mission Dialog Goes Here******************** -->
@@ -196,5 +196,4 @@
 					<Reward_Type>STOP_COMMANDBAR_MOVIE</Reward_Type>
 					<Prereq>Byss_Kidnapping_Mission_Speech_Line_00_Remove_Text</Prereq>
 				</Event>
-
 </Story>
