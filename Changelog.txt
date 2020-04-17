@@ -30,12 +30,14 @@ General
 
 -Undid most of previous update's "TEXT_NONE" fixes, and reimplemented an alternate fix. Created string "TEXT_NONE" so any "TEXT_NONE"-named object can stop throwing errors. If there's any visible text in-game that says "None.  If you see this description, hehe, you shouldn't!  Please report this object to 'https://github.com/alymar1994/ufocp' immediately." then please do report it.
 
+-Fixed bug on Underworld Byss kidnapping mission objectives. Failing any objective will now fail all objectives.
+-Fixed bug on Underworld Byss kidnapping mission objectives. Completing the mission will now complete all objectives.
+
+-Fixed bug on Underworld Naboo intimidation mission objectives. Failing any objective will now fail all objectives.
+
 -Fixed bug on Underworld Taris intimidation mission. If Silri dies, the intimidation objective would never fail due to looking for a non-existant variable. Failing will now fail all objectives.
 
--Fixed bug on Underworld Naboo intimidation mission objectives. Failing will now fail all objectives.
-
--Fixed bug on Underworld Byss kidnapping mission objectives. Failing will now fail all objectives.
--Fixed bug on Underworld Byss kidnapping mission objectives. Completing the mission will now complete all objectives.
+-Fixed bug on Underworld Utapau kidnapping mission objectives. Failing any objective will now fail all objectives.
 
 
 ==================

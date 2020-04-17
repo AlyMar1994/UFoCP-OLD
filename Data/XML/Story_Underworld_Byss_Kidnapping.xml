@@ -40,7 +40,7 @@
 			<Event Name="Byss_Kidnapping_Mission_Add_Objective_01">
 				<Event_Type>STORY_TRIGGER</Event_Type>
 				<Reward_Type>ADD_OBJECTIVE</Reward_Type>
-				<Reward_Param1>TEXT_CORRUPTION_INT_OBJ_SILRISURVIVE</Reward_Param1>
+				<Reward_Param1>TEXT_CORRUPTION_OBJ_SILRISURVIVE</Reward_Param1>
 				<Prereq>Byss_Kidnapping_Mission_Add_Objective_00</Prereq>
 			</Event>
 
@@ -57,7 +57,7 @@
 			<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
 			<Event_Param2>COMPLETE_OBJECTIVE_00</Event_Param2>
 			<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
-			<Reward_Param1>TEXT_CORRUPTION_INT_OBJ_SILRISURVIVE</Reward_Param1>
+			<Reward_Param1>TEXT_CORRUPTION_OBJ_SILRISURVIVE</Reward_Param1>
 			<Prereq>Byss_Kidnapping_Mission_Complete_Objective_00</Prereq>
 		</Event>
 
@@ -94,7 +94,7 @@
 		<Event Name="Byss_Kidnapping_Mission_Fail_Objective_01">
 			<Event_Type>STORY_TRIGGER</Event_Type>
 			<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
-			<Reward_Param1>TEXT_CORRUPTION_INT_OBJ_SILRISURVIVE</Reward_Param1>
+			<Reward_Param1>TEXT_CORRUPTION_OBJ_SILRISURVIVE</Reward_Param1>
 			<Prereq>Byss_Kidnapping_Mission_Fail_Objective_00</Prereq>
 		</Event>
 

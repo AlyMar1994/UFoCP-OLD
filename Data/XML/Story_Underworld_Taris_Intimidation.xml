@@ -1,7 +1,5 @@
 <?xml version="1.0" ?>
-
 <Story>
-
 	<Event Name="Taris_Intimidation_Mission_Begin">
 		<Event_Type>STORY_ELAPSED</Event_Type>
 		<Event_Param1>0</Event_Param1>
@@ -30,6 +28,7 @@
 			<Prereq>Taris_Intimidation_Mission_Begin</Prereq>
 		</Event>
 
+
 		<Event Name="Taris_Intimidation_Mission_Add_Objective_00">
 			<Event_Type>STORY_TRIGGER</Event_Type>
 			<Reward_Type>ADD_OBJECTIVE</Reward_Type>
@@ -40,9 +39,10 @@
 		<Event Name="Taris_Intimidation_Mission_Add_Objective_01">
 			<Event_Type>STORY_TRIGGER</Event_Type>
 			<Reward_Type>ADD_OBJECTIVE</Reward_Type>
-			<Reward_Param1>TEXT_CORRUPTION_INT_OBJ_SILRISURVIVE</Reward_Param1>
+			<Reward_Param1>TEXT_CORRUPTION_OBJ_SILRISURVIVE</Reward_Param1>
 			<Prereq>Taris_Intimidation_Mission_Add_Objective_00</Prereq>
 		</Event>
+
 
 	<Event Name="Taris_Intimidation_Mission_Complete_Objective_00">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
@@ -55,9 +55,10 @@
 		<Event Name="Taris_Intimidation_Mission_Complete_Objective_01">
 			<Event_Type>STORY_TRIGGER</Event_Type>
 			<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
-			<Reward_Param1>TEXT_CORRUPTION_INT_OBJ_SILRISURVIVE</Reward_Param1>
+			<Reward_Param1>TEXT_CORRUPTION_OBJ_SILRISURVIVE</Reward_Param1>
 			<Prereq>Taris_Intimidation_Mission_Complete_Objective_00</Prereq>
 		</Event>
+
 
 		<Event Name="Taris_Intimidation_Allow_Victory_01">
 			<Event_Type>STORY_TRIGGER</Event_Type>
@@ -72,7 +73,8 @@
 				<Reward_Param1>Underworld</Reward_Param1>
 				<Prereq>Taris_Intimidation_Allow_Victory_01</Prereq>
 			</Event>
-	
+
+
 	<Event Name="Taris_Intimidation_Mission_Fail_Objective_00">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
 		<Event_Param2>FAIL_OBJECTIVE_00</Event_Param2>
@@ -84,9 +86,10 @@
 		<Event Name="Taris_Intimidation_Mission_Fail_Objective_01">
 			<Event_Type>STORY_TRIGGER</Event_Type>
 			<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
-			<Reward_Param1>TEXT_CORRUPTION_INT_OBJ_SILRISURVIVE</Reward_Param1>
+			<Reward_Param1>TEXT_CORRUPTION_OBJ_SILRISURVIVE</Reward_Param1>
 			<Prereq>Taris_Intimidation_Mission_Fail_Objective_00</Prereq>
 		</Event>
+
 
 	<Event Name="Taris_Intimidation_Mission_Loss_Rebel">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
