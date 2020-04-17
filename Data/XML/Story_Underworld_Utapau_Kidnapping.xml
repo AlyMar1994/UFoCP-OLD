@@ -34,9 +34,9 @@
 
 	<!-- Mission objectives
 	TEXT_CORRUPTION_OBJ_SILRISURVIVE						Silri must survive.
-	TEXT_CORRUPTION_UTAPAU_KID_OBJ_00						Secure the Fey Compound by destroying all defenders and defense turrets.
-	TEXT_CORRUPTION_UTAPAU_KID_OBJ_01						Lead Silri to Garnak Fey
-	TEXT_CORRUPTION_UTAPAU_KID_OBJ_02						Return Silri and Garnak Fey to the landing shuttle-->
+	TEXT_CORRUPTION_KID_UTAPAU_OBJ_00						Secure the Fey Compound by destroying all defenders and defense turrets.
+	TEXT_CORRUPTION_KID_UTAPAU_OBJ_01						Lead Silri to Garnak Fey
+	TEXT_CORRUPTION_KID_UTAPAU_OBJ_02						Return Silri and Garnak Fey to the landing shuttle-->
 
 	<Event Name="Utapau_Kidnapping_ADD_OBJECTIVE_Silri_Must_Survive">
 		<Event_Type>STORY_TRIGGER</Event_Type>
@@ -45,13 +45,13 @@
 		<Prereq>Utapau_Kidnapping_Mission_Begin</Prereq>
 	</Event>
 	
-	<!-- TEXT_CORRUPTION_UTAPAU_KID_OBJ_00 
+	<!-- TEXT_CORRUPTION_KID_UTAPAU_OBJ_00 
 	Secure the Fey Compound by destroying all defenders and defense turrets. -->
 	<Event Name="Utapau_Kidnapping_ADD_OBJECTIVE_Secure_The_Compound">
 		<Event_Type>STORY_ELAPSED</Event_Type>
 		<Event_Param1>3</Event_Param1>
 		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
-		<Reward_Param1>TEXT_CORRUPTION_UTAPAU_KID_OBJ_00</Reward_Param1>
+		<Reward_Param1>TEXT_CORRUPTION_KID_UTAPAU_OBJ_00</Reward_Param1>
 		<Prereq>Utapau_Kidnapping_ADD_OBJECTIVE_Silri_Must_Survive</Prereq>
 	</Event>
 	
@@ -64,18 +64,18 @@
 			<Event Name="Utapau_Kidnapping_COMPLETE_OBJECTIVE_Secure_The_Compound">
 				<Event_Type>STORY_TRIGGER</Event_Type>
 				<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
-				<Reward_Param1>TEXT_CORRUPTION_UTAPAU_KID_OBJ_00</Reward_Param1>
+				<Reward_Param1>TEXT_CORRUPTION_KID_UTAPAU_OBJ_00</Reward_Param1>
 				<Prereq>Utapau_Kidnapping_Compound_Clear_AI_NOTIFICATION</Prereq>
 			</Event>
 			
 			<!-- adding next objective...capture Garnak Fey
-			TEXT_CORRUPTION_UTAPAU_KID_OBJ_01
+			TEXT_CORRUPTION_KID_UTAPAU_OBJ_01
 			Lead Silri to Garnak Fey -->
 			<Event Name="Utapau_Kidnapping_ADD_OBJECTIVE_Capture_Garnak">
 				<Event_Type>STORY_ELAPSED</Event_Type>
 				<Event_Param1>1</Event_Param1>
 				<Reward_Type>ADD_OBJECTIVE</Reward_Type>
-				<Reward_Param1>TEXT_CORRUPTION_UTAPAU_KID_OBJ_01</Reward_Param1>
+				<Reward_Param1>TEXT_CORRUPTION_KID_UTAPAU_OBJ_01</Reward_Param1>
 				<Prereq>Utapau_Kidnapping_COMPLETE_OBJECTIVE_Secure_The_Compound</Prereq>
 			</Event>
 
@@ -87,23 +87,23 @@
 
 
 			<!-- completing next objective ..capture Garnak Fey 
-			TEXT_CORRUPTION_UTAPAU_KID_OBJ_01
+			TEXT_CORRUPTION_KID_UTAPAU_OBJ_01
 			Capture Garnak Fey using Silri. -->
 			<Event Name="Utapau_Kidnapping_COMPLETE_OBJECTIVE_Capture_Garnak">
 				<Event_Type>STORY_TRIGGER</Event_Type>
 				<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
-				<Reward_Param1>TEXT_CORRUPTION_UTAPAU_KID_OBJ_01</Reward_Param1>
+				<Reward_Param1>TEXT_CORRUPTION_KID_UTAPAU_OBJ_01</Reward_Param1>
 				<Prereq>Utapau_Kidnapping_Silri_Reaches_Garnak_AI_NOTIFICATION</Prereq>
 			</Event>
 
 			<!-- adding next objective ..return to shuttle 
-			TEXT_CORRUPTION_UTAPAU_KID_OBJ_02
+			TEXT_CORRUPTION_KID_UTAPAU_OBJ_02
 			Return Silri and Garnak Fey to the landing shuttle -->
 			<Event Name="Utapau_Kidnapping_ADD_OBJECTIVE_Return_To_Shuttle">
 				<Event_Type>STORY_ELAPSED</Event_Type>
 				<Event_Param1>1</Event_Param1>
 				<Reward_Type>ADD_OBJECTIVE</Reward_Type>
-				<Reward_Param1>TEXT_CORRUPTION_UTAPAU_KID_OBJ_02</Reward_Param1>
+				<Reward_Param1>TEXT_CORRUPTION_KID_UTAPAU_OBJ_02</Reward_Param1>
 				<Prereq>Utapau_Kidnapping_COMPLETE_OBJECTIVE_Capture_Garnak</Prereq>
 			</Event>
 
@@ -194,12 +194,12 @@
 			</Event>
 
 			<!-- completing next objective ..capture Garnak Fey 
-			TEXT_CORRUPTION_UTAPAU_KID_OBJ_02
+			TEXT_CORRUPTION_KID_UTAPAU_OBJ_02
 			Return Silri and Garnak Fey to the landing shuttle  -->
 			<Event Name="Utapau_Kidnapping_COMPLETE_OBJECTIVE_Return_To_Shuttle">
 				<Event_Type>STORY_TRIGGER</Event_Type>
 				<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
-				<Reward_Param1>TEXT_CORRUPTION_UTAPAU_KID_OBJ_02</Reward_Param1>
+				<Reward_Param1>TEXT_CORRUPTION_KID_UTAPAU_OBJ_02</Reward_Param1>
 				<Prereq>Utapau_Kidnapping_Player_Wins_AI_NOTIFICATION</Prereq>
 			</Event>
 
@@ -240,21 +240,21 @@
 		<Event Name="Utapau_Kidnapping_FAIL_OBJECTIVE_Secure_The_Compound">
 			<Event_Type>STORY_TRIGGER</Event_Type>
 			<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
-			<Reward_Param1>TEXT_CORRUPTION_UTAPAU_KID_OBJ_00</Reward_Param1>
+			<Reward_Param1>TEXT_CORRUPTION_KID_UTAPAU_OBJ_00</Reward_Param1>
 			<Prereq>Utapau_Kidnapping_FAIL_OBJECTIVE_Silri_Must_Survive</Prereq>
 		</Event>
 
 			<Event Name="Utapau_Kidnapping_FAIL_OBJECTIVE_Capture_Garnak">
 				<Event_Type>STORY_TRIGGER</Event_Type>
 				<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
-				<Reward_Param1>TEXT_CORRUPTION_UTAPAU_KID_OBJ_01</Reward_Param1>
+				<Reward_Param1>TEXT_CORRUPTION_KID_UTAPAU_OBJ_01</Reward_Param1>
 				<Prereq>Utapau_Kidnapping_FAIL_OBJECTIVE_Silri_Must_Survive</Prereq>
 			</Event>
 
 				<Event Name="Utapau_Kidnapping_FAIL_OBJECTIVE_Return_To_Shuttle">
 					<Event_Type>STORY_TRIGGER</Event_Type>
 					<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
-					<Reward_Param1>TEXT_CORRUPTION_UTAPAU_KID_OBJ_02</Reward_Param1>
+					<Reward_Param1>TEXT_CORRUPTION_KID_UTAPAU_OBJ_02</Reward_Param1>
 					<Prereq>Utapau_Kidnapping_FAIL_OBJECTIVE_Silri_Must_Survive</Prereq>
 				</Event>
 </Story>
