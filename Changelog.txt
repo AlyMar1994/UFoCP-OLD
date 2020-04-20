@@ -33,6 +33,11 @@ General
 -Fixed bug on Underworld Byss kidnapping mission objectives. Failing any objective will now fail all objectives.
 -Fixed bug on Underworld Byss kidnapping mission objectives. Completing the mission will now complete all objectives.
 
+-Fixed bug on Underworld Dantooine intimidation mission objectives. Failing any objective will now fail all objectives.
+-Fixed bug on Underworld Dantooine intimidation mission objectives. Completing the mission will now complete all objectives.
+
+-Fixed bug on Underworld Honoghr intimidation mission objectives. Completing the mission will now complete all objectives.
+
 -Fixed bug on Underworld Naboo intimidation mission objectives. Failing any objective will now fail all objectives.
 
 -Fixed bug on Underworld Taris intimidation mission. If Silri dies, the intimidation objective would never fail due to looking for a non-existant variable. Failing will now fail all objectives.
