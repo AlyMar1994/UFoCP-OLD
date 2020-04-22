@@ -19,7 +19,7 @@ end
 
 function State_Init(message)
 	if message == OnEnter then
-		-- Initialized variables.
+		-- AM1994 (3/13/2020): Initialized variables.
 		-- Teleport hints for the Master Force Adept (ultimate boss of UM11).
 		-- VAR = Find_Hint("TRIGGER_TYPE", "EDITOR-NAME")
 		warp1 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w1")
@@ -29,19 +29,14 @@ function State_Init(message)
 		warp5 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w5")
 		warp6 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w6")
 
-		underworld_player = Find_Player("Underworld") -- AM1994 (3/13/2020): Adding variable to prevent calling the same faction twice later on.
+		underworld_player = Find_Player("Underworld") -- AM1994 (3/13/2020): Adding variable to prevent calling NIL later on.
 
 
-		Register_Prox(Object, Unit_Prox, 100, underworld_player) -- Create a proximity event to search for Underworld player units (Urai, Tyber, Silri, Cuddles & MDUs).
+		Register_Prox(Object, Unit_Prox, 100, underworld_player) -- AM1994 (4/22/2020): Create a proximity event to search for Underworld player units (Urai, Tyber, Silri, Cuddles & MDUs).
 
 		closerange = false
 
 		Create_Thread("AdeptFour_AI")
-
-	elseif message == OnUpdate then
-		-- Do nothing.
-	elseif message == OnExit then
-		-- Do nothing.
 	end
 end
 
@@ -50,8 +45,10 @@ function Unit_Prox(self_obj, trigger_obj)
 
 	if not trigger_obj then
 		DebugMessage("WARNING: prox received a nil trigger_obj.")
+
 		return
 	end
+
 	closerange = true
 end
 
@@ -60,10 +57,11 @@ function AdeptFour_AI()
 
 	while TestValid(Object) do
 		noteleports = false
-		cage = Find_Nearest(Object,"Underworld_Ysalamiri_Cage")
+		cage = Find_Nearest(Object, "Underworld_Ysalamiri_Cage")
 
 		if TestValid(cage) then
 			dist = Object.Get_Distance(cage)
+
 			if dist < 200 then
 				noteleports = true
 				Object.Override_Max_Speed(.10)
@@ -79,7 +77,8 @@ function AdeptFour_AI()
 		warptimer = warptimer + 1
 		if not noteleports then
 			if warptimer/5 > Object.Get_Hull() then
-				rand_index = GameRandom(1,6)
+				rand_index = GameRandom(1, 6)
+
 				Object.Suspend_Locomotor(true)
 				Object.Play_Animation("Idle", true, 0)
 				Object.Attach_Particle_Effect("BOTHAN_STUN_GAS")
@@ -110,10 +109,6 @@ function AdeptFour_AI()
 			end
 		end
 
-		-- AM1994 (3/13/2020): Added variable "underworld_player" to fix issue
-		-- where Force Adept would attack anything in sight as "underworld_player"
-		-- would become nil. It now only attacks Underworld stuff, in the scenario
-		-- anything else exists...
 		target = Find_Nearest(Object, underworld_player)
 		if TestValid(target) then
 			Object.Attack_Move(target)

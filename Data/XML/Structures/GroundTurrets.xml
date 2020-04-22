@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <GroundStructures>
-
 	<GroundStructure Name="Abstract_Turret">
 		<Select_Box_Scale>45</Select_Box_Scale>
 		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
@@ -1105,11 +1104,11 @@
 
 
 	<GroundStructure Name="Underworld_Ysalamiri_Cage">
-   		<Text_ID>TEXT_STRUCTURE_YSALAMIRI_CAGE</Text_ID>
+		<Text_ID>TEXT_STRUCTURE_YSALAMIRI_CAGE</Text_ID>
 		<Encyclopedia_Text>TEXT_TOOLTIP_YSALAMIRI_CAGE</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
-		<Encyclopedia_Good_Against> Darth_Vader Obi_Wan_Kenobi Yoda </Encyclopedia_Good_Against>
-		<Encyclopedia_Vulnerable_To> T2B_Tank AT_ST_Walker </Encyclopedia_Vulnerable_To>	
+		<Encyclopedia_Good_Against>Darth_Vader_Expansion Obi_Wan_Kenobi Yoda</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>T2B_Tank AT_ST_Walker</Encyclopedia_Vulnerable_To>	
 
 		<Land_Model_Name>UV_MDU_Cage.alo</Land_Model_Name>
 		<Icon_Name>i_button_uv_mdu_cage.tga</Icon_Name>
@@ -1127,7 +1126,7 @@
 		<Behavior>SELECTABLE, TACTICAL_SELL</Behavior>
 		<LandBehavior> IDLE, UNIT_AI, REVEAL, HIDE_WHEN_FOGGED, LAND_OBSTACLE, DISABLE_FORCE_ABILITIES </LandBehavior>
 		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
-		<Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+		<Radar_Icon_Size>0.075, 0.075</Radar_Icon_Size>
 		 
 		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
 		<Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>

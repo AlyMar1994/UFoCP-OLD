@@ -54,7 +54,7 @@ Units (Land)
 
 -Force Adept – Fixed all Force Adepts not using the "capture buildpads" text in their tooltips when they're capable of capturing build pads.
 
--Master Force Adept – Fixed Master Force Adept at the end of the Underworld campaign's AI: a non-existant variable resulted NIL, so the Adept would attack any unit in sight. This has been fixed to only target Underworld player units.
+-Master Force Adept – Fixed Master Force Adept at the end of the Underworld campaign's AI: a non-existant variable resulted NIL, so the Adept would attack any unit in sight. This has been fixed to only target Underworld player units (implying as if he didn't do that already).
 
 
 ==================
