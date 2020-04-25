@@ -41,6 +41,8 @@ v1.11
 -Deleted string "TEXT_UNIT_ROGUE_10_01," as it was an unecessary duplicate to fix a minor text error.
 -Deleted string "TEXT_CORRUPTION_UTAPAU_STORY_KIDNAP_OBJECTIVE_01" as it is a duplicate of "TEXT_CORRUPTION_OBJ_SILRISURVIVE."
 -Deleted string "TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_02," completely unused.
+-Deleted string "ITEXT_SFX_MCC_NTERDICTOR_1," completely unused.
+-Deleted string "ITEXT_SFX_MCF_INTERDICTOR_1," completely unused.
 
 -[TEXT_BLACK_MARKET_SLOTS]: "Pick Tech to purchase" --> "Pick Tech to Purchase:"
 -[TEXT_ENCYCLOPEDIA_VORNSKR_WOLF]: "Vornskrs are highly efficient hunters, especially when their prey is Force-sensitive." --> "Vornskrs are highly efficient hunters, especially when their prey is Force-sensitive. One pack (of three vornskrs each) per-company."
@@ -66,6 +68,8 @@ v1.11
 -[TEXT_GUI_DIALOG_TOOLTIP_IDC_WATER_DETAIL_SLIDER]: "High quality water will display reflections and refractions. Lower quality water may improve performance." --> "Changes overall quality of water. Higher qualities will display reflective and refractive water. Lower qualities may improve performance."
 -[TEXT_TOOLTIP_ABILITY_REPLENISH_WINGMEN_DESCRIPTION]: "Will replenish any lost wingmen in the squadron that Darth Vader is leading. Darth Vader's TIE advanced prototype can only be damaged if the wingmen are destroyed." --> "Will replenish any lost wingmen in the squadron that Darth Vader is leading. Darth Vader's TIE Advanced prototype can only be damaged if his wingmen are destroyed."
 -[TEXT_TOOLTIP_DEATH_STAR_II]: "A larger, more powerful version of the original Death Star; the new battle station includes enhanced targeting computers for the superlaser, allowing it to fire on slow-moving ships." --> "A larger, more powerful version of the original Death Star. The new battle station includes enhanced targeting computers for the superlaser, allowing it to fire on slow-moving ships."
+-[TEXT_TOOLTIP_INFO_CREDITS_GAINED]: "%d Credits gained from capture of planet %s" --> "%d credits gained from capture of planet %s."
+-[TEXT_TOOLTIP_INFO_CREDITS_LOST]: "%d Credits lost from defeat at planet %s" --> "%d credits lost from defeat at planet %s."
 -[TEXT_TOOLTIP_TIE_ADVANCED]: "Darth Vader, a Sith Lord powerful with the dark side of the Force. Though an excellent pilot in his own right, his wingmen are recruited from the Empire's most skilled." --> "Though an excellent pilot in his own right, Darth Vader's wingmen are recruited from the Empire's most skilled."
 
 
