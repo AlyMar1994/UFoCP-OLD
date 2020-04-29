@@ -56,6 +56,8 @@ Units (Land)
 
 -Master Force Adept – Fixed Master Force Adept at the end of the Underworld campaign's AI: a non-existant variable resulted NIL, so the Adept would attack any unit in sight. This has been fixed to only target Underworld player units (implying as if he didn't do that already).
 
+-Zann Consortium Slaves – Fixed all Underworld slave types not being "victory relevant." Battles should no long automatically fail, due to only having slave infantry on the land battle.
+
 
 ==================
 Units (Space)

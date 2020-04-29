@@ -146,7 +146,7 @@
 	<!-- Expansion Units: Neutral -->
 	<File>Units\Units_Space_Neutral_Eclipse.xml</File>
 	<File>Hutt_Faction_Units.xml</File>
-	<File>Structures\HUTT\GroundBuildablesHutts.xml</File>
+	<File>Structures\HUT\GroundBuildablesHutts.xml</File>
 
 
 

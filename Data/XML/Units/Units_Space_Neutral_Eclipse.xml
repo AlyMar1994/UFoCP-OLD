@@ -80,7 +80,7 @@
 
 		<Behavior> DUMMY_STARSHIP, SELECTABLE </Behavior>
 		<Not_Really_Selectable>True</Not_Really_Selectable>
-		<SpaceBehavior>ABILITY_COUNTDOWN, POWERED, SHIELDED, REVEAL, TARGETING, DUMMY_TOOLTIP, DAMAGE_TRACKING  </SpaceBehavior>
+		<SpaceBehavior>ABILITY_COUNTDOWN, POWERED, SHIELDED, REVEAL, TARGETING, DUMMY_TOOLTIP, DAMAGE_TRACKING</SpaceBehavior>
 
 		<Is_Valid_Target>Yes</Is_Valid_Target>
 		<Target_Bones>
