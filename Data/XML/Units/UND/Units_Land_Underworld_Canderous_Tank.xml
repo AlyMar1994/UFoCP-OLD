@@ -105,11 +105,11 @@
 		<SFXEvent_Turret_Rotating_Loop>Vehicle_Turret_Motor</SFXEvent_Turret_Rotating_Loop>
 		<SFXEvent_Engine_Idle_Loop>Unit_2M_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
 		<SFXEvent_Engine_Moving_Loop>Unit_2M_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
-		<SFXEvent_Assist_Move>Unit_Assist_Move_Canderous_Tank</SFXEvent_Assist_Move>		
+		<SFXEvent_Assist_Move>Unit_Assist_Move_Canderous_Tank</SFXEvent_Assist_Move>
 		<SFXEvent_Assist_Attack>Unit_Assist_Attack_Canderous_Tank</SFXEvent_Assist_Attack>
 		<SFXEvent_Unit_Lost>UHD_Unit_Destroyed</SFXEvent_Unit_Lost>
-		<SFXEvent_Tactical_Build_Started>UHD_Reinforcements_En_Route</SFXEvent_Tactical_Build_Started>		
-		<SFXEvent_Tactical_Build_Complete>UHD_Reinforcements_Available</SFXEvent_Tactical_Build_Complete>		
+		<SFXEvent_Tactical_Build_Started>UHD_Reinforcements_En_Route</SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete>UHD_Reinforcements_Available</SFXEvent_Tactical_Build_Complete>
 		<SFXEvent_Tactical_Build_Cancelled>UHD_Reinforcements_Cancelled</SFXEvent_Tactical_Build_Cancelled>
 
 		<Ranking_In_Category>6</Ranking_In_Category>

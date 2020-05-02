@@ -945,7 +945,7 @@
 		<Radar_Icon_Name>I_Radar_Executor.tga</Radar_Icon_Name>
 		<Radar_Icon_Scale_Land>1.00</Radar_Icon_Scale_Land>
 		<Radar_Icon_Scale_Space>1.00</Radar_Icon_Scale_Space>
-		<Radar_Icon_Size>0.4, 0.4</Radar_Icon_Size>
+		<Radar_Icon_Size>0.40, 0.40</Radar_Icon_Size>
 
 		<Space_Override_Population_Value>3</Space_Override_Population_Value>
 
@@ -1226,10 +1226,9 @@
 		<Encyclopedia_Text>TEXT_TOOLTIP_DARTH_VADER TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SITH_LORD</Encyclopedia_Unit_Class>
 
-		<!-- ALYMAR1994 (2/4/2020): Post-implementation comment, adding this so two versions	-->
-		<!-- of Vader aren't buildable in GC. As Vader became buildable in FoC, ref'ing his		-->
-		<!-- FoC variant caused some issues with building either the normal SP version, or the	-->
-		<!-- land skirmish version. This sets the GC build prereq to an unachieveable tech lvl.	-->
+		<!-- AM1994 (5/1/2020): Adding this so two versions of Vader aren't buildable in GC. -->
+		<!-- Ref'ing his FoC variant in the team caused building issues with the normal SP version and -->
+		<!-- the land skirmish version. This sets the GC build prereq for the skirmish variant to an unachieveable tech lvl. -->
 		<Tech_Level>99</Tech_Level>
 
 		<Tactical_Build_Cost_Multiplayer>2500</Tactical_Build_Cost_Multiplayer>

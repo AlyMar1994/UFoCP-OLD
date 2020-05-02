@@ -39,9 +39,7 @@ function MainForce_Thread()
 
 	if TestValid(ds) then
 		-- Tactical superweapon is present, continue plan!
-		repeat
-			Sleep(1)
-		until ds.Is_Tactical_Superweapon_Ready() and (Evaluate_In_Galactic_Context("Want_To_Fire_DS", PlayerObject) ~= 0)
+		repeat Sleep(1) until ds.Is_Tactical_Superweapon_Ready() and (Evaluate_In_Galactic_Context("Want_To_Fire_DS", PlayerObject) ~= 0)
 
 		ds.Fire_Tactical_Superweapon()
 	end
