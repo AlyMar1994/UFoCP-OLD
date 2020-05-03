@@ -270,7 +270,6 @@ end
 -- ============================================
 -- @param player	player object to add to our table of players
 function Update_Player_Table(player)
-
 	if player == nil then
 		return
 	end
@@ -330,7 +329,7 @@ function Update_Kill_Stats_Table(stat_table, object, killer)
 	frag_entry[killer_id] = entry
 	stat_table[frag_index] = frag_entry
 
-	-- Update deaths
+	-- Update deaths:
 	death_entry = stat_table[death_index]
 	if death_entry == nil then
 		death_entry = {}
@@ -768,7 +767,7 @@ function Calc_Score_For_Efficiency(eff_val)
 end
 
 function Define_Title_Faction_Table()
-	-- rebel at 2, empire at 3
+	-- Rebel at 2, Empire at 3:
 	Title_Faction_Table =
 	{
 		{ 145000, "TEXT_REBEL_TITLE19", "TEXT_EMPIRE_TITLE19" },
@@ -866,4 +865,8 @@ function Get_Game_Stat_For_Control_ID(player, control_id, for_tactical)
 	else
 		MessageBox("Unknown control id %s:%s for Get_Game_Stat_For_Control_ID", type(control_id), tostring(control_id));
 	end
+end
+
+function Get_Current_Winner_By_Score()
+	return WinnerID
 end

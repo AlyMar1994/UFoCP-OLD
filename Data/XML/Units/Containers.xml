@@ -37,6 +37,7 @@
 		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
 
 		<Behavior>FLEET</Behavior>
+		<CategoryMask>Fighter</CategoryMask>
 	</Container>
 
 	<Container Name="Team">

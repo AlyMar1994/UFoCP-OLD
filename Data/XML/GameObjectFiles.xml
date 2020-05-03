@@ -47,7 +47,7 @@
 
 	<File>SpecialEffects.xml</File>
 	<File>Particles.xml</File>
-	<File>Markers.xml</File>
+	<File>Maps\Markers.xml</File>
 	<File>Units\UniqueUnits.xml</File>
 	<File>Units\Containers.xml</File>
 	<File>ScriptMarkers.xml</File>

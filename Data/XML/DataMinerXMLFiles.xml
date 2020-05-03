@@ -1,0 +1,126 @@
+<?xml version="1.0" ?>
+
+<GameXMLFiles>
+
+	<File filename="GameObjectFiles.xml"				type="GameObjectType"				metafile="true"/>
+	<!--
+	<File filename="TransportUnits.xml" type="GameObjectType" metafile="false"/>
+	<File filename="GroundBases.xml" type="GameObjectType" metafile="false"/>
+	<File filename="GroundStructures.xml" type="GameObjectType" metafile="false"/>
+	<File filename="GroundTurrets.xml" type="GameObjectType" metafile="false"/>
+	<File filename="GroundInfantry.xml" type="GameObjectType" metafile="false"/>
+	<File filename="GroundVehicles.xml" type="GameObjectType" metafile="false"/>
+	<File filename="GroundCompaniesRebel.xml" type="GameObjectType" metafile="false"/>
+	<File filename="GroundCompaniesEmpire.xml" type="GameObjectType" metafile="false"/>
+	<File filename="GroundIndigenous.xml" type="GameObjectType" metafile="false"/>
+	<File filename="GroundCompaniesIndigenous.xml" type="GameObjectType" metafile="false"/>
+	<File filename="GroundBuildablesRebel.xml" type="GameObjectType" metafile="false"/>
+	<File filename="GroundBuildablesEmpire.xml" type="GameObjectType" metafile="false"/>
+	<File filename="GroundBuildablesPirate.xml" type="GameObjectType" metafile="false"/>
+	<File filename="GroundBuildablesSkirmish.xml" type="GameObjectType" metafile="false"/>
+	<File filename="SpaceProps.xml" type="GameObjectType" metafile="false"/>
+	<File filename="SpaceUnitsCapital.xml" type="GameObjectType" metafile="false"/>
+	<File filename="SpaceUnitsFighters.xml" type="GameObjectType" metafile="false"/>
+	<File filename="SpaceUnitsCorvettes.xml" type="GameObjectType" metafile="false"/>
+	<File filename="SpaceUnitsFrigates.xml" type="GameObjectType" metafile="false"/>
+	<File filename="SpaceUnitsSupers.xml" type="GameObjectType" metafile="false"/>
+	<File filename="SpacePrimarySkydomes.xml" type="GameObjectType" metafile="false"/>
+	<File filename="SpaceSecondarySkydomes.xml" type="GameObjectType" metafile="false"/>
+	<File filename="SpaceBuildablesSkirmish.xml" type="GameObjectType" metafile="false"/>
+	<File filename="NamedHeroUnits.xml" type="GameObjectType" metafile="false"/>
+	<File filename="GenericHeroUnits.xml" type="GameObjectType" metafile="false"/>
+	<File filename="HeroCompanies.xml" type="GameObjectType" metafile="false"/>
+	<File filename="LandPrimarySkydomes.xml" type="GameObjectType" metafile="false"/>
+	<File filename="LandSecondarySkydomes.xml" type="GameObjectType" metafile="false"/>
+	<File filename="LandBombingRunUnits.xml" type="GameObjectType" metafile="false"/>
+	<File filename="SpecialStructures.xml" type="GameObjectType" metafile="false"/>
+	<File filename="TechBuilding.xml" type="GameObjectType" metafile="false"/>
+	<File filename="StarBases.xml" type="GameObjectType" metafile="false"/>
+	<File filename="Squadrons.xml" type="GameObjectType" metafile="false"/>
+	<File filename="Planets.xml" type="GameObjectType" metafile="false"/>
+	<File filename="Projectiles.xml" type="GameObjectType" metafile="false"/>
+	<File filename="SpecialEffects.xml" type="GameObjectType" metafile="false"/>
+	<File filename="Particles.xml" type="GameObjectType" metafile="false"/>
+	<File filename="Markers.xml" type="GameObjectType" metafile="false"/>
+	<File filename="UniqueUnits.xml" type="GameObjectType" metafile="false"/>
+	<File filename="Containers.xml" type="GameObjectType" metafile="false"/>
+	<File filename="ScriptMarkers.xml" type="GameObjectType" metafile="false"/>
+	<File filename="MiscObjects.xml" type="GameObjectType" metafile="false"/>
+	<File filename="UpgradeObjects.xml" type="GameObjectType" metafile="false"/>
+	<File filename="Props_Temperate.xml" type="GameObjectType" metafile="false"/>
+	<File filename="Props_Swamp.xml" type="GameObjectType" metafile="false"/>
+	<File filename="Props_Volcanic.xml" type="GameObjectType" metafile="false"/>
+	<File filename="Props_Forest.xml" type="GameObjectType" metafile="false"/>
+	<File filename="Props_Snow.xml" type="GameObjectType" metafile="false"/>
+	<File filename="Props_Desert.xml" type="GameObjectType" metafile="false"/>
+	<File filename="Props_Urban.xml" type="GameObjectType" metafile="false"/>
+	<File filename="Props_Generic.xml" type="GameObjectType" metafile="false"/>
+	<File filename="Props_Story.xml" type="GameObjectType" metafile="false"/>	
+	<File filename="Props_Story.xml" type="GameObjectType" metafile="false"/>	
+	-->
+
+	<File filename="HeroClash.xml"						type="HeroClashType"					metafile="false"/>
+	<File filename="SFXEventFiles.xml"					type="SFXEvent"						metafile="true"/>
+	<File filename="TerrainDecalFX.xml"					type="TerrainDecalFX"				metafile="false"/>
+	<File filename="LightningEffectTypes.xml"			type="LightningTypeManager"		metafile="false"/>
+	<File filename="DynamicTrackFX.xml"					type="DynamicTrackFX"				metafile="false"/>
+	<File filename="MusicEvents.xml"						type="MusicEvent"						metafile="false"/>
+	<File filename="SpeechEvents.xml"					type="SpeechEvent"					metafile="false"/>
+	<File filename="GameConstants.xml"					type="GameConstants"					metafile="false"/>
+	<File filename="CommandBarComponentFiles.xml"	type="CommandBarComponent"			metafile="true"/>
+	<File filename="TradeRouteFiles.xml"				type="TradeRoute"						metafile="true"/>
+	<File filename="TradeRouteLines.xml"				type="TradeRouteLines"				metafile="false"/>
+	<File filename="RadarMap.xml"							type="RadarMap"						metafile="false"/>
+	<File filename="StarWars3DTextCrawl.xml"			type="Draw3DTextCrawl"				metafile="false"/>
+	<File filename="WeatherScenarios.xml"				type="WeatherPattern"				metafile="false"/>
+	<File filename="HardPoints.xml"						type="HardPoint"						metafile="false"/>
+	<File filename="CampaignFiles.xml"					type="Campaign"						metafile="true"/>
+	<File filename="FactionFiles.xml"					type="Faction"							metafile="true"/>
+	<File filename="TacticalCameras.xml"				type="TacticalCameraConstants"	metafile="false"/>
+	<File filename="LightSources.xml"					type="LightSource"					metafile="false"/>
+	<File filename="Movies.xml"							type="BinkMovie"						metafile="false"/>
+	<File filename="TargetingPrioritySetFiles.xml"	type="TargetingPrioritySet"		metafile="true"/>
+	<File filename="DifficultyAdjustments.xml"		type="DifficultyAdjustment"		metafile="false"/>
+	<File filename="WeatherAudio.xml"					type="WeatherAudioManager"			metafile="false"/>
+
+	<!--
+	<File filename="CampaignFiles.xml"						type="Campaign"			metafile="true"/>
+	<File filename="Story_Campaign_Empire_Act_I.xml"	type="StoryParser"		metafile="false"/>
+	<File filename="Story_Campaign_Empire_Act_II.xml"	type="StoryParser"		metafile="false"/>	
+	<File filename="Story_Campaign_Empire_Act_III.xml"	type="StoryParser"		metafile="false"/>	
+	<File filename="Story_Campaign_Empire_Act_IV.xml"	type="StoryParser"		metafile="false"/>	
+	
+	<File filename="Story_Campaign_Rebel_Act_I.xml"		type="StoryParser"		metafile="false"/>	
+	<File filename="Story_Campaign_Rebel_Act_II.xml"	type="StoryParser"		metafile="false"/>	
+	<File filename="Story_Campaign_Rebel_Act_III.xml"	type="StoryParser"		metafile="false"/>	
+	<File filename="Story_Campaign_Rebel_Act_IV.xml"	type="StoryParser"		metafile="false"/>	
+	<File filename="Story_Campaign_Rebel_Prologue.xml"	type="StoryParser"		metafile="false"/>	
+	
+	<File filename="Story_Rebel_ActIII_M09_LAND.xml"	type="StoryParser"		metafile="false"/>	
+	<File filename="Story_Rebel_ActIII_M10_SPACE.xml"	type="StoryParser"		metafile="false"/>	
+	<File filename="Story_Rebel_ActII_M09_LAND.XML"	type="StoryParser"		metafile="false"/>	
+	<File filename="Story_Rebel_ActII_M10_LAND.XML"	type="StoryParser"		metafile="false"/>	
+	<File filename="Story_Rebel_ActI_M09_SPACE.XML"	type="StoryParser"		metafile="false"/>	
+	<File filename="Story_Rebel_ActI_M10_LAND.XML"	type="StoryParser"		metafile="false"/>	
+	<File filename="Story_Rebel_AI_Heroes.xml"	type="StoryParser"		metafile="false"/>	
+	<File filename="Story_Rebel_Prologue_M00_LAND.xml"	type="StoryParser"		metafile="false"/>	
+	<File filename="Story_Rebel_Prologue_M01_LAND.xml"	type="StoryParser"		metafile="false"/>	
+	<File filename="Story_Rebel_Prologue_M02_SPACE.xml"	type="StoryParser"		metafile="false"/>	
+	<File filename="Story_Rebel_Prologue_M03_LAND.xml"	type="StoryParser"		metafile="false"/>	
+	<File filename="Story_Rebel_Prologue_M06_LAND.xml"	type="StoryParser"		metafile="false"/>	
+	<File filename="Story_Rebel_Prologue_M07_SPACE.xml"	type="StoryParser"		metafile="false"/>	
+	<File filename="Story_Rebel_Prologue_M08_SPACE.xml"	type="StoryParser"		metafile="false"/>	
+	<File filename="Story_Rebel_Prologue_M10_LAND.xml"	type="StoryParser"		metafile="false"/>	
+	<File filename="Story_Rebel_Steve_Test.xml"	type="StoryParser"		metafile="false"/>	
+	<File filename="story_tutorial_1.xml"	type="StoryParser"		metafile="false"/>	
+	<File filename="story_tutorial_I.xml"	type="StoryParser"		metafile="false"/>	
+	<File filename="Story_Tutorial_III.xml"	type="StoryParser"		metafile="false"/>	
+	<File filename="Story_Tutorial_IV.xml"	type="StoryParser"		metafile="false"/>	
+	<File filename="story_tutorial_I_a.xml"	type="StoryParser"		metafile="false"/>	
+	<File filename="story_tutorial_space_1.xml"	type="StoryParser"		metafile="false"/>	
+	<File filename="Story_Tutorial_V.xml"	type="StoryParser"		metafile="false"/>	
+	<File filename="Story_Tutorial_VI.xml"	type="StoryParser"		metafile="false"/>	
+	<File filename="Story_Tutorial_VII.xml"	type="StoryParser"		metafile="false"/>	
+	-->
+	
+</GameXMLFiles>
