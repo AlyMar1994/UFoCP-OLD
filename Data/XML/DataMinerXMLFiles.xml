@@ -1,7 +1,5 @@
 <?xml version="1.0" ?>
-
 <GameXMLFiles>
-
 	<File filename="GameObjectFiles.xml"				type="GameObjectType"				metafile="true"/>
 	<!--
 	<File filename="TransportUnits.xml" type="GameObjectType" metafile="false"/>
@@ -122,5 +120,4 @@
 	<File filename="Story_Tutorial_VI.xml"	type="StoryParser"		metafile="false"/>	
 	<File filename="Story_Tutorial_VII.xml"	type="StoryParser"		metafile="false"/>	
 	-->
-	
 </GameXMLFiles>
