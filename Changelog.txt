@@ -54,6 +54,12 @@ General
 
 
 ==================
+Planets (Galactic)
+==================
+-Fixed planets using inconsistent higher-than-average credit value texts. Now all consolidated under one string entry, and are all consistent.
+
+
+==================
 Units (Land)
 ==================
 -Canderous Assault Tank – Adjusted unit damage to 5.33. Update v1.2 changed the shots-per-volley from two to three to fix an animation bug. This meant, per-volley, it did 24 damage from its original 16. The damage has now been adjusted so it results in 16 damage in total again, despite having three shots per-volley. The tank is still powerful, but less gamebreaking.
