@@ -66,6 +66,11 @@ v1.11
 -[TEXT_GUI_DIALOG_TOOLTIP_IDC_SOFT_SHADOWS]: "Enabling soft shadows will soften the edges of the high-detail shadows. Disabling this option may improve performance." --> "Enabling Soft Shadows softens edges of all shadows in-game. Is more effective with high-detail shadows. Disabling this may improve performance."
 -[TEXT_GUI_DIALOG_TOOLTIP_IDC_TEXTURE_MIP_DETAIL_SLIDER]: "High detail textures have more detail but may decrease performance." --> "Changes texture fidelity. Higher qualities have more detail, and are more recognizable. Lower qualities may improve performance."
 -[TEXT_GUI_DIALOG_TOOLTIP_IDC_WATER_DETAIL_SLIDER]: "High quality water will display reflections and refractions. Lower quality water may improve performance." --> "Changes overall quality of water. Higher qualities will display reflective and refractive water. Lower qualities may improve performance."
+-[TEXT_ENCYCLOPEDIA_TECH_UPGRADE_01]: "Allows production (with prerequisites) of: Heavy Vehicle Factory, SPMA-T, TIE mauler, TIE bomber, Broadside-class Cruiser, and upgrade to Tech Level 2." --> "Allows production of various beginning forces for the Empire, and upgrade to Tech Level 2."
+-[TEXT_ENCYCLOPEDIA_TECH_UPGRADE_02]: "Allows production (with prerequisites) of: Imperial Space Station Lv. 3, Victory-class Star Destroyer, Base Shield Generator, Magnapulse Cannon, Turbolaser Tower, SPMA-T, and upgrade to Tech Level 3." --> "Allows production (with prerequisites) of: Imperial Space Station Lv. 3, Broadside Cruiser, Victory-class Cruiser, Heavy Factory, Magnapulse Cannon, Shield Generator, Turbolaser Tower Defenses, SPMA-T, 2-M Repulsor Tanks and an upgrade to Tech Lv. 3."
+-[TEXT_ENCYCLOPEDIA_TECH_UPGRADE_03]: "Allows production (with prerequisites) of: Imperial Space Station Lv. 4, Orbital Long Range Scanner, TIE scout, Hypervelocity Gun, Advanced Factory, 2-M Repulsor Tanks, AT-AT Walker, and upgrade to Tech Level 4." --> "Allows production (with prerequisites) of: Imperial Space Station Lv. 4, Long Range Scanner, TIE scout, Advanced Factory, Hypervelocity Gun, AT-AT Walker, HAVt B5 Juggernaut and an upgrade to Tech Lv. 4."
+-[TEXT_ENCYCLOPEDIA_TECH_UPGRADE_04]: "Allows production (with prerequisites) of: Imperial Space Station Lv. 5, Gravity Well Station, Imperial-class Star Destroyer, Interdictor Cruiser, AT-AA Walker, and upgrade to Tech Level 5." --> "Allows production (with prerequisites) of: Imperial Space Station Lv. 5, Gravity Well Station, Imperial Star Destroyer, Interdictor Cruiser, TIE phantom, AT-AA Walkers, Lancet Aerial Artillery and and an upgrade to Tech Lv. 5."
+-[TEXT_ENCYCLOPEDIA_TECH_UPGRADE_05_01]: "Allows production (with prerequisites) of the Death Star II." --> "Allows production (with prerequisites) of: the Death Star II, Darth Vader, TIE defender and Dark Trooper Phase III."
 -[TEXT_PLANET_CHANGED_HANDS]: "%ls: Control changed from %ls to %ls" --> "%ls: Control changed from %ls to %ls."
 -[TEXT_PLANET_CHANGED_HANDS_BONUS]: "%ls: Control changed from %ls to %ls. Credit bonus: %d" --> "%ls: Control changed from %ls to %ls. Credit bonus: %d."
 -[TEXT_PLANETARY_REVOLT]: "Planetary revolt on %s!" --> "Planetary revolt on: %s!"
@@ -78,6 +83,10 @@ v1.11
 -[TEXT_TOOLTIP_INFO_CREDITS_GAINED]: "%d Credits gained from capture of planet %s" --> "%d credits gained from capture of planet %s."
 -[TEXT_TOOLTIP_INFO_CREDITS_LOST]: "%d Credits lost from defeat at planet %s" --> "%d credits lost from defeat at planet %s."
 -[TEXT_TOOLTIP_TIE_ADVANCED]: "Darth Vader, a Sith Lord powerful with the dark side of the Force. Though an excellent pilot in his own right, his wingmen are recruited from the Empire's most skilled." --> "Though an excellent pilot in his own right, Darth Vader's wingmen are recruited from the Empire's most skilled."
+-[TEXT_UNIT_CANDEROUS_TANK_COMPANY]: "Canderous Assault Tank Company" --> "Canderous Assault Tanks"
+-[TEXT_UNIT_INTERDICTOR_CRUISER]: "Interdictor Cruiser" --> "Interdictor-class Cruiser"
+-[TEXT_UNIT_TIE_CRAWLER]: "TIE Mauler" --> "TIE mauler"
+-[TEXT_UNIT_VICTORY_DESTROYER]: "Victory Cruiser" --> "Victory-class Cruiser"
 
 
 ===================================================================================================

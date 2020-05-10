@@ -32,6 +32,12 @@ General
 
 -Undid most of previous update's "TEXT_NONE" fixes, and reimplemented an alternate fix. Created string "TEXT_NONE" so any "TEXT_NONE"-named object can stop throwing errors. If there's any visible text in-game that says "None.  If you see this description, hehe, you shouldn't!  Please report this object to 'https://github.com/alymar1994/ufocp' immediately." then please do report it.
 
+-Fixed regression. All reinforcement points will now display icons.
+
+-Fixed all Empire technology levels not mentioning objects that can be built when upgrading (for example, 2-M Repulsor Tanks or the Heavy Vehicle Factory not being mentioned when upgrading to level 2 in the tooltip).
+-Fixed items being improperly named on Empire tech level tooltips.
+-Fixed erratic spacing of Empire technology levels. It now follows this order alphabetically: [Space Objects], [Space Units], [Land Objects], [Land Units], [Misc].
+
 -Fixed bug on Underworld Byss kidnapping mission objectives. Failing any objective will now fail all objectives.
 -Fixed bug on Underworld Byss kidnapping mission objectives. Completing the mission will now complete all objectives.
 
@@ -45,8 +51,6 @@ General
 -Fixed bug on Underworld Taris intimidation mission. If Silri dies, the intimidation objective would never fail due to looking for a non-existant variable. Failing will now fail all objectives.
 
 -Fixed bug on Underworld Utapau kidnapping mission objectives. Failing any objective will now fail all objectives.
-
--Fixed regression. All reinforcement points will now display icons.
 
 
 ==================
