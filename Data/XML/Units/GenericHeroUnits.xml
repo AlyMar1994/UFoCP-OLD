@@ -955,7 +955,7 @@
 	</GenericHeroUnit> -->
 
 
-	<!-- 	<GenericHeroUnit Name="Generic_Commander_00">
+	<!-- <GenericHeroUnit Name="Generic_Commander_00">
 		<Armor_Type> Armor_Infantry</Armor_Type>
 		<Tactical_Health>60</Tactical_Health>
 		<Text_ID>TEXT_HERO_UNIT_FIELD_EMPIRE</Text_ID>

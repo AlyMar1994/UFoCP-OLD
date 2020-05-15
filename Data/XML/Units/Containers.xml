@@ -479,7 +479,7 @@
 
 		<!-- Non-Hero unit abilities description. -->
 		<Unit_Abilities_Data SubObjectList="Yes">
-			<!-- Primary Ability. -->
+			<!-- Primary Ability: -->
 			<Unit_Ability>
 				<Type>SPREAD_OUT</Type>
 				<Mod_Multiplier>SPEED_MULTIPLIER,		0.50</Mod_Multiplier>

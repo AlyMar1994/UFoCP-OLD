@@ -20,7 +20,7 @@ Whenever the AI is edited, it's not labeled based on specific changed units with
 =========================================================================================
 v1.11
 =========================================================================================
-There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT Changelog.txt" in the game directory to see!
+There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT Changelog.txt" in the game directory to see! TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY
 
 
 ==================
@@ -62,7 +62,15 @@ Planets (Galactic)
 ==================
 Units (Land)
 ==================
+-Defiler – Fixed unit not having the "this unit can capture buildpads" text on the galactic level.
+
+
+==================
+Units (Land)
+==================
 -Canderous Assault Tank – Adjusted unit damage to 5.33. Update v1.2 changed the shots-per-volley from two to three to fix an animation bug. This meant, per-volley, it did 24 damage from its original 16. The damage has now been adjusted so it results in 16 damage in total again, despite having three shots per-volley. The tank is still powerful, but less gamebreaking.
+
+-Defiler – Fixed unit being able to trigger a battlefield callout when no callout has been created for any faction (nor in its own behaviors).
 
 -Field Commander (Empire) – Fixed galactic tooltip now containing text about being able to capture buildpads.
 

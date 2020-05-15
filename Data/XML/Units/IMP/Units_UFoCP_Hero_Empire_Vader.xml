@@ -54,7 +54,7 @@
 		<Min_Speed>.10</Min_Speed>
 		<OverrideAcceleration>.10</OverrideAcceleration>
 		<OverrideDeceleration>.10</OverrideDeceleration>
-		
+
 		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
 		<Type>Walk</Type>
 		<Deploys>No</Deploys>

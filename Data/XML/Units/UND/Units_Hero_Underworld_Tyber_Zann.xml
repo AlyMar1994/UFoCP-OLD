@@ -188,7 +188,7 @@
 
 		<Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
 	</HeroUnit>
-	
+
 	<HeroUnit Name="Tyber_Zann_Prologue">
 		<Variant_Of_Existing_Type>Tyber_Zann</Variant_Of_Existing_Type>
 

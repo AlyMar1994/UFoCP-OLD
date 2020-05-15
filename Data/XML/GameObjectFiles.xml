@@ -153,7 +153,7 @@
 	<!-- Expansion General Files -->
 	<File>SpaceProps_Underworld.xml</File>
 	<File>Underworld_TransportUnits.xml</File>
-	<File>Minor_Heroes_Expansion.xml</File>
+	<File>Units\UND\Units_UFoCP_Land_Underworld_Defiler.xml</File>
 	<File>Props_Felucia.xml</File>
 	<File>GroundBuildablesUnderworld.xml</File>
 	<File>GroundStructures_Underworld.xml</File>

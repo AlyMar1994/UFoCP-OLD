@@ -39,7 +39,7 @@
 		<Population_Value>1</Population_Value>
 	</HeroCompany>
 
-	
+
 	<HeroCompany Name="Field_Com_Rebel_Team">
 		<GUI_Row>1</GUI_Row>
 		<Text_ID>TEXT_HERO_UNIT_FIELD_REBEL</Text_ID>
