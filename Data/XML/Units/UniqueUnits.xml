@@ -1305,7 +1305,7 @@
 	<!-- Upgraded AT-AT (Empire Major Hero) - General Veers during land battles. -->
 	<UniqueUnit Name="Veers_AT_AT_Walker">
 		<LOD_Bias>0.5</LOD_Bias>
-		<Text_ID>TEXT_HERO_GENERAL_VEERS_02</Text_ID>
+		<Text_ID>TEXT_HERO_GENERAL_VEERS_03</Text_ID>
 		<Encyclopedia_Text>TEXT_TOOLTIP_VEERS_01</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIELD_COMMANDER</Encyclopedia_Unit_Class>
 

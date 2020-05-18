@@ -26,6 +26,7 @@ v1.11
 -Created string "TEXT_CORRUPTION_INT_NABOO_OBJ_00" to fix bad objective string in Silri's Naboo intimidation mission.
 -Created string "TEXT_CORRUPTION_KID_BYSS_OBJ_00" to fix bad objective string in Silri's Byss kidnapping mission.
 -Created string "TEXT_PLANET_TRAIT_LOTSCREDITS" to fix inconsistent wording/classification of planet trait "This planet has a higher-than-average credit production rate."  Originally used Bonadan's tooltip for all affected planets.  This replaces all planets that have it.
+-Created string "TEXT_HERO_GENERAL_VEERS_03" to adjust unit name to keep consistent with other heroes.
 
 -Renamed string "TEXT_CORRUPTION_TARIS_INT_GOAL_01" to "TEXT_CORRUPTION_OBJ_SILRISURVIVE."  This string is used universally for Silri's corruption missions, to say "Silri must survive."  This has been changed in all missions.
 -Renamed string "TEXT_BYSS_KIDNAPPING_OBJECTIVE_00" to "TEXT_CORRUPTION_KID_BYSS_OBJ_01" to keep consistency within file.
@@ -95,6 +96,8 @@ v1.11
 -[TEXT_UNIT_INTERDICTOR_CRUISER]: "Interdictor Cruiser" --> "Interdictor-class Cruiser"
 -[TEXT_UNIT_TIE_CRAWLER]: "TIE Mauler" --> "TIE mauler"
 -[TEXT_UNIT_VICTORY_DESTROYER]: "Victory Cruiser" --> "Victory-class Cruiser"
+-[TEXT_UPGRADE_TOOLTIP_EL_ENHANCED_REACTORS_L1]: "Tie Maulers, AT-AA Walkers, and AT-ST Walkers gain a 15% movement speed increase." --> "TIE maulers, AT-AA and AT-ST Walkers gain a 15% movement speed increase."
+-[TEXT_UPGRADE_TOOLTIP_EL_ENHANCED_REACTORS_L2]: "Tie Maulers, AT-AA Walkers, and AT-ST Walkers gain a 30% movement speed increase." --> "TIE maulers, AT-AA and AT-ST Walkers gain a 30% movement speed increase."
 
 
 ===================================================================================================

@@ -1371,7 +1371,7 @@
 
 	<HeroUnit Name="General_Veers">
 		<Is_Named_Hero>Yes</Is_Named_Hero>
-		<Text_ID>TEXT_HERO_GENERAL_VEERS</Text_ID>
+		<Text_ID>TEXT_HERO_GENERAL_VEERS_03</Text_ID>
 		<Encyclopedia_Text>TEXT_TOOLTIP_VEERS_01</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIELD_COMMANDER</Encyclopedia_Unit_Class>
 		

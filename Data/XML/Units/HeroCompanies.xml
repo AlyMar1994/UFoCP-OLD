@@ -855,7 +855,11 @@
 
 
 	<HeroCompany Name="General_Veers_Team">
-		<Text_ID>TEXT_HERO_VEERS_TEAM</Text_ID>
+		<Text_ID>TEXT_HERO_GENERAL_VEERS_03</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_VEERS_01</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIELD_COMMANDER</Encyclopedia_Unit_Class>
+
+		<Population_Value>1</Population_Value>
 		<Icon_Name>I_Button_General_Maximillian_Veers.tga</Icon_Name>
 		<Is_Dummy>Yes</Is_Dummy>
 		<Affiliation>Empire</Affiliation>
@@ -877,7 +881,7 @@
 		<Score_Cost_Credits>18000</Score_Cost_Credits>
 
 		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>		
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>Unit_Respawn_Veers</SFXEvent_Build_Complete>
 		<SFXEvent_Hero_Respawned>Unit_Respawn_Veers</SFXEvent_Hero_Respawned>
 		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Veers</SFXEvent_Fleet_Move>
@@ -906,17 +910,13 @@
 			</Unit_Ability>
 		</Unit_Abilities_Data>
 
-		<!-- MULTIPLAYER SKIRMISH VALUES START -->
+		<!-- MULTIPLAYER SKIRMISH VALUES START: -->
 		<Tactical_Build_Cost_Multiplayer>4000</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
 		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
-
-		<Encyclopedia_Text>TEXT_TOOLTIP_VEERS_01</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIELD_COMMANDER</Encyclopedia_Unit_Class>
-		<Population_Value>1</Population_Value>
 	</HeroCompany>
 
 
