@@ -27,6 +27,7 @@ v1.11
 -Created string "TEXT_CORRUPTION_KID_BYSS_OBJ_00" to fix bad objective string in Silri's Byss kidnapping mission.
 -Created string "TEXT_PLANET_TRAIT_LOTSCREDITS" to fix inconsistent wording/classification of planet trait "This planet has a higher-than-average credit production rate."  Originally used Bonadan's tooltip for all affected planets.  This replaces all planets that have it.
 -Created string "TEXT_HERO_GENERAL_VEERS_03" to adjust unit name to keep consistent with other heroes.
+-Created string "TEXT_TOOLTIP_ANNIHILATOR_01" to adjust unit description to keep its content consistent with others of its type, and in-general.
 
 -Renamed string "TEXT_CORRUPTION_TARIS_INT_GOAL_01" to "TEXT_CORRUPTION_OBJ_SILRISURVIVE."  This string is used universally for Silri's corruption missions, to say "Silri must survive."  This has been changed in all missions.
 -Renamed string "TEXT_BYSS_KIDNAPPING_OBJECTIVE_00" to "TEXT_CORRUPTION_KID_BYSS_OBJ_01" to keep consistency within file.
@@ -42,6 +43,9 @@ v1.11
 -Renamed string "TEXT_PLANET_ALDERAAN_INFO_WILDLIFE_02" to "TEXT_PLANET_ALDERAAN_INFO_WL_02" for database consistency.
 -Renamed string "TEXT_PLANET_BONADAN_INFO_ADV_01" to "TEXT_PLANET_TRAIT_LOTSCREDITS_NAME" for database consistency.
 -Renamed string "TEXT_PLANET_VERGESSO_INFO_ADV" to "TEXT_PLANET_TRAIT_SPACESTEALTH" for database consistency.
+-Renamed string "TEXT_TOOLTIP_ANNIHILATOR" and "TEXT_TOOLTIP_ANNIHILATOR_01" to "TEXT_HERO_ANNIHILATOR" and "TEXT_HERO_ANNIHILATOR_01" for database consistency.
+-Renamed string "TEXT_ENCYCLOPEDIA_ANNIHILATOR" to "TEXT_TOOLTIP_ANNIHILATOR" for database consistency.
+-Renamed string "TEXT_TOOLTIP_SD_ADMONITOR" to "TEXT_TOOLTIP_THRAWN_SD_00" for database consistency.
 
 -Deleted string "TEXT_TOOLTIP_OBI_WAN_01," as it is a duplicate of "TEXT_TOOLTIP_OBI_WAN" with a minor text adjustment not requiring a new tag.  Obi-Wan's tooltip text remains the same.
 -Deleted string "TEXT_UNIT_ROGUE_10_01," as it was an unecessary duplicate to fix a minor text error.
@@ -88,9 +92,11 @@ v1.11
 -[TEXT_SPEECH_EMPIRE_SPACE_WIN_03]: "It is all as I have foreseen!" --> "Emperor Palpatine: It is all as I have foreseen!"
 -[TEXT_SPEECH_EMPIRE_SPACE_WIN_04]: "(evil cackling laughter)" --> "Emperor Palpatine: [Evil Cackling]"
 -[TEXT_TOOLTIP_ABILITY_REPLENISH_WINGMEN_DESCRIPTION]: "Will replenish any lost wingmen in the squadron that Darth Vader is leading. Darth Vader's TIE advanced prototype can only be damaged if the wingmen are destroyed." --> "Will replenish any lost wingmen in the squadron that Darth Vader is leading. Darth Vader's TIE Advanced prototype can only be damaged if his wingmen are destroyed."
+-[TEXT_TOOLTIP_BM_STRAT_DEMO]: "Allows units to overload their weapons or drive systems to produce a strategic explosion.  Does not guarantee the survival of the pilot." --> "Allows units to overload their weapons or drive systems to produce a strategic explosion. Does not guarantee the survival of the pilot."
 -[TEXT_TOOLTIP_DEATH_STAR_II]: "A larger, more powerful version of the original Death Star; the new battle station includes enhanced targeting computers for the superlaser, allowing it to fire on slow-moving ships." --> "A larger, more powerful version of the original Death Star. The new battle station includes enhanced targeting computers for the superlaser, allowing it to fire on slow-moving ships."
 -[TEXT_TOOLTIP_INFO_CREDITS_GAINED]: "%d Credits gained from capture of planet %s" --> "%d credits gained from capture of planet %s."
 -[TEXT_TOOLTIP_INFO_CREDITS_LOST]: "%d Credits lost from defeat at planet %s" --> "%d credits lost from defeat at planet %s."
+-[TEXT_TOOLTIP_SPECIAL_ABILITY_DISABLED]: "Unit special abilities disabled in nebula" --> "This unit's special abilities are disabled in the nebula."
 -[TEXT_TOOLTIP_TIE_ADVANCED]: "Darth Vader, a Sith Lord powerful with the dark side of the Force. Though an excellent pilot in his own right, his wingmen are recruited from the Empire's most skilled." --> "Though an excellent pilot in his own right, Darth Vader's wingmen are recruited from the Empire's most skilled."
 -[TEXT_UNIT_CANDEROUS_TANK_COMPANY]: "Canderous Assault Tank Company" --> "Canderous Assault Tanks"
 -[TEXT_UNIT_INTERDICTOR_CRUISER]: "Interdictor Cruiser" --> "Interdictor-class Cruiser"

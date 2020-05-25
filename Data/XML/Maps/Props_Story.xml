@@ -2436,28 +2436,22 @@
 			</Force_Healing_Ability>
 		</Abilities>
 	</Props_Story>
-	
-	
-	
-	
+
+
+
+
 	<Props_Story Name="UM12_SUPER_STAR_DESTROYER">
-		<!-- <Variant_Of_Existing_Type>Executor_Super_Star_Destroyer</Variant_Of_Existing_Type> -->
-
-		<Text_ID>TEXT_TOOLTIP_ANNIHILATOR_01</Text_ID>
-		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_ANNIHILATOR</Encyclopedia_Text>
-		<Encyclopedia_Good_Against> Calamari_Cruiser Rebel_Star_Base_5 Krayt_Class_Destroyer </Encyclopedia_Good_Against>
-		<Encyclopedia_Vulnerable_To> Y-wing B-Wing Skipray_Blastboat </Encyclopedia_Vulnerable_To>
-
-		<Layer_Z_Adjust>-600.0</Layer_Z_Adjust>
-
-		<GUI_Bounds_Scale>0.01</GUI_Bounds_Scale>
-
-		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SSD </Encyclopedia_Unit_Class>
-
-		<Custom_Hard_XExtent> 100.0 </Custom_Hard_XExtent>
-		<Custom_Hard_YExtent> 100.0 </Custom_Hard_YExtent>
-
+		<Text_ID>TEXT_HERO_ANNIHILATOR_01</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_ANNIHILATOR_01</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SSD</Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against>Calamari_Cruiser Rebel_Star_Base_5 Krayt_Class_Destroyer</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>Y-wing B-Wing Skipray_Blastboat</Encyclopedia_Vulnerable_To>
 		<Icon_Name>I_Button_EV_ExecutorStarDestroyer.tga</Icon_Name>
+
+		<Layer_Z_Adjust>-600.00</Layer_Z_Adjust>
+		<GUI_Bounds_Scale>0.01</GUI_Bounds_Scale>
+		<Custom_Hard_XExtent>100.00</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>100.00</Custom_Hard_YExtent>
 
 		<GUI_Row>1</GUI_Row>
 		<Space_Model_Name>EV_ExecutorStarDestroyer.ALO</Space_Model_Name>
@@ -2515,7 +2509,7 @@
 		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
 		<Size_Value>8</Size_Value>
 
-		<!-- Fighter Spawners -->
+		<!-- Fighter spawners: -->
 		<Starting_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 4</Starting_Spawned_Units_Tech_0>
 		<Reserve_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 16</Reserve_Spawned_Units_Tech_0>
 
@@ -2531,15 +2525,15 @@
 		<Spawned_Squadron_Delay_Seconds>8</Spawned_Squadron_Delay_Seconds>
 
 		<Behavior>SELECTABLE, DUMMY_STARSHIP</Behavior>
-		<SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		<SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
 
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
 		<Death_Explosions>Large_Explosion_Space_Empire</Death_Explosions>
 		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
 
 		<Death_Clone>Damage_Normal, Executor_Death_Clone</Death_Clone>
-		<Space_FOW_Reveal_Range>6000.0</Space_FOW_Reveal_Range>
-		<Targeting_Max_Attack_Distance>2200.0</Targeting_Max_Attack_Distance>
+		<Space_FOW_Reveal_Range>6000.00</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>2200.00</Targeting_Max_Attack_Distance>
 
 		<HardPoints>
 			HP_EXECUTOR_LEFT_TURBO_00,

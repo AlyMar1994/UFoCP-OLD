@@ -12,6 +12,10 @@ Vocab.:
 
 -Conditional(s) – "If this, then this will happen"-type code.
 -Death Clone – The version of a ship that lingers in a map when destroyed.
+
+-Galactic (e.g. in headers) – On the galactic map/level.
+-Land – On land maps.
+-Space – On space maps.
 ----
 Whenever the AI is edited, it's not labeled based on specific changed units with the A.I., but it's labelled based on the name of the file.
 ----
@@ -24,54 +28,59 @@ There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT 
 
 
 ==================
+A.I. (Land)
+==================
+-UM11_ForceAdeptFour – Fixed Master Force Adept, ultimate boss of UM11 and penultimate boss of the Underworld Campaign. A non-existant variable resulted NIL, so the Adept would attack any unit in sight. This has been fixed to only target Underworld player units (implying as if he didn't do that already).
+
+
+==================
 General
 ==================
--Modified generic galactic squadron container unit, by giving it a CategoryMask of "fighter" so the game stops throwing errors. If there's any gameplay modifications from this, report it.
+-Added support for Anakin's Empire at War/Forces of Corruption mod launcher.
 
 -Reorganized most of the mod's files in various ways.
 
 -Undid most of previous update's "TEXT_NONE" fixes, and reimplemented an alternate fix. Created string "TEXT_NONE" so any "TEXT_NONE"-named object can stop throwing errors. If there's any visible text in-game that says "None.  If you see this description, hehe, you shouldn't!  Please report this object to 'https://github.com/alymar1994/ufocp' immediately." then please do report it.
 
--Fixed regression. All reinforcement points will now display icons.
+-Modified generic galactic squadron container unit, by giving it a CategoryMask of "fighter" so the game stops throwing errors.
 
 -Fixed all Empire technology levels not mentioning objects that can be built when upgrading (for example, 2-M Repulsor Tanks or the Heavy Vehicle Factory not being mentioned when upgrading to level 2 in the tooltip).
 -Fixed items being improperly named on Empire tech level tooltips.
--Fixed erratic spacing of Empire technology levels. It now follows this order alphabetically: [Space Objects], [Space Units], [Land Objects], [Land Units], [Misc].
+-Fixed erratic spacing of Empire technology levels. It now follows this order, alphabetically: [Space Objects], [Space Units], [Land Objects], [Land Units], [Misc].
 
--Fixed bug on Underworld Byss kidnapping mission objectives. Failing any objective will now fail all objectives.
--Fixed bug on Underworld Byss kidnapping mission objectives. Completing the mission will now complete all objectives.
-
--Fixed bug on Underworld Dantooine intimidation mission objectives. Failing any objective will now fail all objectives.
--Fixed bug on Underworld Dantooine intimidation mission objectives. Completing the mission will now complete all objectives.
-
+-Fixed bugs on Underworld Byss kidnapping mission objectives. Failing the mission will now fail all objectives, and completing the mission will now complete all objectives visibly (green check mark next to objective). Original code was referencing non-existant strings, throwing errors.
+-Fixed bugs on Underworld Dantooine intimidation mission objectives. Failing the mission will now fail all objectives, and completing the mission will now complete all objectives.
 -Fixed bug on Underworld Honoghr intimidation mission objectives. Completing the mission will now complete all objectives.
-
--Fixed bug on Underworld Naboo intimidation mission objectives. Failing any objective will now fail all objectives.
-
--Fixed bug on Underworld Taris intimidation mission. If Silri dies, the intimidation objective would never fail due to looking for a non-existant variable. Failing will now fail all objectives.
-
--Fixed bug on Underworld Utapau kidnapping mission objectives. Failing any objective will now fail all objectives.
+-Fixed bug on Underworld Naboo intimidation mission objectives. Failing the mission will now fail all objectives.
+-Fixed bug on Underworld Taris intimidation mission. Failing the mission will now fail all objectives.
+-Fixed bug on Underworld Utapau kidnapping mission objectives. Failing the mission will now fail all objectives.
 
 
 ==================
 Planets (Galactic)
 ==================
--Fixed planets using inconsistent higher-than-average credit value texts. Now all consolidated under one string entry, and are all consistent.
+-Fixed planets using inconsistent higher-than-average credit value texts, which could result in text oddities. Now all consolidated under one string entry, and are all consistent.
 
 
 ==================
-Units (Land)
+Structures (Land)
 ==================
--Defiler – Fixed unit not having the "this unit can capture buildpads" text on the galactic level.
+-Fixed regression. All reinforcement points will now display icons.
+
+
+==================
+Units (Galactic)
+==================
+-Defiler – Fixed unit not having the "this unit can capture buildpads" text.
 
 
 ==================
 Units (Land)
 ==================
 -Blizzard 1 - General Veers – Fixed unit's name to be more consistient with other named space hero units. Now named "Blizzard 1 - General Veers" instead of soley "General Maximilian Veers." Name is taken from the official Prima game guide.
--Blizzard 1 - General Veers – Fixed unit's team/container names being erroneous, and inconsistent. Now named "Blizzard 1 - General Veers," same as the unit instead of "Colonel Maximilian Veers" (when the other tooltip claimed he was a general).
+-Blizzard 1 - General Veers – Fixed unit's team/container names being erroneous, and inconsistent. Now named "Blizzard 1 - General Veers," same as the unit instead of "Colonel Maximilian Veers." Veers was referred to as a "colonel" on all levels other than land.
 
--Canderous Assault Tank – Adjusted unit damage to 5.33. Update v1.2 changed the shots-per-volley from two to three to fix an animation bug. This meant, per-volley, it did 24 damage from its original 16. The damage has now been adjusted so it results in 16 damage in total again, despite having three shots per-volley. The tank is still powerful, but less gamebreaking.
+-Canderous Assault Tank – Adjusted unit damage to 5.33(r). Update v1.2 changed the shots-per-volley from two to three to fix an animation bug. This meant, per-volley, it did 24 damage from its original 16. The damage has now been adjusted so it results in 16 (technically 15.99) damage in total again, despite having three shots per-volley. The tank is still powerful, but less gamebreaking.
 
 -Defiler – Fixed unit being able to trigger a battlefield callout when no callout has been created for any faction (nor in its own behaviors).
 
@@ -81,9 +90,7 @@ Units (Land)
 
 -Force Adept – Fixed all Force Adepts not using the "capture buildpads" text in their tooltips when they're capable of capturing build pads.
 
--Master Force Adept – Fixed Master Force Adept at the end of the Underworld campaign's AI: a non-existant variable resulted NIL, so the Adept would attack any unit in sight. This has been fixed to only target Underworld player units (implying as if he didn't do that already).
-
--Zann Consortium Slaves – Fixed all Underworld slave types not being "victory relevant." Battles should no long automatically fail, due to only having slave infantry on the land battle.
+-Zann Consortium Slaves – Fixed all Underworld slave types not being "victory relevant." Battles should no longer automatically fail due to only having slave infantry on the land battle.
 
 
 ==================
@@ -100,11 +107,13 @@ Units (Space)
 -Black Squadron – Fixed herobar description using only the TIE Advanced x1 text when it should only use the normal Vader description as other heroes use theirs.
 -Black Squadron – Fixed "good against" indicators not including the Starviper Fighter, and the "weak against" indicator not displaying the Crusader Gunship.
 
+-The Annihilator - Admiral Gaarn – Fixed unit description. Contents are now more aligned/consistent with other units of its type and in-general.
+
 -The Executor - Darth Vader – Fixed unit's name to be more consistient with other named hero units of the same class. Now named "The Executor - Darth Vader" instead of soley "Executor-class Super Star Destroyer."
 -The Executor - Darth Vader – Fixed in-game space unit's icon being the Executor icon, instead of the hero's icon like all other heroes.
 -The Executor - Darth Vader – Fixed in-game space unit's description not including Darth Vader's normal description as well.
 
--TIE Advanced x1 - Darth Vader – Fixed unit's name to be more consistent with other named hero units of the same class. Now named "Black Leader: Darth Vader" instead of soley "TIE Advanced X-1."
+-Black Leader: Darth Vader – Fixed unit's name to be more consistent with other named hero units of the same class. Now named "Black Leader: Darth Vader" instead of soley "TIE Advanced X-1."
 
 
 =========================================================================================

@@ -13,7 +13,7 @@
 		<Is_Playable>True/False</Is_Playable>
 		<Can_Control_Planets>True/False</Can_Control_Planets>
 
-		<Garrison_Reinforcement_Delay_Seconds>20.0</Garrison_Reinforcement_Delay_Seconds>
+		<Garrison_Reinforcement_Delay_Seconds>20.00</Garrison_Reinforcement_Delay_Seconds>
 		<Multiplayer_Beacon_Type>R_Multiplayer_Beacon</Multiplayer_Beacon_Type>
 		<Multiplayer_Map_Preview_Icon>I_Multiplayer_Faction.tga</Multiplayer_Map_Preview_Icon>
 
@@ -63,8 +63,8 @@
 		<No_Colorization_Color>Red#, Green#, Blue#, Transparency#</No_Colorization_Color>
 
 		<!-- Defines leader of faction. -->
-		<!-- For Galactic Conquests bent on killing a leader and/or taking over their home planet (base of operations). -->
-		<!-- Can be very effective for mods like Thrawn's Revenge, which have permadeath heroes! -->
+		<!-- For Galactic Conquests bent on killing a leader and/or taking over their home planet (base of operations), -->
+		<!-- the Home_Planet setting is the fallback/default if the GC file itself doesn't define a home! -->
 		<Faction_Leader>Unit_Name</Faction_Leader>
 		<Faction_Leader_Company>Unit_Name_Team</Faction_Leader_Company>
 		<Home_Planet>PlanetName</Home_Planet>
@@ -80,8 +80,8 @@
 		<!-- Misc. -->
 		<Credits_Accumulation_Factor>0.95</Credits_Accumulation_Factor>
 		<Hyperspace_Speed_Factor>0.07</Hyperspace_Speed_Factor>
-		<Planet_Icon_Scale>10.0</Planet_Icon_Scale>
-		<Planet_Icon_Offset>10.0, 10.0, -1.1</Planet_Icon_Offset>
+		<Planet_Icon_Scale>10.00</Planet_Icon_Scale>
+		<Planet_Icon_Offset>10.00, 10.00, -1.10</Planet_Icon_Offset>
 
 		<Allies /> <!-- Shares all tactical information (like Skirmish) in all modes, but is generally broken. -->
 		<Enemies>
@@ -102,7 +102,7 @@
 		<Tactical_Intro_Command_Bar_Movie_Name>BIKMovie_Name</Tactical_Intro_Command_Bar_Movie_Name>
 
 		<Minimum_Visible_Base_Level>1</Minimum_Visible_Base_Level>
-		<Basic_AI>AIFileName</Basic_AI> <!-- Is defined per-Galactic Conquest aswell. -->
+		<Basic_AI>AIFileName</Basic_AI> <!-- Is defined per-Galactic Conquest aswell. Exists as a fallback for generic faction AI, if the GC has no special AI need. -->
 		<Can_Win_By_Destroying_Super_Weapon>Yes/No</Can_Win_By_Destroying_Super_Weapon>
 		<Faction_Super_Weapon>Unit_Name_Here</Faction_Super_Weapon>
 		<Skirmish_Land_Bomber>Bombing_Run_Name_Here</Skirmish_Land_Bomber>
@@ -143,7 +143,7 @@
 		<Space_Retreat_Units_Damaged_Mod_Factor>#</Space_Retreat_Units_Damaged_Mod_Factor>
 		<Space_Retreat_Flight_Move_Increment>#</Space_Retreat_Flight_Move_Increment>
 		<Space_Retreat_Unit_Increment_Wait_Frames>1</Space_Retreat_Unit_Increment_Wait_Frames>
-		<Space_Retreat_Off_Map_Dest_Pos>x#, y#, z#</Space_Retreat_Off_Map_Dest_Pos> <!-- WARNING: For some reason, non-0.0z-axis can cause problems with retreat! -->
+		<Space_Retreat_Off_Map_Dest_Pos>x#, y#, z#</Space_Retreat_Off_Map_Dest_Pos> <!-- WARNING: For some reason, non-0.00z-axis can cause problems with retreat! -->
 		<Space_Retreat_Countdown_Color_RGBA>Red#, Green#, Blue#, Transparency#</Space_Retreat_Countdown_Color_RGBA>
 		<Space_Retreat_Countdown_Text_ID>TEXT_RETREAT_FACTION_SPACE_COUNTDOWN</Space_Retreat_Countdown_Text_ID>
 		<Space_Retreat_Begin_SFXEvent>SFXEvent_Name</Space_Retreat_Begin_SFXEvent>
@@ -166,7 +166,7 @@
 		<Land_Retreat_Enemy_Begin_SFXEvent>SFXEvent_Name</Land_Retreat_Enemy_Begin_SFXEvent>
 		<Land_Retreat_Cancel_SFXEvent>SFXEvent_Name</Land_Retreat_Cancel_SFXEvent>
 		<Land_Retreat_Not_Allowed_SFXEvent>SFXEvent_Name</Land_Retreat_Not_Allowed_SFXEvent>
-		<Land_Retreat_Not_Allowed_Reason_1_SFXEvent>SFXEvent_Name</Land_Retreat_Not_Allowed_Reason_1_SFXEvent> <!-- Reason 1: Gravity Well -->							
+		<Land_Retreat_Not_Allowed_Reason_1_SFXEvent>SFXEvent_Name</Land_Retreat_Not_Allowed_Reason_1_SFXEvent> <!-- Reason 1: Gravity Well -->
 		<Land_Retreat_Not_Allowed_Reason_2_SFXEvent>SFXEvent_Name</Land_Retreat_Not_Allowed_Reason_2_SFXEvent> <!-- Reason 2: Friendly Hero Preventing -->
 		<Land_Retreat_Not_Allowed_Reason_3_SFXEvent>SFXEvent_Name</Land_Retreat_Not_Allowed_Reason_3_SFXEvent> <!-- Reason 3: Tactical Superweapon Present -->
 
@@ -195,7 +195,7 @@
 		<Bombardment_Salvo_Delay>#</Bombardment_Salvo_Delay>
 		<Bombardment_Initial_Delay>#</Bombardment_Initial_Delay>
 
-		<!-- Color, intensity and time for the lighting effects.  -->
+		<!-- Color, intensity and time for the lighting effects. -->
 		<!-- Each of these is a list that should have the same number of entries as the Bombard_Projectile list! -->
 		<Bombardment_Lighting_Color_List>#</Bombardment_Lighting_Color_List>
 		<Bombardment_Lighting_Intensity_List>#</Bombardment_Lighting_Intensity_List>
@@ -228,7 +228,7 @@
 		<!-- Overlay ring used when targeting with a ping ability; this is the ring around the cursor location to area in range of click. -->
 		<Land_Area_Effect_Range_Overlay_Material_Name>ShadowBlobMaterial_Name</Land_Area_Effect_Range_Overlay_Material_Name>
 		<Land_Area_Effect_Range_Overlay_RGBA>Red#, Green#, Blue#, Transparency#</Land_Area_Effect_Range_Overlay_RGBA>
-		<Land_Area_Effect_Range_Overlay_Scale_Factor>#</Land_Area_Effect_Range_Overlay_Scale_Factor><!-- Compensate for ring not being full bounds of texture size. -->
+		<Land_Area_Effect_Range_Overlay_Scale_Factor>#</Land_Area_Effect_Range_Overlay_Scale_Factor> <!-- Compensate for ring not being full bounds of texture size. -->
 
 		<!-- Overlay ring used when targeting with a ping ability; this is the ring around base area to show click target terrain range. -->
 		<Land_Ability_Targeting_Range_Overlay_Material_Name>ShadowBlobMaterial_Name</Land_Ability_Targeting_Range_Overlay_Material_Name>
@@ -247,7 +247,7 @@
 
 		<!-- Faction Win/Lose Music Music -->
 		<!-- (This should include all main fighting factions, -->
-		<!-- even if its against the factions self! Factions can -->
+		<!-- even if its against the faction's self! Factions can -->
 		<!-- fight themselves in Skirmish!) -->
 
 		<!-- Winning AGAINST a faction (your victory music)! -->
@@ -285,7 +285,7 @@
 		<Music_Event_Strategic_Win>MusicEvent_Name</Music_Event_Strategic_Win>
 		<Music_Event_Strategic_Lose>MusicEvent_Name</Music_Event_Strategic_Lose>
 
-		<!-- Faction Superweapon Is Present Events - OVERRIDES ALL AMBIENT MUSIC! -->
+		<!-- Faction Superweapon Is Present Events - OVERRIDES ALL AMBIENT/BATTLE MUSIC! (only when applicable!) -->
 		<Music_Event_Space_Ambient_Super_Weapon>MusicEvent_Name</Music_Event_Space_Ambient_Super_Weapon>
 		<Music_Event_Space_Battle_Super_Weapon>MusicEvent_Name</Music_Event_Space_Battle_Super_Weapon>
 		<Music_Event_Land_Ambient_Super_Weapon>MusicEvent_Name</Music_Event_Land_Ambient_Super_Weapon>
@@ -371,7 +371,7 @@
 		<SFXEvent_Bunker_Vacated>SFXEvent_Name</SFXEvent_Bunker_Vacated>
 
 		<SFXEvent_HUD_Advisor_Message>GUI_Droid_Hint_SFX</SFXEvent_HUD_Advisor_Message>
-		<SFXEvent_HUD_Advisor_Urgent>GUI_R2_Urgent_Hint_SFX</SFXEvent_HUD_Advisor_Urgent>
+		<SFXEvent_HUD_Advisor_Urgent>GUI_Droid_Urgent_Hint_SFX</SFXEvent_HUD_Advisor_Urgent>
 		<SFXEvent_HUD_Advisor_Hint>GUI_Droid_Hint_SFX</SFXEvent_HUD_Advisor_Hint>
 
 		<!-- (Generally) Rebel/Slicer-only Sounds -->
@@ -388,7 +388,8 @@
 		<!-- Generic First-revealed Enemy -->
 		<SFXEvent_Enemy_Spotted>SFXEvent_Name</SFXEvent_Enemy_Spotted>
 
-		<!-- Special Unit Cases (e.g. base-game Emperor Palpatine, or Darth Vader) -->
+		<!-- Special Unit Cases (e.g. base-game Emperor Palpatine: "ALL HAIL HIS MAJESTY, EMPEROR PALPATINE!" when in-battle) -->
+		<!-- Said in-order of importance (top -> bottom)! -->
 		<SFXEvent_Unit_Type_Spotted>Unit_Name, SFXEvent_Name</SFXEvent_Unit_Type_Spotted>
 		<SFXEvent_Unit_Type_Spotted>Unit_Name, SFXEvent_Name</SFXEvent_Unit_Type_Spotted>
 		<SFXEvent_Unit_Type_Spotted>Unit_Name, SFXEvent_Name</SFXEvent_Unit_Type_Spotted>
@@ -411,8 +412,8 @@
 		<SpeechEvent_Super_Weapon_Enemy_Moved_Into_Range>SFXEvent_Name</SpeechEvent_Super_Weapon_Enemy_Moved_Into_Range>
 
 		<!-- Planetary Control SFX -->
-		<SFXEvent_Planet_Gained_Control>SFXEvent_Name</SFXEvent_Planet_Gained_Control> <!-- Control GAINED -->
-		<SFXEvent_Planet_Lost_Control>SFXEvent_Name</SFXEvent_Planet_Lost_Control> <!-- Control LOST -->
+		<SFXEvent_Planet_Gained_Control>SFXEvent_Name</SFXEvent_Planet_Gained_Control> <!-- Control GAINED! -->
+		<SFXEvent_Planet_Lost_Control>SFXEvent_Name</SFXEvent_Planet_Lost_Control> <!-- Control LOST! -->
 		
 		<!-- Toggling Non-Hero Command Bar Abilities SFX -->
 		<!-- Power to Shields -->
@@ -500,7 +501,7 @@
 		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>BLAST, </SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
 
 		<!-- Enemy Toggling Non-Hero Command Bar Abilities SFX -->
-		<!-- Power to Shields -->	
+		<!-- Power to Shields -->
 		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>DEFEND, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
 		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>DEFEND, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
 
@@ -613,10 +614,10 @@
 		<SFXEvent_HUD_Reinforcement_Point_Enemy_Owned_05_Seconds>SFXEvent_Name</SFXEvent_HUD_Reinforcement_Point_Enemy_Owned_05_Seconds>
 		<SFXEvent_HUD_Reinforcement_Point_Contested>SFXEvent_Name</SFXEvent_HUD_Reinforcement_Point_Contested>
 	
-		<SFXEvent_Tactical_Lose_Friendly_Control>Skirmish_Build_Pad, SFXEvent_Name</SFXEvent_Tactical_Lose_Friendly_Control>		
+		<SFXEvent_Tactical_Lose_Friendly_Control>Skirmish_Build_Pad, SFXEvent_Name</SFXEvent_Tactical_Lose_Friendly_Control>
 		<SFXEvent_Tactical_Gain_Friendly_Control>Skirmish_Build_Pad, SFXEvent_Name</SFXEvent_Tactical_Gain_Friendly_Control>
 		<SFXEvent_Tactical_Lose_Friendly_Control>Secondary_Mining_Facility, SFXEvent_Name</SFXEvent_Tactical_Lose_Friendly_Control>
-		<SFXEvent_Tactical_Gain_Friendly_Control>Secondary_Mining_Facility, SFXEvent_Name</SFXEvent_Tactical_Gain_Friendly_Control>	
+		<SFXEvent_Tactical_Gain_Friendly_Control>Secondary_Mining_Facility, SFXEvent_Name</SFXEvent_Tactical_Gain_Friendly_Control>
 		<SFXEvent_Tactical_Lose_Friendly_Control>Secondary_Heavy_Factory_R, SFXEvent_Name</SFXEvent_Tactical_Lose_Friendly_Control>
 		<SFXEvent_Tactical_Gain_Friendly_Control>Secondary_Heavy_Factory_R, SFXEvent_Name</SFXEvent_Tactical_Gain_Friendly_Control>
 		<SFXEvent_Tactical_Lose_Friendly_Control>Secondary_Heavy_Factory_E, SFXEvent_Name</SFXEvent_Tactical_Lose_Friendly_Control>
@@ -648,7 +649,7 @@
 
 		<!-- Faction-generic 3D World SFX - Physical SFX! -->
 		<SFXEvent_Tactical_Object_Building_Started>Structure_Buildable_Start</SFXEvent_Tactical_Object_Building_Started> <!-- An object is just starting construction in the world. -->
-		<SFXEvent_Tactical_Object_Building_Loop>Structure_Buildable_Loop</SFXEvent_Tactical_Object_Building_Loop> <!-- An object is currently under construction (loop )in the world. -->
+		<SFXEvent_Tactical_Object_Building_Loop>Structure_Buildable_Loop</SFXEvent_Tactical_Object_Building_Loop> <!-- An object is currently under construction (loop) in the world. -->
 		<SFXEvent_Tactical_Object_Building_Complete>Structure_Buildable_Stop</SFXEvent_Tactical_Object_Building_Complete> <!-- An object has just completed construction in the world. -->
 		<SFXEvent_Tactical_Object_Sold>Structure_Buildable_Sold</SFXEvent_Tactical_Object_Sold> <!-- An object is sold in the world. -->
 
@@ -682,9 +683,9 @@
 		<SFXEvent_Starbase_Ally_Upgraded>SFXEvent_Name</SFXEvent_Starbase_Ally_Upgraded>
 
 		<!-- Player Taunt SFX Buttons -->
-		<SFXEvent_Player_Taunt>SFXEvent_Name</SFXEvent_Player_Taunt>
-		<SFXEvent_Player_Taunt>SFXEvent_Name</SFXEvent_Player_Taunt>
-		<SFXEvent_Player_Taunt>SFXEvent_Name</SFXEvent_Player_Taunt>
+		<SFXEvent_Player_Taunt>SFXEvent_Name</SFXEvent_Player_Taunt> <!-- Defaults: Keypad # 1. -->
+		<SFXEvent_Player_Taunt>SFXEvent_Name</SFXEvent_Player_Taunt> <!-- Defaults: Keypad # 2. -->
+		<SFXEvent_Player_Taunt>SFXEvent_Name</SFXEvent_Player_Taunt> <!-- Defaults: Keypad # 3. -->
 
 		<!-- GC Tactical Speech Events -->
 		<SpeechEvent_Tactical_Intro_Land_Attacker>SpeechEvent_Name</SpeechEvent_Tactical_Intro_Land_Attacker> <!-- Default case for land battles as attacker. -->
@@ -692,9 +693,8 @@
 		<SpeechEvent_Tactical_Intro_Space_Attacker>SpeechEvent_Name</SpeechEvent_Tactical_Intro_Space_Attacker> <!-- Default case for space battles as attacker. -->
 		<SpeechEvent_Tactical_Intro_Space_Defender>SpeechEvent_Name</SpeechEvent_Tactical_Intro_Space_Defender> <!-- Default case for space battles as defender. -->
 
-		<!-- N/A FOR faction with the raid ability (e.g. Rebels, unless someone else has the raid ability as well). -->
-		<SpeechEvent_Tactical_Intro_Land_Raid_Attacker>SpeechEvent_Name</SpeechEvent_Tactical_Intro_Land_Raid_Attacker>
-		<SpeechEvent_Tactical_Intro_Land_Raid_Defender>SpeechEvent_Name</SpeechEvent_Tactical_Intro_Land_Raid_Defender>
+		<SpeechEvent_Tactical_Intro_Land_Raid_Attacker>SpeechEvent_Name</SpeechEvent_Tactical_Intro_Land_Raid_Attacker> <!-- Special advisor speech for raiding. -->
+		<SpeechEvent_Tactical_Intro_Land_Raid_Defender>SpeechEvent_Name</SpeechEvent_Tactical_Intro_Land_Raid_Defender> <!-- Special advisor speech for defending against a raid. -->
 
 		<SpeechEvent_Tactical_Intro_Land_Attacker_Last_Location>SpeechEvent_Name</SpeechEvent_Tactical_Intro_Land_Attacker_Last_Location>
 		<SpeechEvent_Tactical_Intro_Land_Defender_Last_Location>SpeechEvent_Name</SpeechEvent_Tactical_Intro_Land_Defender_Last_Location>
@@ -722,7 +722,7 @@
 		<SpeechEvent_Tactical_Intro_Space_Defender_Conditional_And>Death_Star_II, Wedge_XWing_Rogue, None, GRS_INTRO_SPACE_DEFEND_R_06</SpeechEvent_Tactical_Intro_Space_Defender_Conditional_And>
 
 		<!-- A or B present and C Not present... -->
-		<!-- ...Death Star II present, Wedge Not present! -->
+		<!-- ...Death Star II present, Wedge not present! -->
 		<SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or>Death_Star_II, None, Wedge_XWing_Rogue, GRS_INTRO_SPACE_DEFEND_R_05</SpeechEvent_Tactical_Intro_Space_Defender_Conditional_Or>
 
 		<!-- A or B present and C Not present... -->
@@ -734,7 +734,7 @@
 		<SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_And>Death_Star_II, Wedge_XWing_Rogue, None, GRS_INTRO_SPACE_ATTACK_R_07</SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_And>
 
 		<!-- A or B present and C Not present... -->
-		<!-- ...Death Star II present, Wedge Not present! -->
+		<!-- ...Death Star II present, Wedge not present! -->
 		<SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or>Death_Star_II, None, Wedge_XWing_Rogue, GRS_INTRO_SPACE_ATTACK_R_06</SpeechEvent_Tactical_Intro_Space_Attacker_Conditional_Or>
 
 		<!-- A or B present and C Not present... -->
