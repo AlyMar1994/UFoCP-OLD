@@ -2944,10 +2944,10 @@
 			
 			F9TZ_Cloaking_Transport,
 			MAL_Rocket_Vehicle,
-			Canderous_Assault_Tank,	
+			Canderous_Assault_Tank,
 			Underworld_Mobile_Defense_Unit,
 
-			Skiff,
+			Skiff
 		</Planet_Restricted_Unit_Types>
 
 		<Describe_Population>TEXT_PLANET_JABIIM_INFO_POP</Describe_Population>

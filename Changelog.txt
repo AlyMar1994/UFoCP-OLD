@@ -30,7 +30,7 @@ There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT 
 ==================
 A.I. (Land)
 ==================
--UM11_ForceAdeptFour – Fixed Master Force Adept, ultimate boss of UM11 and penultimate boss of the Underworld Campaign. A non-existant variable resulted NIL, so the Adept would attack any unit in sight. This has been fixed to only target Underworld player units (implying as if he didn't do that already).
+-UM11_ForceAdeptFour – Fixed Master Force Adept, ultimate boss of UM11 and penultimate boss of the Underworld Campaign. A non-existant variable resulted NIL, so the Adept would attack any unit in sight not in his faction. This has been fixed to only target Underworld player units.
 
 
 ==================
@@ -46,7 +46,7 @@ General
 
 -Fixed all Empire technology levels not mentioning objects that can be built when upgrading (for example, 2-M Repulsor Tanks or the Heavy Vehicle Factory not being mentioned when upgrading to level 2 in the tooltip).
 -Fixed items being improperly named on Empire tech level tooltips.
--Fixed erratic spacing of Empire technology levels. It now follows this order, alphabetically: [Space Objects], [Space Units], [Land Objects], [Land Units], [Misc].
+-Fixed erratic spacing of Empire technology level tooltips. It now follows this order, alphabetically: [Space Objects], [Space Units], [Land Objects], [Land Units], [Misc].
 
 -Fixed bugs on Underworld Byss kidnapping mission objectives. Failing the mission will now fail all objectives, and completing the mission will now complete all objectives visibly (green check mark next to objective). Original code was referencing non-existant strings, throwing errors.
 -Fixed bugs on Underworld Dantooine intimidation mission objectives. Failing the mission will now fail all objectives, and completing the mission will now complete all objectives.
