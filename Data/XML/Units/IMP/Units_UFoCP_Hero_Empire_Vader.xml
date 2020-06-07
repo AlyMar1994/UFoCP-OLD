@@ -1322,7 +1322,6 @@
 		<Idle_Chase_Range>200.00</Idle_Chase_Range>
 		<Attack_Move_Response_Range>300.00</Attack_Move_Response_Range>
 		<Autonomous_Move_Extension_Vs_Attacker>300.00</Autonomous_Move_Extension_Vs_Attacker>
-		<Space_FOW_Reveal_Range>1000.00</Space_FOW_Reveal_Range>
 
 		<Targeting_Max_Attack_Distance>1000.00</Targeting_Max_Attack_Distance>
 

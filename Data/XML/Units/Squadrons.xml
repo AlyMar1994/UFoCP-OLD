@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <Squadrons>
-
 	<Squadron Name="Rebel_X-Wing_Squadron">
 		<LOD_Bias>10</LOD_Bias>
 		<Text_ID>TEXT_X_WING_SQUADRON</Text_ID>
@@ -83,12 +82,15 @@
 
 	<Squadron Name="Y-Wing_Squadron">
 		<Text_ID>TEXT_Y_WING_SQUADRON</Text_ID>
-		<Encyclopedia_Good_Against> Star_Destroyer Victory_Destroyer Acclamator_Assault_Ship </Encyclopedia_Good_Against>
-		<Encyclopedia_Vulnerable_To> TIE_Fighter Tartan_Patrol_Cruiser Pirate_Fighter </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text>TEXT_TOOLTIP_Y_WING</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_BOMBER </Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against>Star_Destroyer Victory_Destroyer Vengeance_Frigate</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>TIE_Fighter Tartan_Patrol_Cruiser Starviper_Fighter</Encyclopedia_Vulnerable_To>
+
 		<GUI_Row> 1 </GUI_Row>
 		<Is_Dummy>Yes</Is_Dummy>
 		<Formation_Priority>2</Formation_Priority>
-		<Is_Escort>Nos</Is_Escort>
+		<Is_Escort>No</Is_Escort>
 		<Is_Bomber>yes</Is_Bomber>
 		<Autoresolve_Health>200</Autoresolve_Health>
 		<Damage>15</Damage>
@@ -107,13 +109,13 @@
 		<Required_Special_Structures />
 		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
 		<Squadron_Units>Y-Wing, Y-Wing, Y-Wing</Squadron_Units>
-		<Squadron_Offsets>60.0,0.0,0.0</Squadron_Offsets>
-		<Squadron_Offsets>0.0,30.0,0.0</Squadron_Offsets>
-		<Squadron_Offsets>0.0,-30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>60.00, 0.00, 0.00</Squadron_Offsets>
+		<Squadron_Offsets>0.00, 30.00, 0.00</Squadron_Offsets>
+		<Squadron_Offsets>0.00, -30.00, 0.00</Squadron_Offsets>
 		<Icon_Name>i_button_y_wing.tga</Icon_Name>
 		<GUI_Model_Name>RV_ywing.ALO</GUI_Model_Name>
 		<GUI_Distance>120</GUI_Distance>
-		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Offset>0, 0, 0</GUI_Offset>
 		<GUI_Velocity>45</GUI_Velocity>
 
 		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
@@ -121,11 +123,11 @@
 		<SFXEvent_Build_Complete>Unit_Complete_Y_Wing</SFXEvent_Build_Complete>
 
 		<FormationOrder>3</FormationOrder>
-		<Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
-		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
-		<Idle_Chase_Range>200.0</Idle_Chase_Range>
-		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
-		<Autonomous_Move_Extension_Vs_Attacker>300.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Squadron_Formation_Error_Tolerance>25.00</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>1000.00</Guard_Chase_Range>
+		<Idle_Chase_Range>200.00</Idle_Chase_Range>
+		<Attack_Move_Response_Range>300.00</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>300.00</Autonomous_Move_Extension_Vs_Attacker>
 		<Property_Flags> SmallShip </Property_Flags>
 		
 		<!-- if we have a targeted ability, we'll need a team object to attach this ability to -->
@@ -138,23 +140,19 @@
 				<Type>ION_CANNON_SHOT</Type>
 			</Unit_Ability>
 		</Unit_Abilities_Data>
-		
-		<Encyclopedia_Text>TEXT_TOOLTIP_Y_WING</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_BOMBER </Encyclopedia_Unit_Class>
-		
+
 		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>550</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>17</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites />
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
-		<!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
-		<!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->  
 		<!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
 		<Population_Value>1</Population_Value>
 		<Score_Cost_Credits> 700</Score_Cost_Credits>
 	</Squadron>
-	
-	
+
+
 	<Squadron Name="Y-Wing_Squadron_No_Ability">
 		<Text_ID>TEXT_Y_WING_SQUADRON</Text_ID>
 		<Encyclopedia_Good_Against> Star_Destroyer Victory_Destroyer Acclamator_Assault_Ship </Encyclopedia_Good_Against>
@@ -1184,9 +1182,4 @@
 		<Squadron_Units>TIE_Bomber_E3, TIE_Bomber_E3</Squadron_Units>
 		<Squadron_Units>TIE_Bomber_E3, TIE_Bomber_E3</Squadron_Units>
 	</Squadron>
-
-
-
-
-
 </Squadrons>

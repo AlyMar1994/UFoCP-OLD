@@ -571,8 +571,8 @@
 
 	<HeroCompany Name="Han_Solo_Team_Space_MP">
 		<Variant_Of_Existing_Type>Han_Solo_Team</Variant_Of_Existing_Type>
-		<Encyclopedia_Good_Against>TIE_Fighter TIE_Scout</Encyclopedia_Good_Against>
-		<Encyclopedia_Vulnerable_To>Tartan_Patrol_Cruiser</Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Good_Against>TIE_Fighter TIE_Scout Skipray_Blastboat</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>Tartan_Patrol_Cruiser Crusader_Gunship</Encyclopedia_Vulnerable_To>
 		<Encyclopedia_Text>TEXT_TOOLTIP_MILLENNIUM_FALCON</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR</Encyclopedia_Unit_Class>
 		

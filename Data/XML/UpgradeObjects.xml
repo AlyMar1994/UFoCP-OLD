@@ -1,8 +1,6 @@
 <?xml version="1.0"?>
 <UpgradeObjects>
-
 	<!-- ================== REBEL UNIT RESEARCH UPGRADES =================== -->
-
 	<UpgradeObject Name="RL_Plex_Soldier_Research_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Rebel</Affiliation>
@@ -18,7 +16,7 @@
 		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
 		<Icon_Name>i_button_plex_soldier.tga</Icon_Name>
 
-		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_RL_PLEX_SOLDIER_RESEARCH  </Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_UPGRADE_TOOLTIP_RL_PLEX_SOLDIER_RESEARCH</Encyclopedia_Text>
 
 		<Text_ID>TEXT_UPGRADE_RL_PLEX_SOLDIER_RESEARCH</Text_ID>
 		<SFXEvent_Build_Started>RHD_Researching</SFXEvent_Build_Started>
@@ -138,8 +136,8 @@
   	</UpgradeObject>
 
 
-	<!-- ================== EMPIRE UNIT RESEARCH UPGRADES =================== -->
 
+	<!-- ================== EMPIRE UNIT RESEARCH UPGRADES =================== -->
 	<UpgradeObject Name="EL_Scout_Trooper_Research_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Empire</Affiliation>
