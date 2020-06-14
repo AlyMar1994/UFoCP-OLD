@@ -803,7 +803,7 @@
 
 		<Armor_Type>Armor_Hero_Transport</Armor_Type>
 
-		<!-- Luke's X-wing is a Death Star killer! -->		
+		<!-- Luke's X-wing is a Death Star killer! -->
 		<Is_Super_Weapon_Killer>Yes</Is_Super_Weapon_Killer>
 
 		<Fires_Forward>No</Fires_Forward>
@@ -1535,88 +1535,88 @@
 
 	<!-- Virago (Empire Space Unit) - A fighter used during space battles. -->
 	<!-- This unit is (completely) UNUSED! -->
-<!-- 
-	<UniqueUnit Name="Virago">
-		<Text_ID>TEXT_UNIT_VIRAGO</Text_ID>
-		<Space_Model_Name>nv_Virago.ALO</Space_Model_Name>
-		<Scale_Factor>0.7</Scale_Factor>
-		<Select_Box_Scale>40</Select_Box_Scale>
-		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
-		<Mass>0.98</Mass>
+	<!-- 
+		<UniqueUnit Name="Virago">
+			<Text_ID>TEXT_UNIT_VIRAGO</Text_ID>
+			<Space_Model_Name>nv_Virago.ALO</Space_Model_Name>
+			<Scale_Factor>0.7</Scale_Factor>
+			<Select_Box_Scale>40</Select_Box_Scale>
+			<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
+			<Mass>0.98</Mass>
 
-		<Max_Speed>5.8</Max_Speed>
-		<Max_Rate_Of_Turn>2.0</Max_Rate_Of_Turn>
-		<Max_Thrust>0.7</Max_Thrust>
-		<Max_Rate_Of_Roll>3.0</Max_Rate_Of_Roll>
-		<Bank_Turn_Angle>40</Bank_Turn_Angle>
-		<Begin_Turn_Towards_Distance>300.0</Begin_Turn_Towards_Distance>
+			<Max_Speed>5.8</Max_Speed>
+			<Max_Rate_Of_Turn>2.0</Max_Rate_Of_Turn>
+			<Max_Thrust>0.7</Max_Thrust>
+			<Max_Rate_Of_Roll>3.0</Max_Rate_Of_Roll>
+			<Bank_Turn_Angle>40</Bank_Turn_Angle>
+			<Begin_Turn_Towards_Distance>300.0</Begin_Turn_Towards_Distance>
 
-		<Max_Lift>0.0f</Max_Lift>
-		<Hyperspace>Yes</Hyperspace>
-		<Hyperspace_Speed>1.5</Hyperspace_Speed>
-		<Affiliation>Empire</Affiliation>
-		<Shield_Points>150</Shield_Points>
-		<Tactical_Health>180</Tactical_Health>
-		<Autoresolve_Health>180</Autoresolve_Health>
-		<Damage>12</Damage>
-		<Shield_Refresh_Rate>3</Shield_Refresh_Rate>
-		<Energy_Capacity>1000</Energy_Capacity>
-		<Energy_Refresh_Rate>180</Energy_Refresh_Rate>
-		<Ship_Class>fighter</Ship_Class>
-		<Is_Escort>yes</Is_Escort>
-		<Is_Bomber>no</Is_Bomber>
-		<Political_Control>0</Political_Control>
-		<Squadron_Capacity>0</Squadron_Capacity>
-		<Number_per_Squadron>1</Number_per_Squadron>
-		<Size_Value>8</Size_Value>
-		<Behavior>TRANSPORT</Behavior>
-		<SpaceBehavior>FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX</SpaceBehavior>
+			<Max_Lift>0.0f</Max_Lift>
+			<Hyperspace>Yes</Hyperspace>
+			<Hyperspace_Speed>1.5</Hyperspace_Speed>
+			<Affiliation>Empire</Affiliation>
+			<Shield_Points>150</Shield_Points>
+			<Tactical_Health>180</Tactical_Health>
+			<Autoresolve_Health>180</Autoresolve_Health>
+			<Damage>12</Damage>
+			<Shield_Refresh_Rate>3</Shield_Refresh_Rate>
+			<Energy_Capacity>1000</Energy_Capacity>
+			<Energy_Refresh_Rate>180</Energy_Refresh_Rate>
+			<Ship_Class>fighter</Ship_Class>
+			<Is_Escort>yes</Is_Escort>
+			<Is_Bomber>no</Is_Bomber>
+			<Political_Control>0</Political_Control>
+			<Squadron_Capacity>0</Squadron_Capacity>
+			<Number_per_Squadron>1</Number_per_Squadron>
+			<Size_Value>8</Size_Value>
+			<Behavior>TRANSPORT</Behavior>
+			<SpaceBehavior>FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX</SpaceBehavior>
 
-		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
-		<Projectile_Types>Proj_Ship_Medium_Laser_Cannon_Green</Projectile_Types>
-		<Projectile_Fire_Recharge_Seconds>0.3</Projectile_Fire_Recharge_Seconds>
-		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
-		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
-		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
-		<Space_FOW_Reveal_Range>1000.0</Space_FOW_Reveal_Range>
-		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
-		<Targeting_Max_Attack_Distance>800.0</Targeting_Max_Attack_Distance>
-		<Death_Explosions>Medium_Explosion_Space_Empire</Death_Explosions>
-		<Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
+			<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+			<Projectile_Types>Proj_Ship_Medium_Laser_Cannon_Green</Projectile_Types>
+			<Projectile_Fire_Recharge_Seconds>0.3</Projectile_Fire_Recharge_Seconds>
+			<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+			<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+			<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+			<Space_FOW_Reveal_Range>1000.0</Space_FOW_Reveal_Range>
+			<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+			<Targeting_Max_Attack_Distance>800.0</Targeting_Max_Attack_Distance>
+			<Death_Explosions>Medium_Explosion_Space_Empire</Death_Explosions>
+			<Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
 
-		<Fire_Inaccuracy_Distance>Fighter, 1.0</Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance>Bomber, 1.0</Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance>Transport, 1.0</Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance>Corvette, 30.0</Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance>Frigate, 30.0</Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance>Capital, 70.0</Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance>Super, 70.0</Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance>Fighter, 1.0</Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance>Bomber, 1.0</Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance>Transport, 1.0</Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance>Corvette, 30.0</Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance>Frigate, 30.0</Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance>Capital, 70.0</Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance>Super, 70.0</Fire_Inaccuracy_Distance>
 
-		<Fire_Category_Restrictions>Infantry, Vehicle, Structure, Air, Transport</Fire_Category_Restrictions>
+			<Fire_Category_Restrictions>Infantry, Vehicle, Structure, Air, Transport</Fire_Category_Restrictions>
 
-		<SFXEvent_Select></SFXEvent_Select>
-		<SFXEvent_Move></SFXEvent_Move>
-		<SFXEvent_Attack></SFXEvent_Attack>
-		<SFXEvent_Guard></SFXEvent_Guard>
-		<SFXEvent_Announce></SFXEvent_Announce>
-		<SFXEvent_Fire>Unit_Tie_Fighter_Fire</SFXEvent_Fire>
-		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
-		<SFXEvent_Ambient_Moving>Unit_Moldy_Crow_Fly_By</SFXEvent_Ambient_Moving>
-		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>5</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
-		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>10</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+			<SFXEvent_Select></SFXEvent_Select>
+			<SFXEvent_Move></SFXEvent_Move>
+			<SFXEvent_Attack></SFXEvent_Attack>
+			<SFXEvent_Guard></SFXEvent_Guard>
+			<SFXEvent_Announce></SFXEvent_Announce>
+			<SFXEvent_Fire>Unit_Tie_Fighter_Fire</SFXEvent_Fire>
+			<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+			<SFXEvent_Ambient_Moving>Unit_Moldy_Crow_Fly_By</SFXEvent_Ambient_Moving>
+			<SFXEvent_Ambient_Moving_Min_Delay_Seconds>5</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+			<SFXEvent_Ambient_Moving_Max_Delay_Seconds>10</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
 
-		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
-		<Blob_Shadow_Scale>200.0, 100.0</Blob_Shadow_Scale>
-		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
-		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
-		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+			<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+			<Blob_Shadow_Scale>200.0, 100.0</Blob_Shadow_Scale>
+			<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+			<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+			<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
 
-		<MovementClass>Space</MovementClass>
-		<CategoryMask>Fighter | AntiFighter | AntiCapital</CategoryMask>
-		<Victory_Relevant>yes</Victory_Relevant>
-		<Hover_Offset>30.0</Hover_Offset>
-	</UniqueUnit>
- -->
+			<MovementClass>Space</MovementClass>
+			<CategoryMask>Fighter | AntiFighter | AntiCapital</CategoryMask>
+			<Victory_Relevant>yes</Victory_Relevant>
+			<Hover_Offset>30.0</Hover_Offset>
+		</UniqueUnit>
+	-->
 
 
 

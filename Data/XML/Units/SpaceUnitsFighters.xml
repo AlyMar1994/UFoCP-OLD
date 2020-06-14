@@ -193,6 +193,7 @@
 		<LOD_Bias>10</LOD_Bias>
 
 		<Text_ID>TEXT_UNIT_X_WING</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_X_WING</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Good_Against>TIE_Fighter TIE_Bomber Starviper_Fighter</Encyclopedia_Good_Against>
 		<Encyclopedia_Vulnerable_To>Tartan_Patrol_Cruiser Broadside_Class_Cruiser Crusader_Gunship</Encyclopedia_Vulnerable_To>
@@ -308,8 +309,6 @@
 		<Collision_Box_Modifier>2.00</Collision_Box_Modifier>
 		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
 		<Targeting_Stickiness_Time_Threshold>5.00</Targeting_Stickiness_Time_Threshold>
-
-		<Encyclopedia_Text>TEXT_TOOLTIP_X_WING</Encyclopedia_Text>
 
 		<!-- Non-hero unit abilities descriptions: -->
 		<Unit_Abilities_Data SubObjectList="Yes">

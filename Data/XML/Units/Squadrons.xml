@@ -3,8 +3,10 @@
 	<Squadron Name="Rebel_X-Wing_Squadron">
 		<LOD_Bias>10</LOD_Bias>
 		<Text_ID>TEXT_X_WING_SQUADRON</Text_ID>
-		<Encyclopedia_Good_Against> TIE_Fighter TIE_Bomber TIE_Prototype </Encyclopedia_Good_Against>
-		<Encyclopedia_Vulnerable_To> Tartan_Patrol_Cruiser Broadside_Class_Cruiser IPV1_System_Patrol_Craft </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Text>TEXT_TOOLTIP_X_WING</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FIGHTER </Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against>TIE_Fighter TIE_Bomber Starviper_Fighter</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>Tartan_Patrol_Cruiser Broadside_Class_Cruiser Crusader_Gunship</Encyclopedia_Vulnerable_To>
 		<GUI_Row> 1 </GUI_Row>
 		<Is_Dummy>Yes</Is_Dummy>
 		<Formation_Priority>1</Formation_Priority>
@@ -25,14 +27,17 @@
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<Required_Special_Structures />
 		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
 		<Squadron_Units>X-Wing, X-Wing</Squadron_Units>
 		<Squadron_Units>X-Wing, X-Wing</Squadron_Units>
 		<Squadron_Units>X-Wing</Squadron_Units>
-		<Squadron_Offsets>30.0,0.0,0.0</Squadron_Offsets>
-		<Squadron_Offsets>0.0,15.0,0.0</Squadron_Offsets>
-		<Squadron_Offsets>0.0,-15.0,0.0</Squadron_Offsets>
-		<Squadron_Offsets>-30.0,30.0,0.0</Squadron_Offsets>
-		<Squadron_Offsets>-30.0,-30.0,0.0</Squadron_Offsets>
+
+		<Squadron_Offsets>30.00, 0.00, 0.00</Squadron_Offsets>
+		<Squadron_Offsets>0.00, 15.00, 0.00</Squadron_Offsets>
+		<Squadron_Offsets>0.00,-15.00, 0.00</Squadron_Offsets>
+		<Squadron_Offsets>-30.00, 30.00, 0.00</Squadron_Offsets>
+		<Squadron_Offsets>-30.00, -30.00, 0.00</Squadron_Offsets>
+
 		<Icon_Name>i_button_x_wing.tga</Icon_Name>
 		<GUI_Model_Name>RV_xwing.ALO</GUI_Model_Name>
 		<GUI_Distance>95</GUI_Distance>
@@ -62,10 +67,7 @@
 			<Mod_Multiplier>SPEED_MULTIPLIER,		2</Mod_Multiplier>
 			</Unit_Ability>
 		</Unit_Abilities_Data>
-		
-		<Encyclopedia_Text>TEXT_TOOLTIP_X_WING</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FIGHTER </Encyclopedia_Unit_Class>
-		
+
 		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
 		<Tactical_Build_Cost_Multiplayer>500</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
@@ -1087,7 +1089,7 @@
 		<SFXEvent_Hero_Respawned>Unit_Respawn_Red_Leader</SFXEvent_Hero_Respawned>
 
 		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
-		<Squadron_Units> Red_Leader_XWing,Wedge_XWing </Squadron_Units>
+		<Squadron_Units> Red_Leader_XWing, Wedge_XWing </Squadron_Units>
 		<Squadron_Units> Biggs_XWing, Hobbie_XWing </Squadron_Units>
 		<Squadron_Units> Luke_XWing, Porkins_XWing </Squadron_Units>
 		
