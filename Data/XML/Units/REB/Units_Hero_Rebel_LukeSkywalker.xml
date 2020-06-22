@@ -94,8 +94,8 @@
 		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Luke_Land</SFXEvent_Health_Critical_Warning>
 		<Death_SFXEvent_Start_Die>Unit_Defeat_Luke_Land</Death_SFXEvent_Start_Die>
 
-		<SFXEvent_Tactical_Build_Started>RHD_Reinforcements_En_Route</SFXEvent_Tactical_Build_Started>		
-		<SFXEvent_Tactical_Build_Complete>RHD_Reinforcements_Available</SFXEvent_Tactical_Build_Complete>		
+		<SFXEvent_Tactical_Build_Started>RHD_Reinforcements_En_Route</SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete>RHD_Reinforcements_Available</SFXEvent_Tactical_Build_Complete>
 		<SFXEvent_Tactical_Build_Cancelled>RHD_Reinforcements_Cancelled</SFXEvent_Tactical_Build_Cancelled>
 
 		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
