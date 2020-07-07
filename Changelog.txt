@@ -3,17 +3,19 @@ Fixes are marked with a hyphen (-), their changes seperated by an en dash (–).
 ----
 Vocab.:
 
--Empire – Galactic Empire/Imperials
+-Empire – Imperials
 -Rebels – Rebellion
 -Underworld – Zann Consortium
 
 -EaW – Empire at War (base game, pre-Forces of Corruption)
 -FoC – Forces of Corruption (expansion game)
 
--Conditional(s) – "If this, then this will happen"-type code.
+-Lua – Top-level coding language used for scripting EaW/FoC (not including XML, a markup language).
+-Conditional(s) – "If" statements which dictate certain advisor dialogues when conditions are met.
 -Death Clone – The version of a ship that lingers in a map when destroyed.
+-Perception Equation ("PE") – Math which returns a value for the AI to do something.
 
--Galactic (e.g. in headers) – On the galactic map/level.
+-Galactic – On the galactic map/level.
 -Land – On land maps.
 -Space – On space maps.
 ----
@@ -28,19 +30,13 @@ There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT 
 
 
 ==================
-A.I. (Land)
-==================
--UM11_ForceAdeptFour – Fixed Master Force Adept, ultimate boss of UM11. A non-existant variable resulted NIL, so the Adept would attack any unit in sight not in his faction. This has been fixed to only target Underworld player units.
-
-
-==================
 General
 ==================
 -Added support for Anakin's Empire at War/Forces of Corruption mod launcher.
 
 -Reorganized most of the mod's files in various ways.
 
--Undid most of previous update's "TEXT_NONE" fixes, and reimplemented an alternate fix. Created string "TEXT_NONE" so any "TEXT_NONE"-named object can stop throwing errors. If there's any visible text in-game that says "None.  If you see this description, hehe, you shouldn't!  Please report this object to 'https://github.com/alymar1994/ufocp' immediately." then please do report it.
+-Undid most of previous update's "TEXT_NONE" fixes, and reimplemented an alternate fix. Created string "TEXT_NONE" so all "TEXT_NONE"-named objects can stop throwing errors. If there's any visible text in-game that says "None.  If you see this description, hehe, you shouldn't!  Please report this object to 'https://github.com/alymar1994/ufocp' immediately." then please do report it.
 
 -Modified generic galactic squadron container unit, by giving it a CategoryMask of "fighter" so the game stops throwing errors.
 
@@ -48,18 +44,38 @@ General
 -Fixed items being improperly named on Empire tech level tooltips.
 -Fixed erratic spacing of Empire technology level tooltips. It now follows this order, alphabetically: [Space Objects], [Space Units], [Land Objects], [Land Units], [Misc].
 
--Fixed bugs on Underworld Byss kidnapping mission objectives. Failing the mission will now fail all objectives, and completing the mission will now complete all objectives visibly (green check mark next to objective). Original code was referencing non-existant strings, throwing errors.
--Fixed bugs on Underworld Dantooine intimidation mission objectives. Failing the mission will now fail all objectives, and completing the mission will now complete all objectives.
--Fixed bug on Underworld Honoghr intimidation mission objectives. Completing the mission will now complete all objectives.
--Fixed bug on Underworld Naboo intimidation mission objectives. Failing the mission will now fail all objectives.
--Fixed bug on Underworld Taris intimidation mission. Failing the mission will now fail all objectives.
--Fixed bug on Underworld Utapau kidnapping mission objectives. Failing the mission will now fail all objectives.
+
+==================
+A.I. (Land)
+==================
+-(LUA) UM11_ForceAdeptFour – Fixed Master Force Adept, ultimate boss of UM11. A (accidental) non-existant variable resulted nil, so the Adept would attack any unit in sight not in his faction. This has been fixed to only target Underworld player units.
+
+-(PE) AI_Equations_Empire_Land – Removed "Should_Build_EM_Field_Generator" equation, as the Empire cannot build the Repulsorlift Jammer.
+
+-(PE) AI_Equations_Underworld_Land – Fixed "Should_Build_Ysalamiri_Cage" equation accounting unit "Darth_Vader" (EaW) into the math, instead of "Darth_Vader_Expansion" (FoC) ("Darth_Vader" is no longer a possible land unit due to previous fixes. It is always "Darth_Vader_Expansion").
+-(PE) AI_Equations_Underworld_Land – Added in the Empire's "Should_Build_EM_Field_Generator" equation, and modified it to apply to the Underworld (who can actually build the structure).
+
+-(PE) BasicLandEquations – Fixed "Needs_Vader_Assist" and "Has_Infantry_Hero" equations, which searched for unused land unit "Darth Vader" (EaW) instead of searching only for "Darth_Vader_Expansion" (FoC).
+
+-(PE) BudgetingEquations – Fixed the "BasicEmpireMajorItemBudgetAllocation" and "TechUpgradeBudgetRequirement" equations. Was searching for "Death_Star" (EaW) only, now only searches for "Death_Star_II" (FoC). This is the second and only Death Star unit change that isn't made 'generic' for right now: it doesn't account for the AI using the original Death Star. The DS1 isn't used in FoC, but it's planned to make the equation 'generic' in the future, so players who wish to use UFoCP as bases for their mods can have the original, or both, Death Stars in-game and have the AI properly budget and build it.
 
 
 ==================
 Planets (Galactic)
 ==================
 -Fixed planets using inconsistent higher-than-average credit value texts, which could result in text oddities. Now all consolidated under one string entry, and are all consistent.
+
+-Fixed bugs on Underworld Byss kidnapping mission objectives. Failing the mission will now fail all objectives, and completing the mission will now complete all objectives visibly (green check mark next to objective). Original code was referencing non-existant strings, throwing errors.
+
+-Fixed bugs on Underworld Dantooine intimidation mission objectives. Failing the mission will now fail all objectives, and completing the mission will now complete all objectives.
+
+-Fixed bug on Underworld Honoghr intimidation mission objectives. Completing the mission will now complete all objectives.
+
+-Fixed bug on Underworld Naboo intimidation mission objectives. Failing the mission will now fail all objectives.
+
+-Fixed bug on Underworld Taris intimidation mission. Failing the mission will now fail all objectives.
+
+-Fixed bug on Underworld Utapau kidnapping mission objectives. Failing the mission will now fail all objectives.
 
 
 ==================
@@ -78,15 +94,15 @@ Units (Galactic)
 Units (Land)
 ==================
 -Blizzard 1 - General Veers – Fixed unit's name to be more consistient with other named space hero units. Now named "Blizzard 1 - General Veers" instead of soley "General Maximilian Veers." Name is taken from the official Prima game guide.
--Blizzard 1 - General Veers – Fixed unit's team/container names being erroneous, and inconsistent. Now named "Blizzard 1 - General Veers," same as the unit instead of "Colonel Maximilian Veers." Veers was referred to as a "colonel" on all levels other than land.
+-Blizzard 1 - General Veers – Fixed unit's team/container names being erroneous, and inconsistent. Now named "Blizzard 1 - General Veers," same as the unit instead of "Colonel Maximilian Veers." Veers was referred to as a "colonel" on all levels other than land, where he was "general."
 
 -Canderous Assault Tank – Adjusted unit damage to 5.33(r). Update v1.2 changed the shots-per-volley from two to three to fix an animation bug. This meant, per-volley, it did 24 damage from its original 16. The damage has now been adjusted so it results in 16 (technically 15.99) damage in total again, despite having three shots per-volley. The tank is still powerful, but less gamebreaking.
 
 -Defiler – Fixed unit being able to trigger a battlefield callout when no callout has been created for any faction (nor in its own behaviors).
 
--Field Commander (Empire) – Fixed galactic tooltip now containing text about being able to capture buildpads.
+-Field Commander (Empire) – Fixed galactic tooltip not containing text about being able to capture buildpads.
 
--Field Commander (Rebel) – Fixed galactic tooltip now containing text about being able to capture buildpads.
+-Field Commander (Rebel) – Fixed galactic tooltip not containing text about being able to capture buildpads.
 
 -Force Adept – Fixed all Force Adepts not using the "capture buildpads" text in their tooltips when they're capable of capturing build pads.
 
@@ -102,12 +118,12 @@ Units (Space)
 -Black Squadron – Fixed unit's team name to be more consistent with other named hero units of the same class. Now named "Black Squadron" instead of soley "Darth Vader"
 -Black Squadron – Modified unit descriptions. Now includes default Vader text, with the TIE Advanced x1 text added on as with other heroes.
 -Black Squadron – Fixed herobar description using only the TIE Advanced x1 text when it should only use the normal Vader description as other heroes use theirs.
--Black Squadron – Fixed "good against" indicators not including the Starviper Fighter, and the "weak against" indicator not displaying the Crusader Gunship.
+-Black Squadron – Fixed "good against" indicators not including the Starviper Fighter, and the "weak against" indicator not including the Crusader Gunship.
 
--Kedalbe-class Battleship – Fixed description not mentioning the six planets the Kedalbe can be built on.
+-Kedalbe-class Battleship – Fixed description not mentioning the six planets the Keldabe can be built on.
 -Kedalbe-class Battleship – Fixed death clone's ship class being "capital_ship" when it should've been "Capital."
 
--Luke Skywalker – Fixed space X-wing using default X-wing fighter voice lines in space when attacking hardpoints, or moving into nebula or asteroid fields.
+-Luke Skywalker – Fixed regression. Luke's space X-wing used default X-wing fighter voice lines in space when attacking hardpoints, or moving into nebula or asteroid fields due to making his X-wing a version of the vanilla X-wing.
 
 -Slave I - Boba Fett – Fixed unit's name to be more consistient with other named hero units of the same class. Now named "Slave I - Boba Fett" instead of soley "Slave I" or "Boba Fett."
 -Slave I - Boba Fett – Fixed in-game space unit's icon being the Slave I ship, instead of the hero's icon like all other heroes.
