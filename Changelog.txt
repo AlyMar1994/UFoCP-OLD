@@ -33,6 +33,7 @@ There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT 
 General
 ==================
 -Added support for Anakin's Empire at War/Forces of Corruption mod launcher.
+-Added support for EmmyLUA edit prediction on LUA files in Visual Studio Code.
 
 -Reorganized most of the mod's files in various ways.
 
@@ -42,11 +43,11 @@ General
 
 -Fixed all Empire technology levels not mentioning objects that can be built when upgrading (for example, 2-M Repulsor Tanks or the Heavy Vehicle Factory not being mentioned when upgrading to level 2 in the tooltip).
 -Fixed items being improperly named on Empire tech level tooltips.
--Fixed erratic spacing of Empire technology level tooltips. It now follows this order, alphabetically: [Space Objects], [Space Units], [Land Objects], [Land Units], [Misc].
+-Fixed erratic spacing and ordering of Empire technology level tooltips. It now follows this order, alphabetically: [Space Objects], [Space Units], [Land Objects], [Land Units], [Misc].
 
 
 ==================
-A.I. (Land)
+A.I.
 ==================
 -(LUA) UM11_ForceAdeptFour – Fixed Master Force Adept, ultimate boss of UM11. A (accidental) non-existant variable resulted nil, so the Adept would attack any unit in sight not in his faction. This has been fixed to only target Underworld player units.
 
@@ -65,7 +66,7 @@ Planets (Galactic)
 ==================
 -Fixed planets using inconsistent higher-than-average credit value texts, which could result in text oddities. Now all consolidated under one string entry, and are all consistent.
 
--Fixed bugs on Underworld Byss kidnapping mission objectives. Failing the mission will now fail all objectives, and completing the mission will now complete all objectives visibly (green check mark next to objective). Original code was referencing non-existant strings, throwing errors.
+-Fixed bugs on Underworld Byss kidnapping mission objectives. Failing the mission will now fail all objectives, and completing the mission will now complete all objectives visibly (green check mark next to objective). Original code was referencing non-existant strings, throwing errors and effectively doing nothing visual with objectives in-game.
 
 -Fixed bugs on Underworld Dantooine intimidation mission objectives. Failing the mission will now fail all objectives, and completing the mission will now complete all objectives.
 
@@ -115,7 +116,7 @@ Units (Space)
 -Black Leader: Darth Vader – Fixed unit's name to be more consistent with other named hero units of the same class. Now named "Black Leader: Darth Vader" instead of soley "TIE Advanced X-1."
 -Black Leader: Darth Vader – Removed duplicate FoW reveal range for space tag. Now 800 instead of 1000.
 
--Black Squadron – Fixed unit's team name to be more consistent with other named hero units of the same class. Now named "Black Squadron" instead of soley "Darth Vader"
+-Black Squadron – Fixed unit's team name to be more consistent with other named hero units of the same class. Now named "Black Squadron" instead of soley "Darth Vader."
 -Black Squadron – Modified unit descriptions. Now includes default Vader text, with the TIE Advanced x1 text added on as with other heroes.
 -Black Squadron – Fixed herobar description using only the TIE Advanced x1 text when it should only use the normal Vader description as other heroes use theirs.
 -Black Squadron – Fixed "good against" indicators not including the Starviper Fighter, and the "weak against" indicator not including the Crusader Gunship.
@@ -123,7 +124,7 @@ Units (Space)
 -Kedalbe-class Battleship – Fixed description not mentioning the six planets the Keldabe can be built on.
 -Kedalbe-class Battleship – Fixed death clone's ship class being "capital_ship" when it should've been "Capital."
 
--Luke Skywalker – Fixed regression. Luke's space X-wing used default X-wing fighter voice lines in space when attacking hardpoints, or moving into nebula or asteroid fields due to making his X-wing a version of the vanilla X-wing.
+-Luke Skywalker – Fixed regression. Luke's space X-wing used default X-wing fighter voice lines in space when attacking hardpoints, or moving into nebula or asteroid fields due to making his X-wing a variant of the vanilla X-wing.
 
 -Slave I - Boba Fett – Fixed unit's name to be more consistient with other named hero units of the same class. Now named "Slave I - Boba Fett" instead of soley "Slave I" or "Boba Fett."
 -Slave I - Boba Fett – Fixed in-game space unit's icon being the Slave I ship, instead of the hero's icon like all other heroes.
