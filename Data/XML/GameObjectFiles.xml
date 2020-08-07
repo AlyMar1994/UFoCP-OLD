@@ -37,7 +37,7 @@
 	<File>LandBombingRunUnits.xml</File>
 
 	<File>Structures\SpecialStructures.xml</File>
-	<File>StarBases.xml</File>
+	<File>Structures\StarBases.xml</File>
 
 	<File>Units\Squadrons.xml</File>
 

@@ -66,17 +66,7 @@ Planets (Galactic)
 ==================
 -Fixed planets using inconsistent higher-than-average credit value texts, which could result in text oddities. Now all consolidated under one string entry, and are all consistent.
 
--Fixed bugs on Underworld Byss kidnapping mission objectives. Failing the mission will now fail all objectives, and completing the mission will now complete all objectives visibly (green check mark next to objective). Original code was referencing non-existant strings, throwing errors and effectively doing nothing visual with objectives in-game.
-
--Fixed bugs on Underworld Dantooine intimidation mission objectives. Failing the mission will now fail all objectives, and completing the mission will now complete all objectives.
-
--Fixed bug on Underworld Honoghr intimidation mission objectives. Completing the mission will now complete all objectives.
-
--Fixed bug on Underworld Naboo intimidation mission objectives. Failing the mission will now fail all objectives.
-
--Fixed bug on Underworld Taris intimidation mission. Failing the mission will now fail all objectives.
-
--Fixed bug on Underworld Utapau kidnapping mission objectives. Failing the mission will now fail all objectives.
+-Fixed bugs on all Underworld corruption missions. The objectives display wouldn't visually complete or fail objectives when certain conditions are met, due to pointing to invalid text ids. In addition, most objective displays were not visually consistent or grammically correct.
 
 
 ==================
@@ -128,6 +118,7 @@ Units (Space)
 
 -Slave I - Boba Fett – Fixed unit's name to be more consistient with other named hero units of the same class. Now named "Slave I - Boba Fett" instead of soley "Slave I" or "Boba Fett."
 -Slave I - Boba Fett – Fixed in-game space unit's icon being the Slave I ship, instead of the hero's icon like all other heroes.
+-Slave I - Boba Fett – Fixed infamous "Boba Mine Glitch" where Slave I, when summoned next to a capturable structure, would permanently keep it under Empire control until killed. This was caused by the unit possibly spawning an invisible variant of Fett, which would remain in-space. A special, lone MP space hero unit of the Slave I has been created to prevent this, identical to the original MP variant.
 
 -The Millenium Falcon - Han Solo & Chewbacca – Fixed skirmish good/bad against indicators not being updated for the FoC expansion. They were changed on the unit, not on the squadron/container. All sources now have correct info.
 

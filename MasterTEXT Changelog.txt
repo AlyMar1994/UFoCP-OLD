@@ -22,23 +22,23 @@ v1.11
 -Created string "TEXT_UNIT_SSD_EXECUTOR_01" to adjust full name to keep consistient with other named hero units of its class.
 -Created string "TEXT_HERO_VADER_TEAM_2" to adjust full name to keep consistient with other named hero units of its class.
 -Created string "TEXT_NONE" so any "TEXT_NONE"-named object can stop throwing errors.
--Created string "TEXT_CORRUPTION_INT_TARIS_OBJ_00" to fix bad objective string in Silri's Taris intimidation mission.
--Created string "TEXT_CORRUPTION_INT_NABOO_OBJ_00" to fix bad objective string in Silri's Naboo intimidation mission.
--Created string "TEXT_CORRUPTION_KID_BYSS_OBJ_00" to fix bad objective string in Silri's Byss kidnapping mission.
+-Created string "TEXT_CORRUPTION_OBJ_INT_TARIS_00" to fix bad objective string in Silri's Taris intimidation mission.
+-Created string "TEXT_CORRUPTION_OBJ_INT_NABOO_00" to fix bad objective string in Silri's Naboo intimidation mission.
+-Created string "TEXT_CORRUPTION_OBJ_KID_BYSS_00" to fix bad objective string in Silri's Byss kidnapping mission.
 -Created string "TEXT_PLANET_TRAIT_LOTSCREDITS" to fix inconsistent wording/classification of planet trait "This planet has a higher-than-average credit production rate."  Originally used Bonadan's tooltip for all affected planets.  This replaces all planets that have it.
 -Created string "TEXT_HERO_GENERAL_VEERS_03" to adjust unit name to keep consistent with other heroes.
 -Created string "TEXT_TOOLTIP_ANNIHILATOR_01" to adjust unit description to keep its content consistent with others of its type, and in-general.
 
 -Renamed string "TEXT_CORRUPTION_TARIS_INT_GOAL_01" to "TEXT_CORRUPTION_OBJ_SILRISURVIVE."  This string is used universally for Silri's corruption missions, to say "Silri must survive."  This has been changed in all missions.
--Renamed string "TEXT_BYSS_KIDNAPPING_OBJECTIVE_00" to "TEXT_CORRUPTION_KID_BYSS_OBJ_01" to keep consistency within file.
--Renamed string "TEXT_CORRUPTION_UTAPAU_STORY_KIDNAP_OBJECTIVE_02" to "TEXT_CORRUPTION_KID_UTAPAU_OBJ_00" for consistency, and to fix a mislisting where objective 00 was renamed.
--Renamed string "TEXT_CORRUPTION_UTAPAU_STORY_KIDNAP_OBJECTIVE_03" to "TEXT_CORRUPTION_KID_UTAPAU_OBJ_01" for consistency, and to fix a mislisting where objective 02 was renamed.
--Renamed string "TEXT_CORRUPTION_UTAPAU_STORY_KIDNAP_OBJECTIVE_04" to "TEXT_CORRUPTION_KID_UTAPAU_OBJ_02" for consistency, and to fix a mislisting where objective 03 was renamed.
+-Renamed string "TEXT_BYSS_KIDNAPPING_OBJECTIVE_00" to "TEXT_CORRUPTION_OBJ_KID_BYSS_01" to keep consistency within file.
+-Renamed string "TEXT_CORRUPTION_UTAPAU_STORY_KIDNAP_OBJECTIVE_02" to "TEXT_CORRUPTION_OBJ_KID_UTAPAU_00" for consistency, and to fix a mislisting where objective 00 was renamed.
+-Renamed string "TEXT_CORRUPTION_UTAPAU_STORY_KIDNAP_OBJECTIVE_03" to "TEXT_CORRUPTION_OBJ_KID_UTAPAU_01" for consistency, and to fix a mislisting where objective 02 was renamed.
+-Renamed string "TEXT_CORRUPTION_UTAPAU_STORY_KIDNAP_OBJECTIVE_04" to "TEXT_CORRUPTION_OBJ_KID_UTAPAU_02" for consistency, and to fix a mislisting where objective 03 was renamed.
 -Renamed string "TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_01" to "TEXT_CORRUPTION_OBJ_URAISURVIVE." This string is used for Urai's corruption missions, to say "Urai must survive."  This has been changed in all missions.
--Renamed string "TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_00" to "TEXT_CORRUPTION_INT_HONOGHR_OBJ_00" for consistency.
--Renamed string "TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_03" to "TEXT_CORRUPTION_INT_HONOGHR_OBJ_01" for consistency, and to fix mislisting.
--Renamed string "TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_04" to "TEXT_CORRUPTION_INT_HONOGHR_OBJ_02" for consistency, and to fix mislisting.
--Renamed string "TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_05" to "TEXT_CORRUPTION_INT_HONOGHR_OBJ_03" for consistency, and to fix mislisting.
+-Renamed string "TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_00" to "TEXT_CORRUPTION_OBJ_INT_HONOGHR_00" for consistency.
+-Renamed string "TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_03" to "TEXT_CORRUPTION_OBJ_INT_HONOGHR_01" for consistency, and to fix mislisting.
+-Renamed string "TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_04" to "TEXT_CORRUPTION_OBJ_INT_HONOGHR_02" for consistency, and to fix mislisting.
+-Renamed string "TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_05" to "TEXT_CORRUPTION_OBJ_INT_HONOGHR_03" for consistency, and to fix mislisting.
 -Renamed string "TEXT_PLANET_UNCORRUPTABLE" to "TEXT_PLANET_TRAIT_UNCORRUPTABLE" for database consistency.
 -Renamed string "TEXT_PLANET_ALDERAAN_INFO_WILDLIFE_02" to "TEXT_PLANET_ALDERAAN_INFO_WL_02" for database consistency.
 -Renamed string "TEXT_PLANET_BONADAN_INFO_ADV_01" to "TEXT_PLANET_TRAIT_LOTSCREDITS_NAME" for database consistency.

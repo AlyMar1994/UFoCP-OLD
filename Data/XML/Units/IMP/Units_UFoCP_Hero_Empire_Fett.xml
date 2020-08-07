@@ -454,6 +454,27 @@
 		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
 	</UniqueUnit>
 
+	<UniqueUnit Name="Slave_I_MP">
+		<Variant_Of_Existing_Type>Slave_I</Variant_Of_Existing_Type>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+		<Tech_Level>99</Tech_Level>
+
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Respawn_Boba_Fett</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Respawn_Boba_Fett</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Boba_Fett</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>1700</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>28</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+	</UniqueUnit>
+
 	<UniqueUnit Name="Slave_I_Death_Clone">
 		<Text_ID>TEXT_UNIT_SLAVE_I_01</Text_ID>
 		<Space_Model_Name>EV_Slave1_space_D.alo</Space_Model_Name>
@@ -555,30 +576,14 @@
 	<HeroCompany Name="Boba_Fett_Team_Land_MP">
 		<Variant_Of_Existing_Type>Boba_Fett_Team</Variant_Of_Existing_Type>
 
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+
 		<Tactical_Build_Cost_Multiplayer>1450</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Time_Seconds>23</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites />
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
 		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
-		<Is_Stealth_Company>No</Is_Stealth_Company>
-	</HeroCompany>
-
-	<HeroCompany Name="Boba_Fett_Team_Space_MP">
-		<Variant_Of_Existing_Type>Boba_Fett_Team</Variant_Of_Existing_Type>
-
-		<Encyclopedia_Good_Against>X-wing Y-Wing Z-95_Headhunter_Rebel</Encyclopedia_Good_Against>
-		<Encyclopedia_Vulnerable_To>Corellian_Corvette A-Wing</Encyclopedia_Vulnerable_To>
-		<Encyclopedia_Text>TEXT_TOOLTIP_SLAVE_ONE</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR</Encyclopedia_Unit_Class>
-
-		<Tactical_Build_Cost_Multiplayer>1700</Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Time_Seconds>28</Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites />
-		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
-		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
-		<Is_Stealth_Company>No</Is_Stealth_Company>
 	</HeroCompany>
 
 	<!-- SECONDARY: VARIANTS -->

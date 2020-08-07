@@ -53,7 +53,7 @@
 		<SFXEvent_Engine_Moving_Loop>Unit_Obiwan_Lightsaber_Moving_Loop</SFXEvent_Engine_Moving_Loop>
 		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Obiwan_Lightsaber_Cinematic_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
 
-		<Mouse_Collide_Override_Sphere_Radius>10.00</Mouse_Collide_Override_Sphere_Radius>			
+		<Mouse_Collide_Override_Sphere_Radius>10.00</Mouse_Collide_Override_Sphere_Radius>
 		<Type>Walk</Type>
 		<Deploys>No</Deploys>
 		<Affiliation>Rebel</Affiliation>
@@ -95,8 +95,8 @@
 		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Yoda</SFXEvent_Health_Critical_Warning>
 		<Death_SFXEvent_Start_Die>Unit_Defeat_Yoda</Death_SFXEvent_Start_Die>
 
-		<SFXEvent_Tactical_Build_Started>RHD_Reinforcements_En_Route</SFXEvent_Tactical_Build_Started>		
-		<SFXEvent_Tactical_Build_Complete>RHD_Reinforcements_Available</SFXEvent_Tactical_Build_Complete>		
+		<SFXEvent_Tactical_Build_Started>RHD_Reinforcements_En_Route</SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete>RHD_Reinforcements_Available</SFXEvent_Tactical_Build_Complete>
 		<SFXEvent_Tactical_Build_Cancelled>RHD_Reinforcements_Cancelled</SFXEvent_Tactical_Build_Cancelled>
 
 		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
@@ -251,7 +251,7 @@
 
 			<Remove_Corruption_Ability Name="Yoda_Remove_Corruption">
 				<Initially_Enabled>Yes</Initially_Enabled>
-				<Corruption_Removal_Cost_Multiplier>.95</Corruption_Removal_Cost_Multiplier><!-- 1.20 means 20% more expensive than base cost, 0.80 means 20% cheaper. -->
+				<Corruption_Removal_Cost_Multiplier>.95</Corruption_Removal_Cost_Multiplier> <!-- 1.20 means 20% more expensive than base cost, 0.80 means 20% cheaper. -->
 				<Corruption_Removal_Time_In_Secs>6</Corruption_Removal_Time_In_Secs> <!-- Time it takes to remove corruption. -->
 				<Activation_Style>Ground_Activated</Activation_Style>
 				<Causes_Despawn>No</Causes_Despawn>
@@ -288,7 +288,7 @@
 		<Can_Be_Only_One>True</Can_Be_Only_One>
 		
 		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>		
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>Unit_Select_Yoda</SFXEvent_Build_Complete>
 		<SFXEvent_Hero_Respawned>Unit_Select_Yoda</SFXEvent_Hero_Respawned>
 		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Yoda</SFXEvent_Fleet_Move>
