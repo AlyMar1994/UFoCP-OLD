@@ -2392,7 +2392,7 @@
 				ES_Level_Four_Starbase_Upgrade,
 		</Tactical_Buildable_Objects_Multiplayer>
 		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
-	
+
 		<!-- Data to prevent this from being buildable in galactic mode -->
 		<Build_Cost_Credits>0</Build_Cost_Credits>
 		<Build_Time_Seconds>0</Build_Time_Seconds>

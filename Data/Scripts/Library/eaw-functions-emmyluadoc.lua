@@ -28,18 +28,21 @@
 ---@return GameObject
 function FindDeadlyEnemy(gameObject)
 end
+
 ---@public
 ---@param faction_name string The name of the faction
 ---@return PlayerObject|nil
 ---Returns the PlayerObject matching the given faction name
 function Find_Player(faction_name)
 end
+
 ---@public
 ---@param type_name string The type name
 ---@return GameObjectType|nil
 ---Returns the GameObjectType matching the given type name
 function Find_Object_Type(type_name)
 end
+
 ---@public
 ---Literally finds all objects of this type. That may include projectiles or other unexpected objects. Categories can be piped together (e.g. `"Frigate | Capital"`)
 ---Filters by owner if filter is a `PlayerObject` or by `CategoryMask` if filter is a `string`
@@ -51,23 +54,27 @@ end
 ---@return table<number, GameObject>
 function Find_All_Objects_Of_Type(propertyOrPlayer, playerOrCategory)
 end
+
 ---@public
 --- Returns the first object of the given type. Possibly finds objects in reverse spawn order.
 ---@param typeName string A type name as specified in the XML code
 ---@return GameObject|nil
 function Find_First_Object(typeName)
 end
+
 ---@public
 ---@param hint string The hint
 ---@return GameObject|nil
 ---Returns the GameObject with the given hint. Hints can be set in the map editor.
 function Find_Hint(hint)
 end
+
 ---@public
 ---@param hint string The object hint as set in the map editor.
 ---@return GameObject[]
 function Find_All_Objects_With_Hint(hint)
 end
+
 ---@public
 --- Returns the nearest object that has the given properties. May return nil. The two argument version takes as second parameter an object type name. The four argument version takes as second parameter a property flag string. The `isFriendly`parameter filters for friendlies or enemies, respectively.
 ---@overload fun(gameObject:GameObject|TaskForce, typeNameOrProperty:string)
@@ -80,12 +87,14 @@ end
 ---@return GameObject
 function Find_Nearest(gameObject, typeNameOrProperty, player, isFriendly)
 end
+
 ---@public
 ---@param gameObject GameObject|TaskForce
 ---@param spaceFieldType string Can be "Asteroid", "Nebula" or "Ion_Storm".
 ---@return GameObject
 function Find_Nearest_Space_Field(gameObject, spaceFieldType)
 end
+
 ---@public
 --- Returns position and combined threat of units (from the unit list) in range of the position.
 ---@param unitList table<number, GameObject>
@@ -93,12 +102,14 @@ end
 ---@return Position
 function Find_Best_Local_Threat_Center(unitList, distance)
 end
+
 ---@public
 ---@param gameObject GameObject
 ---@param player PlayerObject
 ---@return Position
 function Get_Most_Defended_Position(gameObject, player)
 end
+
 ---@public
 ---Returns a position outside the range of the object that is given as first parameter.
 ---@param enemyObject GameObject The object whose weapon range is considered
@@ -106,6 +117,7 @@ end
 ---@return Position
 function Project_By_Unit_Range(enemyObject, gameObject)
 end
+
 ---@public
 --- GC only. Only for AI players. Returns a list of planet objects.
 ---@param player PlayerObject
@@ -120,6 +132,7 @@ end
 ---Can be called directly with a planet name or can be indexed to call the function `Get_All_Planets`.
 ---@param planetName string
 ---@return PlanetObject
+
 FindPlanet = {}
 ---@public
 --- Returns all planets in the current GC game.
@@ -735,7 +748,7 @@ function Is_Point_In_Nebula(position)
 end
 
 ---@public
---- Only valid in land mode.
+---Only valid in land mode.
 ---@overload fun(position1, position2):boolean
 ---@param position1 position
 ---@param position2  position
@@ -746,7 +759,7 @@ function Are_On_Opposite_Sides_Of_Shield(position1, position2, player, unknown)
 end
 
 ---@public
---- Triggers the retry dialog that allows the player to restart the mission or quit.
+---Triggers the retry dialog that allows the player to restart the mission or quit.
 function Activate_Retry_Dialog()
 end
 
@@ -774,6 +787,12 @@ end
 ---@param planet PlanetObject
 ---@return GameObjectType
 function GetNextStarbaseType(planet)
+end
+
+---@public
+---Tells the script to sleep for X miliseconds when reached.
+---@param timer number
+function Sleep(timer)
 end
 
 -- ----------------------------------------------------------------

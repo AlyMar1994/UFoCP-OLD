@@ -1129,6 +1129,7 @@
 	<!-- Accuser (Empire Major Hero) - Captain Firmus Piett during space battles. -->
 	<UniqueUnit Name="Accuser_Star_Destroyer">
 		<Variant_Of_Existing_Type>Generic_Star_Destroyer</Variant_Of_Existing_Type>
+
 		<Encyclopedia_Good_Against>Corellian_Corvette Corellian_Gunboat Interceptor4_Frigate</Encyclopedia_Good_Against>
 		<Encyclopedia_Vulnerable_To>Y-wing Skipray_Blastboat</Encyclopedia_Vulnerable_To>
 		<Icon_Name>I_Button_Captain_Firmus_Piett.tga</Icon_Name>
@@ -1166,17 +1167,29 @@
 		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Piett</SFXEvent_Health_Critical_Warning>
 		<SFXEvent_Bombard_Select_Target>EHD_Bombard_Select_Target</SFXEvent_Bombard_Select_Target>
 		<SFXEvent_Bombard_Incoming>EHD_Bombard_Incoming</SFXEvent_Bombard_Incoming>
+	
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Respawn_Piett</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Fleet_Move_Piett</SFXEvent_Hero_Respawned>
 
-		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_WEAPON_LASER,		Unit_Lost_Laser_Star_Destroyer</SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_WEAPON_LASER, </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_WEAPON_MISSILE, </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_WEAPON_TORPEDO, </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_WEAPON_ION_CANNON,	Unit_Lost_Ion_Star_Destroyer</SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_WEAPON_ION_CANNON, </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_SHIELD_GENERATOR,	Unit_Lost_Shields_Piett</SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_ENGINE,			Unit_Lost_Engines_Star_Destroyer</SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_ENGINE, </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_GRAVITY_WELL, </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_FIGHTER_BAY,		Unit_Lost_Bay_Star_Destroyer</SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_FIGHTER_BAY, </SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_TRACTOR_BEAM,		Unit_Lost_Tractor_Piett</SFXEvent_Hardpoint_Destroyed>
 		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_ENABLE_SPECIAL_ABILITY, </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Attack_Hardpoint>HARD_POINT_WEAPON_LASER,			Unit_Attack_Piett</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint>HARD_POINT_WEAPON_MISSILE,		Unit_Attack_Piett</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint>HARD_POINT_WEAPON_TORPEDO,		Unit_Attack_Piett</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint>HARD_POINT_WEAPON_ION_CANNON,	Unit_Attack_Piett</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint>HARD_POINT_SHIELD_GENERATOR,		Unit_Attack_Piett</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint>HARD_POINT_ENGINE,				Unit_Attack_Piett</SFXEvent_Attack_Hardpoint>
 
 		<SFXEvent_Engine_Idle_Loop>Unit_Star_Destroyer_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
 		<SFXEvent_Engine_Moving_Loop>Unit_Star_Destroyer_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
@@ -1192,21 +1205,13 @@
 		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
 		<Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
 
-		<!-- MULTIPLAYER SKIRMISH VALUES START -->
-		<Tactical_Build_Cost_Multiplayer>5800</Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites />
-		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
-		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
-
 		<!-- Hero abilities for Captain Piett added to ship; Hero "moveable" unit removed. -->
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<!-- Primary Ability. -->
 			<Unit_Ability>
 				<Type>ENERGY_WEAPON</Type>
 				<Mod_Multiplier>SPEED_MULTIPLIER, 0.80</Mod_Multiplier>
-				<GUI_Activated_Ability_Name>Piet_Energy_Weapon_Attack_Ability</GUI_Activated_Ability_Name><!-- GUI Command Bar support. -->
+				<GUI_Activated_Ability_Name>Piet_Energy_Weapon_Attack_Ability</GUI_Activated_Ability_Name> <!-- GUI Command Bar support. -->
 				<Recharge_Seconds>120</Recharge_Seconds>
 				<Expiration_Seconds>5</Expiration_Seconds>
 				<SFXEvent_Target_Ability>Unit_Energy_Blast_Piett</SFXEvent_Target_Ability>
@@ -1218,7 +1223,7 @@
 			<Unit_Ability>
 				<Type>TRACTOR_BEAM</Type>
 				<Mod_Multiplier>SPEED_MULTIPLIER, 0.60</Mod_Multiplier>
-				<GUI_Activated_Ability_Name>Piet_Tractor_Beam_Attack_Ability</GUI_Activated_Ability_Name><!-- GUI Command Bar support. -->
+				<GUI_Activated_Ability_Name>Piet_Tractor_Beam_Attack_Ability</GUI_Activated_Ability_Name> <!-- GUI Command Bar support. -->
 				<Recharge_Seconds>20</Recharge_Seconds>
 				<SFXEvent_Target_Ability>Unit_Tractor_Beam_Star_Destroyer</SFXEvent_Target_Ability>
 				<SFXEvent_Special_Ability_Loop>Unit_Star_Destroyer_Tractor_Beam</SFXEvent_Special_Ability_Loop>
@@ -1266,7 +1271,7 @@
 				<Activation_Max_Range>800</Activation_Max_Range>
 
 				<!-- Modifiers. If 0 - no modifier is applied, 1 - "100% increase or decrease." -->
-				<Damage_Per_Frame>50</Damage_Per_Frame>			
+				<Damage_Per_Frame>50</Damage_Per_Frame>
 			</Energy_Weapon_Attack_Ability>
 
 			<Tractor_Beam_Attack_Ability Name="Piet_Tractor_Beam_Attack_Ability">
@@ -1279,9 +1284,17 @@
 
 				<!-- Modifiers. If 0 - no modifier is applied, 1 - "100% increase or decrease." -->
 				<Target_Speed_Decrease_Percent>.98</Target_Speed_Decrease_Percent>
-				<Stacking_Category>2</Stacking_Category>			
+				<Stacking_Category>2</Stacking_Category>
 			</Tractor_Beam_Attack_Ability>
 		</Abilities>
+
+		<!-- MULTIPLAYER SKIRMISH VALUES START: -->
+		<Tactical_Build_Cost_Multiplayer>5800</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
 	</UniqueUnit>
 
 	<UniqueUnit Name="Accuser_Star_Destroyer_Death_Clone">
