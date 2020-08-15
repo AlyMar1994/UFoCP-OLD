@@ -1309,7 +1309,7 @@
 		<Behavior>TEAM, SELECTABLE, UNIT_AI, TEAM_LOCOMOTOR, TARGETING</Behavior>
 		<SpaceBehavior>REVEAL</SpaceBehavior>
 	
-		<Space_FOW_Reveal_Range>800.00</Space_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>1000.00</Space_FOW_Reveal_Range>
 		<MovementClass>Space</MovementClass>
 		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
 		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>

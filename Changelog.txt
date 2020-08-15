@@ -33,9 +33,9 @@ There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT 
 General
 ==================
 -Added support for Anakin's Empire at War/Forces of Corruption mod launcher.
--Added support for EmmyLUA edit prediction on LUA files in Visual Studio Code.
+-Added support for EmmyLUA edit prediction/hinting on LUA files in Visual Studio Code.
 
--Reorganized most of the mod's files in various ways.
+-Reorganized most of the mod's XML files in various ways.
 
 -Undid most of previous update's "TEXT_NONE" fixes, and reimplemented an alternate fix. Created string "TEXT_NONE" so all "TEXT_NONE"-named objects can stop throwing errors. If there's any visible text in-game that says "None.  If you see this description, hehe, you shouldn't!  Please report this object to 'https://github.com/alymar1994/ufocp' immediately." then please do report it.
 
@@ -84,6 +84,8 @@ Units (Galactic)
 ==================
 Units (Land)
 ==================
+-AT-AT – Fixed under construction variant for the Rebel campaign. It was labelled as a Decoration, which meant that it would ignore its obstacle properties.
+
 -Blizzard 1 - General Veers – Fixed unit's name to be more consistient with other named space hero units. Now named "Blizzard 1 - General Veers" instead of soley "General Maximilian Veers." Name is taken from the official Prima game guide.
 -Blizzard 1 - General Veers – Fixed unit's team/container names being erroneous, and inconsistent. Now named "Blizzard 1 - General Veers," same as the unit instead of "Colonel Maximilian Veers." Veers was referred to as a "colonel" on all levels other than land, where he was "general."
 
@@ -104,7 +106,7 @@ Units (Land)
 Units (Space)
 ==================
 -Black Leader: Darth Vader – Fixed unit's name to be more consistent with other named hero units of the same class. Now named "Black Leader: Darth Vader" instead of soley "TIE Advanced X-1."
--Black Leader: Darth Vader – Removed duplicate FoW reveal range for space tag. Now 800 instead of 1000.
+-Black Leader: Darth Vader – Removed duplicate FoW reveal range for space tag. Now 1000 instead of 800.
 
 -Black Squadron – Fixed unit's team name to be more consistent with other named hero units of the same class. Now named "Black Squadron" instead of soley "Darth Vader."
 -Black Squadron – Modified unit descriptions. Now includes default Vader text, with the TIE Advanced x1 text added on as with other heroes.

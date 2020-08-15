@@ -173,9 +173,11 @@
 				<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
 				<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
 				<CategoryMask> Capital </CategoryMask>
-			</SpaceStructure>
+	</SpaceStructure>
 
-    <SpaceStructure Name="Drydock_Tyderium_Shuttle">
+
+
+	<SpaceStructure Name="Drydock_Tyderium_Shuttle">
 		<Text_ID>TEXT_UNIT_TYDERIUM_SHUTTLE</Text_ID>
 		<Space_Model_Name>EV_LAMBDASHUTTLE_SPACE.ALO</Space_Model_Name>
 		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_STORY_BROKEN_SHIP  </Encyclopedia_Text>
@@ -416,7 +418,7 @@
 		<Land_Model_Name>w_at-at_construction.ALO</Land_Model_Name>
 		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
 		<Scale_Factor>1.75</Scale_Factor>
-		<Is_Decoration>Yes</Is_Decoration>
+		<Is_Decoration>No</Is_Decoration>
 		<LandBehavior>LAND_OBSTACLE</LandBehavior>
 	</Props_Story>
 
@@ -462,16 +464,17 @@
 
 	<Props_Story Name="UMP_Prisoner_Human">
 		<Variant_Of_Existing_Type>Urban_Civilian_A</Variant_Of_Existing_Type>
+
 		<Land_Model_Name>NI_GMale_UrbanPrison_A.alo</Land_Model_Name>
 		<Affiliation>Neutral</Affiliation>
 		<Tactical_Health>25</Tactical_Health>
 		<Projectile_Fire_Recharge_Seconds>.75</Projectile_Fire_Recharge_Seconds>
               
-        <SFXEvent_Select> Unit_Select_Prisoner_1 </SFXEvent_Select>         		
-        <SFXEvent_Move> Unit_Move_Prisoner_1 </SFXEvent_Move>  
-        <SFXEvent_Attack> Unit_Attack_Prisoner_1 </SFXEvent_Attack>         		            		 
-        <SFXEvent_Assist_Move> Unit_Assist_Move_Prisoner_1 </SFXEvent_Assist_Move>		
-        <SFXEvent_Assist_Attack> Unit_Assist_Attack_Prisoner_1 </SFXEvent_Assist_Attack> 
+        <SFXEvent_Select> Unit_Select_Prisoner_1 </SFXEvent_Select>
+        <SFXEvent_Move> Unit_Move_Prisoner_1 </SFXEvent_Move>
+        <SFXEvent_Attack> Unit_Attack_Prisoner_1 </SFXEvent_Attack>
+        <SFXEvent_Assist_Move> Unit_Assist_Move_Prisoner_1 </SFXEvent_Assist_Move>
+        <SFXEvent_Assist_Attack> Unit_Assist_Attack_Prisoner_1 </SFXEvent_Assist_Attack>
         <Death_SFXEvent_Start_Die>Unit_Underworld_Soldier_Death</Death_SFXEvent_Start_Die>
 
         <SFXEvent_Engine_Idle_Loop> Unit_Riot_Infantry_Loop_Low </SFXEvent_Engine_Idle_Loop>
@@ -480,16 +483,17 @@
 
 	<Props_Story Name="UMP_Prisoner_Human_B">
 		<Variant_Of_Existing_Type>Urban_Civilian_A</Variant_Of_Existing_Type>
+
 		<Land_Model_Name>NI_GMale_UrbanPrison_B.alo</Land_Model_Name>
 		<Affiliation>Neutral</Affiliation>
 		<Tactical_Health>25</Tactical_Health>
 		<Projectile_Fire_Recharge_Seconds>.75</Projectile_Fire_Recharge_Seconds>
 
-        <SFXEvent_Select> Unit_Select_Prisoner_1 </SFXEvent_Select>         		
-        <SFXEvent_Move> Unit_Move_Prisoner_1 </SFXEvent_Move>  
-        <SFXEvent_Attack> Unit_Attack_Prisoner_1 </SFXEvent_Attack>         		            		 
-        <SFXEvent_Assist_Move> Unit_Assist_Move_Prisoner_1 </SFXEvent_Assist_Move>		
-        <SFXEvent_Assist_Attack> Unit_Assist_Attack_Prisoner_1 </SFXEvent_Assist_Attack> 
+        <SFXEvent_Select> Unit_Select_Prisoner_1 </SFXEvent_Select>
+        <SFXEvent_Move> Unit_Move_Prisoner_1 </SFXEvent_Move>
+        <SFXEvent_Attack> Unit_Attack_Prisoner_1 </SFXEvent_Attack>
+        <SFXEvent_Assist_Move> Unit_Assist_Move_Prisoner_1 </SFXEvent_Assist_Move>
+        <SFXEvent_Assist_Attack> Unit_Assist_Attack_Prisoner_1 </SFXEvent_Assist_Attack>
 	</Props_Story>
 
 	<Props_Story Name="UMP_Prisoner_Human_C">
@@ -499,10 +503,10 @@
 		<Tactical_Health>25</Tactical_Health>
 		<Projectile_Fire_Recharge_Seconds>.75</Projectile_Fire_Recharge_Seconds>
 
-        <SFXEvent_Select> Unit_Select_Prisoner_1 </SFXEvent_Select>         		
-        <SFXEvent_Move> Unit_Move_Prisoner_1 </SFXEvent_Move>  
-        <SFXEvent_Attack> Unit_Attack_Prisoner_1 </SFXEvent_Attack>         		            		 
-        <SFXEvent_Assist_Move> Unit_Assist_Move_Prisoner_1 </SFXEvent_Assist_Move>		
+        <SFXEvent_Select> Unit_Select_Prisoner_1 </SFXEvent_Select>
+        <SFXEvent_Move> Unit_Move_Prisoner_1 </SFXEvent_Move>
+        <SFXEvent_Attack> Unit_Attack_Prisoner_1 </SFXEvent_Attack>
+        <SFXEvent_Assist_Move> Unit_Assist_Move_Prisoner_1 </SFXEvent_Assist_Move>
         <SFXEvent_Assist_Attack> Unit_Assist_Attack_Prisoner_1 </SFXEvent_Assist_Attack> 
 	</Props_Story>
 
@@ -513,10 +517,10 @@
 		<Tactical_Health>25</Tactical_Health>
 		<Projectile_Fire_Recharge_Seconds>.75</Projectile_Fire_Recharge_Seconds>
 
-        <SFXEvent_Select> Unit_Select_Prisoner_1 </SFXEvent_Select>         		
-        <SFXEvent_Move> Unit_Move_Prisoner_1 </SFXEvent_Move>  
-        <SFXEvent_Attack> Unit_Attack_Prisoner_1 </SFXEvent_Attack>         		            		 
-        <SFXEvent_Assist_Move> Unit_Assist_Move_Prisoner_1 </SFXEvent_Assist_Move>		
+        <SFXEvent_Select> Unit_Select_Prisoner_1 </SFXEvent_Select>
+        <SFXEvent_Move> Unit_Move_Prisoner_1 </SFXEvent_Move>
+        <SFXEvent_Attack> Unit_Attack_Prisoner_1 </SFXEvent_Attack>
+        <SFXEvent_Assist_Move> Unit_Assist_Move_Prisoner_1 </SFXEvent_Assist_Move>
         <SFXEvent_Assist_Attack> Unit_Assist_Attack_Prisoner_1 </SFXEvent_Assist_Attack> 
 	</Props_Story>
 
@@ -527,12 +531,13 @@
 		<Tactical_Health>25</Tactical_Health>
 		<Projectile_Fire_Recharge_Seconds>.75</Projectile_Fire_Recharge_Seconds>
 
-        <SFXEvent_Select> Unit_Select_Prisoner_1 </SFXEvent_Select>         		
-        <SFXEvent_Move> Unit_Move_Prisoner_1 </SFXEvent_Move>  
-        <SFXEvent_Attack> Unit_Attack_Prisoner_1 </SFXEvent_Attack>         		            		 
-        <SFXEvent_Assist_Move> Unit_Assist_Move_Prisoner_1 </SFXEvent_Assist_Move>		
-        <SFXEvent_Assist_Attack> Unit_Assist_Attack_Prisoner_1 </SFXEvent_Assist_Attack> 
+        <SFXEvent_Select> Unit_Select_Prisoner_1 </SFXEvent_Select>
+        <SFXEvent_Move> Unit_Move_Prisoner_1 </SFXEvent_Move>
+        <SFXEvent_Attack> Unit_Attack_Prisoner_1 </SFXEvent_Attack>
+        <SFXEvent_Assist_Move> Unit_Assist_Move_Prisoner_1 </SFXEvent_Assist_Move>
+        <SFXEvent_Assist_Attack> Unit_Assist_Attack_Prisoner_1 </SFXEvent_Assist_Attack>
 	</Props_Story>
+
 
 
 
@@ -550,6 +555,7 @@
 		<Projectile_Fire_Recharge_Seconds>.75</Projectile_Fire_Recharge_Seconds>
 	</Props_Story>
 
+
 			<Props_Story Name="UMP_Prisoner_Wookie_Company">
 				<Variant_Of_Existing_Type>Kashyyyk_Wookie_War_Party</Variant_Of_Existing_Type>
 				<Company_Units>UMP_Prisoner_Wookiee, UMP_Prisoner_Wookiee, UMP_Prisoner_Wookiee, UMP_Prisoner_Wookiee, UMP_Prisoner_Wookiee</Company_Units>
@@ -563,6 +569,7 @@
 		<Projectile_Fire_Recharge_Seconds>.75</Projectile_Fire_Recharge_Seconds>
 	</Props_Story>
 
+
 			<Props_Story Name="UMP_Prisoner_Gungan_Company">
 				<Variant_Of_Existing_Type>Naboo_Gungan_Warrior_Troop</Variant_Of_Existing_Type>
 				<Company_Units>UMP_Prisoner_Gungan, UMP_Prisoner_Gungan, UMP_Prisoner_Gungan, UMP_Prisoner_Gungan, UMP_Prisoner_Gungan</Company_Units>
@@ -575,6 +582,7 @@
 		<Affiliation>Neutral</Affiliation>
 		<Projectile_Fire_Recharge_Seconds>.75</Projectile_Fire_Recharge_Seconds>
 	</Props_Story>
+
 
 			<Props_Story Name="UMP_Prisoner_Ewok_Company">
 				<Variant_Of_Existing_Type>Endor_Ewok_Hunting_Party</Variant_Of_Existing_Type>
@@ -590,6 +598,7 @@
 		<Projectile_Fire_Recharge_Seconds>.75</Projectile_Fire_Recharge_Seconds>
 	</Props_Story>
 
+
 			<Props_Story Name="UMP_Prisoner_Sullustan_Company">
 				<Variant_Of_Existing_Type>Sullustan_Civ_Company</Variant_Of_Existing_Type>
 				<Company_Units>UMP_Prisoner_Sullustan, UMP_Prisoner_Sullustan, UMP_Prisoner_Sullustan, UMP_Prisoner_Sullustan, UMP_Prisoner_Sullustan</Company_Units>
@@ -602,6 +611,7 @@
 		<Affiliation>Neutral</Affiliation>
 		<Projectile_Fire_Recharge_Seconds>.75</Projectile_Fire_Recharge_Seconds>
 	</Props_Story>
+
 
 			<Props_Story Name="UMP_Prisoner_Calamari_Company">
 				<Variant_Of_Existing_Type>Mon_Calamari_Civ_Company</Variant_Of_Existing_Type>
@@ -616,6 +626,7 @@
 		<Projectile_Fire_Recharge_Seconds>.75</Projectile_Fire_Recharge_Seconds>
 	</Props_Story>
 
+
 			<Props_Story Name="UMP_Prisoner_Bothan_Company">
 				<Variant_Of_Existing_Type>Bothan_Civ_Company</Variant_Of_Existing_Type>
 				<Company_Units>UMP_Prisoner_Bothan, UMP_Prisoner_Bothan, UMP_Prisoner_Bothan, UMP_Prisoner_Bothan, UMP_Prisoner_Bothan</Company_Units>
@@ -628,6 +639,7 @@
 		<Affiliation>Neutral</Affiliation>
 		<Projectile_Fire_Recharge_Seconds>.75</Projectile_Fire_Recharge_Seconds>
 	</Props_Story>
+
 
 			<Props_Story Name="UMP_Prisoner_Chilly_Company">
 				<Variant_Of_Existing_Type>Snow_Civilian_Team_Underworld</Variant_Of_Existing_Type>
@@ -643,6 +655,7 @@
 		<Affiliation>Neutral</Affiliation>
 		<Projectile_Fire_Recharge_Seconds>.75</Projectile_Fire_Recharge_Seconds>
 	</Props_Story>
+
 
 			<Props_Story Name="UMP_Prisoner_Pirate_Company">
 				<Variant_Of_Existing_Type>Urban_Civilian_Team_Underworld</Variant_Of_Existing_Type>
@@ -711,10 +724,12 @@
 	
     <Props_Story Name="UM02_Magnetically_Sealed_Doorway">
  		<Lua_Script>UM02_MagnetDoors</Lua_Script>
-		<GUI_Bounds_Scale>.5</GUI_Bounds_Scale>
-		<Select_Box_Scale>200</Select_Box_Scale>
+
 		<Text_ID>TEXT_DOOR</Text_ID>
 		<Encyclopedia_Unit_Class> TEXT_DOOR_TOOLTIP </Encyclopedia_Unit_Class>
+
+		<GUI_Bounds_Scale>.5</GUI_Bounds_Scale>
+		<Select_Box_Scale>200</Select_Box_Scale>
 		<Land_Model_Name>EB_CIN_BaseWall-mid.alo</Land_Model_Name>
 		<Scale_Factor>2</Scale_Factor>
 		<Property_Flags>NotOpportunityTarget</Property_Flags>
@@ -723,6 +738,7 @@
 		<Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
 		<GUI_Bracket_Size>1</GUI_Bracket_Size>
 		<Mass>1.0</Mass>
+
 		<Armor_Type> Armor_ATST </Armor_Type>
         <Shield_Armor_Type>Shield_Tank</Shield_Armor_Type>
 		<Shield_Points>10000</Shield_Points>
@@ -730,14 +746,15 @@
 		<Shield_Refresh_Rate>10000</Shield_Refresh_Rate>
 		<Energy_Capacity>10000</Energy_Capacity>
 		<Energy_Refresh_Rate>10000</Energy_Refresh_Rate>
+
 		<Affiliation>Hostile</Affiliation>
 		<Base_Level_Available>0</Base_Level_Available>
 		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
 		<Victory_Relevant>no</Victory_Relevant>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
-		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>     
-	        <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
 		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
 		<Ranged_Target_Z_Adjust>10.0</Ranged_Target_Z_Adjust>
 		<Death_Explosions>Small_Explosion_Land</Death_Explosions>
@@ -773,7 +790,6 @@
 				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
 				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
 			</Force_Healing_Ability>
-			
 		</Abilities>
 	</Props_Story>
 
