@@ -1,5 +1,33 @@
-# Windows .DB (Thumbnail DataBase) Files
-Thumbs.db
+## ~~ SHAMELESSLY STOLEN FROM THE "Kaiserreich: Legacy of the Weltkrieg" DEVELOPERS
+# ~~ https://github.com/Kaiserreich~~
 
+### Windows ###
+# Thumbnail DataBase
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dumps
+*.stackdump
+
+# Folder Configs
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Shortcuts
+*.lnk
+
+
+### Apple ###
 # macOS .DS_Store (Desktop Services Store) Files
 *.DS_Store

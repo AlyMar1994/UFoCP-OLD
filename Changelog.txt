@@ -3,18 +3,145 @@ Fixes are marked with a hyphen (-), their changes seperated by an en dash (–).
 ----
 Vocab.:
 
--Empire – Galactic Empire/Imperials
+-Empire – Imperials
 -Rebels – Rebellion
 -Underworld – Zann Consortium
 
 -EaW – Empire at War (base game, pre-Forces of Corruption)
 -FoC – Forces of Corruption (expansion game)
 
--Conditional(s) – "If this, then this will happen"-type code.
+-Lua – Top-level coding language used for scripting EaW/FoC (not including XML, a markup language).
+-Conditional(s) – "If" statements which dictate certain advisor dialogues when conditions are met.
 -Death Clone – The version of a ship that lingers in a map when destroyed.
+-Perception Equation ("PE") – Math which returns a value for the AI to do something.
+
+-Galactic – On the galactic map/level.
+-Land – On land maps.
+-Space – On space maps.
 ----
 Whenever the AI is edited, it's not labeled based on specific changed units with the A.I., but it's labelled based on the name of the file.
 ----
+
+
+=========================================================================================
+v1.11
+=========================================================================================
+There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT Changelog.txt" in the game directory to see!
+
+
+==================
+General
+==================
+-Added support for Anakin's Empire at War/Forces of Corruption mod launcher.
+-Added support for EmmyLUA edit prediction/hinting on LUA files in Visual Studio Code.
+
+-Reorganized most of the mod's XML files in various ways.
+
+-Undid most of previous update's "TEXT_NONE" fixes, and reimplemented an alternate fix. Created string "TEXT_NONE" so all "TEXT_NONE"-named objects can stop throwing errors. If there's any visible text in-game that says "None.  If you see this description, hehe, you shouldn't!  Please report this object to 'https://github.com/alymar1994/ufocp' immediately." then please do report it.
+
+-Modified generic galactic squadron container unit, by giving it a CategoryMask of "fighter" so the game stops throwing errors.
+
+-Fixed all Empire technology levels not mentioning objects that can be built when upgrading (for example, 2-M Repulsor Tanks or the Heavy Vehicle Factory not being mentioned when upgrading to level 2 in the tooltip).
+-Fixed items being improperly named on Empire tech level tooltips.
+-Fixed erratic spacing and ordering of Empire technology level tooltips. It now follows this order, alphabetically: [Space Objects], [Space Units], [Land Objects], [Land Units], [Misc].
+
+
+==================
+A.I.
+==================
+-(LUA) UM11_ForceAdeptFour – Fixed Master Force Adept, ultimate boss of UM11. A (accidental) non-existant variable resulted nil, so the Adept would attack any unit in sight not in his faction. This has been fixed to only target Underworld player units.
+
+-(PE) AI_Equations_Empire_Land – Removed "Should_Build_EM_Field_Generator" equation, as the Empire cannot build the Repulsorlift Jammer.
+
+-(PE) AI_Equations_Underworld_Land – Fixed "Should_Build_Ysalamiri_Cage" equation accounting unit "Darth_Vader" (EaW) into the math, instead of "Darth_Vader_Expansion" (FoC) ("Darth_Vader" is no longer a possible land unit due to previous fixes. It is always "Darth_Vader_Expansion").
+-(PE) AI_Equations_Underworld_Land – Added in the Empire's "Should_Build_EM_Field_Generator" equation, and modified it to apply to the Underworld (who can actually build the structure).
+
+-(PE) BasicLandEquations – Fixed "Needs_Vader_Assist" and "Has_Infantry_Hero" equations, which searched for unused land unit "Darth Vader" (EaW) instead of searching only for "Darth_Vader_Expansion" (FoC).
+
+-(PE) BudgetingEquations – Fixed the "BasicEmpireMajorItemBudgetAllocation" and "TechUpgradeBudgetRequirement" equations. Was searching for "Death_Star" (EaW) only, now only searches for "Death_Star_II" (FoC). This is the second and only Death Star unit change that isn't made 'generic' for right now: it doesn't account for the AI using the original Death Star. The DS1 isn't used in FoC, but it's planned to make the equation 'generic' in the future, so players who wish to use UFoCP as bases for their mods can have the original, or both, Death Stars in-game and have the AI properly budget and build it.
+
+
+==================
+Planets (Galactic)
+==================
+-Fixed planets using inconsistent higher-than-average credit value texts, which could result in text oddities. Now all consolidated under one string entry, and are all consistent.
+
+-Fixed bugs on all Underworld corruption missions. The objectives display wouldn't visually complete or fail objectives when certain conditions are met, due to pointing to invalid text ids. In addition, most objective displays were not visually consistent or grammically correct.
+
+
+==================
+Structures (Land)
+==================
+-Fixed regression. All reinforcement points will now display icons.
+
+
+==================
+Units (Galactic)
+==================
+-Defiler – Fixed unit not having the "this unit can capture buildpads" text.
+
+
+==================
+Units (Land)
+==================
+-AT-AT – Fixed under construction variant for the Rebel campaign. It was labelled as a Decoration, which meant that it would ignore its obstacle properties.
+
+-Blizzard 1 - General Veers – Fixed unit's name to be more consistient with other named space hero units. Now named "Blizzard 1 - General Veers" instead of soley "General Maximilian Veers." Name is taken from the official Prima game guide.
+-Blizzard 1 - General Veers – Fixed unit's team/container names being erroneous, and inconsistent. Now named "Blizzard 1 - General Veers," same as the unit instead of "Colonel Maximilian Veers." Veers was referred to as a "colonel" on all levels other than land, where he was "general."
+
+-Canderous Assault Tank – Adjusted unit damage to 5.33(r). Update v1.2 changed the shots-per-volley from two to three to fix an animation bug. This meant, per-volley, it did 24 damage from its original 16. The damage has now been adjusted so it results in 16 (technically 15.99) damage in total again, despite having three shots per-volley. The tank is still powerful, but less gamebreaking.
+
+-Defiler – Fixed unit being able to trigger a battlefield callout when no callout has been created for any faction (nor in its own behaviors).
+
+-Field Commander (Empire) – Fixed galactic tooltip not containing text about being able to capture buildpads.
+
+-Field Commander (Rebel) – Fixed galactic tooltip not containing text about being able to capture buildpads.
+
+-Force Adept – Fixed all Force Adepts not using the "capture buildpads" text in their tooltips when they're capable of capturing build pads.
+
+-Zann Consortium Slaves – Fixed all Underworld slave types not being "victory relevant." Battles should no longer automatically fail due to only having slave infantry on the land battle.
+
+
+==================
+Units (Space)
+==================
+-Black Leader: Darth Vader – Fixed unit's name to be more consistent with other named hero units of the same class. Now named "Black Leader: Darth Vader" instead of soley "TIE Advanced X-1."
+-Black Leader: Darth Vader – Removed duplicate FoW reveal range for space tag. Now 1000 instead of 800.
+
+-Black Squadron – Fixed unit's team name to be more consistent with other named hero units of the same class. Now named "Black Squadron" instead of soley "Darth Vader."
+-Black Squadron – Modified unit descriptions. Now includes default Vader text, with the TIE Advanced x1 text added on as with other heroes.
+-Black Squadron – Fixed herobar description using only the TIE Advanced x1 text when it should only use the normal Vader description as other heroes use theirs.
+-Black Squadron – Fixed "good against" indicators not including the Starviper Fighter, and the "weak against" indicator not including the Crusader Gunship.
+
+-Kedalbe-class Battleship – Fixed description not mentioning the six planets the Keldabe can be built on.
+-Kedalbe-class Battleship – Fixed death clone's ship class being "capital_ship" when it should've been "Capital."
+
+-Luke Skywalker – Fixed regression. Luke's space X-wing used default X-wing fighter voice lines in space when attacking hardpoints, or moving into nebula or asteroid fields due to making his X-wing a variant of the vanilla X-wing.
+
+-Slave I - Boba Fett – Fixed unit's name to be more consistient with other named hero units of the same class. Now named "Slave I - Boba Fett" instead of soley "Slave I" or "Boba Fett."
+-Slave I - Boba Fett – Fixed in-game space unit's icon being the Slave I ship, instead of the hero's icon like all other heroes.
+-Slave I - Boba Fett – Fixed infamous object contestation glitch where Slave I, when summoned next to a capturable structure, would permanently keep it under Empire control until killed. This was caused by the unit possibly spawning an invisible variant of Fett, which would remain in-space. A special, lone MP space hero unit of the Slave I has been created to prevent this, identical to the original MP variant.
+
+-The Millenium Falcon - Han Solo & Chewbacca – Fixed skirmish good/bad against indicators not being updated for the FoC expansion. They were changed on the unit, not on the squadron/container. All sources now have correct info.
+
+-The Accuser - Captain Piett - Fixed attack, destruction and summoning sounds. Piett will no longer play generic Star Destroyer dialogue, and will use proper assigned dialogue ("Requesting assistance.... --> "Constructing unit....") like all other heroes when applicable.
+-The Accuser - Captain Piett - Added respawning SFX. Piett should now say a generic unit line when respawning, like most other heroes.
+
+-The Annihilator - Admiral Gaarn – Fixed unit description. Contents are now more aligned/consistent with other units of its type and in-general.
+
+-The Executor - Darth Vader – Fixed unit's name to be more consistient with other named hero units of the same class. Now named "The Executor - Darth Vader" instead of soley "Executor-class Super Star Destroyer."
+-The Executor - Darth Vader – Fixed in-game space unit's icon being the Executor icon, instead of the hero's icon like all other heroes.
+-The Executor - Darth Vader – Fixed in-game space unit's description not including Darth Vader's normal description as well.
+
+-X-wing - Fixed unit's good/bad against indicators not changing for the FoC expansion. They were changed on the unit, not on the squadron/container. All sources now have correct info.
+
+-Y-wing – Fixed unit good/bad against indicators being incorrect for the FoC expansion. They were changed on the unit, not on the squadron/container. All sources now have correct info.
+-Y-wing – Fixed squadron having "Is Escort" set to "nos" instead of "No."
+-Y-wing – Removed dependence on Darth Vader's values for the Y-wing container. Unit should now be more consistent with others, and not be an odd unit out.
+
+
+=========================================================================================
+
 
 
 =========================================================================================
@@ -32,7 +159,6 @@ General
 Units (Galactic)
 ==================
 -Darth Vader – Fixed Vader not being buildable in GC, due to various issues with the new files. The Executor's unit info has now been merged into Darth Vader's file (as it is Vader's FoC ship only), and its position in the GameObjects file has been shifted so Vader now appears in the GC build queue.
-** Vader also suffers from another bug: he no longer is affected by discounts. This will be left for now, but will eventually be corrected.
 
 
 =========================================================================================

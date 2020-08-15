@@ -2,13 +2,112 @@
 *English-only text fixes, no localizers as-of-yet.
 ----
 
-Fixes are marked with a hyphen (-), and written in this format: "-[DIALOG NAME]: 'Orig.' --> 'Fixed.'"
+Fixes are marked with a hyphen (-), and written in this format: "-[DIALOG NAME]: 'Orig.' --> 'Fix.'"
 
 THESE EDITS FOLLOW THE STANDARDS OF AMERICAN ENGLISH! Double-spacing where applicable is only fixed when generally inconsistient, wrong for the scenario or is totally broken.  These edits/fixes follow the rules of trying to stay consistient and American English-correct.
 
 Last of note, I am a human being and I make mistakes.  Please point out text errors in-game through bug reporting!
 
 ----
+
+
+===================================================================================================
+v1.11
+===================================================================================================
+
+-Created string "TEXT_TOOLTIP_REQUIRED_PLANETS_CAPITAL_SHIPS_01" to adjust text for expansion units and new planets that added in to build capital ships (like Star Destroyers) on.  Planet names also reorganized in alphabetical order.
+-Created string "TEXT_PLANET_CAPITAL_SHIP_PRODUCER_01" to adjust text for expansion unit Kedalbe-class Battleship.  It is now mentioned in the list of buildable things.
+-Created string "TEXT_UNIT_SLAVE_I_01" to adjust full name to keep consistient with other named hero units of its class.
+-Created string "TEXT_UNIT_TIE_PROTOTYPE_01" to adjust full name to keep consistient with other named hero units of its class.
+-Created string "TEXT_UNIT_SSD_EXECUTOR_01" to adjust full name to keep consistient with other named hero units of its class.
+-Created string "TEXT_HERO_VADER_TEAM_2" to adjust full name to keep consistient with other named hero units of its class.
+-Created string "TEXT_NONE" so any "TEXT_NONE"-named object can stop throwing errors.
+-Created string "TEXT_CORRUPTION_OBJ_INT_TARIS_00" to fix bad objective string in Silri's Taris intimidation mission.
+-Created string "TEXT_CORRUPTION_OBJ_INT_NABOO_00" to fix bad objective string in Silri's Naboo intimidation mission.
+-Created string "TEXT_CORRUPTION_OBJ_KID_BYSS_00" to fix bad objective string in Silri's Byss kidnapping mission.
+-Created string "TEXT_PLANET_TRAIT_LOTSCREDITS" to fix inconsistent wording/classification of planet trait "This planet has a higher-than-average credit production rate."  Originally used Bonadan's tooltip for all affected planets.  This replaces all planets that have it.
+-Created string "TEXT_HERO_GENERAL_VEERS_03" to adjust unit name to keep consistent with other heroes.
+-Created string "TEXT_TOOLTIP_ANNIHILATOR_01" to adjust unit description to keep its content consistent with others of its type, and in-general.
+
+-Renamed string "TEXT_CORRUPTION_TARIS_INT_GOAL_01" to "TEXT_CORRUPTION_OBJ_SILRISURVIVE."  This string is used universally for Silri's corruption missions, to say "Silri must survive."  This has been changed in all missions.
+-Renamed string "TEXT_BYSS_KIDNAPPING_OBJECTIVE_00" to "TEXT_CORRUPTION_OBJ_KID_BYSS_01" to keep consistency within file.
+-Renamed string "TEXT_CORRUPTION_UTAPAU_STORY_KIDNAP_OBJECTIVE_02" to "TEXT_CORRUPTION_OBJ_KID_UTAPAU_00" for consistency, and to fix a mislisting where objective 00 was renamed.
+-Renamed string "TEXT_CORRUPTION_UTAPAU_STORY_KIDNAP_OBJECTIVE_03" to "TEXT_CORRUPTION_OBJ_KID_UTAPAU_01" for consistency, and to fix a mislisting where objective 02 was renamed.
+-Renamed string "TEXT_CORRUPTION_UTAPAU_STORY_KIDNAP_OBJECTIVE_04" to "TEXT_CORRUPTION_OBJ_KID_UTAPAU_02" for consistency, and to fix a mislisting where objective 03 was renamed.
+-Renamed string "TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_01" to "TEXT_CORRUPTION_OBJ_URAISURVIVE." This string is used for Urai's corruption missions, to say "Urai must survive."  This has been changed in all missions.
+-Renamed string "TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_00" to "TEXT_CORRUPTION_OBJ_INT_HONOGHR_00" for consistency.
+-Renamed string "TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_03" to "TEXT_CORRUPTION_OBJ_INT_HONOGHR_01" for consistency, and to fix mislisting.
+-Renamed string "TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_04" to "TEXT_CORRUPTION_OBJ_INT_HONOGHR_02" for consistency, and to fix mislisting.
+-Renamed string "TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_05" to "TEXT_CORRUPTION_OBJ_INT_HONOGHR_03" for consistency, and to fix mislisting.
+-Renamed string "TEXT_PLANET_UNCORRUPTABLE" to "TEXT_PLANET_TRAIT_UNCORRUPTABLE" for database consistency.
+-Renamed string "TEXT_PLANET_ALDERAAN_INFO_WILDLIFE_02" to "TEXT_PLANET_ALDERAAN_INFO_WL_02" for database consistency.
+-Renamed string "TEXT_PLANET_BONADAN_INFO_ADV_01" to "TEXT_PLANET_TRAIT_LOTSCREDITS_NAME" for database consistency.
+-Renamed string "TEXT_PLANET_VERGESSO_INFO_ADV" to "TEXT_PLANET_TRAIT_SPACESTEALTH" for database consistency.
+-Renamed string "TEXT_TOOLTIP_ANNIHILATOR" and "TEXT_TOOLTIP_ANNIHILATOR_01" to "TEXT_HERO_ANNIHILATOR" and "TEXT_HERO_ANNIHILATOR_01" for database consistency.
+-Renamed string "TEXT_ENCYCLOPEDIA_ANNIHILATOR" to "TEXT_TOOLTIP_ANNIHILATOR" for database consistency.
+-Renamed string "TEXT_TOOLTIP_SD_ADMONITOR" to "TEXT_TOOLTIP_THRAWN_SD_00" for database consistency.
+
+-Deleted string "TEXT_TOOLTIP_OBI_WAN_01," as it is a duplicate of "TEXT_TOOLTIP_OBI_WAN" with a minor text adjustment not requiring a new tag.  Obi-Wan's tooltip text remains the same.
+-Deleted string "TEXT_UNIT_ROGUE_10_01," as it was an unecessary duplicate to fix a minor text error.
+-Deleted string "TEXT_CORRUPTION_UTAPAU_STORY_KIDNAP_OBJECTIVE_01" as it is a duplicate of "TEXT_CORRUPTION_OBJ_SILRISURVIVE."
+-Deleted string "TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_02," completely unused.
+-Deleted string "ITEXT_SFX_MCC_NTERDICTOR_1," completely unused.
+-Deleted string "ITEXT_SFX_MCF_INTERDICTOR_1," completely unused.
+-Deleted string "TEXT_PLANET_BONADAN_ENCYC_01," invalidated by "TEXT_PLANET_TRAIT_LOTSCREDITS."
+-Deleted string "TEXT_PLANET_MUUNILINST_ENCYC," invalidated by "TEXT_PLANET_TRAIT_LOTSCREDITS."
+
+-[TEXT_BLACK_MARKET_SLOTS]: "Pick Tech to purchase" --> "Pick Tech to Purchase:"
+-[TEXT_ENCYCLOPEDIA_VORNSKR_WOLF]: "Vornskrs are highly efficient hunters, especially when their prey is Force-sensitive." --> "Vornskrs are highly efficient hunters, especially when their prey is Force-sensitive. One pack (of three vornskrs each) per-company."
+-[TEXT_GUI_DIALOG_TOOLTIP_IDC_ABILITIES_DEFAULT_TO_AUTOFIRE]: "The abilities of units will be activated automatically." --> "Applicable abilities of units will be activated automatically (indicated by a yellow box over the ability icon)."
+-[TEXT_GUI_DIALOG_TOOLTIP_IDC_ALTERNATE_MOUSE_CONTROLS]: "Swaps mouse controls. Middle-mouse becomes right-click, and left click gains both left and right-click abilities." --> "Swaps mouse controls. Middle-mouse becomes right-click, and left-click gains both left- and right-click abilities."
+-[TEXT_GUI_DIALOG_TOOLTIP_IDC_AUDIO_3D_TECHNOLOGY_COMBOBOX]: "Supported 3D audio technology" --> "Supported 3D audio rendering software."
+-[TEXT_GUI_DIALOG_TOOLTIP_IDC_AUTO_DETECT]: "Auto detect video settings" --> "Autodetect video settings based on your computer. On modern hardware, this may be inaccurate."
+-[TEXT_GUI_DIALOG_TOOLTIP_IDC_AUTORESOLVE]: "Sets universally how combat will be resolved: asking the player whether they wish to fight or auto-resolve, or automatically auto-resolve all battles. This affects everything, unlike the per-galactic conquest setting." --> "Sets how combat will be resolved: if unselected, the game asks the player whether they wish to fight or auto-resolve. If enabled, the game automatically auto-resolves all battles. This acts as a universal default, unlike the per-galactic conquest setting."
+-[TEXT_GUI_DIALOG_TOOLTIP_IDC_BLOOM]: "Enabling Bloom will soften the lighting of the scene but may decrease performance." --> "Enabling Bloom softens and somewhat brightens the lighting of the scene. Enabling may decrease performance."
+-[TEXT_GUI_DIALOG_TOOLTIP_IDC_ENVIRONMENT_DETAIL_SLIDER]: "Higher environment detail will display more plant life and decorations on the terrain but lower detail may improve performance." --> "Changes level of environmental detail and decoration, seperate from texture fidelity. Higher qualities display more plant life and decorations on the terrain. Lower qualities may improve performance."
+-[TEXT_GUI_DIALOG_TOOLTIP_IDC_HARDWARE_MOUSE]: "Enables use of a hardware mouse cursor. Hardware mouse control is smoother, responsive, isn't tied to the framerate of the game but not fully controlled by the application." --> "Enables use of a hardware mouse cursor. Hardware mouse control is smoother, responsive and isn't tied to the framerate of the game, but isn't fully controlled by the game itself."
+-[TEXT_GUI_DIALOG_TOOLTIP_IDC_HEAT_DISTORTIONS]: "Enable this for heat and shockwave effects that distort the screen. Disabling this may improve performance." --> "Enabling Heat Distortions creates heat and shockwave effects that distort the screen on magma planets. Disabling this may improve performance."
+-[TEXT_GUI_DIALOG_TOOLTIP_IDC_MESH_DETAIL_SLIDER]: "High quality meshes have more detail but lower quality meshes may improve performance." --> "Changes quality of 3D geometry. Higher quality meshes have more detail, and vice versa. Lower qualities may improve performance."
+-[TEXT_GUI_DIALOG_TOOLTIP_IDC_PARTICLE_DETAIL_SLIDER]: "High quality particles will produce more detailed explosions and other particle effects. Lower quality may improve performance." --> "Changes fidelity of particles: explosions, etc. Higher qualities will produce detailed particles, and vice versa. Lower qualities may improve performance."
+-[TEXT_GUI_DIALOG_TOOLTIP_IDC_SCROLL_SPEED_SLIDER]: "Adjust the scroll speed" --> "Adjusts scrolling speed."
+-[TEXT_GUI_DIALOG_TOOLTIP_IDC_SELECT_CUSTOM_MAPS]: "Player created maps" --> "Player-created maps."
+-[TEXT_GUI_DIALOG_TOOLTIP_IDC_SELECT_OFFICIAL_MAPS]: "Officially approved maps." --> "Official maps."
+-[TEXT_GUI_DIALOG_TOOLTIP_IDC_SHADER_DETAIL_SLIDER]: "High quality shaders look better. Lower quality shaders may improve performance." --> "Changes overall shading quality. High qualities improve shader fidelity, and improve image quality. Lower qualities may improve performance."
+-[TEXT_GUI_DIALOG_TOOLTIP_IDC_SHADOW_DETAIL_SLIDER]: "High detail shadows look more realistic but lower detail shadows may improve performance." --> "Changes all shadow quality. Higher qualities will look more defined and realistic. Lower qualities may improve performance."
+-[TEXT_GUI_DIALOG_TOOLTIP_IDC_SLIDER_MASTER_VOLUME]: "Master volume. Changes volume of ALL sounds." --> "Master volume. Changes volume of ALL sounds and music."
+-[TEXT_GUI_DIALOG_TOOLTIP_IDC_SOFT_SHADOWS]: "Enabling soft shadows will soften the edges of the high-detail shadows. Disabling this option may improve performance." --> "Enabling Soft Shadows softens edges of all shadows in-game. Is more effective with high-detail shadows. Disabling this may improve performance."
+-[TEXT_GUI_DIALOG_TOOLTIP_IDC_TEXTURE_MIP_DETAIL_SLIDER]: "High detail textures have more detail but may decrease performance." --> "Changes texture fidelity. Higher qualities have more detail, and are more recognizable. Lower qualities may improve performance."
+-[TEXT_GUI_DIALOG_TOOLTIP_IDC_WATER_DETAIL_SLIDER]: "High quality water will display reflections and refractions. Lower quality water may improve performance." --> "Changes overall quality of water. Higher qualities will display reflective and refractive water. Lower qualities may improve performance."
+-[TEXT_ENCYCLOPEDIA_DROIDWORKS_UNDERWORLD]: "Produces Destroyer Droids" --> "Produces Destroyer Droids."
+-[TEXT_ENCYCLOPEDIA_TECH_UPGRADE_01]: "Allows production (with prerequisites) of: Heavy Vehicle Factory, SPMA-T, TIE mauler, TIE bomber, Broadside-class Cruiser, and upgrade to Tech Level 2." --> "Allows production of various beginning forces for the Empire, and upgrade to Tech Level 2."
+-[TEXT_ENCYCLOPEDIA_TECH_UPGRADE_02]: "Allows production (with prerequisites) of: Imperial Space Station Lv. 3, Victory-class Star Destroyer, Base Shield Generator, Magnapulse Cannon, Turbolaser Tower, SPMA-T, and upgrade to Tech Level 3." --> "Allows production (with prerequisites) of: Imperial Space Station Lv. 3, Broadside Cruiser, Victory-class Cruiser, Heavy Factory, Magnapulse Cannon, Shield Generator, Turbolaser Tower Defenses, SPMA-T, 2-M Repulsor Tanks and an upgrade to Tech Lv. 3."
+-[TEXT_ENCYCLOPEDIA_TECH_UPGRADE_03]: "Allows production (with prerequisites) of: Imperial Space Station Lv. 4, Orbital Long Range Scanner, TIE scout, Hypervelocity Gun, Advanced Factory, 2-M Repulsor Tanks, AT-AT Walker, and upgrade to Tech Level 4." --> "Allows production (with prerequisites) of: Imperial Space Station Lv. 4, Long Range Scanner, TIE scout, Advanced Factory, Hypervelocity Gun, AT-AT Walker, HAVt B5 Juggernaut and an upgrade to Tech Lv. 4."
+-[TEXT_ENCYCLOPEDIA_TECH_UPGRADE_04]: "Allows production (with prerequisites) of: Imperial Space Station Lv. 5, Gravity Well Station, Imperial-class Star Destroyer, Interdictor Cruiser, AT-AA Walker, and upgrade to Tech Level 5." --> "Allows production (with prerequisites) of: Imperial Space Station Lv. 5, Gravity Well Station, Imperial Star Destroyer, Interdictor Cruiser, TIE phantom, AT-AA Walkers, Lancet Aerial Artillery and and an upgrade to Tech Lv. 5."
+-[TEXT_ENCYCLOPEDIA_TECH_UPGRADE_05_01]: "Allows production (with prerequisites) of the Death Star II." --> "Allows production (with prerequisites) of: the Death Star II, Darth Vader, TIE defender and Dark Trooper Phase III."
+-[TEXT_PLANET_CHANGED_HANDS]: "%ls: Control changed from %ls to %ls" --> "%ls: Control changed from %ls to %ls."
+-[TEXT_PLANET_CHANGED_HANDS_BONUS]: "%ls: Control changed from %ls to %ls. Credit bonus: %d" --> "%ls: Control changed from %ls to %ls. Credit bonus: %d."
+-[TEXT_PLANETARY_REVOLT]: "Planetary revolt on %s!" --> "Planetary revolt on: %s!"
+-[TEXT_SPEECH_EMPIRE_SPACE_WIN_01]: "Rise my friend.  This day has seen the end of the last Jedi Knight and the Rebellion." --> "Emperor Palpatine: Rise, my friend.  This day has seen the end of the last Jedi Knight, and the Rebellion."
+-[TEXT_SPEECH_EMPIRE_SPACE_WIN_02]: "There is nothing to stop us now, my master!" --> "Darth Vader: There is nothing to stop us now, my master!"
+-[TEXT_SPEECH_EMPIRE_SPACE_WIN_03]: "It is all as I have foreseen!" --> "Emperor Palpatine: It is all as I have foreseen!"
+-[TEXT_SPEECH_EMPIRE_SPACE_WIN_04]: "(evil cackling laughter)" --> "Emperor Palpatine: [Evil Cackling]"
+-[TEXT_TOOLTIP_ABILITY_REPLENISH_WINGMEN_DESCRIPTION]: "Will replenish any lost wingmen in the squadron that Darth Vader is leading. Darth Vader's TIE advanced prototype can only be damaged if the wingmen are destroyed." --> "Will replenish any lost wingmen in the squadron that Darth Vader is leading. Darth Vader's TIE Advanced prototype can only be damaged if his wingmen are destroyed."
+-[TEXT_TOOLTIP_BM_STRAT_DEMO]: "Allows units to overload their weapons or drive systems to produce a strategic explosion.  Does not guarantee the survival of the pilot." --> "Allows units to overload their weapons or drive systems to produce a strategic explosion. Does not guarantee the survival of the pilot."
+-[TEXT_TOOLTIP_DEATH_STAR_II]: "A larger, more powerful version of the original Death Star; the new battle station includes enhanced targeting computers for the superlaser, allowing it to fire on slow-moving ships." --> "A larger, more powerful version of the original Death Star. The new battle station includes enhanced targeting computers for the superlaser, allowing it to fire on slow-moving ships."
+-[TEXT_TOOLTIP_INFO_CREDITS_GAINED]: "%d Credits gained from capture of planet %s" --> "%d credits gained from capture of planet %s."
+-[TEXT_TOOLTIP_INFO_CREDITS_LOST]: "%d Credits lost from defeat at planet %s" --> "%d credits lost from defeat at planet %s."
+-[TEXT_TOOLTIP_SPECIAL_ABILITY_DISABLED]: "Unit special abilities disabled in nebula" --> "This unit's special abilities are disabled in the nebula."
+-[TEXT_TOOLTIP_TIE_ADVANCED]: "Darth Vader, a Sith Lord powerful with the dark side of the Force. Though an excellent pilot in his own right, his wingmen are recruited from the Empire's most skilled." --> "Though an excellent pilot in his own right, Darth Vader's wingmen are recruited from the Empire's most skilled."
+-[TEXT_UNIT_CANDEROUS_TANK_COMPANY]: "Canderous Assault Tank Company" --> "Canderous Assault Tanks"
+-[TEXT_UNIT_INTERDICTOR_CRUISER]: "Interdictor Cruiser" --> "Interdictor-class Cruiser"
+-[TEXT_UNIT_TIE_CRAWLER]: "TIE Mauler" --> "TIE mauler"
+-[TEXT_UNIT_VICTORY_DESTROYER]: "Victory Cruiser" --> "Victory-class Cruiser"
+-[TEXT_UPGRADE_TOOLTIP_EL_ENHANCED_REACTORS_L1]: "Tie Maulers, AT-AA Walkers, and AT-ST Walkers gain a 15% movement speed increase." --> "TIE maulers, AT-AA and AT-ST Walkers gain a 15% movement speed increase."
+-[TEXT_UPGRADE_TOOLTIP_EL_ENHANCED_REACTORS_L2]: "Tie Maulers, AT-AA Walkers, and AT-ST Walkers gain a 30% movement speed increase." --> "TIE maulers, AT-AA and AT-ST Walkers gain a 30% movement speed increase."
+
+
+===================================================================================================
+
 
 
 ===================================================================================================

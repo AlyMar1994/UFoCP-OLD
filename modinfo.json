@@ -1,0 +1,22 @@
+{
+	"name": "Unofficial Forces of Corruption Patch (UFoCP)",
+	"summary": "A comprehensive bug-fixing mod for Petroglyph's \"STAR WARS: Empire at War \u2013 Forces of Corruption\" expansion. The goal of the Unofficial Forces of Corruption Patch is to correct as many errors that Petroglyph ignored within FoC as possible, to whatever limit is available within the Alamo engine.",
+	"icon": "1548018187/UFoCP.ico",
+	"version": "1.11",
+	"steamdata": {
+		"publishedfileid": "1548018187",
+		"contentfolder": "1548018187",
+		"previewfile": "1548018187/Attractoid_Image.png",
+		"visibility": 0,
+		"title": "Unofficial Forces of Corruption Patch (UFoCP)",
+		"description": "[img]https://i.imgur.com/hCZIDcK.png[/img]\r\n[b]VERSION:[/b] v1.9\r\n[b]RELEASE:[/b] 2/6/2020 (Feb.6/2020)\r\n[b]HEAD.DEV:[/b] Connor 'AlyMar1994' Hess\r\n\r\nA comprehensive bug-fixing mod for Petroglyph's \"STAR WARS: Empire at War \u2013 Forces of Corruption\" (\"FoC\") expansion. The goal of the Unofficial Forces of Corruption Patch (also \"UFoCP\") is to correct as many errors that Petroglyph ignored within FoC as possible, to whatever limit is available within the Alamo engine.\r\n\r\n\r\n[img]https://i.imgur.com/v3BZZGR.png[/img]\r\n\r\n[b]NOTE:[/b]\r\nTHIS REQUIRES THE LATEST UPDATED PATCH FOR FoC ONLY! RETAIL VERSIONS [u]DO NOT WORK[/u], ONLY GoG AND Steam COPIES! [u]THIS WILL NOT WORK FOR THE MACINTOSH VERSION OF THE GAME![/u]\r\n\r\nStar Wars: Empire at War \u2013 Forces of Corruption: the eight-month-in-dev expansion. On its release, Forces of Corruption released with slews of bugs. Petroglyph released a bunch of patches in post, but many issues still remained.\r\n\r\nThe overall point of the UFoCP is to be a comprehensive one-does-all patch for FoC. The goal: to eventually fix every bug with FoC not officially resolved by Petroglyph, to the limits of what's possible in the Alamo engine and community-developed tools, in one package.\r\n\r\n[u]Features:[/u]\r\n[list]\r\n[*]Many gameplay, audio and text fixes.\r\n[*]No \"flavor\" changes (changes made in personal taste). All changes are made as neutrally as possible, for the right and proper experience.\r\n[*]Designed as a modular base for all mods that want it.\r\n[/list]\r\n\r\n\r\n[img]https://i.imgur.com/L2WHgFU.png[/img]\r\n\r\n[u][b]MOD NOT LAUNCHING FROM \"MODS\" MENU[/b][/u]\r\n\r\nTry one or a combination of these fixes:\r\n\r\n1). Set Forces of Corruption's .EXE files (runme2.exe, StarWarsG.exe, swfoc.exe) to launch as an administrator.\r\n\r\n2). Set Forces of Corruption's .EXE files (runme2.exe, StarWarsG.exe, swfoc.exe)' compatibility mode to \"Windows XP - Service Pack 2.\"\r\n\r\n3). Run the game in windowed mode.\r\n\r\nIf all else fails, run the mod directly with the launch option \"STEAMMOD=1548018187.\"\r\n\r\n\r\n[img]https://i.imgur.com/pC9S32Z.png[/img]\r\n\r\n-GitHub Source: https://github.com/AlyMar1994/UFoCP\r\n-Bug Reporting: https://github.com/AlyMar1994/UFoCP/issues\r\n\r\n\r\n[img]https://i.imgur.com/EsOsfqr.png[/img]\r\n\r\n[list]\r\n[*]A comprehensive readme (w/ credits), changelog, and in-game text changelog can be found in the main directory.\r\n[*]This is a open-community project, that can be contributed to on GitHub.\r\n[*]Designed as the only good alternative to the other patches, and the most vanilla.\r\n[/list]",
+		"metadata": "",
+		"tags": [
+		"FoC",
+		"SinglePlayer",
+		"Land",
+		"Space",
+		"Campaign"
+		]
+	}
+}

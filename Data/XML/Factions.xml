@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" ?>
 <Factions>
 	<Faction Name="Rebel">
 		<!-- Debug/General Settings Information -->
@@ -196,7 +196,7 @@
 		<Bombardment_Blob_Size>250.0</Bombardment_Blob_Size>
 		<Bombardment_Required_Orbital_Ships>Calamari_Cruiser, Home_One</Bombardment_Required_Orbital_Ships>
 		<Bombardment_Projectile>Proj_Rebel_Bombardment_Ion_Cannon</Bombardment_Projectile>
-		<!-- <Bombardment_Particle>ParticleEffect_Name</Bombardment_Particle> -->
+
 		<Bombardment_Number_Of_Salvos>2</Bombardment_Number_Of_Salvos>
 		<Bombardment_Shots_Per_Salvo>8</Bombardment_Shots_Per_Salvo>
 		<Bombardment_Shot_Delay>0.20</Bombardment_Shot_Delay>

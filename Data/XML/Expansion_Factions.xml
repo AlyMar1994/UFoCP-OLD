@@ -160,7 +160,7 @@
 		<Land_Retreat_Enemy_Begin_SFXEvent>Unit_Enemy_Retreat_Underworld_Soldier</Land_Retreat_Enemy_Begin_SFXEvent>
 		<Land_Retreat_Cancel_SFXEvent>UHD_Retreat_Cancelled</Land_Retreat_Cancel_SFXEvent>
 		<Land_Retreat_Not_Allowed_SFXEvent>UHD_Retreat_Not_Allowed</Land_Retreat_Not_Allowed_SFXEvent>
-		<Land_Retreat_Not_Allowed_Reason_1_SFXEvent /> <!-- Reason 1: Gravity Well -->							
+		<Land_Retreat_Not_Allowed_Reason_1_SFXEvent /> <!-- Reason 1: Gravity Well -->
 		<Land_Retreat_Not_Allowed_Reason_2_SFXEvent /> <!-- Reason 2: Friendly Hero Preventing -->
 		<Land_Retreat_Not_Allowed_Reason_3_SFXEvent /> <!-- Reason 3: Tactical Superweapon Present -->
 
@@ -189,10 +189,10 @@
 		<Bombardment_Salvo_Delay>3.00</Bombardment_Salvo_Delay>
 		<Bombardment_Initial_Delay>4.00</Bombardment_Initial_Delay>
 
-		<!-- Color, intensity and time for the lighting effects.  -->
+		<!-- Color, intensity and time for the lighting effects. -->
 		<!-- Each of these is a list that should have the same number of entries as the Bombard_Projectile list! -->
-		<Bombardment_Lighting_Color_List>0.0, 0.0, 0.0, 1.0, 0.2, 0.2</Bombardment_Lighting_Color_List>
-		<Bombardment_Lighting_Intensity_List>0.2, 0.4</Bombardment_Lighting_Intensity_List>
+		<Bombardment_Lighting_Color_List>0.00, 0.00, 0.00, 1.00, 0.20, 0.20</Bombardment_Lighting_Color_List>
+		<Bombardment_Lighting_Intensity_List>0.20, 0.40</Bombardment_Lighting_Intensity_List>
 		<Bombardment_Lighting_Seconds_List>2, 2</Bombardment_Lighting_Seconds_List>
 
 		<Land_Mode_Selection_Blob_Material_Name>Selection_Rebel_Land</Land_Mode_Selection_Blob_Material_Name>

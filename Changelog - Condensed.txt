@@ -167,6 +167,6 @@ Fixed a bug on Underworld Space Mission 09: 'Baiting the Hook.' Fixed a super ba
 -Fixed the armor type of the bunkers in GameConstants not being properly seperated.
 -Fixed Rebel and Underworld turbotower laser color. Muzzle flash was green, laser red (laser has now been made green in the base template, as the muzzle flash can't be changed).
 -Mass fixing TextID/tag errors for many objects.
--Created a new file organizational system, starting with R2-D2 & C-3PO and Darth Vader.
+-Created a new file organization system.
 -Merged the Executor's file into Vader's new file, now deprecating it.
 -Fixed all reinforcement points not having icons.

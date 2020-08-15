@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Mega_Files>
+	<File>Data\RussianSpeech.meg</File>
+	<File>Data\FrenchSpeech.meg</File>
+	<File>Data\Config.meg</File>
+	<File>Data\Shaders.meg</File>
+	<File>Data\Cinematics.meg</File>
+	<File>Data\SpanishSpeech.meg</File>
+	<File>Data\Maps.meg</File>
+	<File>Data\Movies.meg</File>
+	<File>Data\Models.meg</File>
+	<File>Data\ItalianSpeech.meg</File>
+	<File>Data\PolishSpeech.meg</File>
+	<File>Data\EnglishSpeech.meg</File>
+	<File>Data\Textures.meg</File>
+	<File>Data\Music.meg</File>
+	<File>Data\GermanSpeech.meg</File>
+
+	<File>Data\UFoCP_Config.meg</File>
+</Mega_Files>

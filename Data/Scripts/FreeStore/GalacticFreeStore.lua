@@ -76,6 +76,7 @@ function On_Unit_Service(object)
 		if GameRandom.Get_Float() < GroundAvailablePercent and GroundUnitsMoved < GroundUnitsToMove then
 			if FreeStore.Is_Unit_In_Transit(object) == false then
 				DebugMessage("%s -- Object: %s service move order issued", tostring(Script), tostring(object))
+
 				if MoveUnit(object) then
 					GroundUnitsMoved = GroundUnitsMoved + 1
 				end
@@ -85,6 +86,7 @@ function On_Unit_Service(object)
 		if GameRandom.Get_Float() < SpaceAvailablePercent and SpaceUnitsMoved < SpaceUnitsToMove then
 			if FreeStore.Is_Unit_In_Transit(object) == false then
 				DebugMessage("%s -- Object: %s service move order issued", tostring(Script), tostring(object))
+
 				if MoveUnit(object) then
 					SpaceUnitsMoved = SpaceUnitsMoved + 1
 				end
@@ -140,6 +142,7 @@ function FreeStoreService()
 		GroundAvailablePercent = gcnt / object_count
 		SpaceUnitsToMove = SpaceMovePercent * scnt
 		GroundUnitsToMove = GroundMovePercent * gcnt
+
 		DebugMessage("%s -- SpaceAvailablePercent: %f, GroundAvailablePercent: %f, SpaceUnitsToMove: %f, GroundUnitsToMove: %f, scnt: %f, gcnt: %f",
 			tostring(Script), SpaceAvailablePercent, GroundAvailablePercent, SpaceUnitsToMove, GroundUnitsToMove, scnt, gcnt)
 	end
@@ -169,10 +172,8 @@ function Find_Ground_Unit_Target(object)
 	if leader_planet then
 		if leader_planet == my_planet then
 			return nil
-		elseif leader_planet.Get_Is_Planet_AI_Usable() and object.Can_Land_On_Planet(leader_planet) then
-			if EvaluatePerception("Friendly_Land_Unit_Raw_Total", PlayerObject, leader_planet) < force_target then
-				return leader_planet
-			end
+		elseif leader_planet.Get_Is_Planet_AI_Usable() and object.Can_Land_On_Planet(leader_planet) and EvaluatePerception("Friendly_Land_Unit_Raw_Total", PlayerObject, leader_planet) < force_target then
+			return leader_planet
 		end
 	end
 
@@ -182,10 +183,8 @@ function Find_Ground_Unit_Target(object)
 
 		if priority_planet == my_planet then
 			return nil
-		elseif priority_planet.Get_Is_Planet_AI_Usable() and object.Can_Land_On_Planet(priority_planet)	then
-			if EvaluatePerception("Friendly_Land_Unit_Raw_Total", PlayerObject, priority_planet) < force_target then
-				return priority_planet
-			end
+		elseif priority_planet.Get_Is_Planet_AI_Usable() and object.Can_Land_On_Planet(priority_planet) and EvaluatePerception("Friendly_Land_Unit_Raw_Total", PlayerObject, priority_planet) < force_target then
+			return priority_planet
 		end
 	end
 
@@ -199,7 +198,7 @@ function Find_Ground_Unit_Target(object)
 
 		if poorly_defended_planet.Get_Is_Planet_AI_Usable() and object.Can_Land_On_Planet(poorly_defended_planet) then
 			return poorly_defended_planet
-		end	
+		end
 	end
 
 	if not my_planet then
@@ -233,16 +232,12 @@ function Find_Space_Unit_Target(object)
 	if force_target > max_force_target then
 		force_target = max_force_target
 	end
-		
+
 	if leader_planet and leader_planet.Get_Is_Planet_AI_Usable() then
-		if leader_planet == my_planet then
-			if EvaluatePerception("Friendly_Space_Unit_Raw_Total", PlayerObject, leader_planet) < 1.5 * force_target then
-				return leader_planet
-			end
-		elseif EvaluatePerception("Friendly_Space_Unit_Raw_Total", PlayerObject, leader_planet) < force_target then
-			if EvaluatePerception("Enemy_Present", PlayerObject, leader_planet) == 0.0 then
-				return leader_planet
-			end
+		if leader_planet == my_planet and EvaluatePerception("Friendly_Space_Unit_Raw_Total", PlayerObject, leader_planet) < 1.5 * force_target then
+			return leader_planet
+		elseif EvaluatePerception("Friendly_Space_Unit_Raw_Total", PlayerObject, leader_planet) < force_target and EvaluatePerception("Enemy_Present", PlayerObject, leader_planet) == 0.0 then
+			return leader_planet
 		end
 	end
 
@@ -251,14 +246,10 @@ function Find_Space_Unit_Target(object)
 		priority_planet = priority_planet.Get_Game_Object()
 
 		if priority_planet.Get_Is_Planet_AI_Usable() then
-			if priority_planet == my_planet then
-				if EvaluatePerception("Friendly_Space_Unit_Raw_Total", PlayerObject, priority_planet) < 1.5 * force_target then
-					return priority_planet
-				end
-			elseif EvaluatePerception("Friendly_Space_Unit_Raw_Total", PlayerObject, priority_planet) < force_target then
-				if EvaluatePerception("Enemy_Present", PlayerObject, priority_planet) == 0.0 then
-					return priority_planet
-				end
+			if priority_planet == my_planet and EvaluatePerception("Friendly_Space_Unit_Raw_Total", PlayerObject, priority_planet) < 1.5 * force_target then
+				return priority_planet
+			elseif EvaluatePerception("Friendly_Space_Unit_Raw_Total", PlayerObject, priority_planet) < force_target and EvaluatePerception("Enemy_Present", PlayerObject, priority_planet) == 0.0 then
+				return priority_planet
 			end
 		end
 	end
@@ -271,12 +262,8 @@ function Find_Space_Unit_Target(object)
 	if poorly_defended_planet then
 		poorly_defended_planet = poorly_defended_planet.Get_Game_Object()
 
-		if poorly_defended_planet.Get_Is_Planet_AI_Usable() then
-			if EvaluatePerception("Friendly_Space_Unit_Raw_Total", PlayerObject, poorly_defended_planet) < force_target then
-				if EvaluatePerception("Enemy_Present", PlayerObject, poorly_defended_planet) == 0.0 then
-					return poorly_defended_planet
-				end
-			end
+		if poorly_defended_planet.Get_Is_Planet_AI_Usable() and EvaluatePerception("Friendly_Space_Unit_Raw_Total", PlayerObject, poorly_defended_planet) < force_target and EvaluatePerception("Enemy_Present", PlayerObject, poorly_defended_planet) == 0.0 then
+			return poorly_defended_planet
 		end
 	end
 

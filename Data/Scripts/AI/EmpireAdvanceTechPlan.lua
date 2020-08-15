@@ -37,10 +37,12 @@ function TechForce_Thread()
 	TechForce.Set_Plan_Result(true)
 
 	DebugMessage("%s -- TechForce done!", tostring(Script));
+
 	ScriptExit()
 end
 
 function TechForce_Production_Failed(tf, failed_object_type)
 	DebugMessage("%s -- Abandonning plan owing to production failure.", tostring(Script))
+
 	ScriptExit()
 end
