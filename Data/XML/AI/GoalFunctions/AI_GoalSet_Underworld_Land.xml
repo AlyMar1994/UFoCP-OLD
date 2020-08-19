@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<FunctionSet>
+	<Build_EM_Field_Generator>
+		<Goal>Build_EM_Field_Generator</Goal>
+		<Function>Should_Build_EM_Field_Generator</Function>
+	</Build_EM_Field_Generator>
+
+	<Mine_Structure>
+		<Goal>Mine_Structure</Goal>
+		<Function>Should_Mine_Structure</Function>
+	</Mine_Structure>
+
+	<Remote_Bomb_Friendly_Unit>
+		<Goal>Remote_Bomb_Friendly_Unit</Goal>
+		<Function>Should_Remote_Bomb_Friendly_Unit</Function>
+	</Remote_Bomb_Friendly_Unit>
+
+	<Tyber_Manager_Land>
+		<Goal>Tyber_Manager_Land</Goal>
+		<Function>ReallyBig</Function>
+	</Tyber_Manager_Land>
+
+	<Build_Ysalamiri_Cage>
+		<Goal>Build_Ysalamiri_Cage</Goal>
+		<Function>Should_Build_Ysalamiri_Cage</Function>
+	</Build_Ysalamiri_Cage>
+
+	<Build_Rocket_Pod>
+		<Goal>Build_Rocket_Pod</Goal>
+		<Function>Should_Build_Rocket_Pod</Function>
+	</Build_Rocket_Pod>
+	
+	<Build_Sensor_Scrambler>
+		<Goal>Build_Sensor_Scrambler</Goal>
+		<Function>Should_Build_Sensor_Scrambler</Function>
+	</Build_Sensor_Scrambler>
+</FunctionSet>

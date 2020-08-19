@@ -24,6 +24,27 @@ Whenever the AI is edited, it's not labeled based on specific changed units with
 
 
 =========================================================================================
+v1.12
+=========================================================================================
+
+
+==================
+A.I.
+==================
+-(PE) AI_Goals_Empire_Land – Removed goal <Build_EM_Field_Generator> as the Empire no longer has to account for the Repulsorlift Jammer when it cannot build it.
+
+-(PE) AI_GoalSet_Empire_Land – Removed goal <Build_EM_Field_Generator> as the Empire no longer has to account for the Repulsorlift Jammer when it cannot build it.
+
+-(PE) AI_Goals_Underworld_Land – Added considerable goal <Build_EM_Field_Generator> as the Underworld can build the aforementioned jammer.
+
+-(PE) AI_GoalSet_Underworld_Land – Added considerable goal <Build_EM_Field_Generator> as the Underworld can build the aforementioned jammer.
+
+
+=========================================================================================
+
+
+
+=========================================================================================
 v1.11
 =========================================================================================
 There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT Changelog.txt" in the game directory to see!
