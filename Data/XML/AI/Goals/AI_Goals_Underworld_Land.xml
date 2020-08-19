@@ -15,6 +15,7 @@
 		<Reachability> Low_Threat </Reachability>
 		<Time_Limit> 30.0 </Time_Limit>
 		<Tracking_Duration>120.0</Tracking_Duration>
+		<Per_Failure_Desire_Adjust>-20.0</Per_Failure_Desire_Adjust>
 		<Activation_Tracking_Duration>20</Activation_Tracking_Duration>
 		<Per_Activation_Failure_Desire_Adjust>-15.0</Per_Activation_Failure_Desire_Adjust>
 	</Mine_Structure>
