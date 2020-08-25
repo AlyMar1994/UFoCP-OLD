@@ -39,7 +39,7 @@ UFoCP
 -(PE) BasicLandEquations – Modified <Should_Destroy_Structure> and <Should_Destroy_Turbolaser> equations to account for Underworld turbolaser towers.
 -(PE) BasicLandEquations – Modified <Has_Vehicle_Hero> to include "Garm_Bel_Iblis_Team" (Rebel Gargantuan battle platform).
 
--(PE) BudgetingEquations – Updated <TechUpgradeBudgetRequirement> to include "Darth_Team_Expansion"
+-(PE) BudgetingEquations – Updated <TechUpgradeBudgetRequirement> to include "Darth_Team_Expansion."
 
 
 ==================

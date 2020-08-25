@@ -157,10 +157,10 @@
 	<File>Props_Felucia.xml</File>
 	<File>GroundBuildablesUnderworld.xml</File>
 	<File>GroundStructures_Underworld.xml</File>
-	<File>Units\Units_Land_All_MDUs.xml</File>
+	<File>Units\Units_UFoCP_Land_All_MDUs.xml</File>
 	<File>Multiplayer_Structure_Markers.XML</File>
 	<File>UpgradeObjects_Underworld.XML</File>
-	<File>Units\UND\Units_Land_Underworld_Slaves.XML</File>
+	<File>Units\UND\Units_UFoCP_Land_Underworld_Slaves.xml</File>
 
 
 
