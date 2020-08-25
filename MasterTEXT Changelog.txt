@@ -12,6 +12,50 @@ Last of note, I am a human being and I make mistakes.  Please point out text err
 
 
 ===================================================================================================
+v1.12
+===================================================================================================
+
+-Created string "TEXT_ENCYCLOPEDIA_FACTORY_UNDERWORLD_00" to add text of what the Underworld vehicle factory unlocks (Repulsorlift Jammer).
+-Created string "TEXT_PLANET_VERGESSO_INFO_POP_00" for consistency with other planets.
+-Created string "TEXT_PLANET_VERGESSO_INFO_WL_00" for consistency with other planets.
+-Created string "TEXT_PLANET_VERGESSO_INFO_TAC_00" for consistency with other planets.
+
+-Renamed string "TEXT_TOOLTIP_GARRISON_FACTORY" to "TEXT_TOOLTIP_GARRISON_U_FACTORY" for consistency with other tooltips of its ilk.
+
+-Deleted unused string "TEXT_ENCYCLOPEDIA_CLASS_SUPER."
+
+
+-[TEXT_ENCYCLOPEDIA_ACADEMY_00]: "Builds: Field Commander, Fleet Commander" --> "Builds: Field Commanders, Fleet Commanders."
+-[TEXT_ENCYCLOPEDIA_ACADEMY_01]: "Unlocks: Infiltrator Training Facility" --> "Unlocks: Infiltrator Training Facility."
+-[TEXT_ENCYCLOPEDIA_ADVANCED_FACTORY_EMPIRE_00]: "Builds: AT-AA, AT-AT" --> "Builds: AT-AA, AT-AT."
+-[TEXT_ENCYCLOPEDIA_BARRACKS_EMPIRE_00]: "Builds: Stormtrooper, Scout Trooper" --> "Builds: Stormtroopers, Scout troopers."
+-[TEXT_ENCYCLOPEDIA_BARRACKS_EMPIRE_01]: "Unlocks: Officer Academy" --> "Unlocks: Officer Academy."
+-[TEXT_ENCYCLOPEDIA_BARRACKS_REBEL_00]: "Trains Infantry Platoons and Plex Soldiers and enables the construction of Officer Academies." --> "Builds: Infantry Platoons, Plex Soldiers."
+-[TEXT_ENCYCLOPEDIA_BARRACKS_REBEL_01]: "[TBL]" --> "Unlocks: Officer Acadamy."
+-[TEXT_ENCYCLOPEDIA_BARRACKS_UNDERWORLD]: "Trains Grenadiers and Mercenary Assault Soldiers" --> "Builds: Grenadier Squads, Merc Assault Squads."
+-[TEXT_ENCYCLOPEDIA_DROIDWORKS_UNDERWORLD]: "Produces Destroyer Droids." --> "Builds: Destroyer Droids."
+-[TEXT_ENCYCLOPEDIA_FACTORY_UNDERWORLD]: "Produces M.A.L. and F9-TZ Transports." --> "Builds: F9-TZ Transports, M.A.L., Canderous Assault Tanks, MZ-8 Pulse Cannon Tanks."
+-[TEXT_ENCYCLOPEDIA_HEAVY_FACTORY_EMPIRE_00]: "Builds: 2-M Repulsor Tank, SPMA-T" --> "Builds: 2-M Repulsor Tanks, SPMA-T."
+-[TEXT_ENCYCLOPEDIA_HEAVY_FACTORY_REBEL_00]: "Builds: MPTL Artillery, T4-B Tanks" --> "Builds: Gallofree HTT Wings, MPTL Artillery, T4-B Tanks."
+-[TEXT_ENCYCLOPEDIA_INFILTRATOR_00]: "Builds: Infiltrator" --> "Builds: Infiltrators."
+-[TEXT_ENCYCLOPEDIA_LIGHT_FACTORY_EMPIRE_00]: "Builds: AT-ST, TIE mauler" --> "Builds: AT-STs, MDUs, TIE maulers."
+-[TEXT_ENCYCLOPEDIA_LIGHT_FACTORY_EMPIRE_01]: "Unlocks: Heavy Vehicle Factory, Turbolaser Tower" --> "Unlocks: Heavy Vehicle Factory."
+-[TEXT_ENCYCLOPEDIA_LIGHT_FACTORY_REBEL_00]: "Builds: T2-B Tanks, Speeders" --> "Builds: MDUs, Speeders, T2-B Tanks."
+-[TEXT_ENCYCLOPEDIA_LIGHT_FACTORY_REBEL_01]: "Unlocks: Heavy Factory, Turbolaser Tower" --> "Unlocks: Heavy Factory."
+-[TEXT_ENCYCLOPEDIA_MANDALORIAN_SPAWNER]: "Periodically creates Mandalorian Militiamen until destroyed" --> "Periodically creates Mandalorian Militiamen until destroyed."
+-[TEXT_ENCYCLOPEDIA_PLANET_DESTROYED]: "Planetary Debris" --> "Planetary debris left from destruction by the Death Star."
+-[TEXT_ENCYCLOPEDIA_POWER_GENERATOR_01]: "Unlocks: Ion Cannon, Base Shield Generator, Turbolaser Tower" --> "Unlocks: Ion Cannon, Base Shield Generator, Turbolaser Towers."
+-[TEXT_ENCYCLOPEDIA_POWER_GENERATOR_02]: "Unlocks: Base Shield Generator, Magnepulse Cannon, Gravity Control Generator, Turbolaser Tower" --> "Unlocks: Base Shield Generator, Magnepulse Cannon, Gravity Control Generator, Turbolaser Towers."
+-[TEXT_ENCYCLOPEDIA_SMUGGLER_TITLE]: "Smuggler present" --> "Smuggler present!"
+-[TEXT_PLANET_VERGESSO_ENCYC_01]: "While this planet is controlled, X-wing, Y-wing, A-wing and Z-95 squadrons gain a 25% damage bonus." --> "Improved Weapons (Fighters): While this planet is controlled, X-wing, Y-wing, A-wing and Z-95 squadrons gain a 25% damage bonus. Restriction: No land production or garrisons possible."
+-[TEXT_TOOLTIP_GARRISON_U_BARRACKS]: "Garrison: Grenadier Squad, Merc Assault Squad" --> "Garrison: Grenadier Squads, Merc Assault Squads."
+-[TEXT_TOOLTIP_GARRISON_U_FACTORY]: "Garrison: M.A.L." --> "Garrison: MZ-8 Pulse Cannon Tanks."
+
+
+===================================================================================================
+
+
+===================================================================================================
 v1.11
 ===================================================================================================
 

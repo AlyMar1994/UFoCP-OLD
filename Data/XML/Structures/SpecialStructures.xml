@@ -2949,7 +2949,7 @@
 	<SpecialStructure Name="R_Ground_Barracks">
 		<GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
 		<Text_ID>TEXT_GROUND_BARRACKS</Text_ID>
-		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BARRACKS_REBEL_00 TEXT_TOOLTIP_GARRISON_R_BARRACKS </Encyclopedia_Text>
+		<Encyclopedia_Text> TEXT_ENCYCLOPEDIA_BARRACKS_REBEL_00 TEXT_ENCYCLOPEDIA_BARRACKS_REBEL_01 TEXT_TOOLTIP_GARRISON_R_BARRACKS </Encyclopedia_Text>
 		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_BARRACKS_REBEL_00, MP_TEXT_ENCYCLOPEDIA_BARRACKS_REBEL_01 </MP_Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
 		<Can_Contain_Heroes_During_Ground_Battle> Yes </Can_Contain_Heroes_During_Ground_Battle>

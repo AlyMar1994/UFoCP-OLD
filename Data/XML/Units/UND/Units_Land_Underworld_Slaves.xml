@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Corruption_Special_Units>
+<Underworld_Slaves_Files>
 	<!-- ===== SLAVERY UNITS ===== -->
 	<!-- Bothans -->
 	<Slave_Unit Name="Bothan_Slave">
@@ -1761,4 +1761,4 @@
 			</Ion_Cannon_Shot_Attack_Ability>
 		</Abilities>
 	</Squadron>
-</Corruption_Special_Units>
+</Underworld_Slaves_Files>

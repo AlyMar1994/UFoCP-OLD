@@ -138,7 +138,7 @@
 	<File>Units_Space_Underworld_Krayt_Destroyer.xml</File>
 	<File>Units_Space_Underworld_Buzz_Droids.xml</File>
 
-	<File>SpecialStructures_Underworld.xml</File>
+	<File>Structures\SpecialStructures_Underworld.xml</File>
 	<File>StarBases_Underworld.xml</File>
 
 
@@ -157,10 +157,10 @@
 	<File>Props_Felucia.xml</File>
 	<File>GroundBuildablesUnderworld.xml</File>
 	<File>GroundStructures_Underworld.xml</File>
-	<File>Mobile_Defense_Units.XML</File>
+	<File>Units\Units_Land_All_MDUs.xml</File>
 	<File>Multiplayer_Structure_Markers.XML</File>
 	<File>UpgradeObjects_Underworld.XML</File>
-	<File>Units\UND\Corruption_Special_Units.XML</File>
+	<File>Units\UND\Units_Land_Underworld_Slaves.XML</File>
 
 
 

@@ -28,17 +28,63 @@ v1.12
 =========================================================================================
 Sorry about this, folks.  A bad merge of files and bad tracking allowed me to lose a couple changes I wanted to push onto v1.11.  Right now, the AI edits should actually go through and work.  I still need to finish up the edits to the corruption missions, as those failed to merge on release too, only a few were pushed.
 
+There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT Changelog.txt" in the game directory to see!
+
 
 ==================
-A.I.
+UFoCP
 ==================
--(PE) AI_Goals_Empire_Land – Removed goal <Build_EM_Field_Generator> as the Empire no longer has to account for the Repulsorlift Jammer when it cannot build it.
+-Reverted all AI files regarding the <Should_Build_EM_Field_Generator> equations from v1.11. As it turns out, aparently the Empire has a MDU device, named the "EM Field Generator," which disrupts missiles, and not the Underworld repulsorlift field jammer. What a world.
 
--(PE) AI_GoalSet_Empire_Land – Removed goal <Build_EM_Field_Generator> as the Empire no longer has to account for the Repulsorlift Jammer when it cannot build it.
+-(PE) BasicLandEquations – Modified <Should_Destroy_Structure> and <Should_Destroy_Turbolaser> equations to account for Underworld turbolaser towers.
+-(PE) BasicLandEquations – Modified <Has_Vehicle_Hero> to include "Garm_Bel_Iblis_Team" (Rebel Gargantuan battle platform).
 
--(PE) AI_Goals_Underworld_Land – Added considerable goal <Build_EM_Field_Generator> as the Underworld can build the aforementioned jammer.
+-(PE) BudgetingEquations – Updated <TechUpgradeBudgetRequirement> to include "Darth_Team_Expansion"
 
--(PE) AI_GoalSet_Underworld_Land – Added considerable goal <Build_EM_Field_Generator> as the Underworld can build the aforementioned jammer.
+
+==================
+General
+==================
+-Reworked Underworld slaves file from "Corruption_Special_Units" to "Units_Land_Underworld_Slaves." No gameplay change other than internal.
+-Reworked MDUs file from "Mobile_Defense_Units" to "Units_Land_All_MDUs." No gameplay change other than internal.
+
+
+==================
+Structures (Galactic)
+==================
+-The Maw – Removed entry from tag <Destroyed_Galactic_Model_Name> as the planet cannot be destroyed.
+-The Maw – Changed tag <GUI_Model_Name> to the black hole model.
+
+-Vergesso Asteroids – Removed entry from tag <Destroyed_Galactic_Model_Name> as the planet cannot be destroyed.
+-Vergesso Asteroids – Fixed all in-game text for Vergesso being completely and utterly broken beyond belief.
+
+
+==================
+Structures (Galactic)
+==================
+-Barracks (Empire) – Fixed tooltip naming units improperly.
+
+-Barracks (Rebels) – Fixed tooltip not having "Unlocks:" text.
+-Barracks (Rebels) – Fixed tooltip not having the "Builds:" text.
+
+-Light Factory (Empire) – Fixed tooltip not mentioning the MDU unit.
+
+-Light Factory (Rebels) – Fixed tooltip not mentioning the MDU unit.
+
+-Mercenary Barracks (Underworld) – Fixed tooltip not having "Unlocks:" text.
+-Mercenary Barracks (Underworld) – Fixed tooltip not having the "Builds:" text.
+
+-Droid Works (Underworld) – Fixed tooltip not having the "Builds:" text.
+
+-Zann Consortium Factory – Fixed all tooltip text regarding this unit (not having the aforementioned sections, nor naming all buildable units, and fixing the garrison unit indicator).
+
+
+==================
+Units (Land)
+==================
+-MDU (Empire) – Fixed MDU using Rebels SFX.
+
+-MDU (Underworld) – Fixed MDU using Rebels SFX.
 
 
 =========================================================================================

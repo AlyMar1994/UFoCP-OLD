@@ -94,7 +94,9 @@
 
 	<!-- Based on average age of scouted information -->
 	<BasicEmpireInformationBudgetAllocation>
-		0.5 * Function_Global_Scout_Need.Evaluate
+		0.5
+		*
+		Function_Global_Scout_Need.Evaluate
 	</BasicEmpireInformationBudgetAllocation>
 
 	<!-- Receive a trickle of funds so that eventually, a major purchase is likely
@@ -149,7 +151,10 @@
 			+
 			(Variable_Self.TechLevel == 4) *
 			Variable_Self.BudgetFractionToBuild{Parameter_Type = "DS_Durasteel"}
-			+ 
+			+
+			(Variable_Self.TechLevel == 4) *
+			Variable_Self.BudgetFractionToBuild{Parameter_Type = "Darth_Team_Expansion"}
+			+
 			(Variable_Self.TechLevel == 5) *
 			Variable_Self.BudgetFractionToBuild{Parameter_Type = "Death_Star_II"}
 			*
@@ -283,5 +288,4 @@
 					Variable_Self.CreditsUnnormalized / (Variable_Self.PlanetsControlled + 1)
 				)
 	</Land_Tactical_Budget_Clamped>
-
 </Equations>

@@ -264,7 +264,7 @@
 	</Planet>
 
 	<!-- ALYMAR1994 (2/2/2020): Implemented using EaW values to fix -->
-	<!-- Skirmish map. -->
+	<!-- skirmish map. -->
 	<Planet Name="Alderaan">
  		<Zoomed_Terrain_Index>0</Zoomed_Terrain_Index>
 		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_ALDERAAN</Text_ID>
@@ -5411,8 +5411,8 @@
 		<Galactic_Model_Name>w_black_hole_small.alo</Galactic_Model_Name>
 		<Scale_Factor>1.8</Scale_Factor>
 		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
-		<Destroyed_Galactic_Model_Name>W_planet_Asteroids.alo</Destroyed_Galactic_Model_Name>
-		<GUI_Model_Name>W_planet_Forest01.alo</GUI_Model_Name>
+		<Destroyed_Galactic_Model_Name />
+		<GUI_Model_Name>w_black_hole_small.alo</GUI_Model_Name>
 		<Mass>1.0</Mass>
 		<Mouse_Collide_Override_Sphere_Radius> 19.77 </Mouse_Collide_Override_Sphere_Radius>
 		<Show_Name>Yes</Show_Name>
@@ -5656,7 +5656,7 @@
  		<Zoomed_Terrain_Index>8</Zoomed_Terrain_Index>
 		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_VERGESSO</Text_ID>
 		<Galactic_Model_Name>W_planet_Asteroids.alo</Galactic_Model_Name>
-		<Destroyed_Galactic_Model_Name>W_planet_Asteroids.alo</Destroyed_Galactic_Model_Name>
+		<Destroyed_Galactic_Model_Name />
 		<GUI_Model_Name>W_planet_Asteroids.alo</GUI_Model_Name>
         <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
 		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
@@ -5695,15 +5695,15 @@
 		<Planet_Slice_Affinity_Types />
         <Planet_Black_Market_Modifier>-200</Planet_Black_Market_Modifier>
 
-		<Describe_Population>TEXT_PLANET_VERGESSO_INFO_WEA</Describe_Population>
-		<Describe_Wildlife>TEXT_PLANET_VERGESSO_INFO_WEA</Describe_Wildlife>
+		<Describe_Population>TEXT_PLANET_VERGESSO_INFO_POP_00</Describe_Population>
+		<Describe_Wildlife>TEXT_PLANET_VERGESSO_INFO_WL_00</Describe_Wildlife>
 		<Describe_Terrain>TEXT_PLANET_VERGESSO_INFO_TER</Describe_Terrain>
 		<Describe_Weather>TEXT_PLANET_VERGESSO_INFO_WEA</Describe_Weather>
-		<Describe_Tactical>TEXT_PLANET_VERGESSO_ENCYC_01</Describe_Tactical>
-		<Describe_Advantage>TEXT_PLANET_TRAIT_SPACESTEALTH_01</Describe_Advantage>
+		<Describe_Tactical>TEXT_PLANET_VERGESSO_INFO_TAC_00</Describe_Tactical>
+		<Describe_Advantage>TEXT_PLANET_VERGESSO_INFO_ADV_01</Describe_Advantage>
 		<Describe_History>TEXT_PLANET_VERGESSO_INFO_HIS_01</Describe_History>
 
-		<Planet_Ability_Name>TEXT_PLANET_TRAIT_SPACESTEALTH_01</Planet_Ability_Name>
+		<Planet_Ability_Name>TEXT_PLANET_VERGESSO_INFO_ADV_01</Planet_Ability_Name>
 		<Planet_Ability_Description>TEXT_PLANET_VERGESSO_ENCYC_01</Planet_Ability_Description>
 
 		<Encyclopedia_Text>TEXT_PLANET_VERGESSO_ENCYC_01 TEXT_PLANET_TRAIT_UNCORRUPTABLE</Encyclopedia_Text>

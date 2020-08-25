@@ -128,34 +128,38 @@
 		Function_Allowed_As_Defender_Land.Evaluate
 		*
 		(
-			(0.1 * (1 - Variable_Target.Owner.IsFaction {Parameter_Faction = "Empire", Parameter_Faction = "Rebel", Parameter_Faction = "Underworld"}))
+			(0.1 * (1 - Variable_Target.Owner.IsFaction { Parameter_Faction = "Empire",
+														Parameter_Faction = "Rebel",
+														Parameter_Faction = "Underworld" }))
 			+
-			(1.0 * (Variable_Target.Owner.IsFaction {Parameter_Faction = "Empire", Parameter_Faction = "Rebel", Parameter_Faction = "Underworld"}))
+			(1.0 * (Variable_Target.Owner.IsFaction { Parameter_Faction = "Empire",
+													Parameter_Faction = "Rebel",
+													Parameter_Faction = "Underworld"}))
 		)
 		*
 		(
 			0.001
 			+
-			(2 * Variable_Target.Type.IsType {Parameter_Type = "Ground_Ion_Cannon",
-															Parameter_Type = "Empire_Ground_Shutter_Shield",
-															Parameter_Type = "Rebel_Ground_Shutter_Shield",
-															Parameter_Type = "Ground_Empire_Hypervelocity_Gun",
-															Parameter_Type = "Ground_Magnepulse_Cannon"})
+			(2 * Variable_Target.Type.IsType { Parameter_Type = "Ground_Ion_Cannon",
+												Parameter_Type = "Empire_Ground_Shutter_Shield",
+												Parameter_Type = "Rebel_Ground_Shutter_Shield",
+												Parameter_Type = "Ground_Empire_Hypervelocity_Gun",
+												Parameter_Type = "Ground_Magnepulse_Cannon" })
 			+
-			(5.0 * Variable_Target.Type.IsType {Parameter_Type = "Empire_Anti_Infantry_Turret",
-															Parameter_Type = "Rebel_Anti_Infantry_Turret",
-															Parameter_Type = "Empire_Anti_Aircraft_Turret",
-															Parameter_Type = "Rebel_Anti_Aircraft_Turret",
-															Parameter_Type = "Empire_Anti_Vehicle_Turret",
-															Parameter_Type = "Rebel_Anti_Vehicle_Turret",
-															Parameter_Type = "Empire_Buildable_Bacta_Tank",
-															Parameter_Type = "Rebel_Buildable_Bacta_Tank",
-															Parameter_Type = "Underworld_Buildable_Bacta_Tank",
-															Parameter_Type = "Empire_Buildable_Repair_Facility",
-															Parameter_Type = "Rebel_Buildable_Repair_Facility",
-															Parameter_Type = "Underworld_Buildable_Repair_Facility",
-															Parameter_Type = "Underworld_Mass_Driver_Turret",
-															Parameter_Type = "Underworld_Torpedo_Turret"})
+			(5.0 * Variable_Target.Type.IsType { Parameter_Type = "Empire_Anti_Infantry_Turret",
+												Parameter_Type = "Rebel_Anti_Infantry_Turret",
+												Parameter_Type = "Empire_Anti_Aircraft_Turret",
+												Parameter_Type = "Rebel_Anti_Aircraft_Turret",
+												Parameter_Type = "Empire_Anti_Vehicle_Turret",
+												Parameter_Type = "Rebel_Anti_Vehicle_Turret",
+												Parameter_Type = "Empire_Buildable_Bacta_Tank",
+												Parameter_Type = "Rebel_Buildable_Bacta_Tank",
+												Parameter_Type = "Underworld_Buildable_Bacta_Tank",
+												Parameter_Type = "Empire_Buildable_Repair_Facility",
+												Parameter_Type = "Rebel_Buildable_Repair_Facility",
+												Parameter_Type = "Underworld_Buildable_Repair_Facility",
+												Parameter_Type = "Underworld_Mass_Driver_Turret",
+												Parameter_Type = "Underworld_Torpedo_Turret"})
 			+
 			(10 * Variable_Target.Type.IsType { Parameter_Type = "E_Ground_Base_Shield",
 												Parameter_Type = "R_Ground_Base_Shield",
@@ -167,13 +171,14 @@
 												,Parameter_Type = "Underworld_Mineral_Processor"
 												,Parameter_Type = "Skirmish_Ground_Mining_Facility_E"
 												,Parameter_Type = "Skirmish_Ground_Mining_Facility_R"
-												,Parameter_Type = "Skirmish_Ground_Mining_Facility_U" })
+												,Parameter_Type = "Skirmish_Ground_Mining_Facility_U"})
 			+
 			(15.0 * (1 - Variable_Target.Location.EnemyForce))
 		)
 		*
 		(1 - (Variable_Target.Type.IsType {	Parameter_Type = "E_Ground_Turbolaser_Tower",
-											Parameter_Type = "R_Ground_Turbolaser_Tower"}))
+											Parameter_Type = "R_Ground_Turbolaser_Tower",
+											Parameter_Type = "U_Ground_Turbolaser_Tower" }))
 		*
 		(1.0 - Function_May_Lose_Land_Control_Game.Evaluate)
 	</Should_Destroy_Structure>
@@ -190,7 +195,8 @@
 		(1 - Variable_Target.Location.EnemyForce)
 		*
 		(Variable_Target.Type.IsType {	Parameter_Type = "E_Ground_Turbolaser_Tower",
-										Parameter_Type = "R_Ground_Turbolaser_Tower"})
+										Parameter_Type = "R_Ground_Turbolaser_Tower",
+										Parameter_Type = "U_Ground_Turbolaser_Tower" })
 		*
 		50
 		*
@@ -233,7 +239,7 @@
 	</Needs_ObiWan_Assist>
 
 	<Needs_Vader_Assist>
-		(1 - Variable_Target.Type.IsType {Parameter_Type = "Darth_Vader_Expansion"})
+		(1 - Variable_Target.Type.IsType { Parameter_Type = "Darth_Vader_Expansion" })
 		*
 		(((0.9 > Variable_Target.Health) + (0.9 > Variable_Target.Shield)) > 0)
 		*
@@ -486,11 +492,11 @@
 	<!-- 
 	-->
 	<Need_AntiInfantry_Turret>
-		Variable_Target.Type.IsType {Parameter_Type = "SKIRMISH_BUILD_PAD"
+		Variable_Target.Type.IsType { Parameter_Type = "SKIRMISH_BUILD_PAD"
 												,Parameter_Type = "REBEL_BUILD_PAD"
 												,Parameter_Type = "EMPIRE_BUILD_PAD"
 												,Parameter_Type = "Rebel_Build_Pad_Offensive"
-												,Parameter_Type = "Empire_Build_Pad_Offensive"		}
+												,Parameter_Type = "Empire_Build_Pad_Offensive" }
 		*
 		(1 - Variable_Target.HasBuiltObject)
 		*
@@ -552,7 +558,7 @@
 												,Parameter_Type = "Empire_Build_Pad"
 												,Parameter_Type = "Underworld_Build_Pad"
 												,Parameter_Type = "Rebel_Build_Pad_Defensive"
-												,Parameter_Type = "Empire_Build_Pad_Defensive"		
+												,Parameter_Type = "Empire_Build_Pad_Defensive"
 												,Parameter_Type = "Underworld_Build_Pad_Defensive" }
 		*
 		(1 - Variable_Target.HasBuiltObject)
@@ -593,7 +599,7 @@
 	</Need_Bacta_Tank>
 
 	<Has_Infantry_Hero>
-		Variable_Self.HasUnit{ Parameter_Type = "Emperor_Palpatine"
+		Variable_Self.HasUnit { Parameter_Type = "Emperor_Palpatine"
 								,Parameter_Type = "Boba_Fett"
 								,Parameter_Type = "Han_Solo"
 								,Parameter_Type = "Chewbacca"
@@ -606,13 +612,15 @@
 								,Parameter_Type = "Urai_Fen"
 								,Parameter_Type = "Bossk"
 								,Parameter_Type = "Luke_Skywalker_Jedi"
-								,Parameter_Type = "Yoda"}
+								,Parameter_Type = "Yoda" }
 	</Has_Infantry_Hero>
 
 	<Has_Vehicle_Hero>
-		Variable_Self.HasUnit { Parameter_Type = "General_Veers"
-								,Parameter_Type = "Tactical_R2_3PO_Team" }
+		Variable_Self.HasUnit { Parameter_Type = "General_Veers",
+								Parameter_Type = "Tactical_R2_3PO_Team",
+								Parameter_Type = "Garm_Bel_Iblis_Team" }
 	</Has_Vehicle_Hero>
+
 	<!-- 
 	Do we have a use for this
 	AND
@@ -686,7 +694,7 @@
 		+
 		Function_Is_Initial_Skirmish_State_Established.Evaluate
 		*
-		(1.0 - Function_May_Lose_Land_Control_Game.Evaluate)		
+		(1.0 - Function_May_Lose_Land_Control_Game.Evaluate)
 	</Is_Allowed_To_Build>
 
 	<!-- 
@@ -804,10 +812,10 @@
 					Variable_Target.AdditionalPopulationCapacity / 2.0
 				)
 				*
-				(0.5 - Variable_Target.Location.EnemyForce)							
+				(0.5 - Variable_Target.Location.EnemyForce)
 			)
 			+
-			(Game.IsCampaignGame == 1)	
+			(Game.IsCampaignGame == 1)
 			*
 			(
 				Function_Is_Allowed_To_Build.Evaluate
@@ -837,7 +845,7 @@
 	</Need_To_Secure_Contestable_Escorted_Land>
 
 	<Number_Resource_Structures_Land>
-		Variable_Self.TacticalBuiltStructureCount{Parameter_Type = "Empire_Mineral_Processor"
+		Variable_Self.TacticalBuiltStructureCount { Parameter_Type = "Empire_Mineral_Processor"
 													,Parameter_Type = "Rebel_Mineral_Processor"
 													,Parameter_Type = "Underworld_Mineral_Processor"
 													,Parameter_Type = "Skirmish_Ground_Mining_Facility_E"
@@ -880,7 +888,7 @@
 	<!--	Should this tactical structure be sold?
 	Do we need to sell in general
 	AND
-	Is there low desire for this particular structure	 
+	Is there low desire for this particular structure
 	-->
 	<Need_To_Sell_Tactical_Structure>
 		Function_Need_To_Sell.Evaluate
@@ -1128,9 +1136,9 @@
 				*
 				(1 - Function_Is_Saving_For_Refineries_Land.Evaluate)
 				*
-				(Variable_Self.HasUnit {Parameter_Type = "Imperial_Command_Center", 
+				(Variable_Self.HasUnit { Parameter_Type = "Imperial_Command_Center", 
 										Parameter_Type = "Rebel_Command_Center",
-										Parameter_Type = "U_Ground_Palace"} == 0.0)
+										Parameter_Type = "U_Ground_Palace" } == 0.0)
 				*
 				(Function_Num_Refineries.Evaluate == 0)
 				*
@@ -1192,15 +1200,17 @@
 	<Should_Defensive_Rush>
 		40
 		*
-		(Game.IsCampaignGame == 1)	
+		(Game.IsCampaignGame == 1)
 		*
 		Variable_Self.IsDefender
 		*
-		(Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Infantry | Vehicle | Air]} > 3000)
+		(Variable_Self.FriendlyForceUnnormalized { Parameter_Category = GameObjectCategoryType[Infantry | Vehicle | Air] } > 3000)
 	</Should_Defensive_Rush>
 	
 	<Non_Structure_Force_Unnormalized>
-		Variable_Self.FriendlyForceUnnormalized - Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Structure]}
+		Variable_Self.FriendlyForceUnnormalized
+		-
+		Variable_Self.FriendlyForceUnnormalized { Parameter_Category = GameObjectCategoryType[Structure] }
 	</Non_Structure_Force_Unnormalized>
 
 	<Should_Hold_Position>
@@ -1226,5 +1236,4 @@
 		*
 		(Function_Num_Refineries.Evaluate > 1)
 	</Should_Hold_Position>
-
 </Equations>
