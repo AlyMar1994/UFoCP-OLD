@@ -153,7 +153,7 @@
 			Variable_Self.BudgetFractionToBuild{Parameter_Type = "DS_Durasteel"}
 			+
 			(Variable_Self.TechLevel == 4) *
-			Variable_Self.BudgetFractionToBuild{Parameter_Type = "Darth_Team_Expansion"}
+			Variable_Self.BudgetFractionToBuild{Parameter_Type = "Darth_Team_Executor"}
 			+
 			(Variable_Self.TechLevel == 5) *
 			Variable_Self.BudgetFractionToBuild{Parameter_Type = "Death_Star_II"}

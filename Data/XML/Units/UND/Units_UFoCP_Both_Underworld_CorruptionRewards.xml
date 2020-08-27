@@ -1,119 +1,18 @@
 <?xml version="1.0"?>
-<Underworld_Slaves_Files>
-	<!-- ===== SLAVERY UNITS ===== -->
+<Corruption_Rewards_Files>
+	<!-- ===== SLAVERY ===== -->
 	<!-- Bothans -->
 	<Slave_Unit Name="Bothan_Slave">
-		<Text_ID>TEXT_INDIG_BOTHAN_CIV</Text_ID>
+		<Variant_Of_Existing_Type>Bothan_Civilian</Variant_Of_Existing_Type>
+
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
 
-		<Land_Model_Name>NI_Bothan.ALO</Land_Model_Name>
-		<Land_Model_Anim_Override_Name>RI_Infantry.ALO</Land_Model_Anim_Override_Name>
-		<Icon_Name>I_Button_Bothan_Civilian.tga</Icon_Name>
+		<LandBehavior>SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, IDLE, WEAPON, REVEAL, HIDE_WHEN_FOGGED</LandBehavior>
 
-		<Behavior>SELECTABLE</Behavior>
-		<LandBehavior>SURFACE_FX, LAND_TEAM_Infantry_LOCOMOTOR, IDLE, WEAPON, REVEAL, HIDE_WHEN_FOGGED</LandBehavior>
-
-		<SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
-		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
-		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
-		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
-		<CanCellStack>Yes</CanCellStack>
-		<Select_Box_Scale>10</Select_Box_Scale>
-		<Select_Box_Z_Adjust>3.00</Select_Box_Z_Adjust>
-		<Mass>1.00</Mass>
-		<GUI_Bracket_Width>5</GUI_Bracket_Width>
-		<GUI_Bracket_Height>0</GUI_Bracket_Height>
-		<GUI_Bracket_Size>0</GUI_Bracket_Size>
-		<Mouse_Collide_Override_Sphere_Radius>10.00</Mouse_Collide_Override_Sphere_Radius>
-		<Is_Combustible>Yes</Is_Combustible>
-		<On_Fire_Speed_Modifier>1.20</On_Fire_Speed_Modifier>
-		<Targeting_Allowed_When_Burning>No</Targeting_Allowed_When_Burning>
-		<Burning_Damage_Per_Second>0.10</Burning_Damage_Per_Second>
-
-		<Influences_Capture_Point>True</Influences_Capture_Point>
-
-		<Movement_Animation_Speed>0.80</Movement_Animation_Speed>
-		<Rotation_Animation_Speed>20.00</Rotation_Animation_Speed>
-		<Max_Speed>1</Max_Speed>
-		<Max_Rate_Of_Turn>10.00</Max_Rate_Of_Turn>
-		<Custom_Soft_Footprint_Radius>3.50</Custom_Soft_Footprint_Radius>
-		<Custom_Hard_XExtent>2.00</Custom_Hard_XExtent>
-		<Custom_Hard_YExtent>2.00</Custom_Hard_YExtent>
-		<Space_Layer>Land</Space_Layer>
-		<UnitCollisionClass>Infantry</UnitCollisionClass>
-		<FormationSpacing>.50</FormationSpacing>
-		<MinimumPushReturnDistance>10</MinimumPushReturnDistance>
-		<Min_Speed>.10</Min_Speed>
-		<OverrideAcceleration>.10</OverrideAcceleration>
-		<OverrideDeceleration>.10</OverrideDeceleration>
-		<FormationOrder>2</FormationOrder>
-		<FormationGrouping>Standard</FormationGrouping>
-
-		<Is_Squashable>True</Is_Squashable>
-		<Scale_Factor>1.50</Scale_Factor>
 		<Affiliation>Underworld</Affiliation>
-		<Required_Timeline>0</Required_Timeline>
-		<IsBuildable>No</IsBuildable>
-		<Size_Value>10</Size_Value>
-		<Armor_Type>Armor_Infantry</Armor_Type>
-		<Damage>3</Damage>
-		<Tactical_Health>20</Tactical_Health>
-		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
-		<Blob_Shadow_Scale>10.00, 10.00</Blob_Shadow_Scale>
-		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
-		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
-		
-		<Projectile_Types>Proj_Hand_Blaster_Red</Projectile_Types>
-		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
-		<Projectile_Fire_Pulse_Delay_Seconds>0.20</Projectile_Fire_Pulse_Delay_Seconds>
-		<Projectile_Fire_Recharge_Seconds>2.00</Projectile_Fire_Recharge_Seconds>
 
-		<Targeting_Fire_Inaccuracy>Infantry,	2.00</Targeting_Fire_Inaccuracy>
-		<Targeting_Fire_Inaccuracy>Vehicle,		8.00</Targeting_Fire_Inaccuracy>
-		<Targeting_Fire_Inaccuracy>Air,			70.00</Targeting_Fire_Inaccuracy>
-		<Targeting_Fire_Inaccuracy>Structure,	8.00</Targeting_Fire_Inaccuracy>
-		
-		<Land_FOW_Reveal_Range>150.00</Land_FOW_Reveal_Range>
-		<Dense_FOW_Reveal_Range_Multiplier>1.00</Dense_FOW_Reveal_Range_Multiplier>
-		<Targeting_Max_Attack_Distance>150.00</Targeting_Max_Attack_Distance>
-		<Ranged_Target_Z_Adjust>7.00</Ranged_Target_Z_Adjust>
-		
-		<SFXEvent_Select>Unit_Select_Bothan</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_Bothan</SFXEvent_Move>
-		<SFXEvent_Attack>Unit_Attack_Bothan</SFXEvent_Attack>
-		<SFXEvent_Assist_Move>Unit_Assist_Move_Bothan</SFXEvent_Assist_Move>
-		<SFXEvent_Assist_Attack>Unit_Assist_Attack_Bothan</SFXEvent_Assist_Attack>
-		<SFXEvent_Guard>Unit_Guard_Bothan</SFXEvent_Guard>
-		<SFXEvent_Fire>Unit_Rebel_Infantry_Fire</SFXEvent_Fire>
-		<Death_SFXEvent_Start_Die>Unit_Rebel_Soldier_Death</Death_SFXEvent_Start_Die>
-
-		<Idle_Chase_Range>500.00</Idle_Chase_Range>
-		<Guard_Chase_Range>500.00</Guard_Chase_Range>
-		<Attack_Move_Response_Range>500.00</Attack_Move_Response_Range>
-		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
-		<AI_Combat_Power>5</AI_Combat_Power>
-
-		<MovementClass>Infantry</MovementClass>
-		<CategoryMask>Infantry</CategoryMask>
 		<Victory_Relevant>Yes</Victory_Relevant>
-		<Weather_Category>Infantry</Weather_Category>
-
-		<Death_Clone>Damage_Force_Whirlwind,	Bothan_Civ_Force_Whirlwind_Death_Clone</Death_Clone>
-		<Death_Clone>Damage_Force_Lightning,	Bothan_Civ_Force_Lightning_Death_Clone</Death_Clone>
-		<Death_Clone>Damage_Disruptor_Hand,		Infantry_Disruptor_Death_Clone_00</Death_Clone>
-		<Death_Clone>Damage_Disruptor_Hand,		Infantry_Disruptor_Death_Clone_01</Death_Clone>
-		<Death_Clone>Damage_Infection,			Infantry_Melt_Death_Clone_00</Death_Clone>
-
-		<OccupationStyle>1x1</OccupationStyle>
-		<Ground_Infantry_Turret_Target>Yes</Ground_Infantry_Turret_Target>
-		<Is_Squashable>Yes</Is_Squashable>
-		
-		<Death_Fade_Time>0.25</Death_Fade_Time>
-		<Death_Persistence_Duration>0.00</Death_Persistence_Duration>
-		<Create_Team>True</Create_Team>
-
-		<Movie_Object>False</Movie_Object>
 	</Slave_Unit>
 
 	<SlaveCompany Name="Bothan_Slave_Company">
@@ -190,118 +89,16 @@
 
 	<!-- Geonosian -->
 	<Slave_Unit Name="Geonosian_Slave">
-		<Text_ID>TEXT_INDIG_GEONOSIAN</Text_ID>
+		<Variant_Of_Existing_Type>Geonosian</Variant_Of_Existing_Type>
+
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
-		<Land_Model_Name>NI_Geonosian.ALO</Land_Model_Name>
-		<Icon_Name>I_Button_Geonosian.tga</Icon_Name>
-		<Behavior>SELECTABLE</Behavior>
-		<LandBehavior>SURFACE_FX, LAND_TEAM_Infantry_LOCOMOTOR, IDLE, WEAPON, REVEAL, HIDE_WHEN_FOGGED</LandBehavior>
-		<SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
-		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
-		<Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
-		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
-		<CanCellStack>Yes</CanCellStack>
-		<Select_Box_Scale>0</Select_Box_Scale>
-		<Select_Box_Z_Adjust>3.00</Select_Box_Z_Adjust>
-		<Mass>1.00</Mass>
-		<GUI_Bracket_Width>5</GUI_Bracket_Width>
-		<GUI_Bracket_Height>0</GUI_Bracket_Height>
-		<GUI_Bracket_Size>0</GUI_Bracket_Size>
-		<Movement_Animation_Speed>0.80</Movement_Animation_Speed>
-		<Rotation_Animation_Speed>20.0</Rotation_Animation_Speed>
-		<Mouse_Collide_Override_Sphere_Radius>10.00</Mouse_Collide_Override_Sphere_Radius>
-		<Is_Combustible>Yes</Is_Combustible>
-		<On_Fire_Speed_Modifier>1.20</On_Fire_Speed_Modifier>
-		<Targeting_Allowed_When_Burning>No</Targeting_Allowed_When_Burning>
-		<Burning_Damage_Per_Second>0.10</Burning_Damage_Per_Second>
 
-		<Influences_Capture_Point>True</Influences_Capture_Point>
+		<LandBehavior>SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, IDLE, WEAPON, REVEAL, HIDE_WHEN_FOGGED</LandBehavior>
 
-		<Max_Speed>2</Max_Speed>
-		<Max_Rate_Of_Turn>50.00</Max_Rate_Of_Turn>
-		<Custom_Soft_Footprint_Radius>3.00</Custom_Soft_Footprint_Radius>
-		<Custom_Hard_XExtent>2.00</Custom_Hard_XExtent>
-		<Custom_Hard_YExtent>2.00</Custom_Hard_YExtent>
-		<Space_Layer>None</Space_Layer>
-		<UnitCollisionClass>Infantry</UnitCollisionClass>
-		<FormationSpacing>.50</FormationSpacing>
-		<MinimumPushReturnDistance>10</MinimumPushReturnDistance>
-		<Min_Speed>.10</Min_Speed>
-		<OverrideAcceleration>.10</OverrideAcceleration>
-		<OverrideDeceleration>.25</OverrideDeceleration>
-		<FormationOrder>2</FormationOrder>
-		<FormationGrouping>Standard</FormationGrouping>
-		<FormationRaggedness>.90</FormationRaggedness>
-
-		<Scale_Factor>1.50</Scale_Factor>
 		<Affiliation>Underworld</Affiliation>
-		<Required_Timeline>0</Required_Timeline>
-		<IsBuildable>No</IsBuildable>
-		<Size_Value>10</Size_Value>
-		<Armor_Type>Armor_Infantry</Armor_Type>
-		<Damage>5</Damage>
-		<Tactical_Health>5</Tactical_Health>
-		<Blob_Shadow_Below_Detail_Level>3</Blob_Shadow_Below_Detail_Level>
-		<Blob_Shadow_Scale>10.00, 10.00</Blob_Shadow_Scale>
-		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
-		<Blob_Shadow_Bone_Name>B_Chest</Blob_Shadow_Bone_Name>
-		
-		<Projectile_Types>Proj_Geonosian_Sonic_Blaster</Projectile_Types>
-		<Projectile_Fire_Recharge_Seconds>2</Projectile_Fire_Recharge_Seconds>
-		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
-		<Projectile_Fire_Pulse_Delay_Seconds>0.20</Projectile_Fire_Pulse_Delay_Seconds>
 
-		<Targeting_Fire_Inaccuracy>Infantry,	2.00</Targeting_Fire_Inaccuracy>
-		<Targeting_Fire_Inaccuracy>Vehicle,		5.00</Targeting_Fire_Inaccuracy>
-		<Targeting_Fire_Inaccuracy>Air,			70.00</Targeting_Fire_Inaccuracy>
-		<Targeting_Fire_Inaccuracy>Structure,	8.00</Targeting_Fire_Inaccuracy>
-		
-		<Land_FOW_Reveal_Range>130.00</Land_FOW_Reveal_Range>
-		<Dense_FOW_Reveal_Range_Multiplier>1.00</Dense_FOW_Reveal_Range_Multiplier>
-		<Targeting_Max_Attack_Distance>120.00</Targeting_Max_Attack_Distance>
-
-		<Ranged_Target_Z_Adjust>16.00</Ranged_Target_Z_Adjust>
-
-		<SFXEvent_Select>Ambient_Geonosian_Random_Chatter</SFXEvent_Select>
-		<SFXEvent_Move>Ambient_Geonosian_Random_Chatter</SFXEvent_Move>
-		<SFXEvent_Attack>Ambient_Geonosian_Random_Chatter</SFXEvent_Attack>
-		<SFXEvent_Guard>Ambient_Geonosian_Random_Chatter</SFXEvent_Guard>
-		<SFXEvent_Assist_Move>Ambient_Geonosian_Random_Chatter</SFXEvent_Assist_Move>		
-		<SFXEvent_Assist_Attack>Ambient_Geonosian_Random_Chatter</SFXEvent_Assist_Attack>
-
-		<SFXEvent_Fire>Unit_Geonosian_Fire</SFXEvent_Fire>
-		<SFXEvent_Engine_Idle_Loop>Unit_Geonosian_Idle_Loop</SFXEvent_Engine_Idle_Loop>
-		<SFXEvent_Engine_Moving_Loop>Unit_Geonosian_Moving_Loop</SFXEvent_Engine_Moving_Loop>
-		<Death_SFXEvent_Start_Die>Unit_Geonosian_Death</Death_SFXEvent_Start_Die>
-
-		<SFXEvent_Ambient_Moving>Ambient_Geonosian_Random_Chatter</SFXEvent_Ambient_Moving>
-		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>3</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
-		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>5</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
-		
-		<Idle_Chase_Range>50.00</Idle_Chase_Range>
-		<Guard_Chase_Range>200.00</Guard_Chase_Range>
-		<Attack_Move_Response_Range>150.00</Attack_Move_Response_Range>
-		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
-
-		<MovementClass>Hover</MovementClass>
-		<CategoryMask>Infantry</CategoryMask>
 		<Victory_Relevant>Yes</Victory_Relevant>
-		<Weather_Category>Infantry</Weather_Category>
-
-		<Death_Clone>Damage_Force_Whirlwind, Geonosian_Force_Whirlwind_Death_Clone</Death_Clone>
-		<Death_Clone>Damage_Force_Lightning, Geonosian_Force_Lightning_Death_Clone</Death_Clone>
-
-		<OccupationStyle>1x1</OccupationStyle>
-		<Ground_Infantry_Turret_Target>Yes</Ground_Infantry_Turret_Target>
-		<Is_Squashable>No</Is_Squashable>
-		<Create_Team>True</Create_Team>
-		<AI_Combat_Power>5</AI_Combat_Power>
-
-		<Death_Fade_Time>0.25</Death_Fade_Time>
-		<Death_Persistence_Duration>0.30</Death_Persistence_Duration>
-
-		<Movie_Object>False</Movie_Object>
 	</Slave_Unit>
 
 	<SlaveCompany Name="Geonosian_Slave_Company">
@@ -1480,7 +1277,7 @@
 
 
 
-	<!-- ===== PIRACY UNITS ===== -->
+    <!-- ===== PIRACY ===== -->
 	<SpaceUnit Name="Acclamator_Underworld">
 		<Variant_Of_Existing_Type>Acclamator_Assault_Ship</Variant_Of_Existing_Type>
 
@@ -1660,7 +1457,7 @@
 
 		<!-- Non-Hero unit abilities description -->
 		<Unit_Abilities_Data SubObjectList="Yes">
-			<!-- Primary Ability. -->
+			<!-- Primary Ability: -->
 			<Unit_Ability>
 				<Type>LURE</Type>
 				<!-- Details in the unit's XML! -->
@@ -1729,10 +1526,10 @@
 			<!-- Primary Ability. -->
 			<Unit_Ability>
 				<Type>ION_CANNON_SHOT</Type>
-				<Recharge_Seconds>25.0</Recharge_Seconds>
+				<Recharge_Seconds>25.00</Recharge_Seconds>
 				<Supports_Autofire>True</Supports_Autofire>
 				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ion_Cannon_Tie_Defender</SFXEvent_GUI_Unit_Ability_Activated>
-				<GUI_Activated_Ability_Name>Tie_Defender_Ion_Cannon_Shot</GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+				<GUI_Activated_Ability_Name>Tie_Defender_Ion_Cannon_Shot</GUI_Activated_Ability_Name> <!-- GUI Command Bar support. -->
 				<Projectile_Types_Override>Proj_Ion_Cannon_Medium_Laser_Blue</Projectile_Types_Override>
 			</Unit_Ability>
 
@@ -1761,4 +1558,4 @@
 			</Ion_Cannon_Shot_Attack_Ability>
 		</Abilities>
 	</Squadron>
-</Underworld_Slaves_Files>
+</Corruption_Rewards_Files>

@@ -133,7 +133,7 @@
 	<File>Units\UND\Units_Space_Underworld_Skipray.xml</File>
 	<File>Units_Space_Underworld_Crusader_Gunship.xml</File>
 	<File>Units_Space_Underworld_Interceptor4.xml</File>
-	<File>Units_Space_Underworld_Vengeance.xml</File>	
+	<File>Units_Space_Underworld_Vengeance.xml</File>
 	<File>Units\UND\Units_Space_Underworld_Kadalbe_Battleship.xml</File>
 	<File>Units_Space_Underworld_Krayt_Destroyer.xml</File>
 	<File>Units_Space_Underworld_Buzz_Droids.xml</File>
@@ -160,7 +160,7 @@
 	<File>Units\Units_UFoCP_Land_All_MDUs.xml</File>
 	<File>Multiplayer_Structure_Markers.XML</File>
 	<File>UpgradeObjects_Underworld.XML</File>
-	<File>Units\UND\Units_UFoCP_Land_Underworld_Slaves.xml</File>
+	<File>Units\UND\Units_UFoCP_Both_Underworld_CorruptionRewards.xml</File> <!-- All unit rewards from corruption. -->
 
 
 
