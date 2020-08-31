@@ -45,8 +45,10 @@ UFoCP
 ==================
 General
 ==================
--Reworked Underworld slaves file from "Corruption_Special_Units" to "Units_Land_Underworld_Slaves." No gameplay change other than internal.
+-Reworked Underworld slaves and piracy unit file from "Corruption_Special_Units" to "Units_UFoCP_Both_Underworld_CorruptionRewards." No gameplay change other than internal. Name is pending.
 -Reworked MDUs file from "Mobile_Defense_Units" to "Units_Land_All_MDUs." No gameplay change other than internal.
+
+-Units_UFoCP_Both_Underworld_CorruptionRewards – Greatly simplified the file by making all slaves/piracy rewards a variant of their (respective) original units, with some modifications.
 
 
 ==================
@@ -85,6 +87,26 @@ Units (Land)
 -MDU (Empire) – Fixed MDU using Rebels SFX.
 
 -MDU (Underworld) – Fixed MDU using Rebels SFX.
+
+-Mon Calamari (Slave) – Fixed the Calamari Underworld slave having the "STUNNABLE" trait when all other slaves didn't.
+
+-Pyn'gani (Slave) – Fixed the Pyn'gani Underworld slave not having the <Create_Team> tag, not allowing the game to realize its company/containers properly.
+
+-Twi'lek (Slave) – Fixed the Twi'lek Underworld slave not having the <Create_Team> tag, not allowing the game to realize its company/containers properly.
+
+-Wookie (Slave) – Fixed the Wookie having an erroneous <Create_Team_Type> tag, which would point to the original Wookie container and not the slave one.
+
+
+==================
+Units (Space)
+==================
+-A-wing – Fixed Underworld variant
+
+-Nebulon-B Frigate – Fixed Underworld variant building faster than the original variant.
+
+-TIE defender – Fixed Underworld variant not having <Is_Bomber> set to "Yes."
+-TIE defender – Fixed Underworld variant being less expensive than the original unit.
+-TIE defender – Fixed Underworld variant building faster than the original unit.
 
 
 =========================================================================================
