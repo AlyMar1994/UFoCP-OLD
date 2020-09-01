@@ -5,8 +5,8 @@
 	<Slave_Unit Name="Bothan_Slave">
 		<Variant_Of_Existing_Type>Bothan_Civilian</Variant_Of_Existing_Type>
 
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
 		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
 
 		<LandBehavior>SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, IDLE, WEAPON, REVEAL, HIDE_WHEN_FOGGED</LandBehavior>
 

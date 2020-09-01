@@ -84,6 +84,8 @@ Structures (Galactic)
 ==================
 Units (Land)
 ==================
+-Did a complete overhaul (visually) of all corruption mission targets. Their tooltips are now fully customized, with proper descriptions, classes, and names. This includes a variety of usable (and somewhat generic) class tags should anyone need them inside the .DAT file (many of them are currently more exact than necessary [e.g. "Ship Designer" instead of just "Engineer"], and are up for modification).
+
 -MDU (Empire) – Fixed MDU using Rebels SFX.
 
 -MDU (Underworld) – Fixed MDU using Rebels SFX.
@@ -91,6 +93,14 @@ Units (Land)
 -Mon Calamari (Slave) – Fixed the Calamari Underworld slave having the "STUNNABLE" trait when all other slaves didn't.
 
 -Pyn'gani (Slave) – Fixed the Pyn'gani Underworld slave not having the <Create_Team> tag, not allowing the game to realize its company/containers properly.
+
+-Sarlaac – Fixed the sarlaac pit not having a unit icon.
+
+-Sketto – Fixed the indigenous unit sketto (those giant dragonfly bug things) not having a unit icon.
+
+-Tanda the Hutt – Fixed unit appearing as a land hero due to using the Hutt Field Commander entry as a template.
+
+-Tauntaun – Fixed the tauntauns on Hoth not having a unit icon.
 
 -Twi'lek (Slave) – Fixed the Twi'lek Underworld slave not having the <Create_Team> tag, not allowing the game to realize its company/containers properly.
 

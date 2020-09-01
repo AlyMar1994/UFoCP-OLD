@@ -10,7 +10,7 @@
 	<File>Units\GroundVehicles.xml</File>
 	<File>GroundCompaniesRebel.xml</File>
 	<File>GroundCompaniesEmpire.xml</File>
-	<File>GroundIndigenous.xml</File>
+	<File>Units\GroundIndigenous.xml</File>
 	<File>GroundCompaniesIndigenous.xml</File>
 	<File>GroundBuildablesRebel.xml</File>
 	<File>GroundBuildablesEmpire.xml</File>
