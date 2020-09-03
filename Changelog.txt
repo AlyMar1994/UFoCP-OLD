@@ -98,7 +98,6 @@ Units (Land)
 
 -Sketto – Fixed the indigenous unit sketto (those giant dragonfly bug things) not having a unit icon.
 
--Tanda the Hutt – Fixed unit appearing as a land hero due to using the Hutt Field Commander entry as a template.
 
 -Tauntaun – Fixed the tauntauns on Hoth not having a unit icon.
 

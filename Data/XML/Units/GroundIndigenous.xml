@@ -3038,6 +3038,7 @@
 		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
 		<Land_Model_Name> NI_Mustafarian.alo </Land_Model_Name>
 		<Icon_Name>i_button_gmale_snow.tga</Icon_Name>
+
 		<Behavior>SELECTABLE</Behavior>
 		<LandBehavior>SURFACE_FX,LAND_TEAM_INFANTRY_LOCOMOTOR,IDLE,TARGETING,WEAPON, STUNNABLE,REVEAL,HIDE_WHEN_FOGGED</LandBehavior>
 		<SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
