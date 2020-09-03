@@ -86,6 +86,9 @@ Units (Land)
 ==================
 -Did a complete overhaul (visually) of all corruption mission targets. Their tooltips are now fully customized, with proper descriptions, classes, and names. This includes a variety of usable (and somewhat generic) class tags should anyone need them inside the .DAT file (many of them are currently more exact than necessary [e.g. "Ship Designer" instead of just "Engineer"], and are up for modification).
 
+-Fixed all Dark Trooper unit descriptions being bare minimum, and not describing mainly anything about the unit other than vague adjectives.
+-Fixed all Dark Trooper units using wrong VO for their in-production/completed dialogue. SFXEvent was referencing wrong dialogue, and the company was using wrong dialogue as well.
+
 -MDU (Empire) – Fixed MDU using Rebels SFX.
 
 -MDU (Underworld) – Fixed MDU using Rebels SFX.
@@ -97,7 +100,6 @@ Units (Land)
 -Sarlaac – Fixed the sarlaac pit not having a unit icon.
 
 -Sketto – Fixed the indigenous unit sketto (those giant dragonfly bug things) not having a unit icon.
-
 
 -Tauntaun – Fixed the tauntauns on Hoth not having a unit icon.
 

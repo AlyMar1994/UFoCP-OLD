@@ -4194,8 +4194,8 @@
 		<Is_Targetable>Yes</Is_Targetable>
 		<Is_Destroyable>Yes</Is_Destroyable>
 		<Tooltip_Text>TEXT_SUPPLY_DOCK_HARDPOINT</Tooltip_Text>
-<Repair_Cost_Per_Frame>1.6</Repair_Cost_Per_Frame>
-<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
+		<Repair_Cost_Per_Frame>1.6</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
 
 		<Attachment_Bone>HP01_SD_BONE</Attachment_Bone>
 		<Collision_Mesh>HP01_SD_COLL</Collision_Mesh>
@@ -4224,8 +4224,8 @@
 		<Is_Targetable>Yes</Is_Targetable>
 		<Is_Destroyable>Yes</Is_Destroyable>
 		<Tooltip_Text>TEXT_COMM_ARRAY_HARDPOINT</Tooltip_Text>
-<Repair_Cost_Per_Frame>1.6</Repair_Cost_Per_Frame>
-<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
+		<Repair_Cost_Per_Frame>1.6</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
 
 		<Death_Breakoff_Prop>Hardpoint_Breakoff_Comm_Array</Death_Breakoff_Prop>
 		<Model_To_Attach>UB_01_Station_HP01_COM.alo</Model_To_Attach>
@@ -4256,10 +4256,10 @@
 		<Is_Destroyable>Yes</Is_Destroyable>
 		<Attachment_Bone>HP01_FB_BONE</Attachment_Bone>
 		<Collision_Mesh>HP01_FB_COLL</Collision_Mesh>
-<Damage_Decal>HP01_FB_BLAST</Damage_Decal>
-<Damage_Particles>HP01_FB_EMITDAMAGE</Damage_Particles>
-<Repair_Cost_Per_Frame>1.6</Repair_Cost_Per_Frame>
-<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
+		<Damage_Decal>HP01_FB_BLAST</Damage_Decal>
+		<Damage_Particles>HP01_FB_EMITDAMAGE</Damage_Particles>
+		<Repair_Cost_Per_Frame>1.6</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
 		
 		<Fighter_Bay_Flyout_Distance>400.0</Fighter_Bay_Flyout_Distance>
 		<Tooltip_Text>TEXT_FIGHTER_BAY_HARDPOINT</Tooltip_Text>
@@ -4270,25 +4270,25 @@
 
 	<HardPoint Name="HP_Underworld_Station_L1_ShieldGen">
 		<Type>HARD_POINT_SHIELD_GENERATOR</Type>
-<Is_Targetable>Yes</Is_Targetable>
-<Is_Destroyable>Yes</Is_Destroyable>
-<Tooltip_Text>TEXT_SHIELD_GENERATOR_HARDPOINT</Tooltip_Text>
-<Health>900.0</Health>
-<Repair_Cost_Per_Frame>1.6</Repair_Cost_Per_Frame>
-<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_SHIELD_GENERATOR_HARDPOINT</Tooltip_Text>
+		<Health>900.0</Health>
+		<Repair_Cost_Per_Frame>1.6</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
 
 		<Death_Explosion_Particles>Large_Explosion_Space</Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Shields_Death</Death_Explosion_SFXEvent>
 
 		<Model_To_Attach>UB_01_Station_HP01_SHG.alo</Model_To_Attach>
 		<Attachment_Bone>HP01_SHG_BONE</Attachment_Bone>
-<Collision_Mesh>HP01_SHG_COLL</Collision_Mesh>
+		<Collision_Mesh>HP01_SHG_COLL</Collision_Mesh>
 
 		<Death_Breakoff_Prop>Hardpoint_Breakoff_U_Station_Shield_Gen</Death_Breakoff_Prop>
 
-<Damage_Decal>HP01_SHG_BLAST</Damage_Decal>
-<Damage_Particles>HP01_SHG_EMITDAMAGE</Damage_Particles>
-</HardPoint>
+		<Damage_Decal>HP01_SHG_BLAST</Damage_Decal>
+		<Damage_Particles>HP01_SHG_EMITDAMAGE</Damage_Particles>
+	</HardPoint>
 
 	<HardPoint Name="HP_Underworld_Station_L1_Mass_Driver_00">
 		<Type>HARD_POINT_WEAPON_MASS_DRIVER</Type>
@@ -4297,7 +4297,7 @@
 		<Tooltip_Text>TEXT_WEAPON_MASS_DRIVER</Tooltip_Text>
 		<Health>450.0</Health>
 		<Repair_Cost_Per_Frame>1.5</Repair_Cost_Per_Frame>
-<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
+		<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
 
 		<Death_Explosion_Particles>Large_Explosion_Space</Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Mass_Driver_Death</Death_Explosion_SFXEvent>
@@ -4328,35 +4328,35 @@
 		<Fire_Inaccuracy_Distance>Frigate, 5.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Capital, 3.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Super, 1.0</Fire_Inaccuracy_Distance>
-</HardPoint>
+	</HardPoint>
 
 	<HardPoint Name="HP_Underworld_Station_L1_LC_00">
 		<Type>HARD_POINT_WEAPON_LASER</Type>
-<Is_Targetable>Yes</Is_Targetable>
-<Is_Destroyable>Yes</Is_Destroyable>
-<Tooltip_Text>TEXT_WEAPON_LASERCANNON</Tooltip_Text>
-<Health>450.0</Health>
-<Repair_Cost_Per_Frame>1.4</Repair_Cost_Per_Frame>
-<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_LASERCANNON</Tooltip_Text>
+		<Health>450.0</Health>
+		<Repair_Cost_Per_Frame>1.4</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
 
 		<Death_Explosion_Particles>Large_Explosion_Space</Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
 
 		<Attachment_Bone>HP01_LC_BONE</Attachment_Bone>
-<Collision_Mesh>HP01_LC_COLL</Collision_Mesh>
-<Damage_Decal>HP01_LC_BLAST</Damage_Decal>
-<Damage_Particles>HP01_LC_EMITDAMAGE</Damage_Particles>
+		<Collision_Mesh>HP01_LC_COLL</Collision_Mesh>
+		<Damage_Decal>HP01_LC_BLAST</Damage_Decal>
+		<Damage_Particles>HP01_LC_EMITDAMAGE</Damage_Particles>
 
-<Fire_Bone_A>FP01_LC_00</Fire_Bone_A>
-<Fire_Bone_B>FP01_LC_01</Fire_Bone_B>
-<Fire_Cone_Width>170.0</Fire_Cone_Width>
-<Fire_Cone_Height>120.0</Fire_Cone_Height>
-<Fire_Projectile_Type>Proj_Ship_Large_Laser_Cannon_Red</Fire_Projectile_Type>
-<Fire_Min_Recharge_Seconds>3.0</Fire_Min_Recharge_Seconds>
-<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
-<Fire_Pulse_Count>6</Fire_Pulse_Count>
-<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
-<Fire_Range_Distance>2200.0</Fire_Range_Distance>
+		<Fire_Bone_A>FP01_LC_00</Fire_Bone_A>
+		<Fire_Bone_B>FP01_LC_01</Fire_Bone_B>
+		<Fire_Cone_Width>170.0</Fire_Cone_Width>
+		<Fire_Cone_Height>120.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Large_Laser_Cannon_Red</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>3.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>6</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2200.0</Fire_Range_Distance>
 		<Fire_SFXEvent>Unit_Underworld_Ship_Laser_Fire</Fire_SFXEvent>
 
 		<Fire_Inaccuracy_Distance>Fighter, 10.0</Fire_Inaccuracy_Distance>
@@ -4367,35 +4367,35 @@
 		<Fire_Inaccuracy_Distance>Capital, 30.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Super, 30.0</Fire_Inaccuracy_Distance>
 			
-</HardPoint>
+	</HardPoint>
 
 	<HardPoint Name="HP_Underworld_Station_L1_TBL_00">
 		<Type>HARD_POINT_WEAPON_LASER</Type>
-<Is_Targetable>Yes</Is_Targetable>
-<Is_Destroyable>Yes</Is_Destroyable>
-<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
-<Health>450.0</Health>
-<Repair_Cost_Per_Frame>1.4</Repair_Cost_Per_Frame>
-<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>450.0</Health>
+		<Repair_Cost_Per_Frame>1.4</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
 
 		<Death_Explosion_Particles>Large_Explosion_Space</Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
 
-<Attachment_Bone>HP01_TBL_BONE</Attachment_Bone>
-<Collision_Mesh>HP01_TBL_COLL</Collision_Mesh>
-<Damage_Decal>HP01_TBL_BLAST</Damage_Decal>
-<Damage_Particles>HP01_TBL_EMITDAMAGE</Damage_Particles>
+		<Attachment_Bone>HP01_TBL_BONE</Attachment_Bone>
+		<Collision_Mesh>HP01_TBL_COLL</Collision_Mesh>
+		<Damage_Decal>HP01_TBL_BLAST</Damage_Decal>
+		<Damage_Particles>HP01_TBL_EMITDAMAGE</Damage_Particles>
 
-<Fire_Bone_A>FP01_TBL_00</Fire_Bone_A>
-<Fire_Bone_B>FP01_TBL_01</Fire_Bone_B>
-<Fire_Cone_Width>100.0</Fire_Cone_Width>
-<Fire_Cone_Height>180.0</Fire_Cone_Height>
-<Fire_Projectile_Type>Proj_Ship_Turbolaser_Red</Fire_Projectile_Type>
-<Fire_Min_Recharge_Seconds>3.0</Fire_Min_Recharge_Seconds>
-<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
-<Fire_Pulse_Count>6</Fire_Pulse_Count>
-<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
-<Fire_Range_Distance>2200.0</Fire_Range_Distance>
+		<Fire_Bone_A>FP01_TBL_00</Fire_Bone_A>
+		<Fire_Bone_B>FP01_TBL_01</Fire_Bone_B>
+		<Fire_Cone_Width>100.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Red</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>3.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>6</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2200.0</Fire_Range_Distance>
 		<Fire_SFXEvent>Unit_Underworld_Turbo_Fire</Fire_SFXEvent>
 
 		<Fire_Inaccuracy_Distance>Fighter, 70.0</Fire_Inaccuracy_Distance>
@@ -4405,36 +4405,35 @@
 		<Fire_Inaccuracy_Distance>Frigate, 10.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Capital, 10.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Super, 1.0</Fire_Inaccuracy_Distance>
-			
-</HardPoint>
+	</HardPoint>
 
 	<HardPoint Name="HP_Underworld_Station_L2_LC_01">
 		<Type>HARD_POINT_WEAPON_LASER</Type>
-<Is_Targetable>Yes</Is_Targetable>
-<Is_Destroyable>Yes</Is_Destroyable>
-<Tooltip_Text>TEXT_WEAPON_LASERCANNON</Tooltip_Text>
-<Health>450.0</Health>
-<Repair_Cost_Per_Frame>1.4</Repair_Cost_Per_Frame>
-<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_LASERCANNON</Tooltip_Text>
+		<Health>450.0</Health>
+		<Repair_Cost_Per_Frame>1.4</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
 
 		<Death_Explosion_Particles>Large_Explosion_Space</Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
 
 		<Attachment_Bone>HP02_LC_BONE</Attachment_Bone>
-<Collision_Mesh>HP02_LC_COLL</Collision_Mesh>
-<Damage_Decal>HP02_LC_BLAST</Damage_Decal>
-<Damage_Particles>HP02_LC_EMITDAMAGE</Damage_Particles>
+		<Collision_Mesh>HP02_LC_COLL</Collision_Mesh>
+		<Damage_Decal>HP02_LC_BLAST</Damage_Decal>
+		<Damage_Particles>HP02_LC_EMITDAMAGE</Damage_Particles>
 
-<Fire_Bone_A>FP02_LC_00</Fire_Bone_A>
-<Fire_Bone_B>FP02_LC_01</Fire_Bone_B>
-<Fire_Cone_Width>170.0</Fire_Cone_Width>
-<Fire_Cone_Height>170.0</Fire_Cone_Height>
-<Fire_Projectile_Type>Proj_Ship_Large_Laser_Cannon_Red</Fire_Projectile_Type>
-<Fire_Min_Recharge_Seconds>3.0</Fire_Min_Recharge_Seconds>
-<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
-<Fire_Pulse_Count>6</Fire_Pulse_Count>
-<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
-<Fire_Range_Distance>2200.0</Fire_Range_Distance>
+		<Fire_Bone_A>FP02_LC_00</Fire_Bone_A>
+		<Fire_Bone_B>FP02_LC_01</Fire_Bone_B>
+		<Fire_Cone_Width>170.0</Fire_Cone_Width>
+		<Fire_Cone_Height>170.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Large_Laser_Cannon_Red</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>3.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>6</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2200.0</Fire_Range_Distance>
 		<Fire_SFXEvent>Unit_Underworld_Ship_Laser_Fire</Fire_SFXEvent>
 
 		<Fire_Inaccuracy_Distance>Fighter, 10.0</Fire_Inaccuracy_Distance>
@@ -4444,37 +4443,36 @@
 		<Fire_Inaccuracy_Distance>Frigate, 30.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Capital, 30.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Super, 30.0</Fire_Inaccuracy_Distance>
-			
-</HardPoint>
+	</HardPoint>
 
 	<HardPoint Name="HP_Underworld_Station_L2_TBL_01">
 		<Type>HARD_POINT_WEAPON_LASER</Type>
-<Is_Targetable>Yes</Is_Targetable>
-<Is_Destroyable>Yes</Is_Destroyable>
-<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
-<Health>450.0</Health>
-<Repair_Cost_Per_Frame>1.4</Repair_Cost_Per_Frame>
-<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>450.0</Health>
+		<Repair_Cost_Per_Frame>1.4</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
 
 		<Death_Explosion_Particles>Large_Explosion_Space</Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
 
-<Attachment_Bone>HP02_TBL_BONE</Attachment_Bone>
-<Collision_Mesh>HP02_TBL_COLL</Collision_Mesh>
-<Damage_Decal>HP02_TBL_BLAST</Damage_Decal>
-<Damage_Particles>HP02_TBL_EMITDAMAGE</Damage_Particles>
+		<Attachment_Bone>HP02_TBL_BONE</Attachment_Bone>
+		<Collision_Mesh>HP02_TBL_COLL</Collision_Mesh>
+		<Damage_Decal>HP02_TBL_BLAST</Damage_Decal>
+		<Damage_Particles>HP02_TBL_EMITDAMAGE</Damage_Particles>
 
 		<Damage_Type>Damage_Station_Turbolaser</Damage_Type>
-<Fire_Bone_A>FP02_TBL_00</Fire_Bone_A>
-<Fire_Bone_B>FP02_TBL_01</Fire_Bone_B>
-<Fire_Cone_Width>160.0</Fire_Cone_Width>
-<Fire_Cone_Height>160.0</Fire_Cone_Height>
-<Fire_Projectile_Type>Proj_Ship_Turbolaser_Red</Fire_Projectile_Type>
-<Fire_Min_Recharge_Seconds>3.0</Fire_Min_Recharge_Seconds>
-<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
-<Fire_Pulse_Count>6</Fire_Pulse_Count>
-<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
-<Fire_Range_Distance>2200.0</Fire_Range_Distance>
+		<Fire_Bone_A>FP02_TBL_00</Fire_Bone_A>
+		<Fire_Bone_B>FP02_TBL_01</Fire_Bone_B>
+		<Fire_Cone_Width>160.0</Fire_Cone_Width>
+		<Fire_Cone_Height>160.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Red</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>3.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>6</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2200.0</Fire_Range_Distance>
 		<Fire_SFXEvent>Unit_Underworld_Turbo_Fire</Fire_SFXEvent>
 
 		<Fire_Inaccuracy_Distance>Fighter, 70.0</Fire_Inaccuracy_Distance>
@@ -4484,69 +4482,67 @@
 		<Fire_Inaccuracy_Distance>Frigate, 10.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Capital, 10.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Super, 1.0</Fire_Inaccuracy_Distance>
-			
-</HardPoint>
+	</HardPoint>
 
 	<HardPoint Name="HP_Underworld_Station_L2_PRT_00">
 		<Type>HARD_POINT_WEAPON_TORPEDO</Type>
-<Is_Targetable>Yes</Is_Targetable>
-<Is_Destroyable>Yes</Is_Destroyable>
-<Tooltip_Text>TEXT_WEAPON_TORPEDOES</Tooltip_Text>
-<Health>450.0</Health>
-<Repair_Cost_Per_Frame>1.4</Repair_Cost_Per_Frame>
-<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TORPEDOES</Tooltip_Text>
+		<Health>450.0</Health>
+		<Repair_Cost_Per_Frame>1.4</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
 
 		<Death_Explosion_Particles>Large_Explosion_Space</Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Torpedo_Death</Death_Explosion_SFXEvent>
 
-<Attachment_Bone>HP02_PT_BONE</Attachment_Bone>
-<Collision_Mesh>HP02_PT_COLL</Collision_Mesh>
-<Damage_Decal>HP02_PT_BLAST</Damage_Decal>
-<Damage_Particles>HP02_PT_EMITDAMAGE</Damage_Particles>
+		<Attachment_Bone>HP02_PT_BONE</Attachment_Bone>
+		<Collision_Mesh>HP02_PT_COLL</Collision_Mesh>
+		<Damage_Decal>HP02_PT_BLAST</Damage_Decal>
+		<Damage_Particles>HP02_PT_EMITDAMAGE</Damage_Particles>
 
-<Fire_Bone_A>FP02_PT_00</Fire_Bone_A>
-<Fire_Bone_B>FP02_PT_01</Fire_Bone_B>
-<Fire_Cone_Width>170.0</Fire_Cone_Width>
-<Fire_Cone_Height>170.0</Fire_Cone_Height>
-<Fire_Projectile_Type>Proj_Ship_Proton_Torpedo</Fire_Projectile_Type>
-<Fire_Min_Recharge_Seconds>8.0</Fire_Min_Recharge_Seconds>
-<Fire_Max_Recharge_Seconds>8.0</Fire_Max_Recharge_Seconds>
-<Fire_Pulse_Count>3</Fire_Pulse_Count>
-<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
-<Fire_Range_Distance>2200.0</Fire_Range_Distance>
+		<Fire_Bone_A>FP02_PT_00</Fire_Bone_A>
+		<Fire_Bone_B>FP02_PT_01</Fire_Bone_B>
+		<Fire_Cone_Width>170.0</Fire_Cone_Width>
+		<Fire_Cone_Height>170.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Proton_Torpedo</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>8.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>8.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>3</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2200.0</Fire_Range_Distance>
 		<Fire_SFXEvent>Unit_Torpedo_Fire</Fire_SFXEvent>
 
 		<Fire_Category_Restrictions>Fighter, Bomber, Transport</Fire_Category_Restrictions>
-
-</HardPoint>
+	</HardPoint>
 
 	<HardPoint Name="HP_Underworld_Station_L3_IC_00">
 		<Type>HARD_POINT_WEAPON_ION_CANNON</Type>
-<Is_Targetable>Yes</Is_Targetable>
-<Is_Destroyable>Yes</Is_Destroyable>
-<Tooltip_Text>TEXT_WEAPON_IONCANNON</Tooltip_Text>
-<Health>450.0</Health>
-<Repair_Cost_Per_Frame>1.4</Repair_Cost_Per_Frame>
-<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_IONCANNON</Tooltip_Text>
+		<Health>450.0</Health>
+		<Repair_Cost_Per_Frame>1.4</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
 
 		<Death_Explosion_Particles>Large_Explosion_Space</Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Ion_Death</Death_Explosion_SFXEvent>
 
-<Attachment_Bone>HP03_IC_BONE</Attachment_Bone>
-<Collision_Mesh>HP03_IC_COLL</Collision_Mesh>
-<Damage_Decal>HP03_IC_BLAST</Damage_Decal>
-<Damage_Particles>HP03_IC_EMITDAMAGE</Damage_Particles>
+		<Attachment_Bone>HP03_IC_BONE</Attachment_Bone>
+		<Collision_Mesh>HP03_IC_COLL</Collision_Mesh>
+		<Damage_Decal>HP03_IC_BLAST</Damage_Decal>
+		<Damage_Particles>HP03_IC_EMITDAMAGE</Damage_Particles>
 
-<Fire_Bone_A>FP03_IC_00</Fire_Bone_A>
-<Fire_Bone_B>FP03_IC_01</Fire_Bone_B>
-<Fire_Cone_Width>180.0</Fire_Cone_Width>
-<Fire_Cone_Height>180.0</Fire_Cone_Height>
-<Fire_Projectile_Type>Proj_Ship_Ion_Cannon_Large</Fire_Projectile_Type>
-<Fire_Min_Recharge_Seconds>3.0</Fire_Min_Recharge_Seconds>
-<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
-<Fire_Pulse_Count>4</Fire_Pulse_Count>
-<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
-<Fire_Range_Distance>2200.0</Fire_Range_Distance>
+		<Fire_Bone_A>FP03_IC_00</Fire_Bone_A>
+		<Fire_Bone_B>FP03_IC_01</Fire_Bone_B>
+		<Fire_Cone_Width>180.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Ion_Cannon_Large</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>3.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>4</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2200.0</Fire_Range_Distance>
 		<Fire_SFXEvent>Unit_Ion_Fire</Fire_SFXEvent>
 
 		<Fire_Inaccuracy_Distance>Fighter, 20.0</Fire_Inaccuracy_Distance>
@@ -4556,8 +4552,7 @@
 		<Fire_Inaccuracy_Distance>Frigate, 20.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Capital, 20.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Super, 20.0</Fire_Inaccuracy_Distance>
-			
-</HardPoint>
+	</HardPoint>
 
 	<HardPoint Name="HP_Underworld_Station_L3_Mass_Driver_01">
 		<Type>HARD_POINT_WEAPON_MASS_DRIVER</Type>
@@ -4566,7 +4561,7 @@
 		<Tooltip_Text>TEXT_WEAPON_MASS_DRIVER</Tooltip_Text>
 		<Health>450.0</Health>
 		<Repair_Cost_Per_Frame>1.5</Repair_Cost_Per_Frame>
-<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
+		<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
 
 		<Death_Explosion_Particles>Large_Explosion_Space</Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Mass_Driver_Death</Death_Explosion_SFXEvent>
@@ -4597,43 +4592,42 @@
 		<Fire_Inaccuracy_Distance>Frigate, 5.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Capital, 3.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Super, 1.0</Fire_Inaccuracy_Distance>
-</HardPoint>
+	</HardPoint>
 
 	<HardPoint Name="HP_Underworld_Station_L3_PRT_01">
 		<Type>HARD_POINT_WEAPON_TORPEDO</Type>
-<Is_Targetable>Yes</Is_Targetable>
-<Is_Destroyable>Yes</Is_Destroyable>
-<Tooltip_Text>TEXT_WEAPON_TORPEDOES</Tooltip_Text>
-<Health>450.0</Health>
-<Repair_Cost_Per_Frame>1.4</Repair_Cost_Per_Frame>
-<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TORPEDOES</Tooltip_Text>
+		<Health>450.0</Health>
+		<Repair_Cost_Per_Frame>1.4</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
 
 		<Death_Explosion_Particles>Large_Explosion_Space_Empire</Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Torpedo_Death</Death_Explosion_SFXEvent>
 
-<Model_To_Attach>UB_03_STATION_HP03_PT.ALO</Model_To_Attach>
-<Attachment_Bone>HP03_PT_BONE</Attachment_Bone>
-<Collision_Mesh>HP03_PT_COLL</Collision_Mesh>
-<Damage_Decal>HP03_PT_BLAST</Damage_Decal>
-<Damage_Particles>HP03_PT_EMITDAMAGE</Damage_Particles>
+		<Model_To_Attach>UB_03_STATION_HP03_PT.ALO</Model_To_Attach>
+		<Attachment_Bone>HP03_PT_BONE</Attachment_Bone>
+		<Collision_Mesh>HP03_PT_COLL</Collision_Mesh>
+		<Damage_Decal>HP03_PT_BLAST</Damage_Decal>
+		<Damage_Particles>HP03_PT_EMITDAMAGE</Damage_Particles>
 
 		<Death_Breakoff_Prop>Hardpoint_Breakoff_U_Station_L3_Torp</Death_Breakoff_Prop>
 
-<Fire_Bone_A>FP03_PT_00</Fire_Bone_A>
-<Fire_Bone_B>FP03_PT_01</Fire_Bone_B>
-<Fire_Cone_Width>360.0</Fire_Cone_Width>
-<Fire_Cone_Height>360.0</Fire_Cone_Height>
-<Fire_Projectile_Type>Proj_Ship_Proton_Torpedo</Fire_Projectile_Type>
-<Fire_Min_Recharge_Seconds>8.0</Fire_Min_Recharge_Seconds>
-<Fire_Max_Recharge_Seconds>8.0</Fire_Max_Recharge_Seconds>
-<Fire_Pulse_Count>3</Fire_Pulse_Count>
-<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
-<Fire_Range_Distance>2200.0</Fire_Range_Distance>
+		<Fire_Bone_A>FP03_PT_00</Fire_Bone_A>
+		<Fire_Bone_B>FP03_PT_01</Fire_Bone_B>
+		<Fire_Cone_Width>360.0</Fire_Cone_Width>
+		<Fire_Cone_Height>360.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Proton_Torpedo</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>8.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>8.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>3</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2200.0</Fire_Range_Distance>
 		<Fire_SFXEvent>Unit_Torpedo_Fire</Fire_SFXEvent>
 
 		<Fire_Category_Restrictions>Fighter, Bomber, Transport</Fire_Category_Restrictions>
-
-</HardPoint>
+	</HardPoint>
 
 	<HardPoint Name="HP_Underworld_L3_Station_Main_Cannon">
 		<Type>HARD_POINT_WEAPON_SPECIAL</Type>
@@ -4642,7 +4636,7 @@
 		<Tooltip_Text>TEXT_WEAPON_SPECIAL</Tooltip_Text>
 		<Health>900.0</Health>
 		<Repair_Cost_Per_Frame>1.8</Repair_Cost_Per_Frame>
-<Repair_Amount_Per_Frame>.50</Repair_Amount_Per_Frame>
+		<Repair_Amount_Per_Frame>.50</Repair_Amount_Per_Frame>
 
 		<Model_To_Attach>UB_03_STATION_HP03_GUN.ALO</Model_To_Attach>
 		<Attachment_Bone>HP03_GUN_BONE</Attachment_Bone>
@@ -4657,15 +4651,15 @@
 		<Fire_Bone_A>MUZZLEA_00</Fire_Bone_A>
 		<Fire_Bone_B></Fire_Bone_B>
 		<Randomize_Between_Fire_Bones>No</Randomize_Between_Fire_Bones>
-		<Fire_Cone_Width>40.0</Fire_Cone_Width>		<!--20degreesoneitherside-->
+		<Fire_Cone_Width>40.0</Fire_Cone_Width> <!--20 degrees on either side-->
 		<Fire_Cone_Height>3.0</Fire_Cone_Height>
 		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
 		
-		<!--Thishardpointwillnotfireunlesstheplayermanuallytargetsforit.-->
-		<!--Theplayerdoessobytreatingthestarbaselikeaspecialweapon.-->
-		<!--Thehardpointwillfireitsprojectilepulseonce, thenwaitforanothertargetassignment.-->
+		<!-- This hardpoint will not fire unless the player manually targets for it. -->
+		<!-- The player does so by treating the starbase like a special weapon. -->
+		<!-- The hardpoint will fire its projectile pulse once, then wait for another target assignment. -->
 		<Requires_Manual_Target_Assignment>Yes</Requires_Manual_Target_Assignment>
-		<Manual_Hardpoint_Firing_Cooldown_Secs>120</Manual_Hardpoint_Firing_Cooldown_Secs>	<!--Eachplayermustwaitthislongbeforebeingabletofiretheweaponagain.-->
+		<Manual_Hardpoint_Firing_Cooldown_Secs>120</Manual_Hardpoint_Firing_Cooldown_Secs> <!--Each player must wait this long before being able to fire the weapon again.-->
 		
 		<Is_Turret>Yes</Is_Turret>
 		<Turret_Rest_Angle>0.0, 0.0, 0.0</Turret_Rest_Angle>
@@ -4694,36 +4688,35 @@
 		<Fire_Inaccuracy_Distance>Frigate, 1.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Capital, 1.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Super, 1.0</Fire_Inaccuracy_Distance>
-
-</HardPoint>
+	</HardPoint>
 
 	<HardPoint Name="HP_Underworld_Station_L4_IC_01">
 		<Type>HARD_POINT_WEAPON_ION_CANNON</Type>
-<Is_Targetable>Yes</Is_Targetable>
-<Is_Destroyable>Yes</Is_Destroyable>
-<Tooltip_Text>TEXT_WEAPON_IONCANNON</Tooltip_Text>
-<Health>450.0</Health>
-<Repair_Cost_Per_Frame>1.4</Repair_Cost_Per_Frame>
-<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_IONCANNON</Tooltip_Text>
+		<Health>450.0</Health>
+		<Repair_Cost_Per_Frame>1.4</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
 
 		<Death_Explosion_Particles>Large_Explosion_Space</Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Ion_Death</Death_Explosion_SFXEvent>
 
-<Attachment_Bone>HP04_IC_BONE</Attachment_Bone>
-<Collision_Mesh>HP04_IC_COLL</Collision_Mesh>
-<Damage_Decal>HP04_IC_BLAST</Damage_Decal>
-<Damage_Particles>HP04_IC_EMITDAMAGE</Damage_Particles>
+		<Attachment_Bone>HP04_IC_BONE</Attachment_Bone>
+		<Collision_Mesh>HP04_IC_COLL</Collision_Mesh>
+		<Damage_Decal>HP04_IC_BLAST</Damage_Decal>
+		<Damage_Particles>HP04_IC_EMITDAMAGE</Damage_Particles>
 
-<Fire_Bone_A>FP04_IC_00</Fire_Bone_A>
-<Fire_Bone_B>FP04_IC_01</Fire_Bone_B>
-<Fire_Cone_Width>180.0</Fire_Cone_Width>
-<Fire_Cone_Height>180.0</Fire_Cone_Height>
-<Fire_Projectile_Type>Proj_Ship_Ion_Cannon_Large</Fire_Projectile_Type>
-<Fire_Min_Recharge_Seconds>3.0</Fire_Min_Recharge_Seconds>
-<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
-<Fire_Pulse_Count>4</Fire_Pulse_Count>
-<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
-<Fire_Range_Distance>2200.0</Fire_Range_Distance>
+		<Fire_Bone_A>FP04_IC_00</Fire_Bone_A>
+		<Fire_Bone_B>FP04_IC_01</Fire_Bone_B>
+		<Fire_Cone_Width>180.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Ion_Cannon_Large</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>3.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>4</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2200.0</Fire_Range_Distance>
 		<Fire_SFXEvent>Unit_Ion_Fire</Fire_SFXEvent>
 
 		<Fire_Inaccuracy_Distance>Fighter, 20.0</Fire_Inaccuracy_Distance>
@@ -4733,8 +4726,7 @@
 		<Fire_Inaccuracy_Distance>Frigate, 20.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Capital, 20.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Super, 20.0</Fire_Inaccuracy_Distance>
-			
-</HardPoint>
+	</HardPoint>
 
 	<HardPoint Name="HP_Underworld_Station_L4_Plasma_00">
 		<Type>HARD_POINT_WEAPON_SPECIAL</Type>
@@ -4743,28 +4735,28 @@
 		<Tooltip_Text>TEXT_WEAPON_SPECIAL</Tooltip_Text>
 		<Health>450.0</Health>
 		<Repair_Cost_Per_Frame>1.5</Repair_Cost_Per_Frame>
-<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
+		<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
 
 		<Death_Breakoff_Prop>Hardpoint_Breakoff_U_Station_L4_Plasma</Death_Breakoff_Prop>
 		<Death_Explosion_Particles>Large_Explosion_Space</Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Ion_Death</Death_Explosion_SFXEvent>
 
 		<Model_To_Attach>UB_04_STATION_HP04_PC.ALO</Model_To_Attach>
-<Attachment_Bone>HP04_PC_BONE</Attachment_Bone>
-<Collision_Mesh>HP04_PC_COLL</Collision_Mesh>
-<Damage_Decal>HP04_PC_BLAST</Damage_Decal>
-<Damage_Particles>HP04_PC_EMITDAMAGE</Damage_Particles>
+		<Attachment_Bone>HP04_PC_BONE</Attachment_Bone>
+		<Collision_Mesh>HP04_PC_COLL</Collision_Mesh>
+		<Damage_Decal>HP04_PC_BLAST</Damage_Decal>
+		<Damage_Particles>HP04_PC_EMITDAMAGE</Damage_Particles>
 
-<Fire_Bone_A>FP04_PC_00</Fire_Bone_A>
-<Fire_Bone_B>FP04_PC_01</Fire_Bone_B>
-<Fire_Cone_Width>180.0</Fire_Cone_Width>
-<Fire_Cone_Height>180.0</Fire_Cone_Height>
-<Fire_Projectile_Type>Proj_Plasma_Space_Turret_Blast</Fire_Projectile_Type>
-<Fire_Min_Recharge_Seconds>3.0</Fire_Min_Recharge_Seconds>
-<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
-<Fire_Pulse_Count>5</Fire_Pulse_Count>
-<Fire_Pulse_Delay_Seconds>0.6</Fire_Pulse_Delay_Seconds>
-<Fire_Range_Distance>1900.0</Fire_Range_Distance>
+		<Fire_Bone_A>FP04_PC_00</Fire_Bone_A>
+		<Fire_Bone_B>FP04_PC_01</Fire_Bone_B>
+		<Fire_Cone_Width>180.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Plasma_Space_Turret_Blast</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>3.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>5</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.6</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1900.0</Fire_Range_Distance>
 		<Fire_SFXEvent>Unit_Turret_Fire</Fire_SFXEvent>
 
 		<Fire_Inaccuracy_Distance>Fighter, 70.0</Fire_Inaccuracy_Distance>
@@ -4774,37 +4766,36 @@
 		<Fire_Inaccuracy_Distance>Frigate, 20.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Capital, 15.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Super, 20.0</Fire_Inaccuracy_Distance>
-			
-</HardPoint>
+	</HardPoint>
 
 	<HardPoint Name="HP_Underworld_Station_L4_TBL_02">
 		<Type>HARD_POINT_WEAPON_LASER</Type>
-<Is_Targetable>Yes</Is_Targetable>
-<Is_Destroyable>Yes</Is_Destroyable>
-<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
-<Health>450.0</Health>
-<Repair_Cost_Per_Frame>1.4</Repair_Cost_Per_Frame>
-<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>450.0</Health>
+		<Repair_Cost_Per_Frame>1.4</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
 
 		<Death_Explosion_Particles>Large_Explosion_Space</Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
 
-<Attachment_Bone>HP04_TBL_BONE</Attachment_Bone>
-<Collision_Mesh>HP04_TBL_COLL</Collision_Mesh>
-<Damage_Decal>HP04_TBL_BLAST</Damage_Decal>
-<Damage_Particles>HP04_TBL_EMITDAMAGE</Damage_Particles>
+		<Attachment_Bone>HP04_TBL_BONE</Attachment_Bone>
+		<Collision_Mesh>HP04_TBL_COLL</Collision_Mesh>
+		<Damage_Decal>HP04_TBL_BLAST</Damage_Decal>
+		<Damage_Particles>HP04_TBL_EMITDAMAGE</Damage_Particles>
 
 		<Damage_Type>Damage_Station_Turbolaser</Damage_Type>
-<Fire_Bone_A>FP04_TBL_00</Fire_Bone_A>
-<Fire_Bone_B>FP04_TBL_01</Fire_Bone_B>
-<Fire_Cone_Width>160.0</Fire_Cone_Width>
-<Fire_Cone_Height>160.0</Fire_Cone_Height>
-<Fire_Projectile_Type>Proj_Ship_Turbolaser_Red</Fire_Projectile_Type>
-<Fire_Min_Recharge_Seconds>3.0</Fire_Min_Recharge_Seconds>
-<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
-<Fire_Pulse_Count>6</Fire_Pulse_Count>
-<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
-<Fire_Range_Distance>2200.0</Fire_Range_Distance>
+		<Fire_Bone_A>FP04_TBL_00</Fire_Bone_A>
+		<Fire_Bone_B>FP04_TBL_01</Fire_Bone_B>
+		<Fire_Cone_Width>160.0</Fire_Cone_Width>
+		<Fire_Cone_Height>160.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Red</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>3.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>6</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2200.0</Fire_Range_Distance>
 		<Fire_SFXEvent>Unit_Underworld_Turbo_Fire</Fire_SFXEvent>
 
 		<Fire_Inaccuracy_Distance>Fighter, 70.0</Fire_Inaccuracy_Distance>
@@ -4814,38 +4805,37 @@
 		<Fire_Inaccuracy_Distance>Frigate, 10.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Capital, 10.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Super, 1.0</Fire_Inaccuracy_Distance>
-			
-</HardPoint>
+	</HardPoint>
 
 	<HardPoint Name="HP_Underworld_Station_L5_IC_02">
 		<Type>HARD_POINT_WEAPON_ION_CANNON</Type>
-<Is_Targetable>Yes</Is_Targetable>
-<Is_Destroyable>Yes</Is_Destroyable>
-<Tooltip_Text>TEXT_WEAPON_IONCANNON</Tooltip_Text>
-<Health>450.0</Health>
-<Repair_Cost_Per_Frame>1.0</Repair_Cost_Per_Frame>
-<Repair_Amount_Per_Frame>2.0</Repair_Amount_Per_Frame>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_IONCANNON</Tooltip_Text>
+		<Health>450.0</Health>
+		<Repair_Cost_Per_Frame>1.0</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>2.0</Repair_Amount_Per_Frame>
 
 		<Death_Breakoff_Prop>Hardpoint_Breakoff_U_Station_L5_IC</Death_Breakoff_Prop>
 		<Death_Explosion_Particles>Large_Explosion_Space</Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Ion_Death</Death_Explosion_SFXEvent>
 
 		<Model_To_Attach>UB_05_STATION_HP05_IC.ALO</Model_To_Attach>
-<Attachment_Bone>HP05_IC_BONE</Attachment_Bone>
-<Collision_Mesh>HP05_IC_COLL</Collision_Mesh>
-<Damage_Decal>HP05_IC_BLAST</Damage_Decal>
-<Damage_Particles>HP05_IC_EMITDAMAGE</Damage_Particles>
+		<Attachment_Bone>HP05_IC_BONE</Attachment_Bone>
+		<Collision_Mesh>HP05_IC_COLL</Collision_Mesh>
+		<Damage_Decal>HP05_IC_BLAST</Damage_Decal>
+		<Damage_Particles>HP05_IC_EMITDAMAGE</Damage_Particles>
 
-<Fire_Bone_A>FP05_IC_00</Fire_Bone_A>
-<Fire_Bone_B>FP05_IC_01</Fire_Bone_B>
-<Fire_Cone_Width>180.0</Fire_Cone_Width>
-<Fire_Cone_Height>180.0</Fire_Cone_Height>
-<Fire_Projectile_Type>Proj_Ship_Ion_Cannon_Large</Fire_Projectile_Type>
-<Fire_Min_Recharge_Seconds>3.0</Fire_Min_Recharge_Seconds>
-<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
-<Fire_Pulse_Count>4</Fire_Pulse_Count>
-<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
-<Fire_Range_Distance>2200.0</Fire_Range_Distance>
+		<Fire_Bone_A>FP05_IC_00</Fire_Bone_A>
+		<Fire_Bone_B>FP05_IC_01</Fire_Bone_B>
+		<Fire_Cone_Width>180.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Ion_Cannon_Large</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>3.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>4</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2200.0</Fire_Range_Distance>
 		<Fire_SFXEvent>Unit_Ion_Fire</Fire_SFXEvent>
 
 		<Fire_Inaccuracy_Distance>Fighter, 20.0</Fire_Inaccuracy_Distance>
@@ -4855,8 +4845,7 @@
 		<Fire_Inaccuracy_Distance>Frigate, 20.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Capital, 20.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Super, 20.0</Fire_Inaccuracy_Distance>
-			
-</HardPoint>
+	</HardPoint>
 
 	<HardPoint Name="HP_Underworld_Station_L5_Mass_Driver_02">
 		<Type>HARD_POINT_WEAPON_MASS_DRIVER</Type>
@@ -4865,7 +4854,7 @@
 		<Tooltip_Text>TEXT_WEAPON_MASS_DRIVER</Tooltip_Text>
 		<Health>450.0</Health>
 		<Repair_Cost_Per_Frame>1.5</Repair_Cost_Per_Frame>
-<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
+		<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
 
 		<Death_Explosion_Particles>Large_Explosion_Space</Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Mass_Driver_Death</Death_Explosion_SFXEvent>
@@ -4896,7 +4885,7 @@
 		<Fire_Inaccuracy_Distance>Frigate, 5.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Capital, 3.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Super, 1.0</Fire_Inaccuracy_Distance>
-</HardPoint>
+	</HardPoint>
 
 	<HardPoint Name="HP_Underworld_Station_L5_Plasma_01">
 		<Type>HARD_POINT_WEAPON_SPECIAL</Type>
@@ -4906,26 +4895,26 @@
 		<Health>500.0</Health>
 		
 		<Repair_Cost_Per_Frame>1.5</Repair_Cost_Per_Frame>
-<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
+		<Repair_Amount_Per_Frame>.53</Repair_Amount_Per_Frame>
 
 		<Death_Explosion_Particles>Large_Explosion_Space</Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Ion_Death</Death_Explosion_SFXEvent>
 
-<Attachment_Bone>HP05_PC_BONE</Attachment_Bone>
-<Collision_Mesh>HP05_PC_COLL</Collision_Mesh>
-<Damage_Decal>HP05_PC_BLAST</Damage_Decal>
-<Damage_Particles>HP05_PC_EMITDAMAGE</Damage_Particles>
+		<Attachment_Bone>HP05_PC_BONE</Attachment_Bone>
+		<Collision_Mesh>HP05_PC_COLL</Collision_Mesh>
+		<Damage_Decal>HP05_PC_BLAST</Damage_Decal>
+		<Damage_Particles>HP05_PC_EMITDAMAGE</Damage_Particles>
 
-<Fire_Bone_A>FP05_PC_00</Fire_Bone_A>
-<Fire_Bone_B>FP05_PC_01</Fire_Bone_B>
-<Fire_Cone_Width>180.0</Fire_Cone_Width>
-<Fire_Cone_Height>180.0</Fire_Cone_Height>
-<Fire_Projectile_Type>Proj_Plasma_Space_Turret_Blast</Fire_Projectile_Type>
-<Fire_Min_Recharge_Seconds>3.0</Fire_Min_Recharge_Seconds>
-<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
-<Fire_Pulse_Count>5</Fire_Pulse_Count>
-<Fire_Pulse_Delay_Seconds>0.6</Fire_Pulse_Delay_Seconds>
-<Fire_Range_Distance>1900.0</Fire_Range_Distance>
+		<Fire_Bone_A>FP05_PC_00</Fire_Bone_A>
+		<Fire_Bone_B>FP05_PC_01</Fire_Bone_B>
+		<Fire_Cone_Width>180.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Plasma_Space_Turret_Blast</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>3.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>5</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.6</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1900.0</Fire_Range_Distance>
 		<Fire_SFXEvent>Unit_Turret_Fire</Fire_SFXEvent>
 
 		<Fire_Inaccuracy_Distance>Fighter, 70.0</Fire_Inaccuracy_Distance>
@@ -4935,74 +4924,72 @@
 		<Fire_Inaccuracy_Distance>Frigate, 20.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Capital, 15.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Super, 20.0</Fire_Inaccuracy_Distance>
-			
-</HardPoint>
+	</HardPoint>
 
 	<HardPoint Name="HP_Underworld_Station_L5_PRT_02">
 		<Type>HARD_POINT_WEAPON_TORPEDO</Type>
-<Is_Targetable>Yes</Is_Targetable>
-<Is_Destroyable>Yes</Is_Destroyable>
-<Tooltip_Text>TEXT_WEAPON_TORPEDOES</Tooltip_Text>
-<Health>450.0</Health>
-<Repair_Cost_Per_Frame>1.0</Repair_Cost_Per_Frame>
-<Repair_Amount_Per_Frame>2.0</Repair_Amount_Per_Frame>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TORPEDOES</Tooltip_Text>
+		<Health>450.0</Health>
+		<Repair_Cost_Per_Frame>1.0</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>2.0</Repair_Amount_Per_Frame>
 
 		<Death_Explosion_Particles>Large_Explosion_Space_Empire</Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Torpedo_Death</Death_Explosion_SFXEvent>
 
-<Model_To_Attach>UB_05_STATION_HP05_PT.ALO</Model_To_Attach>
-<Attachment_Bone>HP05_PT_BONE</Attachment_Bone>
-<Collision_Mesh>HP05_PT_COLL</Collision_Mesh>
-<Damage_Decal>HP05_PT_BLAST</Damage_Decal>
-<Damage_Particles>HP05_PT_EMITDAMAGE</Damage_Particles>
+		<Model_To_Attach>UB_05_STATION_HP05_PT.ALO</Model_To_Attach>
+		<Attachment_Bone>HP05_PT_BONE</Attachment_Bone>
+		<Collision_Mesh>HP05_PT_COLL</Collision_Mesh>
+		<Damage_Decal>HP05_PT_BLAST</Damage_Decal>
+		<Damage_Particles>HP05_PT_EMITDAMAGE</Damage_Particles>
 
 		<Death_Breakoff_Prop>Hardpoint_Breakoff_U_Station_L5_Torp</Death_Breakoff_Prop>
 
-<Fire_Bone_A>FP05_PT_00</Fire_Bone_A>
-<Fire_Bone_B>FP05_PT_01</Fire_Bone_B>
-<Fire_Cone_Width>360.0</Fire_Cone_Width>
-<Fire_Cone_Height>360.0</Fire_Cone_Height>
-<Fire_Projectile_Type>Proj_Ship_Proton_Torpedo</Fire_Projectile_Type>
-<Fire_Min_Recharge_Seconds>8.0</Fire_Min_Recharge_Seconds>
-<Fire_Max_Recharge_Seconds>8.0</Fire_Max_Recharge_Seconds>
-<Fire_Pulse_Count>3</Fire_Pulse_Count>
-<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
-<Fire_Range_Distance>2200.0</Fire_Range_Distance>
+		<Fire_Bone_A>FP05_PT_00</Fire_Bone_A>
+		<Fire_Bone_B>FP05_PT_01</Fire_Bone_B>
+		<Fire_Cone_Width>360.0</Fire_Cone_Width>
+		<Fire_Cone_Height>360.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Proton_Torpedo</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>8.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>8.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>3</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2200.0</Fire_Range_Distance>
 		<Fire_SFXEvent>Unit_Torpedo_Fire</Fire_SFXEvent>
 
 		<Fire_Category_Restrictions>Fighter, Bomber, Transport</Fire_Category_Restrictions>
-
-</HardPoint>
+	</HardPoint>
 
 	<HardPoint Name="HP_Underworld_Station_L5_TBL_03">
 		<Type>HARD_POINT_WEAPON_LASER</Type>
-<Is_Targetable>Yes</Is_Targetable>
-<Is_Destroyable>Yes</Is_Destroyable>
-<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
-<Health>450.0</Health>
-<Repair_Cost_Per_Frame>1.0</Repair_Cost_Per_Frame>
-<Repair_Amount_Per_Frame>2.0</Repair_Amount_Per_Frame>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>450.0</Health>
+		<Repair_Cost_Per_Frame>1.0</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>2.0</Repair_Amount_Per_Frame>
 
 		<Death_Breakoff_Prop>Hardpoint_Breakoff_U_Station_L5_Turbolaser</Death_Breakoff_Prop>
 		<Death_Explosion_Particles>Large_Explosion_Space</Death_Explosion_Particles>
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
 
-<Model_To_Attach>UB_05_STATION_HP05_TBL.ALO</Model_To_Attach>
-<Attachment_Bone>HP05_TBL_BONE</Attachment_Bone>
-<Collision_Mesh>HP05_TBL_COLL</Collision_Mesh>
-<Damage_Decal>HP05_TBL_BLAST</Damage_Decal>
-<Damage_Particles>HP05_TBL_EMITDAMAGE</Damage_Particles>
+		<Model_To_Attach>UB_05_STATION_HP05_TBL.ALO</Model_To_Attach>
+		<Attachment_Bone>HP05_TBL_BONE</Attachment_Bone>
+		<Collision_Mesh>HP05_TBL_COLL</Collision_Mesh>
+		<Damage_Decal>HP05_TBL_BLAST</Damage_Decal>
+		<Damage_Particles>HP05_TBL_EMITDAMAGE</Damage_Particles>
 
-<Fire_Bone_A>FP05_TBL_00</Fire_Bone_A>
-<Fire_Bone_B>FP05_TBL_01</Fire_Bone_B>
-<Fire_Cone_Width>160.0</Fire_Cone_Width>
-<Fire_Cone_Height>160.0</Fire_Cone_Height>
-<Fire_Projectile_Type>Proj_Ship_Turbolaser_Red</Fire_Projectile_Type>
-<Fire_Min_Recharge_Seconds>3.0</Fire_Min_Recharge_Seconds>
-<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
-<Fire_Pulse_Count>6</Fire_Pulse_Count>
-<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
-<Fire_Range_Distance>2200.0</Fire_Range_Distance>
+		<Fire_Bone_A>FP05_TBL_00</Fire_Bone_A>
+		<Fire_Bone_B>FP05_TBL_01</Fire_Bone_B>
+		<Fire_Cone_Width>160.0</Fire_Cone_Width>
+		<Fire_Cone_Height>160.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Red</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>3.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>6</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2200.0</Fire_Range_Distance>
 		<Fire_SFXEvent>Unit_Underworld_Turbo_Fire</Fire_SFXEvent>
 
 		<Fire_Inaccuracy_Distance>Fighter, 70.0</Fire_Inaccuracy_Distance>
@@ -5012,8 +4999,7 @@
 		<Fire_Inaccuracy_Distance>Frigate, 10.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Capital, 10.0</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Super, 1.0</Fire_Inaccuracy_Distance>
-			
-</HardPoint>
+	</HardPoint>
 
 
 	<!-- VENGANCE-class -->

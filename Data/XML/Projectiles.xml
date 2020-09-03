@@ -1,30 +1,21 @@
 <?xml version="1.0"?>
 <Projectiles>
-
-
-
-
-	<!-- PLEASE do not mix and match projectiles from different categories. Use the   -->
-	<!-- correct projectile type for the unit type you are working on - this helps    -->
-	<!-- with balance issues.  THANKS!	                                              -->
-	
-	
-	
-	
-	
-	<!-- Space Ship Projectiles USE THESE ONLY FOR SPACE UNITS!!!-->
-
+	<!-- ========== Space Ship Projectiles (ONLY FOR SPACE UNITS) ========== -->
 	<Projectile Name="Proj_Ship_Small_Laser_Cannon_Generic" Description="Generic small space-based laser bolt template">
-		<Text_ID />
 		<Projectile_Custom_Render>1</Projectile_Custom_Render>
-		<Projectile_Width>1.0</Projectile_Width>
-		<Projectile_Length>6.0</Projectile_Length>
-		<Scale_Factor>1.0</Scale_Factor>
-		<Max_Speed>11.0</Max_Speed>
-		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
-		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+
+		<Text_ID />
+		<Projectile_Width>1.00</Projectile_Width>
+		<Projectile_Length>6.00</Projectile_Length>
+		<Scale_Factor>1.00</Scale_Factor>
+
+		<Max_Speed>11.00</Max_Speed>
+		<Max_Rate_Of_Turn>0.00</Max_Rate_Of_Turn>
+
 		<Projectile_Category>Laser</Projectile_Category>
-		<Projectile_Max_Flight_Distance>500.0</Projectile_Max_Flight_Distance>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+
+		<Projectile_Max_Flight_Distance>500.00</Projectile_Max_Flight_Distance>
 		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
 		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
 		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
@@ -34,28 +25,31 @@
 		<Projectile_Lifetime_Detonation_Particle />
 		<Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Small</Projectile_Absorbed_By_Shields_Particle>
 		<Projectile_Ground_Detonation_SurfaceFX>PROJECTILE</Projectile_Ground_Detonation_SurfaceFX>
-		<Projectile_SFXEvent_Detonate> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate>
-		<Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+		<Projectile_SFXEvent_Detonate>SFX_Small_Damage_Detonation</Projectile_SFXEvent_Detonate>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor>SFX_Small_Damage_Detonation</Projectile_SFXEvent_Detonate_Reduced_By_Armor>
 	</Projectile>
 
 
 	<Projectile Name="Proj_Ship_Small_Laser_Cannon_Red" Description="Rebel small space-based laser bolt">
 		<Variant_Of_Existing_Type>Proj_Ship_Small_Laser_Cannon_Generic</Variant_Of_Existing_Type>
+
 		<Space_Model_Name>W_LASER_SMALL.ALO</Space_Model_Name>
 		<Projectile_Texture_Slot>0,0</Projectile_Texture_Slot>
-		<Projectile_Damage>5.0</Projectile_Damage>
+		<Projectile_Damage>5.00</Projectile_Damage>
 		<Projectile_Energy_Per_Shot>5</Projectile_Energy_Per_Shot>
 		<AI_Combat_Power>120</AI_Combat_Power>
 	</Projectile>
 
 	<Projectile Name="Proj_Ship_Small_Laser_Cannon_Red_X2" Description="Rebel small space-based laser bolt w/ boosted damage">
 		<Variant_Of_Existing_Type>Proj_Ship_Small_Laser_Cannon_Red</Variant_Of_Existing_Type>
+
 		<Projectile_Damage>6.0</Projectile_Damage>
 		<AI_Combat_Power>150</AI_Combat_Power>
 	</Projectile>
 	
 	<Projectile Name="Proj_Ship_Small_Laser_Cannon_Green" Description="Empire small space-based laser bolt">
 		<Variant_Of_Existing_Type>Proj_Ship_Small_Laser_Cannon_Generic</Variant_Of_Existing_Type>
+
 		<Space_Model_Name>W_LASER_SMALLG.ALO</Space_Model_Name>
 		<Projectile_Texture_Slot>3,0</Projectile_Texture_Slot>
 		<Projectile_Damage>5.0</Projectile_Damage>
