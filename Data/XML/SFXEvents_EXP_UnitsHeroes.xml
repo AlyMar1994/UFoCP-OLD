@@ -2110,7 +2110,7 @@
 
 					 <SFXEvent Name="Unit_Produce_Troops_Arc_Hammer">
 							 <Use_Preset>Preset_UR</Use_Preset>
-							 <Samples>U000_ARC3101_ENG.wav U000_ARC3102_ENG.wav U000_ARC3103_ENG.wav U000_ARC3104_ENG.wav </Samples>
+							 <Samples>U000_ARC3201_ENG.wav, U000_ARC3202_ENG.wav, U000_ARC3203_ENG.wav, U000_ARC3204_ENG.wav </Samples>
 								 <Localize> Yes </Localize>
 								 <Play_Sequentially> Yes </Play_Sequentially>
 								 <Text_ID>TEXT_SFX_ARC_PRODUCE_TROOPS_1, TEXT_SFX_ARC_PRODUCE_TROOPS_2, TEXT_SFX_ARC_PRODUCE_TROOPS_3, TEXT_SFX_ARC_PRODUCE_TROOPS_4</Text_ID>
@@ -2119,7 +2119,7 @@
 
 					 <SFXEvent Name="Unit_Complete_Troops_Arc_Hammer">
 							 <Use_Preset>Preset_UR</Use_Preset>
-							 <Samples> U000_ARC3105_ENG.wav U000_ARC3106_ENG.wav</Samples>
+							 <Samples> U000_ARC3205_ENG.wav, U000_ARC3206_ENG.wav</Samples>
 								 <Localize> Yes </Localize>
 								 <Play_Sequentially> Yes </Play_Sequentially>
 								 <Text_ID> TEXT_SFX_ARC_PRODUCE_TROOPS_5, TEXT_SFX_ARC_PRODUCE_TROOPS_6</Text_ID>
