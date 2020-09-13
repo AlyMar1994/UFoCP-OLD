@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <Mega_Files>
+	<Info Name="UFoCP" Version="1.12.0" />
 	<File>Data\RussianSpeech.meg</File>
 	<File>Data\FrenchSpeech.meg</File>
 	<File>Data\Config.meg</File>

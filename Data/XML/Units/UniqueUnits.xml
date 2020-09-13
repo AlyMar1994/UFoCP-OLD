@@ -1360,8 +1360,8 @@
 		<FormationGrouping>Solo</FormationGrouping>
 		<MinimumPushReturnDistance>100</MinimumPushReturnDistance>
 		<Min_Speed>.10</Min_Speed>
-		<MovementPredictionInterval>5.00</MovementPredictionInterval>		
-		<MovementBoxExpansionFactor>8.00</MovementBoxExpansionFactor>	
+		<MovementPredictionInterval>5.00</MovementPredictionInterval>
+		<MovementBoxExpansionFactor>8.00</MovementBoxExpansionFactor>
 
 		<!-- <Is_Sprite>No</Is_Sprite> -->
 		<Type>Walk</Type>

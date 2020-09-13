@@ -36,19 +36,24 @@ UFoCP
 ==================
 -Reverted all AI files regarding the <Should_Build_EM_Field_Generator> equations from v1.11. As it turns out, aparently the Empire has a MDU device, named the "EM Field Generator," which disrupts missiles, and not the Underworld repulsorlift field jammer. What a world.
 
--(PE) BasicLandEquations – Modified <Should_Destroy_Structure> and <Should_Destroy_Turbolaser> equations to account for Underworld turbolaser towers.
--(PE) BasicLandEquations – Modified <Has_Vehicle_Hero> to include "Garm_Bel_Iblis_Team" (Rebel Gargantuan battle platform).
+-Changed Underworld slaves and piracy unit file from "Corruption_Special_Units" to "Units_UFoCP_Both_Underworld_CorruptionRewards." No gameplay change other than internal. Name is pending.
 
--(PE) BudgetingEquations – Updated <TechUpgradeBudgetRequirement> to include "Darth_Team_Expansion."
+-Changed MDUs file from "Mobile_Defense_Units" to "Units_Land_All_MDUs." No gameplay change other than internal.
 
 
 ==================
 General
 ==================
--Reworked Underworld slaves and piracy unit file from "Corruption_Special_Units" to "Units_UFoCP_Both_Underworld_CorruptionRewards." No gameplay change other than internal. Name is pending.
--Reworked MDUs file from "Mobile_Defense_Units" to "Units_Land_All_MDUs." No gameplay change other than internal.
-
 -Units_UFoCP_Both_Underworld_CorruptionRewards – Greatly simplified the file by making all slaves/piracy rewards a variant of their (respective) original units, with some modifications.
+
+
+==================
+A.I.
+==================
+-(PE) BasicLandEquations – Modified <Should_Destroy_Structure> and <Should_Destroy_Turbolaser> equations to account for Underworld turbolaser towers.
+-(PE) BasicLandEquations – Modified <Has_Vehicle_Hero> to include "Garm_Bel_Iblis_Team" (Rebel Gargantuan battle platform), and IG-88. The equation marks whether or not the AI has these heroes, should they (in the future) need to build a vehicle repair bay, which Garm Bel and IG-88 can only be "healed" by.
+
+-(PE) BudgetingEquations – Updated <TechUpgradeBudgetRequirement> to include "Darth_Team_Expansion."
 
 
 ==================

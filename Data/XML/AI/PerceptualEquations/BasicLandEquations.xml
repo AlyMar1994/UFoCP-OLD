@@ -1,4 +1,4 @@
-<?xml version="1.0" ?>
+<?xml version="1.0"?>
 <Equations>
 	<!-- Certain plans are disallowed as a defender.  These plans are allowed if
 	It's a skirmish game
@@ -23,7 +23,7 @@
 	<Allowed_As_Defender_Land>
 		(Game.IsCampaignGame == 0)
 		+
-		(Game.IsCampaignGame == 1)	
+		(Game.IsCampaignGame == 1)
 		*
 		(
 			(1 - Variable_Self.IsDefender)
@@ -50,7 +50,7 @@
 	-->
 
 
-	<!-- 	
+	<!--
 		Zero if it's disallowed
 
 			The notion is that when ever enemy weaknesses are presented, we capitolize upon them.  Therefore,
@@ -66,8 +66,7 @@
 
 			+
 			2.0 * (Variable_Target.ContainsHero)
-
-		-->
+	-->
 	<Should_Destroy_Land_Unit>
 		Function_Allowed_As_Defender_Land.Evaluate
 		*
@@ -88,8 +87,6 @@
 		)
 	</Should_Destroy_Land_Unit>
 
-	<!--
-	-->
 	<Should_Clear_Infantry>
 		Function_Allowed_As_Defender_Land.Evaluate
 		*
@@ -380,13 +377,20 @@
 		Are there plenty of enemy units near the target?
 	-->
 	<Should_Bomb>
-		(1 - Variable_Self.IsDifficulty{Parameter_Difficulty_Level_Type = DifficultyLevelType[Easy]})	*
-		50.0 *
-		Variable_Self.IsBombingRunAvailable *
-		(Variable_Target.ForceUnnormalized {Parameter_Category = GameObjectCategoryType[AntiAir]} == 0.0) *
-		(1.0 - (Variable_Target.Location.EnemyForceUnnormalized {Parameter_Category = GameObjectCategoryType[AntiAir]} > 500.0)) *
-		(1.0 - (Variable_Self.EnemyForceUnnormalized {Parameter_Category = GameObjectCategoryType[AntiAir]} > 3000.0)) *
-		Variable_Target.Location.EnemyUnitConcentration *
+		(1 - Variable_Self.IsDifficulty{Parameter_Difficulty_Level_Type = DifficultyLevelType[Easy]})
+		*
+		50.0
+		*
+		Variable_Self.IsBombingRunAvailable
+		*
+		(Variable_Target.ForceUnnormalized { Parameter_Category = GameObjectCategoryType[AntiAir] } == 0.0)
+		*
+		(1.0 - (Variable_Target.Location.EnemyForceUnnormalized {Parameter_Category = GameObjectCategoryType[AntiAir]} > 500.0))
+		*
+		(1.0 - (Variable_Self.EnemyForceUnnormalized {Parameter_Category = GameObjectCategoryType[AntiAir]} > 3000.0))
+		*
+		Variable_Target.Location.EnemyUnitConcentration
+		*
 		Variable_Target.IsValidBombingTarget
 	</Should_Bomb>
 
@@ -403,12 +407,12 @@
 		UNUSED
 	-->
 	<Need_AntiVehicle_Turret>
-		Variable_Target.Type.IsType {Parameter_Type = "Skirmish_Build_Pad"
+		Variable_Target.Type.IsType { Parameter_Type = "Skirmish_Build_Pad"
 										,Parameter_Type = "Rebel_Build_Pad" 
 										,Parameter_Type = "Empire_Build_Pad"
 										,Parameter_Type = "Underworld_Build_Pad"
 										,Parameter_Type = "Rebel_Build_Pad_Offensive"
-										,Parameter_Type = "Empire_Build_Pad_Offensive"		
+										,Parameter_Type = "Empire_Build_Pad_Offensive"
 										,Parameter_Type = "Underworld_Build_Pad_Offensive" }
 		*
 		(1 - Variable_Target.HasBuiltObject)
@@ -449,15 +453,13 @@
 
 
 
-	<!-- 
-	-->
 	<Need_AntiAir_Turret>
-		Variable_Target.Type.IsType {Parameter_Type = "Skirmish_Build_Pad"
+		Variable_Target.Type.IsType { Parameter_Type = "Skirmish_Build_Pad"
 										,Parameter_Type = "Rebel_Build_Pad" 
 										,Parameter_Type = "Empire_Build_Pad"
 										,Parameter_Type = "Underworld_Build_Pad"
 										,Parameter_Type = "Rebel_Build_Pad_Offensive"
-										,Parameter_Type = "Empire_Build_Pad_Offensive"		
+										,Parameter_Type = "Empire_Build_Pad_Offensive"
 										,Parameter_Type = "Underworld_Build_Pad_Offensive" }
 		*
 		(1 - Variable_Target.HasBuiltObject)
@@ -599,26 +601,27 @@
 	</Need_Bacta_Tank>
 
 	<Has_Infantry_Hero>
-		Variable_Self.HasUnit { Parameter_Type = "Emperor_Palpatine"
-								,Parameter_Type = "Boba_Fett"
-								,Parameter_Type = "Han_Solo"
-								,Parameter_Type = "Chewbacca"
-								,Parameter_Type = "Mara_Jade"
-								,Parameter_Type = "Obi_Wan_Kenobi"
-								,Parameter_Type = "Darth_Vader_Expansion"
-								,Parameter_Type = "Kyle_Katarn"
-								,Parameter_Type = "Tyber_Zann"
-								,Parameter_Type = "Silri"
-								,Parameter_Type = "Urai_Fen"
-								,Parameter_Type = "Bossk"
-								,Parameter_Type = "Luke_Skywalker_Jedi"
-								,Parameter_Type = "Yoda" }
+		Variable_Self.HasUnit { Parameter_Type = "Emperor_Palpatine",
+								Parameter_Type = "Boba_Fett",
+								Parameter_Type = "Han_Solo",
+								Parameter_Type = "Chewbacca",
+								Parameter_Type = "Mara_Jade",
+								Parameter_Type = "Obi_Wan_Kenobi",
+								Parameter_Type = "Darth_Vader_Expansion",
+								Parameter_Type = "Kyle_Katarn",
+								Parameter_Type = "Tyber_Zann",
+								Parameter_Type = "Silri",
+								Parameter_Type = "Urai_Fen",
+								Parameter_Type = "Bossk",
+								Parameter_Type = "Luke_Skywalker_Jedi",
+								Parameter_Type = "Yoda" }
 	</Has_Infantry_Hero>
 
 	<Has_Vehicle_Hero>
 		Variable_Self.HasUnit { Parameter_Type = "General_Veers",
 								Parameter_Type = "Tactical_R2_3PO_Team",
-								Parameter_Type = "Garm_Bel_Iblis_Team" }
+								Parameter_Type = "Garm_Bel_Iblis_Team",
+								Parameter_Type = "IG88_Team" }
 	</Has_Vehicle_Hero>
 
 	<!-- 
@@ -636,7 +639,7 @@
 												,Parameter_Type = "Empire_Build_Pad"
 												,Parameter_Type = "Underworld_Build_Pad"
 												,Parameter_Type = "Rebel_Build_Pad_Defensive"
-												,Parameter_Type = "Empire_Build_Pad_Defensive"		
+												,Parameter_Type = "Empire_Build_Pad_Defensive"
 												,Parameter_Type = "Underworld_Build_Pad_Defensive" }
 		*
 		(1 - Variable_Target.HasBuiltObject)
@@ -950,7 +953,7 @@
 					,3
 				)
 		*
-		(1.0 - Function_May_Lose_Land_Control_Game.Evaluate)		
+		(1.0 - Function_May_Lose_Land_Control_Game.Evaluate)
 	</Need_To_Patrol_Land>
 
 	<!-- A high desire emergency response plan for reacting to a structure taking fire.
@@ -983,8 +986,7 @@
 					+
 					Variable_Target.Location.EnemyForce
 					,0
-					,20)	
-
+					,20)
 	</Need_To_PreDefend_Structure>
 
 	<!--
@@ -1001,7 +1003,8 @@
 		(
 			(1 - Variable_Self.IsDefender)
 			+
-			(Variable_Self.IsDefender) * 
+			(Variable_Self.IsDefender)
+			*
 			(Variable_Self.LandedForceUnnormalized > (Variable_Self.EnemyForceUnnormalized * 3))
 		)
 		+
@@ -1020,8 +1023,6 @@
 		50
 	</Need_To_Ewok_Hunt>
 
-	<!-- 
-	-->
 	<Needs_Magnepulse_Shot>
 		Variable_Target.Force {Parameter_Category = GameObjectCategoryType[Vehicle]}
 		+
