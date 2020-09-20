@@ -1,4 +1,4 @@
-<?xml version="1.0" ?>
+<?xml version="1.0"?>
 <Equations>
 	<!--================== Budgeting for the Empire ==================-->
 	<!-- Fairly balanced with emphasis on offense -->
@@ -56,8 +56,7 @@
 													,Parameter_Type = "Ground_Empire_Hypervelocity_Gun"
 													,Parameter_Type = "Ground_Rebel_Hypervelocity_Gun"
 													,Parameter_Type = "Ground_Magnepulse_Cannon"
-													,Parameter_Type = "Ground_Gravity_Generator"
-													} 
+													,Parameter_Type = "Ground_Gravity_Generator" }
 	</Defensive_Structure_Count>
 
 	<!-- Have we met the desired ratio of defensive structures to planets controlled?
@@ -151,9 +150,6 @@
 			+
 			(Variable_Self.TechLevel == 4) *
 			Variable_Self.BudgetFractionToBuild{Parameter_Type = "DS_Durasteel"}
-			+
-			(Variable_Self.TechLevel == 4) *
-			Variable_Self.BudgetFractionToBuild{Parameter_Type = "Darth_Team_Executor"}
 			+
 			(Variable_Self.TechLevel == 5) *
 			Variable_Self.BudgetFractionToBuild{Parameter_Type = "Death_Star_II"}

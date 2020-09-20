@@ -74,8 +74,8 @@
 		<!-- Misc. -->
 		<Credits_Accumulation_Factor>0.95</Credits_Accumulation_Factor>
 		<Hyperspace_Speed_Factor>0.07</Hyperspace_Speed_Factor>
-		<Planet_Icon_Scale>10.0</Planet_Icon_Scale>
-		<Planet_Icon_Offset>10.0, 10.0, -1.1</Planet_Icon_Offset>
+		<Planet_Icon_Scale>10.00</Planet_Icon_Scale>
+		<Planet_Icon_Offset>10.00, 10.00, -1.10</Planet_Icon_Offset>
 
 		<Allies /> <!-- Shares all tactical information (like Skirmish) in all modes, but is generally broken. -->
 		<Enemies>
@@ -183,6 +183,7 @@
 		<Bombardment_Required_Orbital_Ships>Krayt_Class_Destroyer, The_Peacebringer</Bombardment_Required_Orbital_Ships>
 		<Bombardment_Projectile>Proj_Krayt_Bombardment_Ion, Proj_Krayt_Bombardment_Damage</Bombardment_Projectile>
 		<Bombardment_Particle>Bombard_Particle_Effect</Bombardment_Particle>
+
 		<Bombardment_Number_Of_Salvos>2</Bombardment_Number_Of_Salvos>
 		<Bombardment_Shots_Per_Salvo>1</Bombardment_Shots_Per_Salvo>
 		<Bombardment_Shot_Delay>0.20</Bombardment_Shot_Delay>

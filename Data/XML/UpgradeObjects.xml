@@ -1,276 +1,5 @@
 <?xml version="1.0"?>
 <UpgradeObjects>
-	<!-- ================== REBEL UNIT RESEARCH UPGRADES =================== -->
-	<UpgradeObject Name="RL_Plex_Soldier_Research_Upgrade">
-		<Behavior>DUMMY_UPGRADE</Behavior>
-		<Affiliation>Rebel</Affiliation>
-		<Tactical_Build_Cost_Multiplayer> 350 </Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Cost_Campaign>110</Tactical_Build_Cost_Campaign>
-		<Tactical_Build_Time_Seconds> 20 </Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites />
-		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
-		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
-		<Previous_Upgrade_Level_Type />
-		<Next_Upgrade_Level_Type />
-		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
-		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
-		<Icon_Name>i_button_plex_soldier.tga</Icon_Name>
-
-		<Encyclopedia_Text>TEXT_UPGRADE_TOOLTIP_RL_PLEX_SOLDIER_RESEARCH</Encyclopedia_Text>
-
-		<Text_ID>TEXT_UPGRADE_RL_PLEX_SOLDIER_RESEARCH</Text_ID>
-		<SFXEvent_Build_Started>RHD_Researching</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>RHD_Research_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>RHD_Research_Complete</SFXEvent_Build_Complete>
-		<CategoryMask>Upgrade</CategoryMask>
-	</UpgradeObject>
-
-	<UpgradeObject Name="RL_Infiltrator_Research_Upgrade">
-		<Behavior>DUMMY_UPGRADE</Behavior>
-		<Affiliation>Rebel</Affiliation>
-		<Tactical_Build_Cost_Multiplayer> 450 </Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Cost_Campaign>90</Tactical_Build_Cost_Campaign>
-		<Tactical_Build_Time_Seconds> 23 </Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites />
-		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
-		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
-		<Previous_Upgrade_Level_Type />
-		<Next_Upgrade_Level_Type />
-		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
-		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
-		<Icon_Name>i_button_Infiltrator_Production_Upgrade.tga</Icon_Name>
-		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_RL_INFILTRATOR_RESEARCH  </Encyclopedia_Text>
-		<Text_ID>TEXT_UPGRADE_RL_INFILTRATOR_RESEARCH</Text_ID>
-		<SFXEvent_Build_Started>RHD_Researching</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>RHD_Research_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>RHD_Research_Complete</SFXEvent_Build_Complete>
-		<CategoryMask>Upgrade</CategoryMask>
-	</UpgradeObject>
-
-	<UpgradeObject Name="RL_T2B_Research_Upgrade">
-		<Behavior>DUMMY_UPGRADE</Behavior>
-		<Affiliation>Rebel</Affiliation>
-		<Tactical_Build_Cost_Multiplayer> 750 </Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Cost_Campaign>150</Tactical_Build_Cost_Campaign>
-		<Tactical_Build_Time_Seconds> 23 </Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites />
-		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
-		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
-		<Previous_Upgrade_Level_Type />
-		<Next_Upgrade_Level_Type />
-		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
-		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
-		<Icon_Name>i_button_t-1b_repulsor_tank.tga</Icon_Name>
-		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_RL_T2B_RESEARCH  </Encyclopedia_Text>
-		<Text_ID>TEXT_UPGRADE_RL_T2B_RESEARCH</Text_ID>
-		<SFXEvent_Build_Started>RHD_Researching</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>RHD_Research_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>RHD_Research_Complete</SFXEvent_Build_Complete>
-		<CategoryMask>Upgrade</CategoryMask>
-	</UpgradeObject>
-
-	<UpgradeObject Name="RL_Snowspeeder_Research_Upgrade">
-		<Behavior>DUMMY_UPGRADE</Behavior>
-		<Affiliation>Rebel</Affiliation>
-		<Tactical_Build_Cost_Multiplayer> 850 </Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Cost_Campaign>180</Tactical_Build_Cost_Campaign>
-		<Tactical_Build_Time_Seconds> 25 </Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites />
-		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
-		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
-		<Previous_Upgrade_Level_Type />
-		<Next_Upgrade_Level_Type />
-		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
-		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
-		<Icon_Name>i_button_rebel_speeder.tga</Icon_Name>
-		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_RL_SNOWSPEEDER_RESEARCH  </Encyclopedia_Text>
-		<Text_ID>TEXT_UPGRADE_RL_SNOWSPEEDER_RESEARCH</Text_ID>
-		<SFXEvent_Build_Started>RHD_Researching</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>RHD_Research_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>RHD_Research_Complete</SFXEvent_Build_Complete>
-		<CategoryMask>Upgrade</CategoryMask>
-	</UpgradeObject>
-
-	<UpgradeObject Name="RL_T4B_Research_Upgrade">
-		<Behavior>DUMMY_UPGRADE</Behavior>
-		<Affiliation>Rebel</Affiliation>
-		<Tactical_Build_Cost_Multiplayer> 1250 </Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Cost_Campaign>280</Tactical_Build_Cost_Campaign>
-		<Tactical_Build_Time_Seconds> 30 </Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites />
-		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
-		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
-		<Previous_Upgrade_Level_Type />
-		<Next_Upgrade_Level_Type />
-		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
-		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
-		<Icon_Name>i_button_t-3b_repulsor_tank.tga</Icon_Name>
-		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_RL_T4B_RESEARCH  </Encyclopedia_Text>
-		<Text_ID>TEXT_UPGRADE_RL_T4B_RESEARCH</Text_ID>
-		<SFXEvent_Build_Started>RHD_Researching</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>RHD_Research_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>RHD_Research_Complete</SFXEvent_Build_Complete>
-		<CategoryMask>Upgrade</CategoryMask>
-  	</UpgradeObject>
-
-	<UpgradeObject Name="RL_MPTL_Research_Upgrade">
-		<Behavior>DUMMY_UPGRADE</Behavior>
-		<Affiliation>Rebel</Affiliation>
-		<Tactical_Build_Cost_Multiplayer> 1000 </Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Cost_Campaign>240</Tactical_Build_Cost_Campaign>
-		<Tactical_Build_Time_Seconds> 30 </Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites />
-		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
-		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
-		<Previous_Upgrade_Level_Type />
-		<Next_Upgrade_Level_Type />
-		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
-		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
-		<Icon_Name>i_button_MPTL_Tank.tga</Icon_Name>
-		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_RL_MPTL_RESEARCH  </Encyclopedia_Text>
-		<Text_ID>TEXT_UPGRADE_RL_MPTL_RESEARCH</Text_ID>
-		<SFXEvent_Build_Started>RHD_Researching</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>RHD_Research_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>RHD_Research_Complete</SFXEvent_Build_Complete>
-		<CategoryMask>Upgrade</CategoryMask>
-  	</UpgradeObject>
-
-
-
-	<!-- ================== EMPIRE UNIT RESEARCH UPGRADES =================== -->
-	<UpgradeObject Name="EL_Scout_Trooper_Research_Upgrade">
-		<Behavior>DUMMY_UPGRADE</Behavior>
-		<Affiliation>Empire</Affiliation>
-		<Tactical_Build_Cost_Multiplayer> 325 </Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Cost_Campaign>110</Tactical_Build_Cost_Campaign>
-		<Tactical_Build_Time_Seconds> 15 </Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites />
-		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
-		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
-		<Previous_Upgrade_Level_Type />
-		<Next_Upgrade_Level_Type />
-		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
-		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
-		<Icon_Name>i_button_scout_trooper.tga</Icon_Name>
-		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_EL_SCOUT_TROOPER_RESEARCH  </Encyclopedia_Text>
-		<Text_ID>TEXT_UPGRADE_EL_SCOUT_TROOPER_RESEARCH</Text_ID>
-		<SFXEvent_Build_Started>EHD_Researching</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>EHD_Research_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>EHD_Research_Complete</SFXEvent_Build_Complete>
-		<CategoryMask>Upgrade</CategoryMask>
-  	</UpgradeObject>
-
-	<UpgradeObject Name="EL_ATAA_Research_Upgrade">
-		<Behavior>DUMMY_UPGRADE</Behavior>
-		<Affiliation>Empire</Affiliation>
-		<Tactical_Build_Cost_Multiplayer> 650 </Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Cost_Campaign>120</Tactical_Build_Cost_Campaign>
-		<Tactical_Build_Time_Seconds> 18 </Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites />
-		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
-		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
-		<Previous_Upgrade_Level_Type />
-		<Next_Upgrade_Level_Type />
-		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
-		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
-		<Icon_Name>i_button_ataa.tga</Icon_Name>
-		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_EL_ATAA_RESEARCH  </Encyclopedia_Text>
-		<Text_ID>TEXT_UPGRADE_EL_ATAA_RESEARCH</Text_ID>
-		<SFXEvent_Build_Started>EHD_Researching</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>EHD_Research_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>EHD_Research_Complete</SFXEvent_Build_Complete>
-		<CategoryMask>Upgrade</CategoryMask>
-  	</UpgradeObject>
-
-	<UpgradeObject Name="EL_ATST_Research_Upgrade">
-		<Behavior>DUMMY_UPGRADE</Behavior>
-		<Affiliation>Empire</Affiliation>
-		<Tactical_Build_Cost_Multiplayer> 800 </Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Cost_Campaign>180</Tactical_Build_Cost_Campaign>
-		<Tactical_Build_Time_Seconds> 23 </Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites />
-		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
-		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
-		<Previous_Upgrade_Level_Type />
-		<Next_Upgrade_Level_Type />
-		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
-		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
-		<Icon_Name>i_button_atst.tga</Icon_Name>
-		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_EL_ATST_RESEARCH  </Encyclopedia_Text>
-		<Text_ID>TEXT_UPGRADE_EL_ATST_RESEARCH</Text_ID>
-		<SFXEvent_Build_Started>EHD_Researching</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>EHD_Research_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>EHD_Research_Complete</SFXEvent_Build_Complete>
-		<CategoryMask>Upgrade</CategoryMask>
-  	</UpgradeObject>
-
-	<UpgradeObject Name="EL_M1_Tank_Research_Upgrade">
-		<Behavior>DUMMY_UPGRADE</Behavior>
-		<Affiliation>Empire</Affiliation>
-		<Tactical_Build_Cost_Multiplayer> 750</Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Cost_Campaign>200</Tactical_Build_Cost_Campaign>
-		<Tactical_Build_Time_Seconds> 25 </Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites />
-		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
-		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
-		<Previous_Upgrade_Level_Type />
-		<Next_Upgrade_Level_Type />
-		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
-		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
-		<Icon_Name>i_button_1-m_med_repulsor_tank.tga</Icon_Name>
-		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_EL_M1_TANK_RESEARCH  </Encyclopedia_Text>
-		<Text_ID>TEXT_UPGRADE_EL_M1_TANK_RESEARCH</Text_ID>
-		<SFXEvent_Build_Started>EHD_Researching</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>EHD_Research_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>EHD_Research_Complete</SFXEvent_Build_Complete>
-		<CategoryMask>Upgrade</CategoryMask>
-  	</UpgradeObject>
-
-	<UpgradeObject Name="EL_SPMAT_Research_Upgrade">
-		<Behavior>DUMMY_UPGRADE</Behavior>
-		<Affiliation>Empire</Affiliation>
-		<Tactical_Build_Cost_Multiplayer> 1000 </Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Cost_Campaign>290</Tactical_Build_Cost_Campaign>
-		<Tactical_Build_Time_Seconds> 28 </Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites />
-		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
-		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
-		<Previous_Upgrade_Level_Type />
-		<Next_Upgrade_Level_Type />
-		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
-		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
-		<Icon_Name>i_button_spha_t.tga</Icon_Name>
-		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_EL_SPMAT_RESEARCH  </Encyclopedia_Text>
-		<Text_ID>TEXT_UPGRADE_EL_SPMAT_RESEARCH</Text_ID>
-		<SFXEvent_Build_Started>EHD_Researching</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>EHD_Research_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>EHD_Research_Complete</SFXEvent_Build_Complete>
-		<CategoryMask>Upgrade</CategoryMask>
-  	</UpgradeObject>
-
-	<UpgradeObject Name="EL_ATAT_Research_Upgrade">
-		<Behavior>DUMMY_UPGRADE</Behavior>
-		<Affiliation>Empire</Affiliation>
-		<Tactical_Build_Cost_Multiplayer> 1400 </Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Cost_Campaign>360</Tactical_Build_Cost_Campaign>
-		<Tactical_Build_Time_Seconds> 33 </Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites />
-		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
-		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
-		<Previous_Upgrade_Level_Type />
-		<Next_Upgrade_Level_Type />
-		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
-		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
-		<Icon_Name>i_button_atat.tga</Icon_Name>
-		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_EL_ATAT_RESEARCH  </Encyclopedia_Text>
-		<Text_ID>TEXT_UPGRADE_EL_ATAT_RESEARCH</Text_ID>
-		<SFXEvent_Build_Started>EHD_Researching</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>EHD_Research_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>EHD_Research_Complete</SFXEvent_Build_Complete>
-		<CategoryMask>Upgrade</CategoryMask>
-  	</UpgradeObject>
-
-
 	<!-- ================== REBEL LAND MULTIPLAYER GENERAL UPGRADE OBJECTS =================== -->
 
 	<!-- Combat Armor (Level 1): Rebel Troopers take 50% less damage -->
@@ -3616,7 +3345,7 @@
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
 	
-<!-- ================== LAND SKIRMISH COMMAND CENTER TECH UPGRADE OBJECTS =================== -->
+	<!-- ================== LAND SKIRMISH COMMAND CENTER TECH UPGRADE OBJECTS =================== -->
 
 	<UpgradeObject Name="RC_Level_Two_Tech_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
@@ -3792,10 +3521,10 @@
 		<Is_Community_Property>Yes</Is_Community_Property>
 	</UpgradeObject>
 	
-<!-- **************ONE OFF UPGRADES FOR MERCENARY OUTFITTER**************** -->
-<!-- ****************THESE UPGRADES HAVE NO PRE-REQUESITES***************** -->
+	<!-- **************ONE OFF UPGRADES FOR MERCENARY OUTFITTER**************** -->
+	<!-- ****************THESE UPGRADES HAVE NO PRE-REQUESITES***************** -->
 
-<!-- Increased Mobility: Stormtroopers move 30% faster. -->
+	<!-- Increased Mobility: Stormtroopers move 30% faster. -->
 	<UpgradeObject Name="EL_Increased_Mobility_Upgrade_NoPre">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Empire</Affiliation>
@@ -3835,7 +3564,7 @@
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
 
-<!-- Stamina Boost: Stormtroopers have 35% more health.-->
+	<!-- Stamina Boost: Stormtroopers have 35% more health.-->
 	<UpgradeObject Name="EL_Stamina_Boost_Upgrade_NoPre">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Empire</Affiliation>
@@ -4324,5 +4053,305 @@
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
 
+	<!-- ========== WHAT ========== -->
+	<!-- I don't know what these upgrades are for, or what they do ~AlyMar1994 -->
+	<UpgradeObject Name="RL_Plex_Soldier_Research_Upgrade">
+		<Text_ID>TEXT_UPGRADE_RL_PLEX_SOLDIER_RESEARCH</Text_ID>
+		<Encyclopedia_Text>TEXT_UPGRADE_TOOLTIP_RL_PLEX_SOLDIER_RESEARCH</Encyclopedia_Text>
+		<Icon_Name>I_Button_Plex_Soldier.tga</Icon_Name>
 
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Rebel</Affiliation>
+
+		<Tactical_Build_Cost_Multiplayer>350</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>110</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+
+		<Previous_Upgrade_Level_Type />
+		<Next_Upgrade_Level_Type />
+		<Show_In_Sidebar_While_Building>Yes</Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete>No</Show_In_Sidebar_When_Complete>
+
+		<SFXEvent_Build_Started>RHD_Researching</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Research_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Research_Complete</SFXEvent_Build_Complete>
+
+		<CategoryMask>Upgrade</CategoryMask>
+	</UpgradeObject>
+
+
+	<UpgradeObject Name="RL_Infiltrator_Research_Upgrade">
+		<Text_ID>TEXT_UPGRADE_RL_INFILTRATOR_RESEARCH</Text_ID>
+		<Encyclopedia_Text>TEXT_UPGRADE_TOOLTIP_RL_INFILTRATOR_RESEARCH</Encyclopedia_Text>
+		<Icon_Name>I_Button_Infiltrator_Production_Upgrade.tga</Icon_Name>
+
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Rebel</Affiliation>
+
+		<Tactical_Build_Cost_Multiplayer>450</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>90</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds>23</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Previous_Upgrade_Level_Type />
+		<Next_Upgrade_Level_Type />
+		<Show_In_Sidebar_While_Building>Yes</Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete>No</Show_In_Sidebar_When_Complete>
+
+		<SFXEvent_Build_Started>RHD_Researching</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Research_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Research_Complete</SFXEvent_Build_Complete>
+
+		<CategoryMask>Upgrade</CategoryMask>
+	</UpgradeObject>
+
+
+	<UpgradeObject Name="RL_T2B_Research_Upgrade">
+		<Text_ID>TEXT_UPGRADE_RL_T2B_RESEARCH</Text_ID>
+		<Encyclopedia_Text>TEXT_UPGRADE_TOOLTIP_RL_T2B_RESEARCH</Encyclopedia_Text>
+		<Icon_Name>I_Button_T-1B_Repulsor_Tank.tga</Icon_Name>
+
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Rebel</Affiliation>
+
+		<Tactical_Build_Cost_Multiplayer>750</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>150</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds>23</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Previous_Upgrade_Level_Type />
+		<Next_Upgrade_Level_Type />
+		<Show_In_Sidebar_While_Building>Yes</Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete>No</Show_In_Sidebar_When_Complete>
+
+		<SFXEvent_Build_Started>RHD_Researching</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Research_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Research_Complete</SFXEvent_Build_Complete>
+
+		<CategoryMask>Upgrade</CategoryMask>
+	</UpgradeObject>
+
+
+	<UpgradeObject Name="RL_Snowspeeder_Research_Upgrade">
+		<Text_ID>TEXT_UPGRADE_RL_SNOWSPEEDER_RESEARCH</Text_ID>
+		<Encyclopedia_Text>TEXT_UPGRADE_TOOLTIP_RL_SNOWSPEEDER_RESEARCH</Encyclopedia_Text>
+		<Icon_Name>I_Button_Rebel_Speeder.tga</Icon_Name>
+
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Rebel</Affiliation>
+
+		<Tactical_Build_Cost_Multiplayer>850</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>180</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Previous_Upgrade_Level_Type />
+		<Next_Upgrade_Level_Type />
+		<Show_In_Sidebar_While_Building>Yes</Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete>No</Show_In_Sidebar_When_Complete>
+
+		<SFXEvent_Build_Started>RHD_Researching</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Research_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Research_Complete</SFXEvent_Build_Complete>
+
+		<CategoryMask>Upgrade</CategoryMask>
+	</UpgradeObject>
+
+
+	<UpgradeObject Name="RL_T4B_Research_Upgrade">
+		<Text_ID>TEXT_UPGRADE_RL_T4B_RESEARCH</Text_ID>
+		<Encyclopedia_Text>TEXT_UPGRADE_TOOLTIP_RL_T4B_RESEARCH</Encyclopedia_Text>
+		<Icon_Name>I_Button_T-3B_Repulsor_Tank.tga</Icon_Name>
+
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer>1250</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>280</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Previous_Upgrade_Level_Type />
+		<Next_Upgrade_Level_Type />
+		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+
+		<SFXEvent_Build_Started>RHD_Researching</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Research_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Research_Complete</SFXEvent_Build_Complete>
+
+		<CategoryMask>Upgrade</CategoryMask>
+	</UpgradeObject>
+
+
+	<UpgradeObject Name="RL_MPTL_Research_Upgrade">
+		<Text_ID>TEXT_UPGRADE_RL_MPTL_RESEARCH</Text_ID>
+		<Icon_Name>I_Button_MPTL_Tank.tga</Icon_Name>
+		<Encyclopedia_Text>TEXT_UPGRADE_TOOLTIP_RL_MPTL_RESEARCH</Encyclopedia_Text>
+
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Rebel</Affiliation>
+
+		<Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>240</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Previous_Upgrade_Level_Type />
+		<Next_Upgrade_Level_Type />
+		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+
+		<SFXEvent_Build_Started>RHD_Researching</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Research_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Research_Complete</SFXEvent_Build_Complete>
+
+		<CategoryMask>Upgrade</CategoryMask>
+	</UpgradeObject>
+
+
+
+	<UpgradeObject Name="EL_Scout_Trooper_Research_Upgrade">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 325 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>110</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 15 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Previous_Upgrade_Level_Type />
+		<Next_Upgrade_Level_Type />
+		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_scout_trooper.tga</Icon_Name>
+		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_EL_SCOUT_TROOPER_RESEARCH  </Encyclopedia_Text>
+		<Text_ID>TEXT_UPGRADE_EL_SCOUT_TROOPER_RESEARCH</Text_ID>
+		<SFXEvent_Build_Started>EHD_Researching</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Research_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Research_Complete</SFXEvent_Build_Complete>
+		<CategoryMask>Upgrade</CategoryMask>
+	</UpgradeObject>
+
+	<UpgradeObject Name="EL_ATAA_Research_Upgrade">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 650 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>120</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 18 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Previous_Upgrade_Level_Type />
+		<Next_Upgrade_Level_Type />
+		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_ataa.tga</Icon_Name>
+		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_EL_ATAA_RESEARCH  </Encyclopedia_Text>
+		<Text_ID>TEXT_UPGRADE_EL_ATAA_RESEARCH</Text_ID>
+		<SFXEvent_Build_Started>EHD_Researching</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Research_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Research_Complete</SFXEvent_Build_Complete>
+		<CategoryMask>Upgrade</CategoryMask>
+	</UpgradeObject>
+
+	<UpgradeObject Name="EL_ATST_Research_Upgrade">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>180</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 23 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Previous_Upgrade_Level_Type />
+		<Next_Upgrade_Level_Type />
+		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_atst.tga</Icon_Name>
+		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_EL_ATST_RESEARCH  </Encyclopedia_Text>
+		<Text_ID>TEXT_UPGRADE_EL_ATST_RESEARCH</Text_ID>
+		<SFXEvent_Build_Started>EHD_Researching</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Research_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Research_Complete</SFXEvent_Build_Complete>
+		<CategoryMask>Upgrade</CategoryMask>
+	</UpgradeObject>
+
+	<UpgradeObject Name="EL_M1_Tank_Research_Upgrade">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 750</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>200</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 25 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Previous_Upgrade_Level_Type />
+		<Next_Upgrade_Level_Type />
+		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_1-m_med_repulsor_tank.tga</Icon_Name>
+		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_EL_M1_TANK_RESEARCH  </Encyclopedia_Text>
+		<Text_ID>TEXT_UPGRADE_EL_M1_TANK_RESEARCH</Text_ID>
+		<SFXEvent_Build_Started>EHD_Researching</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Research_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Research_Complete</SFXEvent_Build_Complete>
+		<CategoryMask>Upgrade</CategoryMask>
+	</UpgradeObject>
+
+	<UpgradeObject Name="EL_SPMAT_Research_Upgrade">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1000 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>290</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 28 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Previous_Upgrade_Level_Type />
+		<Next_Upgrade_Level_Type />
+		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_spha_t.tga</Icon_Name>
+		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_EL_SPMAT_RESEARCH  </Encyclopedia_Text>
+		<Text_ID>TEXT_UPGRADE_EL_SPMAT_RESEARCH</Text_ID>
+		<SFXEvent_Build_Started>EHD_Researching</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Research_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Research_Complete</SFXEvent_Build_Complete>
+		<CategoryMask>Upgrade</CategoryMask>
+	</UpgradeObject>
+
+	<UpgradeObject Name="EL_ATAT_Research_Upgrade">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Empire</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 1400 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>360</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 33 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Previous_Upgrade_Level_Type />
+		<Next_Upgrade_Level_Type />
+		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_button_atat.tga</Icon_Name>
+		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_EL_ATAT_RESEARCH  </Encyclopedia_Text>
+		<Text_ID>TEXT_UPGRADE_EL_ATAT_RESEARCH</Text_ID>
+		<SFXEvent_Build_Started>EHD_Researching</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Research_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Research_Complete</SFXEvent_Build_Complete>
+		<CategoryMask>Upgrade</CategoryMask>
+	</UpgradeObject>
 </UpgradeObjects>
