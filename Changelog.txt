@@ -51,9 +51,14 @@ General
 A.I.
 ==================
 -(PE) BasicLandEquations – Modified <Should_Destroy_Structure> and <Should_Destroy_Turbolaser> equations to account for Underworld turbolaser towers.
+-(PE) BasicLandEquations – Modified <Should_Destroy_Structure> to include "U_Ground_Gravity_Generator" with other land structures.
+-(PE) BasicLandEquations – Modified <Need_AntiVehicle_Turret> to change priority for the Underworld: Underworld_Torpedo_Turret is not exactly an anti-vehicle turret, and has been replaced by the mass driver turret.
+-(PE) BasicLandEquations – Modified <Need_AntiInfantry_Turret> this AI command wasn't updated since EaW, and now includes the Underworld. They didn't have a defined anti-infantry turret, and has been defined as the proton torpedo turret.
 -(PE) BasicLandEquations – Modified <Has_Vehicle_Hero> to include "Garm_Bel_Iblis_Team" (Rebel Gargantuan battle platform), and IG-88. The equation marks whether or not the AI has these heroes, should they (in the future) need to build a vehicle repair bay, which Garm Bel and IG-88 can only be "healed" by.
+-(PE) BasicLandEquations – Modified <Need_To_Sell_Tactical_Structure>: rearranged parts of the equation to include edits to turret needs, and adding with new modifications.
 
 -(PE) BudgetingEquations – Updated <TechUpgradeBudgetRequirement> to include "Darth_Team_Expansion."
+-(PE) BudgetingEquations – Updated <Defensive_Structure_Count> to include the proper "U_Ground_Gravity_Generator" instead of "Ground_Gravity_Generator"
 
 
 ==================
