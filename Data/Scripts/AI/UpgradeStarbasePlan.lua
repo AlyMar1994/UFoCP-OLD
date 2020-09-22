@@ -34,6 +34,7 @@ function BaseForce_Thread()
 	AssembleForce(BaseForce)
 	BaseForce.Set_Plan_Result(true)
 	DebugMessage("%s -- Base Force done!", tostring(Script));
+
 	ScriptExit()
 end
 
