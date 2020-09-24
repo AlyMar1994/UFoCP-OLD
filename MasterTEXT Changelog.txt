@@ -12,6 +12,97 @@ Last of note, I am a human being and I make mistakes.  Please point out text err
 
 
 ===================================================================================================
+v1.12
+===================================================================================================
+
+-Created string "TEXT_ENCYCLOPEDIA_FACTORY_UNDERWORLD_00" to add text of what the Underworld vehicle factory unlocks (Repulsorlift Jammer).
+-Created string "TEXT_PLANET_VERGESSO_INFO_POP_00" for consistency with other planets.
+-Created string "TEXT_PLANET_VERGESSO_INFO_WL_00" for consistency with other planets.
+-Created string "TEXT_PLANET_VERGESSO_INFO_TAC_00" for consistency with other planets.
+-Created string "TEXT_UNIT_UNGARR_DARIS" to add a name to this corruption mission target.
+-Created string "TEXT_UNIT_POLO_SELAB" to add a name to this corruption mission target.
+-Created string "TEXT_UNIT_KOONG_EETH" to add a name to this corruption mission target.
+-Created string "TEXT_UNIT_BEVEL_LEMELISK" to add a name to this corruption mission target.
+-Created string "TEXT_UNIT_TANDA" to add a name to this corruption mission target.
+-Created string "TEXT_UNIT_SAN_HILL" to add a name to this corruption mission target.
+-Created string "TEXT_UNIT_DALKEN_HOL" to add a name to this corruption mission target.
+-Created string "TEXT_UNIT_FOOD_COMMISSIONER" to add a name to this corruption mission target.
+-Created string "TEXT_UNIT_MALINTH" to add a name to this corruption mission target.
+-Created string "TEXT_UNIT_GARNAK_FEY" to add a name to this corruption mission target.
+-Created string "TEXT_UNIT_RAL_FALAN" to add a name to this corruption mission target.
+-Created string "TEXT_UNIT_KIRITH" to add a name to this corruption mission target.
+-Created string "TEXT_ENCYCLOPEDIA_CLASS_GALACTIC_SENATOR" to add a special class to Polo Se'lab, a corruption mission target.
+-Created string "TEXT_ENCYCLOPEDIA_CLASS_GOVERNOR" to add a special class to a few corruption mission targets.
+-Created string "TEXT_ENCYCLOPEDIA_CLASS_ENGINEER" to add a special class to Bevel Lemelisk, a corruption mission target.
+-Created string "TEXT_ENCYCLOPEDIA_CLASS_CHAIRMAN" to add a special class to a few corruption mission targets.
+-Created string "TEXT_ENCYCLOPEDIA_CLASS_COMISSIONER_FOOD" to add a special class to the Alzoc III Food Comissioner, a corruption mission target.
+-Created string "TEXT_ENCYCLOPEDIA_CLASS_COMPTROLLER" to add a special class to Garnak Fey, a corruption mission target.
+-Created string "TEXT_ENCYCLOPEDIA_CLASS_COMMANDER" to add a special class to Ral Falan, a corruption mission target.
+-Created string "TEXT_ENCYCLOPEDIA_CLASS_POLITICIAN" to add a special class to Ungarr Daris, a corruption mission target.
+
+-Renamed string "TEXT_TOOLTIP_GARRISON_FACTORY" to "TEXT_TOOLTIP_GARRISON_U_FACTORY" for consistency with other tooltips of its ilk.
+-Renamed string "TEXT_TOOLTIP_V_WING_01" to "TEXT_TOOLTIP_V_WING_00" for consistency.
+-Renamed string "TEXT_BOMB_CLASS" to "TEXT_ENCYCLOPEDIA_CLASS_BOMB" for consistency.
+-Renamed string "TEXT_ENCYCLOPEDIA_TWITCH" to "TEXT_TOOLTIP_UNIT_TWITCH" for consistency.
+
+-Deleted unused string "TEXT_ENCYCLOPEDIA_CLASS_SUPER."
+
+
+-[MB_LAND_PLANET_BOTHAWUI_INTIMIDATION]: "Intimidating Galactic Senator Polo Se'Lab puts important information and the political power of many Bothawui-connected planets into the hands of the Zann Consortium.  Our Defiler has assembled a strike team of our reservists to accomplish our goal." --> "Intimidating Galactic Senator Polo Se'lab puts important information and the political power of many Bothawui-connected planets into the hands of the Zann Consortium.  Our Defiler has assembled a strike team of our reservists to accomplish our goal."
+-[MT_LAND_PLANET_BOTHAWUI_INTIMIDATION]: "Intimidate Polo Se'Lab" --> "Intimidate Polo Se'lab"
+-[TEXT_CORRUPTION_BOTHAWUI_STORY_INTIMIDATION]: "Intimidating Galactic Senator Polo Se'Lab puts important information and the political power of many Bothawui-connected planets into the hands of the Zann Consortium." --> "Intimidating Galactic Senator Polo Se'lab puts important information and the political power of many Bothawui-connected planets into the hands of the Zann Consortium."
+-[TEXT_ENCYCLOPEDIA_ACADEMY_00]: "Builds: Field Commander, Fleet Commander" --> "Builds: Field Commanders, Fleet Commanders."
+-[TEXT_ENCYCLOPEDIA_ACADEMY_01]: "Unlocks: Infiltrator Training Facility" --> "Unlocks: Infiltrator Training Facility."
+-[TEXT_ENCYCLOPEDIA_ADVANCED_FACTORY_EMPIRE_00]: "Builds: AT-AA, AT-AT" --> "Builds: AT-AA, AT-AT."
+-[TEXT_ENCYCLOPEDIA_BARRACKS_EMPIRE_00]: "Builds: Stormtrooper, Scout Trooper" --> "Builds: Stormtroopers, Scout troopers."
+-[TEXT_ENCYCLOPEDIA_BARRACKS_EMPIRE_01]: "Unlocks: Officer Academy" --> "Unlocks: Officer Academy."
+-[TEXT_ENCYCLOPEDIA_BARRACKS_REBEL_00]: "Trains Infantry Platoons and Plex Soldiers and enables the construction of Officer Academies." --> "Builds: Infantry Platoons, Plex Soldiers."
+-[TEXT_ENCYCLOPEDIA_BARRACKS_REBEL_01]: "[TBL]" --> "Unlocks: Officer Acadamy."
+-[TEXT_ENCYCLOPEDIA_BARRACKS_UNDERWORLD]: "Trains Grenadiers and Mercenary Assault Soldiers" --> "Builds: Grenadier Squads, Merc Assault Squads."
+-[TEXT_ENCYCLOPEDIA_CLASS_DUELIST}: "Class: Gungan Duelist" --> "Class: Duelist"
+-[TEXT_ENCYCLOPEDIA_DROIDWORKS_UNDERWORLD]: "Produces Destroyer Droids." --> "Builds: Destroyer Droids."
+-[TEXT_ENCYCLOPEDIA_FACTORY_UNDERWORLD]: "Produces M.A.L. and F9-TZ Transports." --> "Builds: F9-TZ Transports, M.A.L., Canderous Assault Tanks, MZ-8 Pulse Cannon Tanks."
+-[TEXT_ENCYCLOPEDIA_HEAVY_FACTORY_EMPIRE_00]: "Builds: 2-M Repulsor Tank, SPMA-T" --> "Builds: 2-M Repulsor Tanks, SPMA-T."
+-[TEXT_ENCYCLOPEDIA_HEAVY_FACTORY_REBEL_00]: "Builds: MPTL Artillery, T4-B Tanks" --> "Builds: Gallofree HTT Wings, MPTL Artillery, T4-B Tanks."
+-[TEXT_ENCYCLOPEDIA_INFILTRATOR_00]: "Builds: Infiltrator" --> "Builds: Infiltrators."
+-[TEXT_ENCYCLOPEDIA_LIGHT_FACTORY_EMPIRE_00]: "Builds: AT-ST, TIE mauler" --> "Builds: AT-STs, MDUs, TIE maulers."
+-[TEXT_ENCYCLOPEDIA_LIGHT_FACTORY_EMPIRE_01]: "Unlocks: Heavy Vehicle Factory, Turbolaser Tower" --> "Unlocks: Heavy Vehicle Factory."
+-[TEXT_ENCYCLOPEDIA_LIGHT_FACTORY_REBEL_00]: "Builds: T2-B Tanks, Speeders" --> "Builds: MDUs, Speeders, T2-B Tanks."
+-[TEXT_ENCYCLOPEDIA_LIGHT_FACTORY_REBEL_01]: "Unlocks: Heavy Factory, Turbolaser Tower" --> "Unlocks: Heavy Factory."
+-[TEXT_ENCYCLOPEDIA_MANDALORIAN_SPAWNER]: "Periodically creates Mandalorian Militiamen until destroyed" --> "Periodically creates Mandalorian Militiamen until destroyed."
+-[TEXT_ENCYCLOPEDIA_PLANET_DESTROYED]: "Planetary Debris" --> "Planetary debris left from destruction by the Death Star."
+-[TEXT_ENCYCLOPEDIA_POWER_GENERATOR_01]: "Unlocks: Ion Cannon, Base Shield Generator, Turbolaser Tower" --> "Unlocks: Ion Cannon, Base Shield Generator, Turbolaser Towers."
+-[TEXT_ENCYCLOPEDIA_POWER_GENERATOR_02]: "Unlocks: Base Shield Generator, Magnepulse Cannon, Gravity Control Generator, Turbolaser Tower" --> "Unlocks: Base Shield Generator, Magnepulse Cannon, Gravity Control Generator, Turbolaser Towers."
+-[TEXT_ENCYCLOPEDIA_SMUGGLER_TITLE]: "Smuggler present" --> "Smuggler present!"
+-[TEXT_ENCYLOPEDIA_STRUCTURE_BOTHAN_POLOS_HOUSE]: "Senator Se'Lab's Palace" --> "Senator Se'lab's Palace"
+-[TEXT_PALACE_UNDERWORLD_BUILDS]: "Produces: Defiler, MDU" --> "Builds: Defilers, MDUs, Nightsisters."
+-[TEXT_PLANET_VERGESSO_ENCYC_01]: "While this planet is controlled, X-wing, Y-wing, A-wing and Z-95 squadrons gain a 25% damage bonus." --> "Improved Weapons (Fighters): While this planet is controlled, X-wing, Y-wing, A-wing and Z-95 squadrons gain a 25% damage bonus. Restriction: No land production or garrisons possible."
+-[TEXT_TOOLTIP_ABILITY_SENSOR_JAMMING_DESCRIPTION]: "Creates a small area of effect around each unit where missiles and proton torpedoes cannot enter, and are redirected elsewhere." --> "Creates a small area of effect around each unit where missiles and proton torpedoes cannot enter and are redirected elsewhere."
+-[TEXT_TOOLTIP_ANNIHILATOR_01]: "One of the few ships of its type deployed into active duty, the Annihilator is an Executor-class Super Star Destroyer commanded by Admiral Gaarn. Ten turbolaser batteries, six ion cannons, four missile launchers and three torpedo launchers make the Annihilator a formidible and fierce foe in battle." --> "One of the few ships of its type deployed into active duty, the Annihilator is an Executor-class Super Star Destroyer commanded by Admiral Gaarn. Ten turbolaser batteries, six ion cannons, four missile launchers, and three torpedo launchers make the Annihilator a formidable and fierce foe in battle."
+-[TEXT_TOOLTIP_DARKTROOPER_P1]: "The first phase of the Dark Trooper Project; light, quick and devastating to infantry units." --> "The first phase of the Dark Trooper Project; light, quick, and devastating to most infantry units."
+-[TEXT_TOOLTIP_DARKTROOPER_P2]: "The second level of dark trooper; quick and maneuverable, medium level firepower." --> "The second phase of the Dark Trooper Project; maneuverable and versatile with its inbuilt jetpack, the Phase II dark trooper can effectively combat infantry and light vehicles with its handheld chaingun."
+-[TEXT_TOOLTIP_DARKTROOPER_P3]: "The height of the dark trooper technology, the Phase III holds multiple weapon systems to battle any foe." --> "The height of the dark trooper technology; the Phase III is extremely maneuverable with an inbuilt jetpack, is armed with two wrist-mounted laser cannons and six shoulder-mounted missile launchers for extreme anti-structure, infantry, and vehicle duty."
+-[TEXT_TOOLTIP_GARRISON_U_BARRACKS]: "Garrison: Grenadier Squad, Merc Assault Squad" --> "Garrison: Grenadier Squads, Merc Assault Squads."
+-[TEXT_TOOLTIP_GARRISON_U_FACTORY]: "Garrison: M.A.L." --> "Garrison: MZ-8 Pulse Cannon Tanks."
+-[TEXT_TOOLTIP_UNIT_BEVEL_LEMELISK]: "Bevel Lemelisk is a genius ship designer." --> "Bevel Lemelisk is a genius, albeit infamous ship designer, who was the father of the first Death Star."
+-[TEXT_TOOLTIP_UNIT_CHAIRMAN_ARNAMA]: "Chairman Arnama" --> "One of the most powerful people on Naboo, Chairman Arnama is head of the Plasma Energy Trade Commission, an extremely successful energy company with inroads to much of the planet."
+-[TEXT_TOOLTIP_UNIT_CHAIRMAN_SANHILL]: "Chairman San Hill" --> "Political veteran of the Confederacy's government during the Clone Wars and head of the InterGalactic Banking Clan, San Hill is the gateway to information and wealth within the IGBC's network."
+-[TEXT_TOOLTIP_UNIT_COMMANDER_RAL_FALAN]: "Commander Ral Falan" --> "The most powerful man currently on the planet, Commander Ral Falan holds dangerous, galaxy-wide secrets which enable him special control over the vast shipyards that cover Bestine's oceans."
+-[TEXT_TOOLTIP_UNIT_FLANKAR]: "Fleet Commander Flankar" --> "Stationed on Anaxes, Fleet Commander Flankar is well respected by many ship captains throughout the galaxy, including that in the Imperial Navy."
+-[TEXT_TOOLTIP_UNIT_FLEET_COMMANDER_MALINTH]: "Fleet Commander Malinth" --> "Commander Malinth is the premier Imperial Fleet Commander garrisoned in the area, and is a symbol of Imperial control on Honoghr."
+-[TEXT_TOOLTIP_UNIT_FOOD_COMMISSIONER]: "Food Commissioner" --> "Appointed as food commissioner of the Alzoc III workforce, controlling food emission also allows the Commissioner to hold stable control over those who work under him."
+-[TEXT_TOOLTIP_UNIT_GARNAK_FEY]: "Garnak Fey" --> "Garnak Fey, head of the Fey family and comptroller of the Silica Tab production lines, comes from a long family history of leadership in Utapau's government."
+-[TEXT_TOOLTIP_UNIT_GOVERNOR_KOONG]: "Governor Koong Eeth" --> "A planetary governor for Saleucami, Eeth is staunchly against corruption and criminal influence."
+-[TEXT_TOOLTIP_UNIT_KENDALOZZEL]: "Admiral Dalken Hol" --> "An admiral within the Imperial Navy, Hol resides at the Carida Imperial Academy, and has a number of worthwhile contacts."
+-[TEXT_TOOLTIP_UNIT_KIRITH]: "Governor Kirith" --> "Kirith is the sole Planetary Governor of Byss, the emperor's most hidden and prized world. The Governor holds many connections with the elite and the rich on Byss and beyond."
+-[TEXT_TOOLTIP_UNIT_SENATOR_POLO_SELAB]: "Senator Polo Se'Lab" --> "Representative for Bothawui in the Galactic Senate, Senator Se'lab is also the head of relations between Bothawui-aligned planets."
+-[TEXT_TOOLTIP_UNIT_UNGARR_DARIS]: "Ungarr Daris" --> "Leader of a rising political opposition, Ungarr Daris has connections to many doors in Thyferra's society."
+
+
+===================================================================================================
+
+
+===================================================================================================
 v1.11
 ===================================================================================================
 

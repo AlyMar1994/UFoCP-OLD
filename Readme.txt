@@ -70,8 +70,10 @@ Support
 ================
 -KadVenku
     – Lots of help on GitHub for issues with FoC.
+	- Assistance with creating .MEGs.
+	- Other technical help.
 
--STAR WARS: Empire at War Community Discord (specif. Galyana, Lany & Nikomer)
+-STAR WARS: Empire at War Community Discord (specif. Galyana, Lany, Nikomer, Cuarson & Cyfe,)
     – Technical help.
 
 =========================================================================================

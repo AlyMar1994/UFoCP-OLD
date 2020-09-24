@@ -819,7 +819,7 @@
 		
 		
 		
-		<Encyclopedia_Text>TEXT_TOOLTIP_V_WING_01</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_TOOLTIP_V_WING_00</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
 		
 		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
@@ -884,7 +884,7 @@
 		
 		
 		
-		<Encyclopedia_Text>TEXT_TOOLTIP_V_WING_01</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_TOOLTIP_V_WING_00</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
 		
 		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
@@ -946,7 +946,7 @@
 		
 		
 		
-		<Encyclopedia_Text>TEXT_TOOLTIP_V_WING_01</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_TOOLTIP_V_WING_00</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
 		<Population_Value>1</Population_Value>
 		

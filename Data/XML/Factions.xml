@@ -1007,7 +1007,7 @@
 		<Land_Retreat_Enemy_Begin_SFXEvent />
 		<Land_Retreat_Cancel_SFXEvent>EHD_Retreat_Cancelled</Land_Retreat_Cancel_SFXEvent>
 		<Land_Retreat_Not_Allowed_SFXEvent>EHD_Retreat_Not_Allowed</Land_Retreat_Not_Allowed_SFXEvent>
-		<Land_Retreat_Not_Allowed_Reason_1_SFXEvent /> <!-- Reason 1: Gravity Well -->							
+		<Land_Retreat_Not_Allowed_Reason_1_SFXEvent /> <!-- Reason 1: Gravity Well -->
 		<Land_Retreat_Not_Allowed_Reason_2_SFXEvent /> <!-- Reason 2: Friendly Hero Preventing -->
 		<Land_Retreat_Not_Allowed_Reason_3_SFXEvent /> <!-- Reason 3: Tactical Superweapon Present -->
 
@@ -1027,9 +1027,9 @@
 
 		<Bombardment_Shadow_Blob_Material_Name>Bombardment_Empire</Bombardment_Shadow_Blob_Material_Name>
 		<Bombardment_Blob_Size>200.00</Bombardment_Blob_Size>
-		<Bombardment_Required_Orbital_Ships>Star_Destroyer, Acclamator_Assault_Ship, Victory_Destroyer, Executor_Super_Star_Destroyer, Accuser_Star_Destroyer, Admonitor_Star_Destroyer</Bombardment_Required_Orbital_Ships>
+		<Bombardment_Required_Orbital_Ships>Acclamator_Assault_Ship, Victory_Destroyer, Star_Destroyer, Accuser_Star_Destroyer, Admonitor_Star_Destroyer, Executor_Super_Star_Destroyer</Bombardment_Required_Orbital_Ships>
 		<Bombardment_Projectile>Proj_Empire_Bombardment_Turbolaser</Bombardment_Projectile>
-		<!-- <Bombardment_Particle>ParticleEffect_Name</Bombardment_Particle> -->
+
 		<Bombardment_Number_Of_Salvos>3</Bombardment_Number_Of_Salvos>
 		<Bombardment_Shots_Per_Salvo>4</Bombardment_Shots_Per_Salvo>
 		<Bombardment_Shot_Delay>0.30</Bombardment_Shot_Delay>
@@ -1069,7 +1069,7 @@
 		<!-- Currently not used by Empire, but data is stubbed in for future use -->
 		<Land_Area_Effect_Range_Overlay_Material_Name>Empire_Land_Area_Effect_Range_Overlay</Land_Area_Effect_Range_Overlay_Material_Name>
 		<Land_Area_Effect_Range_Overlay_RGBA>128, 255, 128, 128</Land_Area_Effect_Range_Overlay_RGBA>
-		<Land_Area_Effect_Range_Overlay_Scale_Factor>1.20</Land_Area_Effect_Range_Overlay_Scale_Factor><!-- Compensate for ring not being full bounds of texture size. -->
+		<Land_Area_Effect_Range_Overlay_Scale_Factor>1.20</Land_Area_Effect_Range_Overlay_Scale_Factor> <!-- Compensate for ring not being full bounds of texture size. -->
 
 		<!-- Overlay ring used by Boba Fett when targeting with his "jet pack burst" jump ability, this is the ring around Boba to show click target terrain range -->
 		<Land_Ability_Targeting_Range_Overlay_Material_Name>Empire_Land_Ability_Targeting_Range_Overlay</Land_Ability_Targeting_Range_Overlay_Material_Name>

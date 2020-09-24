@@ -59,7 +59,7 @@
 	</Props_Story>
 
 
-    <!-- AI  Empire Shipyard Props (Rebel Mission 1) -->
+	<!-- AI  Empire Shipyard Props (Rebel Mission 1) -->
 	<SpaceStructure Name="Drydock_Tie_Bomber">
 		<No_Colorization_Color>75, 75, 75, 255</No_Colorization_Color>
 		<Text_ID>TEXT_UNIT_TIE_BOMBER</Text_ID>
@@ -94,7 +94,7 @@
 
 	</SpaceStructure>
 
-    <SpaceStructure Name="Drydock_Tie_Fighter">
+	<SpaceStructure Name="Drydock_Tie_Fighter">
 		<No_Colorization_Color>75, 75, 75, 255</No_Colorization_Color>
 		<Text_ID>TEXT_UNIT_TIE_FIGHTER</Text_ID>
 		<Space_Model_Name>ev_TieFighter.ALO</Space_Model_Name>
@@ -2383,7 +2383,15 @@
 		<Is_Decoration>No</Is_Decoration>
 		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
 	</Props_Story>
-	
+
+	<Props_Story Name="UM05_CINE_HOLOCRON">
+		<Text_ID>TEXT_SITH_HOLOCRON</Text_ID>
+		<Encyclopedia_Text> TEXT_SITH_HOLOCRON_TOOLTIP </Encyclopedia_Text>
+		<Land_Model_Name>w_sithartifact.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+	</Props_Story>
+
 	<Props_Story Name="UM05_Museum_Patron_A">
 		<Variant_Of_Existing_Type>Twilek_Female</Variant_Of_Existing_Type>
 		<Land_Model_Name>NI_Twilek_F_nogun.ALO</Land_Model_Name>
@@ -3035,113 +3043,556 @@
 		<Overall_Length>5.0</Overall_Length> 	<!-- For vehicle pitching up and down on terrain (35 by geometry) -->
 		<Overall_Width>5.0</Overall_Width> 		<!-- For vehicle rolling left and right on terrain (30 by geometry)-->
 	</Props_Story>
+
+	<Props_Story Name="Pirate_Asteroid_Non_Victory">
+		<Variant_Of_Existing_Type>Pirate_Asteroid_Base</Variant_Of_Existing_Type>
+		<Shield_Points>150</Shield_Points>
+		<Tactical_Health>800</Tactical_Health>
+		<Shield_Refresh_Rate>35</Shield_Refresh_Rate>
+		<Victory_Relevant>Yes</Victory_Relevant>
+	</Props_Story>
 	
-	<!--  Corruption Objective Props -->
-	
+	<Props_Story Name="COR_TYBER_INTERCEPTOR">
+		<Variant_Of_Existing_Type>Interceptor4_Frigate</Variant_Of_Existing_Type>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_CRIMELORD </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_tyber.tga</Icon_Name>
+		<Tech_Level>99</Tech_Level>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Tactical_Health>3000</Tactical_Health>
+		<Shield_Refresh_Rate>50</Shield_Refresh_Rate>
+		
+		<SFXEvent_Select>Unit_Select_Tyber_Zann</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Tyber_Zann</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Tyber_Zann</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Tyber_Zann</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Tyber_Zann</SFXEvent_Guard>
+		<SFXEvent_Fire>Unit_Storm_Trooper_Fire</SFXEvent_Fire>
+		<SFXEvent_Group_Move>Unit_Group_Move_Tyber_Zann</SFXEvent_Group_Move>
+		<SFXEvent_Group_Attack>Unit_Group_Attack_Tyber_Zann</SFXEvent_Group_Attack>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Tyber_Zann </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Tyber_Zann </SFXEvent_Health_Critical_Warning>
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+    </Props_Story>
+    
+	<Props_Story Name="PROP_CORUSCANT_SKYDOME">
+	    <!-- this is a dead bounty hunter cine prop -->
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>w_sky_smog00.alo</Land_Model_Name>
+		<Scale_Factor>.35</Scale_Factor>
+		<Is_Decoration>No</Is_Decoration>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
+	</Props_Story>
+
+	<Props_Story Name="UMP_Small_Ramp">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_UrbanHalfWall_Side.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>.3</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Story>
+
+	<Props_Story Name="UMP_Small_Gear">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Prop_PwrBox.ALO</Land_Model_Name>
+		<LandBehavior>LAND_OBSTACLE</LandBehavior>
+		<Scale_Factor>.4</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+	</Props_Story>
+
+
+	<!-- ========== Corruption Objective Props ========== -->
+
+	<!-- Saleucami: Governor Koong Eeth -->
 	<Props_Story Name="Govenor_Koong_Empire">
 		<Variant_Of_Existing_Type>Desert_Civilian_A</Variant_Of_Existing_Type>
-		<Tactical_Health>200</Tactical_Health>
+
+		<Text_ID>TEXT_UNIT_KOONG_EETH</Text_ID>
 		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_GOVERNOR_KOONG</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GOVERNOR</Encyclopedia_Unit_Class>
+
+		<Tactical_Health>200</Tactical_Health>
+
 		<Affiliation>Empire</Affiliation>
 	</Props_Story>
 	
 	<Props_Story Name="Govenor_Koong_Rebel">
 		<Variant_Of_Existing_Type>Desert_Civilian_A</Variant_Of_Existing_Type>
-		<Tactical_Health>200</Tactical_Health>
+
+		<Text_ID>TEXT_UNIT_KOONG_EETH</Text_ID>
 		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_GOVERNOR_KOONG</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GOVERNOR</Encyclopedia_Unit_Class>
+
+		<Tactical_Health>200</Tactical_Health>
+
 		<Affiliation>Rebel</Affiliation>
 	</Props_Story>
 	
 	<Props_Story Name="Govenor_Koong_Hutt">
 		<Variant_Of_Existing_Type>Desert_Civilian_A</Variant_Of_Existing_Type>
-		<Tactical_Health>200</Tactical_Health>
+
+		<Text_ID>TEXT_UNIT_KOONG_EETH</Text_ID>
 		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_GOVERNOR_KOONG</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GOVERNOR</Encyclopedia_Unit_Class>
+
+		<Tactical_Health>200</Tactical_Health>
+
 		<Affiliation>Hutts</Affiliation>
 	</Props_Story>
-	
+
+
+	<!-- Kuat: Bevel Lemelisk -->
 	<Props_Story Name="Bevel_Lemelisk_Empire">
 		<Variant_Of_Existing_Type>Desert_Civilian_A</Variant_Of_Existing_Type>
-		<Tactical_Health>200</Tactical_Health>
+
+		<Text_ID>TEXT_UNIT_BEVEL_LEMELISK</Text_ID>
 		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_BEVEL_LEMELISK</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ENGINEER</Encyclopedia_Unit_Class>
+
+		<Tactical_Health>200</Tactical_Health>
+
 		<Affiliation>Empire</Affiliation>
 	</Props_Story>
 	
 	<Props_Story Name="Bevel_Lemelisk_Rebel">
 		<Variant_Of_Existing_Type>Desert_Civilian_A</Variant_Of_Existing_Type>
-		<Tactical_Health>200</Tactical_Health>
+
+		<Text_ID>TEXT_UNIT_BEVEL_LEMELISK</Text_ID>
 		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_BEVEL_LEMELISK</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ENGINEER</Encyclopedia_Unit_Class>
+
+		<Tactical_Health>200</Tactical_Health>
+
 		<Affiliation>Rebel</Affiliation>
 	</Props_Story>
-	
+
+
+	<!-- Nal Hutta: Spaceport Director Tanda the Hutt -->
 	<Props_Story Name="Spaceport_Director_Empire">
 		<Variant_Of_Existing_Type>Hutt_Field_Commander</Variant_Of_Existing_Type>
-		<Tactical_Health>200</Tactical_Health>
+
+		<Text_ID>TEXT_UNIT_TANDA</Text_ID>
 		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_SPACEPORT_DIRECTOR</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIELD_COMMANDER</Encyclopedia_Unit_Class>
+
+		<Scale_Factor>2.20</Scale_Factor>
 		<Affiliation>Empire</Affiliation>
-		<Guard_Chase_Range>100.0</Guard_Chase_Range>
-		<Idle_Chase_Range>100.0</Idle_Chase_Range>
-		<Attack_Move_Response_Range>100.0</Attack_Move_Response_Range>
-		<Scale_Factor>2.2</Scale_Factor>
+
+		<Tactical_Health>200</Tactical_Health>
+
+		<Guard_Chase_Range>100.00</Guard_Chase_Range>
+		<Idle_Chase_Range>100.00</Idle_Chase_Range>
+		<Attack_Move_Response_Range>100.00</Attack_Move_Response_Range>
 	</Props_Story>
 	
 	<Props_Story Name="Spaceport_Director_Rebel">
 		<Variant_Of_Existing_Type>Hutt_Field_Commander</Variant_Of_Existing_Type>
-		<Tactical_Health>200</Tactical_Health>
+
+		<Text_ID>TEXT_UNIT_TANDA</Text_ID>
 		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_SPACEPORT_DIRECTOR</Encyclopedia_Text>
-		<Affiliation>Rebel</Affiliation>
-		<Guard_Chase_Range>100.0</Guard_Chase_Range>
-		<Idle_Chase_Range>100.0</Idle_Chase_Range>
-		<Attack_Move_Response_Range>100.0</Attack_Move_Response_Range>
-		<Scale_Factor>2.2</Scale_Factor>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIELD_COMMANDER</Encyclopedia_Unit_Class>
+
+		<Scale_Factor>2.20</Scale_Factor>
+		<Affiliation>Empire</Affiliation>
+
+		<Tactical_Health>200</Tactical_Health>
+
+		<Guard_Chase_Range>100.00</Guard_Chase_Range>
+		<Idle_Chase_Range>100.00</Idle_Chase_Range>
+		<Attack_Move_Response_Range>100.00</Attack_Move_Response_Range>
 	</Props_Story>
-	
+
+	<Props_Story Name="Spaceport_Director_Hutts">
+		<Variant_Of_Existing_Type>Hutt_Field_Commander</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_TANDA</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_SPACEPORT_DIRECTOR</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIELD_COMMANDER</Encyclopedia_Unit_Class>
+
+		<Scale_Factor>2.20</Scale_Factor>
+		<Affiliation>Hutts</Affiliation>
+
+		<Tactical_Health>200</Tactical_Health>
+
+		<Guard_Chase_Range>100.00</Guard_Chase_Range>
+		<Idle_Chase_Range>100.00</Idle_Chase_Range>
+		<Attack_Move_Response_Range>100.00</Attack_Move_Response_Range>
+	</Props_Story>
+
+
+	<!-- Muunilinst: Chairman San Hill -->
 	<Props_Story Name="Chairman_Sanhill_Empire">
 		<Variant_Of_Existing_Type>Desert_Civilian_A</Variant_Of_Existing_Type>
-		<Tactical_Health>200</Tactical_Health>
+
+		<Text_ID>TEXT_UNIT_SAN_HILL</Text_ID>
 		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CHAIRMAN_SANHILL</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CHAIRMAN</Encyclopedia_Unit_Class>
+
 		<Affiliation>Empire</Affiliation>
+
+		<Tactical_Health>200</Tactical_Health>
 	</Props_Story>
 	
 	<Props_Story Name="Chairman_Sanhill_Rebel">
 		<Variant_Of_Existing_Type>Desert_Civilian_A</Variant_Of_Existing_Type>
-		<Tactical_Health>200</Tactical_Health>
+
+		<Text_ID>TEXT_UNIT_SAN_HILL</Text_ID>
 		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CHAIRMAN_SANHILL</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CHAIRMAN</Encyclopedia_Unit_Class>
+
 		<Affiliation>Rebel</Affiliation>
+
+		<Tactical_Health>200</Tactical_Health>
 	</Props_Story>
-	
+
+
+	<!-- Carida: Admiral Dalken Hol -->
 	<Props_Story Name="Admiral_KendalOzzel_Empire">
 		<Variant_Of_Existing_Type>Desert_Civilian_A</Variant_Of_Existing_Type>
-		<LandBehavior> SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING</LandBehavior>
-		<Primary_Locomotor_Name>WALK_LOCOMOTOR</Primary_Locomotor_Name>
-		<Tactical_Health>200</Tactical_Health>
+
+		<Text_ID>TEXT_UNIT_DALKEN_HOL</Text_ID>
 		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_KENDALOZZEL</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+
 		<Affiliation>Empire</Affiliation>
+
+		<LandBehavior>SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING</LandBehavior>
+		<Primary_Locomotor_Name>WALK_LOCOMOTOR</Primary_Locomotor_Name>
+
+		<Tactical_Health>200</Tactical_Health>
 	</Props_Story>
 	
 	<Props_Story Name="Admiral_KendalOzzel_Rebel">
 		<Variant_Of_Existing_Type>Desert_Civilian_A</Variant_Of_Existing_Type>
-		<LandBehavior> SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING</LandBehavior>
-		<Primary_Locomotor_Name>WALK_LOCOMOTOR</Primary_Locomotor_Name>
-		<Tactical_Health>200</Tactical_Health>
+
+		<Text_ID>TEXT_UNIT_DALKEN_HOL</Text_ID>
 		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_KENDALOZZEL</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+
 		<Affiliation>Rebel</Affiliation>
+
+		<LandBehavior>SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING</LandBehavior>
+		<Primary_Locomotor_Name>WALK_LOCOMOTOR</Primary_Locomotor_Name>
+
+		<Tactical_Health>200</Tactical_Health>
+	</Props_Story>
+
+
+	<!-- Alzoc III: Food Commissioner (+ Shaaks) -->
+	<Props_Story Name="Food_Commissioner_Empire">
+		<Variant_Of_Existing_Type>Swamp_Civilian_A</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_FOOD_COMMISSIONER</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_FOOD_COMMISSIONER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMISSIONER_FOOD</Encyclopedia_Unit_Class>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Tactical_Health>200</Tactical_Health>
+	</Props_Story>
+
+	<Props_Story Name="Food_Commissioner_Rebel">
+		<Variant_Of_Existing_Type>Swamp_Civilian_A</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_FOOD_COMMISSIONER</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_FOOD_COMMISSIONER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMISSIONER_FOOD</Encyclopedia_Unit_Class>
+
+		<Affiliation>Rebel</Affiliation>
+
+		<Tactical_Health>200</Tactical_Health>
+	</Props_Story>
+
+	<Props_Story Name="AlzocIII_Prize_Shaak">
+		<Variant_Of_Existing_Type>SHAAK</Variant_Of_Existing_Type>
+
+		<Is_Valid_Target>Yes</Is_Valid_Target>
+		<!-- <LandBehavior>WALK_LOCOMOTOR,IDLE,INDIGENOUS_UNIT, SELECTABLE, HIDE_WHEN_FOGGED</LandBehavior>-->
+		<Affiliation>Hostile</Affiliation>
+		<CategoryMask> Vehicle </CategoryMask>
+		<LandBehavior>WALK_LOCOMOTOR, IDLE, SELECTABLE, TARGETING,HIDE_WHEN_FOGGED,INDIGENOUS_UNIT</LandBehavior>
+
+		 <!--<Death_Explosions>Medium_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Generic_Building_Death_SFX </Death_SFXEvent_Start_Die>-->
+		<!--<Death_Clone>Damage_Normal, AlzocIII_Prize_Shaak_Death_Clone</Death_Clone>-->
+		<Death_Fade_Time>0.25</Death_Fade_Time>
+		<Death_Persistence_Duration>1.0</Death_Persistence_Duration>
+		
 	</Props_Story>
 	
+	<Props_Story Name="AlzocIII_Prize_Shaak_Death_Clone">
+		<Variant_Of_Existing_Type>AlzocIII_Prize_Shaak</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		
+		
+	</Props_Story>
+
+	<Props_Story Name="AlzocIII_Prize_Shaak_Head">
+		<!--<Variant_Of_Existing_Type>UM05_PROP_KRAYTHEAD</Variant_Of_Existing_Type>-->
+		<Land_Model_Name> W_Shaakskull.ALO </Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Is_Valid_Target>Yes</Is_Valid_Target>
+		<Affiliation>Neutral</Affiliation>
+		<LandBehavior>HIDE_WHEN_FOGGED, TARGETING</LandBehavior>
+	</Props_Story>
+
+
+	<!-- Taris: Twitch -->
+	<Props_Story Name="Twitch_Empire">
+		<Variant_Of_Existing_Type>Gungan_Warrior</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_TWITCH</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_TWITCH</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DUELIST</Encyclopedia_Unit_Class>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Tactical_Health>200</Tactical_Health>
+	</Props_Story>
+
+	<Props_Story Name="Twitch_Rebel">
+		<Variant_Of_Existing_Type>Gungan_Warrior</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_TWITCH</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_TWITCH</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DUELIST</Encyclopedia_Unit_Class>
+
+		<Affiliation>Rebel</Affiliation>
+
+		<Tactical_Health>200</Tactical_Health>
+	</Props_Story>
+
+
+	<!-- Honoghr (Main Campaign): Fleet Commander Malinth -->
+	<Props_Story Name="Fleet_Commander_Empire">
+		<Variant_Of_Existing_Type>Generic_Field_Commander_Empire</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_MALINTH</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_FLEET_COMMANDER_MALINTH</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Tactical_Health>200</Tactical_Health>
+	</Props_Story>
+
+
+	<!-- Naboo: Chairman Arnama -->
+	<Props_Story Name="Chairman_Arnama_Rebel">
+		<Variant_Of_Existing_Type>Desert_Civilian_A</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_ARNAMA</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CHAIRMAN_ARNAMA</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CHAIRMAN</Encyclopedia_Unit_Class>
+
+		<Affiliation>Rebel</Affiliation>
+
+		<Tactical_Health>200</Tactical_Health>
+	</Props_Story>
 	
+	<Props_Story Name="Chairman_Arnama_Empire">
+		<Variant_Of_Existing_Type>Desert_Civilian_A</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_ARNAMA</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CHAIRMAN_ARNAMA</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CHAIRMAN</Encyclopedia_Unit_Class>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Tactical_Health>200</Tactical_Health>
+	</Props_Story>
+
+
+	<!-- Bothawui: Chairman Arnama -->
+	<Props_Story Name="Senator_Polo_SeLab">
+		<Variant_Of_Existing_Type>Bothan_Civilian</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_POLO_SELAB</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_SENATOR_POLO_SELAB</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SENATOR_GALACTIC</Encyclopedia_Unit_Class>
+
+		<Affiliation>Rebel, Empire</Affiliation>
+
+		<LandBehavior>WALK_LOCOMOTOR, IDLE, SELECTABLE, TARGETING</LandBehavior>
+
+		<Tactical_Health>200</Tactical_Health>
+	</Props_Story>
+
+
+	<!-- Anaxes: Commander Flankar -->
+	<Props_Story Name="Fleet_Commander_Flankar_Empire">
+		<Variant_Of_Existing_Type>Generic_Field_Commander_Empire</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_FLANKAR</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_FLANKAR</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+
+		<Affiliation>Empire</Affiliation>
+
+		<LandBehavior>SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING</LandBehavior>
+		<Primary_Locomotor_Name>WALK_LOCOMOTOR</Primary_Locomotor_Name>
+
+		<Tactical_Health>200</Tactical_Health>
+	</Props_Story>
+	
+	<Props_Story Name="Fleet_Commander_Flankar_Rebel">
+		<Variant_Of_Existing_Type>Generic_Field_Commander_Empire</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_FLANKAR</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_FLANKAR</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+
+		<Affiliation>Rebel</Affiliation>
+
+		<LandBehavior>SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING</LandBehavior>
+		<Primary_Locomotor_Name>WALK_LOCOMOTOR</Primary_Locomotor_Name>
+
+		<Tactical_Health>200</Tactical_Health>
+	</Props_Story>
+
+
+	<!-- Utapau: Garnak Fey -->
+	<Props_Story Name="Garnak_Fey_Empire">
+		<Variant_Of_Existing_Type>Prisoner_Rebel_01</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_GARNAK_FEY</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_GARNAK_FEY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMPTROLLER</Encyclopedia_Unit_Class>
+
+		<Affiliation>Empire</Affiliation>
+
+		<LandBehavior>WALK_LOCOMOTOR, IDLE, SELECTABLE</LandBehavior>
+
+		<Tactical_Health>200</Tactical_Health>
+	</Props_Story>
+
+	<Props_Story Name="Garnak_Fey_Rebel">
+		<Variant_Of_Existing_Type>Prisoner_Rebel_01</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_GARNAK_FEY</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_GARNAK_FEY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMPTROLLER</Encyclopedia_Unit_Class>
+
+		<Affiliation>Rebel</Affiliation>
+
+		<LandBehavior>WALK_LOCOMOTOR, IDLE, SELECTABLE</LandBehavior>
+
+		<Tactical_Health>200</Tactical_Health>
+	</Props_Story>
+
+
+	<!-- Bestine: Ral Falan -->
+	<Props_Story Name="Commander_Ral_Falan_Empire">
+		<Variant_Of_Existing_Type>Urban_Civilian_A</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_RAL_FALAN</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_COMMANDER_RAL_FALAN</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>
+
+		<Affiliation>Empire</Affiliation>
+
+		<LandBehavior>WALK_LOCOMOTOR, IDLE, SELECTABLE</LandBehavior>
+
+		<Tactical_Health>200</Tactical_Health>
+	</Props_Story>
+	
+	<Props_Story Name="Commander_Ral_Falan_Rebel">
+		<Variant_Of_Existing_Type>Urban_Civilian_A</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_RAL_FALAN</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_COMMANDER_RAL_FALAN</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COMMANDER</Encyclopedia_Unit_Class>
+
+		<Affiliation>Rebel</Affiliation>
+
+		<LandBehavior>WALK_LOCOMOTOR, IDLE, SELECTABLE</LandBehavior>
+
+		<Tactical_Health>200</Tactical_Health>
+	</Props_Story>
+
+
+	<!-- Thyferra: Ungarr Daris -->
+	<Props_Story Name="Ungarr_Daris_Empire">
+		<Variant_Of_Existing_Type>Urban_Civilian_A</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_UNGARR_DARIS</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_UNGARR_DARIS</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_POLITICIAN</Encyclopedia_Unit_Class>
+
+		<Affiliation>Empire</Affiliation>
+
+		<LandBehavior>SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING</LandBehavior>
+		<Primary_Locomotor_Name>WALK_LOCOMOTOR</Primary_Locomotor_Name>
+
+		<Tactical_Health>200</Tactical_Health>
+	</Props_Story>
+
+	<Props_Story Name="Ungarr_Daris_Rebel">
+		<Variant_Of_Existing_Type>Urban_Civilian_A</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_UNGARR_DARIS</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_UNGARR_DARIS</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_POLITICIAN</Encyclopedia_Unit_Class>
+
+		<Affiliation>Rebel</Affiliation>
+
+		<LandBehavior>SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING</LandBehavior>
+		<Primary_Locomotor_Name>WALK_LOCOMOTOR</Primary_Locomotor_Name>
+
+		<Tactical_Health>200</Tactical_Health>
+	</Props_Story>
+
+
+	<!-- Byss: Governor Kirith -->
+	<Props_Story Name="Governor_Kirith_Empire">
+		<Variant_Of_Existing_Type>Urban_Civilian_A</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_KIRITH</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_KIRITH</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GOVERNOR</Encyclopedia_Unit_Class>
+
+		<Affiliation>Empire</Affiliation>
+
+		<LandBehavior>SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING</LandBehavior>
+		<Primary_Locomotor_Name>WALK_LOCOMOTOR</Primary_Locomotor_Name>
+
+		<Tactical_Health>200</Tactical_Health>
+	</Props_Story>
+
+	<Props_Story Name="Governor_Kirith_Rebel">
+		<Variant_Of_Existing_Type>Urban_Civilian_A</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_KIRITH</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_KIRITH</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GOVERNOR</Encyclopedia_Unit_Class>
+
+		<Affiliation>Rebel</Affiliation>
+
+		<LandBehavior>SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING</LandBehavior>
+		<Primary_Locomotor_Name>WALK_LOCOMOTOR</Primary_Locomotor_Name>
+
+		<Tactical_Health>200</Tactical_Health>
+	</Props_Story>
+
+
+
 	<Props_Story Name="Communication_Satellite_Empire">
 		<Variant_Of_Existing_Type>E_Orbital_Jamming_Station</Variant_Of_Existing_Type>
 		<Tactical_Health>300</Tactical_Health>
 		<Encyclopedia_Text>TEXT_TOOLTIP_STRUCTURE_COMMUNICATION_SATELLITE</Encyclopedia_Text>
 		<Affiliation>Empire</Affiliation>
 	</Props_Story>
-	
+
 	<Props_Story Name="Communication_Satellite_Rebel">
 		<Variant_Of_Existing_Type>E_Orbital_Jamming_Station</Variant_Of_Existing_Type>
 		<Tactical_Health>300</Tactical_Health>
 		<Encyclopedia_Text>TEXT_TOOLTIP_STRUCTURE_COMMUNICATION_SATELLITE</Encyclopedia_Text>
 		<Affiliation>Rebel</Affiliation>
 	</Props_Story>
-	
+
 	<Props_Story Name="Communication_Satellite_Story">
 		<Variant_Of_Existing_Type>Communication_Satellite_Rebel</Variant_Of_Existing_Type>
 		<Tactical_Health>10000</Tactical_Health>
@@ -3149,41 +3600,7 @@
 		<Is_Valid_Target>False</Is_Valid_Target>
 		<Affiliation>Neutral</Affiliation>
 	</Props_Story>
-	
-	<Props_Story Name="Food_Commissioner_Empire">
-		<Variant_Of_Existing_Type>Swamp_Civilian_A</Variant_Of_Existing_Type>
-		<Tactical_Health>200</Tactical_Health>
-		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_FOOD_COMMISSIONER</Encyclopedia_Text>
-		<Affiliation>Empire</Affiliation>
-	</Props_Story>
-	
-	<Props_Story Name="Food_Commissioner_Rebel">
-		<Variant_Of_Existing_Type>Swamp_Civilian_A</Variant_Of_Existing_Type>
-		<Tactical_Health>200</Tactical_Health>
-		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_FOOD_COMMISSIONER</Encyclopedia_Text>
-		<Affiliation>Rebel</Affiliation>
-	</Props_Story>
-	
-	
-	
-	<Props_Story Name="Twitch_Rebel">
-		<Variant_Of_Existing_Type>Gungan_Warrior</Variant_Of_Existing_Type>
-		<Text_ID>TEXT_TWITCH</Text_ID>
-		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DUELIST </Encyclopedia_Unit_Class>
-		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TWITCH</Encyclopedia_Text>
-		<Tactical_Health>200</Tactical_Health>
-		<Affiliation>Rebel</Affiliation>
-	</Props_Story>
-	
-	<Props_Story Name="Twitch_Empire">
-		<Variant_Of_Existing_Type>Gungan_Warrior</Variant_Of_Existing_Type>
-		<Text_ID>TEXT_TWITCH</Text_ID>
-		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DUELIST </Encyclopedia_Unit_Class>
-		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TWITCH</Encyclopedia_Text>
-		<Tactical_Health>200</Tactical_Health>
-		<Affiliation>Rebel</Affiliation>
-	</Props_Story>
-	
+
 	<Props_Story Name="Keldalbe_Prototype">
 		<Variant_Of_Existing_Type>Kedalbe_Battleship</Variant_Of_Existing_Type>
 		<Tactical_Health>450</Tactical_Health>
@@ -3194,15 +3611,7 @@
 		<Victory_Relevant>Yes</Victory_Relevant>
 		<Score_Cost_Credits> 0 </Score_Cost_Credits>
 	</Props_Story>
-	
-	<Props_Story Name="UM05_CINE_HOLOCRON">
-		<Text_ID>TEXT_SITH_HOLOCRON</Text_ID>
-		<Encyclopedia_Text> TEXT_SITH_HOLOCRON_TOOLTIP </Encyclopedia_Text>
-		<Land_Model_Name>w_sithartifact.alo</Land_Model_Name>
-		<Scale_Factor>1.5</Scale_Factor>
-		<Is_Decoration>No</Is_Decoration>
-	</Props_Story>
-	
+
 	<Props_Story Name="Noghri_Spawn_House_Empire">
 		<Variant_Of_Existing_Type>Noghri_Spawn_House</Variant_Of_Existing_Type>
 		<Is_Branched_Map_Discardable>True</Is_Branched_Map_Discardable>
@@ -3246,112 +3655,7 @@
 		<Is_Branched_Map_Discardable>True</Is_Branched_Map_Discardable>
 		<Affiliation>Rebel</Affiliation>
 	</Props_Story>
-	
-	<Props_Story Name="Spaceport_Director_Hutts">
-		<Variant_Of_Existing_Type>Hutt_Field_Commander</Variant_Of_Existing_Type>
-		<Tactical_Health>200</Tactical_Health>
-		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_SPACEPORT_DIRECTOR</Encyclopedia_Text>
-		<Affiliation>Hutts </Affiliation>
-		<Guard_Chase_Range>100.0</Guard_Chase_Range>
-		<Idle_Chase_Range>100.0</Idle_Chase_Range>
-		<Attack_Move_Response_Range>100.0</Attack_Move_Response_Range>
-	</Props_Story>
-	
-	<Props_Story Name="Twilek_Spawn_House_Empire">
-		<Variant_Of_Existing_Type>Twilek_Spawn_House</Variant_Of_Existing_Type>
-		<Is_Branched_Map_Discardable>True</Is_Branched_Map_Discardable>
-		<Affiliation>Empire</Affiliation>
-	</Props_Story>
 
-	<Props_Story Name="Twilek_Spawn_House_Rebel">
-		<Variant_Of_Existing_Type>Twilek_Spawn_House</Variant_Of_Existing_Type>
-		<Is_Branched_Map_Discardable>True</Is_Branched_Map_Discardable>
-		<Affiliation>Rebel</Affiliation>
-	</Props_Story>
-	
-	<Props_Story Name="Fleet_Commander_Empire">
-		<Variant_Of_Existing_Type>GENERIC_FIELD_COMMANDER_EMPIRE</Variant_Of_Existing_Type>
-		<Tactical_Health>200</Tactical_Health>
-		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_FLEET_COMMANDER_MALINTH</Encyclopedia_Text>
-		<Affiliation>Empire</Affiliation>
-	</Props_Story>
-	
-
-	<Props_Story Name="AlzocIII_Prize_Shaak">
-		<Variant_Of_Existing_Type>SHAAK</Variant_Of_Existing_Type>
-		<Is_Valid_Target>Yes</Is_Valid_Target>
-		<!-- <LandBehavior>WALK_LOCOMOTOR,IDLE,INDIGENOUS_UNIT, SELECTABLE, HIDE_WHEN_FOGGED</LandBehavior>-->
-		<Affiliation>Hostile</Affiliation>
-		<CategoryMask> Vehicle </CategoryMask>
-		<LandBehavior>WALK_LOCOMOTOR, IDLE, SELECTABLE, TARGETING,HIDE_WHEN_FOGGED,INDIGENOUS_UNIT</LandBehavior>
-
-		 <!--<Death_Explosions>Medium_Explosion_Land</Death_Explosions>
-		<Death_SFXEvent_Start_Die> Unit_Generic_Building_Death_SFX </Death_SFXEvent_Start_Die>-->
-		<!--<Death_Clone>Damage_Normal, AlzocIII_Prize_Shaak_Death_Clone</Death_Clone>-->
-		<Death_Fade_Time>0.25</Death_Fade_Time>
-		<Death_Persistence_Duration>1.0</Death_Persistence_Duration>
-		
-	</Props_Story>
-	
-	<Props_Story Name="AlzocIII_Prize_Shaak_Death_Clone">
-		<Variant_Of_Existing_Type>AlzocIII_Prize_Shaak</Variant_Of_Existing_Type>
-		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
-		
-		
-	</Props_Story>
-	
-
-	
-	<Props_Story Name="AlzocIII_Prize_Shaak_Head">
-		<!--<Variant_Of_Existing_Type>UM05_PROP_KRAYTHEAD</Variant_Of_Existing_Type>-->
-		<Land_Model_Name> W_Shaakskull.ALO </Land_Model_Name>
-		<Scale_Factor>1.5</Scale_Factor>
-		<Is_Valid_Target>Yes</Is_Valid_Target>
-		<Affiliation>Neutral</Affiliation>
-		<LandBehavior>HIDE_WHEN_FOGGED, TARGETING</LandBehavior>
-	</Props_Story>
-	
-	<SpaceStructure Name="Stygium_Crystal_Storage_Container">
-		<Variant_Of_Existing_Type>Orbital_Resource_Container</Variant_Of_Existing_Type>
-		<Text_ID>TEXT_TOOLTIP_STRUCTURE_STYGIUM_CRYSTAL_CONTAINER</Text_ID>
-		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
-		<Encyclopedia_Text>TEXT_STRUCTURE_STYGIUM_CRYSTAL_CONTAINER</Encyclopedia_Text>
-		<Tactical_Health>75</Tactical_Health>
-		<Death_Projectiles>Proj_Construction_Pod_Detonation_Underworld_Immune</Death_Projectiles>
-		<Affiliation>Empire, Rebel, Underworld</Affiliation>
-	</SpaceStructure>
-	
-	
-	
-	<Props_Story Name="Weak_SpaceDock_Empire">
-		<Variant_Of_Existing_Type>EMPIRE_DOCK_DESTROYABLE</Variant_Of_Existing_Type>
-		<Is_Branched_Map_Discardable>True</Is_Branched_Map_Discardable>
-		<Tactical_Health>2500</Tactical_Health>
-		<Affiliation>Empire</Affiliation>
-	</Props_Story>
-
-	<Props_Story Name="Weak_SpaceDock_Rebel">
-		<Variant_Of_Existing_Type>EMPIRE_DOCK_DESTROYABLE</Variant_Of_Existing_Type>
-		<Is_Branched_Map_Discardable>True</Is_Branched_Map_Discardable>
-		<Tactical_Health>2500</Tactical_Health>
-		<Affiliation>Rebel</Affiliation>
-	</Props_Story>
-	
-	<Props_Story Name="Chairman_Arnama_Rebel">
-		<Variant_Of_Existing_Type>Desert_Civilian_A</Variant_Of_Existing_Type>
-		<Tactical_Health>200</Tactical_Health>
-		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CHAIRMAN_ARNAMA</Encyclopedia_Text>
-		<Affiliation>Rebel</Affiliation>
-	</Props_Story>
-	
-	<Props_Story Name="Chairman_Arnama_Empire">
-		<Variant_Of_Existing_Type>Desert_Civilian_A</Variant_Of_Existing_Type>
-		<Tactical_Health>200</Tactical_Health>
-		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_CHAIRMAN_ARNAMA</Encyclopedia_Text>
-		<Affiliation>Rebel</Affiliation>
-	</Props_Story>
-	
-	
 	<Props_Story Name="Senator_Polos_Palace">
 		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
 		<Text_ID>TEXT_ENCYLOPEDIA_STRUCTURE_BOTHAN_POLOS_HOUSE</Text_ID>
@@ -3425,164 +3729,40 @@
 		<Score_Cost_Credits> 500 </Score_Cost_Credits>
 
 	</Props_Story>
-	
-	<Props_Story Name="Senator_Polo_SeLab">
-		<Variant_Of_Existing_Type>Bothan_Civilian</Variant_Of_Existing_Type>
-		<LandBehavior>WALK_LOCOMOTOR, IDLE, SELECTABLE, TARGETING</LandBehavior>
-		<Tactical_Health>200</Tactical_Health>
-		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_SENATOR_POLO_SELAB</Encyclopedia_Text>
-		<Affiliation>Rebel, Empire</Affiliation>
-	</Props_Story>
-	
-	<Props_Story Name="Fleet_Commander_Flankar_Empire">
-		<Variant_Of_Existing_Type>Generic_Field_Commander_Empire</Variant_Of_Existing_Type>
-		<LandBehavior> SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING</LandBehavior>
-		<Primary_Locomotor_Name>WALK_LOCOMOTOR</Primary_Locomotor_Name>
-		<Tactical_Health>200</Tactical_Health>
-		<Land_Model_Name>EI_FieldCommander.ALO</Land_Model_Name>
-		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_FLANKAR</Encyclopedia_Text>
+
+	<Props_Story Name="Weak_SpaceDock_Empire">
+		<Variant_Of_Existing_Type>EMPIRE_DOCK_DESTROYABLE</Variant_Of_Existing_Type>
+		<Is_Branched_Map_Discardable>True</Is_Branched_Map_Discardable>
+		<Tactical_Health>2500</Tactical_Health>
 		<Affiliation>Empire</Affiliation>
 	</Props_Story>
-	
-	<Props_Story Name="Fleet_Commander_Flankar_Rebel">
-		<Variant_Of_Existing_Type>Generic_Field_Commander_Rebel</Variant_Of_Existing_Type>
-		<LandBehavior> SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING</LandBehavior>
-		<Primary_Locomotor_Name>WALK_LOCOMOTOR</Primary_Locomotor_Name>
-		<Tactical_Health>200</Tactical_Health>
-		<Land_Model_Name>RI_INFANTRY.alo</Land_Model_Name>
-		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_FLANKAR</Encyclopedia_Text>
+
+	<Props_Story Name="Weak_SpaceDock_Rebel">
+		<Variant_Of_Existing_Type>EMPIRE_DOCK_DESTROYABLE</Variant_Of_Existing_Type>
+		<Is_Branched_Map_Discardable>True</Is_Branched_Map_Discardable>
+		<Tactical_Health>2500</Tactical_Health>
 		<Affiliation>Rebel</Affiliation>
 	</Props_Story>
-	
-	<Props_Story Name="Garnak_Fey_Rebel">
-		<Variant_Of_Existing_Type>Prisoner_Rebel_01</Variant_Of_Existing_Type>
-		<Text_ID>TEXT_TOOLTIP_UNIT_GARNAK_FEY</Text_ID>
-		<LandBehavior>WALK_LOCOMOTOR,IDLE, SELECTABLE</LandBehavior>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
-		<Tactical_Health>200</Tactical_Health>
-		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_UNIT_GARNAK_FEY</Encyclopedia_Text>
-		<Affiliation>Rebel</Affiliation>
-	</Props_Story>
-	
-	<Props_Story Name="Garnak_Fey_Empire">
-		<Variant_Of_Existing_Type>Prisoner_Rebel_01</Variant_Of_Existing_Type>
-		<Text_ID>TEXT_TOOLTIP_UNIT_GARNAK_FEY</Text_ID>
-		<LandBehavior>WALK_LOCOMOTOR,IDLE, SELECTABLE</LandBehavior>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
-		<Tactical_Health>200</Tactical_Health>
-		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_UNIT_GARNAK_FEY</Encyclopedia_Text>
+
+	<SpaceStructure Name="Stygium_Crystal_Storage_Container">
+		<Variant_Of_Existing_Type>Orbital_Resource_Container</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_TOOLTIP_STRUCTURE_STYGIUM_CRYSTAL_CONTAINER</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_STRUCTURE_STYGIUM_CRYSTAL_CONTAINER</Encyclopedia_Text>
+		<Tactical_Health>75</Tactical_Health>
+		<Death_Projectiles>Proj_Construction_Pod_Detonation_Underworld_Immune</Death_Projectiles>
+		<Affiliation>Empire, Rebel, Underworld</Affiliation>
+	</SpaceStructure>
+
+	<Props_Story Name="Twilek_Spawn_House_Empire">
+		<Variant_Of_Existing_Type>Twilek_Spawn_House</Variant_Of_Existing_Type>
+		<Is_Branched_Map_Discardable>True</Is_Branched_Map_Discardable>
 		<Affiliation>Empire</Affiliation>
 	</Props_Story>
-	
-	<Props_Story Name="Commander_Ral_Falan_Empire">
-		<Variant_Of_Existing_Type>Urban_Civilian_A</Variant_Of_Existing_Type>
-		<LandBehavior>WALK_LOCOMOTOR,IDLE, SELECTABLE</LandBehavior>
-		<Tactical_Health>200</Tactical_Health>
-		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_COMMANDER_RAL_FALAN</Encyclopedia_Text>
-		<Affiliation>Empire</Affiliation>
-	</Props_Story>
-	
-	<Props_Story Name="Commander_Ral_Falan_Rebel">
-		<Variant_Of_Existing_Type>Urban_Civilian_A</Variant_Of_Existing_Type>
-		<LandBehavior>WALK_LOCOMOTOR,IDLE, SELECTABLE</LandBehavior>
-		<Tactical_Health>200</Tactical_Health>
-		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_COMMANDER_RAL_FALAN</Encyclopedia_Text>
+
+	<Props_Story Name="Twilek_Spawn_House_Rebel">
+		<Variant_Of_Existing_Type>Twilek_Spawn_House</Variant_Of_Existing_Type>
+		<Is_Branched_Map_Discardable>True</Is_Branched_Map_Discardable>
 		<Affiliation>Rebel</Affiliation>
 	</Props_Story>
-	
-	<Props_Story Name="Ungarr_Daris_Rebel">
-		<Variant_Of_Existing_Type>Urban_Civilian_A</Variant_Of_Existing_Type>
-		<LandBehavior> SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING</LandBehavior>
-		<Primary_Locomotor_Name>WALK_LOCOMOTOR</Primary_Locomotor_Name>
-		<Tactical_Health>200</Tactical_Health>
-		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_UNGARR_DARIS</Encyclopedia_Text>
-		<Affiliation>Rebel</Affiliation>
-	</Props_Story>
-	
-	<Props_Story Name="Ungarr_Daris_Empire">
-		<Variant_Of_Existing_Type>Urban_Civilian_A</Variant_Of_Existing_Type>
-		<LandBehavior> SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING</LandBehavior>
-		<Primary_Locomotor_Name>WALK_LOCOMOTOR</Primary_Locomotor_Name>
-		<Tactical_Health>200</Tactical_Health>
-		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_UNGARR_DARIS</Encyclopedia_Text>
-		<Affiliation>Empire</Affiliation>
-	</Props_Story>
-	
-	<Props_Story Name="Governor_Kirith_Rebel">
-		<Variant_Of_Existing_Type>Urban_Civilian_A</Variant_Of_Existing_Type>
-		<LandBehavior> SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING</LandBehavior>
-		<Primary_Locomotor_Name>WALK_LOCOMOTOR</Primary_Locomotor_Name>
-		<Tactical_Health>200</Tactical_Health>
-		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_KIRITH</Encyclopedia_Text>
-		<Affiliation>Rebel</Affiliation>
-	</Props_Story>
-	
-	<Props_Story Name="Governor_Kirith_Empire">
-		<Variant_Of_Existing_Type>Urban_Civilian_A</Variant_Of_Existing_Type>
-		<LandBehavior> SELECTABLE, SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING</LandBehavior>
-		<Primary_Locomotor_Name>WALK_LOCOMOTOR</Primary_Locomotor_Name>
-		<Tactical_Health>200</Tactical_Health>
-		<Encyclopedia_Text>TEXT_TOOLTIP_UNIT_KIRITH</Encyclopedia_Text>
-		<Affiliation>Empire</Affiliation>
-	</Props_Story>
-	
-	<Props_Story Name="Pirate_Asteroid_Non_Victory">
-		<Variant_Of_Existing_Type>Pirate_Asteroid_Base</Variant_Of_Existing_Type>
-		<Shield_Points>150</Shield_Points>
-		<Tactical_Health>800</Tactical_Health>
-		<Shield_Refresh_Rate>35</Shield_Refresh_Rate>
-		<Victory_Relevant>Yes</Victory_Relevant>
-	</Props_Story>
-	
-	<Props_Story Name="COR_TYBER_INTERCEPTOR">
-		<Variant_Of_Existing_Type>Interceptor4_Frigate</Variant_Of_Existing_Type>
-		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_CRIMELORD </Encyclopedia_Unit_Class>
-		<Icon_Name>i_button_tyber.tga</Icon_Name>
-		<Tech_Level>99</Tech_Level>
-		<Is_Named_Hero>Yes</Is_Named_Hero>
-		<Tactical_Health>3000</Tactical_Health>
-		<Shield_Refresh_Rate>50</Shield_Refresh_Rate>
-		
-		<SFXEvent_Select>Unit_Select_Tyber_Zann</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_Tyber_Zann</SFXEvent_Move>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Tyber_Zann</SFXEvent_Fleet_Move>
-		<SFXEvent_Attack>Unit_Attack_Tyber_Zann</SFXEvent_Attack>
-		<SFXEvent_Guard>Unit_Guard_Tyber_Zann</SFXEvent_Guard>
-		<SFXEvent_Fire>Unit_Storm_Trooper_Fire</SFXEvent_Fire>
-		<SFXEvent_Group_Move>Unit_Group_Move_Tyber_Zann</SFXEvent_Group_Move>
-		<SFXEvent_Group_Attack>Unit_Group_Attack_Tyber_Zann</SFXEvent_Group_Attack>
-		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Tyber_Zann </SFXEvent_Health_Low_Warning>
-		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Tyber_Zann </SFXEvent_Health_Critical_Warning>
-		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
-    </Props_Story>
-    
-	<Props_Story Name="PROP_CORUSCANT_SKYDOME">
-	    <!-- this is a dead bounty hunter cine prop -->
-		<Text_ID>TEXT_NONE</Text_ID>
-		<Land_Model_Name>w_sky_smog00.alo</Land_Model_Name>
-		<Scale_Factor>.35</Scale_Factor>
-		<Is_Decoration>No</Is_Decoration>
-		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade> 
-	</Props_Story>
-	
-	<Props_Story Name="UMP_Small_Ramp">
-		<Text_ID>TEXT_NONE</Text_ID>
-		<Land_Model_Name>W_UrbanHalfWall_Side.ALO</Land_Model_Name>
-		<LandBehavior>LAND_OBSTACLE</LandBehavior>
-		<Scale_Factor>.3</Scale_Factor>
-		<!--<Is_Sprite>No</Is_Sprite>-->
-		<Is_Decoration>No</Is_Decoration>
-		<Is_Discardable>No</Is_Discardable>
-	</Props_Story>
-	
-	<Props_Story Name="UMP_Small_Gear">
-		<Text_ID>TEXT_NONE</Text_ID>
-		<Land_Model_Name>W_Prop_PwrBox.ALO</Land_Model_Name>
-		<LandBehavior>LAND_OBSTACLE</LandBehavior>
-		<Scale_Factor>.4</Scale_Factor>
-		<!--<Is_Sprite>No</Is_Sprite>-->
-		<Is_Decoration>No</Is_Decoration>
-		<Is_Discardable>No</Is_Discardable>
-	</Props_Story>
-	
 </Props_Story>

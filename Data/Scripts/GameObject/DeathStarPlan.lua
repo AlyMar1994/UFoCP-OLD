@@ -16,7 +16,7 @@ function Definitions()
 	MinPlanAttachCost = 50000
 	MaxPlanAttachCost = 0
 
-	-- Commander hit list.
+	-- Commander hit list:
 	Attack_Ability_Type_Names =
 	{
 		"Infantry", "Vehicle", "Air", "Structure",	-- ATTACK these types!

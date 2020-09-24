@@ -1360,8 +1360,8 @@
 		<FormationGrouping>Solo</FormationGrouping>
 		<MinimumPushReturnDistance>100</MinimumPushReturnDistance>
 		<Min_Speed>.10</Min_Speed>
-		<MovementPredictionInterval>5.00</MovementPredictionInterval>		
-		<MovementBoxExpansionFactor>8.00</MovementBoxExpansionFactor>	
+		<MovementPredictionInterval>5.00</MovementPredictionInterval>
+		<MovementBoxExpansionFactor>8.00</MovementBoxExpansionFactor>
 
 		<!-- <Is_Sprite>No</Is_Sprite> -->
 		<Type>Walk</Type>
@@ -1862,7 +1862,7 @@
 	<!-- V-wing (Space Fighter) - Clone Wars-era starfighter built at Skirmish Pirate merchants. -->
 	<UniqueUnit Name="V-wing_Fighter">
 		<Text_ID>TEXT_UNIT_VWING_FIGHTER</Text_ID>
-		<Encyclopedia_Text>TEXT_TOOLTIP_V_WING_01</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_TOOLTIP_V_WING_00</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
 		<Encyclopedia_Good_Against>TIE_Bomber Z-95_Headhunter_Rebel Skipray_Blastboat</Encyclopedia_Good_Against>
 		<Encyclopedia_Vulnerable_To>TIE_Fighter Crusader_Gunship Tartan_Patrol_Cruiser</Encyclopedia_Vulnerable_To>

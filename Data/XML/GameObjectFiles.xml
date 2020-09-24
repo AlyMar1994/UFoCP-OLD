@@ -10,14 +10,14 @@
 	<File>Units\GroundVehicles.xml</File>
 	<File>GroundCompaniesRebel.xml</File>
 	<File>GroundCompaniesEmpire.xml</File>
-	<File>GroundIndigenous.xml</File>
+	<File>Units\GroundIndigenous.xml</File>
 	<File>GroundCompaniesIndigenous.xml</File>
 	<File>GroundBuildablesRebel.xml</File>
 	<File>GroundBuildablesEmpire.xml</File>
 	<File>GroundBuildablesPirate.xml</File>
 	<File>GroundBuildablesSkirmish.xml</File>
 
-	<File>SpaceProps.xml</File>
+	<File>Maps\SpaceProps.xml</File>
 	<File>Units\SpaceUnitsCapital.xml</File>
 	<File>Units\SpaceUnitsFighters.xml</File>
 	<File>SpaceUnitsCorvettes.xml</File>
@@ -133,12 +133,12 @@
 	<File>Units\UND\Units_Space_Underworld_Skipray.xml</File>
 	<File>Units_Space_Underworld_Crusader_Gunship.xml</File>
 	<File>Units_Space_Underworld_Interceptor4.xml</File>
-	<File>Units_Space_Underworld_Vengeance.xml</File>	
+	<File>Units_Space_Underworld_Vengeance.xml</File>
 	<File>Units\UND\Units_Space_Underworld_Kadalbe_Battleship.xml</File>
 	<File>Units_Space_Underworld_Krayt_Destroyer.xml</File>
 	<File>Units_Space_Underworld_Buzz_Droids.xml</File>
 
-	<File>SpecialStructures_Underworld.xml</File>
+	<File>Structures\SpecialStructures_Underworld.xml</File>
 	<File>StarBases_Underworld.xml</File>
 
 
@@ -157,10 +157,10 @@
 	<File>Props_Felucia.xml</File>
 	<File>GroundBuildablesUnderworld.xml</File>
 	<File>GroundStructures_Underworld.xml</File>
-	<File>Mobile_Defense_Units.XML</File>
+	<File>Units\Units_UFoCP_Land_All_MDUs.xml</File>
 	<File>Multiplayer_Structure_Markers.XML</File>
 	<File>UpgradeObjects_Underworld.XML</File>
-	<File>Units\UND\Corruption_Special_Units.XML</File>
+	<File>Units\UND\Units_UFoCP_Both_Underworld_CorruptionRewards.xml</File> <!-- All unit rewards from corruption. -->
 
 
 

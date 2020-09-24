@@ -24,6 +24,126 @@ Whenever the AI is edited, it's not labeled based on specific changed units with
 
 
 =========================================================================================
+v1.12
+=========================================================================================
+Sorry about this, folks.  A bad merge of files and bad tracking allowed me to lose a couple changes I wanted to push onto v1.11.  Right now, the AI edits should actually go through and work.  I still need to finish up the edits to the corruption missions, as those failed to merge on release too, only a few were pushed.
+
+There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT Changelog.txt" in the game directory to see!
+
+
+==================
+UFoCP
+==================
+-Reverted all AI files regarding the <Should_Build_EM_Field_Generator> equations from v1.11. As it turns out, aparently the Empire has a MDU device, named the "EM Field Generator," which disrupts missiles, and not the Underworld repulsorlift field jammer. What a world.
+
+-Changed Underworld slaves and piracy unit file from "Corruption_Special_Units" to "Units_UFoCP_Both_Underworld_CorruptionRewards." No gameplay change other than internal. Name is pending.
+
+-Changed MDUs file from "Mobile_Defense_Units" to "Units_Land_All_MDUs." No gameplay change other than internal.
+
+
+==================
+General
+==================
+-Updated EmmyLUA implementation.
+
+-Units_UFoCP_Both_Underworld_CorruptionRewards – Greatly simplified the file by making all slaves/piracy rewards a variant of their (respective) original units, with some modifications.
+
+
+==================
+A.I.
+==================
+-(LUA) BuildAntiInfantryTurret – Now searches for an Underworld anti-infantry turret (proton torpedo launcher).
+-(LUA) BuildAntiVehicleTurret – Now searches for the proper mass driver turret for the Underworld.
+
+-(LUA) TacticalMultiplayerBuildSpaceUnitsGeneric – Modified script to search for proper Boba Fett unit for space. The AI should now start building Boba Fett in space skirmish again.
+-(LUA) TacticalMultiplayerBuildSpaceUnitsGeneric – Removed "Executor_Super_Star_Destroyer" from the possible build pool, as Petroglyph removed the Executor from being built in space skirmish.
+
+-(LUA) VaderAssistsLand – Modified script to search for "Darth_Vader_Expansion" (FoC) instead of "Darth_Vader" (non-land unit).
+
+-(PE) BasicLandEquations – Modified <Should_Destroy_Structure> and <Should_Destroy_Turbolaser> equations to account for Underworld turbolaser towers.
+-(PE) BasicLandEquations – Modified <Should_Destroy_Structure> to include "U_Ground_Gravity_Generator" with other land structures.
+-(PE) BasicLandEquations – Modified <Need_AntiVehicle_Turret> to change priority for the Underworld: Underworld_Torpedo_Turret is not exactly an anti-vehicle turret, and has been replaced by the mass driver turret.
+-(PE) BasicLandEquations – Modified <Need_AntiInfantry_Turret> this AI command wasn't updated since EaW, and now includes the Underworld. They didn't have a defined anti-infantry turret, and has been defined as the proton torpedo turret.
+-(PE) BasicLandEquations – Modified <Has_Vehicle_Hero> to include "Garm_Bel_Iblis_Team" (Rebel Gargantuan battle platform), and IG-88. The equation marks whether or not the AI has these heroes, should they (in the future) need to build a vehicle repair bay, which Garm Bel and IG-88 can only be "healed" by.
+-(PE) BasicLandEquations – Modified <Need_To_Sell_Tactical_Structure>: rearranged parts of the equation to include edits to turret needs, and adding with new modifications.
+
+-(PE) BudgetingEquations – Updated <Defensive_Structure_Count> to include the proper "U_Ground_Gravity_Generator" instead of "Ground_Gravity_Generator"
+
+
+==================
+Structures (Galactic)
+==================
+-The Maw – Removed entry from tag <Destroyed_Galactic_Model_Name> as the planet cannot be destroyed.
+-The Maw – Changed tag <GUI_Model_Name> to the black hole model.
+
+-Vergesso Asteroids – Removed entry from tag <Destroyed_Galactic_Model_Name> as the planet cannot be destroyed.
+-Vergesso Asteroids – Fixed all in-game text for Vergesso being completely and utterly broken beyond belief.
+
+
+==================
+Structures (Galactic)
+==================
+-Barracks (Empire) – Fixed tooltip naming units improperly.
+
+-Barracks (Rebels) – Fixed tooltip not having "Unlocks:" text.
+-Barracks (Rebels) – Fixed tooltip not having the "Builds:" text.
+
+-Light Factory (Empire) – Fixed tooltip not mentioning the MDU unit.
+
+-Light Factory (Rebels) – Fixed tooltip not mentioning the MDU unit.
+
+-Mercenary Barracks (Underworld) – Fixed tooltip not having "Unlocks:" text.
+-Mercenary Barracks (Underworld) – Fixed tooltip not having the "Builds:" text.
+
+-Droid Works (Underworld) – Fixed tooltip not having the "Builds:" text.
+
+-Zann Consortium Factory – Fixed all tooltip text regarding this unit (not having the aforementioned sections, nor naming all buildable units, and fixing the garrison unit indicator).
+
+
+==================
+Units (Land)
+==================
+-Did a complete overhaul (visually) of all corruption mission targets. Their tooltips are now fully customized, with proper descriptions, classes, and names. This includes a variety of usable (and somewhat generic) class tags should anyone need them inside the .DAT file (many of them are currently more exact than necessary [e.g. "Ship Designer" instead of just "Engineer"], and are up for modification).
+
+-Fixed all Dark Trooper unit descriptions being bare minimum, and not describing mainly anything about the unit other than vague adjectives.
+-Fixed all Dark Trooper units using wrong VO for their in-production/completed dialogue. SFXEvent was referencing wrong dialogue, and the company was using wrong dialogue as well.
+
+-MDU (Empire) – Fixed MDU using Rebels SFX.
+
+-MDU (Underworld) – Fixed MDU using Rebels SFX.
+
+-Mon Calamari (Slave) – Fixed the Calamari Underworld slave having the "STUNNABLE" trait when all other slaves didn't.
+
+-Pyn'gani (Slave) – Fixed the Pyn'gani Underworld slave not having the <Create_Team> tag, not allowing the game to realize its company/containers properly.
+
+-Sarlaac – Fixed the sarlaac pit not having a unit icon.
+
+-Sketto – Fixed the indigenous unit sketto (those giant dragonfly bug things) not having a unit icon.
+
+-Tauntaun – Fixed the tauntauns on Hoth not having a unit icon.
+
+-Twi'lek (Slave) – Fixed the Twi'lek Underworld slave not having the <Create_Team> tag, not allowing the game to realize its company/containers properly.
+
+-Wookie (Slave) – Fixed the Wookie having an erroneous <Create_Team_Type> tag, which would point to the original Wookie container and not the slave one.
+
+
+==================
+Units (Space)
+==================
+-A-wing – Fixed Underworld variant
+
+-Nebulon-B Frigate – Fixed Underworld variant building faster than the original variant.
+
+-TIE defender – Fixed Underworld variant not having <Is_Bomber> set to "Yes."
+-TIE defender – Fixed Underworld variant being less expensive than the original unit.
+-TIE defender – Fixed Underworld variant building faster than the original unit.
+
+
+=========================================================================================
+
+
+
+=========================================================================================
 v1.11
 =========================================================================================
 There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT Changelog.txt" in the game directory to see!

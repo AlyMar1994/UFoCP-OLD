@@ -514,7 +514,10 @@
 	<!-- MAIN: TEAM(S) -->
 	<HeroCompany Name="Boba_Fett_Team">
 		<Text_ID>TEXT_HERO_BOBA_FETT_TEAM</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_BOBA_FETT</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOUNTY_HUNTER</Encyclopedia_Unit_Class>
 		<Icon_Name>I_Button_Boba_Fett.tga</Icon_Name>
+
 		<Is_Dummy>Yes</Is_Dummy>
 		<Damage>80</Damage>
 		<Affiliation>Empire</Affiliation>
@@ -564,9 +567,6 @@
 		</Unit_Abilities_Data>
 
 		<Score_Cost_Credits>10000</Score_Cost_Credits>
-
-		<Encyclopedia_Text>TEXT_TOOLTIP_BOBA_FETT</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOUNTY_HUNTER</Encyclopedia_Unit_Class>	
 
 		<CategoryMask>LandHero | SpaceHero</CategoryMask>
 		<Ranking_In_Category>3</Ranking_In_Category>

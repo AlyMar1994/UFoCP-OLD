@@ -7,9 +7,9 @@
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FACTORY_SHIP</Encyclopedia_Unit_Class>
 		<Encyclopedia_Good_Against>Corellian_Corvette Corellian_Gunboat Nebulon_B_Frigate</Encyclopedia_Good_Against>
 		<Encyclopedia_Vulnerable_To>Y-wing Skipray_Blastboat</Encyclopedia_Vulnerable_To>
+		<Icon_Name>I_Button_Rom_Mohc.tga</Icon_Name>
 
 		<Space_Model_Name>EV_ArcHammer.alo</Space_Model_Name>
-		<Icon_Name>I_Button_Rom_Mohc.tga</Icon_Name>
 
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
@@ -208,8 +208,9 @@
 		<Encyclopedia_Vulnerable_To>Plex_Soldier Underworld_Disruptor_Merc</Encyclopedia_Vulnerable_To>
 		<Encyclopedia_Text>TEXT_TOOLTIP_DARKTROOPER_P1</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
-		<Land_Model_Name>EI_DARKTROOPER_ONE.ALO</Land_Model_Name>
 		<Icon_Name>I_Button_EI_DarkTrooper_One.tga</Icon_Name>
+
+		<Land_Model_Name>EI_DARKTROOPER_ONE.ALO</Land_Model_Name>
 
 		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
 		<Ranking_In_Category>7</Ranking_In_Category>
@@ -286,11 +287,11 @@
 		<SFXEvent_Attack>Unit_Attack_Dark_Trooper_1</SFXEvent_Attack>
 		<SFXEvent_Guard>Unit_Guard_Dark_Trooper_1</SFXEvent_Guard>
 		<SFXEvent_Fire>Unit_Dark_Trooper_Blade_Swing</SFXEvent_Fire>
-		<SFXEvent_Assist_Move>Unit_Assist_Move_Dark_Trooper_1</SFXEvent_Assist_Move>		
+		<SFXEvent_Assist_Move>Unit_Assist_Move_Dark_Trooper_1</SFXEvent_Assist_Move>
 		<SFXEvent_Assist_Attack>Unit_Assist_Attack_Dark_Trooper_1</SFXEvent_Assist_Attack>
 		<SFXEvent_Unit_Lost />
-		<SFXEvent_Tactical_Build_Started>Unit_Produce_Troops_Arc_Hammer</SFXEvent_Tactical_Build_Started>		
-		<SFXEvent_Tactical_Build_Complete>Unit_Complete_Troops_Arc_Hammer</SFXEvent_Tactical_Build_Complete>		
+		<SFXEvent_Tactical_Build_Started>Unit_Produce_Troops_Arc_Hammer</SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete>Unit_Complete_Troops_Arc_Hammer</SFXEvent_Tactical_Build_Complete>
 		<SFXEvent_Tactical_Build_Cancelled>EHD_Reinforcements_Cancelled</SFXEvent_Tactical_Build_Cancelled>
 
 		<CategoryMask>Vehicle | AntiInfantry</CategoryMask>
@@ -405,9 +406,9 @@
 		<Company_Units>Dark_Trooper_PhaseI, Dark_Trooper_PhaseI, Dark_Trooper_PhaseI</Company_Units>
 		<Max_Squad_Size>1</Max_Squad_Size>
 
-		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Started>Unit_Produce_Troops_Arc_Hammer</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_Dark_Trooper_1</SFXEvent_Build_Complete>
+		<SFXEvent_Build_Complete>Unit_Complete_Troops_Arc_Hammer</SFXEvent_Build_Complete>
 		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Dark_Trooper_1</SFXEvent_Fleet_Move>
 		<Score_Cost_Credits>650</Score_Cost_Credits>
 		<Maintenance_Cost>0.05</Maintenance_Cost>
@@ -545,12 +546,12 @@
 		<SFXEvent_Attack>Unit_Attack_Dark_Trooper_2</SFXEvent_Attack>
 		<SFXEvent_Guard>Unit_Guard_Dark_Trooper_2</SFXEvent_Guard>
 		<SFXEvent_Fire>Unit_Storm_Trooper_Fire</SFXEvent_Fire>
-		<SFXEvent_Assist_Move>Unit_Assist_Move_Dark_Trooper_2</SFXEvent_Assist_Move>		
+		<SFXEvent_Assist_Move>Unit_Assist_Move_Dark_Trooper_2</SFXEvent_Assist_Move>
 		<SFXEvent_Assist_Attack>Unit_Assist_Attack_Dark_Trooper_2</SFXEvent_Assist_Attack>
 		<Death_SFXEvent_Start_Die>Unit_AT_ST_Death_SFX</Death_SFXEvent_Start_Die>
 		<SFXEvent_Unit_Lost />
-		<SFXEvent_Tactical_Build_Started>Unit_Produce_Troops_Arc_Hammer</SFXEvent_Tactical_Build_Started>		
-		<SFXEvent_Tactical_Build_Complete>Unit_Complete_Troops_Arc_Hammer</SFXEvent_Tactical_Build_Complete>	
+		<SFXEvent_Tactical_Build_Started>Unit_Produce_Troops_Arc_Hammer</SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete>Unit_Complete_Troops_Arc_Hammer</SFXEvent_Tactical_Build_Complete>
 		<SFXEvent_Tactical_Build_Cancelled>EHD_Reinforcements_Cancelled</SFXEvent_Tactical_Build_Cancelled>
 
 		<CategoryMask>Vehicle | AntiVehicle</CategoryMask>
@@ -675,9 +676,9 @@
 		<Company_Units>Dark_Trooper_PhaseII, Dark_Trooper_PhaseII</Company_Units>
 		<Max_Squad_Size>1</Max_Squad_Size>
 
-		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Started>Unit_Produce_Troops_Arc_Hammer</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_Dark_Trooper_2</SFXEvent_Build_Complete>
+		<SFXEvent_Build_Complete>Unit_Complete_Troops_Arc_Hammer</SFXEvent_Build_Complete>
 		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Dark_Trooper_2</SFXEvent_Fleet_Move>
 		<Score_Cost_Credits>650</Score_Cost_Credits>
 		<Maintenance_Cost>0.05</Maintenance_Cost>
@@ -822,7 +823,7 @@
 			HP_DarkTrooper_P3_05
 		</HardPoints>
 
-		<!-- DamageStates -->
+		<!-- Damage States -->
 		<!-- <Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds> -->
 		<!-- <Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates> -->
 		<!-- <Land_Damage_SFX>null, SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX> -->
@@ -841,11 +842,11 @@
 		<SFXEvent_Attack>Unit_Attack_Dark_Trooper_3</SFXEvent_Attack>
 		<SFXEvent_Guard>Unit_Guard_Dark_Trooper_3</SFXEvent_Guard>
 		<SFXEvent_Fire>Unit_Storm_Trooper_Fire</SFXEvent_Fire>
-		<SFXEvent_Assist_Move>Unit_Assist_Move_Dark_Trooper_3</SFXEvent_Assist_Move>		
+		<SFXEvent_Assist_Move>Unit_Assist_Move_Dark_Trooper_3</SFXEvent_Assist_Move>
 		<SFXEvent_Assist_Attack>Unit_Assist_Attack_Dark_Trooper_3</SFXEvent_Assist_Attack>
 		<SFXEvent_Unit_Lost />
-		<SFXEvent_Tactical_Build_Started>Unit_Produce_Troops_Arc_Hammer</SFXEvent_Tactical_Build_Started>		
-		<SFXEvent_Tactical_Build_Complete>Unit_Complete_Troops_Arc_Hammer</SFXEvent_Tactical_Build_Complete>	
+		<SFXEvent_Tactical_Build_Started>Unit_Produce_Troops_Arc_Hammer</SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete>Unit_Complete_Troops_Arc_Hammer</SFXEvent_Tactical_Build_Complete>
 		<SFXEvent_Tactical_Build_Cancelled>EHD_Reinforcements_Cancelled</SFXEvent_Tactical_Build_Cancelled>
 
 		<CategoryMask>Vehicle | AntiVehicle | AntiStructure</CategoryMask>
@@ -980,9 +981,9 @@
 		<Company_Units>Dark_Trooper_PhaseIII</Company_Units>
 		<Max_Squad_Size>1</Max_Squad_Size>
 
-		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Started>Unit_Produce_Troops_Arc_Hammer</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Complete_Dark_Trooper_3</SFXEvent_Build_Complete>
+		<SFXEvent_Build_Complete>Unit_Complete_Troops_Arc_Hammer</SFXEvent_Build_Complete>
 		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Dark_Trooper_3</SFXEvent_Fleet_Move>
 		<Score_Cost_Credits>650</Score_Cost_Credits>
 		<Maintenance_Cost>0.05</Maintenance_Cost>
