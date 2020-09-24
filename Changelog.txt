@@ -24,6 +24,15 @@ Whenever the AI is edited, it's not labeled based on specific changed units with
 
 
 =========================================================================================
+v1.13
+=========================================================================================
+
+
+=========================================================================================
+
+
+
+=========================================================================================
 v1.12
 =========================================================================================
 Sorry about this, folks.  A bad merge of files and bad tracking allowed me to lose a couple changes I wanted to push onto v1.11.  Right now, the AI edits should actually go through and work.  I still need to finish up the edits to the corruption missions, as those failed to merge on release too, only a few were pushed.
