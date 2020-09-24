@@ -17,7 +17,7 @@
 	<File>GroundBuildablesPirate.xml</File>
 	<File>GroundBuildablesSkirmish.xml</File>
 
-	<File>SpaceProps.xml</File>
+	<File>Maps\SpaceProps.xml</File>
 	<File>Units\SpaceUnitsCapital.xml</File>
 	<File>Units\SpaceUnitsFighters.xml</File>
 	<File>SpaceUnitsCorvettes.xml</File>

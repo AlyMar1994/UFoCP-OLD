@@ -44,6 +44,8 @@ UFoCP
 ==================
 General
 ==================
+-Updated EmmyLUA implementation.
+
 -Units_UFoCP_Both_Underworld_CorruptionRewards – Greatly simplified the file by making all slaves/piracy rewards a variant of their (respective) original units, with some modifications.
 
 
