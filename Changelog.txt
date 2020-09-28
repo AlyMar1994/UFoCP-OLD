@@ -39,6 +39,8 @@ General
 -Removed ability "Kyle_Katarn_Sabotage" declaration in GameConstants to fix an internal error, as Kyle isn't a galactic unit and cannot sabotage like the Defilers (he doesn't have the ability anyway).
 -Removed ability "Corruptor_Corrupt_Planet_1" declaration in GameConstants to fix an internal error, as the "Saboteur"/"Corrupter" unit was replaced with the modern Defiler.
 
+-Fixed the Underworld using Rebel music instead of their own proper faction losing music in a default strategic/tactical loss.
+
 
 ==================
 Planets (Galactic)
