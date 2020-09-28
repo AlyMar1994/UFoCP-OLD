@@ -28,6 +28,58 @@ v1.13
 =========================================================================================
 
 
+==================
+General
+==================
+-Fixed duplicate trade route "Anaxes_Carida" to fix an internal error.
+-Fixed duplicate trade route "Mandalore_Utapau" to fix an internal error.
+
+-Removed ability "Tani_Slicer" declaration in GameConstants to fix an internal error, as Tani is a completely unused unit.
+-Removed ability "Mara_Jade_Sabotage" declaration in GameConstants to fix an internal error, as Mara isn't a galactic unit and cannot sabotage like the Defilers (she doesn't have the ability anyway).
+-Removed ability "Kyle_Katarn_Sabotage" declaration in GameConstants to fix an internal error, as Kyle isn't a galactic unit and cannot sabotage like the Defilers (he doesn't have the ability anyway).
+-Removed ability "Corruptor_Corrupt_Planet_1" declaration in GameConstants to fix an internal error, as the "Saboteur"/"Corrupter" unit was replaced with the modern Defiler.
+
+
+==================
+Planets (Galactic)
+==================
+-Added a galactic-level icon for Corruption type "Piracy," so when a planet gets corrupted it visibly shows Piracy affects the planet (originally, Petro never included an icon in-game).  It looks like ass, but it fixes the issue right now.
+
+
+==================
+Structures (Land)
+==================
+-Rebel Command Center – Fixed non-MP variants not having encyclopedia text (was causing internal errors).
+
+
+==================
+Structures (Space)
+==================
+-Consortium Space Station – Fixed "Reinforced Durasteel" upgrades lv.1-3.  The upgrades originally did nothing, as their ability type to upgrade was "Ground_Automatic" instead of "Space_Automatic."
+-Consortium Space Station – Fixed "Reinforced Durasteel" upgrades lv.1-3.  Upgrades referenced applicable unit category "structure" and not specifically the Underworld space stations, meaning all structures would endure a defense upgrade.
+
+-Pirate Asteroid Base – Fixed base using wrong "Model_To_Attach" to attach a laser hardpoint to a bone.  Was "Nb_apbase_hp_ll1.alo" instead of "Nb_apbase_hp_ll2.alo" (ll1 was used by another hardpoint).
+
+-Vengeance Frigate – Fixed levels 1-2 of the "Modified Cloaking Generator" upgrades.  Upgrade originally did nothing, as ability type was "Ground_Automatic" instead of "Space_Automatic."
+-Vengeance Frigate – Fixed levels 1-2 of the "Modified Cloaking Generator" upgrades.  Upgrade originally applied to all units with cloaking buff, when it is only supposed to be the Vengeance Frigate.
+
+
+==================
+Units (Land)
+==================
+-Grenadiers – Fixed infantry being unbribable in Underworld mirror skirmish matches.  They have been given a <Tactical_Bribe_Cost> so Tyber Zann can bribe enemy Underworld infantry.  Uses vanilla bribe cost value of 25 credits.
+
+-Merc Assault Squad – Fixed infantry being unbribable in Underworld mirror skirmish matches.  They have been given a <Tactical_Bribe_Cost> so Tyber Zann can bribe enemy Underworld infantry.  Uses vanilla bribe cost value of 25 credits.
+
+
+==================
+Units (Space)
+==================
+-M.A.L. – Removed non-existant sound file usage "U000_MAL0503_ENG," an assist movement line (was causing internal errors).
+
+-Rogue Squadron – Fixed Derek Kilvian's lines not playing when his enemy's health is critical in Rogue Squadron.  The SFXEvent was improperly named "Unit_Enemy_Health_Critcal_Derek_Klivian" instead of "Unit_Enemy_Health_Critical_Derek_Klivian"
+
+
 =========================================================================================
 
 

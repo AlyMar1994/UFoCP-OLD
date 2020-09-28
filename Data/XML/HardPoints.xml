@@ -5441,7 +5441,7 @@
 
 
 
-<!-- PIRATE ASTEROID SPACE STATION HARD POINTS -->
+    <!-- PIRATE ASTEROID SPACE STATION HARD POINTS -->
 
 
     <HardPoint Name="HP_Pirate_Base_Laser_Cannon_00">
@@ -5499,7 +5499,7 @@
 			<Death_Explosion_Particles> Large_Explosion_Space_Empire </Death_Explosion_Particles>
 			<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
 
-            <Model_To_Attach>Nb_apbase_hp_ll1.alo</Model_To_Attach>
+            <Model_To_Attach>Nb_apbase_hp_ll2.alo</Model_To_Attach>
             <Attachment_Bone>HP_LL2_BONE</Attachment_Bone>
             <Collision_Mesh>HP_LL2_COLL</Collision_Mesh>
             <Damage_Decal>HP_LL2_BLAST</Damage_Decal>
@@ -5867,7 +5867,7 @@
 			<Death_Explosion_Particles> Large_Explosion_Space_Empire </Death_Explosion_Particles>
 			<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
 
-            <Model_To_Attach>Nb_apbase_hp_ll1.alo</Model_To_Attach>
+            <Model_To_Attach>Nb_apbase_hp_ll2.alo</Model_To_Attach>
             <Attachment_Bone>HP_LL2_BONE</Attachment_Bone>
             <Collision_Mesh>HP_LL2_COLL</Collision_Mesh>
             <Damage_Decal>HP_LL2_BLAST</Damage_Decal>

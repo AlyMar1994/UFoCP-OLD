@@ -3710,16 +3710,16 @@
 	they arrive at a planet. Most of those special actions are tied to special abilities (Raid is the only
 	action that is not). This is the list of special abilities that will cause the corresponding special
 	action slot to be displayed on the zoomed out galactic GUI when dragging a fleet. -->
-	<Activated_Slice_Ability_Names> Tani_Slicer, R2D2_Slicer</Activated_Slice_Ability_Names>
-    <Activated_Black_Market_Ability_Names> Tyber_Zann_Black_Market, Urai_Fen_Black_Market, Silri_Black_Market</Activated_Black_Market_Ability_Names>
-	<Activated_Sabotage_Ability_Names> Mara_Jade_Sabotage, Kyle_Katarn_Sabotage, Saboteur_Galactic_Sabotage </Activated_Sabotage_Ability_Names>
-	<Activated_Neutralize_Hero_Ability_Names> Boba_Fett_Neutralize_Hero, Bounty_Hunter_Neutralize_Hero, Mara_Jade_Hero_Assasin, Bossk_Neutralize_Hero, IG88_Neutralize_Hero </Activated_Neutralize_Hero_Ability_Names>
-	<Activated_Siphon_Credits_Ability_Names> Han_Solo_Siphon_Credits, Smuggler_Siphon_Credits </Activated_Siphon_Credits_Ability_Names>
-	<Activated_System_Spy_Ability_Names> Probe_Droid_System_Spy </Activated_System_Spy_Ability_Names>
-	<Activated_Destroy_Planet_Ability_Names> Death_Star_Planet_Destruction </Activated_Destroy_Planet_Ability_Names>
-	<Activated_Corrupt_Planet_Ability_Names> Corruptor_Corrupt_Planet_1, Saboteur_Corruption </Activated_Corrupt_Planet_Ability_Names>
+	<Activated_Slice_Ability_Names>R2D2_Slicer</Activated_Slice_Ability_Names>
+	<Activated_Black_Market_Ability_Names>Tyber_Zann_Black_Market, Urai_Fen_Black_Market, Silri_Black_Market</Activated_Black_Market_Ability_Names>
+	<Activated_Sabotage_Ability_Names>Saboteur_Galactic_Sabotage</Activated_Sabotage_Ability_Names>
+	<Activated_Neutralize_Hero_Ability_Names>Boba_Fett_Neutralize_Hero, Bounty_Hunter_Neutralize_Hero, Mara_Jade_Hero_Assasin, Bossk_Neutralize_Hero, IG88_Neutralize_Hero</Activated_Neutralize_Hero_Ability_Names>
+	<Activated_Siphon_Credits_Ability_Names>Han_Solo_Siphon_Credits, Smuggler_Siphon_Credits</Activated_Siphon_Credits_Ability_Names>
+	<Activated_System_Spy_Ability_Names>Probe_Droid_System_Spy</Activated_System_Spy_Ability_Names>
+	<Activated_Destroy_Planet_Ability_Names>Death_Star_Planet_Destruction</Activated_Destroy_Planet_Ability_Names>
+	<Activated_Corrupt_Planet_Ability_Names>Saboteur_Corruption</Activated_Corrupt_Planet_Ability_Names>
 	<Activated_Remove_Corruption_Ability_Names>Mothma_Remove_Corruption, ObiWan_Remove_Corruption, Luke_Remove_Corruption, Yoda_Remove_Corruption, Akbar_Remove_Corruption, Hansolo_Remove_Corruption, Kyle_Remove_Corruption, Emperor_Remove_Corruption, Mara_Remove_Corruption, Vader_Remove_Corruption, Thrawn_Remove_Corruption, Veers_Remove_Corruption</Activated_Remove_Corruption_Ability_Names>
-	<Activated_Hack_Super_Weapon_Ability_Names> IG88_Hack_Death_Star </Activated_Hack_Super_Weapon_Ability_Names>
+	<Activated_Hack_Super_Weapon_Ability_Names>IG88_Hack_Death_Star</Activated_Hack_Super_Weapon_Ability_Names>
 	
 	<Use_Reinforcement_Points>True</Use_Reinforcement_Points>
 	
@@ -4105,42 +4105,42 @@
 		TEXT_CORRUPTION_SLAVERY_BENEFIT
 	</Corruption_Choice_Benefit>
    <Corruption_Mission_Requirement_Icon_Name>
-		i_button_corruption_assassination_b.tga
-		i_button_corruption_piracy_b.tga
-		i_button_corruption_kidnapping_b.tga
-		i_button_corruption_racketeering_b.tga
-		i_button_corruption_drug_b.tga
-		i_button_corruption_bribery_b.tga
-		i_button_corruption_black_market_b.tga
-		i_button_corruption_slavery_b.tga
-      i_button_corruption_generic_planet.tga
-      i_button_saboteur.tga
+		i_button_corruption_assassination_b.tga,
+		i_button_corruption_piracy_b.tga,
+		i_button_corruption_kidnapping_b.tga,
+		i_button_corruption_racketeering_b.tga,
+		i_button_corruption_drug_b.tga,
+		i_button_corruption_bribery_b.tga,
+		i_button_corruption_black_market_b.tga,
+		i_button_corruption_slavery_b.tga,
+		i_button_corruption_generic_planet.tga,
+		i_button_saboteur.tga
 	</Corruption_Mission_Requirement_Icon_Name>
-   <Corruption_Choice_Encyclopedia>
-		TEXT_CORRUPTION_ASSASSINATION_ENCYCLOPEDIA
-		TEXT_CORRUPTION_PIRACY_ENCYCLOPEDIA
-		TEXT_CORRUPTION_KIDNAPPING_ENCYCLOPEDIA
-		TEXT_CORRUPTION_RACKETEERING_ENCYCLOPEDIA
-		TEXT_CORRUPTION_DRUG_DISTRIBUTION_ENCYCLOPEDIA
-		TEXT_CORRUPTION_BRIBERY_ENCYCLOPEDIA
-		TEXT_CORRUPTION_BLACK_MARKET_ENCYCLOPEDIA
+	<Corruption_Choice_Encyclopedia>
+		TEXT_CORRUPTION_ASSASSINATION_ENCYCLOPEDIA,
+		TEXT_CORRUPTION_PIRACY_ENCYCLOPEDIA,
+		TEXT_CORRUPTION_KIDNAPPING_ENCYCLOPEDIA,
+		TEXT_CORRUPTION_RACKETEERING_ENCYCLOPEDIA,
+		TEXT_CORRUPTION_DRUG_DISTRIBUTION_ENCYCLOPEDIA,
+		TEXT_CORRUPTION_BRIBERY_ENCYCLOPEDIA,
+		TEXT_CORRUPTION_BLACK_MARKET_ENCYCLOPEDIA,
 		TEXT_CORRUPTION_SLAVERY_ENCYCLOPEDIA
 	</Corruption_Choice_Encyclopedia>
 	<Corruption_Choice_Income_Percentage> 0.5, 0.8, 0.4, 4.5, 0.5, 0.5, 0.8, 1.0 </Corruption_Choice_Income_Percentage>
 	<Bribery_Fleet_Reveal_Range> 75.0 </Bribery_Fleet_Reveal_Range>
 
-   <Corruption_Planet_Icon>
-		i_button_corruption_Assassination_g.tga
-		i_button_corruption_Piracy_g.tga
-		i_button_corruption_Kidnapping_g.tga
-		i_button_corruption_Racketeering_g.tga
-		i_button_corruption_Drug_g.tga
-		i_button_corruption_Bribery_g.tga
-		i_button_corruption_Black_Market_g.tga
-		i_button_corruption_Slavery_g.tga
-      i_icon_corruption_info.tga
-   </Corruption_Planet_Icon>
-   <Corruption_Planet_Icon_Encyclopedia_Name>
+	 <Corruption_Planet_Icon>
+		i_button_corruption_Assassination_g.tga,
+		i_button_corruption_Piracy_g.tga,
+		i_button_corruption_Kidnapping_g.tga,
+		i_button_corruption_Racketeering_g.tga,
+		i_button_corruption_Drug_g.tga,
+		i_button_corruption_Bribery_g.tga,
+		i_button_corruption_Black_Market_g.tga,
+		i_button_corruption_Slavery_g.tga,
+		i_icon_corruption_info.tga
+	</Corruption_Planet_Icon>
+	<Corruption_Planet_Icon_Encyclopedia_Name>
 		TEXT_CORRUPTION_ASSASSINATION
 		TEXT_CORRUPTION_PIRACY
 		TEXT_CORRUPTION_KIDNAPPING
@@ -4149,8 +4149,8 @@
 		TEXT_CORRUPTION_BRIBERY
 		TEXT_CORRUPTION_BLACK_MARKET
 		TEXT_CORRUPTION_SLAVERY
-   </Corruption_Planet_Icon_Encyclopedia_Name>
-   <Corruption_Planet_Icon_Encyclopedia_Desc>
+	</Corruption_Planet_Icon_Encyclopedia_Name>
+	<Corruption_Planet_Icon_Encyclopedia_Desc>
 		TEXT_CORRUPTION_ASSASSINATION_ENCYCLOPEDIA
 		TEXT_CORRUPTION_PIRACY_ENCYCLOPEDIA
 		TEXT_CORRUPTION_KIDNAPPING_ENCYCLOPEDIA

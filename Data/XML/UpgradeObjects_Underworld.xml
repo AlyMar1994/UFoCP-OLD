@@ -697,9 +697,9 @@
 		<SFXEvent_Build_Complete>UHD_Upgrade_Complete</SFXEvent_Build_Complete>
 		<Abilities SubObjectList="Yes">
 			<Combat_Bonus_Ability Name="US_Reinforced_Structure_L1_Bonus">
-				<Activation_Style>Ground_Automatic</Activation_Style>
-				<Applicable_Unit_Categories>Structure</Applicable_Unit_Categories>
-				<Applicable_Unit_Types />
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>Underworld_Star_Base_1, Underworld_Star_Base_2, Underworld_Star_Base_3, Underworld_Star_Base_4, Underworld_Star_Base_5, Skirmish_Underworld_Star_Base_1, Skirmish_Underworld_Star_Base_2, Skirmish_Underworld_Star_Base_3, Skirmish_Underworld_Star_Base_4, Skirmish_Underworld_Star_Base_5</Applicable_Unit_Types>
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
 				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
@@ -712,9 +712,8 @@
 		<CategoryMask>Upgrade</CategoryMask>
   	</UpgradeObject>
 
-<!-- Reinforced Super Structure: Space Station take 25% less damage. -->
-
-<UpgradeObject Name="US_Reinforced_Structure_L2_Upgrade">
+	<!-- Reinforced Super Structure: Space Station take 25% less damage. -->
+	<UpgradeObject Name="US_Reinforced_Structure_L2_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Underworld</Affiliation>
 		<Tactical_Build_Cost_Multiplayer> 2300 </Tactical_Build_Cost_Multiplayer>
@@ -738,9 +737,9 @@
 		<SFXEvent_Build_Complete>UHD_Upgrade_Complete</SFXEvent_Build_Complete>
 		<Abilities SubObjectList="Yes">
 			<Combat_Bonus_Ability Name="US_Reinforced_Structure_L2_Bonus">
-				<Activation_Style>Ground_Automatic</Activation_Style>
-				<Applicable_Unit_Categories>Structure</Applicable_Unit_Categories>
-				<Applicable_Unit_Types />
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>Underworld_Star_Base_1, Underworld_Star_Base_2, Underworld_Star_Base_3, Underworld_Star_Base_4, Underworld_Star_Base_5, Skirmish_Underworld_Star_Base_1, Skirmish_Underworld_Star_Base_2, Skirmish_Underworld_Star_Base_3, Skirmish_Underworld_Star_Base_4, Skirmish_Underworld_Star_Base_5</Applicable_Unit_Types>
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
 				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
@@ -753,7 +752,7 @@
 		<CategoryMask>Upgrade</CategoryMask>
   	</UpgradeObject>
 
-<!-- Reinforced Super Structure: Space Station take 40% less damage. -->
+	<!-- Reinforced Super Structure: Space Station take 40% less damage. -->
 	<UpgradeObject Name="US_Reinforced_Structure_L3_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Underworld</Affiliation>
@@ -778,9 +777,9 @@
 		<SFXEvent_Build_Complete>UHD_Upgrade_Complete</SFXEvent_Build_Complete>
 		<Abilities SubObjectList="Yes">
 			<Combat_Bonus_Ability Name="US_Reinforced_Structure_L3_Bonus">
-				<Activation_Style>Ground_Automatic</Activation_Style>
-				<Applicable_Unit_Categories>Structure</Applicable_Unit_Categories>
-				<Applicable_Unit_Types />
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>Underworld_Star_Base_1, Underworld_Star_Base_2, Underworld_Star_Base_3, Underworld_Star_Base_4, Underworld_Star_Base_5, Skirmish_Underworld_Star_Base_1, Skirmish_Underworld_Star_Base_2, Skirmish_Underworld_Star_Base_3, Skirmish_Underworld_Star_Base_4, Skirmish_Underworld_Star_Base_5</Applicable_Unit_Types>
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
 				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
@@ -793,7 +792,7 @@
 		<CategoryMask>Upgrade</CategoryMask>
   	</UpgradeObject>
 
-<!-- Black Market Reactors (Level 1): Skipray Figthers gain a 25% movement speed increase. -->
+	<!-- Black Market Reactors (Level 1): Skipray Figthers gain a 25% movement speed increase. -->
 	<UpgradeObject Name="US_BlackMarket_Reactors_L1_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Underworld</Affiliation>
@@ -834,7 +833,7 @@
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
 	
-<!-- Black Market Reactors Mod (Level 2): Skipray, Interceptor gain a 25% movement speed increase. -->
+	<!-- Black Market Reactors Mod (Level 2): Skipray, Interceptor gain a 25% movement speed increase. -->
 	<UpgradeObject Name="US_BlackMarket_Reactors_L2_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Underworld</Affiliation>
@@ -875,7 +874,7 @@
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
 
-<!-- Black Market Reactors (Level 3): Skipray, Interceptor, Krayt gain a 25% movement speed increase. -->
+	<!-- Black Market Reactors (Level 3): Skipray, Interceptor, Krayt gain a 25% movement speed increase. -->
 	<UpgradeObject Name="US_BlackMarket_Reactors_L3_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Underworld</Affiliation>
@@ -916,7 +915,7 @@
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
 
-<!-- Magnetically Sealed Armor (Level 1): Starvipers deflect 25% of incoming blaster fire. -->
+	<!-- Magnetically Sealed Armor (Level 1): Starvipers deflect 25% of incoming blaster fire. -->
 	<UpgradeObject Name="US_Magnetically_Sealed_Armor_L1_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Underworld</Affiliation>
@@ -951,7 +950,7 @@
 		<CategoryMask>Upgrade</CategoryMask>
   	</UpgradeObject>
 
-<!-- Magnetically Sealed Armor (Level 2): Starvipers, Crusaders deflect 25% of incoming blaster fire. -->
+	<!-- Magnetically Sealed Armor (Level 2): Starvipers, Crusaders deflect 25% of incoming blaster fire. -->
 	<UpgradeObject Name="US_Magnetically_Sealed_Armor_L2_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Underworld</Affiliation>
@@ -987,7 +986,7 @@
   	</UpgradeObject>
   	
  
- <!-- Magnetically Sealed Armor (Level 3): Starvipers, Crusaders, Keldalbe deflect 25% of incoming blaster fire. -->
+	<!-- Magnetically Sealed Armor (Level 3): Starvipers, Crusaders, Keldalbe deflect 25% of incoming blaster fire. -->
 	<UpgradeObject Name="US_Magnetically_Sealed_Armor_L3_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Underworld</Affiliation>
@@ -1023,7 +1022,7 @@
   	</UpgradeObject>
   	
 
-<!-- Carbonite Firing Coolant (Level 1): Vengence Frigates gain a 30% damage increase. -->
+	<!-- Carbonite Firing Coolant (Level 1): Vengence Frigates gain a 30% damage increase. -->
 	<UpgradeObject Name="US_Carbonite_Coolant_Systems_L1_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Underworld</Affiliation>
@@ -1064,7 +1063,7 @@
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
 	
-<!-- Carbonite Coolant Systems (Level 2): Vengence Frigates, Krayt Destroyers gain a 30% damage increase. -->
+	<!-- Carbonite Coolant Systems (Level 2): Vengence Frigates, Krayt Destroyers gain a 30% damage increase. -->
 	<UpgradeObject Name="US_Carbonite_Coolant_Systems_L2_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Underworld</Affiliation>
@@ -1106,7 +1105,7 @@
 	</UpgradeObject>
 	
 	<!-- Modified Cloaking Generators (Level 1): Vengence cloaking systems last 25% longer. -->
-<UpgradeObject Name="US_Cloaking_Generator_L1_Upgrade">
+	<UpgradeObject Name="US_Cloaking_Generator_L1_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Underworld</Affiliation>
 		<Tactical_Build_Cost_Multiplayer> 1000 </Tactical_Build_Cost_Multiplayer>
@@ -1131,7 +1130,9 @@
 		
 		<Abilities SubObjectList="Yes">
 			<Battlefield_Modifier_Ability Name="US_Cloaking_Generator_L1_Upgrade_Effect">
-				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>Vengeance_Frigate</Applicable_Unit_Types>
 				<Stealth_Duration_Multiplier>1.25</Stealth_Duration_Multiplier>
 				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
 				<Stacking_Category>3</Stacking_Category>
@@ -1140,8 +1141,8 @@
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
 	
-		<!-- Modified Cloaking Generators (Level 2): Vengence and PeaceBringer cloaking systems last 50% longer. -->
-<UpgradeObject Name="US_Cloaking_Generator_L2_Upgrade">
+	<!-- Modified Cloaking Generators (Level 2): Vengence and PeaceBringer cloaking systems last 50% longer. -->
+	<UpgradeObject Name="US_Cloaking_Generator_L2_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Underworld</Affiliation>
 		<Tactical_Build_Cost_Multiplayer> 2200 </Tactical_Build_Cost_Multiplayer>
@@ -1166,7 +1167,9 @@
 		
 		<Abilities SubObjectList="Yes">
 			<Battlefield_Modifier_Ability Name="US_Cloaking_Generator_L2_Upgrade_Effect">
-				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>Vengeance_Frigate</Applicable_Unit_Types>
 				<Stealth_Duration_Multiplier>1.50</Stealth_Duration_Multiplier>
 				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
 				<Stacking_Category>3</Stacking_Category>

@@ -2340,7 +2340,7 @@
 						 <Overlap_Test> Unit_Red_Squadron </Overlap_Test>
 					 </SFXEvent>
 
-					 <SFXEvent Name="Unit_Enemy_Health_Critcal_Derek_Klivian">
+					 <SFXEvent Name="Unit_Enemy_Health_Critical_Derek_Klivian">
 						 <Use_Preset>Preset_UR</Use_Preset>
 						 <Samples>U000_KLI0104_ENG.wav U000_KLI0105_ENG.wav</Samples>
 						 <Localize> Yes </Localize>

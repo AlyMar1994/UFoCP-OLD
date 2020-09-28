@@ -117,8 +117,8 @@
 	<File>Units_Hero_Underworld_Silri.xml</File>
 	<File>Units\UND\Units_Hero_Underworld_Urai_Fen.xml</File>
 
-	<File>Units_Land_Underworld_MercenaryInf.xml</File>
-	<File>Units_Land_Underworld_DisruptorInf.xml</File>
+	<File>Units\UND\Units_Land_Underworld_MercenaryInf.xml</File>
+	<File>Units\UND\Units_Land_Underworld_DisruptorInf.xml</File>
 	<File>Units_Land_Underworld_DestroyerDroids.xml</File>
 	<File>Units_Land_Underworld_Vornskr.xml</File>
 	<File>Units_Land_Underworld_F9TZ_Transport.xml</File>
