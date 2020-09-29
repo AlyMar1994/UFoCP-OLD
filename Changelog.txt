@@ -41,7 +41,7 @@ General
 
 -Fixed the Underworld using Rebel music instead of their own proper faction losing music in a default strategic/tactical loss.
 
--Fixed space obstacle "Nebula Friggin Huge Ion" not actually being considered an ion storm in-game.  This caused "friggin huge" ion storm on maps like Felucia *not* act like an ion storm, and only a nebula.
+-Fixed space obstacle "Nebula Friggin Huge Ion" not actually being considered an ion storm in-game.  This caused "friggin huge" ion storm on maps like space skirmish Felucia to *not* act like an ion storm, and only a nebula.
 
 
 ==================
@@ -60,7 +60,7 @@ Structures (Land)
 Structures (Space)
 ==================
 -Consortium Space Station – Fixed "Reinforced Durasteel" upgrades lv.1-3.  The upgrades originally did nothing, as their ability type to upgrade was "Ground_Automatic" instead of "Space_Automatic."
--Consortium Space Station – Fixed "Reinforced Durasteel" upgrades lv.1-3.  Upgrades referenced applicable unit category "structure" and not specifically the Underworld space stations, meaning all structures would endure a defense upgrade.
+-Consortium Space Station – Fixed "Reinforced Durasteel" upgrades lv.1-3.  Upgrades referenced applicable unit category "structure" and not specifically the Underworld space stations, meaning all structures would endure a defense upgrade.  The space stations didn't get the upgrade anyway, as they're type "capital."
 
 -Pirate Asteroid Base – Fixed base using wrong "Model_To_Attach" to attach a laser hardpoint to a bone.  Was "Nb_apbase_hp_ll1.alo" instead of "Nb_apbase_hp_ll2.alo" (ll1 was used by another hardpoint).
 
