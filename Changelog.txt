@@ -41,6 +41,8 @@ General
 
 -Fixed the Underworld using Rebel music instead of their own proper faction losing music in a default strategic/tactical loss.
 
+-Fixed space obstacle "Nebula Friggin Huge Ion" not actually being considered an ion storm in-game.  This caused "friggin huge" ion storm on maps like Felucia *not* act like an ion storm, and only a nebula.
+
 
 ==================
 Planets (Galactic)
