@@ -1131,8 +1131,6 @@
 		<Abilities SubObjectList="Yes">
 			<Battlefield_Modifier_Ability Name="US_Cloaking_Generator_L1_Upgrade_Effect">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>Vengeance_Frigate</Applicable_Unit_Types>
 				<Stealth_Duration_Multiplier>1.25</Stealth_Duration_Multiplier>
 				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
 				<Stacking_Category>3</Stacking_Category>
@@ -1168,8 +1166,6 @@
 		<Abilities SubObjectList="Yes">
 			<Battlefield_Modifier_Ability Name="US_Cloaking_Generator_L2_Upgrade_Effect">
 				<Activation_Style>Space_Automatic</Activation_Style>
-				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>Vengeance_Frigate</Applicable_Unit_Types>
 				<Stealth_Duration_Multiplier>1.50</Stealth_Duration_Multiplier>
 				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
 				<Stacking_Category>3</Stacking_Category>

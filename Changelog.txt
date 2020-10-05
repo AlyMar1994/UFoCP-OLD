@@ -29,6 +29,12 @@ v1.13
 
 
 ==================
+UFoCP
+==================
+-Reverted bad AI change which messed up a plan from BuildGroundForcesPlan.LUA.
+
+
+==================
 General
 ==================
 -Fixed duplicate trade route "Anaxes_Carida" to fix an internal error.
@@ -42,6 +48,8 @@ General
 -Fixed the Underworld using Rebel music instead of their own proper faction losing music in a default strategic/tactical loss.
 
 -Fixed space obstacle "Nebula Friggin Huge Ion" not actually being considered an ion storm in-game.  This caused "friggin huge" ion storm on maps like space skirmish Felucia to *not* act like an ion storm, and only a nebula.
+
+-Fixed EaW bumpmap texture "EB_BaseWall_DS1_BC" not including any modifications to the texture to imply destruction.  Style preserved.
 
 
 ==================
@@ -65,7 +73,6 @@ Structures (Space)
 -Pirate Asteroid Base – Fixed base using wrong "Model_To_Attach" to attach a laser hardpoint to a bone.  Was "Nb_apbase_hp_ll1.alo" instead of "Nb_apbase_hp_ll2.alo" (ll1 was used by another hardpoint).
 
 -Vengeance Frigate – Fixed levels 1-2 of the "Modified Cloaking Generator" upgrades.  Upgrade originally did nothing, as ability type was "Ground_Automatic" instead of "Space_Automatic."
--Vengeance Frigate – Fixed levels 1-2 of the "Modified Cloaking Generator" upgrades.  Upgrade originally applied to all units with cloaking buff, when it is only supposed to be the Vengeance Frigate.
 
 
 ==================
@@ -82,6 +89,7 @@ Units (Space)
 -M.A.L. – Removed non-existant sound file usage "U000_MAL0503_ENG," an assist movement line (was causing internal errors).
 
 -Rogue Squadron – Fixed Derek Kilvian's lines not playing when his enemy's health is critical in Rogue Squadron.  The SFXEvent was improperly named "Unit_Enemy_Health_Critcal_Derek_Klivian" instead of "Unit_Enemy_Health_Critical_Derek_Klivian"
+-Rogue Squadron – Fixed Rogue Squadron playing generic X-wing lines when going into nebula or asteroids.
 
 
 =========================================================================================
@@ -461,7 +469,7 @@ Units (Space)
 
 -Home One - Admiral Ackbar – Fixed unit's name to be more consistient with other named space hero units. Now named "Home One - Admiral Ackbar" instead of soley "Home One."
 
--Rogue Squadron - Updated unit Rouge 10: Tarrin Datch's <Text_ID> to use a fixed tag with his name. Was originally "Tarrub Datch."
+-Rogue Squadron - Updated unit Rogue 10: Tarrin Datch's <Text_ID> to use a fixed tag with his name. Was originally "Tarrub Datch."
 
 -Star Destroyer - Fixed death clone's <Ship_Class> from being "capital_ship" to just "Capital."
 
@@ -778,7 +786,7 @@ A.I. (Galactic Conquest)
 ==================
 -FireDeathStar – Modified A.I. to search for "Death_Star_II" (FoC) instead of "Death_Star" (EaW).
 
--DeathStarPlan – Added "IG88_Team" to the list of units the Death Star II should avoid when going about, as IG-88 is a "superweapon killer" (can kill DS2), as with Rouge Squadron.
+-DeathStarPlan – Added "IG88_Team" to the list of units the Death Star II should avoid when going about, as IG-88 is a "superweapon killer" (can kill DS2), as with Rogue Squadron.
 
 
 ==================
@@ -850,7 +858,7 @@ A.I. (Galactic Conquest)
 ==================
 -AI_Plan_ExpansionGeneric_RemoveCorruption – Fixed AI trying to call "Darth_Team" (EaW), and "Grand_Admiral_Thrawn_Team" (a cut political unit that originally replaced Tarkin). Replaced Vader's with "Darth_Team_Executor" (FoC), and Thrawn's with "Admonitor_Star_Destroyer" to fix Vader and Thrawn's Remove Corruption AI.
 
--DeathStarPlan – Modified GameObject plan to avoid "Rouge_Squadron_Space" (Rouge Squadron) instead of "Luke_Team" (Luke Skywalker).
+-DeathStarPlan – Modified GameObject plan to avoid "Rogue_Squadron_Space" (Rogue Squadron) instead of "Luke_Team" (Luke Skywalker).
 
 -UpgradeStarbasePlan – Added all Rebel, Empire and Underworld starbases to the list of buildable/upgradable starbases. The A.I. will start building past a lvl. 1 Rebel space station.
 
@@ -939,7 +947,7 @@ Units (Space)
 
 -Nebulon-B Frigate – Fixed build sounds for Underworld-built Nebulons (was Rebel, now Underworld).
 
--Rouge Squadron – Changed conditionals back to "Wedge_XWing_Rouge."
+-Rogue Squadron – Changed conditionals back to "Wedge_XWing_Rogue."
 
 -Tartan Patrol Cruiser – Fixed build sounds for Underworld-built Tartans (was Empire, now Underworld).
 
