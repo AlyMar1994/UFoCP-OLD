@@ -20,7 +20,7 @@ function Definitions()
 	-- Commander hit list:
 	Attack_Ability_Type_Names = {
 		"Infantry",								-- ATTACK these types!
-		"Darth_Team_Executor" ,"Boba_Fett_Team"	-- STAY AWAY from these types!
+		"Darth_Team_Executor", "Boba_Fett_Team"	-- STAY AWAY from these types!
 	}
 	Attack_Ability_Weights = { 
 		10,						-- ATTACK-type Weights.

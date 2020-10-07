@@ -120,9 +120,9 @@
 		<Destroy_When_Used_As_Corruption_Prereq>No</Destroy_When_Used_As_Corruption_Prereq>
 		<Target_Stealth_Units>Yes</Target_Stealth_Units>
 
-		<!-- Hero unit abilities description. -->
+		<!-- Hero unit abilities description: -->
 		<Unit_Abilities_Data SubObjectList="Yes">
-			<!-- Primary Ability. -->
+			<!-- Primary Ability: -->
 			<Unit_Ability>
 				<Type>STUN</Type>
 				<Recharge_Seconds>30.00</Recharge_Seconds>
@@ -133,7 +133,7 @@
 				<Supports_Autofire>True</Supports_Autofire>
 			</Unit_Ability>
 
-			<!-- Secondary Ability. -->
+			<!-- Secondary Ability: -->
 			<Unit_Ability>
 				<Type>STEALTH</Type>
 				<Alternate_Name_Text>TEXT_TOOLTIP_TYBER_CLOAKING</Alternate_Name_Text>

@@ -21,7 +21,6 @@ function State_Init(message)
 	if message == OnEnter then
 		-- AM1994 (3/13/2020): Initialized variables.
 		-- Teleport hints for the Master Force Adept (ultimate boss of UM11).
-		-- VAR = Find_Hint("TRIGGER_TYPE", "EDITOR-NAME")
 		warp1 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w1")
 		warp2 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w2")
 		warp3 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w3")
@@ -87,20 +86,15 @@ function AdeptFour_AI()
 
 				if rand_index == 1 then
 					Object.Teleport_And_Face(warp1)
-				end
-				if rand_index == 2 then
+				elseif rand_index == 2 then
 					Object.Teleport_And_Face(warp2)
-				end
-				if rand_index == 3 then
+				elseif rand_index == 3 then
 					Object.Teleport_And_Face(warp3)
-				end
-				if rand_index == 4 then
+				elseif rand_index == 4 then
 					Object.Teleport_And_Face(warp4)
-				end
-				if rand_index == 5 then
+				elseif rand_index == 5 then
 					Object.Teleport_And_Face(warp5)
-				end
-				if rand_index == 6 then
+				elseif rand_index == 6 then
 					Object.Teleport_And_Face(warp6)
 				end
 

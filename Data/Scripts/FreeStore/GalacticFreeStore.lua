@@ -114,12 +114,12 @@ function On_Unit_Added(object)
 end
 
 function FreeStoreService()
-	if PlayerObject.Get_Faction_Name() == "REBEL" then
-		leader_object = Find_First_Object("MON_MOTHMA")
-	elseif PlayerObject.Get_Faction_Name() == "EMPIRE" then
-		leader_object = Find_First_Object("EMPEROR_PALPATINE")
-	elseif PlayerObject.Get_Faction_Name() == "UNDERWORLD" then
-		leader_object = Find_First_Object("TYBER_ZANN")
+	if PlayerObject.Get_Faction_Name() == "Rebel" then
+		leader_object = Find_First_Object("Mon_Mothma")
+	elseif PlayerObject.Get_Faction_Name() == "Empire" then
+		leader_object = Find_First_Object("Emperor_Palpatine")
+	elseif PlayerObject.Get_Faction_Name() == "Underworld" then
+		leader_object = Find_First_Object("Tyber_Zann")
 	end
 
 	MovedUnitsThisService = 0
