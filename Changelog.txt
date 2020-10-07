@@ -33,6 +33,10 @@ UFoCP
 ==================
 -Reverted bad AI change which messed up a plan from BuildGroundForcesPlan.LUA.
 
+-Fixed regression in BudgetingEquations: Added "Darth_Team_Executor" as a budgeting requirement under <TechUpgradeBudgetRequirement>.
+
+-Fixed regression in InfrastructureGalacticEquations: I literally deleted the entire document from the repo.  It has been restored with proper changes (changes from "Death_Star" --> "Death_Star_II," "Darth_Team_Expansion" additions to budgeting, adding "U_Ground_Gravity_Generator" to the desireable savings list, ect).
+
 
 ==================
 General
@@ -41,8 +45,11 @@ General
 -Fixed duplicate trade route "Mandalore_Utapau" to fix an internal error.
 
 -Removed ability "Tani_Slicer" declaration in GameConstants to fix an internal error, as Tani is a completely unused unit.
+
 -Removed ability "Mara_Jade_Sabotage" declaration in GameConstants to fix an internal error, as Mara isn't a galactic unit and cannot sabotage like the Defilers (she doesn't have the ability anyway).
+
 -Removed ability "Kyle_Katarn_Sabotage" declaration in GameConstants to fix an internal error, as Kyle isn't a galactic unit and cannot sabotage like the Defilers (he doesn't have the ability anyway).
+
 -Removed ability "Corruptor_Corrupt_Planet_1" declaration in GameConstants to fix an internal error, as the "Saboteur"/"Corrupter" unit was replaced with the modern Defiler.
 
 -Fixed the Underworld using Rebel music instead of their own proper faction losing music in a default strategic/tactical loss.
@@ -50,6 +57,13 @@ General
 -Fixed space obstacle "Nebula Friggin Huge Ion" not actually being considered an ion storm in-game.  This caused "friggin huge" ion storm on maps like space skirmish Felucia to *not* act like an ion storm, and only a nebula.
 
 -Fixed EaW bumpmap texture "EB_BaseWall_DS1_BC" not including any modifications to the texture to imply destruction.  Style preserved.
+
+
+==================
+A.I.
+==================
+-(LUA) PGEvents – Fixed up some missing behaviors.  Changing some permissions so the AI can suggest using the "take cover" ability on land, and for AT-ATs AI to suggest using their "deploy troopers" ability (when they need to, of course).
+-(LUA) PGEvents – Fixed a behavior that didn't include Underworld skirmish turbolasers as a part of the AI to try to get in and/or escape the maximum attack range for "artillery" (turbolaser towers, MPTL, ect).
 
 
 ==================
@@ -72,7 +86,11 @@ Structures (Space)
 
 -Pirate Asteroid Base – Fixed base using wrong "Model_To_Attach" to attach a laser hardpoint to a bone.  Was "Nb_apbase_hp_ll1.alo" instead of "Nb_apbase_hp_ll2.alo" (ll1 was used by another hardpoint).
 
--Vengeance Frigate – Fixed levels 1-2 of the "Modified Cloaking Generator" upgrades.  Upgrade originally did nothing, as ability type was "Ground_Automatic" instead of "Space_Automatic."
+
+==================
+Units (Galactic)
+==================
+-The Sundered Heart - Captain Antilles – Fixed general hero AI not including Antilles as with all other heroes in trying to decide where to stay when not in-use.
 
 
 ==================
@@ -90,6 +108,9 @@ Units (Space)
 
 -Rogue Squadron – Fixed Derek Kilvian's lines not playing when his enemy's health is critical in Rogue Squadron.  The SFXEvent was improperly named "Unit_Enemy_Health_Critcal_Derek_Klivian" instead of "Unit_Enemy_Health_Critical_Derek_Klivian"
 -Rogue Squadron – Fixed Rogue Squadron playing generic X-wing lines when going into nebula or asteroids.
+
+-The Merciless - Tyber Zann – Fixed levels 1-2 of the "Modified Cloaking Generator" upgrades.  Upgrade originally did nothing, as ability type was "Ground_Automatic" instead of "Space_Automatic."
+-Vengeance Frigate – Fixed levels 1-2 of the "Modified Cloaking Generator" upgrades.  Upgrade originally did nothing, as ability type was "Ground_Automatic" instead of "Space_Automatic."
 
 
 =========================================================================================
