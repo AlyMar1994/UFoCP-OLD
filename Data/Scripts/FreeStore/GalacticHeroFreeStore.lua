@@ -4,7 +4,7 @@
 -- ORIGINAL AUTHOR (Petroglyph): Steve Copeland
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 10/05/2020, 11:41 PM
+-- LAST REVISION DATE: 10/06/2020, 10:46 PM
 -- ======================================================================
 require("pgcommands")
 
@@ -37,10 +37,10 @@ function Definitions()
 		YODA_TEAM = { nil, false },
 		ROGUE_SQUADRON_SPACE = { nil, true },
 		
-		BOSSK_TEAM = { nil, true }
-		IG88_TEAM = { nil, true }
-		SILRI_TEAM = { nil, false }
-		URAI_FEN_TEAM = { nil, false }
+		BOSSK_TEAM = { nil, true },
+		IG88_TEAM = { nil, true },
+		SILRI_TEAM = { nil, false },
+		URAI_FEN_TEAM = { nil, false },
 		TYBER_ZANN_TEAM = { nil, true }
 	}
 end
