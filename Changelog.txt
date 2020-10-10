@@ -64,6 +64,19 @@ A.I.
 
 
 ==================
+Factions
+==================
+-Rebel – Fixed ability toggle SFX for enemy calling "ABILITY_LURE" instead of just "LURE," causing an internal error and preventing the abilities from playing proper SFXEvents if assigned.
+-Rebel – Fixed ability toggle SFX for enemy calling "ABILITY_ROCKET_ATTACK" instead of just "ROCKET_ATTACK."
+
+-Empire – Fixed ability toggle SFX for enemy calling "ABILITY_LURE" instead of just "LURE."
+-Empire – Fixed ability toggle SFX for enemy calling "ABILITY_ROCKET_ATTACK" instead of just "ROCKET_ATTACK."
+
+-Underworld – Fixed ability toggle SFX for enemy calling "ABILITY_LURE" instead of just "LURE."
+-Underworld – Fixed ability toggle SFX for enemy calling "ABILITY_ROCKET_ATTACK" instead of just "ROCKET_ATTACK."
+
+
+==================
 Planets (Galactic)
 ==================
 -Added a galactic-level icon for Corruption type "Piracy," so when a planet gets corrupted it visibly shows Piracy affects the planet (originally, Petro never included an icon in-game).  It looks like ass, but it fixes the issue right now.

@@ -404,10 +404,9 @@
 		<SFXEvent_Unit_Type_Spotted>Kyle_Katarn,					Unit_Announce_Katarn_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
 
 		<!-- UNDERWORLD (Order of Importance) -->
-		<SFXEvent_Unit_Type_Spotted>Tyber_Zann,							Unit_Announce_Tyber_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
-		<SFXEvent_Unit_Type_Spotted>IG-88,								Unit_Announce_IG88_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
-		<SFXEvent_Unit_Type_Spotted>Silri,								Unit_Announce_Silri_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
-		<!-- <SFXEvent_Unit_Type_Spotted>Generic_Field_Commander_Underworld,	Unit_Announce_U_Field_Underworld_Soldier</SFXEvent_Unit_Type_Spotted> --> <!-- UNUSED -->
+		<SFXEvent_Unit_Type_Spotted>Tyber_Zann,						Unit_Announce_Tyber_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
+		<SFXEvent_Unit_Type_Spotted>IG-88,							Unit_Announce_IG88_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
+		<SFXEvent_Unit_Type_Spotted>Silri,							Unit_Announce_Silri_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
 		
 		<!-- Superweapon Announcements - OUR Superweapon! -->
 		<SpeechEvent_Super_Weapon_Moving_Into_Range />
@@ -482,11 +481,11 @@
 		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>HARMONIC_BOMB, Unit_Attack_Rebel_Infiltrator</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
 		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>HARMONIC_BOMB, </SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
 
-		<!-- Millenium Falcon Invulnerability -->
+		<!-- Invulnerability -->
 		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>INVULNERABILITY, GUI_Toggle_Shields_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
 		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>INVULNERABILITY, </SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
 
-		<!-- Luke Skywalker Force Cloak -->
+		<!-- Force Cloak -->
 		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>FORCE_CLOAK, Unit_Cloaking</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
 		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>FORCE_CLOAK, Unit_Cloaking</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
 
@@ -515,19 +514,19 @@
 		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>BLAST, </SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
 
 		<!-- Enemy Toggling Non-Hero Command Bar Abilities SFX -->
-		<!-- Power to Shields -->	
+		<!-- Power to Shields -->
 		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>DEFEND, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
 		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>DEFEND, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
 
-		<!-- Gravity Wells (Interdictor) -->	
+		<!-- Gravity Wells (Interdictor) -->
 		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>INTERDICT, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
 		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>INTERDICT, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
 
-		<!-- Barrage -->	
+		<!-- Barrage -->
 		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>BARRAGE, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
 		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>BARRAGE, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
 
-		<!-- Hunt -->	
+		<!-- Hunt -->
 		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>HUNT, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
 		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>HUNT, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
 
@@ -535,27 +534,27 @@
 		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>SPREAD_OUT, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
 		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>SPREAD_OUT, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
 
-		<!-- Lure -->	
-		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>ABILITY_LURE, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
-		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>ABILITY_LURE, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<!-- Lure -->
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>LURE, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>LURE, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
 
-		<!-- Rocket Switch -->	
-		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>ABILITY_ROCKET_ATTACK, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
-		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>ABILITY_ROCKET_ATTACK, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<!-- Rocket Switch -->
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>ROCKET_ATTACK, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>ROCKET_ATTACK, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
 		
-		<!-- Harass -->	
+		<!-- Harass -->
 		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>HARASS, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
 		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>HARASS, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
 		
-		<!-- Scout -->	
+		<!-- Scout -->
 		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>AVOID_DANGER, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
 		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>AVOID_DANGER, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
 		
-		<!-- Deploy -->	
+		<!-- Deploy -->
 		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>DEPLOY, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
 		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>DEPLOY, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
 
-		<!-- Turbo -->	
+		<!-- Turbo -->
 		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>TURBO, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
 		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>TURBO, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
 
