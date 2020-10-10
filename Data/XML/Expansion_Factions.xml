@@ -392,6 +392,7 @@
 		<SFXEvent_Unit_Type_Spotted>Admonitor_Star_Destroyer,		Unit_Announce_Thrawn_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
 		<SFXEvent_Unit_Type_Spotted>Boba_Fett,						Unit_Announce_Fett_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
 		<SFXEvent_Unit_Type_Spotted>General_Veers,					Unit_Announce_Veers_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
+		<SFXEvent_Unit_Type_Spotted>Veers_AT_AT_Walker,					Unit_Announce_Veers_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
 		<SFXEvent_Unit_Type_Spotted>Generic_Field_Commander_Empire,	Unit_Announce_Enemy_Field_Underworld_Soldier</SFXEvent_Unit_Type_Spotted>
 
 		<!-- REBEL (Order of Importance) -->

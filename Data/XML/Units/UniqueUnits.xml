@@ -1396,6 +1396,8 @@
 		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Veers</SFXEvent_Health_Low_Warning>
 		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Veers</SFXEvent_Health_Critical_Warning>
 
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+
 		<SFXEvent_Fire>Unit_AT_AT_Fire</SFXEvent_Fire>
 
 		<SFXEvent_Ambient_Loop>Unit_Star_Destroyer_Idle_Engine_Loop</SFXEvent_Ambient_Loop>

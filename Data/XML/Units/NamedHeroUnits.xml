@@ -1414,16 +1414,14 @@
 		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Veers</SFXEvent_Fleet_Move>
 		<SFXEvent_Attack>Unit_Attack_Veers</SFXEvent_Attack>
 		<SFXEvent_Guard>Unit_Guard_Veers</SFXEvent_Guard>
-		<SFXEvent_Announce>Unit_Announce_Veers</SFXEvent_Announce>
 		<SFXEvent_Group_Move>Unit_Group_Move_Veers</SFXEvent_Group_Move>
 		<SFXEvent_Group_Attack>Unit_Group_Attack_Veers</SFXEvent_Group_Attack>
 		<Death_SFXEvent_Start_Die>Unit_Defeat_Veers</Death_SFXEvent_Start_Die>
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
 
 		<Neutralization_Cost>2500.00</Neutralization_Cost>
 		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
 		<Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
-
-		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
 
 		<Abilities SubObjectList="Yes">
 			<Combat_Bonus_Ability Name="Veers_Combat_Bonus">

@@ -106,6 +106,9 @@ Units (Galactic)
 ==================
 Units (Land)
 ==================
+-Blizzard 1 - General Veers – Fixed unit causing errors by referencing a non-existant SFXEvent for a land unit callout.
+-Blizzard 1 - General Veers – Attempt fix at unit callouts not working on land.
+
 -Grenadiers – Fixed infantry being unbribable in Underworld mirror skirmish matches.  They have been given a <Tactical_Bribe_Cost> so Tyber Zann can bribe enemy Underworld infantry.  Uses vanilla bribe cost value of 25 credits.
 
 -Merc Assault Squad – Fixed infantry being unbribable in Underworld mirror skirmish matches.  They have been given a <Tactical_Bribe_Cost> so Tyber Zann can bribe enemy Underworld infantry.  Uses vanilla bribe cost value of 25 credits.
