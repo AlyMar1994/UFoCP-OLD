@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <HardPoints>
-	<!-- Star Destroyer Hard Points -->
+    <!-- Star Destroyer Hard Points -->
     <HardPoint Name="HP_Star_Destroyer_Weapon_FL">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
             <Is_Targetable>Yes</Is_Targetable>
@@ -316,7 +316,7 @@
 
 
 
-<!-- Mon Calamari Cruiser Hard Points -->
+    <!-- Mon Calamari Cruiser Hard Points -->
 	
     <HardPoint Name="HP_Calamari_Cruiser_Weapon_FL">
 			<Type> HARD_POINT_WEAPON_ION_CANNON </Type>
@@ -606,7 +606,7 @@
     </HardPoint>
 
 
-<!-- Hard points for the Corellian Corvette -->
+    <!-- Hard points for the Corellian Corvette -->
 
     <HardPoint Name="HP_Corellian_Corvette_01">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
@@ -841,7 +841,7 @@
    </HardPoint>
 
 
-<!-- Hard points for the Tartan Cruiser -->
+    <!-- Hard points for the Tartan Cruiser -->
 
 	<HardPoint Name="HP_Tartan_Cruiser_00">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
@@ -990,7 +990,7 @@
    </HardPoint>
     
     
-<!-- Hard points for the Corellian Gunship -->
+    <!-- Hard points for the Corellian Gunship -->
 
     <HardPoint Name="HP_Corellian_Gunship_01">
 			<Type> HARD_POINT_WEAPON_MISSILE </Type>
@@ -1191,7 +1191,7 @@
 
     </HardPoint>
 
-<!-- Hard points for the Nebulon-B Frigate -->
+    <!-- Hard points for the Nebulon-B Frigate -->
 
     <HardPoint Name="HP_Nebulon_Weapon_FL">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
@@ -1378,7 +1378,7 @@
             <Engine_Particles>HP_E_MAINENGINES</Engine_Particles>
     </HardPoint>
 
-<!-- Hard points for the Gallofree Transport -->
+    <!-- Hard points for the Gallofree Transport -->
 
     <HardPoint Name="HP_Gallofree_01">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
@@ -1409,7 +1409,7 @@
 		
     </HardPoint>
 
-<!-- Hard points for the IPV System Patrol Craft (Pirate Corvette) -->
+    <!-- Hard points for the IPV System Patrol Craft (Pirate Corvette) -->
 
     <HardPoint Name="HP_IPV_Patrol_01">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
@@ -1613,7 +1613,7 @@
 			
     </HardPoint>
 
-<!-- Victory-Class Star Destroyer Hard Points -->
+    <!-- Victory-Class Star Destroyer Hard Points -->
 
     <HardPoint Name="HP_Victory_Weapon_01">
 			<Type> HARD_POINT_WEAPON_ION_CANNON </Type>
@@ -1791,7 +1791,7 @@
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Bay_Death</Death_Explosion_SFXEvent> <!-- STUBBED PLACEHOLDER -->
 	</HardPoint>
 
-<!-- Interdictor Cruiser Hard Points -->
+    <!-- Interdictor Cruiser Hard Points -->
 
     <HardPoint Name="HP_Interdictor_Weapon_01">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
@@ -2013,7 +2013,7 @@
             <Engine_Particles>HP_E_MAINENGINES</Engine_Particles>
     </HardPoint>
 
-<!-- Hard points for the Alliance Assault Frigate -->
+    <!-- Hard points for the Alliance Assault Frigate -->
 
     <HardPoint Name="HP_Assault_Frigate_Weapon_FL">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
@@ -2201,7 +2201,7 @@
             <Engine_Particles>HP_E_MAINENGINES</Engine_Particles>
     </HardPoint>
 
-<!-- Hard points for the Acclamator -->
+    <!-- Hard points for the Acclamator -->
 
     <HardPoint Name="HP_Acclamator_Weapon_FL">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
@@ -2465,7 +2465,7 @@
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Gravity_Well_Death</Death_Explosion_SFXEvent> <!-- STUBBED PLACEHOLDER -->
 	</HardPoint>
 
-<!-- Rebel Space Station Level 1 Hardpoints -->
+    <!-- Rebel Space Station Level 1 Hardpoints -->
 
     <HardPoint Name="HP_Rebel_Station_One_CCM">
 			<Type> HARD_POINT_WEAPON_MISSILE </Type>
@@ -2691,7 +2691,7 @@
      </HardPoint>
     
     
-<!-- Rebel Space Station Level 2 Hardpoints - use all level 1 hardpoints plus these -->
+    <!-- Rebel Space Station Level 2 Hardpoints - use all level 1 hardpoints plus these -->
 
      <HardPoint Name="HP_Rebel_Station_Two_LC">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
@@ -2823,7 +2823,7 @@
     </HardPoint>
  
  
- <!-- Rebel Space Station Level 3 Hardpoints - use all level 1-2 hardpoints plus these -->
+    <!-- Rebel Space Station Level 3 Hardpoints - use all level 1-2 hardpoints plus these -->
 
      <HardPoint Name="HP_Rebel_Station_Three_CCM">
 			<Type> HARD_POINT_WEAPON_MISSILE </Type>
@@ -2938,7 +2938,7 @@
 
     </HardPoint>
 
- <!-- Rebel Space Station Level 4 Hardpoints - use all level 1-3 hardpoints plus these -->
+    <!-- Rebel Space Station Level 4 Hardpoints - use all level 1-3 hardpoints plus these -->
 
       <HardPoint Name="HP_Rebel_Station_Four_IC">
 			<Type> HARD_POINT_WEAPON_ION_CANNON </Type>
@@ -3095,7 +3095,7 @@
             <Damage_Particles>HP04_SHG_EMITDAMAGE</Damage_Particles>
     </HardPoint>
 
- <!-- Rebel Space Station Level 5 Hardpoints - use all level 1-4 hardpoints plus these -->
+    <!-- Rebel Space Station Level 5 Hardpoints - use all level 1-4 hardpoints plus these -->
 
      <HardPoint Name="HP_Rebel_Station_Five_CCM">
 			<Type> HARD_POINT_WEAPON_MISSILE </Type>
@@ -3298,7 +3298,7 @@
 			
     </HardPoint>
 
-<!-- Hard points for the Empire Space Station Level 1 -->
+    <!-- Hard points for the Empire Space Station Level 1 -->
 
     <HardPoint Name="HP_Empire_Station_One_00">
 			<Type> HARD_POINT_WEAPON_MISSILE </Type>
@@ -3526,7 +3526,7 @@
      </HardPoint>
 
 
-<!-- Empire Space Station Level 2 Hardpoints - use all level 1 hardpoints plus these -->
+    <!-- Empire Space Station Level 2 Hardpoints - use all level 1 hardpoints plus these -->
 
      <HardPoint Name="HP_Empire_Station_Two_00">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
@@ -3653,7 +3653,7 @@
 			
     </HardPoint>
 
- <!-- Empire Space Station Level 3 Hardpoints - use all level 1-2 hardpoints plus these -->
+    <!-- Empire Space Station Level 3 Hardpoints - use all level 1-2 hardpoints plus these -->
 
      <HardPoint Name="HP_Empire_Station_Three_00">
 			<Type> HARD_POINT_WEAPON_MISSILE </Type>
@@ -3768,7 +3768,7 @@
 
     </HardPoint>
 
- <!-- Empire Space Station Level 4 Hardpoints - use all level 1-3 hardpoints plus these -->
+    <!-- Empire Space Station Level 4 Hardpoints - use all level 1-3 hardpoints plus these -->
 
       <HardPoint Name="HP_Empire_Station_Four_00">
 			<Type> HARD_POINT_WEAPON_ION_CANNON </Type>
@@ -3921,7 +3921,7 @@
     
     
 
- <!-- Empire Space Station Level 5 Hardpoints - use all level 1-4 hardpoints plus these -->
+    <!-- Empire Space Station Level 5 Hardpoints - use all level 1-4 hardpoints plus these -->
 
      <HardPoint Name="HP_Empire_Station_Five_00">
 			<Type> HARD_POINT_WEAPON_MISSILE </Type>
@@ -4078,7 +4078,7 @@
 			
     </HardPoint>
 
-<!-- Hard points for the TIE bomber and Y-wing -->
+    <!-- Hard points for the TIE bomber and Y-wing -->
 
     <HardPoint Name="HP_BOMBER_00">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
@@ -4191,7 +4191,7 @@
     </HardPoint>
 
 
-<!-- For variant Y-wing disabler -->
+    <!-- For variant Y-wing disabler -->
 
 
     <HardPoint Name="HP_BOMBER_04">
@@ -4265,7 +4265,7 @@
 
 
 
-<!-- Hard points for Home One -->
+    <!-- Hard points for Home One -->
 
     <HardPoint Name="HP_HomeOne_Shield_Generator">
 			<Type> HARD_POINT_SHIELD_GENERATOR </Type>
@@ -4636,7 +4636,7 @@
     </HardPoint>
 
 
-<!-- Hard points for Jedi Cruiser -->
+    <!-- Hard points for Jedi Cruiser -->
 
     <HardPoint Name="HP_Jedi_Cruiser_Shield_Gen">
 			<Type> HARD_POINT_SHIELD_GENERATOR </Type>
@@ -4897,7 +4897,7 @@
     </HardPoint>
 
 
-<!-- Training Star Destroyer Hard Points for Tutorial -->
+    <!-- Training Star Destroyer Hard Points for Tutorial -->
 		
     <HardPoint Name="HP_Star_Destroyer_Training_01">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
@@ -5177,7 +5177,7 @@
 
 
 
-<!-- Hard points for the Empire Training Space Station for Tutorial -->
+    <!-- Hard points for the Empire Training Space Station for Tutorial -->
 
     <HardPoint Name="HP_Empire_Station_Training_00">
 			<Type> HARD_POINT_WEAPON_MISSILE </Type>
@@ -5316,7 +5316,7 @@
 
 
 
-<!-- PIRATE FRIGATE HARD POINTS -->
+    <!-- PIRATE FRIGATE HARD POINTS -->
 
 
     <HardPoint Name="HP_Pirate_Frigate_F">
@@ -5464,7 +5464,7 @@
 
 			<Death_Breakoff_Prop> Hardpoint_Breakoff_Asteroid_Base_Light_Laser_00 </Death_Breakoff_Prop>
 
-			<Damage_Type> Damage_Sation_Laser </Damage_Type>
+			<Damage_Type> Damage_Station_Laser </Damage_Type>
             <Fire_Bone_A>MUZZLEA_00</Fire_Bone_A>
             <Fire_Bone_B>MUZZLEA_00</Fire_Bone_B>
             <Fire_Cone_Width>180.0</Fire_Cone_Width>
@@ -5507,7 +5507,7 @@
 
 			<Death_Breakoff_Prop> Hardpoint_Breakoff_Asteroid_Base_Light_Laser_01 </Death_Breakoff_Prop>
 
-			<Damage_Type> Damage_Sation_Laser </Damage_Type>
+			<Damage_Type> Damage_Station_Laser </Damage_Type>
             <Fire_Bone_A>MUZZLEA_05</Fire_Bone_A>
             <Fire_Bone_B>MUZZLEA_05</Fire_Bone_B>
             <Fire_Cone_Width>180.0</Fire_Cone_Width>
@@ -5550,7 +5550,7 @@
 
 			<Death_Breakoff_Prop> Hardpoint_Breakoff_Asteroid_Base_Turbolaser_00 </Death_Breakoff_Prop>
 
-			<Damage_Type> Damage_Sation_Turbolaser </Damage_Type>
+			<Damage_Type> Damage_Station_Turbolaser </Damage_Type>
             <Fire_Bone_A>MUZZLEA_01</Fire_Bone_A>
             <Fire_Bone_B>MUZZLEA_01</Fire_Bone_B>
             <Fire_Cone_Width>180.0</Fire_Cone_Width>
@@ -5593,7 +5593,7 @@
 
 			<Death_Breakoff_Prop> Hardpoint_Breakoff_Asteroid_Base_Turbolaser_01 </Death_Breakoff_Prop>
 
-			<Damage_Type> Damage_Sation_Turbolaser </Damage_Type>
+			<Damage_Type> Damage_Station_Turbolaser </Damage_Type>
             <Fire_Bone_A>MUZZLEA_04</Fire_Bone_A>
             <Fire_Bone_B>MUZZLEA_04</Fire_Bone_B>
             <Fire_Cone_Width>180.0</Fire_Cone_Width>
@@ -5636,7 +5636,7 @@
 
 			<Death_Breakoff_Prop> Hardpoint_Breakoff_Asteroid_Base_Turbolaser_02 </Death_Breakoff_Prop>
 
-			<Damage_Type> Damage_Sation_Turbolaser </Damage_Type>
+			<Damage_Type> Damage_Station_Turbolaser </Damage_Type>
             <Fire_Bone_A>MUZZLEA_03</Fire_Bone_A>
             <Fire_Bone_B>MUZZLEA_03</Fire_Bone_B>
             <Fire_Cone_Width>180.0</Fire_Cone_Width>
@@ -5679,7 +5679,7 @@
 
 			<Death_Breakoff_Prop> Hardpoint_Breakoff_Asteroid_Base_Turbolaser_03 </Death_Breakoff_Prop>
 
-			<Damage_Type> Damage_Sation_Turbolaser </Damage_Type>
+			<Damage_Type> Damage_Station_Turbolaser </Damage_Type>
             <Fire_Bone_A>MUZZLEA_02</Fire_Bone_A>
             <Fire_Bone_B>MUZZLEA_02</Fire_Bone_B>
             <Fire_Cone_Width>180.0</Fire_Cone_Width>
@@ -5832,7 +5832,7 @@
 
 			<Death_Breakoff_Prop> Hardpoint_Breakoff_Asteroid_Base_Light_Laser_00 </Death_Breakoff_Prop>
 
-			<Damage_Type> Damage_Sation_Laser </Damage_Type>
+			<Damage_Type> Damage_Station_Laser </Damage_Type>
             <Fire_Bone_A>MUZZLEA_00</Fire_Bone_A>
             <Fire_Bone_B>MUZZLEA_00</Fire_Bone_B>
             <Fire_Cone_Width>180.0</Fire_Cone_Width>
@@ -5875,7 +5875,7 @@
 
 			<Death_Breakoff_Prop> Hardpoint_Breakoff_Asteroid_Base_Light_Laser_01 </Death_Breakoff_Prop>
 
-			<Damage_Type> Damage_Sation_Laser </Damage_Type>
+			<Damage_Type> Damage_Station_Laser </Damage_Type>
             <Fire_Bone_A>MUZZLEA_05</Fire_Bone_A>
             <Fire_Bone_B>MUZZLEA_05</Fire_Bone_B>
             <Fire_Cone_Width>180.0</Fire_Cone_Width>
@@ -5918,7 +5918,7 @@
 
 			<Death_Breakoff_Prop> Hardpoint_Breakoff_Asteroid_Base_Turbolaser_00 </Death_Breakoff_Prop>
 
-			<Damage_Type> Damage_Sation_Turbolaser </Damage_Type>
+			<Damage_Type> Damage_Station_Turbolaser </Damage_Type>
             <Fire_Bone_A>MUZZLEA_01</Fire_Bone_A>
             <Fire_Bone_B>MUZZLEA_01</Fire_Bone_B>
             <Fire_Cone_Width>180.0</Fire_Cone_Width>
@@ -5961,7 +5961,7 @@
 
 			<Death_Breakoff_Prop> Hardpoint_Breakoff_Asteroid_Base_Turbolaser_01 </Death_Breakoff_Prop>
 
-			<Damage_Type> Damage_Sation_Turbolaser </Damage_Type>
+			<Damage_Type> Damage_Station_Turbolaser </Damage_Type>
             <Fire_Bone_A>MUZZLEA_04</Fire_Bone_A>
             <Fire_Bone_B>MUZZLEA_04</Fire_Bone_B>
             <Fire_Cone_Width>180.0</Fire_Cone_Width>
@@ -6004,7 +6004,7 @@
 
 			<Death_Breakoff_Prop> Hardpoint_Breakoff_Asteroid_Base_Turbolaser_02 </Death_Breakoff_Prop>
 
-			<Damage_Type> Damage_Sation_Turbolaser </Damage_Type>
+			<Damage_Type> Damage_Station_Turbolaser </Damage_Type>
             <Fire_Bone_A>MUZZLEA_03</Fire_Bone_A>
             <Fire_Bone_B>MUZZLEA_03</Fire_Bone_B>
             <Fire_Cone_Width>180.0</Fire_Cone_Width>
@@ -6047,7 +6047,7 @@
 
 			<Death_Breakoff_Prop> Hardpoint_Breakoff_Asteroid_Base_Turbolaser_03 </Death_Breakoff_Prop>
 
-			<Damage_Type> Damage_Sation_Turbolaser </Damage_Type>
+			<Damage_Type> Damage_Station_Turbolaser </Damage_Type>
             <Fire_Bone_A>MUZZLEA_02</Fire_Bone_A>
             <Fire_Bone_B>MUZZLEA_02</Fire_Bone_B>
             <Fire_Cone_Width>180.0</Fire_Cone_Width>
@@ -6178,12 +6178,12 @@
 		<Death_Explosion_SFXEvent>Unit_Hardpoint_Bay_Death</Death_Explosion_SFXEvent>
 	</HardPoint>  
 
-<!-- =============================================                       ============================================= -->
-<!-- ============================================= END SPACE, BEGIN LAND ============================================= -->
-<!-- =============================================                       ============================================= -->
+    <!-- =============================================                       ============================================= -->
+    <!-- ============================================= END SPACE, BEGIN LAND ============================================= -->
+    <!-- =============================================                       ============================================= -->
 
 
-<!-- Hard points for the T4-B Tank -->
+    <!-- Hard points for the T4-B Tank -->
 
     <HardPoint Name="HP_T4B_Tank_03">
 			<Type> HARD_POINT_WEAPON_MISSILE </Type>
@@ -6266,7 +6266,7 @@
 
     </HardPoint>
 
-<!-- Hard points for the 2M Tank -->
+    <!-- Hard points for the 2M Tank -->
 
     <HardPoint Name="HP_2M_Tank_00">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
@@ -6291,7 +6291,7 @@
 			
     </HardPoint>
 
-<!-- Hard points for the AT-AT -->
+    <!-- Hard points for the AT-AT -->
 
     <HardPoint Name="HP_AT-AT_00">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
@@ -6343,7 +6343,7 @@
     </HardPoint>
 
 
-<!-- Hard Points for SPMA-T -->
+    <!-- Hard Points for SPMA-T -->
 
 	<HardPoint Name="HP_SPMAT_00">
 			<Type> HARD_POINT_WEAPON_LASER </Type>
