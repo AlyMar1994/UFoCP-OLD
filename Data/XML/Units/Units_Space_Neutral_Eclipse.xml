@@ -191,7 +191,7 @@
 		<In_Background>Yes</In_Background>
 
 		<Space_Obstacle_Radius>280</Space_Obstacle_Radius>
-		<Space_Obstacle_Offset>0, 0, 0</Space_Obstacle_Offset> 
+		<Space_Obstacle_Offset>0, 0, 0</Space_Obstacle_Offset>
 		<Space_Layer>StaticObject</Space_Layer>
 		<CategoryMask>Structure</CategoryMask>
 		<Is_Valid_Target>No</Is_Valid_Target>
