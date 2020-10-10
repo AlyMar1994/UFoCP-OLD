@@ -68,12 +68,15 @@ Factions
 ==================
 -Rebel – Fixed ability toggle SFX for enemy calling "ABILITY_LURE" instead of just "LURE," causing an internal error and preventing the abilities from playing proper SFXEvents if assigned.
 -Rebel – Fixed ability toggle SFX for enemy calling "ABILITY_ROCKET_ATTACK" instead of just "ROCKET_ATTACK."
+-Rebel – Removed all SFXEvents for abilities "HARASS" ("Harass") and "AVOID_DANGER" ("Scout") as those abilities don't exist in the game anymore, and caused errors.
 
 -Empire – Fixed ability toggle SFX for enemy calling "ABILITY_LURE" instead of just "LURE."
 -Empire – Fixed ability toggle SFX for enemy calling "ABILITY_ROCKET_ATTACK" instead of just "ROCKET_ATTACK."
+-Empire – Removed all SFXEvents for abilities "HARASS" ("Harass") and "AVOID_DANGER" ("Scout") as those abilities don't exist in the game anymore, and caused errors.
 
 -Underworld – Fixed ability toggle SFX for enemy calling "ABILITY_LURE" instead of just "LURE."
 -Underworld – Fixed ability toggle SFX for enemy calling "ABILITY_ROCKET_ATTACK" instead of just "ROCKET_ATTACK."
+-Underworld – Removed all SFXEvents for abilities "HARASS" ("Harass") and "AVOID_DANGER" ("Scout") as those abilities don't exist in the game anymore, and caused errors.
 
 
 ==================

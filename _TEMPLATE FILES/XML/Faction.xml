@@ -443,15 +443,7 @@
 		<!-- Rocket Switch -->
 		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>ROCKET_ATTACK, GUI_Toggle_Rocket_Attack_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
 		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>ROCKET_ATTACK, GUI_Toggle_Rocket_Attack_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
-		
-		<!-- Harass -->
-		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>HARASS, GUI_Toggle_Harass_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
-		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>HARASS, GUI_Toggle_Harass_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
-		
-		<!-- Scout -->
-		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>AVOID_DANGER, GUI_Toggle_Scout_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
-		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>AVOID_DANGER, GUI_Toggle_Scout_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
-		
+
 		<!-- Deploy -->
 		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>DEPLOY, GUI_Toggle_Deploy_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
 		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>DEPLOY, GUI_Toggle_Deploy_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
@@ -528,15 +520,7 @@
 		<!-- Rocket Switch -->
 		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>ROCKET_ATTACK, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
 		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>ROCKET_ATTACK, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
-		
-		<!-- Harass -->
-		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>HARASS, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
-		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>HARASS, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
-		
-		<!-- Scout -->
-		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>AVOID_DANGER, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
-		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>AVOID_DANGER, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
-		
+
 		<!-- Deploy -->
 		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>DEPLOY, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
 		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>DEPLOY, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
@@ -560,7 +544,7 @@
 		
 		<SFXEvent_HUD_Won_Land_Battle>SFXEvent_Name</SFXEvent_HUD_Won_Land_Battle> <!-- We won the land battle! -->
 		<SFXEvent_HUD_Lost_Land_Battle>SFXEvent_Name</SFXEvent_HUD_Lost_Land_Battle> <!-- We lost the land battle... -->
-		<SFXEvent_HUD_Won_Space_Battle>SFXEvent_Name</SFXEvent_HUD_Won_Space_Battle> <!-- We won the space battle! -->	
+		<SFXEvent_HUD_Won_Space_Battle>SFXEvent_Name</SFXEvent_HUD_Won_Space_Battle> <!-- We won the space battle! -->
 		<SFXEvent_HUD_Lost_Space_Battle>SFXEvent_Name</SFXEvent_HUD_Lost_Space_Battle> <!-- We lost the space battle... -->
 
 		<!-- Corruption-only SFX -->
@@ -568,7 +552,7 @@
 
 		<SFXEvent_HUD_Won_Land_Battle_Enemy_TSW_Present>SFXEvent_Name</SFXEvent_HUD_Won_Land_Battle_Enemy_TSW_Present> <!-- We won the land battle with enemy tactical superweapon present! -->
 		<SFXEvent_HUD_Lost_Land_Battle_Enemy_TSW_Present>SFXEvent_Name</SFXEvent_HUD_Lost_Land_Battle_Enemy_TSW_Present> <!-- We lost the land battle with enemy tactical superweapon present... -->
-		<SFXEvent_HUD_Won_Space_Battle_Enemy_TSW_Present>SFXEvent_Name</SFXEvent_HUD_Won_Space_Battle_Enemy_TSW_Present> <!-- We won the space battle with enemy tactical superweapon present! -->	
+		<SFXEvent_HUD_Won_Space_Battle_Enemy_TSW_Present>SFXEvent_Name</SFXEvent_HUD_Won_Space_Battle_Enemy_TSW_Present> <!-- We won the space battle with enemy tactical superweapon present! -->
 		<SFXEvent_HUD_Lost_Space_Battle_Enemy_TSW_Present>SFXEvent_Name</SFXEvent_HUD_Lost_Space_Battle_Enemy_TSW_Present> <!-- We lost the space battle with enemy tactical superweapon present... -->
 
 		<SFXEvent_HUD_Tactical_Victory_Near>SFXEvent_Name</SFXEvent_HUD_Tactical_Victory_Near> <!-- We are outnumbering our enemy significantly and the FoW has been pushed back to help us exterminate the opposition! -->
