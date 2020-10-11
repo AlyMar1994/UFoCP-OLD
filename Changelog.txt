@@ -41,7 +41,8 @@ UFoCP
 ==================
 General
 ==================
--The Hardpoints unit file has undergone a structural and code rework, standardizing it and cleaning it up.  Hardpoints without Damage_Types should be fixed, and everything should be functioning properly.
+-Reorganized the all hardpoints files into four seperate files: Hardpoints (for Pirates/misc factions and items), Hardpoints_Rebels (for Rebel space and land items), Hardpoints_Empire (for Empire space and land items), and reorganized Hardpoints_Underworld to only include Underworld items.  The original files were messy, gigantic and without organization.  There's no true gameplay change, but it keeps everything neatly organized internally.
+-All hardpoints files have undergone a structural/code rework, standardizing it and cleaning it up.  Hardpoints without Damage_Types should be fixed, and everything should be functioning properly.
 
 -Fixed duplicate trade route "Anaxes_Carida" to fix an internal error.
 -Fixed duplicate trade route "Mandalore_Utapau" to fix an internal error.
@@ -96,6 +97,10 @@ Structures (Land)
 ==================
 Structures (Space)
 ==================
+-Empire Space Station – Fixed a missile launcher on the level five station not having an SFXEvent for being destroyed.
+-Empire Space Station – Fixed a tutorial variant's hardpoints having damage modifiers when they shouldn't (as they're useless dummies).
+-Empire Space Station – Fixed a tutorial variant's hardpoints having multiple alternate firing bones attached when it only can have two.
+
 -Consortium Space Station – Fixed "Reinforced Durasteel" upgrades lv.1-3.  The upgrades originally did nothing, as their ability type to upgrade was "Ground_Automatic" instead of "Space_Automatic."
 -Consortium Space Station – Fixed "Reinforced Durasteel" upgrades lv.1-3.  Upgrades referenced applicable unit category "structure" and not specifically the Underworld space stations, meaning all structures would endure a defense upgrade.  The space stations didn't get the upgrade anyway, as they're type "capital."
 
@@ -118,18 +123,23 @@ Units (Land)
 
 -Grenadiers – Fixed infantry being unbribable in Underworld mirror skirmish matches.  They have been given a <Tactical_Bribe_Cost> so Tyber Zann can bribe enemy Underworld infantry.  Uses vanilla bribe cost value of 25 credits.
 
+-M.A.L. – Removed non-existant sound file usage "U000_MAL0503_ENG," an assist movement line (was causing internal errors), and adjacent subtitle file.
+
 -Merc Assault Squad – Fixed infantry being unbribable in Underworld mirror skirmish matches.  They have been given a <Tactical_Bribe_Cost> so Tyber Zann can bribe enemy Underworld infantry.  Uses vanilla bribe cost value of 25 credits.
 
 
 ==================
 Units (Space)
 ==================
--M.A.L. – Removed non-existant sound file usage "U000_MAL0503_ENG," an assist movement line (was causing internal errors), and adjacent subtitle file.
+-Corellian Gunship – Fixed inconsistent hardpoint tags.  Half of the missile hardpoints wouldn't fire on-target, and half would.  All four missile hardpoints won't immediately fire on targeting, as intended.
 
--Rogue Squadron – Fixed Derek Kilvian's lines not playing when his enemy's health is critical in Rogue Squadron.  The SFXEvent was improperly named "Unit_Enemy_Health_Critcal_Derek_Klivian" instead of "Unit_Enemy_Health_Critical_Derek_Klivian"
+-Pirate Interceptor Frigate – Fixed turbolaser hardpoints using Acclamator laser cannon damage modifiers.
+
+-Rogue Squadron – Fixed Derek Kilvian's lines not playing when his enemy's health is critical in Rogue Squadron.  The SFXEvent was improperly named "Unit_Enemy_Health_Critcal_Derek_Klivian" instead of "Unit_Enemy_Health_Critical_Derek_Klivian."
 -Rogue Squadron – Fixed Rogue Squadron playing generic X-wing lines when going into nebula or asteroids.
 
 -The Merciless - Tyber Zann – Fixed level 2 of the "Modified Cloaking Generator" upgrades.  Upgrade originally did nothing, as ability type was "Ground_Automatic" instead of "Space_Automatic."
+
 -Vengeance Frigate – Fixed levels 1-2 of the "Modified Cloaking Generator" upgrades.  Upgrade originally did nothing, as ability type was "Ground_Automatic" instead of "Space_Automatic."
 
 
