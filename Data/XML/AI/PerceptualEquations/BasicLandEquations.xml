@@ -59,23 +59,20 @@
 
 
 
-	<!-- 
-		Variable_Self.ReinforcementsUnnormalized
-	-->
 	<Debug_Land_1>
 		Variable_Self.FriendlyForceUnnormalized
 		+
-		Variable_Self.FriendlyForceUnnormalized{Parameter_Type = "MPTL"}
+		Variable_Self.FriendlyForceUnnormalized { Parameter_Type = "MPTL" }
 		+
-		Variable_Self.FriendlyForceUnnormalized{Parameter_Type = "T2B_Tank"}
+		Variable_Self.FriendlyForceUnnormalized { Parameter_Type = "T2B_Tank" }
 		+
-		Variable_Self.FriendlyForceUnnormalized{Parameter_Type = "Han_Solo"}
+		Variable_Self.FriendlyForceUnnormalized { Parameter_Type = "Han_Solo" }
 		+
-		Variable_Self.FriendlyForceUnnormalized{Parameter_Type = "Chewbacca"}
+		Variable_Self.FriendlyForceUnnormalized { Parameter_Type = "Chewbacca" }
 		+
-		Variable_Self.FriendlyForceUnnormalized{Parameter_Type = "Droid_R2D2"}
+		Variable_Self.FriendlyForceUnnormalized { Parameter_Type = "Droid_R2D2" }
 		+
-		Variable_Self.FriendlyForceUnnormalized{Parameter_Type = "Droid_C3P0"}
+		Variable_Self.FriendlyForceUnnormalized { Parameter_Type = "Droid_C3P0" }
 	</Debug_Land_1>
 
 	<Debug_Land_2>
@@ -120,7 +117,7 @@
 			*
 			(
 				(
-					(Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Infantry | Vehicle | Air]}
+					(Variable_Self.FriendlyForceUnnormalized { Parameter_Category = GameObjectCategoryType[Infantry | Vehicle | Air] }
 					>= (3.0 * (Variable_Enemy.FriendlyForceUnnormalized + Variable_Enemy.ReinforcementsUnnormalized)))
 				)
 				> 0
@@ -181,7 +178,6 @@
 		-
 		Function_Should_Clear_Vehicles.Evaluate
 	</Should_Clear_Infantry>
-
 
 	<Should_Clear_Vehicles>
 		Function_Allowed_As_Defender_Land.Evaluate
@@ -309,7 +305,6 @@
 		unit must be close to the enemy
 		assist things with the most force
 	-->
-		
 	<Needs_ObiWan_Assist>
 		(1 - Variable_Target.Type.IsType { Parameter_Type = "Obi_Wan_Kenobi" })
 		*
@@ -357,6 +352,7 @@
 				* Variable_Target.TimeLastSeen
 		)
 	</Land_Area_Needs_Scouting>
+
 
 
 	<!--
