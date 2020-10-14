@@ -37,6 +37,10 @@ UFoCP
 
 -Fixed regression in InfrastructureGalacticEquations: I literally deleted the entire document from the repo.  It has been restored with proper changes (changes from "Death_Star" --> "Death_Star_II," "Darth_Team_Expansion" additions to budgeting, adding "U_Ground_Gravity_Generator" to the desireable savings list, ect).
 
+-Felucia – Reverted changes from v1.9.  This is a part of a bigger problem where the default Felucia map causes errors inside the game, and my edits were making them worse.
+
+-Fixed space CorruptionRewards (Piracy units) causing errors in code.  This was due to the Underworld Piracy units not pulling values I told it to pull from other ships.
+
 
 ==================
 General
@@ -52,18 +56,18 @@ General
 -Removed ability "Kyle_Katarn_Sabotage" declaration in GameConstants to fix an internal error, as Kyle isn't a galactic unit and cannot sabotage like the Defilers (he doesn't have the ability anyway).
 -Removed ability "Corruptor_Corrupt_Planet_1" declaration in GameConstants to fix an internal error, as the "Saboteur"/"Corrupter" unit was replaced with the modern Defiler.
 
--Fixed the Underworld using Rebel music instead of their own proper faction losing music in a default strategic/tactical loss.
-
--Fixed space obstacle "Nebula Friggin Huge Ion" not actually being considered an ion storm in-game.  This caused "friggin huge" ion storm on maps like space skirmish Felucia to *not* act like an ion storm, and only a nebula.
-
--Fixed EaW bumpmap texture "EB_BaseWall_DS1_BC" not including any modifications to the texture to imply destruction.  Style preserved.
-
 
 ==================
 A.I.
 ==================
 -(LUA) PGEvents – Fixed up some missing behaviors.  Changing some permissions so the AI can suggest using the "take cover" ability on land, and for AT-ATs AI to suggest using their "deploy troopers" ability (when they need to, of course).  This has led to a direct increase in the AI using these abilities when not so before.
 -(LUA) PGEvents – Fixed a behavior that didn't include Underworld skirmish turbolasers as a part of the AI to try to get in and/or escape the maximum attack range for "artillery" (turbolaser towers, MPTL, ect).
+
+
+==================
+Audio
+==================
+-Fixed the Underworld using Rebel music instead of their own proper faction losing music in a default strategic/tactical loss.
 
 
 ==================
@@ -80,6 +84,12 @@ Factions
 -Underworld – Fixed ability toggle SFX for enemy calling "ABILITY_LURE" instead of just "LURE."
 -Underworld – Fixed ability toggle SFX for enemy calling "ABILITY_ROCKET_ATTACK" instead of just "ROCKET_ATTACK."
 -Underworld – Removed all SFXEvents for abilities "HARASS" ("Harass") and "AVOID_DANGER" ("Scout") as those abilities don't exist in the game anymore, and caused errors.
+
+
+==================
+Maps/Planets (Space)
+==================
+-Fixed space obstacle "Nebula Friggin Huge Ion" not actually being considered an ion storm in-game.  This caused "friggin huge" ion storm on maps like space skirmish Felucia to *not* act like an ion storm, and only a nebula.
 
 
 ==================
@@ -107,6 +117,12 @@ Structures (Space)
 -Pirate Asteroid Base – Fixed using wrong "Model_To_Attach" to attach the second laser hardpoint to a bone.  Was "Nb_apbase_hp_ll1.alo" instead of "Nb_apbase_hp_ll2.alo" (ll1 was used by another hardpoint).
 -Pirate Asteroid Base – Fixed all turbolaser hardpoints using an incorrect damage type (Damage_Sation_Turbolaser), which lead to bad damage modifications.  They have been corrected to "Damage_Station_Turbolaser."
 -Pirate Asteroid Base – Fixed all laser hardpoints using an incorrect damage type (Damage_Sation_Laser), which lead to bad damage modifications.  They have been corrected to "Damage_Station_Laser."
+
+
+==================
+Textures
+==================
+-Fixed EaW bumpmap texture "EB_BaseWall_DS1_BC" not including any modifications to the texture to imply destruction.  Style preserved.
 
 
 ==================
