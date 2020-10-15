@@ -166,5 +166,6 @@
 
 	<!-- UFoCP Object Files -->
 	<File>Units\REB\Units_UFoCP_Hero_Rebel_Droids.xml</File>
+	<File>Units\REB\Units_UFoCP_Hero_Rebel_VehicleThieves.xml</File>
 	<File>Units\IMP\Units_UFoCP_Hero_Empire_Fett.xml</File>
 </Game_Object_Files>

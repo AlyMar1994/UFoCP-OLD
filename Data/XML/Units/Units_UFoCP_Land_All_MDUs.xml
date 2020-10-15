@@ -81,13 +81,13 @@
 		<SFXEvent_Move>Unit_Move_MDU</SFXEvent_Move>
 		<SFXEvent_Fleet_Move />
 		<SFXEvent_Attack>Unit_Attack_MDU</SFXEvent_Attack>
-		<SFXEvent_Guard />  
+		<SFXEvent_Guard />
 		<Death_SFXEvent_Start_Die>Unit_Tank_Death_SFX</Death_SFXEvent_Start_Die>
 		<SFXEvent_Engine_Idle_Loop> Unit_MDU_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
 		<SFXEvent_Engine_Moving_Loop> Unit_MDU_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
 		<SFXEvent_Unit_Lost> RHD_Unit_Destroyed </SFXEvent_Unit_Lost>
-		<SFXEvent_Tactical_Build_Started> RHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>		
-		<SFXEvent_Tactical_Build_Complete> RHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>		
+		<SFXEvent_Tactical_Build_Started> RHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete> RHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
 		<SFXEvent_Tactical_Build_Cancelled> RHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
 
 		<No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>

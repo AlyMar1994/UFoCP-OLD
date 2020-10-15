@@ -56,12 +56,16 @@ General
 -Removed ability "Kyle_Katarn_Sabotage" declaration in GameConstants to fix an internal error, as Kyle isn't a galactic unit and cannot sabotage like the Defilers (he doesn't have the ability anyway).
 -Removed ability "Corruptor_Corrupt_Planet_1" declaration in GameConstants to fix an internal error, as the "Saboteur"/"Corrupter" unit was replaced with the modern Defiler.
 
+-New file "Units_UFoCP_Hero_Rebel_VehicleThieves" which condenses all Han Solo & Chewbacca files into one document.
+
 
 ==================
 A.I.
 ==================
 -(LUA) PGEvents – Fixed up some missing behaviors.  Changing some permissions so the AI can suggest using the "take cover" ability on land, and for AT-ATs AI to suggest using their "deploy troopers" ability (when they need to, of course).  This has led to a direct increase in the AI using these abilities when not so before.
 -(LUA) PGEvents – Fixed a behavior that didn't include Underworld skirmish turbolasers as a part of the AI to try to get in and/or escape the maximum attack range for "artillery" (turbolaser towers, MPTL, ect).
+
+-(LUA) TacticalMultiplayerBuildSpaceUnitsGeneric – Modified script to search for new Han Solo & Chewbacca MP space unit.
 
 
 ==================
@@ -137,6 +141,8 @@ Units (Land)
 -Blizzard 1 - General Veers – Fixed unit causing errors by referencing a non-existant SFXEvent for a land unit callout.
 -Blizzard 1 - General Veers – Attempt fix at unit callouts not working on land.
 
+-Chewbacca – Fixed land shadow scale being multiplied by 2.  Scale is now 5.
+
 -Grenadiers – Fixed infantry being unbribable in Underworld mirror skirmish matches.  They have been given a <Tactical_Bribe_Cost> so Tyber Zann can bribe enemy Underworld infantry.  Uses vanilla bribe cost value of 25 credits.
 
 -M.A.L. – Removed non-existant sound file usage "U000_MAL0503_ENG," an assist movement line (was causing internal errors), and adjacent subtitle file.
@@ -155,6 +161,8 @@ Units (Space)
 -Rogue Squadron – Fixed Rogue Squadron playing generic X-wing lines when going into nebula or asteroids.
 
 -The Merciless - Tyber Zann – Fixed level 2 of the "Modified Cloaking Generator" upgrades.  Upgrade originally did nothing, as ability type was "Ground_Automatic" instead of "Space_Automatic."
+
+-The Millennium Falcon - Han Solo & Chewbacca - Created a new MP unit to fix the object contestation glitch ("Boba Mine Glitch").  Unit performs the same as original.
 
 -Vengeance Frigate – Fixed levels 1-2 of the "Modified Cloaking Generator" upgrades.  Upgrade originally did nothing, as ability type was "Ground_Automatic" instead of "Space_Automatic."
 
