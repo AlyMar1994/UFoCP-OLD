@@ -24,11 +24,7 @@ function Definitions()
 	DebugMessage("%s -- Done Definitions", tostring(Script))
 end
 
--- AM1994 (4/29/2020): function MainForce_Thread() was overhauled as a
--- future-proof fear that users won't be able to have the AI fire the DS1,
--- due to the code only focusing on finding the DS2. If someone uses
--- UFoCP as a base, and changes the buildable DS2 to 1, the AI may now fire it.
--- Thanks, Nikomer.
+-- AM1994 (4/29/2020): Thanks, Nikomer.
 function MainForce_Thread()
 	BlockOnCommand(MainForce.Produce_Force())
 

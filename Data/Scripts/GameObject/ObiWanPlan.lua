@@ -13,18 +13,20 @@ require("PGStateMachine")
 function Definitions()
 	DebugMessage("%s -- In Definitions", tostring(Script))
 
-	-- only join plans that meet our expense requirements.
+	-- Only join plans that meet our expense requirements.
 	MinPlanAttachCost = 5000
 	MaxPlanAttachCost = 0
 
 	-- Commander hit list:
-	Attack_Ability_Type_Names = {
+	Attack_Ability_Type_Names =
+	{
 		"Infantry",								-- ATTACK these types!
 		"Darth_Team_Executor", "Boba_Fett_Team"	-- STAY AWAY from these types!
 	}
-	Attack_Ability_Weights = { 
-		10,						-- ATTACK-type Weights.
-		BAD_WEIGHT, BAD_WEIGHT	-- FEARED-type Weights.
+	Attack_Ability_Weights =
+	{ 
+		10,						-- ATTACK-type weights.
+		BAD_WEIGHT, BAD_WEIGHT	-- FEARED-type weights.
 	}
 	Attack_Ability_Types = WeightedTypeList.Create()
 	Attack_Ability_Types.Parse(Attack_Ability_Type_Names, Attack_Ability_Weights)
@@ -62,13 +64,13 @@ function Get_Escort_Ability_Weights(goal)
 end
 
 function HeroService()
-	-- Do nothing.
+	return
 end
 
 function State_Init(message)
 	if message == OnEnter then
 
-		-- prevent this from doing anything in galactic mode
+		-- Prevent this from doing anything in galactic mode
 		if Get_Game_Mode() ~= "Land" then
 			ScriptExit()
 		end
@@ -94,7 +96,7 @@ function State_AI_Autofire(message)
 			ConsiderDivertAndAOE(Object, ability_name, ability_range, recent_enemy_units, threat_trigger_number)
 		end
 
-		-- reset tracked units each service.
+		-- Reset tracked units each service.
 		nearby_unit_count = 0
 		recent_enemy_units = {}
 	end

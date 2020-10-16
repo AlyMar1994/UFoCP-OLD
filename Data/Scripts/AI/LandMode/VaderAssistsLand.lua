@@ -34,8 +34,10 @@ function MainForce_Thread()
 	MainForce.Set_As_Goal_System_Removable(false)
 
 	vader = MainForce.Get_Unit_Table()[1]
+
 	if not TestValid(vader) then
 		MessageBox("unexpected state; vader unavailable")
+
 		ScriptExit()
 	end
 
@@ -54,6 +56,7 @@ function MainForce_Thread()
 		best_ally = FindTarget(MainForce, "Needs_Vader_Assist", "Friendly_Unit", 1.0, 1500)
 		if TestValid(best_ally) then
 			DebugMessage("%s-- assisting %s", tostring(Script), tostring(best_ally))
+
 			BlockOnCommand(MainForce.Guard_Target(best_ally), duration_to_assist)
 		end
 

@@ -389,7 +389,7 @@ function Should_Crush(unit, target)
 		return false
 	end
 
-	-- If the vehicle is good at it, the victim is infantry, and vulnerable to crushing
+	-- If the vehicle is good at it, the victim is infantry, and vulnerable to crushing.
 	if unit.Has_Property("GoodInfantryCrusher") and target.Is_Category("Infantry") then
 		if target.Is_Ability_Active("SPREAD_OUT") then
 			return true
@@ -407,8 +407,6 @@ function Should_Crush(unit, target)
 end
 
 function Default_Target_In_Range(tf, unit, target)
-	--MessageBox("%s -- unit:  Default_Target_In_Range for: %s.", tostring(Script), tostring(unit), tostring(target))
-
 	-- We'll assume that once the first unit within a task force is in range, the attack has begun.
 	Attacking = true
 
@@ -441,6 +439,8 @@ end
 
 function Default_Hardpoint_Target_In_Range(tf, unit, target)
 	DebugMessage("%s -- A hardpoint of %s can now fire on target %s.", tostring(Script), tostring(unit), tostring(attacker))
+
+	return
 end
 
 function Default_No_Units_Remaining()
@@ -459,12 +459,8 @@ end
 
 -- This fires if the countdown was going and it is now refreshed or if you come out of a nebula
 function Default_Unit_Ability_Ready(tf, unit, ability)
-	--MessageBox("%s ready for %s", ability, tostring(unit))
-	
 	-- Try to recover use of interrupted abilities.
 	if lib_cancelled_abilities[unit] and lib_cancelled_abilities[unit][ability] then
-		--MessageBox("%s-- attempting to recover use of %s", tostring(Script), ability)
-
 		unit.Activate_Ability(ability, true)
 		lib_cancelled_abilities[unit][ability] = false
 	end
@@ -487,5 +483,5 @@ end
 
 -- An ability finished naturally by its duration running out or by being turned off.
 function Default_Unit_Ability_Finished(tf, unit)
-	--DebugMessage("%s -- An ability for %s has finished!", tostring(Script), ability, tostring(unit))
+	return
 end

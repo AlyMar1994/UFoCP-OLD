@@ -36,7 +36,7 @@ function Definitions()
 		LUKE_SKYWALKER_JEDI_TEAM = { nil, false },
 		YODA_TEAM = { nil, false },
 		ROGUE_SQUADRON_SPACE = { nil, true },
-		
+
 		BOSSK_TEAM = { nil, true },
 		IG88_TEAM = { nil, true },
 		SILRI_TEAM = { nil, false },
@@ -54,6 +54,7 @@ function Find_Custom_Target(object)
 	if unit_entry then
 		perception = unit_entry[1]
 		prefers_space = unit_entry[2]
+
 		if perception then
 			target = FindTarget.Reachable_Target(PlayerObject, perception, "Friendly", "No_Threat", 1.0, object)
 			if TestValid(target) then
