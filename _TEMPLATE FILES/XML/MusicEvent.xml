@@ -5,7 +5,6 @@
 	<!-- NOTE: THESE VALUES ARE GENERALLY GENERIC! YOU CAN CHANGE THEM TO WHATEVER YOU WANT! -->
 
 	<!-- By Connor 'AlyMar1994' Hess! -->
-
 <MusicEvents>
 	<MusicEvent Name="MusicEvent_Name">
 		<Files>MusicName.file1, MusicName.file2, MusicName.file3</Files>

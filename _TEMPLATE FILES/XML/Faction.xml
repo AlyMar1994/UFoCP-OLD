@@ -1,11 +1,11 @@
-<Factions>
+<?xml version="1.0"?>
 	<!-- If a tag is unknown/unused, it uses the same value that the Rebel faction uses, -->
 	<!-- unless it can be filled in with a known value. Then the known values are displayed. -->
 
 	<!-- NOTE: THESE VALUES ARE GENERALLY GENERIC! YOU CAN CHANGE THEM TO WHATEVER YOU WANT! -->
 
 	<!-- By Connor 'AlyMar1994' Hess! -->
-
+<Factions>
 	<Faction Name="FactionName">
 		<!-- Debug/General Settings Information -->
 		<Is_Debug_Switchable_To>Yes/No</Is_Debug_Switchable_To>
@@ -91,7 +91,7 @@
 		</Enemies>
 		<Primary_Enemy>FactionName</Primary_Enemy>
 		<Is_Neutral>Yes/No</Is_Neutral>
-		<Force_Alignment>Light/Neutral/Dark</Force_Alignment> <!-- Unused, as planets once had special effects for force alignments. -->
+		<Force_Alignment>Light/Neutral/Dark</Force_Alignment> <!-- Unused, as planets once had special effects for Force alignments. -->
 
 		<Multiplayer_Campaign_Heroes>
 			HeroName_One_Team,

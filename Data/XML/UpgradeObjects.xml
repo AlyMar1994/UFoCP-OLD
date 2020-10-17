@@ -40,7 +40,7 @@
 			</Combat_Bonus_Ability>
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
-  	</UpgradeObject>
+	</UpgradeObject>
 
 	<!-- Combat Armor (Level 2): Rebel Troopers and Plex Soldiers take 50% less damage. -->
 	<UpgradeObject Name="RL_Combat_Armor_L2_Upgrade">
@@ -80,7 +80,7 @@
 			</Combat_Bonus_Ability>
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
-  	</UpgradeObject>
+	</UpgradeObject>
 
 	<!-- Light Armor Plating (Level 1): Light Vehicles take 25% less damage -->
 	<UpgradeObject Name="RL_Light_Armor_L1_Upgrade">
@@ -120,7 +120,7 @@
 			</Combat_Bonus_Ability>
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
-  	</UpgradeObject>
+	</UpgradeObject>
 
 	<!-- Light Armor Plating (Level 2): Light Vehicles take 50% less damage. -->
 	<UpgradeObject Name="RL_Light_Armor_L2_Upgrade">
@@ -200,8 +200,8 @@
 			</Combat_Bonus_Ability>
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
-  	</UpgradeObject>
-	
+	</UpgradeObject>
+
 	<!-- Enhanced Repulsors (Level 2): Light Vehicles move 30% faster. -->
 	<UpgradeObject Name="RL_Enhanced_Repulsors_L2_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
@@ -240,8 +240,8 @@
 			</Combat_Bonus_Ability>
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
-  	</UpgradeObject>
-	
+	</UpgradeObject>
+
 	<!-- Heavy Armor Plating (Level 1): Heavy Vehicles take 25% less damage -->
 	<UpgradeObject Name="RL_Heavy_Armor_L1_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
@@ -280,7 +280,7 @@
 			</Combat_Bonus_Ability>
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
-  	</UpgradeObject>
+	</UpgradeObject>
 
 	<!-- Heavy Armor Plating (Level 2): Heavy Vehicles take 50% less damage. -->
 	<UpgradeObject Name="RL_Heavy_Armor_L2_Upgrade">

@@ -1,168 +1,246 @@
 <?xml version="1.0"?>
 <UpgradeObjects_Underworld>
+	<!-- ========== UNDERWORLD ========== -->
+	<!-- ===== LAND ===== -->
 
-<!-- ================== UNDERWORLD LAND MULTIPLAYER GENERAL UPGRADE OBJECTS =================== -->
+	<!-- Bombing Runs - (Lets player call in one bombing run).-->
+	<UpgradeObject Name="UL_Bombing_Run_Use_Upgrade">
+		<Text_ID>TEXT_UPGRADE_UL_BOMBING_RUN_USE</Text_ID>
+		<Encyclopedia_Text>TEXT_UPGRADE_TOOLTIP_UL_BOMBING_RUN_USE</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SUPERWEAPON</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Multi_Bombing_Run.tga</Icon_Name>
 
-<!-- Black Market Shielding (Level 1): Structures gain a 25% bonus to shield strength. -->
-	<UpgradeObject Name="UL_Black_Market_Shielding_L1_Upgrade">
-		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Underworld</Affiliation>
-		<Tactical_Build_Cost_Multiplayer> 850 </Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Cost_Campaign>500</Tactical_Build_Cost_Campaign>
-		<Tactical_Build_Time_Seconds> 22 </Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+
+		<Tactical_Build_Cost_Multiplayer>2200</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>300</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds>38</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
 		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
-		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+
 		<Previous_Upgrade_Level_Type />
-		<Next_Upgrade_Level_Type> UL_Black_Market_Shielding_L2_Upgrade </Next_Upgrade_Level_Type>
-		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
-		<Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
-		<Icon_Name>i_multi_structure_shielding1.tga</Icon_Name>
-		
-		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_UL_BLACKMARKET_SHIELDING_L1  </Encyclopedia_Text>
-		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DEFENSE </Encyclopedia_Unit_Class>
-		<Text_ID>TEXT_UPGRADE_UL_BLACKMARKET_SHIELDING_L1 </Text_ID>
-		
+		<Next_Upgrade_Level_Type />
+
+		<CategoryMask>Upgrade</CategoryMask>
+		<Behavior>DUMMY_UPGRADE, DUMMY_DESTROY_AFTER_BOMBING_RUN</Behavior>
+		<Show_In_Sidebar_While_Building>No</Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete>No</Show_In_Sidebar_When_Complete>
+
 		<SFXEvent_Build_Started>UHD_Upgrade_Progress</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>UHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>UHD_Upgrade_Complete</SFXEvent_Build_Complete>
+
+		<Abilities SubObjectList="Yes">
+			<Battlefield_Modifier_Ability Name="UL_Bombing_Run_Use_Effect">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+
+				<Enable_Bombing_Runs>Yes</Enable_Bombing_Runs>
+				<Apply_To_All_Allies>No</Apply_To_All_Allies>
+
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+
+
+	<!-- Black Market Shielding - (Structures gain a bonus to shield strength). -->
+	<!-- Level 1 - 25% -->
+	<UpgradeObject Name="UL_Black_Market_Shielding_L1_Upgrade">
+		<Text_ID>TEXT_UPGRADE_UL_BLACKMARKET_SHIELDING_L1</Text_ID>
+		<Encyclopedia_Text>TEXT_UPGRADE_TOOLTIP_UL_BLACKMARKET_SHIELDING_L1</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DEFENSE</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Multi_Structure_Shielding1.tga</Icon_Name>
+
+		<Affiliation>Underworld</Affiliation>
+
+		<Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>850</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>500</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds>22</Tactical_Build_Time_Seconds>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+
+		<Previous_Upgrade_Level_Type />
+		<Next_Upgrade_Level_Type>UL_Black_Market_Shielding_L2_Upgrade</Next_Upgrade_Level_Type>
+
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<CategoryMask>Upgrade</CategoryMask>
+		<Show_In_Sidebar_While_Building>Yes</Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete>Yes</Show_In_Sidebar_When_Complete>
+
+		<SFXEvent_Build_Started>UHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Upgrade_Complete</SFXEvent_Build_Complete>
+
 		<Abilities SubObjectList="Yes">
 			<Combat_Bonus_Ability Name="UL_Black_Market_Shielding_L1_Upgrade">
 				<Activation_Style>Ground_Automatic</Activation_Style>
+
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>U_Ground_Palace, U_Ground_Barracks, U_Ground_Vehicle_Factory, U_Ground_Droid_Works </Applicable_Unit_Types>
-				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
-				<Shield_Bonus_Percentage>0.25</Shield_Bonus_Percentage>
-				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
-				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Applicable_Unit_Types>U_Ground_Palace, U_Ground_Barracks, U_Ground_Vehicle_Factory, U_Ground_Droid_Works</Applicable_Unit_Types>
+
+				<!-- In percentages. E.g., 0.50 = 50%.-->
+				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.00</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.25</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
+
 				<Stacking_Category>3</Stacking_Category>
 			</Combat_Bonus_Ability>
 		</Abilities>
-		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
 
-	<!-- Black Market Shielding (Level 2): Structures gain a 50% bonus to shield strength. -->
+	<!-- Level 2 - 50% -->
 	<UpgradeObject Name="UL_Black_Market_Shielding_L2_Upgrade">
-		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Text_ID>TEXT_UPGRADE_UL_BLACKMARKET_SHIELDING_L2</Text_ID>
+		<Encyclopedia_Text>TEXT_UPGRADE_TOOLTIP_UL_BLACKMARKET_SHIELDING_L2</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DEFENSE </Encyclopedia_Unit_Class>
+		<Icon_Name>I_Multi_Structure_Shielding2.tga</Icon_Name>
+
 		<Affiliation>Underworld</Affiliation>
-		<Tactical_Build_Cost_Multiplayer> 1300 </Tactical_Build_Cost_Multiplayer>
+
+		<Tactical_Build_Cost_Multiplayer>1300</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Cost_Campaign>900</Tactical_Build_Cost_Campaign>
-		<Tactical_Build_Time_Seconds> 30 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites>UL_Black_Market_Shielding_L1_Upgrade, UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
 		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
 		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+
 		<Previous_Upgrade_Level_Type>UL_Black_Market_Shielding_L1_Upgrade</Previous_Upgrade_Level_Type>
 		<Next_Upgrade_Level_Type />
-		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
-		<Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
-		<Icon_Name>i_multi_structure_shielding2.tga</Icon_Name>
-		
-		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_UL_BLACKMARKET_SHIELDING_L2  </Encyclopedia_Text>
-		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DEFENSE </Encyclopedia_Unit_Class>
-		<Text_ID>TEXT_UPGRADE_UL_BLACKMARKET_SHIELDING_L2 </Text_ID>
-		
+
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<CategoryMask>Upgrade</CategoryMask>
+		<Show_In_Sidebar_While_Building>Yes</Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete>Yes</Show_In_Sidebar_When_Complete>
+
 		<SFXEvent_Build_Started>UHD_Upgrade_Progress</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>UHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>UHD_Upgrade_Complete</SFXEvent_Build_Complete>
+
 		<Abilities SubObjectList="Yes">
 			<Combat_Bonus_Ability Name="UL_Black_Market_Shielding_L2_Upgrade">
 				<Activation_Style>Ground_Automatic</Activation_Style>
+
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>U_Ground_Palace, U_Ground_Barracks, U_Ground_Vehicle_Factory, U_Ground_Droid_Works </Applicable_Unit_Types>
-				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Applicable_Unit_Types>U_Ground_Palace, U_Ground_Barracks, U_Ground_Vehicle_Factory, U_Ground_Droid_Works</Applicable_Unit_Types>
+
+				<!-- In percentages. E.g., 0.50 = 50%.-->
+				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.00</Energy_Pool_Bonus_Percentage>
 				<Shield_Bonus_Percentage>0.50</Shield_Bonus_Percentage>
-				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
-				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
+
 				<Stacking_Category>3</Stacking_Category>
 			</Combat_Bonus_Ability>
 		</Abilities>
-		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
 
-<!-- MDU Armor (Level 1): Mobile Defense Units take 25% less damage. -->
+
+	<!-- MDU Armor - (Mobile Defense Units take less damage). -->
+	<!-- Level 1 - 20% -->
 	<UpgradeObject Name="UL_MDU_Armor_Plating_L1_Upgrade">
-		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Text_ID>TEXT_UPGRADE_UL_MDU_ARMOR_L1</Text_ID>
+		<Encyclopedia_Text>TEXT_UPGRADE_TOOLTIP_UL_MDU_ARMOR_L1</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DEFENSE</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Multi_Reinforced_Armor1.tga</Icon_Name>
+
 		<Affiliation>Underworld</Affiliation>
-		<Tactical_Build_Cost_Multiplayer> 750 </Tactical_Build_Cost_Multiplayer>
+
+		<Tactical_Build_Cost_Multiplayer>750</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Cost_Campaign>400</Tactical_Build_Cost_Campaign>
-		<Tactical_Build_Time_Seconds> 15 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
 		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
 		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+
 		<Previous_Upgrade_Level_Type />
 		<Next_Upgrade_Level_Type> UL_MDU_Armor_Plating_L2_Upgrade </Next_Upgrade_Level_Type>
-		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
-		<Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
-		<Icon_Name>i_multi_reinforced_armor1.tga</Icon_Name>
-		
-		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_UL_MDU_ARMOR_L1  </Encyclopedia_Text>
-		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DEFENSE </Encyclopedia_Unit_Class>
-		<Text_ID> TEXT_UPGRADE_UL_MDU_ARMOR_L1 </Text_ID>
-		
+
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<CategoryMask>Upgrade</CategoryMask>
+		<Show_In_Sidebar_While_Building>Yes</Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete>Yes</Show_In_Sidebar_When_Complete>
+
 		<SFXEvent_Build_Started>UHD_Upgrade_Progress</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>UHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>UHD_Upgrade_Complete</SFXEvent_Build_Complete>
+
+		<!-- In percentages. E.g., 0.50 = 50%.-->
 		<Abilities SubObjectList="Yes">
 			<Combat_Bonus_Ability Name="UL_MDU_Armor_Plating_L1_Upgrade">
 				<Activation_Style>Ground_Automatic</Activation_Style>
+
 				<Applicable_Unit_Categories />
 				<Applicable_Unit_Types>Underworld_Mobile_Defense_Unit</Applicable_Unit_Types>
-				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
-				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+
+				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.00</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.20</Defense_Bonus_Percentage>
-				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
+
 				<Stacking_Category>3</Stacking_Category>
 			</Combat_Bonus_Ability>
 		</Abilities>
-		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
 
-	<!-- MDU Armor (Level 2): Mobile Defense Units take 25% less damage. -->
+	<!-- Level 2 - 40% -->
 	<UpgradeObject Name="UL_MDU_Armor_Plating_L2_Upgrade">
-		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Text_ID>TEXT_UPGRADE_UL_MDU_ARMOR_L2</Text_ID>
+		<Encyclopedia_Text>TEXT_UPGRADE_TOOLTIP_UL_MDU_ARMOR_L2</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DEFENSE</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Multi_Reinforced_Armor2.tga</Icon_Name>
+
 		<Affiliation>Underworld</Affiliation>
-		<Tactical_Build_Cost_Multiplayer> 1000 </Tactical_Build_Cost_Multiplayer>
+
+		<Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
 		<Tactical_Build_Cost_Campaign>800</Tactical_Build_Cost_Campaign>
-		<Tactical_Build_Time_Seconds> 23 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Time_Seconds>23</Tactical_Build_Time_Seconds>
 		<Tactical_Build_Prerequisites>UL_MDU_Armor_Plating_L1_Upgrade, UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
 		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
 		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+
 		<Previous_Upgrade_Level_Type>UL_MDU_Armor_Plating_L1_Upgrade</Previous_Upgrade_Level_Type>
 		<Next_Upgrade_Level_Type />
-		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
-		<Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
-		<Icon_Name>i_multi_reinforced_armor2.tga</Icon_Name>
-		
-		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_UL_MDU_ARMOR_L2  </Encyclopedia_Text>
-		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DEFENSE </Encyclopedia_Unit_Class>
-		<Text_ID> TEXT_UPGRADE_UL_MDU_ARMOR_L2 </Text_ID>
+
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<CategoryMask>Upgrade</CategoryMask>
+		<Show_In_Sidebar_While_Building>Yes</Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete>Yes</Show_In_Sidebar_When_Complete>
 		
 		<SFXEvent_Build_Started>UHD_Upgrade_Progress</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>UHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
 		<SFXEvent_Build_Complete>UHD_Upgrade_Complete</SFXEvent_Build_Complete>
+
 		<Abilities SubObjectList="Yes">
 			<Combat_Bonus_Ability Name="UL_MDU_Armor_Plating_L2_Upgrade">
 				<Activation_Style>Ground_Automatic</Activation_Style>
+
 				<Applicable_Unit_Categories />
 				<Applicable_Unit_Types>Underworld_Mobile_Defense_Unit</Applicable_Unit_Types>
-				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
-				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+
+				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.00</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
 				<Defense_Bonus_Percentage>0.40</Defense_Bonus_Percentage>
-				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
+
 				<Stacking_Category>3</Stacking_Category>
 			</Combat_Bonus_Ability>
 		</Abilities>
-		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
 
+
+	<!-- Bounty () -->
 	<UpgradeObject Name="UL_Bounty_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Underworld</Affiliation>
@@ -203,7 +281,7 @@
 	</UpgradeObject>
 
 
-<!-- Smuggled Droid Systems (Level 1): Destroyer Droids gain a 25% bonus to shield strength. -->
+	<!-- Smuggled Droid Systems (Level 1): Destroyer Droids gain a 25% bonus to shield strength. -->
 	<UpgradeObject Name="UL_Smuggled_Droid_Systems_L1_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Underworld</Affiliation>
@@ -283,7 +361,7 @@
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
-	
+
 	<UpgradeObject Name="UL_Weapon_Boost_L1_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Underworld</Affiliation>
@@ -323,7 +401,7 @@
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
 	
-		<UpgradeObject Name="UL_Weapon_Boost_L2_Upgrade">
+	<UpgradeObject Name="UL_Weapon_Boost_L2_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Underworld</Affiliation>
 		<Tactical_Build_Cost_Multiplayer> 1350 </Tactical_Build_Cost_Multiplayer>
@@ -361,7 +439,7 @@
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
-	
+
 	<!-- Rancor Stimulant (Level 1): Rancors gain a 25% movement speed increase. -->
 	<UpgradeObject Name="UL_Rancor_Stimulant_L1_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
@@ -402,7 +480,7 @@
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
-	
+
 	<!-- Rancor Stimulant (Level 2): Rancors gain a 25% movement speed increase. -->
 	<UpgradeObject Name="UL_Rancor_Stimulant_L2_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
@@ -443,42 +521,9 @@
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
-	
-	
-	<!-- Bombing Runs: Lets the player call in a bombing run, must be purchased for each bombing run. -->	
-	<UpgradeObject Name="UL_Bombing_Run_Use_Upgrade">
-		<Behavior>DUMMY_UPGRADE, DUMMY_DESTROY_AFTER_BOMBING_RUN</Behavior>
-		<Affiliation>Underworld</Affiliation>
-		<Tactical_Build_Cost_Multiplayer> 2200 </Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Cost_Campaign>300</Tactical_Build_Cost_Campaign>
-		<Tactical_Build_Time_Seconds> 38 </Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites>UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
-		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
-		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-		<Previous_Upgrade_Level_Type />
-		<Next_Upgrade_Level_Type />
-		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
-		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
-		<Icon_Name>i_multi_bombing_run.tga</Icon_Name>
-		
-		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_UL_BOMBING_RUN_USE  </Encyclopedia_Text>
-		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SUPERWEAPON </Encyclopedia_Unit_Class>
-		<Text_ID>TEXT_UPGRADE_UL_BOMBING_RUN_USE</Text_ID>
-		
-		<SFXEvent_Build_Started>UHD_Upgrade_Progress</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>UHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>UHD_Upgrade_Complete</SFXEvent_Build_Complete>
-		<Abilities SubObjectList="Yes">
-			<Battlefield_Modifier_Ability Name="UL_Bombing_Run_Use_Effect">
-				<Activation_Style>Ground_Automatic</Activation_Style>
-				<Enable_Bombing_Runs>Yes</Enable_Bombing_Runs>
-				<Apply_To_All_Allies>No</Apply_To_All_Allies>
-				<Stacking_Category>0</Stacking_Category>
-			</Battlefield_Modifier_Ability>
-		</Abilities>
-		<CategoryMask>Upgrade</CategoryMask>
-  	</UpgradeObject>
-  	
+
+
+
 	<!-- Extort Cash (Level 1): Increases income by 15%. -->
 	<UpgradeObject Name="UL_Extort_Cash_L1_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
@@ -528,7 +573,7 @@
 		</Abilities>
 		
 		<CategoryMask>Upgrade</CategoryMask>
-  	</UpgradeObject>
+	</UpgradeObject>
 
 	<!-- Extort Cash (Level 2): Increases income by 45%. -->
 	<UpgradeObject Name="UL_Extort_Cash_L2_Upgrade">
@@ -579,9 +624,9 @@
 		</Abilities>
 		
 		<CategoryMask>Upgrade</CategoryMask>
-  	</UpgradeObject>
-  	
-  	<!-- Recharge Ability (Level 1): Infantry special abilities recharge 15% faster. -->
+	</UpgradeObject>
+
+	<!-- Recharge Ability (Level 1): Infantry special abilities recharge 15% faster. -->
 	<UpgradeObject Name="UL_Ability_Recharge_L1_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Underworld</Affiliation>
@@ -622,8 +667,8 @@
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
-	
-	 <!-- Recharge Ability (Level 2): Infantry and Hero special abilities recharge 15% faster. -->
+
+	<!-- Recharge Ability (Level 2): Infantry and Hero special abilities recharge 15% faster. -->
 	<UpgradeObject Name="UL_Ability_Recharge_L2_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Underworld</Affiliation>
