@@ -45,7 +45,9 @@ UFoCP
 ==================
 General
 ==================
--Reorganized the all hardpoints files into four seperate files: Hardpoints (for Pirates/misc factions and items), Hardpoints_Rebels (for Rebel space and land items), Hardpoints_Empire (for Empire space and land items), and reorganized Hardpoints_Underworld to only include Underworld items.  The original files were messy, gigantic and without organization.  There's no true gameplay change, but it keeps everything neatly organized internally.
+-Reorganized the all hardpoints files into seperate files: Hardpoints (for Pirates/misc factions and items), _Rebels (for Rebel space and land items), _Empire (for Empire space and land items), and _Underworld (to only include Underworld items).  The original files were messy, gigantic and without organization.
+-Reorganized the all upgrade files into seperate files: UpgradeObjects_Rebels, _Empire, _Underworld and original UpgradeObjects for organization.
+
 -All hardpoints files have undergone a structural/code rework, standardizing it and cleaning it up.  Hardpoints without Damage_Types should be fixed, and everything should be functioning properly.
 -Reorganized the upgrades files and its contents to be cleaned, along with fixing any erroneous upgrades.
 
@@ -141,6 +143,8 @@ Units (Land)
 ==================
 -Blizzard 1 - General Veers – Fixed unit causing errors by referencing a non-existent SFXEvent for a land unit callout.
 -Blizzard 1 - General Veers – Attempt fix at unit callouts not working on land.
+
+-Canderous Assault Tank – Fixed the Candie not being mentioned in the "Weapon Boost (Level 2)" skirmish upgrade's tooltip.  Along with the MZ-8 tank, the Candie also gets its damage upgrade by 50%.
 
 -Chewbacca – Fixed land shadow scale being multiplied by 2.  Scale is now 5.
 

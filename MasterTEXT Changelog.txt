@@ -15,6 +15,7 @@ Last of note, I am a human being and I make mistakes.  Please point out text err
 v1.13
 ===================================================================================================
 
+-[TEXT_UPGRADE_TOOLTIP_UL_WEAPON_BOOST_L2]: "Increases the damage done by the MZ-8 Pulse Tank by 50%." --> "Increases the damage done by the MZ-8 Pulse and the Canderous Assault Tank by 50%."
 
 
 ===================================================================================================
