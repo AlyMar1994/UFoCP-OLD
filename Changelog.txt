@@ -71,6 +71,9 @@ General
 -Fixed upgrade "Stamina Boost" not having "Stormtrooper_Team" as a part of the affected units.
 -Fixed upgrade "Light Reflective Armor" not having the correct reflection percentages mentioned in the tooltip.
 -Fixed upgrade "Improved AT-AT Reactors" (lv.2) not having the correct percentage bonuses mentioned in the tooltip.
+-Fixed upgrade "Weapon Boost (Level 2)" not being mentioning the Canderous Tank in the skirmish upgrade's tooltip.  Along with the MZ-8 tank, the Candie also gets its damage upgrade by 50%.
+-Fixed upgrade "Modified Cloaking Generator" (lv.1 and 2) upgrades.  Upgrade originally did nothing, as ability type was "Ground_Automatic" instead of "Space_Automatic."
+-Fixed upgrade "Modified Cloaking Generator" (lv.2) upgrade.  Upgrade originally did nothing, as ability type was "Ground_Automatic" instead of "Space_Automatic."
 -Removed duplicate <Category_Mask> on the "Enhanced Base Shield" Empire upgrade.
 
 
@@ -153,8 +156,6 @@ Units (Land)
 -Blizzard 1 - General Veers – Fixed unit causing errors by referencing a non-existent SFXEvent for a land unit callout.
 -Blizzard 1 - General Veers – Attempt fix at unit callouts not working on land.
 
--Canderous Assault Tank – Fixed the Candie not being mentioned in the "Weapon Boost (Level 2)" skirmish upgrade's tooltip.  Along with the MZ-8 tank, the Candie also gets its damage upgrade by 50%.
-
 -Chewbacca – Fixed land shadow scale being multiplied by 2.  Scale is now 5.
 
 -Grenadiers – Fixed infantry being unbribable in Underworld mirror skirmish matches.  They have been given a <Tactical_Bribe_Cost> so Tyber Zann can bribe enemy Underworld infantry.  Uses vanilla bribe cost value of 25 credits.
@@ -174,11 +175,7 @@ Units (Space)
 -Rogue Squadron – Fixed Derek Kilvian's lines not playing when his enemy's health is critical in Rogue Squadron.  The SFXEvent was improperly named "Unit_Enemy_Health_Critcal_Derek_Klivian" instead of "Unit_Enemy_Health_Critical_Derek_Klivian."
 -Rogue Squadron – Fixed Rogue Squadron playing generic X-wing lines when going into nebula or asteroids.
 
--The Merciless - Tyber Zann – Fixed level 2 of the "Modified Cloaking Generator" upgrades.  Upgrade originally did nothing, as ability type was "Ground_Automatic" instead of "Space_Automatic."
-
 -The Millennium Falcon - Han Solo & Chewbacca - Created a new MP unit to fix the object contestation glitch ("Boba Mine Glitch").  Unit performs the same as original.
-
--Vengeance Frigate – Fixed levels 1-2 of the "Modified Cloaking Generator" upgrades.  Upgrade originally did nothing, as ability type was "Ground_Automatic" instead of "Space_Automatic."
 
 
 =========================================================================================
