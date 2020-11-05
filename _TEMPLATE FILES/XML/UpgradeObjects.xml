@@ -41,12 +41,12 @@
 				<Applicable_Unit_Types>Object_Name</Applicable_Unit_Types>
 
 				<!-- In percentages. 0.50 = 50%.-->
-				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
-				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>
-				<Energy_Pool_Bonus_Percentage>0.00</Energy_Pool_Bonus_Percentage>
-				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
-				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
-				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
+				<Health_Bonus_Percentage>#.##</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>#.##</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>#.##</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>#.##</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>#.##</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>#.##</Movement_Speed_Bonus_Percentage>
 
 				<Stacking_Category>#</Stacking_Category>
 			</Combat_Bonus_Ability>

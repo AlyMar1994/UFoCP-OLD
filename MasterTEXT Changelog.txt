@@ -15,6 +15,15 @@ Last of note, I am a human being and I make mistakes.  Please point out text err
 v1.13
 ===================================================================================================
 
+-[TEXT_UPGRADE_TOOLTIP_EL_IMPROVED_ATAT_REACTORS_L2]: "AT-AT Walkers gain a 25% movement speed increase and deal 10% more damage." --> "AT-AT Walkers gain a 25% movement speed and damage increase."
+-[TEXT_UPGRADE_TOOLTIP_EL_LIGHT_REFLECTIVE_ARMOR_L1]: "Tie Maulers, AT-AA Walkers, and AT-ST Walkers have a 15% chance to deflect incoming blaster fire." --> "TIE maulers, AT-AA and AT-ST Walkers have a 15% chance to deflect incoming blaster fire."
+-[TEXT_UPGRADE_TOOLTIP_EL_LIGHT_REFLECTIVE_ARMOR_L2]: "Tie Maulers, AT-AA Walkers, and AT-ST Walkers have a 30% chance to deflect incoming blaster fire." --> "TIE maulers, AT-AA and AT-ST Walkers have a 30% chance to deflect incoming blaster fire."
+-[TEXT_UPGRADE_TOOLTIP_RL_COMBAT_ARMOR_L1]: "Reduces the damage taken by Rebellion Trooper units by 25%." --> ""Reduces the damage taken by Rebellion Infantry by 50%.
+-[TEXT_UPGRADE_TOOLTIP_RL_COMBAT_ARMOR_L2]: "Reduces the damage taken by Plex Soldier units by 25%." --> "Reduces the damage taken by Rebellion Infantry and Plex units by 50%."
+-[TEXT_UPGRADE_TOOLTIP_RL_ENHANCED_REPULSORS_L1]: "T2-B Tanks and Speeders gain a 15% movement speed increase." --> "T2-B Tanks, Speeders and Pod Walkers gain a 15% movement speed increase."
+-[TEXT_UPGRADE_TOOLTIP_RL_ENHANCED_REPULSORS_L2]: "T2-B Tanks and Speeders gain a 30% movement speed increase." --> "T2-B Tanks, Speeders and Pod Walkers gain a 30% movement speed increase."
+-[TEXT_UPGRADE_TOOLTIP_RL_LIGHT_ARMOR_L1]: "Reduces the damage taken by T2-B Tanks and Speeders by 25%." --> "Reduces the damage taken by T2-B Tanks, Speeders and Pod Walkers by 25%."
+-[TEXT_UPGRADE_TOOLTIP_RL_LIGHT_ARMOR_L2]: "Reduces the damage taken by T2-B Tanks and Speeders by 50%." --> "Reduces the damage taken by T2-B Tanks, Speeders and Pod Walkers by 50%."
 -[TEXT_UPGRADE_TOOLTIP_UL_WEAPON_BOOST_L2]: "Increases the damage done by the MZ-8 Pulse Tank by 50%." --> "Increases the damage done by the MZ-8 Pulse and the Canderous Assault Tank by 50%."
 
 

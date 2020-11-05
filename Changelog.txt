@@ -62,6 +62,17 @@ General
 
 -New file "Units_UFoCP_Hero_Rebel_VehicleThieves" which condenses all Han Solo & Chewbacca files into one document.
 
+-Fixed upgrade "Reinforced Durasteel" lv.1-3.  The upgrades originally did nothing, as their ability type to upgrade was "Ground_Automatic" instead of "Space_Automatic."
+-Fixed upgrade "Reinforced Durasteel" lv.1-3.  Upgrades referenced applicable unit category "structure" and not specifically the Underworld space stations, meaning all structures would endure a defense upgrade.  The space stations didn't get the upgrade anyway, as they're type "capital."
+-Fixed upgrade Combat Armor (lv.1) tooltip mentioning infantry defense is increased 25%, when in reality it was 50%.  Tooltip has been changed.
+-Fixed upgrade Combat Armor (lv.2) tooltip mentioning infantry defense is increased 25%, when in reality it was 50%, and not mentiong both infantry and Plex.  Tooltip has been changed.
+-Fixed upgrade "Light Armor Plating" (lv.1 and 2) not mentioning it upgrades Pod Walkers as well.
+-Fixed upgrade "Enhanced Repulsors" (lv.1 and 2) not mentioning it upgrades Pod Walkers as well.
+-Fixed upgrade "Stamina Boost" not having "Stormtrooper_Team" as a part of the affected units.
+-Fixed upgrade "Light Reflective Armor" not having the correct reflection percentages mentioned in the tooltip.
+-Fixed upgrade "Improved AT-AT Reactors" (lv.2) not having the correct percentage bonuses mentioned in the tooltip.
+-Removed duplicate <Category_Mask> on the "Enhanced Base Shield" Empire upgrade.
+
 
 ==================
 A.I.
@@ -118,9 +129,6 @@ Structures (Space)
 -Empire Space Station – Fixed a missile launcher on the level five station not having an SFXEvent for being destroyed.
 -Empire Space Station – Fixed a tutorial variant's hardpoints having damage modifiers when they shouldn't (as they're useless dummies).
 -Empire Space Station – Fixed a tutorial variant's hardpoints having multiple alternate firing bones attached when it only can have two.
-
--Consortium Space Station – Fixed "Reinforced Durasteel" upgrades lv.1-3.  The upgrades originally did nothing, as their ability type to upgrade was "Ground_Automatic" instead of "Space_Automatic."
--Consortium Space Station – Fixed "Reinforced Durasteel" upgrades lv.1-3.  Upgrades referenced applicable unit category "structure" and not specifically the Underworld space stations, meaning all structures would endure a defense upgrade.  The space stations didn't get the upgrade anyway, as they're type "capital."
 
 -Pirate Asteroid Base – Fixed using wrong "Model_To_Attach" to attach the second laser hardpoint to a bone.  Was "Nb_apbase_hp_ll1.alo" instead of "Nb_apbase_hp_ll2.alo" (ll1 was used by another hardpoint).
 -Pirate Asteroid Base – Fixed all turbolaser hardpoints using an incorrect damage type (Damage_Sation_Turbolaser), which lead to bad damage modifications.  They have been corrected to "Damage_Station_Turbolaser."

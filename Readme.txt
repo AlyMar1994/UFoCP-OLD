@@ -74,11 +74,11 @@ Support
 	- Assistance with creating .MEGs.
 	- Other technical help.
 
--STAR WARS: Empire at War Hub (specif. evilbobthebob, Coryak/Exocor, & Imperial)
-    - Technical help.
-
 -STAR WARS: Empire at War Community (specif. Galyana, Lany, Nikomer, Cuarson & DarthCyfe6)
     – Technical help.
+
+-STAR WARS: Empire at War Hub (specif. evilbobthebob, Coryak/Exocor, & Imperial)
+    - Technical help.
 
 =========================================================================================
 
