@@ -15,6 +15,12 @@ Last of note, I am a human being and I make mistakes.  Please point out text err
 v1.13
 ===================================================================================================
 
+-Created string "LANGUAGE_THAI" to add visual support for language supported in EaW/FoC, but not used by default.
+-Created string "LANGUAGE_RUSSIAN" to add visual support for language supported in EaW/FoC, but not used by default.
+-Created string "LANGUAGE_POLISH" to add visual support for language supported in EaW/FoC, but not used by default.
+-Created string "TEXT_LANG_THAI" to add visual support for language supported in EaW/FoC, but not used by default.
+-Created string "TEXT_LANG_GERMAN" for support consistency.
+
 -[TEXT_UPGRADE_TOOLTIP_EL_IMPROVED_ATAT_REACTORS_L2]: "AT-AT Walkers gain a 25% movement speed increase and deal 10% more damage." --> "AT-AT Walkers gain a 25% movement speed and damage increase."
 -[TEXT_UPGRADE_TOOLTIP_EL_LIGHT_REFLECTIVE_ARMOR_L1]: "Tie Maulers, AT-AA Walkers, and AT-ST Walkers have a 15% chance to deflect incoming blaster fire." --> "TIE maulers, AT-AA and AT-ST Walkers have a 15% chance to deflect incoming blaster fire."
 -[TEXT_UPGRADE_TOOLTIP_EL_LIGHT_REFLECTIVE_ARMOR_L2]: "Tie Maulers, AT-AA Walkers, and AT-ST Walkers have a 30% chance to deflect incoming blaster fire." --> "TIE maulers, AT-AA and AT-ST Walkers have a 30% chance to deflect incoming blaster fire."
