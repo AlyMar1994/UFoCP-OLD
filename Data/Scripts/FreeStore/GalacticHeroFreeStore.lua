@@ -6,7 +6,7 @@
 --
 -- LAST REVISION DATE: 10/06/2020, 10:46 PM
 -- ======================================================================
-require("pgcommands")
+require("PGCommands")
 
 function Definitions()
 	DebugMessage("%s -- Defining custom freestore movement perceptions", tostring(Script))

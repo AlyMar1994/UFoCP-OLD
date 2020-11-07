@@ -6,7 +6,7 @@
 --
 -- LAST REVISION DATE: 4/26/2020, 5:56 PM
 -- ======================================================================
-require("pgevents")
+require("PGEvents")
 
 function Definitions()
 	DebugMessage("%s -- In Definitions", tostring(Script))

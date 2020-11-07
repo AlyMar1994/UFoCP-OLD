@@ -8,7 +8,7 @@
 -- ======================================================================
 -- This plan simply puts Vader in the right places.
 -- It relies on the object script darthvader.lua to activate abilities.
-require("pgevents")
+require("PGEvents")
 
 function Definitions()
 	Category = "VaderAssists"
