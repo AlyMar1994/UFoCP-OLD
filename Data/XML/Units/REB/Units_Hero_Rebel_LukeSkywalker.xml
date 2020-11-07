@@ -186,7 +186,7 @@
 				<Damage_Percentage>0.02</Damage_Percentage>
 				<Damage_Interval_In_Secs>0.50</Damage_Interval_In_Secs>
 
-				<!-- Note: Aswell as matching the below Unit_Category/Unit_Type filters, the -->
+				<!-- Note: As well as matching the below Unit_Category/Unit_Type filters, the -->
 				<!-- target object must also have the EARTHQUAKE_TARGET behavior attached. -->
 				<Applicable_Unit_Categories>Structure</Applicable_Unit_Categories>
 				<Applicable_Unit_Types />

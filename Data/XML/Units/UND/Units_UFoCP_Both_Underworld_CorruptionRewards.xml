@@ -706,6 +706,8 @@
 		<Encyclopedia_Vulnerable_To>Calamari_Cruiser TIE_Bomber Y-wing</Encyclopedia_Vulnerable_To>
 
 		<Affiliation>Underworld</Affiliation>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
 
 		<Build_Cost_Credits>2700</Build_Cost_Credits>
 		<Build_Initially_Locked>Yes</Build_Initially_Locked>
@@ -726,6 +728,8 @@
 		<Encyclopedia_Vulnerable_To>Victory_Destroyer Alliance_Assault_Frigate Nebulon_B_Frigate</Encyclopedia_Vulnerable_To>
 
 		<Affiliation>Underworld</Affiliation>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
 
 		<Build_Cost_Credits>1500</Build_Cost_Credits>
 		<Build_Initially_Locked>Yes</Build_Initially_Locked>
@@ -742,6 +746,8 @@
 
 		<Affiliation>Underworld</Affiliation>
 		<Tech_Level>0</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
 
 		<Build_Cost_Credits>2000</Build_Cost_Credits>
 		<Build_Initially_Locked>Yes</Build_Initially_Locked>
@@ -757,6 +763,8 @@
 		<Encyclopedia_Vulnerable_To>TIE_Bomber Star_Destroyer Victory_Destroyer</Encyclopedia_Vulnerable_To>
 
 		<Affiliation>Underworld</Affiliation>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
 
 		<Build_Cost_Credits>2400</Build_Cost_Credits>
 		<Build_Initially_Locked>Yes</Build_Initially_Locked>
@@ -774,6 +782,8 @@
 		<Encyclopedia_Vulnerable_To>Alliance_Assault_Ship Victory_Destroyer Acclamator_Assault_Ship</Encyclopedia_Vulnerable_To>
 
 		<Affiliation>Underworld</Affiliation>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
 
 		<Build_Cost_Credits>2000</Build_Cost_Credits>
 		<Build_Time_Seconds>15</Build_Time_Seconds>
@@ -792,6 +802,8 @@
 		<Encyclopedia_Vulnerable_To>Alliance_Assault_Ship Victory_Destroyer Acclamator_Assault_Ship</Encyclopedia_Vulnerable_To>
 
 		<Affiliation>Underworld</Affiliation>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
 
 		<Build_Cost_Credits>1500</Build_Cost_Credits>
 		<Build_Initially_Locked>Yes</Build_Initially_Locked>
@@ -810,6 +822,8 @@
 		<Encyclopedia_Vulnerable_To>Tartan_Patrol_Cruiser</Encyclopedia_Vulnerable_To>
 
 		<Affiliation>Underworld</Affiliation>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 	</SpaceUnit>
 
 	<Squadron Name="Underworld_A_Wing_Squadron">
@@ -827,14 +841,15 @@
 		<Is_Bomber>No</Is_Bomber>
 		<Autoresolve_Health>300</Autoresolve_Health>
 		<Damage>35</Damage>
-		<Affiliation>Underworld</Affiliation>
 
+		<Affiliation>Underworld</Affiliation>
 		<Build_Cost_Credits>500</Build_Cost_Credits>
 		<Build_Time_Seconds>25</Build_Time_Seconds>
 		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
 		<Build_Initially_Locked>Yes</Build_Initially_Locked>
 		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
 		<Tech_Level>0</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 
 		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
@@ -878,6 +893,8 @@
 		<Encyclopedia_Vulnerable_To>Corellian_Corvette</Encyclopedia_Vulnerable_To>
 
 		<Affiliation>Underworld</Affiliation>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>3</Required_Star_Base_Level>
 	</SpaceUnit>
 
 	<Squadron Name="Underworld_TIE_Defender_Squadron">
@@ -897,11 +914,11 @@
 		<Damage>50</Damage>
 		
 		<Affiliation>Underworld</Affiliation>
-
 		<Build_Cost_Credits>650</Build_Cost_Credits>
 		<Build_Time_Seconds>20</Build_Time_Seconds>
 		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
 		<Tech_Level>0</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>3</Required_Star_Base_Level>
 		<Build_Initially_Locked>Yes</Build_Initially_Locked>
 

@@ -40,7 +40,7 @@
 			</Combat_Bonus_Ability>
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
-  	</UpgradeObject>
+	</UpgradeObject>
 
 	<!-- Combat Armor (Level 2): Rebel Troopers and Plex Soldiers take 50% less damage. -->
 	<UpgradeObject Name="RL_Combat_Armor_L2_Upgrade">
@@ -80,7 +80,7 @@
 			</Combat_Bonus_Ability>
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
-  	</UpgradeObject>
+	</UpgradeObject>
 
 	<!-- Light Armor Plating (Level 1): Light Vehicles take 25% less damage -->
 	<UpgradeObject Name="RL_Light_Armor_L1_Upgrade">
@@ -120,7 +120,7 @@
 			</Combat_Bonus_Ability>
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
-  	</UpgradeObject>
+	</UpgradeObject>
 
 	<!-- Light Armor Plating (Level 2): Light Vehicles take 50% less damage. -->
 	<UpgradeObject Name="RL_Light_Armor_L2_Upgrade">
@@ -200,8 +200,8 @@
 			</Combat_Bonus_Ability>
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
-  	</UpgradeObject>
-	
+	</UpgradeObject>
+
 	<!-- Enhanced Repulsors (Level 2): Light Vehicles move 30% faster. -->
 	<UpgradeObject Name="RL_Enhanced_Repulsors_L2_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
@@ -240,8 +240,8 @@
 			</Combat_Bonus_Ability>
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
-  	</UpgradeObject>
-	
+	</UpgradeObject>
+
 	<!-- Heavy Armor Plating (Level 1): Heavy Vehicles take 25% less damage -->
 	<UpgradeObject Name="RL_Heavy_Armor_L1_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
@@ -280,7 +280,7 @@
 			</Combat_Bonus_Ability>
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
-  	</UpgradeObject>
+	</UpgradeObject>
 
 	<!-- Heavy Armor Plating (Level 2): Heavy Vehicles take 50% less damage. -->
 	<UpgradeObject Name="RL_Heavy_Armor_L2_Upgrade">
@@ -884,7 +884,7 @@
 			<Combat_Bonus_Ability Name="EL_Stamina_Boost_Bonus">
 				<Activation_Style>Ground_Automatic</Activation_Style>
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types>Stormtrooper, Squad_Stormtrooper</Applicable_Unit_Types>
+				<Applicable_Unit_Types>Stormtrooper, Squad_Stormtrooper, Stormtrooper_Team</Applicable_Unit_Types>
 				<Health_Bonus_Percentage>0.35</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
 				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
@@ -897,7 +897,7 @@
 		<CategoryMask>Upgrade</CategoryMask>
   	</UpgradeObject>
 	
-	<!-- Light Reflective Armor (Level 1): Light vehicles deflect 25% of incoming blaster fire. -->
+	<!-- Light Reflective Armor (Level 1): Light vehicles deflect 15% of incoming blaster fire. -->
 	<UpgradeObject Name="EL_Light_Reflective_Armor_L1_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Empire</Affiliation>
@@ -931,7 +931,7 @@
 		<CategoryMask>Upgrade</CategoryMask>
   	</UpgradeObject>
 
-	<!-- Light Reflective Armor (Level 2): Light vehicles deflect 50% of incoming blaster fire. -->
+	<!-- Light Reflective Armor (Level 2): Light vehicles deflect 30% of incoming blaster fire. -->
 	<UpgradeObject Name="EL_Light_Reflective_Armor_L2_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Empire</Affiliation>
@@ -1044,7 +1044,7 @@
 		<CategoryMask>Upgrade</CategoryMask>
   	</UpgradeObject>
 
-	<!-- Heavy Reflective Armor (Level 1): Heavy vehicles deflect 25% of incoming blaster fire. -->
+	<!-- Heavy Reflective Armor (Level 1): Heavy vehicles deflect 15% of incoming blaster fire. -->
 	<UpgradeObject Name="EL_Heavy_Reflective_Armor_L1_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Empire</Affiliation>
@@ -1078,7 +1078,7 @@
 		<CategoryMask>Upgrade</CategoryMask>
   	</UpgradeObject>
 
-	<!-- Heavy Reflective Armor (Level 2): Heavy vehicles deflect 50% of incoming blaster fire. -->
+	<!-- Heavy Reflective Armor (Level 2): Heavy vehicles deflect 30% of incoming blaster fire. -->
 	<UpgradeObject Name="EL_Heavy_Reflective_Armor_L2_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Empire</Affiliation>
@@ -1457,7 +1457,6 @@
 	<UpgradeObject Name="EL_Enhanced_Base_Shield_Upgrade">
 		<Variant_Of_Existing_Type>EL_Enhanced_Base_Shield_Upgrade_NoPre</Variant_Of_Existing_Type>
 		<Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
-		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
 
 	<!-- More Garrison Units: Adds an AT-ST company and a 2M Repulsor Tank brigade to your set of free garrison units. -->

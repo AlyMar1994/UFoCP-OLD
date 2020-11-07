@@ -48,5 +48,5 @@ function Get_Escort_Ability_Weights(goal)
 end
 
 function HeroService()
-	-- Do nothing.
+	return
 end

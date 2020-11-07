@@ -4,6 +4,7 @@
 	<!-- X-wings spliced together into a squadron. -->
 
 	<!-- MAIN: SPACE UNIT(S) -->
+	<!-- Rogue Leader: Wedge Antilles -->
 	<UniqueUnit Name="Wedge_XWing_Rogue">
 		<Variant_Of_Existing_Type>X-Wing</Variant_Of_Existing_Type>
 
@@ -27,11 +28,15 @@
 		<!-- Wedge's X-wing can kill the Death Star in-battle! -->
 		<Is_Super_Weapon_Killer>Yes</Is_Super_Weapon_Killer>
 
-		<SpaceBehavior>FIGHTER_LOCOMOTOR, ABILITY_COUNTDOWN, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, NEBULA </SpaceBehavior>
+		<SpaceBehavior>FIGHTER_LOCOMOTOR, ABILITY_COUNTDOWN, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, NEBULA</SpaceBehavior>
 		
 		<SFXEvent_Select>Unit_Select_Wedge_Rogue</SFXEvent_Select>
+
 		<SFXEvent_Move>Unit_Move_Wedge_Rogue</SFXEvent_Move>
 		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Wedge_Rogue</SFXEvent_Fleet_Move>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Move_Wedge_Rogue</SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula>Unit_Move_Wedge_Rogue</SFXEvent_Move_Into_Nebula>
+
 		<SFXEvent_Attack>Unit_Attack_Wedge_Rogue</SFXEvent_Attack>
 		<SFXEvent_Guard>Unit_Guard_Wedge_Rogue</SFXEvent_Guard>
 		<SFXEvent_Assist_Move>Unit_Assist_Move_Wedge_Rogue</SFXEvent_Assist_Move>
@@ -54,7 +59,7 @@
 			<!-- Primary Ability: -->
 			<Unit_Ability>
 				<Type>SPOILER_LOCK</Type>
-				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 	3.00</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.00</Mod_Multiplier>
 				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.00</Mod_Multiplier>
 				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.00</Mod_Multiplier>
 				<Mod_Multiplier>SPEED_MULTIPLIER,			2.00</Mod_Multiplier>
@@ -63,7 +68,7 @@
 				<SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Ability_Off_Wedge_Rogue</SFXEvent_GUI_Unit_Ability_Deactivated>
 			</Unit_Ability>
 
-		<!-- Secondary Ability: -->
+			<!-- Secondary Ability: -->
 			<Unit_Ability>
 				<Type>POWER_TO_WEAPONS</Type>
 				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.50</Mod_Multiplier>
@@ -216,6 +221,7 @@
 		<SFXEvent_Hero_Respawned>Unit_Respawn_Wedge</SFXEvent_Hero_Respawned>
 
 		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
 		<Squadron_Units>Wedge_XWing_Rogue, Rogue_2_XWing</Squadron_Units>
 		<Squadron_Units>Rogue_4_XWing, Rogue_7_XWing</Squadron_Units>
 		<Squadron_Units>Rogue_10_XWing, Rogue_11_XWing</Squadron_Units>
@@ -242,15 +248,7 @@
 		<Is_Homogeneous>Yes</Is_Homogeneous>
 		<Score_Cost_Credits>15000</Score_Cost_Credits>
 
-		<!-- MULTIPLAYER SKIRMISH VALUES START -->
-		<Tactical_Build_Cost_Multiplayer>2500</Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites />
-		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
-		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
-		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
-
-		<!-- Non-Hero unit abilities description -->
+		<!-- Hero unit abilities description: -->
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<!-- Primary Ability: -->
 			<Unit_Ability>
@@ -278,6 +276,14 @@
 				<Alternate_Icon_Name>I_SA_Strike.tga</Alternate_Icon_Name>
 			</Unit_Ability>
 		</Unit_Abilities_Data>
+
+		<!-- MULTIPLAYER SKIRMISH VALUES START: -->
+		<Tactical_Build_Cost_Multiplayer>2500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
 	</Squadron>
 
 

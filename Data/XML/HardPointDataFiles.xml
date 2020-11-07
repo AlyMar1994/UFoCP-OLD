@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Hard_Point_Files>
+	<File>HardPoints.xml</File>
+	<File>HardPoints_Rebels.xml</File>
+	<File>HardPoints_Empire.xml</File>
+	<File>HardPoints_Underworld.xml</File>
+
+	<File>CIN_HardPoints.xml</File>
+</Hard_Point_Files>

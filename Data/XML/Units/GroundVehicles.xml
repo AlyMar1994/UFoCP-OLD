@@ -2460,7 +2460,7 @@
 				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	-6.0f</Mod_Multiplier>
 				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	0.3f</Mod_Multiplier>
 				<Mod_Multiplier>SPEED_MULTIPLIER,			0.3f</Mod_Multiplier>
-				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER ,	1.5f</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER,	1.5f</Mod_Multiplier>
 				<Recharge_Seconds>50</Recharge_Seconds>
 				<Expiration_Seconds>6</Expiration_Seconds>
 				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Attack_2M_Tank</SFXEvent_GUI_Unit_Ability_Activated>

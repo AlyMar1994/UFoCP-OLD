@@ -6,8 +6,8 @@
 
 	<!-- Snowball budget - more money for offense as galactic domination comes closer -->
 	<BasicEmpireOffensiveBudgetAllocation>
-		5.0 
-		+ 
+		5.0
+		+
 		(10.0 * Variable_Self.PlanetsControlled)
 		+
 		(6.0 * (1.0 - Function_Has_Enough_Space_Force_Globally.Evaluate))
@@ -128,7 +128,7 @@
 		(7.0 - Variable_Self.TechLevel
 				- Variable_Self.HasUnit { Parameter_Type = "Death_Star_II" }
 				- Variable_Self.HasStructure { Parameter_Type = "E_Ground_Research_Facility",
-																	Parameter_Count = 1 })
+												Parameter_Count = 1 })
 		*
 		(1.0 - Function_Need_Tech_Upgrade_Unblocked.Evaluate)
 		*
@@ -136,7 +136,7 @@
 		+
 		3.0
 		*
-		(Variable_Self.TechLevel == 5) * (1 - Variable_Self.HasUnit{Parameter_Type = "Death_Star_II"})
+		(Variable_Self.TechLevel == 5) * (1 - Variable_Self.HasUnit { Parameter_Type = "Death_Star_II" })
 	</BasicEmpireMajorItemBudgetAllocation>
 
 
@@ -159,19 +159,22 @@
 											Parameter_Count = 1 }
 			*
 			(Variable_Self.TechLevel == 1) *
-			Variable_Self.BudgetFractionToBuild{Parameter_Type = "DS_Primary_Hyperdrive"}
+			Variable_Self.BudgetFractionToBuild { Parameter_Type = "DS_Primary_Hyperdrive" }
 			+
 			(Variable_Self.TechLevel == 2) *
-			Variable_Self.BudgetFractionToBuild{Parameter_Type = "DS_Shield_Gen"}
+			Variable_Self.BudgetFractionToBuild { Parameter_Type = "DS_Shield_Gen" }
 			+
 			(Variable_Self.TechLevel == 3) *
-			Variable_Self.BudgetFractionToBuild{Parameter_Type = "DS_Superlaser_Core"}
+			Variable_Self.BudgetFractionToBuild { Parameter_Type = "DS_Superlaser_Core" }
 			+
 			(Variable_Self.TechLevel == 4) *
-			Variable_Self.BudgetFractionToBuild{Parameter_Type = "DS_Durasteel"}
+			Variable_Self.BudgetFractionToBuild { Parameter_Type = "DS_Durasteel" }
 			+
 			(Variable_Self.TechLevel == 5) *
-			Variable_Self.BudgetFractionToBuild{Parameter_Type = "Death_Star_II"}
+			Variable_Self.BudgetFractionToBuild { Parameter_Type = "Darth_Team_Executor" }
+			+
+			(Variable_Self.TechLevel == 5) *
+			Variable_Self.BudgetFractionToBuild { Parameter_Type = "Death_Star_II" }
 			*
 			1.25
 			+

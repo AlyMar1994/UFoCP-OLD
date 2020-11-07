@@ -1854,16 +1854,6 @@
 
 
 
-	<TradeRoute Name="Anaxes_Carida">
-		<Point_A>Anaxes</Point_A>
-		<Point_B>Carida</Point_B>
-		<HS_Speed_Factor>5.0</HS_Speed_Factor>
-		<Political_Control_Gain>0</Political_Control_Gain>
-		<Credit_Gain_Factor>0.5</Credit_Gain_Factor>
-	</TradeRoute>
-
-
-
 	<TradeRoute Name="AlzocIII_Carida">
 		<Point_A>AlzocIII</Point_A>
 		<Point_B>Carida</Point_B>
@@ -2447,16 +2437,6 @@
 	<TradeRoute Name="Kamino_Shola">
 		<Point_A>Kamino</Point_A>
 		<Point_B>Shola</Point_B>
-		<HS_Speed_Factor>5.0</HS_Speed_Factor>
-		<Political_Control_Gain>0</Political_Control_Gain>
-		<Credit_Gain_Factor>0.5</Credit_Gain_Factor>
-	</TradeRoute>
-
-
-
-	<TradeRoute Name="Mandalore_Utapau">
-		<Point_A>Mandalore</Point_A>
-		<Point_B>Utapau</Point_B>
 		<HS_Speed_Factor>5.0</HS_Speed_Factor>
 		<Political_Control_Gain>0</Political_Control_Gain>
 		<Credit_Gain_Factor>0.5</Credit_Gain_Factor>

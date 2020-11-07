@@ -52,16 +52,17 @@ See "_Changelog.txt" and "_MasterTEXT Changelog.txt" for changes per-update, in 
 
 ==> Credits
 ================
+
 Developers
 ================
-AlyMar1994
+-AlyMar1994
     – Lead developer.
 
 
 ================
 Audio
 ================
-Diamondback
+-Diamondback
     – Music (Credits_Ep3.mp3).
 
 
@@ -73,8 +74,11 @@ Support
 	- Assistance with creating .MEGs.
 	- Other technical help.
 
--STAR WARS: Empire at War Community Discord (specif. Galyana, Lany, Nikomer, Cuarson & Cyfe,)
+-STAR WARS: Empire at War Community (specif. Galyana, Lany, Nikomer, Cuarson & DarthCyfe6)
     – Technical help.
+
+-STAR WARS: Empire at War Hub (specif. evilbobthebob, Coryak/Exocor, & Imperial)
+    - Technical help.
 
 =========================================================================================
 

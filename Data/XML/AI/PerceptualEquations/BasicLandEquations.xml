@@ -59,23 +59,20 @@
 
 
 
-	<!-- 
-		Variable_Self.ReinforcementsUnnormalized
-	-->
 	<Debug_Land_1>
 		Variable_Self.FriendlyForceUnnormalized
 		+
-		Variable_Self.FriendlyForceUnnormalized{Parameter_Type = "MPTL"}
+		Variable_Self.FriendlyForceUnnormalized { Parameter_Type = "MPTL" }
 		+
-		Variable_Self.FriendlyForceUnnormalized{Parameter_Type = "T2B_Tank"}
+		Variable_Self.FriendlyForceUnnormalized { Parameter_Type = "T2B_Tank" }
 		+
-		Variable_Self.FriendlyForceUnnormalized{Parameter_Type = "Han_Solo"}
+		Variable_Self.FriendlyForceUnnormalized { Parameter_Type = "Han_Solo" }
 		+
-		Variable_Self.FriendlyForceUnnormalized{Parameter_Type = "Chewbacca"}
+		Variable_Self.FriendlyForceUnnormalized { Parameter_Type = "Chewbacca" }
 		+
-		Variable_Self.FriendlyForceUnnormalized{Parameter_Type = "Droid_R2D2"}
+		Variable_Self.FriendlyForceUnnormalized { Parameter_Type = "Droid_R2D2" }
 		+
-		Variable_Self.FriendlyForceUnnormalized{Parameter_Type = "Droid_C3P0"}
+		Variable_Self.FriendlyForceUnnormalized { Parameter_Type = "Droid_C3P0" }
 	</Debug_Land_1>
 
 	<Debug_Land_2>
@@ -120,7 +117,7 @@
 			*
 			(
 				(
-					(Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Infantry | Vehicle | Air]} 
+					(Variable_Self.FriendlyForceUnnormalized { Parameter_Category = GameObjectCategoryType[Infantry | Vehicle | Air] }
 					>= (3.0 * (Variable_Enemy.FriendlyForceUnnormalized + Variable_Enemy.ReinforcementsUnnormalized)))
 				)
 				> 0
@@ -182,7 +179,6 @@
 		Function_Should_Clear_Vehicles.Evaluate
 	</Should_Clear_Infantry>
 
-
 	<Should_Clear_Vehicles>
 		Function_Allowed_As_Defender_Land.Evaluate
 		*
@@ -212,7 +208,7 @@
 			+
 			(1.0 * (Variable_Target.Owner.IsFaction { Parameter_Faction = "Empire",
 														Parameter_Faction = "Rebel",
-														Parameter_Faction = "Underworld"}))
+														Parameter_Faction = "Underworld" }))
 		)
 		*
 		(
@@ -293,12 +289,12 @@
 	</Land_Unit_Needs_Escort>
 
 	<Vehicle_Needs_Escort>
-		Variable_Target.Force{Parameter_Category = GameObjectCategoryType[Vehicle]}
+		Variable_Target.Force { Parameter_Category = GameObjectCategoryType[Vehicle] }
 	</Vehicle_Needs_Escort>
 
 
 	<Area_Needs_Han_Solo_Assist>
-		Variable_Target.EnemyForce{Parameter_Category = GameObjectCategoryType[Vehicle]}
+		Variable_Target.EnemyForce { Parameter_Category = GameObjectCategoryType[Vehicle] }
 		*
 		Variable_Target.FriendlyForce
 	</Area_Needs_Han_Solo_Assist>
@@ -309,9 +305,8 @@
 		unit must be close to the enemy
 		assist things with the most force
 	-->
-		
 	<Needs_ObiWan_Assist>
-		(1 - Variable_Target.Type.IsType {Parameter_Type = "Obi_Wan_Kenobi"})
+		(1 - Variable_Target.Type.IsType { Parameter_Type = "Obi_Wan_Kenobi" })
 		*
 		(((0.9 > Variable_Target.Health) + (0.9 > Variable_Target.Shield)) > 0)
 		*
@@ -344,11 +339,11 @@
 		(0.5 + 0.5 * Game.IsCampaignGame)
 		*
 		(
-			15 * (500 > Variable_Target.DistanceToNearestFriendly{Parameter_Category = GameObjectCategoryType[Structure]})
+			15 * (500 > Variable_Target.DistanceToNearestFriendly { Parameter_Category = GameObjectCategoryType[Structure] })
 				* (((Variable_Target.TimeLastSeenUnnormalized > 120) + (20 > Game.Age)) > 0)
 			+
-			10	* (Variable_Target.DistanceToNearestFriendly{Parameter_Category = GameObjectCategoryType[Structure]} > 500)
-				* (Variable_Target.DistanceToNearestEnemy{Parameter_Category = GameObjectCategoryType[Structure]} > 500)
+			10	* (Variable_Target.DistanceToNearestFriendly { Parameter_Category = GameObjectCategoryType[Structure] } > 500)
+				* (Variable_Target.DistanceToNearestEnemy { Parameter_Category = GameObjectCategoryType[Structure] } > 500)
 				* (((Variable_Target.TimeLastSeenUnnormalized > 400) + (200 > Game.Age)) > 0)
 				* Variable_Target.TimeLastSeen
 			+
@@ -357,6 +352,7 @@
 				* Variable_Target.TimeLastSeen
 		)
 	</Land_Area_Needs_Scouting>
+
 
 
 	<!--
@@ -378,20 +374,20 @@
 				(1.0 - Variable_Self.IsDefender)
 				*
 				(
-					Variable_Enemy.LandedForceUnnormalized{Parameter_Attenuator = 1.0} >= (2.0 * Variable_Self.FriendlyForceUnnormalized{Parameter_Attenuator = 1.0} + Variable_Self.ReinforcementsUnnormalized)
+					Variable_Enemy.LandedForceUnnormalized { Parameter_Attenuator = 1.0 } >= (2.0 * Variable_Self.FriendlyForceUnnormalized { Parameter_Attenuator = 1.0 } + Variable_Self.ReinforcementsUnnormalized)
 				)
 			)
 			+
 			(
-				Variable_Self.IsDefender 
+				Variable_Self.IsDefender
 				*
-				(Variable_Enemy.LandedForceUnnormalized{Parameter_Attenuator = 1.0} >= (2.5 * Variable_Self.FriendlyForceUnnormalized{Parameter_Attenuator = 1.0})) 
+				(Variable_Enemy.LandedForceUnnormalized { Parameter_Attenuator = 1.0 } >= (2.5 * Variable_Self.FriendlyForceUnnormalized { Parameter_Attenuator = 1.0 } ))
 				*
 				(
 					((Variable_Self.BaseLevel == 0)
 					+
 					(1 > Variable_Self.BaseLevel) *
-					(Variable_Enemy.LandedForceUnnormalized >= (5.0 * Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Structure]})))
+					(Variable_Enemy.LandedForceUnnormalized >= (5.0 * Variable_Self.FriendlyForceUnnormalized { Parameter_Category = GameObjectCategoryType[Structure] })))
 					>
 					0
 				)
@@ -404,7 +400,7 @@
 		AND
 		Are we capable of retreat
 			AND
-			Are we not pirates
+			Are we not Pirates
 	-->
 	<Allowed_To_Retreat_From_Land>
 		Game.IsCampaignGame

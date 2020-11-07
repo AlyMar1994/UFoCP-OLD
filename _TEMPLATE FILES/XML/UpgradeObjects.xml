@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+	<!-- If a tag is unknown/unused, it's empty, unless it can -->
+	<!-- be filled in with a known value. Then the known value(s) are displayed. -->
+
+	<!-- NOTE: THESE VALUES ARE GENERALLY GENERIC! YOU CAN CHANGE THEM TO WHATEVER YOU WANT! -->
+
+	<!-- By Connor 'AlyMar1994' Hess! -->
+<UpgradeObjects>
+	<UpgradeObject Name="UpgradeName">
+		<Text_ID>TEXT_UPGRADE_STRING</Text_ID>
+		<Encyclopedia_Text>TEXT_UPGRADE_STRING_DESC</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRING</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Upgrade_IconName.tga</Icon_Name>
+
+		<Affiliation>FactionName</Affiliation>
+
+		<Tactical_Build_Prerequisites>Object_Name</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>#</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>#</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds>#</Tactical_Build_Time_Seconds>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>#</Build_Limit_Current_For_All_Allies>
+
+		<Previous_Upgrade_Level_Type>Object_Name</Previous_Upgrade_Level_Type>
+		<Next_Upgrade_Level_Type>Object_Name</Next_Upgrade_Level_Type>
+
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<CategoryMask>Upgrade</CategoryMask>
+		<Show_In_Sidebar_While_Building>Yes/No</Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete>Yes/No</Show_In_Sidebar_When_Complete>
+
+		<SFXEvent_Build_Started>SFXEvent_Name</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>SFXEvent_Name</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>SFXEvent_Name</SFXEvent_Build_Complete>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="AbilityName">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+
+				<Applicable_Unit_Categories>Infantry | Vehicle | Air | Structure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types>Object_Name</Applicable_Unit_Types>
+
+				<!-- In percentages. 0.50 = 50%.-->
+				<Health_Bonus_Percentage>#.##</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>#.##</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>#.##</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>#.##</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>#.##</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>#.##</Movement_Speed_Bonus_Percentage>
+
+				<Stacking_Category>#</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+</UpgradeObjects>

@@ -1,25 +1,27 @@
 <?xml version="1.0"?>
 <Equations>
 	<Should_Mine_Structure>
-		(15.0
-		*
-		Variable_Target.Location.EnemyForce
-		+
-		8.0
-		*
-		Variable_Target.Location.IsFriendlyStartLocation
-		+
-		8.0
-		*
-		Variable_Self.IsDefender
-		+
-		8.0
-		*
-		Variable_Target.Force
-		+
-		15.0
-		*
-		Variable_Target.IsContestable)
+		(
+			15.0
+			*
+			Variable_Target.Location.EnemyForce
+			+
+			8.0
+			*
+			Variable_Target.Location.IsFriendlyStartLocation
+			+
+			8.0
+			*
+			Variable_Self.IsDefender
+			+
+			8.0
+			*
+			Variable_Target.Force
+			+
+			15.0
+			*
+			Variable_Target.IsContestable
+		)
 		*
 		0.33
 		*
@@ -52,9 +54,11 @@
 	<Should_Build_Sensor_Scrambler>
 		50.0
 		*
-		(Variable_Target.FriendlyForce { Parameter_Category = GameObjectCategoryType[Structure] }
-		+
-		Variable_Target.FriendlyForce { Parameter_Category = GameObjectCategoryType[Vehicle] })
+		(
+			Variable_Target.FriendlyForce { Parameter_Category = GameObjectCategoryType[Structure] }
+			+
+			Variable_Target.FriendlyForce { Parameter_Category = GameObjectCategoryType[Vehicle] }
+		)
 	</Should_Build_Sensor_Scrambler>
 	
 	<Should_Build_Rocket_Pod>
@@ -70,7 +74,7 @@
 		500
 		*
 		(
-			clamp(Variable_Target.Force{Parameter_Attenuator = 1.0} - Variable_Target.Location.FriendlyForce, 0.01, 1.0)
+			clamp(Variable_Target.Force { Parameter_Attenuator = 1.0 } - Variable_Target.Location.FriendlyForce, 0.01, 1.0)
 			-
 			Variable_Target.Force { Parameter_Category = GameObjectCategoryType[LandHero] }
 			-

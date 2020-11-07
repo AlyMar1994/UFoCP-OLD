@@ -1371,7 +1371,7 @@
         <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
         <Is_Visible_On_Radar> Yes </Is_Visible_On_Radar>
         <Is_Asteroid_Field> No </Is_Asteroid_Field>
-        <Is_Ion_Storm>No</Is_Ion_Storm>
+        <Is_Ion_Storm>Yes</Is_Ion_Storm>
         <Is_Nebula> Yes </Is_Nebula>
         <Space_Obstacle_Radius> 2800 </Space_Obstacle_Radius>
         <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 

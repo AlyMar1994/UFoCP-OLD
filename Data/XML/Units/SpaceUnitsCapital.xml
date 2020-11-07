@@ -498,10 +498,5 @@
 		<Shield_Points>1000</Shield_Points>
 		<Tech_Level>10</Tech_Level>
 		<Tactical_Health>2000</Tactical_Health>
-
-		<!-- Set to spawn 3 TIE/fighters, and 1 TIE/bomber once. -->
-		<!-- <Starting_Spawned_Units_Tech_0>TIE_Fighter_Squadron_E3, 3</Starting_Spawned_Units_Tech_0> -->
-		<!-- <Starting_Spawned_Units_Tech_0>TIE_Bomber_Squadron_E3, 1</Starting_Spawned_Units_Tech_0> -->
-		<!-- <Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds> -->
 	</SpaceUnit>
 </SpaceUnitsCapital>

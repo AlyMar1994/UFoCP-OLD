@@ -2145,7 +2145,7 @@
 		<Samples>U000_WED0201_ENG.wav U000_WED0203_ENG.wav U000_WED0204_ENG.wav U000_WED0205_ENG.wav U000_WED0206_ENG.wav U000_WED0207_ENG.wav U000_WED0208_ENG.wav</Samples>
 			<Localize> Yes </Localize>
 			<Play_Sequentially> Yes </Play_Sequentially>
-			<Text_ID>TEXT_SFX_WED_MOVE_1,  TEXT_SFX_WED_MOVE_3, TEXT_SFX_WED_MOVE_4, TEXT_SFX_WED_MOVE_5,  TEXT_SFX_WED_MOVE_6, TEXT_SFX_WED_MOVE_7, TEXT_SFX_WED_MOVE_8</Text_ID>
+			<Text_ID>TEXT_SFX_WED_MOVE_1, TEXT_SFX_WED_MOVE_3, TEXT_SFX_WED_MOVE_4, TEXT_SFX_WED_MOVE_5,  TEXT_SFX_WED_MOVE_6, TEXT_SFX_WED_MOVE_7, TEXT_SFX_WED_MOVE_8</Text_ID>
 		<Overlap_Test> Unit_Red_Squadron </Overlap_Test>
  </SFXEvent>
 
@@ -2155,17 +2155,17 @@
 			<Localize> Yes </Localize>
 			<Probability>40</Probability>
 			<Play_Sequentially> Yes </Play_Sequentially>
-			<Text_ID>TEXT_SFX_WED_MOVE_1,  TEXT_SFX_WED_MOVE_3, TEXT_SFX_WED_MOVE_4, TEXT_SFX_WED_MOVE_5,  TEXT_SFX_WED_MOVE_6, TEXT_SFX_WED_MOVE_7, TEXT_SFX_WED_MOVE_8</Text_ID>
+			<Text_ID>TEXT_SFX_WED_MOVE_1, TEXT_SFX_WED_MOVE_3, TEXT_SFX_WED_MOVE_4, TEXT_SFX_WED_MOVE_5,  TEXT_SFX_WED_MOVE_6, TEXT_SFX_WED_MOVE_7, TEXT_SFX_WED_MOVE_8</Text_ID>
 		<Overlap_Test> Unit_Red_Squadron </Overlap_Test>
  </SFXEvent>
 
 
 <SFXEvent Name="Unit_Fleet_Move_Wedge_Rogue">
 		<Use_Preset>Preset_UR</Use_Preset>
-		<Samples>U000_WED0201_ENG.wav U000_WED0202_ENG.wav  U000_WED0204_ENG.wav U000_WED0205_ENG.wav U000_WED0207_ENG.wav U000_WED0208_ENG.wav</Samples>
+		<Samples>U000_WED0201_ENG.wav U000_WED0202_ENG.wav U000_WED0204_ENG.wav U000_WED0205_ENG.wav U000_WED0207_ENG.wav U000_WED0208_ENG.wav</Samples>
 			<Localize> Yes </Localize>
 			<Play_Sequentially> Yes </Play_Sequentially>
-			<Text_ID>TEXT_SFX_WED_MOVE_1,  TEXT_SFX_WED_MOVE_2, TEXT_SFX_WED_MOVE_4, TEXT_SFX_WED_MOVE_5,  TEXT_SFX_WED_MOVE_7, TEXT_SFX_WED_MOVE_8</Text_ID>
+			<Text_ID>TEXT_SFX_WED_MOVE_1, TEXT_SFX_WED_MOVE_2, TEXT_SFX_WED_MOVE_4, TEXT_SFX_WED_MOVE_5,  TEXT_SFX_WED_MOVE_7, TEXT_SFX_WED_MOVE_8</Text_ID>
 		<Overlap_Test> Unit_Red_Squadron </Overlap_Test>
  </SFXEvent>
 
@@ -2340,7 +2340,7 @@
 						 <Overlap_Test> Unit_Red_Squadron </Overlap_Test>
 					 </SFXEvent>
 
-					 <SFXEvent Name="Unit_Enemy_Health_Critcal_Derek_Klivian">
+					 <SFXEvent Name="Unit_Enemy_Health_Critical_Derek_Klivian">
 						 <Use_Preset>Preset_UR</Use_Preset>
 						 <Samples>U000_KLI0104_ENG.wav U000_KLI0105_ENG.wav</Samples>
 						 <Localize> Yes </Localize>
