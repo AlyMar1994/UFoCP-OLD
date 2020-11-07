@@ -31,7 +31,7 @@ function MainForce_Thread()
 end
 
 function MainForce_No_Units_Remaining(tf)
-	-- No action!
+	return
 end
 
 function MainForce_Production_Failed(tf, failed_object_type)

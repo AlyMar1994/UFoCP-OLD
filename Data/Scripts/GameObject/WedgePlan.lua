@@ -17,7 +17,7 @@ function Definitions()
 
 	-- Commander hit list:
 	Attack_Ability_Type_Names =
-	{ 
+	{
 		"Capital", "Corvette", "Frigate", "Fighter", "Death_Star_II",	-- ATTACK these types.
 		"Bounty_Hunter_Team_E", "Bounty_Hunter_Team_R"					-- STAY AWAY from these types.
 	}

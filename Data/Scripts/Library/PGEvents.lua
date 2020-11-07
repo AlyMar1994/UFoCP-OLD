@@ -369,7 +369,7 @@ function Default_Original_Target_Owner_Changed(tf, old_player, new_player)
 	if InvasionActive == true then
 		return
 	end
-	
+
 	DebugMessage("%s -- Original target ownership changed.  Aborting.", tostring(Script))
 	ScriptExit()
 end
