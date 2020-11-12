@@ -4,10 +4,7 @@
 		Game.Age
 	</Game_Age>
 
-	<!--
-		The total count, occupied or not
-	-->
-	<Build_Pad_Count>
+	<Build_Pad_Count> <!-- Total count, occupied or not. -->
 		Variable_Self.TacticalBuiltStructureCount + Variable_Self.OpenBuildPadCount
 	</Build_Pad_Count>
 
@@ -399,8 +396,8 @@
 		Is this a campaign game (the AI doesn't retreat in skirmish)
 		AND
 		Are we capable of retreat
-			AND
-			Are we not Pirates
+		AND
+		Are we not Pirates/Hutts
 	-->
 	<Allowed_To_Retreat_From_Land>
 		Game.IsCampaignGame
@@ -408,6 +405,8 @@
 		Variable_Self.CanRetreat
 		*
 		(1.0 - Variable_Self.IsFaction { Parameter_Faction = "Pirates" })
+		*
+		(1.0 - Variable_Self.IsFaction { Parameter_Faction = "Hutts" })
 	</Allowed_To_Retreat_From_Land>
 
 	<!--

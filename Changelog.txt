@@ -28,6 +28,18 @@ v1.14
 =========================================================================================
 
 
+==================
+A.I.
+==================
+-(PE) BasicLandEquations – Modified <Allowed_To_Retreat_From_Land> to prevent Hutts (as a fodder faction) from retreating.  This was to keep consistency with other changes, and keep it in line as intended with the Black Sun Pirates.
+
+
+==================
+Textures
+==================
+-Updated "I_Button_Corruption_Piracy_G," making the Piracy galactic icon look a lot better.  Should be more vanilla-style.
+
+
 =========================================================================================
 
 
