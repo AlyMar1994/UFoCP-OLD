@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<AITemplates>
+	<None_Template>
+		<Priority>1</Priority>
+		<Trigger>One</Trigger>
+
+		<Budget>
+			<Offensive>One</Offensive>
+			<Defensive>Zero</Defensive>
+		</Budget>
+
+		<Tactical_Budget_Allowance>
+			<Offensive>0.0</Offensive>
+			<Defensive>0.0</Defensive>
+		</Tactical_Budget_Allowance>
+
+		<Turn_Off>
+			<Goals>
+				<Category>Infrastructure</Category>
+				<Category>Defensive</Category>
+				<Category>Offensive</Category>
+			</Goals>
+		</Turn_Off>
+	</None_Template>
+
+
+	<Test_Space>
+		<Priority>1</Priority>
+		<Trigger>One</Trigger>
+
+		<Budget>
+			<Hero>ReallyBig</Hero>
+			<High_Priority>High</High_Priority>
+			<Map_Control>Medium_High</Map_Control>
+			<Med_Priority>Medium</Med_Priority>
+			<Tactical_Targeted>GenericSpaceTargetedOffensiveBudgetAllocation</Tactical_Targeted>
+			<Defensive>GenericSpaceDefensiveBudgetAllocation</Defensive>
+			<Tactical_Untargeted>GenericSpaceUntargetedOffensiveBudgetAllocation</Tactical_Untargeted>
+			<NoBudget>ReallyBig</NoBudget>
+			<StoryArc>ReallyBig</StoryArc>
+		</Budget>
+
+		<Turn_Off>
+			<Goals>
+				<Category>Macro_Goal</Category>
+			</Goals>
+
+			<Plans>
+				<Goal_Category>Macro_Goal</Goal_Category>
+			</Plans>
+		</Turn_Off>
+
+		<Turn_On>
+			<Goals>
+				<Category>Hero</Category>
+				<Category>NoBudget</Category>
+				<Category>Tactical_Targeted</Category>
+				<Category>Defensive</Category>
+				<Category>Tactical_Untargeted</Category>
+				<Category>StoryArc</Category>
+				<Category>High_Priority</Category>
+				<Category>Med_Priority</Category>
+				<Category>Map_Control</Category>
+			</Goals>
+			
+			<Plans>
+				<Goal_Category>Hero</Goal_Category>
+				<Goal_Category>NoBudget</Goal_Category>
+				<Goal_Category>Tactical_Targeted</Goal_Category>
+				<Goal_Category>Defensive</Goal_Category>
+				<Goal_Category>Tactical_Untargeted</Goal_Category>
+				<Goal_Category>StoryArc</Goal_Category>
+				<Goal_Category>High_Priority</Goal_Category>
+				<Goal_Category>Med_Priority</Goal_Category>
+				<Goal_Category>Map_Control</Goal_Category>
+			</Plans>
+		</Turn_On>
+	</Test_Space>
+
+	<Test_Land>
+		<Priority>1</Priority>
+		<Trigger>One</Trigger>
+
+		<Budget>
+			<Hero>ReallyBig</Hero>
+			<High_Priority>High</High_Priority>
+			<Map_Control>Medium_High</Map_Control>
+			<Med_Priority>Medium</Med_Priority>
+			<Tactical_Targeted>GenericSpaceTargetedOffensiveBudgetAllocation</Tactical_Targeted>
+			<Defensive>GenericSpaceDefensiveBudgetAllocation</Defensive>
+			<Tactical_Untargeted>GenericSpaceUntargetedOffensiveBudgetAllocation</Tactical_Untargeted>
+			<StoryArc>ReallyBig</StoryArc>
+		</Budget>
+
+		<Turn_On>
+			<Goals>
+				<Category>Hero</Category>
+				<Category>Tactical_Targeted</Category>
+				<Category>Defensive</Category>
+				<Category>Tactical_Untargeted</Category>
+				<Category>StoryArc</Category>
+				<Category>High_Priority</Category>
+				<Category>Med_Priority</Category>
+				<Category>Map_Control</Category>
+			</Goals>
+
+			<Plans>
+				<Goal_Category>Hero</Goal_Category>
+				<Goal_Category>Tactical_Targeted</Goal_Category>
+				<Goal_Category>Defensive</Goal_Category>
+				<Goal_Category>Tactical_Untargeted</Goal_Category>
+				<Goal_Category>StoryArc</Goal_Category>
+				<Goal_Category>High_Priority</Goal_Category>
+				<Goal_Category>Med_Priority</Goal_Category>
+				<Goal_Category>Map_Control</Goal_Category>
+			</Plans>
+		</Turn_On>
+	</Test_Land>
+
+	<StoryArcHumanOnly>
+		<Priority>1</Priority>
+		<Trigger>One</Trigger>
+
+		<Budget>
+			<StoryArcHuman>ReallyBig</StoryArcHuman>
+		</Budget>
+
+		<Tactical_Budget_Allowance>
+			<StoryArcHuman>1.0</StoryArcHuman>
+		</Tactical_Budget_Allowance>
+
+		<Turn_On>
+			<Goals>
+				<Category>StoryArcHuman</Category>
+			</Goals>
+
+			<Plans>
+				<Goal_Category>StoryArcHuman</Goal_Category>
+			</Plans>
+		</Turn_On>
+	</StoryArcHumanOnly>
+
+	<Shutdown_Offense>
+		<Priority>3</Priority>
+		<Trigger>Should_Shutdown_Offense_For_Story_Campaign</Trigger>
+
+		<Turn_Off>
+			<Goals>
+			<Goal_Type>Conquer_To_Reconnect</Goal_Type>
+			<Goal_Type>Lift_Blockade</Goal_Type>
+			<Goal_Type>Conquer_Opponent</Goal_Type>
+			<Goal_Type>Raid</Goal_Type>
+			<Goal_Type>Death_Star_Use</Goal_Type>
+			<Goal_Type>Unrestricted_Grab_Space</Goal_Type>
+			<Goal_Type>Unrestricted_Grab_Land</Goal_Type>
+			</Goals>
+		</Turn_Off>
+	</Shutdown_Offense>
+
+	<Remove_Corruption_Only_Template>
+		<Priority>1</Priority>
+		<Trigger>One</Trigger>
+
+		<Budget>
+			<Offensive>One</Offensive>
+			<Defensive>Zero</Defensive>
+		</Budget>
+
+		<Tactical_Budget_Allowance>
+			<Offensive>0.0</Offensive>
+			<Defensive>0.0</Defensive>
+		</Tactical_Budget_Allowance>
+
+		<Turn_Off>
+			<Goals>
+				<Category>Hero</Category>
+				<Category>Infrastructure</Category>
+				<Category>Defensive</Category>
+				<Category>Offensive</Category>
+			</Goals>
+		</Turn_Off>
+
+		<Turn_On>
+			<Goals>
+				<Goal_Type>Remove_Corruption</Goal_Type>
+			</Goals>
+		</Turn_On>
+	</Remove_Corruption_Only_Template>
+</AITemplates>

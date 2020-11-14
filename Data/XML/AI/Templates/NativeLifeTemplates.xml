@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<AITemplates>
+	<Ewok_Land>
+		<Priority>1</Priority>
+		<Trigger>One</Trigger>
+
+		<Budget>
+			<Tactical_Targeted>GenericSpaceTargetedOffensiveBudgetAllocation</Tactical_Targeted>
+			<Defensive>GenericSpaceDefensiveBudgetAllocation</Defensive>
+			<Tactical_Untargeted>GenericSpaceUntargetedOffensiveBudgetAllocation</Tactical_Untargeted>
+			<StoryArc>ReallyBig</StoryArc>
+		</Budget>
+
+		<Turn_On>
+			<Goals>
+				<Category>Tactical_Targeted</Category>
+				<Category>Defensive</Category>
+				<Category>Tactical_Untargeted</Category>
+				<Category>StoryArc</Category>
+			</Goals>
+
+			<Plans>
+				<Goal_Category>Tactical_Targeted</Goal_Category>
+				<Goal_Category>Defensive</Goal_Category>
+				<Goal_Category>Tactical_Untargeted</Goal_Category>
+				<Goal_Category>StoryArc</Goal_Category>
+			</Plans>
+		</Turn_On>
+	</Ewok_Land>
+</AITemplates>

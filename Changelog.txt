@@ -14,6 +14,7 @@ Vocab.:
 -Conditional(s) – "If" statements which dictate certain advisor dialogues when conditions are met.
 -Death Clone – The version of a ship that lingers in a map when destroyed.
 -Perception Equation ("PE") – Math which returns a value for the AI to do something.
+-AI Template ("TPL") – Gameplay template for the AI.
 
 -Galactic – On the galactic map/level.
 -Land – On land maps.
@@ -32,6 +33,12 @@ v1.14
 A.I.
 ==================
 -(PE) BasicLandEquations – Modified <Allowed_To_Retreat_From_Land> to prevent Hutts (as a fodder faction) from retreating.  This was to keep consistency with other changes, and keep it in line as intended with the Black Sun Pirates.
+
+-(TPL) BasicEmpireTemplates – Fixing parse errors.
+
+-(TPL) BasicGenericTemplates – Fixing parse errors.
+
+-(TPL) NativeLifeTemplates – Fixing parse errors.
 
 
 ==================
