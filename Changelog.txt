@@ -52,7 +52,7 @@ Textures
 ==================
 -I_Button_Corruption_Piracy_G – Made the Piracy galactic icon look a lot better.  Should be more vanilla-style.
 
--NB_YsalamiriTree_B – Ysalamiri Tree on the MDU/object on Myrkr never never had a bumpmap created for it, despite the models trying to find one.  This has been rectified.
+-NB_YsalamiriTree_B – Added bumpmap to the Ysalamiri Tree. The tree never never had a bumpmap created for it, despite the model trying to find one.
 
 
 =========================================================================================
