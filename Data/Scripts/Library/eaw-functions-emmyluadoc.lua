@@ -649,7 +649,7 @@ function Is_Point_In_Nebula(position) end
 --- Only valid in land mode.
 ---@overload fun(position1, position2):boolean
 ---@param position1 position
----@param position2 position
+---@param position2  position
 ---@param player PlayerObject
 ---@param unknown boolean
 ---@return boolean
@@ -680,16 +680,6 @@ function GetNextGroundbaseType(planet) end
 ---@param planet PlanetObject
 ---@return GameObjectType
 function GetNextStarbaseType(planet) end
-
----@public
----Tells the script to sleep for (X) miliseconds when reached.
----@param timer number
-function Sleep(timer) end
-
----@public
----Checks the scene where the script is running if the referenced game object exists.
----@param object GameObject
-function TestValid(object) end
 
 -- ----------------------------------------------------------------
 -- ------------------------ Multithreading ------------------------
