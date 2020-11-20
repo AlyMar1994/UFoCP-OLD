@@ -48,6 +48,18 @@ Models
 
 
 ==================
+Structures (Land)
+==================
+-Droid Works – Fixed structure not having tag <Requires_Base_Power>, so the building's shields wouldn't turn off when the Underworld Palace generator was destroyed.
+
+-Mercenary Barracks – Fixed structure not having tag <Requires_Base_Power>, so the building's shields wouldn't turn off when the Underworld Palace generator was destroyed.
+
+-Underworld Palace – Fixed structure not having tag <Requires_Base_Power>, so the building's shields wouldn't turn off when the Underworld Palace generator was destroyed.
+
+-Zann Consortium Factory – Fixed structure not having tag <Requires_Base_Power>, so the building's shields wouldn't turn off when the Underworld Palace generator was destroyed.
+
+
+==================
 Textures
 ==================
 -Command Bar – Fixed pause button (b_play_pause) not having proper texture for being disabled.
