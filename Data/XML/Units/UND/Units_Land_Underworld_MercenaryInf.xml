@@ -118,44 +118,43 @@
 		<Death_Fade_Time>0.25</Death_Fade_Time>
 		<Death_Persistence_Duration>0.0</Death_Persistence_Duration>
 
-		<Death_Clone>Damage_Disruptor_Hand, Infantry_Disruptor_Death_Clone_00</Death_Clone>
-		<Death_Clone>Damage_Disruptor_Hand, Infantry_Disruptor_Death_Clone_01</Death_Clone>
-		<Death_Clone>Damage_Infection, Infantry_Melt_Death_Clone_00</Death_Clone>
-		<Death_Clone>Damage_Remote_Bomb, Underworld_Merc_Remote_Bomb_Death_Clone</Death_Clone>
+		<Death_Clone>Damage_Disruptor_Hand,		Infantry_Disruptor_Death_Clone_00</Death_Clone>
+		<Death_Clone>Damage_Disruptor_Hand,		Infantry_Disruptor_Death_Clone_01</Death_Clone>
+		<Death_Clone>Damage_Infection,			Infantry_Melt_Death_Clone_00</Death_Clone>
+		<Death_Clone>Damage_Remote_Bomb,		Underworld_Merc_Remote_Bomb_Death_Clone</Death_Clone>
 
 		<Tactical_Bribe_Cost>25</Tactical_Bribe_Cost>
 		<Conversion_Ability_Changes_To_Enemy> Underworld_Merc_Converted_To_Enemy </Conversion_Ability_Changes_To_Enemy>
 
-		<!-- Non-Hero unit abilities description -->
+		<!-- Non-hero unit abilities description: -->
 		<Unit_Abilities_Data SubObjectList="Yes">
-		
-            <Unit_Ability>
-                <Type>PROXIMITY_MINES</Type>
-                <Recharge_Seconds>80.0</Recharge_Seconds>
-                <GUI_Activated_Ability_Name> Grenadier_Proximity </GUI_Activated_Ability_Name> 
-                <Effective_Radius> 500.0 </Effective_Radius>
-                <SFXEvent_Target_Ability />  
-                <Area_Effect_Decal_Distance> 50.0 </Area_Effect_Decal_Distance>
-                <Must_Be_Bought_On_Black_Market>Yes</Must_Be_Bought_On_Black_Market>
-            </Unit_Ability>
+			<!-- Primary ability: -->
+			<Unit_Ability>
+				<Type>PROXIMITY_MINES</Type>
+				<Recharge_Seconds>80.00</Recharge_Seconds>
+				<GUI_Activated_Ability_Name>Grenadier_Proximity</GUI_Activated_Ability_Name>
+				<Effective_Radius>500.00</Effective_Radius>
+				<SFXEvent_Target_Ability />
+				<Area_Effect_Decal_Distance>50.00</Area_Effect_Decal_Distance>
+				<Must_Be_Bought_On_Black_Market>Yes</Must_Be_Bought_On_Black_Market>
+			</Unit_Ability>
 
+			<!-- Secondary ability: -->
 			<Unit_Ability>
 				<Type>STIM_PACK</Type>
-				<Expiration_Seconds> 10.0 </Expiration_Seconds>
-				<Recharge_Seconds> 45.0 </Recharge_Seconds>
-				<Mod_Multiplier>SPEED_MULTIPLIER, 2.0f</Mod_Multiplier>
-				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<Expiration_Seconds>10.00</Expiration_Seconds>
+				<Recharge_Seconds>45.00</Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			2.00</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.50</Mod_Multiplier>
 				<Damage_Percent_When_Activated>.35</Damage_Percent_When_Activated>
 			</Unit_Ability>
-          
 		</Unit_Abilities_Data>
 
         <Abilities SubObjectList="Yes">
-
             <Proximity_Mines_Ability Name="Grenadier_Proximity">
                 <Activation_Style> User_Input </Activation_Style>
-                <Activation_Min_Range>0.0</Activation_Min_Range>
-                <Activation_Max_Range>70.0</Activation_Max_Range>
+                <Activation_Min_Range>0.00</Activation_Min_Range>
+                <Activation_Max_Range>70.00</Activation_Max_Range>
                 <Mine_Type>Proximity_Mine</Mine_Type>
                 <Trigger_Radius>30</Trigger_Radius>
                 <Number_Of_Mines>6</Number_Of_Mines>
@@ -163,9 +162,7 @@
                 <Activate_SFX>Unit_Lightsaber_Projectile_Block</Activate_SFX>
                 <Must_Be_Bought_On_Black_Market>Yes</Must_Be_Bought_On_Black_Market>
             </Proximity_Mines_Ability>
-
 		</Abilities>
-
 	</GroundInfantry>
 
 

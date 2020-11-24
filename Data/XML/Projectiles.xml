@@ -4074,7 +4074,7 @@
 		<Projectile_Category>MISSILE</Projectile_Category>
 
 		<Projectile_Max_Flight_Distance>600.0</Projectile_Max_Flight_Distance>
-		<!-- AM1994 (5/1/2020): Damage modification to deal with Candeous Tank having 3 shots per-volley instead of 2. Originally was 8. -->
+		<!-- AM1994 (05/01/2020): Damage modification to deal with Candeous Tank having 3 shots per-volley instead of 2. Originally was 8. -->
 		<!-- This reverts the Candie to doing 16 damage per-volley instead of 24, now, while fixing damage. Technically 15.99. -->
 		<Projectile_Damage>5.33</Projectile_Damage>
 		<Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
