@@ -64,7 +64,7 @@
 		<Faction_Leader>Mon_Mothma</Faction_Leader>
 		<Faction_Leader_Company>Mon_Mothma_Team</Faction_Leader_Company>
 		<!-- Other than Hoth or Tatooine (which is inconsistient), like the Underworld, -->
-		<!-- the Rebels has no 'home planet,' unlike vanilla EaW. -->
+		<!-- the Rebels have no 'home planet,' unlike vanilla EaW. -->
 		<!-- <Home_Planet>Alderaan</Home_Planet> -->
 
 		<Superweapon_Win_Movie>Rebel_Win_DeathStar</Superweapon_Win_Movie>
@@ -92,7 +92,7 @@
 		</Enemies>
 		<Primary_Enemy>Empire</Primary_Enemy>
 		<Is_Neutral>No</Is_Neutral>
-		<Force_Alignment>Light</Force_Alignment> <!-- Unused, as planets once had special effects for force alignments. -->
+		<Force_Alignment>Light</Force_Alignment> <!-- Unused, as planets once had special effects for Force alignments. -->
 
 		<Multiplayer_Campaign_Heroes>
 			Mon_Mothma_Team,
@@ -127,7 +127,6 @@
 		<Corruption_Tactical_Build_Pad_Time_Multipliers>1.00, 1.00</Corruption_Tactical_Build_Pad_Time_Multipliers>
 		<Corruption_Tactical_Build_Pad_Price_Multipliers>1.00, 1.00</Corruption_Tactical_Build_Pad_Price_Multipliers>
 		<Easily_Bribed>No</Easily_Bribed>
-		<!-- <Bribed_Color>Red#, Green#, Blue#, Transparency#</Bribed_Color> -->
 
 		<Automatic_Planetary_Corruption_Upgrade_Type>
 			Generic_Intimidation_Corruption_Upgrade,
@@ -203,12 +202,6 @@
 		<Bombardment_Salvo_Delay>1.30</Bombardment_Salvo_Delay>
 		<Bombardment_Initial_Delay>1.00</Bombardment_Initial_Delay>
 
-		<!-- Color, intensity and time for the lighting effects.  -->
-		<!-- Each of these is a list that should have the same number of entries as the Bombard_Projectile list! -->
-		<!--<Bombardment_Lighting_Color_List>#</Bombardment_Lighting_Color_List> -->
-		<!--<Bombardment_Lighting_Intensity_List>#</Bombardment_Lighting_Intensity_List> -->
-		<!--<Bombardment_Lighting_Seconds_List>#</Bombardment_Lighting_Seconds_List> -->
-
 		<Land_Mode_Selection_Blob_Material_Name>Selection_Rebel_Land</Land_Mode_Selection_Blob_Material_Name>
 		<Land_Mode_Garrison_Selection_Blob_Material_Name>Selection_Garrison_Land</Land_Mode_Garrison_Selection_Blob_Material_Name>
 		<Space_Mode_Selection_Blob_Material_Name>Selection_Rebel_Space</Space_Mode_Selection_Blob_Material_Name>
@@ -256,8 +249,7 @@
 		<!-- Faction Win/Lose Music Music -->
 		<!-- (This should include all main fighting factions, -->
 		<!-- even if its against the factions self! Factions can -->
-		<!-- fight themselves in Skirmish!) -->
-
+		<!-- fight themselves in FoC Skirmish!) -->
 		<!-- Winning AGAINST a faction (your victory music)! -->
 		<Music_Event_Tactical_Win_Vs_Faction>Rebel,			Rebel_Win_Tactical_Event</Music_Event_Tactical_Win_Vs_Faction>
 		<Music_Event_Tactical_Win_Vs_Faction>Empire,		Rebel_Win_Tactical_Event</Music_Event_Tactical_Win_Vs_Faction>

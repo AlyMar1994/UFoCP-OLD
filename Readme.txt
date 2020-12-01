@@ -74,6 +74,13 @@ Models
 
 
 ================
+Texturing
+================
+-evilbobthebob
+	- High quality map previews.
+
+
+================
 Support
 ================
 -KadVenku

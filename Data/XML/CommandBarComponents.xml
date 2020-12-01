@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <CommandBarComponents>
-	
     <CommandBarComponent Name="i_main_commandbar">
             <Model_Name>i_galactic_controls.alo</Model_Name>
             <Type>Shell</Type>
@@ -12951,5 +12950,4 @@
             <Swap_Texture>True</Swap_Texture>
             <Base_Layer>7</Base_Layer>
     </CommandBarComponent>
-
 </CommandBarComponents>

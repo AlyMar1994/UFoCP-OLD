@@ -30,8 +30,16 @@ v1.14
 
 
 ==================
+General
+==================
+-Maps – Did another map preview removal pass for maps that didn't need it, and regenerated map previews for those that did using a higher quality method.  They should look a lot better now.  (Thanks evilbobthebob!)
+
+
+==================
 A.I.
 ==================
+-(PE) AI_Equations_Underworld_Budgeting – Updated proper Underworld budgeting "Underworld_Infrastructure_Budget_Allocation" to include the Repulsorlift Jammer.
+
 -(PE) BasicLandEquations – Modified <Allowed_To_Retreat_From_Land> to prevent Hutts (as a fodder faction) from retreating.  This was to keep consistency with other changes, and keep it in line as intended with the Black Sun Pirates.
 
 -(TPL) BasicEmpireTemplates – Fixing parse errors.
@@ -39,6 +47,12 @@ A.I.
 -(TPL) BasicGenericTemplates – Fixing parse errors.
 
 -(TPL) NativeLifeTemplates – Fixing parse errors.
+
+
+==================
+Maps (Land)
+==================
+-Tatooine – Updated map preview.
 
 
 ==================
