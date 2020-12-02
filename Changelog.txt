@@ -38,9 +38,13 @@ General
 ==================
 A.I.
 ==================
+-(LUA) GalacticFreeStore – Fixed misspelling of variable "UnitServiceRate" to "UnitSercviceRate," which resulted in an improper timing for the AI to check and see whether or not they should reconsider unit/frontline positioning.  It is now checked properly every eight seconds.
+
+
 -(PE) AI_Equations_Underworld_Budgeting – Updated proper Underworld budgeting "Underworld_Infrastructure_Budget_Allocation" to include the Repulsorlift Jammer.
 
 -(PE) BasicLandEquations – Modified <Allowed_To_Retreat_From_Land> to prevent Hutts (as a fodder faction) from retreating.  This was to keep consistency with other changes, and keep it in line as intended with the Black Sun Pirates.
+
 
 -(TPL) BasicEmpireTemplates – Fixing parse errors.
 
@@ -53,6 +57,29 @@ A.I.
 Maps (Land)
 ==================
 -Tatooine – Updated map preview.
+
+
+==================
+Maps (Space)
+==================
+-Aeten II (Piracy) – Fixed not having a map preview on the battle briefing screen.
+
+-Bespin (Piracy) – Fixed not having a map preview on the battle briefing screen.
+-Bespin (Piracy, Story) – Fixed not having a map preview on the battle briefing screen.
+
+-Corellia (Piracy) – Fixed not having a map preview on the battle briefing screen.
+
+-Corulag (Piracy) – Fixed not having a map preview on the battle briefing screen.
+
+-Fondor (Piracy) – Fixed not having a map preview on the battle briefing screen.
+
+-Kessel (Piracy) – Fixed the map preview being full of graphical errors (it is an oversaturated beta map, featuring non-existant nebulae, etc).
+
+-Mandalore (Piracy) – Regenerated map preview to fix some visual errors (ships firing at each other), also incorrect size.
+-Mandalore (Piracy, Campaign) – Regenerated map preview to fix some visual errors (there's a drydock instead of the pirate station), also incorrect size.
+-Mandalore (Piracy, Prologue) – Regenerated map preview to fix some visual errors (nothing appears), also incorrect size.
+
+-Mon Calamari (Piracy) – Fixed not having a map preview on the battle briefing screen.
 
 
 ==================

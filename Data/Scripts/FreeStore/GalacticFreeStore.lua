@@ -14,7 +14,7 @@ function Base_Definitions()
 
 	-- How often does this script get serviced?
 	ServiceRate = 8
-	UnitServciceRate = 8
+	UnitServiceRate = 8
 
 	Common_Base_Definitions()
 
