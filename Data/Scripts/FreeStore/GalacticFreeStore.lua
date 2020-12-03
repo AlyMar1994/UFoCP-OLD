@@ -152,6 +152,7 @@ end
 
 function Find_Ground_Unit_Target(object)
 	local my_planet = object.Get_Planet_Location()
+	local leader_planet -- Keeping this unassigned because it is used later, and locals cannot be assigned in an if and used outside.
 	local max_force_target = 1000 * (PlayerObject.Get_Tech_Level() + 1)
 	local force_target = EvaluatePerception("Friendly_Global_Land_Unit_Raw_Total", PlayerObject)
 	local priority_planet = FindTarget.Reachable_Target(PlayerObject, "Ground_Priority_Defense_Score", "Friendly", "Friendly_Only", 0.1, object)
@@ -162,7 +163,7 @@ function Find_Ground_Unit_Target(object)
 	end
 
 	if leader_object then
-		local leader_planet = leader_object.Get_Planet_Location()
+		leader_planet = leader_object.Get_Planet_Location()
 	end
 
 	if not force_target then
@@ -217,6 +218,7 @@ end
 
 function Find_Space_Unit_Target(object)
 	local my_planet = object.Get_Planet_Location()
+	local leader_planet
 	local max_force_target = 3000 * (PlayerObject.Get_Tech_Level() + 1)
 	local force_target = EvaluatePerception("Friendly_Global_Space_Unit_Raw_Total", PlayerObject)
 	local priority_planet = FindTarget.Reachable_Target(PlayerObject, "Space_Priority_Defense_Score", "Friendly", "Friendly_Only", 0.1, object)
@@ -227,7 +229,7 @@ function Find_Space_Unit_Target(object)
 	end
 	
 	if leader_object then
-		local leader_planet = leader_object.Get_Planet_Location()
+		leader_planet = leader_object.Get_Planet_Location()
 	end
 
 	if not force_target then

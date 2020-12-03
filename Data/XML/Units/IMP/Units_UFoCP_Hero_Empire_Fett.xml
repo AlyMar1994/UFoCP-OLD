@@ -303,7 +303,7 @@
 		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
 
 		<Death_Fade_Time>0.25</Death_Fade_Time>
-		<Death_Persistence_Duration>0.00</Death_Persistence_Duration>		
+		<Death_Persistence_Duration>0.00</Death_Persistence_Duration>
 	
 		<!-- Hero unit abilities descriptions: -->
 		<Unit_Abilities_Data SubObjectList="Yes" />
@@ -521,7 +521,6 @@
 		<Is_Dummy>Yes</Is_Dummy>
 		<Damage>80</Damage>
 		<Affiliation>Empire</Affiliation>
-		<!-- <Build_Cost_Credits>-1</Build_Cost_Credits> -->
 		<Build_Time_Seconds>0</Build_Time_Seconds>
 		<Combat_Power_Value>0</Combat_Power_Value>
 		<Tech_Level>1</Tech_Level>
@@ -546,18 +545,18 @@
 
 		
 		<Unit_Abilities_Data SubObjectList="Yes">
-			<!-- Primary Ability. -->
+			<!-- Primary Ability: -->
 			<Unit_Ability>
 				<Type>FLAME_THROWER</Type>
 				<Recharge_Seconds>28.00</Recharge_Seconds>
 				<GUI_Activated_Ability_Name>Boba_Fett_Flame_Thrower</GUI_Activated_Ability_Name> <!-- GUI Command Bar support. -->
 			</Unit_Ability>
 
-			<!-- Secondary Ability. -->
+			<!-- Secondary Ability: -->
 			<Unit_Ability>
 				<Type>JET_PACK</Type>
 				<Recharge_Seconds>45.00</Recharge_Seconds>
-				<GUI_Activated_Ability_Name></GUI_Activated_Ability_Name> <!-- GUI Command Bar support. -->
+				<GUI_Activated_Ability_Name /> <!-- GUI Command Bar support. -->
 
 				<!-- Disabling these, since we now want Boba to be able to fly anywhere on the map, even into FoW -->
 				<!-- <Area_Effect_Decal_Distance>50.0</Area_Effect_Decal_Distance> -->

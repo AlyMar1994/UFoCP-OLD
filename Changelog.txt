@@ -67,6 +67,8 @@ A.I.
 ==================
 Maps (Land)
 ==================
+-Corellia – Regenerated map preview because of graphical oddities (water was nuclear green).
+
 -Tatooine – Updated map preview.
 
 
