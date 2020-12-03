@@ -749,7 +749,7 @@
 		<Tactical_Build_Prerequisites>RC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
   	</UpgradeObject>
 
-	<!-- More Garrison Units: Adds a squad of Plex Soldiers and a T2B Tank Brigade to your set of free garrison units. -->
+	<!-- More Garrison Units: Adds a squad of Plex Soldiers and a T2B Tank Brigade to your set of free garrison units.
 	<UpgradeObject Name="RL_More_Garrisons_L1_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Rebel</Affiliation>
@@ -781,6 +781,7 @@
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
   	</UpgradeObject>
+	-->
 
 	<!-- Immunity to the gameplay effects of Weather. -->
 	<UpgradeObject Name="RL_Weatherproof_Upgrade">
@@ -1459,7 +1460,7 @@
 		<Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
 	</UpgradeObject>
 
-	<!-- More Garrison Units: Adds an AT-ST company and a 2M Repulsor Tank brigade to your set of free garrison units. -->
+	<!-- More Garrison Units: Adds an AT-ST company and a 2M Repulsor Tank brigade to your set of free garrison units.
 	<UpgradeObject Name="EL_More_Garrisons_L1_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Empire</Affiliation>
@@ -1491,6 +1492,7 @@
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
+	-->
 
 	<!-- Immunity to the gameplay effects of Weather. -->
 	<UpgradeObject Name="EL_Weatherproof_Upgrade">
@@ -2185,7 +2187,7 @@
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
 
-	<!-- More Garrion Units:  Adds an 2 A-Wing and 1 Y-Wing squadron to your set of free garrison units. -->
+	<!-- More Garrison Units: Adds an 2 A-Wing and 1 Y-Wing squadron to your set of free garrison units.
 	<UpgradeObject Name="RS_More_Garrisons_L1_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Rebel</Affiliation>
@@ -2217,6 +2219,7 @@
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
+	-->
 
 
 
@@ -2945,7 +2948,7 @@
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
 
-	<!-- More Garrison Units: Adds three squadrons of TIE-Fighters and one squadron of TIE-Bombers to your set of free garrison units. -->
+	<!-- More Garrison Units: Adds three squadrons of TIE-Fighters and one squadron of TIE-Bombers to your set of free garrison units.
 	<UpgradeObject Name="ES_More_Garrisons_L1_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Empire</Affiliation>
@@ -2977,6 +2980,7 @@
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
+	-->
 
 
 

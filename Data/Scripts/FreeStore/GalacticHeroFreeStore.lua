@@ -4,7 +4,7 @@
 -- ORIGINAL AUTHOR (Petroglyph): Steve Copeland
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 10/06/2020, 10:46 PM
+-- LAST REVISION DATE: 12/03/2020, 12:01 AM
 -- ======================================================================
 require("PGCommands")
 
@@ -19,11 +19,11 @@ function Definitions()
 		EMPEROR_PALPATINE_TEAM = { "Is_Home_Planet", false },
 		GRAND_MOFF_TARKIN_TEAM = { "Is_Home_Planet", true },
 		DARTH_TEAM = { nil, false },
+		DARTH_TEAM_EXECUTOR = { nil, true },
 		GENERAL_VEERS_TEAM = { nil, false },
 		BOBA_FETT_TEAM = { nil, true },
 		PIET_TEAM = { nil, true },
 		ARC_HAMMER = { "Is_Home_Planet", true },
-		DARTH_TEAM_EXECUTOR = { nil, true },
 		ADMONITOR_STAR_DESTROYER = { nil, true },
 
 		MON_MOTHMA_TEAM = { "Is_Home_Planet", false },
@@ -46,17 +46,16 @@ function Definitions()
 end
 
 function Find_Custom_Target(object)
-	object_type = object.Get_Type()
-	object_type_name = object_type.Get_Name()
-
-	unit_entry = CustomUnitPlacement[object_type_name]
+	local object_type = object.Get_Type()
+	local object_type_name = object_type.Get_Name()
+	local unit_entry = CustomUnitPlacement[object_type_name]
 
 	if unit_entry then
-		perception = unit_entry[1]
-		prefers_space = unit_entry[2]
+		local perception = unit_entry[1]
+		local prefers_space = unit_entry[2]
 
 		if perception then
-			target = FindTarget.Reachable_Target(PlayerObject, perception, "Friendly", "No_Threat", 1.0, object)
+			local target = FindTarget.Reachable_Target(PlayerObject, perception, "Friendly", "No_Threat", 1.0, object)
 			if TestValid(target) then
 				return target
 			end

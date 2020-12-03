@@ -9,11 +9,10 @@
 require("PGStateMachine")
 
 function Definitions()
-	-- Object isn't valid at this point so don't do any operations that
-	-- would require it.
+	-- Object isn't valid at this point so don't do any operations that would require it.
 	-- State_Init is the first chance you have to do operations on Object.
-
 	DebugMessage("%s -- In Definitions", tostring(Script))
+
 	Define_State("State_Init", State_Init);
 end
 
@@ -27,14 +26,10 @@ function State_Init(message)
 		warp4 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w4")
 		warp5 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w5")
 		warp6 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w6")
-
 		underworld_player = Find_Player("Underworld") -- AM1994 (3/13/2020): Adding variable to prevent calling NIL later on.
-
-
-		Register_Prox(Object, Unit_Prox, 100, underworld_player) -- AM1994 (4/22/2020): Create a proximity event to search for Underworld player units (Urai, Tyber, Silri, Cuddles & MDUs).
-
 		closerange = false
 
+		Register_Prox(Object, Unit_Prox, 100, underworld_player) -- AM1994 (4/22/2020): Create a proximity event to search for Underworld player units (Urai, Tyber, Silri, Cuddles & MDUs).
 		Create_Thread("AdeptFour_AI")
 	end
 end
@@ -52,14 +47,15 @@ function Unit_Prox(self_obj, trigger_obj)
 end
 
 function AdeptFour_AI()
-	warptimer = 0
+	local warptimer = 0
+	local target = Find_Nearest(Object, underworld_player)
 
 	while TestValid(Object) do
-		noteleports = false
-		cage = Find_Nearest(Object, "Underworld_Ysalamiri_Cage")
+		local noteleports = false
+		local cage = Find_Nearest(Object, "Underworld_Ysalamiri_Cage")
 
 		if TestValid(cage) then
-			dist = Object.Get_Distance(cage)
+			local dist = Object.Get_Distance(cage)
 
 			if dist < 200 then
 				noteleports = true
@@ -76,7 +72,7 @@ function AdeptFour_AI()
 		warptimer = warptimer + 1
 		if not noteleports then
 			if warptimer/5 > Object.Get_Hull() then
-				rand_index = GameRandom(1, 6)
+				local rand_index = GameRandom(1, 6)
 
 				Object.Suspend_Locomotor(true)
 				Object.Play_Animation("Idle", true, 0)
@@ -103,7 +99,6 @@ function AdeptFour_AI()
 			end
 		end
 
-		target = Find_Nearest(Object, underworld_player)
 		if TestValid(target) then
 			Object.Attack_Move(target)
 		end

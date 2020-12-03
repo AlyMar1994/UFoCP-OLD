@@ -4,7 +4,7 @@
 -- ORIGINAL AUTHOR (Petroglyph): Steve Copeland
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 9/21/2020, 11:57 PM
+-- LAST REVISION DATE: 12/02/2020, 11:10 PM
 -- ======================================================================
 require("pgevents")
 
@@ -22,8 +22,9 @@ function Definitions()
 end
 
 function MainForce_Thread()
+	local pad_table = MainForce.Get_Reserved_Build_Pads()
+
 	-- Make sure we've ended up with a build location that's reasonably close to our original target.
-	pad_table = MainForce.Get_Reserved_Build_Pads()
 	for i,pad in pad_table do
 		if pad.Get_Distance(AITarget) > 120 then
 			ScriptExit()
