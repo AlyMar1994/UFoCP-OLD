@@ -116,6 +116,13 @@ end
 
 function FreeStoreService()
 	local object_count = FreeStore.Get_Object_Count()
+	MovedUnitsThisService = 0
+	GroundUnitsMoved = 0
+	GroundUnitsToMove = 0
+	SpaceUnitsMoved = 0
+	SpaceUnitsToMove = 0
+	SpaceAvailablePercent = 0
+	GroundAvailablePercent = 0
 
 	if PlayerObject.Get_Faction_Name() == "Rebel" then
 		leader_object = Find_First_Object("Mon_Mothma")
@@ -124,14 +131,6 @@ function FreeStoreService()
 	elseif PlayerObject.Get_Faction_Name() == "Underworld" then
 		leader_object = Find_First_Object("Tyber_Zann")
 	end
-
-	MovedUnitsThisService = 0
-	GroundUnitsMoved = 0
-	GroundUnitsToMove = 0
-	SpaceUnitsMoved = 0
-	SpaceUnitsToMove = 0
-	SpaceAvailablePercent = 0
-	GroundAvailablePercent = 0
 
 	if object_count ~= 0 then
 		-- Get the count of space force in the freestore:
@@ -152,7 +151,7 @@ end
 
 function Find_Ground_Unit_Target(object)
 	local my_planet = object.Get_Planet_Location()
-	local leader_planet -- Keeping this unassigned because it is used later, and locals cannot be assigned in an if and used outside.
+	local leader_planet
 	local max_force_target = 1000 * (PlayerObject.Get_Tech_Level() + 1)
 	local force_target = EvaluatePerception("Friendly_Global_Land_Unit_Raw_Total", PlayerObject)
 	local priority_planet = FindTarget.Reachable_Target(PlayerObject, "Ground_Priority_Defense_Score", "Friendly", "Friendly_Only", 0.1, object)
@@ -227,7 +226,7 @@ function Find_Space_Unit_Target(object)
 	if not my_planet then
 		return nil
 	end
-	
+
 	if leader_object then
 		leader_planet = leader_object.Get_Planet_Location()
 	end
