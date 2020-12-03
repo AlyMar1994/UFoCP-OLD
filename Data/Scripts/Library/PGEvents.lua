@@ -52,7 +52,7 @@ function GoKite(tf, unit, kite_pos, release)
 	end
 
 	if release then
-		Try_Ability(unit, "TURBO") -- Enable Turbo mode, if we have it.
+		Try_Ability(unit, "TURBO")
 		Try_Ability(unit, "JET_PACK", kite_pos)
 		Try_Ability(unit, "EJECT_VEHICLE_THIEF")
 		Try_Ability(unit, "SPRINT")
@@ -70,9 +70,7 @@ function GoKite(tf, unit, kite_pos, release)
 		tf.Release_Unit(unit)
 	else
 		if not unit.Is_On_Diversion() then
-			--MessageBox("%s -- Diverting: %s", tostring(Script), tostring(unit))
-
-			Try_Ability(unit, "TURBO") -- Enable Turbo mode, if we have it.
+			Try_Ability(unit, "TURBO")
 			Try_Ability(unit, "JET_PACK", kite_pos)
 			Try_Ability(unit, "EJECT_VEHICLE_THIEF")
 			Try_Ability(unit, "SPRINT")
@@ -91,10 +89,10 @@ function GoKite(tf, unit, kite_pos, release)
 end
 
 function Try_Good_Ground(tf, unit)
-	nearest_good_ground_indicator = Find_Nearest(unit, "Prop_Good_Ground_Area")
-	if nearest_good_ground_indicator then
-		dist_to_good_ground = unit.Get_Distance(nearest_good_ground_indicator)
+	local nearest_good_ground_indicator = Find_Nearest(unit, "Prop_Good_Ground_Area")
+	local dist_to_good_ground = unit.Get_Distance(nearest_good_ground_indicator)
 
+	if nearest_good_ground_indicator then
 		if (dist_to_good_ground < 300) and (dist_to_good_ground > 20) then
 			unit.Activate_Ability("SPREAD_OUT", false)
 			unit.Move_To(nearest_good_ground_indicator)
@@ -112,7 +110,11 @@ end
 function Respond_To_MinRange_Attacks(tf, unit)
 	DebugMessage("%s-- looking at attacker for minrange response", tostring(Script))
 
-	min_range_attackers =
+	local deadly_enemy = FindDeadlyEnemy(unit)
+	local deadly_enemy_type = deadly_enemy.Get_Type()
+	local approach_or_flee_range = ((deadly_enemy_type.Get_Max_Range() - deadly_enemy_type.Get_Min_Range()) * 2 / 3) + deadly_enemy_type.Get_Min_Range()
+
+	local min_range_attackers =
 	{
 		"R_Ground_Turbolaser_Tower",
 		"E_Ground_Turbolaser_Tower",
@@ -123,21 +125,17 @@ function Respond_To_MinRange_Attacks(tf, unit)
 		"Broadside_Class_Cruiser"
 	}
 
-	deadly_enemy = FindDeadlyEnemy(unit)
 	if TestValid(deadly_enemy) then
-		deadly_enemy_type = deadly_enemy.Get_Type()
-
 		if Is_Type_In_List(deadly_enemy_type, min_range_attackers) then
 			DebugMessage("%s -- attacked by min range attacker", tostring(Script))
-			
+
 			-- Move any units in the task force which are in range of the attacker
 			-- to a position over the max range or under the min range.
-			approach_or_flee_range = ((deadly_enemy_type.Get_Max_Range() - deadly_enemy_type.Get_Min_Range()) * 2 / 3) + deadly_enemy_type.Get_Min_Range()
-
 			for i, tf_unit in pairs(tf.Get_Unit_Table()) do
 				DebugMessage("%s -- considering run or approach for %s", tostring(Script), tostring(tf_unit))
 
-				distance = tf_unit.Get_Distance(deadly_enemy)
+				local distance = tf_unit.Get_Distance(deadly_enemy)
+
 				if distance < deadly_enemy_type.Get_Max_Range() then
 					if distance < approach_or_flee_range then
 						DebugMessage("%s -- trying to run inside min attack range", tostring(Script))
@@ -174,7 +172,7 @@ end
 
 -- Check if the passed ability is one of the type that the AI wants to turn back on when cancelled
 function IsAbilityAllowedToRecover(ability)
-	allowed_abilities =
+	local allowed_abilities =
 	{
 		"SPOILER_LOCK",
 		"TURBO"
@@ -205,16 +203,34 @@ end
 
 function Default_Unit_Destroyed()
 	DebugMessage("%s -- In Default_Unit_Destroyed.", tostring(Script))
+	return
 end
 
 function Default_Unit_Damaged(tf, unit, attacker, deliberate)
 	DebugMessage("%s -- In Default_Unit_Damaged.", tostring(Script))
-	
+
+	local lib_issued_movement_response = false
+	local lib_ability_activated = false
+	local lib_shield_level = unit.Get_Shield()
+	local lib_time_till_dead = unit.Get_Time_Till_Dead()
+	local lib_attacker_is_good_vs_me = attacker.Is_Good_Against(unit)
+	local lib_i_am_good_vs_attacker = unit.Is_Good_Against(attacker)
+	local lib_current_health = unit.Get_Hull()
+	local lib_is_hero = unit.Get_Type().Is_Hero()
+	local lib_is_fodder = unit.Has_Property("Fodder")
+	local lib_faction_name = unit.Get_Owner().Get_Faction_Name()
+	local lib_healer_property_flag = Get_Special_Healer_Property_Flag(unit)
+	local lib_should_release = lib_attacker_is_good_vs_me or lib_is_hero or (lib_current_health < 0.33)
+
+	local projectile_type = attacker.Get_Current_Projectile_Type()
+	local healer
+	local friendly = Find_Nearest(unit, PlayerObject, true)
+	local xfire_pos = Get_Most_Defended_Position(unit, PlayerObject)
+	local kite_pos
+
 	if not TestValid(unit) or not TestValid(attacker) or attacker.Is_Category("Structure") then
 		return
 	end
-
-	lib_issued_movement_response = false
 
 	-- All units but Interdictors try to maneuver against artillery and turbolasers.
 	-- Interdictors should use missile shield instead.
@@ -240,13 +256,10 @@ function Default_Unit_Damaged(tf, unit, attacker, deliberate)
 	
 	if attacker.Is_Category("Infantry") then
 		Try_Deploy_Garrison(unit, attacker, 0.5)
-
 		Try_Ability(unit, "SPREAD_OUT")
 	end
 
 	-- Use "Power to Shields" if this unit has it and it's ready.
-	lib_ability_activated = false
-	lib_shield_level = unit.Get_Shield()
 	if lib_shield_level < 0.2 then
 		lib_ability_activated = Try_Ability(unit, "INVULNERABILITY")
 	end
@@ -255,7 +268,6 @@ function Default_Unit_Damaged(tf, unit, attacker, deliberate)
 		lib_ability_activated = Try_Ability(unit, "DEFEND")
 	end
 
-	projectile_type = attacker.Get_Current_Projectile_Type()
 	if TestValid(projectile_type) then
 		if (not lib_ability_activated) and projectile_type.Is_Affected_By_Missile_Shield() then
 			lib_ability_activated = Try_Ability(unit, "SENSOR_JAMMING") or Try_Ability(unit, "MISSILE_SHIELD")
@@ -284,13 +296,6 @@ function Default_Unit_Damaged(tf, unit, attacker, deliberate)
 	else
 		-- Default handling for a dying unit in both space and land modes.
 		-- Is this unit not fodder AND do we have low health AND (we have a bad face off OR we're rapidly being killed for any reason).
-		lib_time_till_dead = unit.Get_Time_Till_Dead()
-		lib_attacker_is_good_vs_me = attacker.Is_Good_Against(unit)
-		lib_i_am_good_vs_attacker = unit.Is_Good_Against(attacker)
-		lib_current_health = unit.Get_Hull()
-		lib_is_hero = unit.Get_Type().Is_Hero()
-		lib_is_fodder = unit.Has_Property("Fodder")
-
 		if not lib_i_am_good_vs_attacker then
 			Try_Ability(unit, "DEPLOY_TROOPERS")
 		end
@@ -302,7 +307,6 @@ function Default_Unit_Damaged(tf, unit, attacker, deliberate)
 			(lib_current_health < 0.4 and not lib_i_am_good_vs_attacker) then
 
 			-- Certain factions have no self-preservation:
-			lib_faction_name = unit.Get_Owner().Get_Faction_Name()
 			if lib_faction_name == "Pirates" or lib_faction_name == "Hutts" then
 				return
 			end
@@ -311,7 +315,6 @@ function Default_Unit_Damaged(tf, unit, attacker, deliberate)
 			unit.Activate_Ability("POWER_TO_WEAPONS", false)
 
 			-- Try to find the nearest healing structure appropriate for this unit:
-			lib_healer_property_flag = Get_Special_Healer_Property_Flag(unit)
 			if not lib_healer_property_flag then
 				if unit.Is_Category("Infantry") then
 					lib_healer_property_flag = "HealsInfantry"
@@ -324,8 +327,6 @@ function Default_Unit_Damaged(tf, unit, attacker, deliberate)
 				healer = Find_Nearest(unit, lib_healer_property_flag, PlayerObject, true)
 			end
 
-			lib_should_release = lib_attacker_is_good_vs_me or lib_is_hero or (lib_current_health < 0.33)
-
 			-- Try to heal if we have a healer.
 			if healer then
 				GoHeal(tf, unit, healer, lib_should_release)
@@ -333,9 +334,6 @@ function Default_Unit_Damaged(tf, unit, attacker, deliberate)
 
 			if not lib_is_fodder then
 				-- Try to find a protected kiting location:
-				friendly = Find_Nearest(unit, PlayerObject, true)
-				xfire_pos = Get_Most_Defended_Position(unit, PlayerObject)
-
 				if xfire_pos then
 					kite_pos = Project_By_Unit_Range(attacker, xfire_pos)
 				elseif TestValid(friendly) then
@@ -352,13 +350,10 @@ function Default_Unit_Damaged(tf, unit, attacker, deliberate)
 end
 
 function Default_Original_Target_Destroyed()
-	--DebugMessage("%s -- Original target destroyed.  Aborting.", tostring(Script))
-
 	Attacking = false
 end
 
 function Default_Current_Target_Destroyed(tf)
-	--MessageBox("%s -- Current target destroyed.  Aborting.", tostring(Script))
 	Attacking = false
 
 	-- Turn off some unending abilities that might no longer be appropriate:
@@ -371,6 +366,7 @@ function Default_Original_Target_Owner_Changed(tf, old_player, new_player)
 	end
 
 	DebugMessage("%s -- Original target ownership changed.  Aborting.", tostring(Script))
+
 	ScriptExit()
 end
 
@@ -433,7 +429,6 @@ function Default_Target_In_Range(tf, unit, target)
 	end
 
 	Try_Weapon_Switch(unit, target)
-
 	GlobalValue.Set(PlayerSpecificName(PlayerObject, "CONTACT_OCCURED"), 1.0)
 end
 
@@ -457,7 +452,7 @@ function Default_Unit_Diversion_Finished(tf, unit)
 	end
 end
 
--- This fires if the countdown was going and it is now refreshed or if you come out of a nebula
+-- This fires if the countdown was going and it is now refreshed or if you come out of a nebula.
 function Default_Unit_Ability_Ready(tf, unit, ability)
 	-- Try to recover use of interrupted abilities.
 	if lib_cancelled_abilities[unit] and lib_cancelled_abilities[unit][ability] then
