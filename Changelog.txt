@@ -34,7 +34,7 @@ General
 ==================
 -Maps – Did another map preview removal pass for maps that didn't need it, and regenerated map previews for those that did using a higher quality method.  They should look a lot better now.  (Thanks evilbobthebob!)
 
--Gave a lot of Lua a clean pass of organization, functionality and better practice, including variable localization.
+-Gave all Lua in UFoCP a clean pass of organization, functionality and better practice, including variable localization.
 
 -Commented out upgrade "RL_More_Garrisons_L1_Upgrade" as it is unused.
 -Commented out upgrade "RS_More_Garrisons_L1_Upgrade" as it is unused.
@@ -46,6 +46,8 @@ General
 A.I.
 ==================
 -(LUA) GalacticFreeStore – Fixed misspelling of variable "UnitServiceRate" to "UnitSercviceRate," which resulted in an improper timing for the AI to check and see whether or not they should reconsider unit/frontline positioning.  It is now checked properly every eight seconds.
+
+-(LUA) PGEvents – Fixed a behavior that didn't include Underworld M.A.L. as a part of the AI to try to get in and/or escape the maximum attack range for "artillery" (turbolaser towers, MPTL, ect).  This was supposed to be included last update, as this *is* the Underworld's artillery, along with their skirmish turbolaser towers.
 
 -(LUA) PurchaseLandUpgradesGeneric – Fixed AI checking for unused upgrades, which cannot be purchased in skirmish, causing assertion errors.
 
