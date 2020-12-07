@@ -45,9 +45,9 @@ General
 ==================
 A.I.
 ==================
--(LUA) GalacticFreeStore – Fixed misspelling of variable "UnitServiceRate" to "UnitSercviceRate," which resulted in an improper timing for the AI to check and see whether or not they should reconsider unit/frontline positioning.  It is now checked properly every eight seconds.
+-(LUA) GalacticFreeStore – Fixed misspelling of variable "UnitServiceRate" as "UnitSercviceRate," which resulted in an improper timing for the AI to check and see whether or not they should reconsider unit/frontline positioning.  It is now checked properly every eight seconds.
 
--(LUA) PGEvents – Fixed a behavior that didn't include Underworld M.A.L. as a part of the AI to try to get in and/or escape the maximum attack range for "artillery" (turbolaser towers, MPTL, ect).  This was supposed to be included last update, as this *is* the Underworld's artillery, along with their skirmish turbolaser towers.
+-(LUA) PGEvents – Fixed a behavior that didn't include Underworld M.A.L. as a part of the AI to try to get in and/or escape the maximum attack range for "artillery" (turbolaser towers, MPTL, SPMA-T, etc).  This was supposed to be included last update, as this *is* the Underworld's artillery, along with their skirmish turbolaser towers.
 
 -(LUA) PurchaseLandUpgradesGeneric – Fixed AI checking for unused upgrades, which cannot be purchased in skirmish, causing assertion errors.
 
@@ -80,7 +80,7 @@ Maps (Space)
 -Aeten II (Piracy) – Fixed not having a map preview on the battle briefing screen.
 
 -Bespin (Piracy) – Fixed not having a map preview on the battle briefing screen.
--Bespin (Piracy, Story) – Fixed not having a map preview on the battle briefing screen.
+-Bespin (Piracy, Campaign) – Fixed not having a map preview on the battle briefing screen.
 
 -Corellia (Piracy) – Fixed not having a map preview on the battle briefing screen.
 
@@ -124,7 +124,7 @@ Textures
 
 -NB_YsalamiriTree_B – Added bumpmap to the Ysalamiri Tree.  A bumpmap was never created for it, despite the model trying to find one.
 
--W_RivRock00_B – Added bumpmap to the RiverRock00 texture.  A bumpmap was never created for it, despite map environments trying to find one.
+-W_RivRock00_B – Added bumpmap to the RiverRock00 texture.  A bumpmap was never created for it, despite Nal Hutta map environment trying to find one.
 
 
 =========================================================================================

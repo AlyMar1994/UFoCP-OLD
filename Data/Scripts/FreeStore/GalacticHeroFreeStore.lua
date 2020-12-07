@@ -4,7 +4,7 @@
 -- ORIGINAL AUTHOR (Petroglyph): Steve Copeland
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 12/03/2020, 12:01 AM
+-- LAST REVISION DATE: 12/04/2020, 1:25 PM
 -- ======================================================================
 require("PGCommands")
 
@@ -49,13 +49,16 @@ function Find_Custom_Target(object)
 	local object_type = object.Get_Type()
 	local object_type_name = object_type.Get_Name()
 	local unit_entry = CustomUnitPlacement[object_type_name]
+	local perception
+	local prefers_space
+	local target
 
 	if unit_entry then
-		local perception = unit_entry[1]
-		local prefers_space = unit_entry[2]
+		perception = unit_entry[1]
+		prefers_space = unit_entry[2]
 
 		if perception then
-			local target = FindTarget.Reachable_Target(PlayerObject, perception, "Friendly", "No_Threat", 1.0, object)
+			target = FindTarget.Reachable_Target(PlayerObject, perception, "Friendly", "No_Threat", 1.0, object)
 			if TestValid(target) then
 				return target
 			end
