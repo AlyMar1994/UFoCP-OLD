@@ -43,6 +43,7 @@ end
 function MoveUnit(object)
 	local dest_target = nil
 	local object_type = object.Get_Type()
+
 	if object_type.Is_Hero() then
 		dest_target = Find_Custom_Target(object)
 	end
@@ -133,11 +134,8 @@ function FreeStoreService()
 	end
 
 	if object_count ~= 0 then
-		-- Get the count of space force in the freestore:
-		local scnt = FreeStore.Get_Object_Count(true)
-
-		-- Get the count of ground force in the freestore:
-		local gcnt = FreeStore.Get_Object_Count(false)
+		local scnt = FreeStore.Get_Object_Count(true) -- Get the count of space force in the freestore.
+		local gcnt = FreeStore.Get_Object_Count(false) -- Get the count of ground force in the freestore.
 
 		SpaceAvailablePercent = scnt / object_count
 		GroundAvailablePercent = gcnt / object_count
@@ -152,10 +150,10 @@ end
 function Find_Ground_Unit_Target(object)
 	local my_planet = object.Get_Planet_Location()
 	local leader_planet
-	local max_force_target = 1000 * (PlayerObject.Get_Tech_Level() + 1)
-	local force_target = EvaluatePerception("Friendly_Global_Land_Unit_Raw_Total", PlayerObject)
-	local priority_planet = FindTarget.Reachable_Target(PlayerObject, "Ground_Priority_Defense_Score", "Friendly", "Friendly_Only", 0.1, object)
-	local poorly_defended_planet = FindTarget.Reachable_Target(PlayerObject, "Low_Ground_Defense_Score", "Friendly", "Friendly_Only", 1.0, object)
+	local max_force_target
+	local force_target
+	local priority_planet
+	local poorly_defended_planet
 
 	if FreeStore.Is_Unit_Safe(object) == false then
 		my_planet = nil
@@ -165,6 +163,8 @@ function Find_Ground_Unit_Target(object)
 		leader_planet = leader_object.Get_Planet_Location()
 	end
 
+	max_force_target = 1000 * (PlayerObject.Get_Tech_Level() + 1)
+	force_target = EvaluatePerception("Friendly_Global_Land_Unit_Raw_Total", PlayerObject)
 	if not force_target then
 		return nil
 	end
@@ -182,6 +182,7 @@ function Find_Ground_Unit_Target(object)
 		end
 	end
 
+	priority_planet = FindTarget.Reachable_Target(PlayerObject, "Ground_Priority_Defense_Score", "Friendly", "Friendly_Only", 0.1, object)
 	if priority_planet then
 		priority_planet = priority_planet.Get_Game_Object()
 
@@ -196,6 +197,7 @@ function Find_Ground_Unit_Target(object)
 		return nil
 	end
 
+	poorly_defended_planet = FindTarget.Reachable_Target(PlayerObject, "Low_Ground_Defense_Score", "Friendly", "Friendly_Only", 1.0, object)
 	if poorly_defended_planet then
 		poorly_defended_planet = poorly_defended_planet.Get_Game_Object()
 
@@ -218,10 +220,10 @@ end
 function Find_Space_Unit_Target(object)
 	local my_planet = object.Get_Planet_Location()
 	local leader_planet
-	local max_force_target = 3000 * (PlayerObject.Get_Tech_Level() + 1)
-	local force_target = EvaluatePerception("Friendly_Global_Space_Unit_Raw_Total", PlayerObject)
-	local priority_planet = FindTarget.Reachable_Target(PlayerObject, "Space_Priority_Defense_Score", "Friendly", "Friendly_Only", 0.1, object)
-	local poorly_defended_planet = FindTarget.Reachable_Target(PlayerObject, "Low_Space_Defense_Score", "Friendly", "Friendly_Only", 1.0, object)
+	local max_force_target
+	local force_target
+	local priority_planet
+	local poorly_defended_planet
 
 	if not my_planet then
 		return nil
@@ -231,6 +233,8 @@ function Find_Space_Unit_Target(object)
 		leader_planet = leader_object.Get_Planet_Location()
 	end
 
+	max_force_target = 3000 * (PlayerObject.Get_Tech_Level() + 1)
+	force_target = EvaluatePerception("Friendly_Global_Space_Unit_Raw_Total", PlayerObject)
 	if not force_target then
 		return nil
 	end
@@ -248,6 +252,7 @@ function Find_Space_Unit_Target(object)
 		end
 	end
 
+	priority_planet = FindTarget.Reachable_Target(PlayerObject, "Space_Priority_Defense_Score", "Friendly", "Friendly_Only", 0.1, object)
 	if priority_planet then
 		priority_planet = priority_planet.Get_Game_Object()
 
@@ -264,6 +269,7 @@ function Find_Space_Unit_Target(object)
 		return nil
 	end
 
+	poorly_defended_planet = FindTarget.Reachable_Target(PlayerObject, "Low_Space_Defense_Score", "Friendly", "Friendly_Only", 1.0, object)
 	if poorly_defended_planet then
 		poorly_defended_planet = poorly_defended_planet.Get_Game_Object()
 
