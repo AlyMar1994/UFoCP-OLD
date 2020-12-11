@@ -16,7 +16,8 @@ function Definitions()
 		{
 			"MainForce",
 			"TaskForceRequired",
-			"UC_Empire_Buildable_Anti_Infantry_Turret | UC_Rebel_Buildable_Anti_Infantry_Turret | UC_Underworld_Buildable_Torpedo_Turret | UC_Pirate_Buildable_Anti_Infantry_Turret | UC_Hutt_Rapid_Fire_Laser_Turret = 1"
+			"UC_Empire_Buildable_Anti_Infantry_Turret | UC_Rebel_Buildable_Anti_Infantry_Turret | UC_Underworld_Buildable_Torpedo_Turret = 1",
+			"UC_Pirate_Buildable_Anti_Infantry_Turret | UC_Hutt_Rapid_Fire_Laser_Turret = 1"
 		}
 	}
 end
