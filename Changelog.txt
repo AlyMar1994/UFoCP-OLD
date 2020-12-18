@@ -59,15 +59,21 @@ A.I.
 -(PE) BasicLandEquations – Modified <Allowed_To_Retreat_From_Land> to prevent Hutts (as a fodder faction) from retreating.  This was to keep consistency with other changes, and keep it in line as intended with the Black Sun Pirates.
 
 
--(TPL) BasicEmpireTemplates – Fixing parse errors.
+-(TPL) BasicEmpireTemplates – Fixing parsing errors.
 
--(TPL) BasicGenericTemplates – Fixing parse errors.
+-(TPL) BasicGenericTemplates – Fixing parsing errors.
 
--(TPL) NativeLifeTemplates – Fixing parse errors.
+-(TPL) NativeLifeTemplates – Fixing parsing errors.
 
 
 ==================
-Maps (Land)
+Maps/Planets (Galactic)
+==================
+-Corellia
+
+
+==================
+Maps/Planets (Land)
 ==================
 -Corellia – Regenerated map preview because of graphical oddities (water was nuclear green).
 
@@ -75,7 +81,7 @@ Maps (Land)
 
 
 ==================
-Maps (Space)
+Maps/Planets (Space)
 ==================
 -Aeten II (Piracy) – Fixed not having a map preview on the battle briefing screen.
 
@@ -217,15 +223,15 @@ Factions
 
 
 ==================
+Maps/Planets (Galactic)
+==================
+-Added a galactic-level icon for Corruption type "Piracy," so when a planet gets corrupted it visibly shows Piracy affects the planet (originally, Petro never included an icon in-game).  It looks like ass, but it fixes the issue right now.
+
+
+==================
 Maps/Planets (Space)
 ==================
 -Fixed space obstacle "Nebula Friggin Huge Ion" not actually being considered an ion storm in-game.  This caused "friggin huge" ion storm on maps like space skirmish Felucia to *not* act like an ion storm, and only a nebula.
-
-
-==================
-Planets (Galactic)
-==================
--Added a galactic-level icon for Corruption type "Piracy," so when a planet gets corrupted it visibly shows Piracy affects the planet (originally, Petro never included an icon in-game).  It looks like ass, but it fixes the issue right now.
 
 
 ==================
@@ -449,7 +455,7 @@ A.I.
 
 
 ==================
-Planets (Galactic)
+Maps/Planets (Galactic)
 ==================
 -Fixed planets using inconsistent higher-than-average credit value texts, which could result in text oddities. Now all consolidated under one string entry, and are all consistent.
 

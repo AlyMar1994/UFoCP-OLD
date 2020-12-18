@@ -1445,7 +1445,7 @@
 			<Reduce_Production_Price_Ability Name="Corellia_Corellian_Corvette_Production_Boost">
 				<Unit_Strength_Category />
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types> Corellian_Corvette </Applicable_Unit_Types>
+				<Applicable_Unit_Types>Corellian_Corvette, Corellian_Corvette_Underworld</Applicable_Unit_Types>
 				<Price_Reduction_Percentage>0.20</Price_Reduction_Percentage>
 				<Stacking_Category>9</Stacking_Category>
 				<Galaxy_Wide> Yes </Galaxy_Wide>
