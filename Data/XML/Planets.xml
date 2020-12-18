@@ -5716,8 +5716,12 @@
 		<Additional_Population_Capacity>5</Additional_Population_Capacity>
 
 		<Abilities SubObjectList="Yes">
-			<Galaxy_Wide_Upgrade_Ability Name="Vergesso_Upgrade_Bonus">
+			<Galaxy_Wide_Upgrade_Ability Name="R_Vergesso_Upgrade_Bonus">
 				<Space_Upgrade_Type>RS_Improved_Weapons_L1_Upgrade</Space_Upgrade_Type>
+				<Land_Upgrade_Type />
+			</Galaxy_Wide_Upgrade_Ability>
+			<Galaxy_Wide_Upgrade_Ability Name="U_Vergesso_Upgrade_Bonus">
+				<Space_Upgrade_Type>US_Improved_Weapons_L1_Upgrade</Space_Upgrade_Type>
 				<Land_Upgrade_Type />
 			</Galaxy_Wide_Upgrade_Ability>
 		</Abilities>
