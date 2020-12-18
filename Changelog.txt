@@ -69,7 +69,7 @@ A.I.
 ==================
 Maps/Planets (Galactic)
 ==================
--Corellia
+-Corellia – Fixed planetary buff not reducing the price of Underworld Corellian Corvettes by 20%.
 
 
 ==================
