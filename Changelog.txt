@@ -69,9 +69,21 @@ A.I.
 ==================
 Maps/Planets (Galactic)
 ==================
+-Bestine – Fixed planetary buff not reducing the price of Underworld Acclamator Assault Ships by 20%.
+
+-Carida – Fixed planetary buff not reducing the price of Underworld infantry by 20%.
+
 -Corellia – Fixed planetary buff not reducing the price of Underworld Corellian Corvettes by 20%.
 
--Vergesso Asteroids – Fixed Underworld version of the A-wing and Z-95 Headhunter not benefiting from the 25% damage buff (created a new upgrade for the planet with the upgraded units).
+-Corulag – Fixed planetary buff not reducing the price of Underworld infantry by 20%.
+
+-Fresia – Fixed planetary buff not reducing the price of the Underworld A-wing squadron by 20%.
+
+-Sullust – Fixed planetary buff not reducing the price of Underworld Tartan Patrol Cruisers by 20%.
+
+-Vergesso Asteroids – Fixed planetary buff not applying a 25% damage boost on the Underworld A-wing or Z-95.
+
+-Yavin 4 – Fixed planetary buff not applying a 25% shield boost on the Underworld A-wing or Z-95.
 
 
 ==================

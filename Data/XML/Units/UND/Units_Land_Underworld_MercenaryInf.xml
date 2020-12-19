@@ -1,7 +1,5 @@
 <?xml version="1.0"?>
 <Underworld_Mercenary_Infantry_Data>
-
-
 	<GroundInfantry Name="Underworld_Merc">
 		<LOD_Bias>5</LOD_Bias>
 		<Text_ID>TEXT_UNIT_UNDERWORLD_MERC</Text_ID>

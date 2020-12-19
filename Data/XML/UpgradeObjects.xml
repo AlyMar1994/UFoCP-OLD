@@ -1568,6 +1568,47 @@
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
 
+	<!-- Enhanced Shielding (Level 1): Fighters gain a 25% bonus to shield strength. -->
+	<!-- AM1994 (12/18/2020) - FIXES ISSUE WITH YAVIN 4 NOT BOOSTING UNDERWORLD FIGHTERS. -->
+	<UpgradeObject Name="US_Enhanced_Shielding_L1_Upgrade">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 850 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>160</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 30 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Previous_Upgrade_Level_Type />
+		<Next_Upgrade_Level_Type> RS_Enhanced_Shielding_L2_Upgrade </Next_Upgrade_Level_Type>
+		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_multi_enhanced_shield1.tga</Icon_Name>
+		
+		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_RS_ENHANCED_SHIELDING_L1  </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DEFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UPGRADE_RS_ENHANCED_SHIELDING_L1 </Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="RS_Enhanced_Shielding_L1_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>A-Wing_Underworld, Z-95_Headhunter_Underworld</Applicable_Unit_Types>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.25</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+		<CategoryMask>Upgrade</CategoryMask>
+	</UpgradeObject>
+
 	<!-- Enhanced Shielding (Level 2): Fighters and Frigates gain a 25% bonus to shield strength. -->
 	<UpgradeObject Name="RS_Enhanced_Shielding_L2_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
