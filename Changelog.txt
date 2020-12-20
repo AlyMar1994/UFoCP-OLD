@@ -147,6 +147,12 @@ Textures
 -W_RivRock00_B – Added bumpmap to the RiverRock00 texture.  A bumpmap was never created for it, despite Nal Hutta map environment trying to find one.
 
 
+==================
+Units (Land)
+==================
+-Underworld Mercenary Infantry – Fixed unit container using incorrect damage values for the STIM_PACK ability.
+
+
 =========================================================================================
 
 

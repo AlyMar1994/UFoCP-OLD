@@ -317,7 +317,7 @@
 	</GroundVehicle>
 
 
-	<!--MAIN: TEAM-->
+	<!-- MAIN: TEAM -->
 	<GroundCompany Name="Canderous_Assault_Tank_Company">
 		<Text_ID>TEXT_UNIT_CANDEROUS_TANK_COMPANY</Text_ID>
 		<Encyclopedia_Good_Against>Snowspeeder AT_AT_Walker M1_Repulsor_Tank</Encyclopedia_Good_Against>
