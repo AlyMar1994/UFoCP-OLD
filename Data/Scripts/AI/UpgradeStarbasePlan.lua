@@ -20,9 +20,7 @@ function Definitions()
 	{
 		{
 			"BaseForce",
-			"Rebel_Star_Base_1 | Rebel_Star_Base_2 | Rebel_Star_Base_3 | Rebel_Star_Base_4 | Rebel_Star_Base_5 = 1",
-			"Empire_Star_Base_1 | Empire_Star_Base_2 | Empire_Star_Base_3 | Empire_Star_Base_4 | Empire_Star_Base_5 = 1",
-			"Underworld_Star_Base_1 | Underworld_Star_Base_2 | Underworld_Star_Base_3 | Underworld_Star_Base_4 | Underworld_Star_Base_5 = 1"
+			"Rebel_Star_Base_1 | Rebel_Star_Base_2 | Rebel_Star_Base_3 | Rebel_Star_Base_4 | Rebel_Star_Base_5 | Empire_Star_Base_1 | Empire_Star_Base_2 | Empire_Star_Base_3 | Empire_Star_Base_4 | Empire_Star_Base_5 | Underworld_Star_Base_1 | Underworld_Star_Base_2 | Underworld_Star_Base_3 | Underworld_Star_Base_4 | Underworld_Star_Base_5 = 1"
 		}
 	}
 

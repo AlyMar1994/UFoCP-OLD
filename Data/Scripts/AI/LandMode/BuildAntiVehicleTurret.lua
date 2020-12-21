@@ -16,8 +16,7 @@ function Definitions()
 		{
 			"MainForce",
 			"TaskForceRequired",
-			"UC_Empire_Buildable_Anti_Vehicle_Turret | UC_Rebel_Buildable_Anti_Vehicle_Turret | UC_Underworld_Buildable_Mass_Driver_Turret = 1",
-			"UC_Pirate_Buildable_Anti_Vehicle_Turret | UC_Hutt_Grenade_Mortar = 1"
+			"UC_Empire_Buildable_Anti_Vehicle_Turret | UC_Rebel_Buildable_Anti_Vehicle_Turret | UC_Underworld_Buildable_Mass_Driver_Turret | UC_Pirate_Buildable_Anti_Vehicle_Turret | UC_Hutt_Grenade_Mortar = 1"
 		}
 	}
 end
