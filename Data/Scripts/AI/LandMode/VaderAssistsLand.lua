@@ -39,6 +39,7 @@ function MainForce_Thread()
 
 	if not TestValid(vader) then
 		MessageBox("unexpected state; vader unavailable")
+
 		ScriptExit()
 	end
 

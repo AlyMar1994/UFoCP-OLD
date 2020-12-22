@@ -4,7 +4,7 @@
 -- ORIGINAL AUTHOR (Petroglyph): James Yarrow
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 12/02/2020, 10:45 PM
+-- LAST REVISION DATE: 12/22/2020, 6:40 PM
 -- ======================================================================
 require("PGEvents")
 
@@ -28,10 +28,10 @@ function Definitions()
 end
 
 function ReserveForce_Thread()
-	local tech_level = PlayerObject.Get_Tech_Level()
-	local min_credits = 2000
-	local current_sleep_seconds = 0
-	local max_sleep_seconds = 120
+	local tech_level
+	local min_credits
+	local current_sleep_seconds
+	local max_sleep_seconds
 
 	BlockOnCommand(ReserveForce.Produce_Force())
 	ReserveForce.Set_Plan_Result(true)
@@ -39,12 +39,16 @@ function ReserveForce_Thread()
 
 	-- Give some time to accumulate money.
 	-- Depending on the tech level, sleep until we have enough to purchase an upgrade.
+	tech_level = PlayerObject.Get_Tech_Level()
+	min_credits = 2000
 	if tech_level == 2 then
 		min_credits = 4000
 	elseif tech_level >= 3 then
 		min_credits = 6000
 	end
 
+	current_sleep_seconds = 0
+	max_sleep_seconds = 120
 	while (PlayerObject.Get_Credits() < min_credits) and (current_sleep_seconds < max_sleep_seconds) do
 		current_sleep_seconds = current_sleep_seconds + 1
 		Sleep(1)

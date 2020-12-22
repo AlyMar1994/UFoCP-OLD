@@ -112,7 +112,7 @@ end
 function Respond_To_MinRange_Attacks(tf, unit)
 	DebugMessage("%s-- looking at attacker for minrange response", tostring(Script))
 
-	local deadly_enemy = FindDeadlyEnemy(unit)
+	local deadly_enemy
 	local deadly_enemy_type
 	local approach_or_flee_range
 	local distance
@@ -129,6 +129,7 @@ function Respond_To_MinRange_Attacks(tf, unit)
 		"Broadside_Class_Cruiser"
 	}
 
+	deadly_enemy = FindDeadlyEnemy(unit)
 	if TestValid(deadly_enemy) then
 		deadly_enemy_type = deadly_enemy.Get_Type()
 

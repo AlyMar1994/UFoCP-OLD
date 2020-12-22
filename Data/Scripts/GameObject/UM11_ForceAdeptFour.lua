@@ -4,7 +4,7 @@
 -- ORIGINAL AUTHOR (Petroglyph): James Yarrow
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 3/13/2020, 3:46 PM
+-- LAST REVISION DATE: 12/22/2020, 6:46 PM
 -- ======================================================================
 require("PGStateMachine")
 
@@ -18,8 +18,6 @@ end
 
 function State_Init(message)
 	if message == OnEnter then
-		-- AM1994 (3/13/2020): Initialized variables.
-		-- Teleport hints for the Master Force Adept (ultimate boss of UM11).
 		warp1 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w1")
 		warp2 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w2")
 		warp3 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w3")
@@ -29,7 +27,7 @@ function State_Init(message)
 		underworld_player = Find_Player("Underworld") -- AM1994 (3/13/2020): Adding variable to prevent calling NIL later on.
 		closerange = false
 
-		Register_Prox(Object, Unit_Prox, 100, underworld_player) -- AM1994 (4/22/2020): Create a proximity event to search for Underworld player units (Urai, Tyber, Silri, Cuddles & MDUs).
+		Register_Prox(Object, Unit_Prox, 100, underworld_player)
 		Create_Thread("AdeptFour_AI")
 	end
 end
@@ -49,13 +47,17 @@ end
 function AdeptFour_AI()
 	local warptimer = 0
 	local target = Find_Nearest(Object, underworld_player)
+	local noteleports
+	local cage
+	local dist
+	local rand_index
 
 	while TestValid(Object) do
-		local noteleports = false
-		local cage = Find_Nearest(Object, "Underworld_Ysalamiri_Cage")
+		noteleports = false
+		cage = Find_Nearest(Object, "Underworld_Ysalamiri_Cage")
 
 		if TestValid(cage) then
-			local dist = Object.Get_Distance(cage)
+			dist = Object.Get_Distance(cage)
 
 			if dist < 200 then
 				noteleports = true
@@ -72,7 +74,7 @@ function AdeptFour_AI()
 		warptimer = warptimer + 1
 		if not noteleports then
 			if warptimer/5 > Object.Get_Hull() then
-				local rand_index = GameRandom(1, 6)
+				rand_index = GameRandom(1, 6)
 
 				Object.Suspend_Locomotor(true)
 				Object.Play_Animation("Idle", true, 0)

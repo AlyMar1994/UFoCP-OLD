@@ -43,7 +43,6 @@ end
 function MoveUnit(object)
 	local dest_target = nil
 	local object_type = object.Get_Type()
-
 	if object_type.Is_Hero() then
 		dest_target = Find_Custom_Target(object)
 	end
@@ -116,7 +115,7 @@ function On_Unit_Added(object)
 end
 
 function FreeStoreService()
-	local object_count = FreeStore.Get_Object_Count()
+	local object_count
 	MovedUnitsThisService = 0
 	GroundUnitsMoved = 0
 	GroundUnitsToMove = 0
@@ -133,6 +132,7 @@ function FreeStoreService()
 		leader_object = Find_First_Object("Tyber_Zann")
 	end
 
+	object_count = FreeStore.Get_Object_Count()
 	if object_count ~= 0 then
 		local scnt = FreeStore.Get_Object_Count(true) -- Get the count of space force in the freestore.
 		local gcnt = FreeStore.Get_Object_Count(false) -- Get the count of ground force in the freestore.
