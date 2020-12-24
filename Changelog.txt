@@ -142,6 +142,8 @@ Textures
 
 -I_Button_Corruption_Piracy_G – Made the Piracy galactic icon look a lot better.  Should be more vanilla-styled.
 
+-I_Galactic_Dashboard_Skirmish (Empire) – Fixed dashboard texture to stop overlap from the on-screen menu button, and the UI box containing all of the option buttons.  Also optimized texture with better compression (DXT5, no mipmaps included to prevent quality differences on lower settings).
+
 -NB_YsalamiriTree_B – Added bumpmap to the Ysalamiri Tree.  A bumpmap was never created for it, despite the model trying to find one.
 
 -W_RivRock00_B – Added bumpmap to the RiverRock00 texture.  A bumpmap was never created for it, despite Nal Hutta map environment trying to find one.
@@ -150,7 +152,7 @@ Textures
 ==================
 Units (Land)
 ==================
--Underworld Mercenary Infantry – Fixed unit container using incorrect damage values for the STIM_PACK ability.
+-Grenadiers – Fixed unit container using incorrect damage values for the STIM_PACK ability.
 
 
 =========================================================================================
