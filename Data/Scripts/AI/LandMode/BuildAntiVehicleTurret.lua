@@ -6,7 +6,7 @@
 --
 -- LAST REVISION DATE: 12/22/2020, 6:25 PM
 -- ======================================================================
-require("PGEents")
+require("PGEvents")
 
 -- Build a single turret.
 function Definitions()
