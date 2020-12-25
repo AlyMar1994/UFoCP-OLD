@@ -91,6 +91,9 @@ Maps/Planets (Land)
 ==================
 -Corellia – Regenerated map preview because of graphical oddities (water was nuclear green).
 
+-Honoghr (Intimidation) – Regenerated map preview to fix some visual errors (water, objective markers).
+-Honoghr (Intimidation, Campaign) – Regenerated map preview.  The entire thing itself was a visual error (oversaturated/bad colors, improper geometry, too small, unused map modifications, etc.).
+
 -Tatooine – Updated map preview.
 
 
