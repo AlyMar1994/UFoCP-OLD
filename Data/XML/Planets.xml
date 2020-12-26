@@ -263,7 +263,7 @@
 		
 	</Planet>
 
-	<!-- ALYMAR1994 (2/2/2020): Implemented using EaW values to fix -->
+	<!-- ALYMAR1994 (02/02/2020): Implemented using EaW values to fix -->
 	<!-- skirmish map. -->
 	<Planet Name="Alderaan">
  		<Zoomed_Terrain_Index>0</Zoomed_Terrain_Index>
@@ -330,10 +330,9 @@
 		</Abilities>
 	</Planet>
 
-	<!-- ALYMAR1994 (2/2/2020): EXPANSION PLANET (custom made) -->
-	<!-- A duplication of the original dead Alderaan, this is to -->
-	<!-- replace all instances of the alive Alderaan (above) in GC to -->
-	<!-- fix a Skirmish map. -->
+	<!-- ALYMAR1994 (02/02/2020): EXPANSION PLANET (custom made) -->
+	<!-- The original dead Alderaan, to replace all instances of the alive Alderaan (above) -->
+	<!-- in GC to fix a Skirmish map. -->
 	<Planet Name="Alderaan_Dead">
  		<Zoomed_Terrain_Index>8</Zoomed_Terrain_Index>
 		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_ALDERAAN</Text_ID>
