@@ -58,6 +58,14 @@ A.I.
 
 -(PE) BasicLandEquations – Modified <Allowed_To_Retreat_From_Land> to prevent Hutts (as a fodder faction) from retreating.  This was to keep consistency with other changes, and keep it in line as intended with the Black Sun Pirates.
 
+-(PE) DefensiveGalacticEquations – Modified <Defense_Level> to accurate account for Underworld Repulsorlift Jammers.  Was searching for "Ground_Gravity_Generator" instead of "U_Ground_Gravity...."
+
+-(PE) DefensiveGalacticEquations – Modified <Ground_Priority_Defense_Score> to accurate account for Underworld Repulsorlift Jammers.  Was searching for "Ground_Gravity_Generator" instead of "U_Ground_Gravity...."
+
+-(PE) OffensiveGalacticEquations – Modified <Need_To_Flush_MajorItem_Budget> money trickle-down system to include the Death_Star_II (FoC) instead of just Death_Star (EaW).  This increases AI prioritization towards priority items (like tech-levels), and only stops if the DS2 is built, or if any more space forces are needed.
+
+-(PE) OffensiveGalacticEquations – Modified <Should_Conquer_Opponent_Planet> to include Death_Star_II.  Hopefully, the AI will be a bit more disuaded to ram the DS2 unless they have an appropriate unit.
+
 
 -(TPL) BasicEmpireTemplates – Fixing parsing errors.
 
