@@ -84,6 +84,8 @@
 		<Shield_Refresh_Rate>45</Shield_Refresh_Rate>
 		<Energy_Capacity>9000</Energy_Capacity>
 		<Energy_Refresh_Rate>9000</Energy_Refresh_Rate>
+		<Requires_Base_Power>True</Requires_Base_Power>
+
 		<Victory_Relevant>yes</Victory_Relevant>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
@@ -279,7 +281,8 @@
 		<Shield_Refresh_Rate>25</Shield_Refresh_Rate>
 		<Energy_Capacity>9000</Energy_Capacity>
 		<Energy_Refresh_Rate>9000</Energy_Refresh_Rate>
-				
+		<Requires_Base_Power>True</Requires_Base_Power>
+
 		<Victory_Relevant>yes</Victory_Relevant>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
@@ -447,7 +450,8 @@
 		<Shield_Refresh_Rate>25</Shield_Refresh_Rate>
 		<Energy_Capacity>9000</Energy_Capacity>
 		<Energy_Refresh_Rate>9000</Energy_Refresh_Rate>
-				
+		<Requires_Base_Power>True</Requires_Base_Power>
+
 		<Victory_Relevant>yes</Victory_Relevant>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
@@ -611,7 +615,8 @@
 		<Shield_Refresh_Rate>28</Shield_Refresh_Rate>
 		<Energy_Capacity>9000</Energy_Capacity>
 		<Energy_Refresh_Rate>9000</Energy_Refresh_Rate>
-				
+		<Requires_Base_Power>True</Requires_Base_Power>
+
 		<Victory_Relevant>yes</Victory_Relevant>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
 		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>

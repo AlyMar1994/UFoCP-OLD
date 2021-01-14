@@ -76,13 +76,14 @@
 		<CategoryMask> Infantry </CategoryMask>
 		<MovementClass> Infantry </MovementClass>
 		<SurfaceFX_Name>Generic_Footprint, Infantry_Terrain_Modifier</SurfaceFX_Name>
-		<SFXEvent_Select> Unit_Select_Assault_Squad </SFXEvent_Select>         		
-		<SFXEvent_Move> Unit_Move_Assault_Squad </SFXEvent_Move>  
+
+		<SFXEvent_Select> Unit_Select_Assault_Squad </SFXEvent_Select>
+		<SFXEvent_Move> Unit_Move_Assault_Squad </SFXEvent_Move>
 		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Assault_Squad</SFXEvent_Fleet_Move>
-		<SFXEvent_Attack> Unit_Attack_Assault_Squad </SFXEvent_Attack>         		 
-		<SFXEvent_Guard> Unit_Guard_Assault_Squad </SFXEvent_Guard>            		 
-		<SFXEvent_Assist_Move> Unit_Assist_Move_Assault_Squad </SFXEvent_Assist_Move>		
-		<SFXEvent_Assist_Attack> Unit_Assist_Attack_Assault_Squad </SFXEvent_Assist_Attack> 
+		<SFXEvent_Attack> Unit_Attack_Assault_Squad </SFXEvent_Attack>
+		<SFXEvent_Guard> Unit_Guard_Assault_Squad </SFXEvent_Guard>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_Assault_Squad </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_Assault_Squad </SFXEvent_Assist_Attack>
 		<Death_SFXEvent_Start_Die>Unit_Underworld_Soldier_2_Death</Death_SFXEvent_Start_Die>
 		<SFXEvent_Fire>Unit_Storm_Trooper_Fire</SFXEvent_Fire>
 

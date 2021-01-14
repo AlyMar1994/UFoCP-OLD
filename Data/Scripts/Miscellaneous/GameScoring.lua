@@ -20,7 +20,6 @@ function Base_Definitions()
 	frag_index = 1
 	death_index = 2
 	GameStartTime = 0
-
 	CampaignGame = false
 
 	Reset_Stats()
@@ -865,6 +864,29 @@ function Get_Game_Stat_For_Control_ID(player, control_id, for_tactical)
 	else
 		MessageBox("Unknown control id %s:%s for Get_Game_Stat_For_Control_ID", type(control_id), tostring(control_id));
 	end
+end
+
+-- This function updates the table of GameSpy game stats.
+-- DISABLED due to removal of GameSpy.
+function Update_GameSpy_Game_Stats()
+	return
+end
+
+-- This function updates the table of GameSpy player kill stats.
+-- DISABLED due to removal of GameSpy.
+-- ============================================
+-- @param stat_table		the stat table we should pull stats from
+-- @param player			the player who's stats we need to update.
+function Update_GameSpy_Kill_Stats(stat_table, build_stats, player)
+	return
+end
+
+-- This function updates the table of GameSpy player stats.
+-- DISABLED due to removal of GameSpy.
+-- ============================================
+-- @param player		the player who's stats we need to update.
+function Update_GameSpy_Player_Stats(player)
+	return
 end
 
 function Get_Current_Winner_By_Score()

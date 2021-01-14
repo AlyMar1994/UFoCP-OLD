@@ -263,7 +263,7 @@
 		
 	</Planet>
 
-	<!-- ALYMAR1994 (2/2/2020): Implemented using EaW values to fix -->
+	<!-- ALYMAR1994 (02/02/2020): Implemented using EaW values to fix -->
 	<!-- skirmish map. -->
 	<Planet Name="Alderaan">
  		<Zoomed_Terrain_Index>0</Zoomed_Terrain_Index>
@@ -330,10 +330,9 @@
 		</Abilities>
 	</Planet>
 
-	<!-- ALYMAR1994 (2/2/2020): EXPANSION PLANET (custom made) -->
-	<!-- A duplication of the original dead Alderaan, this is to -->
-	<!-- replace all instances of the alive Alderaan (above) in GC to -->
-	<!-- fix a Skirmish map. -->
+	<!-- ALYMAR1994 (02/02/2020): EXPANSION PLANET (custom made) -->
+	<!-- The original dead Alderaan, to replace all instances of the alive Alderaan (above) -->
+	<!-- in GC to fix a Skirmish map. -->
 	<Planet Name="Alderaan_Dead">
  		<Zoomed_Terrain_Index>8</Zoomed_Terrain_Index>
 		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_ALDERAAN</Text_ID>
@@ -934,7 +933,7 @@
 			<Reduce_Production_Price_Ability Name="Bestine_Acclamator_Production_Boost">
 				<Unit_Strength_Category />
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types> Acclamator_Assault_Ship </Applicable_Unit_Types>
+				<Applicable_Unit_Types>Acclamator_Assault_Ship, Acclamator_Underworld</Applicable_Unit_Types>
 				<Price_Reduction_Percentage>0.20</Price_Reduction_Percentage>
 				<Stacking_Category>9</Stacking_Category>
 				<Galaxy_Wide> Yes </Galaxy_Wide>
@@ -1340,7 +1339,7 @@
 			<Reduce_Production_Price_Ability Name="Carida_Infantry_Production_Boost">
 				<Unit_Strength_Category />
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types> Rebel_Infantry_Squad, Rebel_Tank_Buster_Squad, Rebel_Infiltrator_Team, Imperial_Stormtrooper_Squad, Imperial_Light_Scout_Squad </Applicable_Unit_Types>
+				<Applicable_Unit_Types> Rebel_Infantry_Squad, Rebel_Tank_Buster_Squad, Rebel_Infiltrator_Team, Imperial_Stormtrooper_Squad, Imperial_Light_Scout_Squad, Underworld_Merc_Squad, Underworld_Disruptor_Merc_Squad </Applicable_Unit_Types>
 				<Price_Reduction_Percentage>0.20</Price_Reduction_Percentage>
 				<Stacking_Category>9</Stacking_Category>
 				<Galaxy_Wide> Yes </Galaxy_Wide>
@@ -1445,7 +1444,7 @@
 			<Reduce_Production_Price_Ability Name="Corellia_Corellian_Corvette_Production_Boost">
 				<Unit_Strength_Category />
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types> Corellian_Corvette </Applicable_Unit_Types>
+				<Applicable_Unit_Types>Corellian_Corvette, Corellian_Corvette_Underworld</Applicable_Unit_Types>
 				<Price_Reduction_Percentage>0.20</Price_Reduction_Percentage>
 				<Stacking_Category>9</Stacking_Category>
 				<Galaxy_Wide> Yes </Galaxy_Wide>
@@ -1542,7 +1541,7 @@
 			<Reduce_Production_Price_Ability Name="Corulag_Infantry_Production_Boost">
 				<Unit_Strength_Category />
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types> Rebel_Infantry_Squad, Rebel_Tank_Buster_Squad, Rebel_Infiltrator_Team, Imperial_Stormtrooper_Squad, Imperial_Light_Scout_Squad </Applicable_Unit_Types>
+				<Applicable_Unit_Types> Rebel_Infantry_Squad, Rebel_Tank_Buster_Squad, Rebel_Infiltrator_Team, Imperial_Stormtrooper_Squad, Imperial_Light_Scout_Squad, Underworld_Merc_Squad, Underworld_Disruptor_Merc_Squad </Applicable_Unit_Types>
 				<Price_Reduction_Percentage>0.20</Price_Reduction_Percentage>
 				<Stacking_Category>9</Stacking_Category>
 				<Galaxy_Wide> Yes </Galaxy_Wide>
@@ -2333,7 +2332,7 @@
 			<Reduce_Production_Price_Ability Name="Fresia_AWing_Production_Boost">
 				<Unit_Strength_Category />
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types> A_Wing_Squadron </Applicable_Unit_Types>
+				<Applicable_Unit_Types>A_Wing_Squadron, Underworld_A_Wing_Squadron</Applicable_Unit_Types>
 				<Price_Reduction_Percentage>0.20</Price_Reduction_Percentage>
 				<Stacking_Category>9</Stacking_Category>
 				<Galaxy_Wide> Yes </Galaxy_Wide>
@@ -5180,7 +5179,7 @@
 			<Reduce_Production_Price_Ability Name="Sullust_Tartan_Patrol_Cruiser_Production_Boost">
 				<Unit_Strength_Category />
 				<Applicable_Unit_Categories />
-				<Applicable_Unit_Types> Tartan_Patrol_Cruiser </Applicable_Unit_Types>
+				<Applicable_Unit_Types>Tartan_Patrol_Cruiser, Tartan_Underworld</Applicable_Unit_Types>
 				<Price_Reduction_Percentage>0.20</Price_Reduction_Percentage>
 				<Stacking_Category>9</Stacking_Category>
 				<Galaxy_Wide> Yes </Galaxy_Wide>
@@ -5716,8 +5715,12 @@
 		<Additional_Population_Capacity>5</Additional_Population_Capacity>
 
 		<Abilities SubObjectList="Yes">
-			<Galaxy_Wide_Upgrade_Ability Name="Vergesso_Upgrade_Bonus">
+			<Galaxy_Wide_Upgrade_Ability Name="R_Vergesso_Upgrade_Bonus">
 				<Space_Upgrade_Type>RS_Improved_Weapons_L1_Upgrade</Space_Upgrade_Type>
+				<Land_Upgrade_Type />
+			</Galaxy_Wide_Upgrade_Ability>
+			<Galaxy_Wide_Upgrade_Ability Name="U_Vergesso_Upgrade_Bonus">
+				<Space_Upgrade_Type>US_Improved_Weapons_L1_Upgrade</Space_Upgrade_Type>
 				<Land_Upgrade_Type />
 			</Galaxy_Wide_Upgrade_Ability>
 		</Abilities>
@@ -5876,8 +5879,12 @@
 		<Potential_Indigenous_Power>Swamp_Civilian_A, 150</Potential_Indigenous_Power>
 
 		<Abilities SubObjectList="Yes">
-			<Galaxy_Wide_Upgrade_Ability Name="Yavin_Upgrade_Bonus">
+			<Galaxy_Wide_Upgrade_Ability Name="R_Yavin_Upgrade_Bonus">
 				<Space_Upgrade_Type> RS_Enhanced_Shielding_L1_Upgrade </Space_Upgrade_Type>
+				<Land_Upgrade_Type />
+			</Galaxy_Wide_Upgrade_Ability>
+			<Galaxy_Wide_Upgrade_Ability Name="U_Yavin_Upgrade_Bonus">
+				<Space_Upgrade_Type> US_Enhanced_Shielding_L1_Upgrade </Space_Upgrade_Type>
 				<Land_Upgrade_Type />
 			</Galaxy_Wide_Upgrade_Ability>
 		</Abilities>

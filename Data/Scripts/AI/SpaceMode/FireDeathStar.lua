@@ -4,9 +4,9 @@
 -- ORIGINAL AUTHOR (Petroglyph): Steve Copeland
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 4/26/2020, 5:56 PM
+-- LAST REVISION DATE: 12/02/2020, 11:35 PM
 -- ======================================================================
-require("pgevents")
+require("PGEvents")
 
 function Definitions()
 	DebugMessage("%s -- In Definitions", tostring(Script))
@@ -26,12 +26,12 @@ end
 
 -- AM1994 (4/29/2020): Thanks, Nikomer.
 function MainForce_Thread()
-	BlockOnCommand(MainForce.Produce_Force())
-
-	ds = Find_First_Object("Death_Star")
+	local ds = Find_First_Object("Death_Star")
 	if not TestValid(ds) then
 		ds = Find_First_Object("Death_Star_II")
 	end
+
+	BlockOnCommand(MainForce.Produce_Force())
 
 	if TestValid(ds) then
 		-- Tactical superweapon is present, continue plan!

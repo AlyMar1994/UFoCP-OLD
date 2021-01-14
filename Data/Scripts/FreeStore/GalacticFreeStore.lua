@@ -4,9 +4,9 @@
 -- ORIGINAL AUTHOR (Petroglyph): Brian Hayes
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 7/17/19, 1:00 PM
+-- LAST REVISION DATE: 12/02/19, 11:55 PM
 -- ======================================================================
-require("pgcommands")
+require("PGCommands")
 require("GalacticHeroFreeStore")
 
 function Base_Definitions()
@@ -14,7 +14,7 @@ function Base_Definitions()
 
 	-- How often does this script get serviced?
 	ServiceRate = 8
-	UnitServciceRate = 8
+	UnitServiceRate = 8
 
 	Common_Base_Definitions()
 
@@ -41,8 +41,8 @@ function main()
 end
 
 function MoveUnit(object)
-	dest_target = nil
-	object_type = object.Get_Type()
+	local dest_target = nil
+	local object_type = object.Get_Type()
 	if object_type.Is_Hero() then
 		dest_target = Find_Custom_Target(object)
 	end
@@ -60,6 +60,7 @@ function MoveUnit(object)
 		return true
 	else
 		DebugMessage("%s -- Object: %s, unable to find a suitable destination for this object.", tostring(Script), tostring(object))
+
 		return false
 	end
 end
@@ -105,7 +106,7 @@ end
 function On_Unit_Added(object)
 	DebugMessage("%s -- Object: %s added to freestore", tostring(Script), tostring(object))
 
-	obj_type = object.Get_Type()
+	local obj_type = object.Get_Type()
 	if obj_type.Is_Hero() then
 		DebugMessage("%s -- Hero Object: %s added to freestore", tostring(Script), obj_type.Get_Name())
 	end
@@ -114,14 +115,7 @@ function On_Unit_Added(object)
 end
 
 function FreeStoreService()
-	if PlayerObject.Get_Faction_Name() == "Rebel" then
-		leader_object = Find_First_Object("Mon_Mothma")
-	elseif PlayerObject.Get_Faction_Name() == "Empire" then
-		leader_object = Find_First_Object("Emperor_Palpatine")
-	elseif PlayerObject.Get_Faction_Name() == "Underworld" then
-		leader_object = Find_First_Object("Tyber_Zann")
-	end
-
+	local object_count
 	MovedUnitsThisService = 0
 	GroundUnitsMoved = 0
 	GroundUnitsToMove = 0
@@ -130,13 +124,18 @@ function FreeStoreService()
 	SpaceAvailablePercent = 0
 	GroundAvailablePercent = 0
 
+	if PlayerObject.Get_Faction_Name() == "Rebel" then
+		leader_object = Find_First_Object("Mon_Mothma")
+	elseif PlayerObject.Get_Faction_Name() == "Empire" then
+		leader_object = Find_First_Object("Emperor_Palpatine")
+	elseif PlayerObject.Get_Faction_Name() == "Underworld" then
+		leader_object = Find_First_Object("Tyber_Zann")
+	end
+
 	object_count = FreeStore.Get_Object_Count()
 	if object_count ~= 0 then
-		-- Get the count of space force in the freestore:
-		scnt = FreeStore.Get_Object_Count(true)
-
-		-- Get the count of ground force in the freestore:
-		gcnt = FreeStore.Get_Object_Count(false)
+		local scnt = FreeStore.Get_Object_Count(true) -- Get the count of space force in the freestore.
+		local gcnt = FreeStore.Get_Object_Count(false) -- Get the count of ground force in the freestore.
 
 		SpaceAvailablePercent = scnt / object_count
 		GroundAvailablePercent = gcnt / object_count
@@ -149,7 +148,13 @@ function FreeStoreService()
 end
 
 function Find_Ground_Unit_Target(object)
-	my_planet = object.Get_Planet_Location()
+	local my_planet = object.Get_Planet_Location()
+	local leader_planet
+	local max_force_target
+	local force_target
+	local priority_planet
+	local poorly_defended_planet
+
 	if FreeStore.Is_Unit_Safe(object) == false then
 		my_planet = nil
 	end
@@ -202,7 +207,8 @@ function Find_Ground_Unit_Target(object)
 	end
 
 	if not my_planet then
-		fallback_planet = FindTarget.Reachable_Target(PlayerObject, "One", "Friendly", "Friendly_Only", 0.1, object)
+		local fallback_planet = FindTarget.Reachable_Target(PlayerObject, "One", "Friendly", "Friendly_Only", 0.1, object)
+
 		if fallback_planet then
 			return fallback_planet.Get_Game_Object()
 		end
@@ -212,12 +218,17 @@ function Find_Ground_Unit_Target(object)
 end
 
 function Find_Space_Unit_Target(object)
-	my_planet = object.Get_Planet_Location()
+	local my_planet = object.Get_Planet_Location()
+	local leader_planet
+	local max_force_target
+	local force_target
+	local priority_planet
+	local poorly_defended_planet
 
 	if not my_planet then
 		return nil
 	end
-	
+
 	if leader_object then
 		leader_planet = leader_object.Get_Planet_Location()
 	end

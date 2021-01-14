@@ -4,9 +4,9 @@
 -- ORIGINAL AUTHOR (Petroglyph): James Yarrow
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 6/28/19, 2:30 PM
+-- LAST REVISION DATE: 12/02/19, 11:40 PM
 -- ======================================================================
-require("pgevents")
+require("PGEvents")
 
 function Definitions()
 	Category = "Remove_Corruption"
@@ -31,7 +31,7 @@ function MainForce_Thread()
 end
 
 function MainForce_No_Units_Remaining(tf)
-	-- No action!
+	return
 end
 
 function MainForce_Production_Failed(tf, failed_object_type)

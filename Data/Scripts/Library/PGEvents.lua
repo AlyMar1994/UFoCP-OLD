@@ -52,7 +52,7 @@ function GoKite(tf, unit, kite_pos, release)
 	end
 
 	if release then
-		Try_Ability(unit, "TURBO") -- Enable Turbo mode, if we have it.
+		Try_Ability(unit, "TURBO")
 		Try_Ability(unit, "JET_PACK", kite_pos)
 		Try_Ability(unit, "EJECT_VEHICLE_THIEF")
 		Try_Ability(unit, "SPRINT")
@@ -70,9 +70,7 @@ function GoKite(tf, unit, kite_pos, release)
 		tf.Release_Unit(unit)
 	else
 		if not unit.Is_On_Diversion() then
-			--MessageBox("%s -- Diverting: %s", tostring(Script), tostring(unit))
-
-			Try_Ability(unit, "TURBO") -- Enable Turbo mode, if we have it.
+			Try_Ability(unit, "TURBO")
 			Try_Ability(unit, "JET_PACK", kite_pos)
 			Try_Ability(unit, "EJECT_VEHICLE_THIEF")
 			Try_Ability(unit, "SPRINT")
@@ -91,7 +89,9 @@ function GoKite(tf, unit, kite_pos, release)
 end
 
 function Try_Good_Ground(tf, unit)
-	nearest_good_ground_indicator = Find_Nearest(unit, "Prop_Good_Ground_Area")
+	local nearest_good_ground_indicator = Find_Nearest(unit, "Prop_Good_Ground_Area")
+	local dist_to_good_ground
+
 	if nearest_good_ground_indicator then
 		dist_to_good_ground = unit.Get_Distance(nearest_good_ground_indicator)
 
@@ -112,13 +112,19 @@ end
 function Respond_To_MinRange_Attacks(tf, unit)
 	DebugMessage("%s-- looking at attacker for minrange response", tostring(Script))
 
-	min_range_attackers =
+	local deadly_enemy
+	local deadly_enemy_type
+	local approach_or_flee_range
+	local distance
+
+	local min_range_attackers =
 	{
 		"R_Ground_Turbolaser_Tower",
 		"E_Ground_Turbolaser_Tower",
 		"U_Ground_Turbolaser_Tower",
 		"MPTL",
 		"SPMAT_Walker",
+		"MAL_Rocket_Vehicle",
 		"Marauder_Missile_Cruiser",
 		"Broadside_Class_Cruiser"
 	}
@@ -129,15 +135,16 @@ function Respond_To_MinRange_Attacks(tf, unit)
 
 		if Is_Type_In_List(deadly_enemy_type, min_range_attackers) then
 			DebugMessage("%s -- attacked by min range attacker", tostring(Script))
-			
-			-- Move any units in the task force which are in range of the attacker
-			-- to a position over the max range or under the min range.
+
 			approach_or_flee_range = ((deadly_enemy_type.Get_Max_Range() - deadly_enemy_type.Get_Min_Range()) * 2 / 3) + deadly_enemy_type.Get_Min_Range()
 
+			-- Move any units in the task force which are in range of the attacker
+			-- to a position over the max range or under the min range.
 			for i, tf_unit in pairs(tf.Get_Unit_Table()) do
 				DebugMessage("%s -- considering run or approach for %s", tostring(Script), tostring(tf_unit))
 
 				distance = tf_unit.Get_Distance(deadly_enemy)
+
 				if distance < deadly_enemy_type.Get_Max_Range() then
 					if distance < approach_or_flee_range then
 						DebugMessage("%s -- trying to run inside min attack range", tostring(Script))
@@ -174,7 +181,7 @@ end
 
 -- Check if the passed ability is one of the type that the AI wants to turn back on when cancelled
 function IsAbilityAllowedToRecover(ability)
-	allowed_abilities =
+	local allowed_abilities =
 	{
 		"SPOILER_LOCK",
 		"TURBO"
@@ -205,16 +212,35 @@ end
 
 function Default_Unit_Destroyed()
 	DebugMessage("%s -- In Default_Unit_Destroyed.", tostring(Script))
+
+	return
 end
 
 function Default_Unit_Damaged(tf, unit, attacker, deliberate)
 	DebugMessage("%s -- In Default_Unit_Damaged.", tostring(Script))
-	
+
+	local lib_issued_movement_response = false
+	local lib_ability_activated
+	local lib_shield_level
+	local lib_time_till_dead
+	local lib_attacker_is_good_vs_me
+	local lib_i_am_good_vs_attacker
+	local lib_current_health
+	local lib_is_hero
+	local lib_is_fodder
+	local lib_faction_name
+	local lib_healer_property_flag
+	local lib_should_release
+
+	local projectile_type
+	local healer
+	local friendly
+	local xfire_pos
+	local kite_pos
+
 	if not TestValid(unit) or not TestValid(attacker) or attacker.Is_Category("Structure") then
 		return
 	end
-
-	lib_issued_movement_response = false
 
 	-- All units but Interdictors try to maneuver against artillery and turbolasers.
 	-- Interdictors should use missile shield instead.
@@ -240,7 +266,6 @@ function Default_Unit_Damaged(tf, unit, attacker, deliberate)
 	
 	if attacker.Is_Category("Infantry") then
 		Try_Deploy_Garrison(unit, attacker, 0.5)
-
 		Try_Ability(unit, "SPREAD_OUT")
 	end
 
@@ -332,10 +357,10 @@ function Default_Unit_Damaged(tf, unit, attacker, deliberate)
 			end
 
 			if not lib_is_fodder then
-				-- Try to find a protected kiting location:
 				friendly = Find_Nearest(unit, PlayerObject, true)
 				xfire_pos = Get_Most_Defended_Position(unit, PlayerObject)
 
+				-- Try to find a protected kiting location:
 				if xfire_pos then
 					kite_pos = Project_By_Unit_Range(attacker, xfire_pos)
 				elseif TestValid(friendly) then
@@ -352,13 +377,10 @@ function Default_Unit_Damaged(tf, unit, attacker, deliberate)
 end
 
 function Default_Original_Target_Destroyed()
-	--DebugMessage("%s -- Original target destroyed.  Aborting.", tostring(Script))
-
 	Attacking = false
 end
 
 function Default_Current_Target_Destroyed(tf)
-	--MessageBox("%s -- Current target destroyed.  Aborting.", tostring(Script))
 	Attacking = false
 
 	-- Turn off some unending abilities that might no longer be appropriate:
@@ -369,8 +391,9 @@ function Default_Original_Target_Owner_Changed(tf, old_player, new_player)
 	if InvasionActive == true then
 		return
 	end
-	
+
 	DebugMessage("%s -- Original target ownership changed.  Aborting.", tostring(Script))
+
 	ScriptExit()
 end
 
@@ -433,7 +456,6 @@ function Default_Target_In_Range(tf, unit, target)
 	end
 
 	Try_Weapon_Switch(unit, target)
-
 	GlobalValue.Set(PlayerSpecificName(PlayerObject, "CONTACT_OCCURED"), 1.0)
 end
 
@@ -457,7 +479,7 @@ function Default_Unit_Diversion_Finished(tf, unit)
 	end
 end
 
--- This fires if the countdown was going and it is now refreshed or if you come out of a nebula
+-- This fires if the countdown was going and it is now refreshed or if you come out of a nebula.
 function Default_Unit_Ability_Ready(tf, unit, ability)
 	-- Try to recover use of interrupted abilities.
 	if lib_cancelled_abilities[unit] and lib_cancelled_abilities[unit][ability] then

@@ -681,11 +681,6 @@ function GetNextGroundbaseType(planet) end
 ---@return GameObjectType
 function GetNextStarbaseType(planet) end
 
----@public
----Tells the script to sleep for (X) miliseconds when reached.
----@param timer number
-function Sleep(timer) end
-
 -- ----------------------------------------------------------------
 -- ------------------------ Multithreading ------------------------
 -- ----------------------------------------------------------------

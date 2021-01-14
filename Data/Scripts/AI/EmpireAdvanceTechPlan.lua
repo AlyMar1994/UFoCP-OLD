@@ -4,9 +4,9 @@
 -- ORIGINAL AUTHOR (Petroglyph): James Yarrow
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 1/3/2020, 2:16 AM
+-- LAST REVISION DATE: 11/06/2020, 10:52 PM
 -- ======================================================================
-require("pgevents")
+require("PGEvents")
 
 function Definitions()
 	DebugMessage("%s -- In Definitions", tostring(Script))
@@ -42,7 +42,7 @@ function TechForce_Thread()
 end
 
 function TechForce_Production_Failed(tf, failed_object_type)
-	DebugMessage("%s -- Abandonning plan owing to production failure.", tostring(Script))
+	DebugMessage("%s -- Abandoning plan owing to production failure.", tostring(Script))
 
 	ScriptExit()
 end

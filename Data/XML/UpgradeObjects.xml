@@ -749,7 +749,7 @@
 		<Tactical_Build_Prerequisites>RC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
   	</UpgradeObject>
 
-	<!-- More Garrison Units: Adds a squad of Plex Soldiers and a T2B Tank Brigade to your set of free garrison units. -->
+	<!-- More Garrison Units: Adds a squad of Plex Soldiers and a T2B Tank Brigade to your set of free garrison units.
 	<UpgradeObject Name="RL_More_Garrisons_L1_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Rebel</Affiliation>
@@ -781,6 +781,7 @@
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
   	</UpgradeObject>
+	-->
 
 	<!-- Immunity to the gameplay effects of Weather. -->
 	<UpgradeObject Name="RL_Weatherproof_Upgrade">
@@ -1459,7 +1460,7 @@
 		<Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
 	</UpgradeObject>
 
-	<!-- More Garrison Units: Adds an AT-ST company and a 2M Repulsor Tank brigade to your set of free garrison units. -->
+	<!-- More Garrison Units: Adds an AT-ST company and a 2M Repulsor Tank brigade to your set of free garrison units.
 	<UpgradeObject Name="EL_More_Garrisons_L1_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Empire</Affiliation>
@@ -1491,6 +1492,7 @@
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
+	-->
 
 	<!-- Immunity to the gameplay effects of Weather. -->
 	<UpgradeObject Name="EL_Weatherproof_Upgrade">
@@ -1554,6 +1556,47 @@
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Applicable_Unit_Categories />
 				<Applicable_Unit_Types>X-Wing, Y-Wing, A-Wing, Z-95_Headhunter_Rebel, B-Wing </Applicable_Unit_Types>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.25</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+		<CategoryMask>Upgrade</CategoryMask>
+	</UpgradeObject>
+
+	<!-- Enhanced Shielding (Level 1): Fighters gain a 25% bonus to shield strength. -->
+	<!-- AM1994 (12/18/2020) - FIXES ISSUE WITH YAVIN 4 NOT BOOSTING UNDERWORLD FIGHTERS. -->
+	<UpgradeObject Name="US_Enhanced_Shielding_L1_Upgrade">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 850 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>160</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 30 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Previous_Upgrade_Level_Type />
+		<Next_Upgrade_Level_Type> RS_Enhanced_Shielding_L2_Upgrade </Next_Upgrade_Level_Type>
+		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_multi_enhanced_shield1.tga</Icon_Name>
+		
+		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_RS_ENHANCED_SHIELDING_L1  </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DEFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UPGRADE_RS_ENHANCED_SHIELDING_L1 </Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="RS_Enhanced_Shielding_L1_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>A-Wing_Underworld, Z-95_Headhunter_Underworld</Applicable_Unit_Types>
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
 				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
@@ -1674,6 +1717,47 @@
 				<Activation_Style>Space_Automatic</Activation_Style>
 				<Applicable_Unit_Categories />
 				<Applicable_Unit_Types>X-Wing, Y-Wing, A-Wing, Z-95_Headhunter_Rebel</Applicable_Unit_Types>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.25</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+		<CategoryMask>Upgrade</CategoryMask>
+	</UpgradeObject>
+
+	<!-- Improved Weapons (Level 1): Fighters deal 25% more damage. -->
+	<!-- AM1994 (12/18/2020) - FIXES ISSUE WITH VERGESSO ASTEROIDS NOT BOOSTING UNDERWORLD FIGHTERS. -->
+	<UpgradeObject Name="US_Improved_Weapons_L1_Upgrade">
+		<Behavior>DUMMY_UPGRADE</Behavior>
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 800 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>160</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 25 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<Previous_Upgrade_Level_Type />
+		<Next_Upgrade_Level_Type />
+		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_multi_improved_weapons1.tga</Icon_Name>
+		
+		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_RS_IMPROVED_WEAPONS_L1  </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UPGRADE_RS_IMPROVED_WEAPONS_L1 </Text_ID>
+		
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="US_Improved_Weapons_L1_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>A-Wing_Underworld, Z-95_Headhunter_Underworld</Applicable_Unit_Types>
 				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
 				<Damage_Bonus_Percentage>0.25</Damage_Bonus_Percentage>
 				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
@@ -2185,7 +2269,7 @@
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
 
-	<!-- More Garrion Units:  Adds an 2 A-Wing and 1 Y-Wing squadron to your set of free garrison units. -->
+	<!-- More Garrison Units: Adds an 2 A-Wing and 1 Y-Wing squadron to your set of free garrison units.
 	<UpgradeObject Name="RS_More_Garrisons_L1_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Rebel</Affiliation>
@@ -2217,6 +2301,7 @@
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
+	-->
 
 
 
@@ -2945,7 +3030,7 @@
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
 
-	<!-- More Garrison Units: Adds three squadrons of TIE-Fighters and one squadron of TIE-Bombers to your set of free garrison units. -->
+	<!-- More Garrison Units: Adds three squadrons of TIE-Fighters and one squadron of TIE-Bombers to your set of free garrison units.
 	<UpgradeObject Name="ES_More_Garrisons_L1_Upgrade">
 		<Behavior>DUMMY_UPGRADE</Behavior>
 		<Affiliation>Empire</Affiliation>
@@ -2977,6 +3062,7 @@
 		</Abilities>
 		<CategoryMask>Upgrade</CategoryMask>
 	</UpgradeObject>
+	-->
 
 
 

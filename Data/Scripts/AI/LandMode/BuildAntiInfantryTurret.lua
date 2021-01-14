@@ -4,13 +4,12 @@
 -- ORIGINAL AUTHOR (Petroglyph): Steve Copeland
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 9/21/2020, 11:56 PM
+-- LAST REVISION DATE: 12/22/2020, 6:25 PM
 -- ======================================================================
-require("pgevents")
+require("PGEvents")
 
 -- Build a single turret.
 function Definitions()
-	
 	Category = "Build_AntiInfantry_Turret"
 	TaskForce =
 	{
@@ -23,10 +22,9 @@ function Definitions()
 end
 
 function MainForce_Thread()
-	-- MessageBox("%s -- Building a turret.", tostring(Script))
+	local pad_table = MainForce.Get_Reserved_Build_Pads()
 
 	-- Make sure we've ended up with a build location that's reasonably close to our original target.
-	pad_table = MainForce.Get_Reserved_Build_Pads()
 	for i,pad in pad_table do
 		if pad.Get_Distance(AITarget) > 120 then
 			ScriptExit()

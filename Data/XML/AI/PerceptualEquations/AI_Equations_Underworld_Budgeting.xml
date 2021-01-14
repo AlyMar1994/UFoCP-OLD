@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<Equations>
+	<Underworld_Offensive_Budget_Allocation>
+		5.0
+		+
+		(10.0 * clamp(Variable_Self.PlanetsControlled - Variable_Human.PlanetsControlled, 0.0, 1.0))
+		+
+		(6.0 * (1.0 - Function_Has_Enough_Space_Force_Globally.Evaluate))
+		+
+		(3.0 * Game.PlanetsCorrupted)
+	</Underworld_Offensive_Budget_Allocation>
+
+
+	<Underworld_Infrastructure_Budget_Allocation>
+		(4.0 - 3.0 * Game.PlanetsCorrupted)
+		*
+		(2.5 - Variable_Self.MaxedStarbases - Variable_Self.MaxedGroundbases)
+		*
+		(1.0 + Variable_Self.Maintenance)
+		+
+		10 * ((Variable_Self.HasStructure { Parameter_Type = "U_Ground_Droid_Works" } == 0) +
+				(Variable_Self.HasStructure { Parameter_Type = "U_Ground_Barracks" } == 0) +
+				(Variable_Self.HasStructure { Parameter_Type = "U_Ground_Vehicle_Factory" } == 0) +
+				(Variable_Self.HasStructure { Parameter_Type = "U_Ground_Gravity_Generator" } == 0) +
+				(Variable_Self.HasStructure { Parameter_Type = "U_Ground_Palace" } == 0))
+		+
+		5.0 * (2 > Variable_Self.StructureCount { Parameter_Type = "U_Ground_Palace" })
+		+
+		3.0 * Function_Should_Save_For_Corruption.Evaluate
+	</Underworld_Infrastructure_Budget_Allocation>
+</Equations>

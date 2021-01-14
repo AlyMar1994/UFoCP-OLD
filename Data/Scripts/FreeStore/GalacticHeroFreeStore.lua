@@ -4,9 +4,9 @@
 -- ORIGINAL AUTHOR (Petroglyph): Steve Copeland
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 10/06/2020, 10:46 PM
+-- LAST REVISION DATE: 12/04/2020, 1:25 PM
 -- ======================================================================
-require("pgcommands")
+require("PGCommands")
 
 function Definitions()
 	DebugMessage("%s -- Defining custom freestore movement perceptions", tostring(Script))
@@ -19,11 +19,11 @@ function Definitions()
 		EMPEROR_PALPATINE_TEAM = { "Is_Home_Planet", false },
 		GRAND_MOFF_TARKIN_TEAM = { "Is_Home_Planet", true },
 		DARTH_TEAM = { nil, false },
+		DARTH_TEAM_EXECUTOR = { nil, true },
 		GENERAL_VEERS_TEAM = { nil, false },
 		BOBA_FETT_TEAM = { nil, true },
 		PIET_TEAM = { nil, true },
 		ARC_HAMMER = { "Is_Home_Planet", true },
-		DARTH_TEAM_EXECUTOR = { nil, true },
 		ADMONITOR_STAR_DESTROYER = { nil, true },
 
 		MON_MOTHMA_TEAM = { "Is_Home_Planet", false },
@@ -46,10 +46,12 @@ function Definitions()
 end
 
 function Find_Custom_Target(object)
-	object_type = object.Get_Type()
-	object_type_name = object_type.Get_Name()
-
-	unit_entry = CustomUnitPlacement[object_type_name]
+	local object_type = object.Get_Type()
+	local object_type_name = object_type.Get_Name()
+	local unit_entry = CustomUnitPlacement[object_type_name]
+	local perception
+	local prefers_space
+	local target
 
 	if unit_entry then
 		perception = unit_entry[1]

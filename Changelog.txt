@@ -14,6 +14,7 @@ Vocab.:
 -Conditional(s) – "If" statements which dictate certain advisor dialogues when conditions are met.
 -Death Clone – The version of a ship that lingers in a map when destroyed.
 -Perception Equation ("PE") – Math which returns a value for the AI to do something.
+-AI Template ("TPL") – Gameplay template for the AI.
 
 -Galactic – On the galactic map/level.
 -Land – On land maps.
@@ -21,6 +22,152 @@ Vocab.:
 ----
 Whenever the AI is edited, it's not labeled based on specific changed units with the A.I., but it's labeled based on the name of the file.
 ----
+
+
+=========================================================================================
+v1.14
+=========================================================================================
+
+
+==================
+General
+==================
+-Maps – Did another map preview removal pass for maps that didn't need it, and regenerated map previews for those that did using a higher quality method.  They should look a lot better now.  (Thanks evilbobthebob!)
+
+-Gave all Lua in UFoCP a clean pass of organization, functionality and better practice, including variable localization.
+
+-Commented out upgrade "RL_More_Garrisons_L1_Upgrade" as it is unused.
+-Commented out upgrade "RS_More_Garrisons_L1_Upgrade" as it is unused.
+-Commented out upgrade "EL_More_Garrisons_L1_Upgrade" as it is unused.
+-Commented out upgrade "ES_More_Garrisons_L1_Upgrade" as it is unused.
+
+
+==================
+A.I.
+==================
+-(LUA) GalacticFreeStore – Fixed misspelling of variable "UnitServiceRate" as "UnitSercviceRate," which resulted in an improper timing for the AI to check and see whether or not they should reconsider unit/frontline positioning.  It is now checked properly every eight seconds.
+
+-(LUA) PGEvents – Fixed a behavior that didn't include Underworld M.A.L. as a part of the AI to try to get in and/or escape the maximum attack range for "artillery" (turbolaser towers, MPTL, SPMA-T, etc).  This was supposed to be included last update, as this *is* the Underworld's artillery, along with their skirmish turbolaser towers.
+
+-(LUA) PurchaseLandUpgradesGeneric – Fixed AI checking for unused upgrades, which cannot be purchased in skirmish, causing assertion errors.
+
+-(LUA) PurchaseSpaceUpgradesGeneric – Fixed AI checking for unused upgrades, which cannot be purchased in skirmish, causing assertion errors.
+
+
+-(PE) AI_Equations_Underworld_Budgeting – Updated proper Underworld budgeting "Underworld_Infrastructure_Budget_Allocation" to include the Repulsorlift Jammer.
+
+-(PE) BasicLandEquations – Modified <Allowed_To_Retreat_From_Land> to prevent Hutts (as a fodder faction) from retreating.  This was to keep consistency with other changes, and keep it in line as intended with the Black Sun Pirates.
+
+-(PE) DefensiveGalacticEquations – Modified <Defense_Level> to accurate account for Underworld Repulsorlift Jammers.  Was searching for "Ground_Gravity_Generator" instead of "U_Ground_Gravity...."
+
+-(PE) DefensiveGalacticEquations – Modified <Ground_Priority_Defense_Score> to accurate account for Underworld Repulsorlift Jammers.  Was searching for "Ground_Gravity_Generator" instead of "U_Ground_Gravity...."
+
+-(PE) OffensiveGalacticEquations – Modified <Need_To_Flush_MajorItem_Budget> money trickle-down system to include the Death_Star_II (FoC) instead of just Death_Star (EaW).  This increases AI prioritization towards priority items (like tech-levels), and only stops if the DS2 is built, or if any more space forces are needed.
+
+-(PE) OffensiveGalacticEquations – Modified <Should_Conquer_Opponent_Planet> to include Death_Star_II.  Hopefully, the AI will be a bit more disuaded to ram the DS2 unless they have an appropriate unit.
+
+
+-(TPL) BasicEmpireTemplates – Fixing parsing errors.
+
+-(TPL) BasicGenericTemplates – Fixing parsing errors.
+
+-(TPL) NativeLifeTemplates – Fixing parsing errors.
+
+
+==================
+Maps/Planets (Galactic)
+==================
+-Bestine – Fixed planetary buff not reducing the price of Underworld Acclamator Assault Ships by 20%.
+
+-Carida – Fixed planetary buff not reducing the price of Underworld infantry by 20%.
+
+-Corellia – Fixed planetary buff not reducing the price of Underworld Corellian Corvettes by 20%.
+
+-Corulag – Fixed planetary buff not reducing the price of Underworld infantry by 20%.
+
+-Fresia – Fixed planetary buff not reducing the price of the Underworld A-wing squadron by 20%.
+
+-Sullust – Fixed planetary buff not reducing the price of Underworld Tartan Patrol Cruisers by 20%.
+
+-Vergesso Asteroids – Fixed planetary buff not applying a 25% damage boost on the Underworld A-wing or Z-95.
+
+-Yavin 4 – Fixed planetary buff not applying a 25% shield boost on the Underworld A-wing or Z-95.
+
+
+==================
+Maps/Planets (Land)
+==================
+-Corellia – Regenerated map preview because of graphical oddities (water was nuclear green).
+
+-Honoghr (Intimidation) – Regenerated map preview to fix some visual errors (water, objective markers).
+-Honoghr (Intimidation, Campaign) – Regenerated map preview.  The entire thing itself was a visual error (oversaturated/bad colors, improper geometry, too small, unused map modifications, etc.).
+
+-Tatooine – Updated map preview.
+
+
+==================
+Maps/Planets (Space)
+==================
+-Aeten II (Piracy) – Fixed not having a map preview on the battle briefing screen.
+
+-Bespin (Piracy) – Fixed not having a map preview on the battle briefing screen.
+-Bespin (Piracy, Campaign) – Fixed not having a map preview on the battle briefing screen.
+
+-Corellia (Piracy) – Fixed not having a map preview on the battle briefing screen.
+
+-Corulag (Piracy) – Fixed not having a map preview on the battle briefing screen.
+
+-Fondor (Piracy) – Fixed not having a map preview on the battle briefing screen.
+
+-Kessel (Piracy) – Fixed the map preview being full of graphical errors (it is an oversaturated beta map, featuring non-existant nebulae, etc).
+
+-Mandalore (Piracy) – Regenerated map preview to fix some visual errors (ships firing at each other), also incorrect size.
+-Mandalore (Piracy, Campaign) – Regenerated map preview to fix some visual errors (there's a drydock instead of the pirate station), also incorrect size.
+-Mandalore (Piracy, Prologue) – Regenerated map preview to fix some visual errors (nothing appears), also incorrect size.
+
+-Mon Calamari (Piracy) – Fixed not having a map preview on the battle briefing screen.
+
+
+==================
+Models
+==================
+-P_Planet_Corrupt2 – A new version of this file, "P_Planet_Corrupt2_Reduced" is now used.  This results in a similar look for the corruption particles on trade routes, but with ~20% less actually spawning.  This should result in better performance, marginally.  (Thanks Lany!)
+
+
+==================
+Structures (Land)
+==================
+-Droid Works – Fixed structure not having tag <Requires_Base_Power>, so the building's shields wouldn't turn off when the Underworld Palace generator was destroyed.
+
+-Mercenary Barracks – Fixed structure not having tag <Requires_Base_Power>, so the building's shields wouldn't turn off when the Underworld Palace generator was destroyed.
+
+-Underworld Palace – Fixed structure not having tag <Requires_Base_Power>, so the building's shields wouldn't turn off when the Underworld Palace generator was destroyed.
+
+-Zann Consortium Factory – Fixed structure not having tag <Requires_Base_Power>, so the building's shields wouldn't turn off when the Underworld Palace generator was destroyed.
+
+
+==================
+Textures
+==================
+-Command Bar – Fixed pause button (b_play_pause) not having proper texture for being disabled.
+
+-I_Button_Corruption_Piracy_G – Made the Piracy galactic icon look a lot better.  Should be more vanilla-styled.
+
+-I_Galactic_Dashboard_Skirmish (Empire) – Fixed dashboard texture to stop overlap from the on-screen menu button, and the UI box containing all of the option buttons.  Also optimized texture with better compression (DXT5, no mipmaps included to prevent quality differences on lower settings).
+
+-NB_YsalamiriTree_B – Added bumpmap to the Ysalamiri Tree.  A bumpmap was never created for it, despite the model trying to find one.
+
+-W_RivRock00_B – Added bumpmap to the RiverRock00 texture.  A bumpmap was never created for it, despite Nal Hutta map environment trying to find one.
+
+
+==================
+Units (Land)
+==================
+-Grenadiers – Fixed unit container using incorrect damage values for the STIM_PACK ability.
+
+
+=========================================================================================
+
 
 
 =========================================================================================
@@ -109,15 +256,15 @@ Factions
 
 
 ==================
+Maps/Planets (Galactic)
+==================
+-Added a galactic-level icon for Corruption type "Piracy," so when a planet gets corrupted it visibly shows Piracy affects the planet (originally, Petro never included an icon in-game).  It looks like ass, but it fixes the issue right now.
+
+
+==================
 Maps/Planets (Space)
 ==================
 -Fixed space obstacle "Nebula Friggin Huge Ion" not actually being considered an ion storm in-game.  This caused "friggin huge" ion storm on maps like space skirmish Felucia to *not* act like an ion storm, and only a nebula.
-
-
-==================
-Planets (Galactic)
-==================
--Added a galactic-level icon for Corruption type "Piracy," so when a planet gets corrupted it visibly shows Piracy affects the planet (originally, Petro never included an icon in-game).  It looks like ass, but it fixes the issue right now.
 
 
 ==================
@@ -341,7 +488,7 @@ A.I.
 
 
 ==================
-Planets (Galactic)
+Maps/Planets (Galactic)
 ==================
 -Fixed planets using inconsistent higher-than-average credit value texts, which could result in text oddities. Now all consolidated under one string entry, and are all consistent.
 

@@ -4,11 +4,11 @@
 -- ORIGINAL AUTHOR (Petroglyph): Steve Copeland
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 9/21/2020, 11:37 PM
+-- LAST REVISION DATE: 12/03/2020, 1:20 PM
 -- ======================================================================
 -- This plan simply puts Vader in the right places.
 -- It relies on the object script darthvader.lua to activate abilities.
-require("pgevents")
+require("PGEvents")
 
 function Definitions()
 	Category = "VaderAssists"
@@ -29,11 +29,13 @@ function Definitions()
 end
 
 function MainForce_Thread()
+	local vader = MainForce.Get_Unit_Table()[1]
+	local enemy_location
+	local best_ally
+
 	BlockOnCommand(MainForce.Produce_Force())
 	QuickReinforce(PlayerObject, AITarget, MainForce)
 	MainForce.Set_As_Goal_System_Removable(false)
-
-	vader = MainForce.Get_Unit_Table()[1]
 
 	if not TestValid(vader) then
 		MessageBox("unexpected state; vader unavailable")
@@ -41,13 +43,14 @@ function MainForce_Thread()
 		ScriptExit()
 	end
 
-	-- Continuously try to attack, assist the most significant nearby unit, and heal up
+	-- Continuously try to attack, assist the most significant nearby unit, and heal up.
 	while true do
 		ConsiderHeal(vader)
 
 		enemy_location = FindTarget.Reachable_Target(PlayerObject, "Current_Enemy_Location", "Tactical_Location", "Any_Threat", 0.5)
 		if TestValid(enemy_location) then
 			DebugMessage("%s--  moving toward enemy concentration", tostring(Script))
+
 			BlockOnCommand(MainForce.Attack_Move(enemy_location), duration_to_fight)
 		end
 
@@ -62,7 +65,7 @@ function MainForce_Thread()
 
 		MainForce.Set_Plan_Result(true)
 
-		-- Make sure the loop always yields
+		-- Make sure the loop always yields.
 		Sleep(1)
 	end
 end

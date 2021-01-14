@@ -4,37 +4,30 @@
 -- ORIGINAL AUTHOR (Petroglyph): James Yarrow
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 3/13/2020, 3:46 PM
+-- LAST REVISION DATE: 12/22/2020, 6:46 PM
 -- ======================================================================
 require("PGStateMachine")
 
 function Definitions()
-	-- Object isn't valid at this point so don't do any operations that
-	-- would require it.
+	-- Object isn't valid at this point so don't do any operations that would require it.
 	-- State_Init is the first chance you have to do operations on Object.
-
 	DebugMessage("%s -- In Definitions", tostring(Script))
+
 	Define_State("State_Init", State_Init);
 end
 
 function State_Init(message)
 	if message == OnEnter then
-		-- AM1994 (3/13/2020): Initialized variables.
-		-- Teleport hints for the Master Force Adept (ultimate boss of UM11).
 		warp1 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w1")
 		warp2 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w2")
 		warp3 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w3")
 		warp4 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w4")
 		warp5 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w5")
 		warp6 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w6")
-
 		underworld_player = Find_Player("Underworld") -- AM1994 (3/13/2020): Adding variable to prevent calling NIL later on.
-
-
-		Register_Prox(Object, Unit_Prox, 100, underworld_player) -- AM1994 (4/22/2020): Create a proximity event to search for Underworld player units (Urai, Tyber, Silri, Cuddles & MDUs).
-
 		closerange = false
 
+		Register_Prox(Object, Unit_Prox, 100, underworld_player)
 		Create_Thread("AdeptFour_AI")
 	end
 end
@@ -52,7 +45,12 @@ function Unit_Prox(self_obj, trigger_obj)
 end
 
 function AdeptFour_AI()
-	warptimer = 0
+	local warptimer = 0
+	local target = Find_Nearest(Object, underworld_player)
+	local noteleports
+	local cage
+	local dist
+	local rand_index
 
 	while TestValid(Object) do
 		noteleports = false
@@ -103,7 +101,6 @@ function AdeptFour_AI()
 			end
 		end
 
-		target = Find_Nearest(Object, underworld_player)
 		if TestValid(target) then
 			Object.Attack_Move(target)
 		end

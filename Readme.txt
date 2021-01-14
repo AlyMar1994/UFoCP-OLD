@@ -44,6 +44,8 @@ See "_Changelog.txt" and "_MasterTEXT Changelog.txt" for changes per-update, in 
 -GitHub Source: https://github.com/AlyMar1994/UFoCP
 -Bug Reporting: https://github.com/AlyMar1994/UFoCP/issues
 
+-ModDB Source: https://www.moddb.com/mods/unofficial-forces-of-corruption-patch
+-Nexus Source: https://www.nexusmods.com/starwarsempireatwar/mods/1856
 -Steam Source: https://steamcommunity.com/sharedfiles/filedetails/?id=1548018187
 
 
@@ -64,6 +66,20 @@ Audio
 ================
 -Diamondback
     – Music (Credits_Ep3.mp3).
+
+
+================
+Models
+================
+-Lany
+	- P_Planet_Corrupt2.alo (corruption particle optimization).
+
+
+================
+Texturing
+================
+-evilbobthebob
+	- High quality map previews.
 
 
 ================

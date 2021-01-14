@@ -378,6 +378,10 @@ function GameObject.Get_All_Projectile_Types() end
 ---@return boolean
 function GameObject.Is_Selectable() end
 ---@public
+--- Sets a unit to be selectable or not selectable by the player
+---@param selectable boolean
+function GameObject.Set_Selectable(selectable) end
+---@public
 --- Returns the projectile type the unit is currently using
 ---@return GameObjectType
 function GameObject.Get_Current_Projectile_Type() end
