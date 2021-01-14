@@ -39,6 +39,8 @@ Anything that can correctly parse .XML and .LUA will do.
 ## Links
 - Bug Reporting: https://github.com/AlyMar1994/UFoCP/issues
 - Steam Source: https://steamcommunity.com/sharedfiles/filedetails/?id=1548018187
+- ModDB Source: https://www.moddb.com/mods/unofficial-forces-of-corruption-patch
+- NexusMods Source: https://www.nexusmods.com/starwarsempireatwar/mods/1856
 
 ----
 
