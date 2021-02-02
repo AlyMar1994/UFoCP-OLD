@@ -360,7 +360,7 @@
 		<CanCellStack>Yes</CanCellStack>
 		<Mass>1.00</Mass>
 		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
-		
+
 		<Movement_Animation_Speed>0.40</Movement_Animation_Speed>
 		<Max_Speed>1</Max_Speed>
 		<Max_Rate_Of_Turn>20.00</Max_Rate_Of_Turn>
@@ -382,9 +382,8 @@
 		<SFXEvent_Engine_Moving_Loop>Unit_Obiwan_Lightsaber_Moving_Loop</SFXEvent_Engine_Moving_Loop>
 		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Obiwan_Lightsaber_Cinematic_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
 
-		<Mouse_Collide_Override_Sphere_Radius>10.00</Mouse_Collide_Override_Sphere_Radius>			
+		<Mouse_Collide_Override_Sphere_Radius>10.00</Mouse_Collide_Override_Sphere_Radius>
 		<Scale_Factor>1.75</Scale_Factor>
-		<!-- <Is_Sprite>No</Is_Sprite> -->
 		<Type>Walk</Type>
 		<Deploys>No</Deploys>
 		<Affiliation>Rebel</Affiliation>
