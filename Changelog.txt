@@ -36,6 +36,12 @@ General
 -Modified UI element IDD_INTERNET_STAGING_DIALOG.  Modified chatbox width to match, as intended.
 
 
+==================
+Units (Land)
+==================
+-Obi-Wan Kenobi – Fixed the game hanging when Obi-Wan is brought onto the battlefield.
+
+
 =========================================================================================
 
 
