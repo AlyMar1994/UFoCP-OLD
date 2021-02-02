@@ -452,7 +452,7 @@
 		<Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
 
 		<!-- This Galactic_Influence_Range controls how far Obi-Wan's System Spy ability extends. -->
-		<Galactic_Influence_Range>100.00</Galactic_Influence_Range>	<!-- ...The whole galaxy. -->
+		<Galactic_Influence_Range>100.00</Galactic_Influence_Range> <!-- ...The whole galaxy. -->
 		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
 
 		<Score_Cost_Credits>10000</Score_Cost_Credits>
@@ -464,7 +464,7 @@
 
 		<!-- Hero unit abilities descriptions: -->
 		<Unit_Abilities_Data SubObjectList="Yes">
-			<!-- Primary Ability. -->
+			<!-- Primary Ability: -->
 			<Unit_Ability>
 				<Type>FORCE_CONFUSE</Type>
 				<Recharge_Seconds>40.00</Recharge_Seconds>
@@ -474,7 +474,7 @@
 				<Supports_Autofire>True</Supports_Autofire>
 			</Unit_Ability>
 
-			<!-- Secondary Ability. -->
+			<!-- Secondary Ability: -->
 			<Unit_Ability>
 				<Type>TARGETED_INVULNERABILITY</Type>
 				<Recharge_Seconds>60.00</Recharge_Seconds>
@@ -505,7 +505,6 @@
 				<Applicable_Unit_Types>Rancor, Cuddles_The_Rancor, Night_Sister, MZ8_Pulse_Cannon_Tank, MZ8_Pulse_Cannon_Tank_Captured, MAL_Rocket_Vehicle, MAL_Captured, MPTL, MPTL_Captured, T2B_Tank, T2B_Tank_Captured, Boba_Fett, Mara_Jade, Kyle_Katarn, Han_Solo, Chewbacca, Bossk, AT_ST_Walker, AT_ST_Walker_Captured, AT_AA_Walker, AT_AA_Walker_Captured, TIE_Crawler, TIE_Crawler_Captured, M1_Repulsor_Tank, M1_Repulsor_Tank_Captured</Applicable_Unit_Types>
 				<SFXEvent_Activate>Unit_Ability_Confuse</SFXEvent_Activate>
 				<Owner_Particle_Effect>Jedi_Mind_Trick_Effect</Owner_Particle_Effect>
-				<!-- <Owner_Particle_Effect>Confuse_Ability_Particles</Owner_Particle_Effect> -->
 				<Owner_Particle_Bone_Name />
 				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
 				<Owner_Light_Effect_Color>2.00, 2.00, 2.00</Owner_Light_Effect_Color>
