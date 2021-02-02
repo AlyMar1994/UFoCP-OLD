@@ -115,8 +115,10 @@ end
 
 function State_Human_Autofire(message)
 	if message == OnUpdate then
-		if Object.Is_Ability_Autofire(ability_name) and nearby_unit_count >= unit_trigger_number then
-			Object.Activate_Ability(ability_name, true)
+		if Object.Is_Ability_Autofire(ability_name) then
+			if nearby_unit_count >= unit_trigger_number then
+				Object.Activate_Ability(ability_name, true)
+			end
 		else
 			Set_Next_State("State_Human_No_Autofire")
 		end
@@ -162,7 +164,7 @@ function Invuln_Prox(self_obj, trigger_obj)
 		return
 	end
 
-	--Use invulnerability on friendly objects that are in need of help and worth preserving
+	-- Use invulnerability on friendly objects that are in need of help and worth preserving.
 	if not trigger_obj.Get_Owner().Is_Ally(Object.Get_Owner()) then
 		return
 	end
