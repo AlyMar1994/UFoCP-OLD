@@ -6,7 +6,7 @@
 --
 -- LAST REVISION DATE: 8/26/2020, 9:18 PM
 -- ======================================================================
--- This include order is important.  We need the state service defined in main to override the one in heroplanattach.
+-- This include order is important. We need the state service defined in main to override the one in heroplanattach.
 require("HeroPlanAttach")
 require("PGStateMachine")
 
@@ -69,7 +69,6 @@ end
 
 function State_Init(message)
 	if message == OnEnter then
-
 		-- Prevent this from doing anything in galactic mode
 		if Get_Game_Mode() ~= "Land" then
 			ScriptExit()
