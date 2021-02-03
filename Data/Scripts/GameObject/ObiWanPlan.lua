@@ -6,7 +6,7 @@
 --
 -- LAST REVISION DATE: 8/26/2020, 9:18 PM
 -- ======================================================================
--- This include order is important. We need the state service defined in main to override the one in heroplanattach.
+-- This include order is important. We need the state service defined in main to override the one in HeroPlanAttach.
 require("HeroPlanAttach")
 require("PGStateMachine")
 
