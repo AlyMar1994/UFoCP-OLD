@@ -779,7 +779,7 @@
 		<Variant_Of_Existing_Type>Marauder_Missile_Cruiser</Variant_Of_Existing_Type>
 
 		<Encyclopedia_Good_Against>Empire_Star_Base_1 TIE_Fighter X-wing</Encyclopedia_Good_Against>
-		<Encyclopedia_Vulnerable_To>Alliance_Assault_Ship Victory_Destroyer Acclamator_Assault_Ship</Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Vulnerable_To>Alliance_Assault_Frigate Victory_Destroyer Acclamator_Assault_Ship</Encyclopedia_Vulnerable_To>
 
 		<Affiliation>Underworld</Affiliation>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
@@ -799,7 +799,7 @@
 		<Variant_Of_Existing_Type>Corellian_Corvette</Variant_Of_Existing_Type>
 
 		<Encyclopedia_Good_Against>TIE_Fighter TIE_Bomber X-wing</Encyclopedia_Good_Against>
-		<Encyclopedia_Vulnerable_To>Alliance_Assault_Ship Victory_Destroyer Acclamator_Assault_Ship</Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Vulnerable_To>Alliance_Assault_Frigate Victory_Destroyer Acclamator_Assault_Ship</Encyclopedia_Vulnerable_To>
 
 		<Affiliation>Underworld</Affiliation>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>

@@ -23,6 +23,21 @@ Vocab.:
 Whenever the AI is edited, it's not labeled based on specific changed units with the A.I., but it's labeled based on the name of the file.
 ----
 
+=========================================================================================
+v1.16
+=========================================================================================
+
+
+==================
+Units (Space)
+==================
+-Corellian Corvette – Fixed Underworld Corellian Corvette pointing to a non-existant unit for it's "vulnerable to" indicator.  Was pointing to "Alliance_Assault_Ship" and not "_Assault_Frigate."
+
+-Marauder Cruiser – Fixed Underworld Marauder Cruiser pointing to a non-existant unit for it's "vulnerable to" indicator.  Was pointing to "Alliance_Assault_Ship" and not "_Assault_Frigate."
+
+
+=========================================================================================
+
 
 =========================================================================================
 v1.15
