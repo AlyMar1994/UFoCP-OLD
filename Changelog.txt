@@ -25,6 +25,28 @@ Whenever the AI is edited, it's not labeled based on specific changed units with
 
 
 =========================================================================================
+v1.15
+=========================================================================================
+
+
+==================
+General
+==================
+-Modified UI element IDD_LAN_STAGING_DIALOG.  Modified chatbox width to match, as intended.
+-Modified UI element IDD_INTERNET_STAGING_DIALOG.  Modified chatbox width to match, as intended.
+
+
+==================
+Units (Land)
+==================
+-Obi-Wan Kenobi – Fixed the game hanging when Obi-Wan is brought onto the battlefield.
+
+
+=========================================================================================
+
+
+
+=========================================================================================
 v1.14
 =========================================================================================
 
