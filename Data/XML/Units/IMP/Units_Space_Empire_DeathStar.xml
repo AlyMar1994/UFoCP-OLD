@@ -146,7 +146,7 @@
 		<GalacticBehavior> SELECTABLE  </GalacticBehavior>
 		<SpaceBehavior> TACTICAL_SUPER_WEAPON, IDLE, ABILITY_COUNTDOWN, TARGETING </SpaceBehavior>
 
-		<Radar_Icon_Size>0.8, 0.8</Radar_Icon_Size>
+		<Radar_Icon_Size>0.27, 0.27</Radar_Icon_Size>
 	
 		<Unit_Abilities_Data SubObjectList="Yes">
 		

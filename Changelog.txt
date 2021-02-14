@@ -38,6 +38,12 @@ UFoCP
 
 
 ==================
+Maps/Planets (Space)
+==================
+-Nal Hutta – Fixed the DS2 targeting Nar Shaddaa (the moon).  Nar Shaddaa actually used Coruscant's planet scaled down, which was targetable and killable like normal Coruscant.  Changed out with a custom NarShaddaa_Backdrop spaceprop without killable properties.
+
+
+==================
 Units (Land)
 ==================
 -AT-ST – Fixed barrage ending prematurely. The spawned marker to mark the barraged area kept dying. The marker is now immune to damage.
@@ -47,6 +53,8 @@ Units (Land)
 Units (Space)
 ==================
 -Corellian Corvette – Fixed Underworld Corellian Corvette pointing to a non-existant unit for it's "vulnerable to" indicator.  Was pointing to "Alliance_Assault_Ship" and not "_Assault_Frigate."
+
+-Death Star II – Adjusted minimap icon to reflect the DS2's actual size.
 
 -Marauder Cruiser – Fixed Underworld Marauder Cruiser pointing to a non-existant unit for it's "vulnerable to" indicator.  Was pointing to "Alliance_Assault_Ship" and not "_Assault_Frigate."
 
