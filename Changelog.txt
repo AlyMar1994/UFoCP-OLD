@@ -26,6 +26,21 @@ Whenever the AI is edited, it's not labeled based on specific changed units with
 =========================================================================================
 v1.16
 =========================================================================================
+There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT Changelog.txt" in the game directory to see!
+
+
+==================
+UFoCP
+==================
+-Defiler – Fixed thrown bomb having a broken Class ID.
+
+-Grenadier – Fixed proximity mines having a broken Class ID.
+
+
+==================
+Units (Land)
+==================
+-AT-ST – Fixed barrage ending prematurely. The spawned marker to mark the barraged area kept dying. The marker is now immune to damage.
 
 
 ==================
