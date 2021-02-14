@@ -4,7 +4,7 @@
 
 Fixes are marked with a hyphen (-), and written in this format: "-[DIALOG NAME]: 'Orig.' --> 'Fix.'"
 
-THESE EDITS FOLLOW THE STANDARDS OF AMERICAN ENGLISH! Double-spacing where applicable is only fixed when generally inconsistient, wrong for the scenario or is totally broken.  These edits/fixes follow the rules of trying to stay consistient and American English-correct.
+THESE EDITS FOLLOW THE STANDARDS OF AMERICAN ENGLISH!  Double-spacing where applicable is only fixed when generally inconsistient, wrong for the scenario or is totally broken.  These edits/fixes follow the rules of trying to stay consistient and American English-correct.
 
 Last of note, I am a human being and I make mistakes.  Please point out text errors in-game through bug reporting!
 
@@ -17,9 +17,11 @@ v1.16
 
 -Renamed string "TEXT_PROXIMITY_MINE" to "TEXT_OBJECT_PROXIMITY_MINE" for consistency.
 -Renamed string "TEXT_PROXIMITY_MINE_DESC" to "TEXT_OBJECT_PROXIMITY_MINE_DESC" for consistency.
+-Renamed string "TEXT_UNIT_SLAVE_I_01" to "TEXT_UNIT_SLAVE_I_00" for consistency.
 
 -[TEXT_OBJECT_PROXIMITY_MINE]: "Proximity mine" --> "Proximity Mine"
 -[TEXT_OBJECT_PROXIMITY_MINE_DESC]: "Causes a lot of damage if a unit gets too close." --> "When approached too closely, causes a massive explosion damaging any unit in the area."
+-[TEXT_TOOLTIP_MILLENNIUM_FALCON]: "Han Solo's highly modified YT-1300 Corellian freighter. Very fast and highly maneuverable, with weapons rivaling a much larger ship." --> "Smuggler duo capable of traveling the galaxy undetected, stealing credits and inflicting confusion on the battlefield. Han Solo's highly modified YT-1300 Corellian freighter is very fast and highly maneuverable, with weapons rivaling a much larger ship."
 
 
 ===================================================================================================
