@@ -4,6 +4,8 @@
 	<HeroUnit Name="Boba_Fett">
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Text_ID>TEXT_HERO_BOBA_FETT</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_BOBA_FETT TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOUNTY_HUNTER</Encyclopedia_Unit_Class>
 		<Land_Model_Name>EI_BobaFett.alo</Land_Model_Name>
 		<Icon_Name>I_Button_Boba_Fett.tga</Icon_Name>
 
@@ -121,8 +123,6 @@
 
 		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
 		<Score_Cost_Credits>10000</Score_Cost_Credits>
-		<Encyclopedia_Text>TEXT_TOOLTIP_BOBA_FETT TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOUNTY_HUNTER</Encyclopedia_Unit_Class>
 		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
 
 		<Death_Fade_Time>0.25</Death_Fade_Time>
@@ -539,7 +539,7 @@
 				<!-- Disabling these, since we now want Boba to be able to fly anywhere on the map, even into FoW -->
 				<!-- <Area_Effect_Decal_Distance>50.0</Area_Effect_Decal_Distance> -->
 				<!-- <Effective_Radius>300.0</Effective_Radius> -->
-				<Effective_Radius>-1.0</Effective_Radius><!-- For the Jet Pack jump, the effect radius of -1.0 means unlimited range. -->
+				<Effective_Radius>-1.0</Effective_Radius> <!-- For the Jet Pack jump, the effect radius of -1.0 means unlimited range. -->
 			</Unit_Ability>
 		</Unit_Abilities_Data>
 
