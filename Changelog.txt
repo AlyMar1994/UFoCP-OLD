@@ -44,6 +44,16 @@ A.I.
 
 
 ==================
+Maps/Planets (Land)
+==================
+-Nal Hutta – Modified terrain passability in northernmost building area.  Underworld droidekas could get stuck on the steep slope to the right of a factory if placed there.
+-Nal Hutta – Improved passability on the entire map.  Hopefully this improves pathfinding/movement make more sense.
+-Nal Hutta – Modified top-right swamp's left-most building position so the buildpad isn't colliding with a building.
+-Nal Hutta – Shifted all Hutt Palace placements near the defender and attacker reinforcement points to prevent Hutts getting stuck on the hill.
+-Nal Hutta – Attempt at fixing spawnpoint dianoga phasing into the nearby hills.
+
+
+==================
 Maps/Planets (Space)
 ==================
 -Nal Hutta – Fixed the DS2 targeting Nar Shaddaa (the moon).  Nar Shaddaa actually used Coruscant's planet scaled down, which was targetable and killable like normal Coruscant.  Changed out with a custom NarShaddaa_Backdrop spaceprop without killable properties.
