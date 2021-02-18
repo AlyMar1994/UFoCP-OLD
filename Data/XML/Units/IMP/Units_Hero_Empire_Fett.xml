@@ -471,6 +471,8 @@
 	<UniqueUnit Name="Slave_I_Landing">
 		<Variant_Of_Existing_Type>Slave_I</Variant_Of_Existing_Type>
 
+		<Scale_Factor>3.30</Scale_Factor>
+
 		<Is_Valid_Target>No</Is_Valid_Target>
 		<User_Bound_Min>-700, -700, 0</User_Bound_Min>
 		<User_Bound_Max>700, 700, 1500</User_Bound_Max>
