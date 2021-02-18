@@ -56,6 +56,8 @@ Maps/Planets (Land)
 ==================
 Maps/Planets (Space)
 ==================
+-Fondor – Fixed space map preview being severely innacurate/out-of-date.
+
 -Nal Hutta – Fixed the DS2 targeting Nar Shaddaa (the moon).  Nar Shaddaa actually used Coruscant's planet scaled down, which was targetable and killable like normal Coruscant.  Changed out with a custom NarShaddaa_Backdrop spaceprop without killable properties.
 
 
