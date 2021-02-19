@@ -25,9 +25,9 @@ function Definitions()
 		"Tie_Fighter_Squadron | Tie_Bomber_Squadron | Tartan_Patrol_Cruiser | Jedi_Cruiser_E | Broadside_Class_Cruiser | Acclamator_Assault_Ship | Victory_Destroyer | Interdictor_Cruiser | Star_Destroyer | Fleet_Com_Empire_Team | TIE_Defender_Squadron | TIE_Interceptor_Squadron | TIE_Phantom_Squadron = 0,3",
 		"Crusader_Gunship | Interceptor4_Frigate | Jedi_Cruiser_U | Kedalbe_Battleship | Krayt_Class_Destroyer | Skipray_Squadron | StarViper_Squadron | Vengeance_Frigate = 0,3",
 
-		"Rogue_Squadron_Space | Sundered_Heart | Han_Solo_Team_Space_MP | Home_One = 0,1",
-		"Boba_Fett_Team_Space_MP | Accuser_Star_Destroyer | Darth_Team_Space_MP | Admonitor_Star_Destroyer = 0,1",
-		"Bossk_Team_Space_MP | IG88_Team_Space_MP | The_Peacebringer = 0,1"
+		"Rogue_Squadron_Space | Sundered_Heart | Millennium_Falcon_MP | Home_One = 0,1",
+		"Slave_I_MP | Accuser_Star_Destroyer | Darth_Team_Space_MP | Admonitor_Star_Destroyer = 0,1",
+		"Houndstooth_MP | IG-2000_MP | The_Peacebringer = 0,1"
 		}
 	}
 

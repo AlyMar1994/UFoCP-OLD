@@ -538,6 +538,28 @@
 		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
 	</UniqueUnit>
 
+	<UniqueUnit Name="Millennium_Falcon_MP">
+		<Variant_Of_Existing_Type>Millennium_Falcon</Variant_Of_Existing_Type>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+		<Tech_Level>99</Tech_Level>
+
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Respawn_Han_Solo</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Respawn_Han_Solo</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Han_Solo</SFXEvent_Fleet_Move>
+
+		<!-- MULTIPLAYER SKIRMISH VAlUES START: -->
+		<Tactical_Build_Cost_Multiplayer>1800</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>33</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+	</UniqueUnit>
+
 	<UniqueUnit Name="Millennium_Falcon_Death_Clone">
 		<Text_ID>TEXT_UNIT_MILLENNIUM_FALCON_00</Text_ID>
 		<Space_Model_Name>RV_MFalcon_D.alo</Space_Model_Name>
@@ -729,7 +751,10 @@
 		<Is_Stealth_Company>No</Is_Stealth_Company>
 	</HeroCompany>
 
-	<HeroCompany Name="Han_Solo_Team_Space_MP">
+
+	<!-- AM1994 (02/18/2020): Removing for replacement with Millennium_Falcon_MP to fix -->
+	<!-- the Object Contestation Glitch. -->
+	<!-- <HeroCompany Name="Han_Solo_Team_Space_MP">
 		<Variant_Of_Existing_Type>Han_Solo_Team</Variant_Of_Existing_Type>
 
 		<Text_ID>TEXT_UNIT_MILLENNIUM_FALCON_00</Text_ID>
@@ -745,6 +770,6 @@
 		<Tactical_Build_Prerequisites />
 		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
 		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>  
-	</HeroCompany>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+	</HeroCompany> -->
 </Thieves_Data>

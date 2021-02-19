@@ -15,9 +15,14 @@ Last of note, I am a human being and I make mistakes.  Please point out text err
 v1.16
 ===================================================================================================
 
+-Created string "TEXT_TOOLTIP_HOUNDSTOOTH_00" to make Bossk's description more consistent.
+-Created string "TEXT_TOOLTIP_IG2000_00" to make Bossk's description more consistent.
+
 -Renamed string "TEXT_PROXIMITY_MINE" to "TEXT_OBJECT_PROXIMITY_MINE" for consistency.
 -Renamed string "TEXT_PROXIMITY_MINE_DESC" to "TEXT_OBJECT_PROXIMITY_MINE_DESC" for consistency.
 -Renamed string "TEXT_UNIT_SLAVE_I_01" to "TEXT_UNIT_SLAVE_I_00" for consistency.
+-Renamed string "TEXT_UNIT_HOUNDSTOOTH_01" to "TEXT_UNIT_HOUNDSTOOTH_00" for consistency.
+-Renamed string "TEXT_UNIT_IG2000_01" to "TEXT_UNIT_IG2000_00" for consistency.
 
 -[TEXT_OBJECT_PROXIMITY_MINE]: "Proximity mine" --> "Proximity Mine"
 -[TEXT_OBJECT_PROXIMITY_MINE_DESC]: "Causes a lot of damage if a unit gets too close." --> "When approached too closely, causes a massive explosion damaging any unit in the area."

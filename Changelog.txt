@@ -40,7 +40,7 @@ UFoCP
 ==================
 A.I.
 ==================
--(LUA) TacticalMultiplayerBuildSpaceUnitsGeneric – Fixed Underworld AI not being able to build the Venator cruiser (it wasn't defined in the AI to build).
+-(LUA) TacticalMultiplayerBuildSpaceUnitsGeneric – Fixed Underworld AI being unable to build the Venator cruiser (it wasn't defined in the AI to build).
 
 
 ==================
@@ -74,21 +74,23 @@ Units (Land)
 ==================
 Units (Space)
 ==================
--Slave I - Boba Fett – Reverted MP changes.  A new, cleaner method to fix the "Boba Mine Glitch"/object contestation glitch was found.  This change preserves the hero unit movement behavior as intended with the latest patch from Petroglyph.
--Slave I - Boba Fett – Fixed new team's "vulnerable to"/"strong against" indicators to match up with unit's.
-
 -Corellian Corvette – Fixed Underworld Corellian Corvette pointing to a non-existant unit for it's "vulnerable to" indicator.  Was pointing to "Alliance_Assault_Ship" and not "_Assault_Frigate."
 
 -Death Star II – Adjusted minimap icon to reflect the DS2's actual size.
 
--The Millennium Falcon - Han Solo & Chewbacca – Reverted MP changes.  A new, cleaner method to fix the "Boba Mine Glitch"/object contestation glitch was found.  This change preserves the hero unit movement behavior as intended with the latest patch from Petroglyph.
--The Millennium Falcon - Han Solo & Chewbacca – Fixed new team's "vulnerable to"/"strong against" indicators to match up with unit's.
+-IG-2000 - IG-88 – Fixed the Object Contestation Glitch.
+-IG-2000 - IG-88 – Adjusted description to be more akin to the other heroes.
+
+-The Hound's Tooth - Bossk – Fixed the Object Contestation Glitch.
+-The Hound's Tooth - Bossk – Adjusted description to be more akin to the other heroes.
+
 -The Millennium Falcon - Han Solo & Chewbacca – Modified unit's space description to match other heroes' more consistently.
 
 -Marauder Cruiser – Fixed Underworld Marauder Cruiser pointing to a non-existant unit for it's "vulnerable to" indicator.  Was pointing to "Alliance_Assault_Ship" and not "_Assault_Frigate."
 
 
 =========================================================================================
+
 
 
 =========================================================================================
