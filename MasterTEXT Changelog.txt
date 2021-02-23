@@ -15,8 +15,8 @@ Last of note, I am a human being and I make mistakes.  Please point out text err
 v1.16
 ===================================================================================================
 
--Created string "TEXT_TOOLTIP_HOUNDSTOOTH_00" to make Bossk's description more consistent.
--Created string "TEXT_TOOLTIP_IG2000_00" to make Bossk's description more consistent.
+-Created string "TEXT_TOOLTIP_HOUNDSTOOTH_00" to make space Bossk's description more consistent.
+-Created string "TEXT_TOOLTIP_IG2000_00" to make space IG-88's description more consistent.
 
 -Renamed string "TEXT_PROXIMITY_MINE" to "TEXT_OBJECT_PROXIMITY_MINE" for consistency.
 -Renamed string "TEXT_PROXIMITY_MINE_DESC" to "TEXT_OBJECT_PROXIMITY_MINE_DESC" for consistency.
