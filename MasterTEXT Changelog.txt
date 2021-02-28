@@ -24,6 +24,7 @@ v1.16
 -Renamed string "TEXT_UNIT_HOUNDSTOOTH_01" to "TEXT_UNIT_HOUNDSTOOTH_00" for consistency.
 -Renamed string "TEXT_UNIT_IG2000_01" to "TEXT_UNIT_IG2000_00" for consistency.
 
+-[TEXT_GUI_DIALOG_TOOLTIP_IDC_BOTH_MOUSE_BUTTONS_ROTATE]: "When enabled, holding both left- and right-mouse buttons down will rotate the playfield." --> "When enabled, holding both left- and right-mouse buttons down will rotate the playfield instead of solely CTRL+middle-mouse."
 -[TEXT_OBJECT_PROXIMITY_MINE]: "Proximity mine" --> "Proximity Mine"
 -[TEXT_OBJECT_PROXIMITY_MINE_DESC]: "Causes a lot of damage if a unit gets too close." --> "When approached too closely, causes a massive explosion damaging any unit in the area."
 -[TEXT_TOOLTIP_MILLENNIUM_FALCON]: "Han Solo's highly modified YT-1300 Corellian freighter. Very fast and highly maneuverable, with weapons rivaling a much larger ship." --> "Smuggler duo capable of traveling the galaxy undetected, stealing credits and inflicting confusion on the battlefield. Han Solo's highly modified YT-1300 Corellian freighter is very fast and highly maneuverable, with weapons rivaling a much larger ship."
