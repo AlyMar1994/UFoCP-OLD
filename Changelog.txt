@@ -58,7 +58,12 @@ Maps/Planets (Space)
 ==================
 -Fondor – Fixed space map preview being severely innacurate/out-of-date.
 
+-Mandalore – Fixed space map preview being decently out-of-date.
+
 -Nal Hutta – Fixed the DS2 targeting Nar Shaddaa (the moon).  Nar Shaddaa actually used Coruscant's planet scaled down, which was targetable and killable like normal Coruscant.  Changed out with a custom NarShaddaa_Backdrop spaceprop without killable properties.
+
+-Sullust – Fixed in-battle planet being a desert instead of volcanic.  The file the volcanic planet backdrop is located had it's model misspelled to "W_Planet_Volcanic.alo" and not "W_Planet_Volcanic00.alo," and a desert one was used in its place.
+-Sullust – Fixed space map preview being out-of-date.
 
 
 ==================

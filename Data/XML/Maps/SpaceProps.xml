@@ -713,7 +713,7 @@
 		
 	<SpaceProp Name="Volcanic_Backdrop_Large">
 		<Text_ID />
-		<Space_Model_Name>w_planet_volcanic.alo</Space_Model_Name>
+		<Space_Model_Name>w_planet_volcanic00.alo</Space_Model_Name>
 		<Is_Decoration> No </Is_Decoration> <!-- Anything with a behavior other than IDLE can not be tagged as a decoration -->
     <Is_Discardable> No </Is_Discardable>
 		<Loop_Idle_Anim_00> Yes </Loop_Idle_Anim_00>
