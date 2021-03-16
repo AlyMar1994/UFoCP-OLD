@@ -1,13 +1,12 @@
 <?xml version="1.0" ?>
-<!-- example of using wind disturbance
-      <LandBehavior>WALK_LOCOMOTOR,TARGETING,IDLE,WEAPON,TURRET,POWERED,REVEAL,HIDE_WHEN_FOGGED, WIND_DISTURBANCE</LandBehavior>
-	  <Wind_Disturbance_Radius>50</Wind_Disturbance_Radius>
-	  <Wind_Disturbance_Strength>10</Wind_Disturbance_Strength>
-	  <Wind_Disturbance_Sphere_Alpha>0.4</Wind_Disturbance_Sphere_Alpha>
-	  -->
- 
+<!--
+		example of using wind disturbanceL
+		<LandBehavior>WALK_LOCOMOTOR,TARGETING,IDLE,WEAPON,TURRET,POWERED,REVEAL,HIDE_WHEN_FOGGED, WIND_DISTURBANCE</LandBehavior>
+		<Wind_Disturbance_Radius>50</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>10</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.4</Wind_Disturbance_Sphere_Alpha>
+-->
 <LandBombingRunUnits>
-
 	<LandBombingUnit Name="Y-Wing_Bombing_Run">
 		<Text_ID>TEXT_UNIT_Y_WING</Text_ID>
 		<Land_Model_Name>rv_ywing.alo</Land_Model_Name>
@@ -32,7 +31,6 @@
 		<Deploys>No</Deploys>
 		<Affiliation>Rebel</Affiliation>
 		<Size_Value>15</Size_Value>
-
 
 		<Armor_Type> Armor_Speeder </Armor_Type>
 		<Damage>25</Damage>
