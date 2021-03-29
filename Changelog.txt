@@ -47,9 +47,9 @@ A.I.
 Maps/Planets (Land)
 ==================
 -Nal Hutta – Modified terrain passability in northernmost building area.  Underworld droidekas could get stuck on the steep slope to the right of a factory if placed there.
--Nal Hutta – Improved passability on the entire map.  Hopefully this improves pathfinding/movement make more sense.
--Nal Hutta – Modified top-right swamp's left-most building position so the buildpad isn't colliding with a building.
--Nal Hutta – Shifted all Hutt Palace placements near the defender and attacker reinforcement points to prevent Hutts getting stuck on the hill.
+-Nal Hutta – Improved passability on the entire map.  Hopefully this improves pathfinding/helps movement make more sense.
+-Nal Hutta – Modified top-right swamp's left-most building position so the buildpad isn't colliding with a possible building.
+-Nal Hutta – Shifted all Hutt Palace placements near the defender and attacker reinforcement points to prevent Hutts getting stuck on the hills.
 -Nal Hutta – Attempt at fixing spawnpoint dianoga phasing into the nearby hills.
 
 
@@ -60,7 +60,7 @@ Maps/Planets (Space)
 
 -Mandalore – Fixed space map preview being decently out-of-date.
 
--Nal Hutta – Fixed the DS2 targeting Nar Shaddaa (the moon).  Nar Shaddaa actually used Coruscant's planet scaled down, which was targetable and killable like normal Coruscant.  Changed out with a custom NarShaddaa_Backdrop spaceprop without killable properties.
+-Nal Hutta – Fixed the DS2 targeting Nar Shaddaa (the moon).  Nar Shaddaa actually used Coruscant's planet scaled down, which was targetable and killable like normal Coruscant.  Changed out with a custom NarShaddaa_Backdrop duplicate without killable properties.
 
 -Sullust – Fixed in-battle planet being a desert instead of volcanic.  The file the volcanic planet backdrop is located had it's model misspelled to "W_Planet_Volcanic.alo" and not "W_Planet_Volcanic00.alo," and a desert one was used in its place.
 -Sullust – Fixed space map preview being out-of-date.
