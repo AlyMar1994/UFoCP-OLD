@@ -36,6 +36,8 @@ UFoCP
 
 -Grenadier – Fixed proximity mines having a broken Class ID.
 
+-V-wing – Fixed Hutt V-wings having broken descriptions.
+
 
 ==================
 A.I.
