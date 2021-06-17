@@ -34,6 +34,8 @@ UFoCP
 ==================
 -Defiler – Fixed thrown bomb having a broken Class ID.
 
+-Marauder Cruiser – Fixed Underworld Marauder Cruiser pointing to a non-existant unit for it's "vulnerable to" indicator.  Was pointing to "Alliance_Assault_Ship" and not "_Assault_Frigate."
+
 -Grenadier – Fixed proximity mines having a broken Class ID.
 
 -V-wing – Fixed Hutt V-wings having broken descriptions.
@@ -42,7 +44,7 @@ UFoCP
 ==================
 A.I.
 ==================
--(LUA) TacticalMultiplayerBuildSpaceUnitsGeneric – Fixed Underworld AI being unable to build the Venator cruiser (it wasn't defined in the AI to build).
+-(LUA) TacticalMultiplayerBuildSpaceUnitsGeneric – Fixed Underworld AI being unable to build the Venator cruiser (it wasn't defined).
 
 
 ==================
@@ -92,8 +94,6 @@ Units (Space)
 -The Hound's Tooth - Bossk – Adjusted description to be more akin to the other heroes.
 
 -The Millennium Falcon - Han Solo & Chewbacca – Modified unit's space description to match other heroes' more consistently.
-
--Marauder Cruiser – Fixed Underworld Marauder Cruiser pointing to a non-existant unit for it's "vulnerable to" indicator.  Was pointing to "Alliance_Assault_Ship" and not "_Assault_Frigate."
 
 
 =========================================================================================
