@@ -4,7 +4,7 @@
 -- ORIGINAL AUTHOR (Petroglyph): James Yarrow
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 12/22/2020, 6:40 PM
+-- LAST REVISION DATE: 06/16/2021, 9:46 PM
 -- ======================================================================
 require("PGEvents")
 
@@ -38,8 +38,8 @@ end
 function ReserveForce_Thread()
 	local tech_level
 	local min_credits
-	local current_sleep_seconds
 	local max_sleep_seconds
+	local current_sleep_seconds
 
 	BlockOnCommand(ReserveForce.Produce_Force())
 	ReserveForce.Set_Plan_Result(true)

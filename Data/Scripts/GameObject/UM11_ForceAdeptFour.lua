@@ -24,7 +24,7 @@ function State_Init(message)
 		warp4 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w4")
 		warp5 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w5")
 		warp6 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w6")
-		underworld_player = Find_Player("Underworld") -- AM1994 (3/13/2020): Adding variable to prevent calling NIL later on.
+		underworld_player = Find_Player("Underworld") -- AM1994 (03/13/2020): Adding variable to prevent calling NIL later on.
 		closerange = false
 
 		Register_Prox(Object, Unit_Prox, 100, underworld_player)

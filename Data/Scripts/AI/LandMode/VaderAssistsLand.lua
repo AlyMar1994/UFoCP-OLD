@@ -43,7 +43,8 @@ function MainForce_Thread()
 		ScriptExit()
 	end
 
-	-- Continuously try to attack, assist the most significant nearby unit, and heal up.
+	-- Continuously try to heal, attack any threat for 30 seconds
+	-- and assist the most significant ally for 20 seconds.
 	while true do
 		ConsiderHeal(vader)
 

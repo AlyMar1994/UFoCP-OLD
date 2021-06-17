@@ -24,8 +24,8 @@ function Definitions()
 	DebugMessage("%s -- Done Definitions", tostring(Script))
 end
 
--- AM1994 (4/29/2020): Thanks, Nikomer.
 function MainForce_Thread()
+	-- AM1994 (4/29/2020): Thanks, Nikomer.
 	local ds = Find_First_Object("Death_Star")
 	if not TestValid(ds) then
 		ds = Find_First_Object("Death_Star_II")
