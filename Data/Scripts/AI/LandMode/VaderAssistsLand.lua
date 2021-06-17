@@ -28,11 +28,7 @@ end
 function MainForce_Thread()
 	local vader = MainForce.Get_Unit_Table()[1]
 
-	if not TestValid(vader) then
-		MessageBox("unexpected state; vader unavailable")
-
-		ScriptExit()
-	end
+	if not TestValid(vader) then ScriptExit() end
 
 	BlockOnCommand(MainForce.Produce_Force())
 	QuickReinforce(PlayerObject, AITarget, MainForce)
