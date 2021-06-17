@@ -73,7 +73,7 @@ Maps/Planets (Space)
 ==================
 Units (Land)
 ==================
--AT-ST – Fixed barrage ending prematurely. The spawned marker to mark the barraged area kept dying. The marker is now immune to damage.
+-AT-ST – Fixed barrage ending prematurely.  The spawned marker to mark the barraged area kept dying. The marker is now immune to damage.
 
 -Boba Fett – Increased size of Slave I's landing model to match the relative size of other ships (as its model is drastically smaller than other ships, it was disproportional).
 
