@@ -89,11 +89,12 @@ function GoKite(tf, unit, kite_pos, release)
 end
 
 function Try_Good_Ground(tf, unit)
+	-- Get nearest infantry-friendly Good_Ground area by finding the prop.
+	-- TODO: EaW only. FoC doesn't use G_G, re-evaluate use/fixup?
 	local nearest_good_ground_indicator = Find_Nearest(unit, "Prop_Good_Ground_Area")
-	local dist_to_good_ground
 
 	if nearest_good_ground_indicator then
-		dist_to_good_ground = unit.Get_Distance(nearest_good_ground_indicator)
+		local dist_to_good_ground = unit.Get_Distance(nearest_good_ground_indicator)
 
 		if (dist_to_good_ground < 300) and (dist_to_good_ground > 20) then
 			unit.Activate_Ability("SPREAD_OUT", false)
