@@ -42,6 +42,12 @@ UFoCP
 
 
 ==================
+General
+==================
+-Did some passes within Lua to clean and ensure things are running smoothly (localization of variables, repositioning, etc).
+
+
+==================
 A.I.
 ==================
 -(LUA) TacticalMultiplayerBuildSpaceUnitsGeneric – Fixed Underworld AI being unable to build the Venator cruiser (it wasn't defined).
