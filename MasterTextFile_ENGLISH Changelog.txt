@@ -1,7 +1,3 @@
-----
-*English-only text fixes, no localizers as-of-yet.
-----
-
 Fixes are marked with a hyphen (-), and written in this format: "-[DIALOG NAME]: 'Orig.' --> 'Fix.'"
 
 THESE EDITS FOLLOW THE STANDARDS OF AMERICAN ENGLISH!  Double-spacing where applicable is only fixed when generally inconsistient, wrong for the scenario or is totally broken.  These edits/fixes follow the rules of trying to stay consistient and American English-correct.

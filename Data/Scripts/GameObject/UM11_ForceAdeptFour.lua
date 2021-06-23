@@ -47,7 +47,6 @@ function AdeptFour_AI()
 	local warp6 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w6")
 
 	local warptimer = 0
-	local target = Find_Nearest(Object, underworld_player)
 	local noteleports
 	local cage
 	local dist
@@ -102,6 +101,7 @@ function AdeptFour_AI()
 			end
 		end
 
+		local target = Find_Nearest(Object, underworld_player)
 		if TestValid(target) then
 			Object.Attack_Move(target)
 		end

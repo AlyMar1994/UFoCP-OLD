@@ -88,6 +88,8 @@ Support
 -Jorritkarwehr
 	- Petroglyph .DAT Text Disassembler
 	- https://github.com/Vardamir117/datassembler
+		-Regret ("Regret#0143")
+		- Custom version with a GUI.
 
 -KadVenku
     – Lots of help on GitHub for issues with FoC.
