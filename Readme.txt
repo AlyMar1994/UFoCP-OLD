@@ -85,6 +85,10 @@ Texturing
 ================
 Support
 ================
+-Jorritkarwehr
+	- Petroglyph .DAT Text Disassembler
+	- https://github.com/Vardamir117/datassembler
+
 -KadVenku
     – Lots of help on GitHub for issues with FoC.
 	- Assistance with creating .MEGs.
