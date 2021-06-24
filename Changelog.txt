@@ -49,6 +49,8 @@ General
 ==================
 -Did some passes within Lua to clean and ensure things are running smoothly (localization of variables, repositioning, etc).
 
+-Fixed Steam Workshop page using incorrect mod tags.
+
 
 ==================
 A.I.
