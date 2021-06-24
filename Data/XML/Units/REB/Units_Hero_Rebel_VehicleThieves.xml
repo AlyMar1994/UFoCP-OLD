@@ -458,7 +458,7 @@
 		<Fire_Inaccuracy_Distance>Corvette,		5.00</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Frigate,		30.00</Fire_Inaccuracy_Distance>
 		<Fire_Inaccuracy_Distance>Capital,		30.00</Fire_Inaccuracy_Distance>
-		<Fire_Inaccuracy_Distance>Super,		30.00</Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance>Super,		1.00</Fire_Inaccuracy_Distance>
 
 		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
 		<Turret_Elevate_Extent_Degrees>90</Turret_Elevate_Extent_Degrees>

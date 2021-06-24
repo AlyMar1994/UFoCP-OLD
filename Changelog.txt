@@ -35,11 +35,15 @@ UFoCP
 -Removed the modified credits music from the mod.  Let alone the """*technical*""" legal implications of including part of A New Hope's soundtrack into the mod, in terms of fixes its relatively unnecessary.  It's was also unlikely to be heard (unless you liked watching the credits), and wasn't *technically* an incorrect version of "The Throne Room/End Title."  There were 16 different takes, combined, of TTR/ET altogether, and the version originally in Empire at War was an alternate take released by 20th Century Fox Film Scores when "In the time between the original LP release and the Anthology's release," the breakdown of what was going to be released versus what was actually used in the film was lost.  Petroglyph probably just liked the """incorrect""" take anyway, and there was no justification in changing it.
 
 
+-Corellian Corvette – Fixed Underworld Corellian Corvette pointing to a non-existant unit for it's "vulnerable to" indicator.  Was pointing to "Alliance_Assault_Ship" and not "_Assault_Frigate."
+
 -Defiler – Fixed thrown bomb having a broken Class ID.
 
 -Marauder Cruiser – Fixed Underworld Marauder Cruiser pointing to a non-existant unit for it's "vulnerable to" indicator.  Was pointing to "Alliance_Assault_Ship" and not "_Assault_Frigate."
 
 -Grenadier – Fixed proximity mines having a broken Class ID.
+
+-The Millennium Falcon - Han Solo & Chewbacca – Fixed weapon inaccuracy distance.  "Super" was erroneously changed from 1.0 to 30.0, making the Falcon very inaccurate against the giant SSD.
 
 -V-wing – Fixed Hutt V-wings having broken descriptions.
 
@@ -94,8 +98,6 @@ Units (Land)
 ==================
 Units (Space)
 ==================
--Corellian Corvette – Fixed Underworld Corellian Corvette pointing to a non-existant unit for it's "vulnerable to" indicator.  Was pointing to "Alliance_Assault_Ship" and not "_Assault_Frigate."
-
 -Death Star II – Adjusted minimap icon to reflect the DS2's actual size.
 
 -IG-2000 - IG-88 – Fixed the Object Contestation Glitch.
@@ -1094,7 +1096,7 @@ Units (Space)
 
 -Merciless – Fixed plasma ball type. Original plasma blast was the Star Destroyer turbolaser type, now it's the default Aggressor-class plasma shot damage.
 
--Millennium Falcon – Fixed weapon innacuracy distances. There were duplicate values; changed "super"-class ships innacuracy to 30.00 from copied value (1).
+-Millennium Falcon – Fixed weapon innaccuracy distances. There were duplicate values; changed "super"-class ships inaccuracy to 30.00 from copied value (1).
 
 -Nebulon-B Frigate – Fixed Underworld-type Nebulon-B Frigate being "good against"/"vulnerable to" own faction's units. Replaced "good against" Crusader Gunboat with Corellian Corvette, and "vulnerable to" Vengance Frigate to Victory Star Destroyer.
 
