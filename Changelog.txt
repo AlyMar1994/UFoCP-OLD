@@ -26,7 +26,7 @@ Whenever the AI is edited, it's not labeled based on specific changed units with
 =========================================================================================
 v1.16
 =========================================================================================
-There are MasterTextFiles_ENGLISH.dat updates in this update! Check "MasterTEXT Changelog.txt" in the game directory to see!
+There are MasterTextFiles_ENGLISH.dat updates in this update! Check "Changelog - MasterTextFile_ENGLISH.txt" in the game directory to see!
 
 
 ==================
