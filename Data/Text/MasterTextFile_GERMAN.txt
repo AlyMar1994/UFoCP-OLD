@@ -9,8 +9,6 @@ Hint_IDC_NEW_CAMPAIGN_BUTTON_DEMO,[TBL]
 Hint_IDC_NEW_FIGHT_BUTTON,Beginnt die Schlacht.
 Hint_IDC_SKIRMISH_GAMES_BUTTON,Kämpft eine einzelne Schlacht am Boden oder im Weltraum auf Seiten des Imperiums, der Rebellen oder des Zann-Konsortiums.
 Hint_IDC_SKIRMISH_GAMES_BUTTON_DEMO,[TBL]
-ITEXT_SFX_MCC_NTERDICTOR_1,Wir müssen diesen Interdictor vernichten, oder wir kommen hier nicht weg!
-ITEXT_SFX_MCF_INTERDICTOR_1,Wir müssen diesen Interdictor ausschalten, sonst kommen wir hier nicht weg!
 LANGUAGE_CHINESE,Chinesisch
 LANGUAGE_ENGLISH,Englisch
 LANGUAGE_FRENCH,Französisch
@@ -413,7 +411,7 @@ TEXT_BOBA_FETT_NEUTRALIZES_HAN_SOLO,Boba Fett hat Han Solo und Chewbacca für ei
 TEXT_BOBA_FETT_NEUTRALIZES_KYLE_KATARN,Boba Fett hat Kyle Katarn für einige Zeit ausgeschaltet! Position:
 TEXT_BOBA_FETT_NEUTRALIZES_MON_MOTHMA,Boba Fett hat Mon Mothma für einige Zeit ausgeschaltet! Position:
 TEXT_BOBA_FETT_NEUTRALIZES_OBI_WAN_KENOBI,Boba Fett hat Obi-Wan Kenobi für einige Zeit ausgeschaltet! Position:
-TEXT_BOMB_CLASS,Bombe
+TEXT_ENCYCLOPEDIA_CLASS_BOMB,Bombe
 TEXT_BOSSK_FLAMETHROWER_DESCRIPTION,Aktiviert Bossks Flammenwerfer und fügt Einheiten vor ihm Schaden zu.
 TEXT_BOSSK_SWAP_DESCRIPTION,Wechselt zwischen Blaster und Plasmagranaten
 TEXT_BOTH_MOUSE_BUTTONS_ROTATE,Beide Maustasten zum Drehen
@@ -588,7 +586,7 @@ TEXT_BUTTON_TUTORIAL,Tutorial
 TEXT_BUTTON_UNFLAG_THIS,Markierung aufheben
 TEXT_BUTTON_WITHDRAW,Rückzug
 TEXT_BUTTON_YES,Ja
-TEXT_BYSS_KIDNAPPING_OBJECTIVE_00,Bringt Gouverneur Kirith zum Transporter zurück.
+TEXT_CORRUPTION_OBJ_KID_BYSS_01,Bringt Gouverneur Kirith zum Transporter zurück.
 TEXT_CAMERA_CENTER,Kamera zentrieren
 TEXT_CAMERA_HOME,Kamera-Voreinstellung
 TEXT_CAMERA_RESET,Kamera zurücksetzen
@@ -1024,7 +1022,7 @@ TEXT_CORRUPTION_SLAVERY_BENEFIT,VORTEILE: Verschafft dem Zann-Konsortium billige
 TEXT_CORRUPTION_SLAVERY_ENCYCLOPEDIA,Dieser Einsatz erfordert einen Verderber, der Umerziehungslager aufbaut, um das Weltbild des Konsortiums in den Köpfen der örtlichen Bevölkerung zu verankern.
 TEXT_CORRUPTION_SULLUST_STORY_BONDEDCITIZENS,Die Einwohner leben unter der Erde. Ihre isolierte Lebensweise macht es uns leicht, sie für die Zwecke des Konsortiums zu versklaven.
 TEXT_CORRUPTION_SULLUST_STORY_BRIBERY,Die Bestechung wichtiger Regierungsbeamter wie Sian Tew öffnet der Korruption auf diesem Planeten Tür und Tor und vergrößert den Einfluss des Zann-Konsortiums in diesem Sektor.
-TEXT_CORRUPTION_TARIS_INT_GOAL_01,Silri muss überleben.
+TEXT_CORRUPTION_OBJ_SILRISURVIVE,Silri muss überleben.
 TEXT_CORRUPTION_TARIS_STORY_BRIBERY,Auf dem Planeten existiert eine große Hutten-Organisation, die für Bestechung empfänglich sein dürfte. Wir kennen die Hutten und wissen, wie sie sind. Das kann hier relativ schnell gehen.
 TEXT_CORRUPTION_TARIS_STORY_INTIMIDATION,Das ideale Opfer einer Einschüchterung wäre der Gunganer-Duellant Twitch. Wenn das Konsortium ihm Angst einjagt, fällt der Rest dieser Welt von ganz allein.
 TEXT_CORRUPTION_TATOOINE_STORY_BLACKMARKET,Jabbas Palast ist bereits auf einen Schwarzmarkt vorbereitet. Auf dieser Welt dürfte es für uns keine Probleme geben.
@@ -1035,10 +1033,9 @@ TEXT_CORRUPTION_TITLE,PLANETEN KORRUMPIEREN
 TEXT_CORRUPTION_UNIT_REQUIREMENT,Anzahl der Helden oder Einheiten, die nötig sind, um die Korruption auf dieser Welt zu etablieren. Diese Einheiten werden aus dem Spiel genommen, wenn diese Korruptionsoption ausgewählt wird.
 TEXT_CORRUPTION_UTAPAU_STORY_BRIBERY,Schwere Kreuzer der Dreadnaught-Klasse bewachen den Planeten und das Sonnensystem. Wenn wir sie bestechen, könnte das dem Konsortium zu ungeahnter Macht verhelfen.
 TEXT_CORRUPTION_UTAPAU_STORY_KIDNAP,Auf diesem Planeten hat die Familie Fey immer wieder Führungspersönlichkeiten hervorgebracht. Wenn wir einen wie Garnak Fey entführen, zeigen wir dem Sektor, wen es wirklich zu fürchten gilt.
-TEXT_CORRUPTION_UTAPAU_STORY_KIDNAP_OBJECTIVE_01,Silri muss überleben.
-TEXT_CORRUPTION_UTAPAU_STORY_KIDNAP_OBJECTIVE_02,Übernehmt die Fey-Anlage, indem Ihr alle Verteidiger und Abwehrtürme ausschaltet.
-TEXT_CORRUPTION_UTAPAU_STORY_KIDNAP_OBJECTIVE_03,Bringt Silri zu Garnak Fey.
-TEXT_CORRUPTION_UTAPAU_STORY_KIDNAP_OBJECTIVE_04,Bringt Garnak Fey und Silri zur Landefähre.
+TEXT_CORRUPTION_OBJ_KID_UTAPAU_00,Übernehmt die Fey-Anlage, indem Ihr alle Verteidiger und Abwehrtürme ausschaltet.
+TEXT_CORRUPTION_OBJ_KID_UTAPAU_01,Bringt Silri zu Garnak Fey.
+TEXT_CORRUPTION_OBJ_KID_UTAPAU_02,Bringt Garnak Fey und Silri zur Landefähre.
 TEXT_CORRUPTION_WAYLAND_STORY_BLACKMARKET,Der Planet ist berühmt für seine organischen Waffensysteme. Wer hier einen Schwarzmarkt aufzieht, dem winkt eine breite Palette modernster Technologien.
 TEXT_CORRUPTION_WAYLAND_STORY_RACKETEER,In den Lagerhäusern des Imperiums hier auf diesem Planeten sind noch viele Geheimnisse versteckt, die nur eine gut funktionierende organisierte Kriminalität lüften kann.
 TEXT_CORRUPTION_YAVIN_STORY_BRIBERY,Auf Yavin 4 und in seiner Umgebung stehen starke Rebellenkräfte, von denen wir durch Bestechung Informationen über ihre Bewegungen in diesem Sektor erhalten könnten.
@@ -1365,7 +1362,7 @@ TEXT_ENCYCLOPEDIA_ACADEMY_00,Bildet folgende Einheiten aus: Field Commander, Flo
 TEXT_ENCYCLOPEDIA_ACADEMY_01,Ermöglicht: Infiltrator-Trainingslager
 TEXT_ENCYCLOPEDIA_ADVANCED_FACTORY_EMPIRE_00,Baut folgende Einheiten: AT-AA, AT-AT
 TEXT_ENCYCLOPEDIA_ANIMAL_NEST,Tiernest
-TEXT_ENCYCLOPEDIA_ANNIHILATOR,Die Annihilator steht unter dem Kommando von Admiral Gaarn.
+TEXT_TOOLTIP_ANNIHILATOR,Die Annihilator steht unter dem Kommando von Admiral Gaarn.
 TEXT_ENCYCLOPEDIA_BARRACKS_EMPIRE_00,Bildet folgende Einheiten aus: Sturmtruppen, Kundschafter
 TEXT_ENCYCLOPEDIA_BARRACKS_EMPIRE_01,Ermöglicht: Offiziersakademie
 TEXT_ENCYCLOPEDIA_BARRACKS_REBEL_00,Bildet Rebellensoldaten und Plex-Raketentruppen aus und ermöglicht den Bau von Offiziersakademien.
@@ -1444,7 +1441,6 @@ TEXT_ENCYCLOPEDIA_CLASS_SPEEDER,Klasse: Gleiter
 TEXT_ENCYCLOPEDIA_CLASS_SSD,Klasse: Super-Sternenzerstörer
 TEXT_ENCYCLOPEDIA_CLASS_STATION,Klasse: Raumstation
 TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE,Klasse: Gebäude
-TEXT_ENCYCLOPEDIA_CLASS_SUPER,Klasse: Superwaffe
 TEXT_ENCYCLOPEDIA_CLASS_SUPERWEAPON,Klasse: Superwaffe
 TEXT_ENCYCLOPEDIA_CLASS_TANK,Klasse: Panzer
 TEXT_ENCYCLOPEDIA_CLASS_TRANSPORT,Klasse: Transporter
@@ -1548,7 +1544,7 @@ TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE,Ein einheimisches Lebewesen, das vom Zann-Konsor
 TEXT_ENCYCLOPEDIA_TURBOLASER_00,Eine Boden-Boden-Waffe, die selbst die stärksten Sturmfahrzeuge des Gegners vernichten kann, gegen kleine, schnelle Ziele aber nicht sehr treffsicher ist.
 TEXT_ENCYCLOPEDIA_TURBOLASER_DEFENSE,Errichtet 2 bis 5 Turbolaser-Türme in strategischen Abwehrpositionen rund um Euren Stützpunkt. Die genaue Anzahl der Türme richtet sich nach der Stützpunktgröße und dem Gelände.
 TEXT_ENCYCLOPEDIA_TWILEK_SPAWNER,Bringt regelmäßig Twi'leks hervor, bis es zerstört wird.
-TEXT_ENCYCLOPEDIA_TWITCH,Weit von seiner Heimat Naboo entfernt hat Twitch sich einen Ruf erkämpft - in den brutalen Arenen von Taris.
+TEXT_TOOLTIP_UNIT_TWITCH,Weit von seiner Heimat Naboo entfernt hat Twitch sich einen Ruf erkämpft - in den brutalen Arenen von Taris.
 TEXT_ENCYCLOPEDIA_UNIT_GARNAK_FEY,Garnak Fey ist der Buchhalter der Silica-Tab-Fabriken, die wiederum die Haupteinnahmequelle der Familie Fey sind.
 TEXT_ENCYCLOPEDIA_UPGRADE_LEVEL_FIVE_STARBASE,Rüstet die Raumstation Eures Teams auf Stufe 5 auf, wodurch Euer Einkommen steigt und Ihr Zugriff auf neue Schiffe und Aufrüstungen bekommt.
 TEXT_ENCYCLOPEDIA_UPGRADE_LEVEL_FOUR_STARBASE,Rüstet die Raumstation Eures Teams auf Stufe 4 auf, wodurch Euer Einkommen steigt und Ihr Zugriff auf neue Schiffe und Aufrüstungen bekommt.
@@ -1947,15 +1943,14 @@ TEXT_HIGH,Max
 TEXT_HINT_REBEL_ACT02_MISSION_FIVE_01,Tipp: Die Rebellen erbeuten neue Technologien, indem sie sie aus dem imperialen Netzwerk stehlen. Setzt die Droiden so oft wie möglich dafür ein.
 TEXT_HISTORICAL_REFERENCE,Historischer Bezug:
 TEXT_HISTORY_DESCRIPTION,Tipp: Wählt mit den Buttons Wirtschaft, Militär oder Planeten unten verschiedene Übersichten aus.
-TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_00,Vernichtet 3 Noghri-Lager.
+TEXT_CORRUPTION_OBJ_INT_HONOGHR_00,Vernichtet 3 Noghri-Lager.
 TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_00_STORY,Vernichtet den imperialen Flottenkommandeur Malinth.
-TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_01,Urai Fen muss überleben.
+TEXT_CORRUPTION_OBJ_URAISURVIVE,Urai Fen muss überleben.
 TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_01_STORY,Urai Fen muss überleben.
-TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_02,0 von 3 Noghri-Lagern vernichtet.
 TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_02_STORY,Vernichtet 3 Noghri-Lager.
-TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_03,1 von 3 Noghri-Lagern vernichtet.
-TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_04,2 von 3 Noghri-Lagern vernichtet.
-TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_05,3 von 3 Noghri-Lagern vernichtet.
+TEXT_CORRUPTION_OBJ_INT_HONOGHR_01,1 von 3 Noghri-Lagern vernichtet.
+TEXT_CORRUPTION_OBJ_INT_HONOGHR_02,2 von 3 Noghri-Lagern vernichtet.
+TEXT_CORRUPTION_OBJ_INT_HONOGHR_03,3 von 3 Noghri-Lagern vernichtet.
 TEXT_HOST_IP,Host-Adresse:
 TEXT_HOST_LEFT_GAME,Der Host hat das Spiel verlassen.
 TEXT_HOST_PREFIX,Host:
@@ -2672,7 +2667,7 @@ TEXT_PIRATE_STAR_BASE_1,Asteroidenstützp. der Piraten
 TEXT_PIRATE_SWAMP_SPEEDER_TEAM,Sumpfgleitergeschwader
 TEXT_PLACE_BEACON,Signal platzieren
 TEXT_PLANET,Planet:
-TEXT_PLANET_AALDERAAN_ENCYC_01,Solange Ihr diesen Planeten kontrolliert, erleiden alle Rebellen-Infanteristen auf allen Planeten 50% weniger Schaden.
+TEXT_PLANET_ALDERAAN_ENCYC_01,Solange Ihr diesen Planeten kontrolliert, erleiden alle Rebellen-Infanteristen auf allen Planeten 50% weniger Schaden.
 TEXT_PLANET_ABREGADORAE_ENCYC,Wachsamkeit: Aufgrund eines verdeckten Informationsnetzwerkes werden schwächere Helden automatisch entdeckt und beseitigt.
 TEXT_PLANET_ABREGADORAE_ENCYC_01,Solange Ihr diesen Planeten kontrolliert, kostet der Bau von AT-STs auf allen Planeten 20% weniger.
 TEXT_PLANET_ABREGADORAE_INFO_ADV,Wachsamkeit
@@ -2705,7 +2700,7 @@ TEXT_PLANET_ALDERAAN_INFO_POP_02,Menschen (ausgelöscht)
 TEXT_PLANET_ALDERAAN_INFO_TAC,Aufgrund der Opposition von Alderaan gegenüber dem Imperator ist die Größe der Imperialen Stützpunkte begrenzt.
 TEXT_PLANET_ALDERAAN_INFO_TER,Wiesen
 TEXT_PLANET_ALDERAAN_INFO_WEA,Heiter, Regen
-TEXT_PLANET_ALDERAAN_INFO_WILDLIFE_02,Thranta, Nerf (ausgelöscht)
+TEXT_PLANET_ALDERAAN_INFO_WL_02,Thranta, Nerf (ausgelöscht)
 TEXT_PLANET_ALDERAAN_INFO_WL,Thranta, Nerf
 TEXT_PLANET_ALZOCIII_INFO_ADV,Minenkolonie
 TEXT_PLANET_ALZOCIII_INFO_ENCYC,Minenkolonie: Zusätzliches Einkommen durch Talzminen.
@@ -2785,9 +2780,8 @@ TEXT_PLANET_BESTINE_INFO_TER,Felseninseln, Ozeane
 TEXT_PLANET_BESTINE_INFO_WEA,Heiter, Regen
 TEXT_PLANET_BESTINE_INFO_WL,Sink-Krabben
 TEXT_PLANET_BONADAN_ENCYC,Einheitenbeschränkung: Die hochgiftige Atmosphäre lässt den Einsatz von Infanterie auf dem Planeten nicht zu.
-TEXT_PLANET_BONADAN_ENCYC_01,Die Produktionsrate dieses Planeten ist überdurchschnittlich hoch.
 TEXT_PLANET_BONADAN_INFO_ADV,Zusätzliches Einkommen durch Bonadans mannigfaltige Wirtschaftszweige.
-TEXT_PLANET_BONADAN_INFO_ADV_01,Hohes Einkommen
+TEXT_PLANET_TRAIT_LOTSCREDITS_NAME,Hohes Einkommen
 TEXT_PLANET_BONADAN_INFO_HIS,Der Planet im Corporate-Sektor der Äußeren Randgebiete war lange Zeit eine der wichtigsten Fabrikwelten und besaß die geschäftigsten Raumhäfen. Bonadan ist eine pergamentgelbe Kugel mit kreuzweise angeordneten rostfarbenen Streifen, hervorgerufen schwere Bodenerosionen. Bonadans Industrie ist auf Kosten der Ökologie reich geworden, bis schließlich jedwedes Pflanzenleben, das nicht absichtlich zerstört wurde, durch Minen, Umweltverschmutzung und Vernachlässigung ausstarb. Als dicht besiedelter Planet beheimatet Bonadan viele empfindungsfähige Wesen aus der ganzen Galaxis. Die Welt ist mit Fabriken, Raffinerien, Docks und Schiffsbauwerften in zehn Raumhäfen übersät. Bonadans mannigfaltige Wirtschaftszweige zählen zu den lukrativsten von allen Planeten im  Corporate-Sektor.
 TEXT_PLANET_BONADAN_INFO_HIS_01,Bonadan ist eine pergamentgelbe Kugel mit kreuzweise angeordneten rostfarbenen Streifen, hervorgerufen durch schwere Bodenerosionen. Bonadans Industrie ist auf Kosten der Ökologie reich geworden, bis schließlich jedwedes Pflanzenleben, das nicht absichtlich zerstört wurde, durch Minen, Umweltverschmutzung und Vernachlässigung ausstarb. Als dicht besiedelter Planet beheimatet Bonadan viele empfindungsfähige Wesen aus der ganzen Galaxis. Die Welt ist mit Fabriken, Raffinerien, Docks und Schiffsbauwerften in zehn Raumhäfen übersät.
 TEXT_PLANET_BONADAN_INFO_POP,Menschen, Aliens
@@ -3135,7 +3129,6 @@ TEXT_PLANET_MUSTAFAR_INFO_TAC,Schlachtschiffe werden 25 % schneller gebaut, sola
 TEXT_PLANET_MUSTAFAR_INFO_TER,Vulkane
 TEXT_PLANET_MUSTAFAR_INFO_WEA,Aschenregen
 TEXT_PLANET_MUSTAFAR_INFO_WL,Lavaflöhe, Blistmoks
-TEXT_PLANET_MUUNILINST_ENCYC,Erhöhter Profit: Dieser Planet erbringt überdurchschnittlich viel Gewinn.
 TEXT_PLANET_MUUNILINST_INFO_HIS,Die Welt Muunilinst im Outer Rim ist mit freundlichen Grasebenen bedeckt, unterbrochen von Gebirgen und Städten. Es ist eine der reichsten Welten der Galaxis, Stammsitz des Intergalaktischen Bankenclans und Finanzzentrum des Imperiums. Weiter verbreitet als sein offizieller Name Muunilinst ist sein Spitzname Moneyland. Die einheimischen Muuns schafften es trotz der großen Entfernung vom Galaktischen Kern, ihre Welt in ein immenses Handelszentrum zu verwandeln. Schimmernde Marmor-Prunkbauten herrschen in allen Städten auf Muunilinst vor. Säulen, Kapitelle, Giebel, Schnörkel und Vorsprünge ziehen sich durch die gesamte Muun-Architektur. Diese klassischen Gebäude wurden nur selten von Kriegen gezeichnet, aber wenn, dann verheerend.
 TEXT_PLANET_MUUNILINST_INFO_POP,Muuns
 TEXT_PLANET_MUUNILINST_INFO_TER,Freundlich
@@ -3308,7 +3301,7 @@ TEXT_PLANET_TYNNA_INFO_TAC,Die Produktionszeiten für Schiffe der Korvette-Klass
 TEXT_PLANET_TYNNA_INFO_TER,Wälder, Seen, Ozeane
 TEXT_PLANET_TYNNA_INFO_WEA,Heiter, Regen
 TEXT_PLANET_TYNNA_INFO_WL,Suuri
-TEXT_PLANET_UNCORRUPTABLE,Dieser Raumsektor kann nur durch Eroberung korrumpiert werden.
+TEXT_PLANET_TRAIT_UNCORRUPTABLE,Dieser Raumsektor kann nur durch Eroberung korrumpiert werden.
 TEXT_PLANET_UTAPAU_ENCYC,Verbesserte Schilde (Kampfschiffe der Kedalbe-Klasse): Bei Kampfschiffen der Kedalbe-Klasse erhöht sich die Schildstärke um 25 %, solange der Planet kontrolliert wird. Bodenstützpunkte sind nicht zu entdecken.
 TEXT_PLANET_UTAPAU_INFO_ADV,Verbesserte Schilde; Stützpunkttarnung: Boden
 TEXT_PLANET_UTAPAU_INFO_HIS,Die im abgelegenen Tarabbasektor gelegene Welt Utapau ist von enormen vulkanischen Schächten durchzogen. Viele davon behausen verwegen konstruierte Städte, die sich tief hinab in Höhlensysteme und Erdspalten unter der Planetenoberfläche erstrecken. Aufgrund der porösen Erdkruste gibt es kaum Wasser an der Oberfläche. Tief in den unterirdischen Sammelbecken ist es jedoch im Überfluss vorhanden, so dass die Bewohner der Städte reichlich davon haben. Die Bewohner dieser Welt gehören zwei menschenähnlichen, doch deutlich unterscheidbaren Rassen an. Die großgewachsenen, majestätischen Pau'aner mit ihren langsamen Bewegungen werden wegen ihrer erstaunlich langen Lebensspanne als Uralte bezeichnet, während der Spitzname der gedrungenen Utai die Kurzen lautet - nicht nur wegen ihrer Körpergröße, sondern auch aufgrund ihrer kurzen, eher hektischen Lebensspanne. Die gesamte Energiewirtschaft basiert auf Windenergie. Der kümmerliche interstellare Handel existiert erst seit wenigen Jahrzehnten.
@@ -3319,7 +3312,7 @@ TEXT_PLANET_UTAPAU_INFO_WEA,Sandstürme
 TEXT_PLANET_UTAPAU_INFO_WL,Varactyl
 TEXT_PLANET_VERGESSO_ENCYC,Stützpunkttarnung (Raumstation): Raumstationen sind aufgrund des Asteroidenfeldes nicht zu entdecken. Einschränkung: Keine Bodenproduktion oder Garnisonen möglich.
 TEXT_PLANET_VERGESSO_ENCYC_01,Solange Ihr diesen Planeten kontrolliert, bekommen alle X-Wing-, Y-Wing-, A-Wing- und Z-95-Geschwader in der Galaxis einen 25%igen Bonus auf ihre Feuerkraft.
-TEXT_PLANET_VERGESSO_INFO_ADV,Stützpunkttarnung: Raumstation
+TEXT_PLANET_TRAIT_SPACESTEALTH,Stützpunkttarnung: Raumstation
 TEXT_PLANET_VERGESSO_INFO_ADV_01,Verbesserte Waffen
 TEXT_PLANET_VERGESSO_INFO_HIS,Asteroiden im Lybeya-System des Bajic-Sektors der Äußeren Randgebiete. Das Tenloss-Syndikat errichtete in einem Nickel-Eisen-Asteroiden namens Vergesso eine versteckte Werft. Der Asteroid besaß die Größe eines kleines Mondes und eine pockennarbige, mit Kratern übersäte Oberfläche. Das Asteroidenfeld gehört zu den weniger schlimmen Feldern in der Galaxis, man kann hier besser navigieren als in den meisten anderen. Scanner haben große Probleme, das Asteroidenfeld zu durchdringen, eine Tatsache, die sich das Tenloss-Syndikat zunutze macht, um den Standort der Werft geheim zu halten.
 TEXT_PLANET_VERGESSO_INFO_HIS_01,Asteroiden im Lybeya-System des Bajic-Sektors der Äußeren Randgebiete. Das Tenloss-Syndikat errichtete in einem Nickel-Eisen-Asteroiden namens Vergesso eine versteckte Werft. Der Asteroid besaß die Größe eines kleines Mondes und eine pockennarbige, mit Kratern übersäte Oberfläche. Das Asteroidenfeld gehört zu den weniger schlimmen Feldern in der Galaxis, man kann hier besser navigieren als in den meisten anderen.
@@ -3394,8 +3387,8 @@ TEXT_PRODUCTION_SUMMARY_DESCRIPTION,Tipp: Zeigt Eure Einheiten im Bau und Planet
 TEXT_PROP_AT_AT_UNFINISHED,Halbfertiger AT-AT
 TEXT_PROP_EXPLODING_CONTAINER,Brennbarer Treibstoff
 TEXT_PROWL_DESCRIPTION,Lässt die Vornskrwölfe frei, damit sie jagen können. Machtsensitive Einheiten sind immer die bevorzugten Ziele.
-TEXT_PROXIMITY_MINE,Annäherungsmine
-TEXT_PROXIMITY_MINE_DESC,Richtet jede Menge Schaden an, wenn eine Einheit ihr zu nahe kommt.
+TEXT_OBJECT_PROXIMITY_MINE,Annäherungsmine
+TEXT_OBJECT_PROXIMITY_MINE_DESC,Richtet jede Menge Schaden an, wenn eine Einheit ihr zu nahe kommt.
 TEXT_QUICK_LOAD,Schnellladen
 TEXT_QUICK_SAVE,Schnellspeichern
 TEXT_QUICKMATCH_1V1_CAMPAIGN,Kampagne 1 vs 1
@@ -17962,7 +17955,7 @@ TEXT_TOOLTIP_ABILITY_WEATHER_FILTER_NAME,Wetter/Fähigkeiten-Filter
 TEXT_TOOLTIP_ACCLAMATOR,Fregatte mittlerer Größe, ausgerüstet mit 2 Turbolaser- und 2 Laserkanonen-Batterien, einem Protonentorpedowerfer und einem Erschütterungsraketenwerfer. Ist außerdem mit 3 TIE-Fighter- und 1 TIE-Bomber-Geschwadern ausgestattet. Ein Schiff, das viele Rollen übernimmt, was sowohl seine Stärke als auch seine Schwäche sein kann.
 TEXT_TOOLTIP_AI_TURRET,Infanterie-Abwehrturm, der die meisten gegnerischen Infanterieangriffe abwehren kann.
 TEXT_TOOLTIP_AKBAR,Admiral der Rebellenflotte, unter dessen Kommando Schiffe mit maximaler Effektivität kämpfen und der die Produktionskosten für Schiffe senkt. Reist in Home Eins, einem gewaltigen Schlachtschiff. 
-TEXT_TOOLTIP_ANNIHILATOR,Die Annihilator
+TEXT_HERO_ANNIHILATOR,Die Annihilator
 TEXT_TOOLTIP_ANTILLES,Diese stark modifizierte corellianische Korvette ist das Schiff von Captain Raymus Antilles, einem Veteranen der Klon-Kriege, der unter Senator Bail und Senatorin Leia Organa gedient hat.
 TEXT_TOOLTIP_ARC_HAMMER,Die Arc Hammer ist ein mobiles Fabrikschiff unter dem Kommando von General Rom Mohc. Sie ermöglicht die Produktion von Dunklen Truppen auf dem Planeten, den sie umkreist.
 TEXT_TOOLTIP_ASSAULT_FRIGATE,Schwere Sturmfregatte, ausgerüstet mit 2 verbesserten Turbolaser- und 2 Laserkanonen-Batterien. Ein verbessertes Kriegsschiff mit Schwerpunkt auf Feuerkraft zu Lasten der Haltbarkeit.
@@ -18082,7 +18075,7 @@ TEXT_TOOLTIP_GARRISON_ES_02,Garnison: TIE-Fighter, TIE-Bomber, Tartan-Kreuzer
 TEXT_TOOLTIP_GARRISON_ES_03,Garnison: TIE-Fighter, TIE-Bomber, Tartan-Kreuzer
 TEXT_TOOLTIP_GARRISON_ES_04,Garnison: TIE-Fighter, TIE-Bomber, Tartan-Kreuzer, Acclamator-Kreuzer
 TEXT_TOOLTIP_GARRISON_ES_05,Garnison: TIE-Fighter, TIE-Bomber, Tartan-Kreuzer, Acclamator-Kreuzer
-TEXT_TOOLTIP_GARRISON_FACTORY,Garnison: Mobile Raketenwerfer
+TEXT_TOOLTIP_GARRISON_U_FACTORY,Garnison: Mobile Raketenwerfer
 TEXT_TOOLTIP_GARRISON_INFILT,Garnison: Infiltrator
 TEXT_TOOLTIP_GARRISON_R_BARRACKS,Garnison: Rebellensoldat, PLEX-Soldat
 TEXT_TOOLTIP_GARRISON_R_HVYFAC,Garnison: MPTL, Beobachterdrohne
@@ -18187,7 +18180,6 @@ TEXT_TOOLTIP_NEXT_BUTTON,Nächster kontrollierter Planet
 TEXT_TOOLTIP_NIGHT_SISTER,Jede der von Dathomir stammenden Schwestern der Nacht steuert den Rancor, auf dem sie reitet, mit Hilfe der Dunklen Seite der Macht.
 TEXT_TOOLTIP_NOGHRI_ASSASSIN,Die Noghri haben Darth Vader Treue geschworen, als Dank dafür, dass er ihrem Volk geholfen hat. Sie sind tapfere Krieger und tödliche Attentäter.
 TEXT_TOOLTIP_OBI_WAN,Ein Jedi, in dem die Helle Seite der Macht besonders stark ist. Er kann Verbündete heilen und beschützen.
-TEXT_TOOLTIP_OBI_WAN_01,Ein Jedi, der starke Kräfte der Hellen Seite der Macht besitzt. Er kann sich selbst heilen und Verbündete beschützen.
 TEXT_TOOLTIP_OFFENSIVE_SENSOR_NODE,Lüftet in einem weiten Umkreis den Kriegsnebel und enthüllt das Gelände. Dieser Sensorknoten verfügt zu seiner Verteidigung über eine Elektroschockwaffe.
 TEXT_TOOLTIP_ORBITAL_CONTROL,Orbitale Kontrolle
 TEXT_TOOLTIP_ORG_GARRISON,Offenes Feld für Bodengarnison
@@ -18258,7 +18250,7 @@ TEXT_TOOLTIP_RIEEKAN,Ein Field Commander, der kleinere Kampfgruppen zu Höchstle
 TEXT_TOOLTIP_SABOTEUR,Ein Verderber verbreitet den Willen von Tyber Zann in der Galaxis, indem er Planeten mit Hilfe von Bestechung, Erpressung und Attentaten infiltriert.
 TEXT_TOOLTIP_SCAVENGER_DROID,Verschrottungsdroiden krallen sich an Fahrzeugen fest und zerlegen sie. Die Einzelteile bringen bares Geld.
 TEXT_TOOLTIP_SCOUTTROOPER,Imperiale Soldaten auf schnellen Schlitten. Können Minen abwerfen, daher sehr wirkungsvoll gegen feindliche Infanterie. 2 Kundschafter pro Kompanie.
-TEXT_TOOLTIP_SD_ADMONITOR,Die Admonitor ist das Flaggschiff vom Grand Admiral Thrawn.
+TEXT_TOOLTIP_THRAWN_SD_00,Die Admonitor ist das Flaggschiff vom Grand Admiral Thrawn.
 TEXT_TOOLTIP_SELL_STRUCTURE,Aktuelles Gebäude verkaufen.
 TEXT_TOOLTIP_SENSOR_NODE,Ein Spezialsensor, der einen großen Bereich des umgebenden Kriegsnebels durchdringt.
 TEXT_TOOLTIP_SENSOR_SCRAMBLER,Der Verzerrer stört das Radar und die Optiksysteme des Gegners und seine Raketenleitsysteme.
@@ -18340,7 +18332,7 @@ TEXT_TOOLTIP_UNIT_SPACEPORT_DIRECTOR,Raumhafendirektor Tanda kontrolliert den Im
 TEXT_TOOLTIP_UNIT_UNGARR_DARIS,Ungarr Daris
 TEXT_TOOLTIP_URAI_FEN,Urai Fen gehört dem geheimnisvollen Volk der Talortai an; er altert nicht. Er ist der Zweite an der Spitze des Zann-Konsortiums.
 TEXT_TOOLTIP_V_WING,Leicht veralteter, mit Laserkanonen ausgerüsteter Jägertyp. Ein Überbleibsel der Klonkriege, aber immer noch recht effektiv. 5 Jäger pro Geschwader.
-TEXT_TOOLTIP_V_WING_01,Leicht veralteter, mit Laserkanonen ausgerüsteter Jägertyp. Ein Überbleibsel der Klonkriege, aber immer noch recht effektiv. 5 Jäger pro Geschwader.
+TEXT_TOOLTIP_V_WING_00,Leicht veralteter, mit Laserkanonen ausgerüsteter Jägertyp. Ein Überbleibsel der Klonkriege, aber immer noch recht effektiv. 5 Jäger pro Geschwader.
 TEXT_TOOLTIP_VEERS,Befehligt im Bodenkampf einen verbesserten AT-AT. Verringert an seinem aktuellen Standort die Produktionszeit der AT-ATs um 50%.
 TEXT_TOOLTIP_VEERS_01,Befehligt im Bodenkampf einen verbesserten AT-AT, der gegen Schleppkabelangriffe immun ist. Verringert an seinem aktuellen Standort die Produktionskosten von AT-ATs, AT-STs und AT-AAs um 25%.
 TEXT_TOOLTIP_VEERS_ATAT,Commander Veers steuert einen aufgerüsteten AT-AT, der  mit schweren Laserkanonen ausgerüstet ist, die große Schäden anrichten können, wenn sie erst einmal volle Feuerkraft erreicht haben. Erhöht die Verteidigung aller imperialen Einheiten um 25%.
@@ -18563,7 +18555,7 @@ TEXT_UNIT_REPAIR_DROID,Reparaturdroide S-RD5
 TEXT_UNIT_ROGUE_02,Rogue 2: Zev Senesca
 TEXT_UNIT_ROGUE_04,Rogue 4: Derek Klivian
 TEXT_UNIT_ROGUE_07,Rogue 7: Kasan Moor
-TEXT_UNIT_ROGUE_10,Rogue 10: Tarrub Datch
+TEXT_UNIT_ROGUE_10,Rogue 10: Tarrin Datch
 TEXT_UNIT_ROGUE_11,Rogue 11: Tenk Lenso
 TEXT_UNIT_SCAVENGER_DROID,Verschrottungsdroiden
 TEXT_UNIT_SCOUT_TROOPER,Kundschafter
@@ -19222,3 +19214,64 @@ TEXT_YOUR_HEROES_DEFEATED,Helden besiegt:
 TEXT_YOUR_LOSSES,Eigene Verluste:
 TEXT_YOUR_SCORE,Eigene Punkte:
 TEXT_ZERO,0
+TEXT_ENCYCLOPEDIA_RESEARCH_01,TODO
+TEXT_ENCYCLOPEDIA_TECH_UPGRADE_05_01,TODO
+TEXT_SPEECH_BESTINE_BLK_VICTORY_COR07_05_01,TODO
+TEXT_UNIT_LUKE_XWING_01,TODO
+TEXT_TOOLTIP_STAR_DESTROYER_01,TODO
+TEXT_TOOLTIP_PIETT_SD_01,TODO
+TEXT_TOOLTIP_PIETT_SD_02,TODO
+TEXT_TOOLTIP_THRAWN_SD_01,TODO
+TEXT_UNIT_ARC_HAMMER_01,TODO
+TEXT_UNIT_HOME_ONE_01,TODO
+TEXT_UNIT_HOUNDSTOOTH_00,TODO
+TEXT_UNIT_IG2000_00,TODO
+TEXT_UNIT_MILLENNIUM_FALCON_01,TODO
+TEXT_UNIT_MOLDY_CROW_01,TODO
+TEXT_UNIT_SD_ADMONITOR_01,TODO
+TEXT_UNIT_SUNDERED_HEART_01,TODO
+TEXT_HERO_PEACEBRINGER_01,TODO
+TEXT_HERO_ANNIHILATOR_01,TODO
+TEXT_TOOLTIP_REQUIRED_PLANETS_CAPITAL_SHIPS_01,TODO
+TEXT_PLANET_CAPITAL_SHIP_PRODUCER_01,TODO
+TEXT_UNIT_SLAVE_I_00,TODO
+TEXT_UNIT_TIE_PROTOTYPE_01,TODO
+TEXT_UNIT_SSD_EXECUTOR_01,TODO
+TEXT_HERO_VADER_TEAM_2,TODO
+TEXT_NONE,TODO
+TEXT_CORRUPTION_OBJ_INT_TARIS_00,TODO
+TEXT_CORRUPTION_OBJ_INT_NABOO_00,TODO
+TEXT_CORRUPTION_OBJ_KID_BYSS_00,TODO
+TEXT_PLANET_TRAIT_LOTSCREDITS,TODO
+TEXT_HERO_GENERAL_VEERS_03,TODO
+TEXT_ENCYCLOPEDIA_FACTORY_UNDERWORLD_00,TODO
+TEXT_PLANET_VERGESSO_INFO_POP_00,TODO
+TEXT_PLANET_VERGESSO_INFO_WL_00,TODO
+TEXT_PLANET_VERGESSO_INFO_TAC_00,TODO
+TEXT_UNIT_UNGARR_DARIS,TODO
+TEXT_UNIT_POLO_SELAB,TODO
+TEXT_UNIT_KOONG_EETH,TODO
+TEXT_UNIT_BEVEL_LEMELISK,TODO
+TEXT_UNIT_TANDA,TODO
+TEXT_UNIT_SAN_HILL,TODO
+TEXT_UNIT_DALKEN_HOL,TODO
+TEXT_UNIT_FOOD_COMMISSIONER,TODO
+TEXT_UNIT_MALINTH,TODO
+TEXT_UNIT_GARNAK_FEY,TODO
+TEXT_UNIT_RAL_FALAN,TODO
+TEXT_UNIT_KIRITH,TODO
+TEXT_ENCYCLOPEDIA_CLASS_GALACTIC_SENATOR,TODO
+TEXT_ENCYCLOPEDIA_CLASS_GOVERNOR,TODO
+TEXT_ENCYCLOPEDIA_CLASS_ENGINEER,TODO
+TEXT_ENCYCLOPEDIA_CLASS_CHAIRMAN,TODO
+TEXT_ENCYCLOPEDIA_CLASS_COMISSIONER_FOOD,TODO
+TEXT_ENCYCLOPEDIA_CLASS_COMPTROLLER,TODO
+TEXT_ENCYCLOPEDIA_CLASS_COMMANDER,TODO
+TEXT_ENCYCLOPEDIA_CLASS_POLITICIAN,TODO
+LANGUAGE_THAI,TODO
+LANGUAGE_RUSSIAN,TODO
+LANGUAGE_POLISH,TODO
+TEXT_LANG_THAI,TODO
+TEXT_LANG_GERMAN,TODO
+TEXT_TOOLTIP_HOUNDSTOOTH_00,TODO
+TEXT_TOOLTIP_IG2000_00,TODO
