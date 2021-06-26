@@ -411,7 +411,6 @@ TEXT_BOBA_FETT_NEUTRALIZES_HAN_SOLO,Boba Fett hat Han Solo und Chewbacca für ei
 TEXT_BOBA_FETT_NEUTRALIZES_KYLE_KATARN,Boba Fett hat Kyle Katarn für einige Zeit ausgeschaltet! Position:
 TEXT_BOBA_FETT_NEUTRALIZES_MON_MOTHMA,Boba Fett hat Mon Mothma für einige Zeit ausgeschaltet! Position:
 TEXT_BOBA_FETT_NEUTRALIZES_OBI_WAN_KENOBI,Boba Fett hat Obi-Wan Kenobi für einige Zeit ausgeschaltet! Position:
-TEXT_ENCYCLOPEDIA_CLASS_BOMB,Bombe
 TEXT_BOSSK_FLAMETHROWER_DESCRIPTION,Aktiviert Bossks Flammenwerfer und fügt Einheiten vor ihm Schaden zu.
 TEXT_BOSSK_SWAP_DESCRIPTION,Wechselt zwischen Blaster und Plasmagranaten
 TEXT_BOTH_MOUSE_BUTTONS_ROTATE,Beide Maustasten zum Drehen
@@ -586,7 +585,6 @@ TEXT_BUTTON_TUTORIAL,Tutorial
 TEXT_BUTTON_UNFLAG_THIS,Markierung aufheben
 TEXT_BUTTON_WITHDRAW,Rückzug
 TEXT_BUTTON_YES,Ja
-TEXT_CORRUPTION_OBJ_KID_BYSS_01,Bringt Gouverneur Kirith zum Transporter zurück.
 TEXT_CAMERA_CENTER,Kamera zentrieren
 TEXT_CAMERA_HOME,Kamera-Voreinstellung
 TEXT_CAMERA_RESET,Kamera zurücksetzen
@@ -1022,7 +1020,6 @@ TEXT_CORRUPTION_SLAVERY_BENEFIT,VORTEILE: Verschafft dem Zann-Konsortium billige
 TEXT_CORRUPTION_SLAVERY_ENCYCLOPEDIA,Dieser Einsatz erfordert einen Verderber, der Umerziehungslager aufbaut, um das Weltbild des Konsortiums in den Köpfen der örtlichen Bevölkerung zu verankern.
 TEXT_CORRUPTION_SULLUST_STORY_BONDEDCITIZENS,Die Einwohner leben unter der Erde. Ihre isolierte Lebensweise macht es uns leicht, sie für die Zwecke des Konsortiums zu versklaven.
 TEXT_CORRUPTION_SULLUST_STORY_BRIBERY,Die Bestechung wichtiger Regierungsbeamter wie Sian Tew öffnet der Korruption auf diesem Planeten Tür und Tor und vergrößert den Einfluss des Zann-Konsortiums in diesem Sektor.
-TEXT_CORRUPTION_OBJ_SILRISURVIVE,Silri muss überleben.
 TEXT_CORRUPTION_TARIS_STORY_BRIBERY,Auf dem Planeten existiert eine große Hutten-Organisation, die für Bestechung empfänglich sein dürfte. Wir kennen die Hutten und wissen, wie sie sind. Das kann hier relativ schnell gehen.
 TEXT_CORRUPTION_TARIS_STORY_INTIMIDATION,Das ideale Opfer einer Einschüchterung wäre der Gunganer-Duellant Twitch. Wenn das Konsortium ihm Angst einjagt, fällt der Rest dieser Welt von ganz allein.
 TEXT_CORRUPTION_TATOOINE_STORY_BLACKMARKET,Jabbas Palast ist bereits auf einen Schwarzmarkt vorbereitet. Auf dieser Welt dürfte es für uns keine Probleme geben.
@@ -1033,9 +1030,9 @@ TEXT_CORRUPTION_TITLE,PLANETEN KORRUMPIEREN
 TEXT_CORRUPTION_UNIT_REQUIREMENT,Anzahl der Helden oder Einheiten, die nötig sind, um die Korruption auf dieser Welt zu etablieren. Diese Einheiten werden aus dem Spiel genommen, wenn diese Korruptionsoption ausgewählt wird.
 TEXT_CORRUPTION_UTAPAU_STORY_BRIBERY,Schwere Kreuzer der Dreadnaught-Klasse bewachen den Planeten und das Sonnensystem. Wenn wir sie bestechen, könnte das dem Konsortium zu ungeahnter Macht verhelfen.
 TEXT_CORRUPTION_UTAPAU_STORY_KIDNAP,Auf diesem Planeten hat die Familie Fey immer wieder Führungspersönlichkeiten hervorgebracht. Wenn wir einen wie Garnak Fey entführen, zeigen wir dem Sektor, wen es wirklich zu fürchten gilt.
-TEXT_CORRUPTION_OBJ_KID_UTAPAU_00,Übernehmt die Fey-Anlage, indem Ihr alle Verteidiger und Abwehrtürme ausschaltet.
-TEXT_CORRUPTION_OBJ_KID_UTAPAU_01,Bringt Silri zu Garnak Fey.
-TEXT_CORRUPTION_OBJ_KID_UTAPAU_02,Bringt Garnak Fey und Silri zur Landefähre.
+TEXT_CORRUPTION_KID_UTAPAU_OBJ_00,Übernehmt die Fey-Anlage, indem Ihr alle Verteidiger und Abwehrtürme ausschaltet.
+TEXT_CORRUPTION_KID_UTAPAU_OBJ_01,Bringt Silri zu Garnak Fey.
+TEXT_CORRUPTION_KID_UTAPAU_OBJ_02,Bringt Garnak Fey und Silri zur Landefähre.
 TEXT_CORRUPTION_WAYLAND_STORY_BLACKMARKET,Der Planet ist berühmt für seine organischen Waffensysteme. Wer hier einen Schwarzmarkt aufzieht, dem winkt eine breite Palette modernster Technologien.
 TEXT_CORRUPTION_WAYLAND_STORY_RACKETEER,In den Lagerhäusern des Imperiums hier auf diesem Planeten sind noch viele Geheimnisse versteckt, die nur eine gut funktionierende organisierte Kriminalität lüften kann.
 TEXT_CORRUPTION_YAVIN_STORY_BRIBERY,Auf Yavin 4 und in seiner Umgebung stehen starke Rebellenkräfte, von denen wir durch Bestechung Informationen über ihre Bewegungen in diesem Sektor erhalten könnten.
@@ -1507,7 +1504,7 @@ TEXT_ENCYCLOPEDIA_PLANET_DESTROYED,Planetenschutt
 TEXT_ENCYCLOPEDIA_POWER_GENERATOR_00,Verbessert die Leistung von Bodentürmen und versorgt einige Gebäude mit Energie. Die Zerstörung eines Energiegenerators schaltet alle davon abhängigen Gebäude ab.
 TEXT_ENCYCLOPEDIA_POWER_GENERATOR_01,Ermöglicht: Ionenkanone, Stützpunktschildgenerator, Turbolaser-Turm
 TEXT_ENCYCLOPEDIA_POWER_GENERATOR_02,Ermöglicht: Stützpunktschildgenerator, Magnetpuls-Geschütz, Schwerkraft-Kontrollgenerator, Turbolaser-Turm
-TEXT_ENCYCLOPEDIA_PYNGANI_SPAWNER,Bringt regelmäßig Pyn’gani hervor, bis es zerstört wird.
+TEXT_ENCYCLOPEDIA_PYNGANI_SPAWNER,Bringt regelmäßig Pyn'gani hervor, bis es zerstört wird.
 TEXT_ENCYCLOPEDIA_R_SHIP_SPEED,Erhöht die Fluggeschwindigkeit der Fregatten und Schlachtschiffe Eures Teams.
 TEXT_ENCYCLOPEDIA_R_SPACE_ALL_ARMOR,Verbessert die Panzerung aller Raumeinheiten Eures Teams.
 TEXT_ENCYCLOPEDIA_R_STARBASE_FIREPOWER,Erhöht den Schaden aller Waffen in der Raumbasis Eures Teams.
@@ -1545,7 +1542,6 @@ TEXT_ENCYCLOPEDIA_TURBOLASER_00,Eine Boden-Boden-Waffe, die selbst die stärkste
 TEXT_ENCYCLOPEDIA_TURBOLASER_DEFENSE,Errichtet 2 bis 5 Turbolaser-Türme in strategischen Abwehrpositionen rund um Euren Stützpunkt. Die genaue Anzahl der Türme richtet sich nach der Stützpunktgröße und dem Gelände.
 TEXT_ENCYCLOPEDIA_TWILEK_SPAWNER,Bringt regelmäßig Twi'leks hervor, bis es zerstört wird.
 TEXT_TOOLTIP_UNIT_TWITCH,Weit von seiner Heimat Naboo entfernt hat Twitch sich einen Ruf erkämpft - in den brutalen Arenen von Taris.
-TEXT_ENCYCLOPEDIA_UNIT_GARNAK_FEY,Garnak Fey ist der Buchhalter der Silica-Tab-Fabriken, die wiederum die Haupteinnahmequelle der Familie Fey sind.
 TEXT_ENCYCLOPEDIA_UPGRADE_LEVEL_FIVE_STARBASE,Rüstet die Raumstation Eures Teams auf Stufe 5 auf, wodurch Euer Einkommen steigt und Ihr Zugriff auf neue Schiffe und Aufrüstungen bekommt.
 TEXT_ENCYCLOPEDIA_UPGRADE_LEVEL_FOUR_STARBASE,Rüstet die Raumstation Eures Teams auf Stufe 4 auf, wodurch Euer Einkommen steigt und Ihr Zugriff auf neue Schiffe und Aufrüstungen bekommt.
 TEXT_ENCYCLOPEDIA_UPGRADE_LEVEL_THREE_STARBASE,Rüstet die Raumstation Eures Teams auf Stufe 3 auf, wodurch Euer Einkommen steigt und Ihr Zugriff auf neue Schiffe und Aufrüstungen bekommt.
@@ -1558,7 +1554,7 @@ TEXT_ENCYCLOPEDIA_VORNSKR_WOLF,Vornskrwölfe sind extrem geschickte Jäger, beso
 TEXT_ENCYCLOPEDIA_WAMPA_SPAWNER,Bringt bis zur Zerstörung ab und zu einen Wampa hervor.
 TEXT_ENCYCLOPEDIA_WOOKIEE_SPAWNER,Bringt regelmäßig Wookiees hervor, bis es zerstört wird.
 TEXT_ENCYCLOPEDIA_YSALAMIRI_TREE,In diesem Baum nisten viele Ysalamiri-Familien. Die Ysalamiri blockieren die Macht in einem weiten Umkreis um den Baum.
-TEXT_ENCYLOPEDIA_STRUCTURE_BOTHAN_POLOS_HOUSE,Senator Se’Labs Palast
+TEXT_ENCYLOPEDIA_STRUCTURE_BOTHAN_POLOS_HOUSE,Senator Se'Labs Palast
 TEXT_END_OF_DATA,END OF GERMAN TEXT
 TEXT_END_OF_DATA,END OF GERMAN TEXT
 TEXT_END_OF_DATA,END OF GERMAN TEXT
@@ -1943,11 +1939,10 @@ TEXT_HIGH,Max
 TEXT_HINT_REBEL_ACT02_MISSION_FIVE_01,Tipp: Die Rebellen erbeuten neue Technologien, indem sie sie aus dem imperialen Netzwerk stehlen. Setzt die Droiden so oft wie möglich dafür ein.
 TEXT_HISTORICAL_REFERENCE,Historischer Bezug:
 TEXT_HISTORY_DESCRIPTION,Tipp: Wählt mit den Buttons Wirtschaft, Militär oder Planeten unten verschiedene Übersichten aus.
-TEXT_CORRUPTION_OBJ_INT_HONOGHR_00,Vernichtet 3 Noghri-Lager.
 TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_00_STORY,Vernichtet den imperialen Flottenkommandeur Malinth.
-TEXT_CORRUPTION_OBJ_URAISURVIVE,Urai Fen muss überleben.
 TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_01_STORY,Urai Fen muss überleben.
 TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_02_STORY,Vernichtet 3 Noghri-Lager.
+TEXT_CORRUPTION_OBJ_INT_HONOGHR_00,Vernichtet 3 Noghri-Lager.
 TEXT_CORRUPTION_OBJ_INT_HONOGHR_01,1 von 3 Noghri-Lagern vernichtet.
 TEXT_CORRUPTION_OBJ_INT_HONOGHR_02,2 von 3 Noghri-Lagern vernichtet.
 TEXT_CORRUPTION_OBJ_INT_HONOGHR_03,3 von 3 Noghri-Lagern vernichtet.
@@ -1994,7 +1989,7 @@ TEXT_INDIG_MANDALORIAN,Mandalorianischer Milizsoldat
 TEXT_INDIG_MONCAL_CIV,Mon-Calamari-Zivilist
 TEXT_INDIG_MUSTAFARIAN,Mustafarianer
 TEXT_INDIG_NOGHRI,Noghri
-TEXT_INDIG_PYNGANI,Pyn’gani-Krieger
+TEXT_INDIG_PYNGANI,Pyn'gani-Krieger
 TEXT_INDIG_RANCOR,Rancor
 TEXT_INDIG_RECRUIT,Rebellenrekrut
 TEXT_INDIG_SARLACC,Sarlacc
@@ -3173,7 +3168,7 @@ TEXT_PLANET_POLUS_INFO_POP,Pyn'gani
 TEXT_PLANET_POLUS_INFO_TAC,Zusätzliches Einkommen durch Karbonitabbau.
 TEXT_PLANET_POLUS_INFO_TER,Gebirge, einzelne Städte
 TEXT_PLANET_POLUS_INFO_WEA,Schnee- und Eisstürme
-TEXT_PLANET_POLUS_INFO_WL,Dral’k-Eiswürmer, verschiedene Meereslebensformen
+TEXT_PLANET_POLUS_INFO_WL,Dral'k-Eiswürmer, verschiedene Meereslebensformen
 TEXT_PLANET_RALLTIIR_ENCYC,Geringere Produktionskosten (alle Bodeneinheiten): Die Produktionskosten werden wegen der Industrie auf Ralltiir für alle Bodeneinheiten reduziert.
 TEXT_PLANET_RALLTIIR_INFO_ADV,Geringere Produktionskosten: alle Bodeneinheiten
 TEXT_PLANET_RALLTIIR_INFO_HIS,Die Welt liegt in dem gleichnamigen System entlang perlemianischen Handelsroute im Darpa-Sektor der Kernwelten, unmittelbar an der Grenze zur Kolonien-Region. Die Oberfläche des Planeten ist übersät mit Flächensiedlungen, Bergzügen und Feuchtgebieten. In den vergangenen Jahrhunderten war Ralltiir der einzige Planet im Darpa-Sektor, der sich seine Unabhängigkeit von der nahe gelegenen Welt von Esseles bewahren konnte. In jüngster Zeit hat sich Ralltiir zu einer attraktiven, hochindustrialisierten Welt entwickelt, die vor allem für ihr Bankwesen und den Grallia-Raumhafen berühmt ist. Ralltiir ist für alle Branchen attraktiv und senkt bei vielen Gütern die Produktionskosten.
@@ -8293,7 +8288,7 @@ TEXT_SFX_LUK_LAND_SELECT_8,Commander Skywalker meldet sich.
 TEXT_SFX_LUK_LAND_SELECT_9,Wo werde ich gebraucht?
 TEXT_SFX_LUK_LUCKY_SHOT_1,Die Macht ist mit mir.
 TEXT_SFX_LUK_LUCKY_SHOT_2,Ich kümmere mich darum.
-TEXT_SFX_LUK_LUCKY_SHOT_3,Nichts passiert, mir geht’s gut.
+TEXT_SFX_LUK_LUCKY_SHOT_3,Nichts passiert, mir geht's gut.
 TEXT_SFX_LUK_LUCKY_SHOT_4,Keine Bange, ich weiß, was ich tue.
 TEXT_SFX_LUK_MOVE_1,Sofort!
 TEXT_SFX_LUK_MOVE_10,Hört Ihr mich?
@@ -9743,7 +9738,7 @@ TEXT_SFX_POD_SELECT_9,Erwarte Befehle.
 TEXT_SFX_POR_CHATTER_1,Rot Sechs bereit ...
 TEXT_SFX_POR_CHATTER_2,Da hängt einer an mir dran.
 TEXT_SFX_POR_CHATTER_3,Genau hinter Euch!
-TEXT_SFX_POR_CHATTER_4,Nein, mir geht’s gut.
+TEXT_SFX_POR_CHATTER_4,Nein, mir geht's gut.
 TEXT_SFX_POR_CHATTER_5,Jäger voraus.
 TEXT_SFX_POR_CHATTER_6,Genau hinter Euch, Rot-Drei!
 TEXT_SFX_POR_CHATTER_DS,Ich hab's ...
@@ -9883,13 +9878,13 @@ TEXT_SFX_PR2_MOVE_3,Wachen! Schnappt sie!
 TEXT_SFX_PR2_MOVE_4,Zu den Ausgängen!
 TEXT_SFX_PR2_MOVE_5,Schafft mich hier raus!
 TEXT_SFX_PR2_MOVE_6,Beeilung!
-TEXT_SFX_PR2_MOVE_7,Ich glaube, hier geht’s raus!
+TEXT_SFX_PR2_MOVE_7,Ich glaube, hier geht's raus!
 TEXT_SFX_PR2_MOVE_8,Sperrt die Augen auf!
 TEXT_SFX_PR2_MOVE_9,Sie kommen!
 TEXT_SFX_PR2_SELECT_1,Los, raus!
 TEXT_SFX_PR2_SELECT_10,Schnell!
 TEXT_SFX_PR2_SELECT_11,Bewegung!
-TEXT_SFX_PR2_SELECT_12,Hier lang geht’s raus!
+TEXT_SFX_PR2_SELECT_12,Hier lang geht's raus!
 TEXT_SFX_PR2_SELECT_13,Lasst mich raus!
 TEXT_SFX_PR2_SELECT_14,Vorsichtig.
 TEXT_SFX_PR2_SELECT_15,Zeit für die Revanche!
@@ -9897,7 +9892,7 @@ TEXT_SFX_PR2_SELECT_2,Kommt, hier lang!
 TEXT_SFX_PR2_SELECT_3,Wir sind unterwegs!
 TEXT_SFX_PR2_SELECT_4,Los, raus!
 TEXT_SFX_PR2_SELECT_5,Da lang, schnell!
-TEXT_SFX_PR2_SELECT_6,Hier geht’s raus!
+TEXT_SFX_PR2_SELECT_6,Hier geht's raus!
 TEXT_SFX_PR2_SELECT_7,Lauft! Lauft!
 TEXT_SFX_PR2_SELECT_8,Achtet auf die Wachen!
 TEXT_SFX_PR2_SELECT_9,In Ordnung.
@@ -14744,7 +14739,7 @@ TEXT_SPEECH_EMPIRE_ACT01_MISSION_THREE_04,Darth Vader: Diese Piraten kennen die 
 TEXT_SPEECH_EMPIRE_ACT01_MISSION_THREE_05,Boba Fett: Überlasst die Verteidigungsstellungen mir. Haltet die anderen Schiffe zurück, bis ich ein Zeichen gebe. 
 TEXT_SPEECH_EMPIRE_ACT01_MISSION_THREE_06,Boba Fett: Sensorsatelliten werden im gesamten Perimeter eingesetzt. Das sollte nicht lange dauern.
 TEXT_SPEECH_EMPIRE_ACT01_MISSION_THREE_07,Imperialer Offizier: Verstanden. Wir warten auf Ihr Zeichen. 
-TEXT_SPEECH_EMPIRE_ACT01_MISSION_THREE_08,Boba Fett: Das war’s. Er gehört Euch.
+TEXT_SPEECH_EMPIRE_ACT01_MISSION_THREE_08,Boba Fett: Das war's. Er gehört Euch.
 TEXT_SPEECH_EMPIRE_ACT01_MISSION_THREE_09,Imperialer Offizier: Wir kommen an Bord, Abschaum!
 TEXT_SPEECH_EMPIRE_ACT01_MISSION_THREE_10,Boba Fett: Wenn ich der Basis zu nahe komme, wissen die Piraten, dass ich hier bin.
 TEXT_SPEECH_EMPIRE_ACT01_MISSION_THREE_11,Boba Fett: Ich darf die Jäger nicht zu ihrer Basis entkommen lassen.
@@ -16035,7 +16030,7 @@ TEXT_SPEECH_TUTORIAL_REBEL_ACT01_51,Tipp: Garnisonseinheiten können verwendet w
 TEXT_SPEECH_TUTORIAL_REBEL_ACT01_52,Tipp: Einheiten kann der Befehl gegeben werden, alle Feinde anzugreifen, auf die sie auf dem Weg zu ihrem Ziel treffen – man nennt dies zu einem Ziel vorkämpfen. Um einer Einheit zu befehlen, sich vorzukämpfen, wählt sie aus, klickt erst auf Angriff in der Steuerleiste und dann auf das Ziel.
 TEXT_SPEECH_TUTORIAL_REBEL_ACT01_53,Patrouillenführer: Sichert den Verstärkungspunkt! 
 TEXT_SPEECH_TUTORIAL_REBEL_ACT01_54,Patrouillenführer: Imperiale Einheiten! Feuer eröffnen! 
-TEXT_SPEECH_TUTORIAL_REBEL_ACT01_55,Patrouillenführer: Die Gegend ist sicher! Los, weiter geht’s! 
+TEXT_SPEECH_TUTORIAL_REBEL_ACT01_55,Patrouillenführer: Die Gegend ist sicher! Los, weiter geht's! 
 TEXT_SPEECH_TUTORIAL_REBEL_ACT01_56,Patrouillenführer: Die Gegend ist sicher! Das waren die letzten! 
 TEXT_SPEECH_TUTORIAL_REBEL_ACT01_57,Stützpunktkontrolle: Sir, ich erhalte die Nachricht, dass sich eine große imperiale Flotte auf dem Weg nach Kashyyyk befindet! 
 TEXT_SPEECH_TUTORIAL_REBEL_ACT01_58,Patrouillenführer: Dann ist dieses System nicht länger sicher. Der Stützpunkt muss sofort evakuiert werden.
@@ -16539,7 +16534,7 @@ TEXT_SPEECH_UW_ACT02_G10_03,Urai Fen: Auf dem Planeten Dathomir leben viele Anh�
 TEXT_SPEECH_UW_ACT02_G10_04,Tyber Zann: Ich verstehe. Es besteht kein Grund, das Imperium frontal anzugreifen. Besser, wir schleichen uns mit einer kleinen Streitmacht auf dem Planeten ein und schnappen ihnen das, was wir wollen, unter der Nase weg.
 TEXT_SPEECH_UW_ACT02_G10_05,Urai Fen: Es könnte möglich sein, unentdeckt auf dem Planeten zu landen, aber die Sensoren dort sind sehr gut. Es wird nicht lange dauern, bis sie uns bemerken, es sei denn, wir deaktivieren das imperiale Sensorennetz.
 TEXT_SPEECH_UW_ACT02_G10_06,Tyber Zann: Schickt nach ein paar Verderbern. Lasst sie das Sensorennetz sabotieren, dann können wir selbst mit einer Fähre landen.
-TEXT_SPEECH_UW_ACT02_G10_12,Tyber Zann: Der Weg ist frei. Auf geht’s, Urai.
+TEXT_SPEECH_UW_ACT02_G10_12,Tyber Zann: Der Weg ist frei. Auf geht's, Urai.
 TEXT_SPEECH_UW_ACT02_G10_17,Tyber Zann: Urai, diesen Einsatz bestreiten wir beide allein - wie in alten Zeiten. Das Imperium beobachtet diesen Planeten äußerst aufmerksam. Wir müssen schnell und heimlich operieren.
 TEXT_SPEECH_UW_ACT02_G11_01,Urai Fen: Tyber, da ist eine Mitteilung für Euch auf Eurem privaten Kanal.
 TEXT_SPEECH_UW_ACT02_G11_02,Tyber Zann: Thrawn!?!  Unmöglich! Wie habt Ihr mich gefunden?
@@ -16789,7 +16784,7 @@ TEXT_SPEECH_UW_ACT03_M11_23,Urai Fen: Hab ihn!
 TEXT_SPEECH_UW_ACT03_M11_24,Tyber Zann: Gerade rechtzeitig.
 TEXT_SPEECH_UW_ACT03_M11_25,Urai Fen: Ich brauche ein paar Minuten, um den Zentralcode zu finden ....
 TEXT_SPEECH_UW_ACT03_M11_26,Tyber Zann: Hmm ... Ein Sicherheitssystem, das nicht eingeplant war. Ich wette, die Wachen sind schon auf dem Weg zu uns. Wir müssen sie ausschalten, um die Tür frei zu bekommen.
-TEXT_SPEECH_UW_ACT03_M11_27,Urai Fen: Ich hab’s. Wollt Ihr sonst noch was aus dem Tresor?
+TEXT_SPEECH_UW_ACT03_M11_27,Urai Fen: Ich hab's. Wollt Ihr sonst noch was aus dem Tresor?
 TEXT_SPEECH_UW_ACT03_M11_28,Tyber Zann: Verführerisch, aber wir haben keine Zeit. Wir haben die Pläne und deswegen waren wir hier. Lasst uns gehen, solange es noch möglich ist.
 TEXT_SPEECH_UW_ACT03_M11_29,Silri: Was gibt es, mein Liebling?
 TEXT_SPEECH_UW_ACT03_M11_30,Tyber Zann: Was macht dieses Ding außerhalb seines Käfigs? Und warum wartet Ihr nicht wie vereinbart im Hangar?
@@ -16839,7 +16834,7 @@ TEXT_SPEECH_UW_ACT03_M12_16,Pilot: Whoa! Schaut Euch das an!
 TEXT_SPEECH_UW_ACT03_M12_17,Tyber Zann: Wie beim Abschießen von Takaam-Kapseln in einer Dalass-Grube.
 TEXT_SPEECH_UW_ACT03_M12_18,Tyber Zann: Das braucht Ihr doch nicht mehr, oder?
 TEXT_SPEECH_UW_ACT03_M12_19,Pilot: Was zum ... Super-Sternenzerstörer im Anflug, Sir!
-TEXT_SPEECH_UW_ACT03_M12_20,Tyber Zann: Ich wette, das war teuer. Aber was soll’s.
+TEXT_SPEECH_UW_ACT03_M12_20,Tyber Zann: Ich wette, das war teuer. Aber was soll's.
 TEXT_SPEECH_UW_ACT03_M12_21,Tyber Zann: Wäre der Imperator nicht schon längst tot, das hier würde ihn fürchterlich aufregen.
 TEXT_SPEECH_UW_ACT03_M12_22,Tyber Zann: Ihr Narren kapiert es wohl nie, oder?
 TEXT_SPEECH_UW_ACT03_M12_23,Pilot: Wir haben den Superlaser der Eclipse unter Kontrolle!
@@ -17495,7 +17490,7 @@ TEXT_STRUCTURE_PRODUCTION_02,Produktionsstätte
 TEXT_STRUCTURE_PRODUCTION_03,Produktionsstätte
 TEXT_STRUCTURE_PRODUCTION_04,Produktionsstätte
 TEXT_STRUCTURE_PRODUCTION_05,Produktionsstätte
-TEXT_STRUCTURE_PYNGANI,Pyn’gani-Behausung
+TEXT_STRUCTURE_PYNGANI,Pyn'gani-Behausung
 TEXT_STRUCTURE_RANCOR_ROCK,Rancorgrube
 TEXT_STRUCTURE_REBEL_BUILDABLE_BACTA_TANK,Rebellen-Bacta-Heilstation
 TEXT_STRUCTURE_REBEL_BUILDABLE_BACTA_TANK_UC,Rebellen-Bacta-Heilstation (im Bau)
@@ -18323,7 +18318,6 @@ TEXT_TOOLTIP_UNIT_COMMANDER_RAL_FALAN,Commander Ral Falan
 TEXT_TOOLTIP_UNIT_FLANKAR,Flankar
 TEXT_TOOLTIP_UNIT_FLEET_COMMANDER_MALINTH,Flottenkommandeur Malinth
 TEXT_TOOLTIP_UNIT_FOOD_COMMISSIONER,Lebensmittelkontrolleur
-TEXT_TOOLTIP_UNIT_GARNAK_FEY,Garnak Fey
 TEXT_TOOLTIP_UNIT_GOVERNOR_KOONG,Gouverneur Koong Eeth
 TEXT_TOOLTIP_UNIT_KENDALOZZEL,Admiral Dalken Hol
 TEXT_TOOLTIP_UNIT_KIRITH,Gouverneur Kirith
@@ -18434,7 +18428,7 @@ TEXT_TUTORIAL_CHAP_07_05,Belohnung: 50.000 Credits und ein neues Schiff!
 TEXT_TUTORIAL_CHAP_07_06,Auftrag: Beendet die Story-Mission, um weiterzumachen
 TEXT_TUTORIAL_TITLE,Tutorial abgeschlossen!
 TEXT_TUTORIAL_UNDERWORLD_COMPLETE,Glückwunsch! Ihr habt das Tutorial abgeschlossen. Wählt Neue Kampagne aus dem Hauptmenü, um die Einzelspieler-Kampagne zu erleben.
-TEXT_TWITCH,Twitch
+TEXT_UNIT_TWITCH,Twitch
 TEXT_TYBER_CLOAKING_DESCRIPTION,Dieses tragbare Tarnfeld ermöglicht es einer Einheit, sich unsichtbar durch die Gegend zu bewegen.
 TEXT_UK,UK
 TEXT_UNDERWORLD_ACT1_CRAWL_PART_1,Der Galaktische Bürgerkrieg ist ausgebrochen. Die Rebellen haben mit dem ersten Angriff gegen das Galaktische Imperium begonnen und suchen nach der neuen Waffe des Imperiums, dem TODESSTERN.
@@ -19226,12 +19220,16 @@ TEXT_UNIT_ARC_HAMMER_01,TODO
 TEXT_UNIT_HOME_ONE_01,TODO
 TEXT_UNIT_HOUNDSTOOTH_00,TODO
 TEXT_UNIT_IG2000_00,TODO
-TEXT_UNIT_MILLENNIUM_FALCON_01,TODO
+TEXT_UNIT_MILLENNIUM_FALCON_00,TODO
 TEXT_UNIT_MOLDY_CROW_01,TODO
 TEXT_UNIT_SD_ADMONITOR_01,TODO
 TEXT_UNIT_SUNDERED_HEART_01,TODO
 TEXT_HERO_PEACEBRINGER_01,TODO
-TEXT_HERO_ANNIHILATOR_01,TODO
+TEXT_TOOLTIP_ANNIHILATOR_00,TODO
+TEXT_CORRUPTION_OBJ_SILRISURVIVE,Silri muss überleben.
+TEXT_CORRUPTION_OBJ_KID_BYSS_01,TODO
+TEXT_CORRUPTION_OBJ_URAISURVIVE,Urai Fen muss überleben.
+TEXT_ENCYCLOPEDIA_CLASS_BOMB,Klasse: Bombe
 TEXT_TOOLTIP_REQUIRED_PLANETS_CAPITAL_SHIPS_01,TODO
 TEXT_PLANET_CAPITAL_SHIP_PRODUCER_01,TODO
 TEXT_UNIT_SLAVE_I_00,TODO
@@ -19248,10 +19246,13 @@ TEXT_ENCYCLOPEDIA_FACTORY_UNDERWORLD_00,TODO
 TEXT_PLANET_VERGESSO_INFO_POP_00,TODO
 TEXT_PLANET_VERGESSO_INFO_WL_00,TODO
 TEXT_PLANET_VERGESSO_INFO_TAC_00,TODO
+TEXT_UNIT_ARNAMA,TODO
+TEXT_UNIT_FLANKAR,TODO
 TEXT_UNIT_UNGARR_DARIS,TODO
 TEXT_UNIT_POLO_SELAB,TODO
 TEXT_UNIT_KOONG_EETH,TODO
 TEXT_UNIT_BEVEL_LEMELISK,TODO
+TEXT_TOOLTIP_UNIT_GARNAK_FEY,TODO
 TEXT_UNIT_TANDA,TODO
 TEXT_UNIT_SAN_HILL,TODO
 TEXT_UNIT_DALKEN_HOL,TODO
@@ -19260,11 +19261,11 @@ TEXT_UNIT_MALINTH,TODO
 TEXT_UNIT_GARNAK_FEY,TODO
 TEXT_UNIT_RAL_FALAN,TODO
 TEXT_UNIT_KIRITH,TODO
-TEXT_ENCYCLOPEDIA_CLASS_GALACTIC_SENATOR,TODO
+TEXT_ENCYCLOPEDIA_CLASS_SENATOR_GALACTIC,TODO
 TEXT_ENCYCLOPEDIA_CLASS_GOVERNOR,TODO
 TEXT_ENCYCLOPEDIA_CLASS_ENGINEER,TODO
 TEXT_ENCYCLOPEDIA_CLASS_CHAIRMAN,TODO
-TEXT_ENCYCLOPEDIA_CLASS_COMISSIONER_FOOD,TODO
+TEXT_ENCYCLOPEDIA_CLASS_COMMISSIONER_FOOD,TODO
 TEXT_ENCYCLOPEDIA_CLASS_COMPTROLLER,TODO
 TEXT_ENCYCLOPEDIA_CLASS_COMMANDER,TODO
 TEXT_ENCYCLOPEDIA_CLASS_POLITICIAN,TODO
@@ -19275,3 +19276,5 @@ TEXT_LANG_THAI,TODO
 TEXT_LANG_GERMAN,TODO
 TEXT_TOOLTIP_HOUNDSTOOTH_00,TODO
 TEXT_TOOLTIP_IG2000_00,TODO
+TEXT_HERO_ANNIHILATOR_00,TODO
+TEXT_CORRUPTION_OBJ_INT_DANTOOINE_00,TODO

@@ -966,13 +966,13 @@ TEXT_CORRUPTION_HONOGHR_STORY_RACKETEER,While the Noghri Death Commandos are fie
 TEXT_CORRUPTION_HOTH_STORY_RACKETEER,An ice world, racketeering organizations on this planet will have far reaching influence among the Rebel forces.
 TEXT_CORRUPTION_HYPORI_STORY_BLACKMARKET,Hypori's lack of a real population also means it has nothing in the way of laws and government, making it ideal for a black market where no questions are asked.
 TEXT_CORRUPTION_ILUM_STORY_BRIBERY,A thinly populated world filled with ice caves, bribing members of the population could reveal many Jedi secrets about the planet's Adegan crystals.
-TEXT_CORRUPTION_INT_DANTOOINE_OBJ_00,Intimidate the local farmers.
-TEXT_CORRUPTION_INT_HONOGHR_OBJ_00,Destroy 3 Noghri Camps.
-TEXT_CORRUPTION_INT_HONOGHR_OBJ_01,1 of 3 Noghri Camps destroyed.
-TEXT_CORRUPTION_INT_HONOGHR_OBJ_02,2 of 3 Noghri Camps destroyed.
-TEXT_CORRUPTION_INT_HONOGHR_OBJ_03,3 of 3 Noghri Camps destroyed.
-TEXT_CORRUPTION_INT_NABOO_OBJ_00,Intimidate Chairman Arnama.
-TEXT_CORRUPTION_INT_TARIS_OBJ_00,Intimidate 'Twitch.'
+TEXT_CORRUPTION_OBJ_INT_DANTOOINE_00,Intimidate the local farmers.
+TEXT_CORRUPTION_OBJ_INT_HONOGHR_00,Destroy 3 Noghri Camps.
+TEXT_CORRUPTION_OBJ_INT_HONOGHR_01,1 of 3 Noghri Camps destroyed.
+TEXT_CORRUPTION_OBJ_INT_HONOGHR_02,2 of 3 Noghri Camps destroyed.
+TEXT_CORRUPTION_OBJ_INT_HONOGHR_03,3 of 3 Noghri Camps destroyed.
+TEXT_CORRUPTION_OBJ_INT_NABOO_00,Intimidate Chairman Arnama.
+TEXT_CORRUPTION_OBJ_INT_TARIS_00,Intimidate 'Twitch.'
 TEXT_CORRUPTION_JABIIM_STORY_CORUPTMILITIA,Rich in minerals, corrupting the militia prevents vast numbers of Jabiim troops from going to enemy force pools.
 TEXT_CORRUPTION_JABIIM_STORY_RACKETEER,The planet's wealthier citizens are known for their criminal contacts. This factor alone should make Zann Consortium plans unfold quicker in this part of the galaxy.
 TEXT_CORRUPTION_KAMINO_STORY_BLACKMARKET,The Kaminoans are expert in the art of cloning. Establishing a black market on this world can reveal a great deal about the Empire.
@@ -1861,7 +1861,7 @@ TEXT_HERO_4LOM,4-LOM
 TEXT_HERO_4LOM_TEAM,4-LOM
 TEXT_HERO_AKBAR_TEAM,Admiral Ackbar
 TEXT_HERO_ANNIHILATOR,The Annihilator
-TEXT_HERO_ANNIHILATOR_01,The Annihilator - Admiral Gaarn
+TEXT_HERO_ANNIHILATOR_00,The Annihilator - Admiral Gaarn
 TEXT_HERO_BOBA_FETT,Boba Fett
 TEXT_HERO_BOBA_FETT_TEAM,Boba Fett
 TEXT_HERO_BOSSK,Bossk
@@ -17979,7 +17979,7 @@ TEXT_TOOLTIP_ACCLAMATOR,Medium frigate armed with two turbolaser batteries, two 
 TEXT_TOOLTIP_AI_TURRET,Anti-infantry turret capable of defeating enemy infantry assaults.
 TEXT_TOOLTIP_AKBAR,Rebellion admiral able to command ships of the fleet for maximum combat effectiveness and reduces ship production costs. Travels in Home One. A formidable capital ship.
 TEXT_TOOLTIP_ANNIHILATOR,The Annihilator is commanded by Admiral Gaarn.
-TEXT_TOOLTIP_ANNIHILATOR_01,One of the few ships of its type deployed into active duty, the Annihilator is an Executor-class Super Star Destroyer commanded by Admiral Gaarn. Ten turbolaser batteries, six ion cannons, four missile launchers, and three torpedo launchers make the Annihilator a formidable and fierce foe in battle.
+TEXT_TOOLTIP_ANNIHILATOR_00,One of the few ships of its type deployed into active duty, the Annihilator is an Executor-class Super Star Destroyer commanded by Admiral Gaarn. Ten turbolaser batteries, six ion cannons, four missile launchers, and three torpedo launchers make the Annihilator a formidable and fierce foe in battle.
 TEXT_TOOLTIP_ANTILLES,The ship of Captain Raymus Antilles, a veteran of the Clone Wars who serves under Senators Bail and Leia Organa. His ship is a heavily modified Corellian Corvette.
 TEXT_TOOLTIP_ARC_HAMMER,A mobile factory ship, commanded by General Rom Mohc. The Arc Hammer allows the production of dark troopers on the planet it orbits.
 TEXT_TOOLTIP_ASSAULT_FRIGATE,Heavy assault frigate armed with two enhanced turbolaser batteries and two laser cannon batteries. An advanced combat ship with emphasis on firepower at the expense of durability.

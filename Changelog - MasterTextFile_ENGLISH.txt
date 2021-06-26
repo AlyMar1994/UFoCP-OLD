@@ -19,6 +19,8 @@ v1.16
 -Renamed string "TEXT_UNIT_SLAVE_I_01" to "TEXT_UNIT_SLAVE_I_00" for consistency.
 -Renamed string "TEXT_UNIT_HOUNDSTOOTH_01" to "TEXT_UNIT_HOUNDSTOOTH_00" for consistency.
 -Renamed string "TEXT_UNIT_IG2000_01" to "TEXT_UNIT_IG2000_00" for consistency.
+-Renamed string "TEXT_TOOLTIP_ANNIHILATOR_01" to "TEXT_TOOLTIP_ANNIHILATOR_00" for consistency.
+-Renamed string "TEXT_HERO_ANNIHILATOR_01" to "TEXT_HERO_ANNIHILATOR_00" for consistency.
 
 -[MBRM01_Space_Planet_Kuat.TED]: "Unable to get to Fresia directly, Captain Antilles decides to stage a diversionary attack on the Imperial shipyards at Kuat - a massive installation that constructs all types of Imperial craft.  Normally heavily defended, the Incom nationalization ceremony has reassigned the majority of its defensive fleet, leaving the shipyard vulnerable.  Antilles hopes to cause enough damage to draw the Imperial Star Destroyer Tyranny away from Fresia, leaving their real target unguarded... ." --> "Unable to get to Fresia directly, Captain Antilles decides to stage a diversionary attack on the Imperial shipyards at Kuat - a massive installation that constructs all types of Imperial craft.  Normally heavily defended, the Incom nationalization ceremony has reassigned the majority of its defensive fleet, leaving the shipyard vulnerable.  Antilles hopes to cause enough damage to draw the Imperial Star Destroyer Tyranny away from Fresia, leaving their real target unguarded...."
 -[MBRM02_Interpreting_the_Network.TED]: "Undaunted by the setback in their plans to steal the X-wings, the Alliance devises a scheme to fool the Imperial sensors scattered around Fresia.  An Imperial network uplink station on Wayland seems like the ideal way to steal codes for the Imperial sensors if R2-D2 can get to it unharmed.  With the network fooled, the Alliance can slip past Fresia's defenses with the Empire none the wiser... ." --> "Undaunted by the setback in their plans to steal the X-wings, the Alliance devises a scheme to fool the Imperial sensors scattered around Fresia.  An Imperial network uplink station on Wayland seems like the ideal way to steal codes for the Imperial sensors if R2-D2 can get to it unharmed.  With the network fooled, the Alliance can slip past Fresia's defenses with the Empire none the wiser...."
@@ -83,11 +85,11 @@ v1.12
 -Created string "TEXT_UNIT_GARNAK_FEY" to add a name to this corruption mission target.
 -Created string "TEXT_UNIT_RAL_FALAN" to add a name to this corruption mission target.
 -Created string "TEXT_UNIT_KIRITH" to add a name to this corruption mission target.
--Created string "TEXT_ENCYCLOPEDIA_CLASS_GALACTIC_SENATOR" to add a special class to Polo Se'lab, a corruption mission target.
+-Created string "TEXT_ENCYCLOPEDIA_CLASS_SENATOR_GALACTIC" to add a special class to Polo Se'lab, a corruption mission target.
 -Created string "TEXT_ENCYCLOPEDIA_CLASS_GOVERNOR" to add a special class to a few corruption mission targets.
 -Created string "TEXT_ENCYCLOPEDIA_CLASS_ENGINEER" to add a special class to Bevel Lemelisk, a corruption mission target.
 -Created string "TEXT_ENCYCLOPEDIA_CLASS_CHAIRMAN" to add a special class to a few corruption mission targets.
--Created string "TEXT_ENCYCLOPEDIA_CLASS_COMISSIONER_FOOD" to add a special class to the Alzoc III Food Comissioner, a corruption mission target.
+-Created string "TEXT_ENCYCLOPEDIA_CLASS_COMMISSIONER_FOOD" to add a special class to the Alzoc III Food Comissioner, a corruption mission target.
 -Created string "TEXT_ENCYCLOPEDIA_CLASS_COMPTROLLER" to add a special class to Garnak Fey, a corruption mission target.
 -Created string "TEXT_ENCYCLOPEDIA_CLASS_COMMANDER" to add a special class to Ral Falan, a corruption mission target.
 -Created string "TEXT_ENCYCLOPEDIA_CLASS_POLITICIAN" to add a special class to Ungarr Daris, a corruption mission target.
@@ -177,7 +179,7 @@ v1.11
 -Renamed string "TEXT_CORRUPTION_UTAPAU_STORY_KIDNAP_OBJECTIVE_02" to "TEXT_CORRUPTION_OBJ_KID_UTAPAU_00" for consistency, and to fix a mislisting where objective 00 was renamed.
 -Renamed string "TEXT_CORRUPTION_UTAPAU_STORY_KIDNAP_OBJECTIVE_03" to "TEXT_CORRUPTION_OBJ_KID_UTAPAU_01" for consistency, and to fix a mislisting where objective 02 was renamed.
 -Renamed string "TEXT_CORRUPTION_UTAPAU_STORY_KIDNAP_OBJECTIVE_04" to "TEXT_CORRUPTION_OBJ_KID_UTAPAU_02" for consistency, and to fix a mislisting where objective 03 was renamed.
--Renamed string "TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_01" to "TEXT_CORRUPTION_OBJ_URAISURVIVE." This string is used for Urai's corruption missions, to say "Urai must survive."  This has been changed in all missions.
+-Renamed string "TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_01" to "TEXT_CORRUPTION_OBJ_URAISURVIVE." This string is used for Urai's corruption missions, to say "Urai Fen must survive."  This has been changed in all missions.
 -Renamed string "TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_00" to "TEXT_CORRUPTION_OBJ_INT_HONOGHR_00" for consistency.
 -Renamed string "TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_03" to "TEXT_CORRUPTION_OBJ_INT_HONOGHR_01" for consistency, and to fix mislisting.
 -Renamed string "TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_04" to "TEXT_CORRUPTION_OBJ_INT_HONOGHR_02" for consistency, and to fix mislisting.

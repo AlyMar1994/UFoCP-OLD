@@ -2465,8 +2465,8 @@
 
 
 	<Props_Story Name="UM12_SUPER_STAR_DESTROYER">
-		<Text_ID>TEXT_HERO_ANNIHILATOR_01</Text_ID>
-		<Encyclopedia_Text>TEXT_TOOLTIP_ANNIHILATOR_01</Encyclopedia_Text>
+		<Text_ID>TEXT_HERO_ANNIHILATOR_00</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_ANNIHILATOR_00</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SSD</Encyclopedia_Unit_Class>
 		<Encyclopedia_Good_Against>Calamari_Cruiser Rebel_Star_Base_5 Krayt_Class_Destroyer</Encyclopedia_Good_Against>
 		<Encyclopedia_Vulnerable_To>Y-wing B-Wing Skipray_Blastboat</Encyclopedia_Vulnerable_To>
