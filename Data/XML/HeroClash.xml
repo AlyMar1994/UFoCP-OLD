@@ -2,13 +2,13 @@
 <Hero_Clashes>
 	<Hero_Clash Name="Vader_ObiWan">
 		<Clash_Type>Melee_Duel</Clash_Type>
-		<Involved_Hero_Types>Darth_Vader_Expansion, Obi_Wan_Kenobi</Involved_Hero_Types>
 		<Clash_Range>100.00</Clash_Range>
 		<Play_Conversation_Events>No</Play_Conversation_Events>
+		<Combat_Distance>17.65</Combat_Distance>
 
+		<Involved_Hero_Types>Darth_Vader_Expansion, Obi_Wan_Kenobi</Involved_Hero_Types>
 		<First_Hero_Type>Darth_Vader_Expansion</First_Hero_Type>
 		<Second_Hero_Type>Obi_Wan_Kenobi</Second_Hero_Type>
-		<Combat_Distance>17.65</Combat_Distance>
 
 		<!-- Damage Inflicted Per Exchange = LoserMaxHealth * DamagePercentage + DamageAmount -->
 		<Damage_Amount>0.00</Damage_Amount>
@@ -36,8 +36,8 @@
 	</Hero_Clash>
 
 
-	<!-- ALYMAR1994 (6/27/19): Due to fundamental errors with both these clashes, -->
-	<!-- and being permanently broken, I'm commenting them out from the file. -->
+	<!-- AM1994 (06/27/2019): Due to fundamental errors with both these clashes, -->
+	<!-- I'm disabling them to prevent them from loading. -->
 <!--	<Hero_Clash Name="ObiWan_BobaFett">
 		<Clash_Type>Action_Driven</Clash_Type>
 		<Involved_Hero_Types>Obi_Wan_Kenobi, Boba_Fett</Involved_Hero_Types>
