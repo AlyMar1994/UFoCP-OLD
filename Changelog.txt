@@ -33,6 +33,7 @@ There are MasterTextFiles_ENGLISH.dat updates in this update! Check "Changelog -
 UFoCP
 ==================
 -Removed the modified credits music from the mod.  Let alone the """*technical*""" legal implications of including part of A New Hope's soundtrack into the mod, in terms of fixes its relatively unnecessary.  It's was also unlikely to be heard (unless you liked watching the credits), and wasn't *technically* an incorrect version of "The Throne Room/End Title."  There were 16 different takes, combined, of TTR/ET altogether, and the version originally in Empire at War was an alternate take released by 20th Century Fox Film Scores when "In the time between the original LP release and the Anthology's release," the breakdown of what was going to be released versus what was actually used in the film was lost.  Petroglyph probably just liked the """incorrect""" take anyway, and there was no justification in changing it.
+-Regenerated all AI hint data for included land maps to adjust for map modifications.
 
 
 -Corellian Corvette – Fixed Underworld Corellian Corvette pointing to a non-existant unit for it's "vulnerable to" indicator.  Was pointing to "Alliance_Assault_Ship" and not "_Assault_Frigate."
