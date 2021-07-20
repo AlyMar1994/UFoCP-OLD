@@ -966,13 +966,6 @@ TEXT_CORRUPTION_HONOGHR_STORY_RACKETEER,While the Noghri Death Commandos are fie
 TEXT_CORRUPTION_HOTH_STORY_RACKETEER,An ice world, racketeering organizations on this planet will have far reaching influence among the Rebel forces.
 TEXT_CORRUPTION_HYPORI_STORY_BLACKMARKET,Hypori's lack of a real population also means it has nothing in the way of laws and government, making it ideal for a black market where no questions are asked.
 TEXT_CORRUPTION_ILUM_STORY_BRIBERY,A thinly populated world filled with ice caves, bribing members of the population could reveal many Jedi secrets about the planet's Adegan crystals.
-TEXT_CORRUPTION_OBJ_INT_DANTOOINE_00,Intimidate the local farmers.
-TEXT_CORRUPTION_OBJ_INT_HONOGHR_00,Destroy 3 Noghri Camps.
-TEXT_CORRUPTION_OBJ_INT_HONOGHR_01,1 of 3 Noghri Camps destroyed.
-TEXT_CORRUPTION_OBJ_INT_HONOGHR_02,2 of 3 Noghri Camps destroyed.
-TEXT_CORRUPTION_OBJ_INT_HONOGHR_03,3 of 3 Noghri Camps destroyed.
-TEXT_CORRUPTION_OBJ_INT_NABOO_00,Intimidate Chairman Arnama.
-TEXT_CORRUPTION_OBJ_INT_TARIS_00,Intimidate 'Twitch.'
 TEXT_CORRUPTION_JABIIM_STORY_CORUPTMILITIA,Rich in minerals, corrupting the militia prevents vast numbers of Jabiim troops from going to enemy force pools.
 TEXT_CORRUPTION_JABIIM_STORY_RACKETEER,The planet's wealthier citizens are known for their criminal contacts. This factor alone should make Zann Consortium plans unfold quicker in this part of the galaxy.
 TEXT_CORRUPTION_KAMINO_STORY_BLACKMARKET,The Kaminoans are expert in the art of cloning. Establishing a black market on this world can reveal a great deal about the Empire.
@@ -1008,6 +1001,13 @@ TEXT_CORRUPTION_NALHUTTA_STORY_BLACKMARKET,The Hutt organization is rife with je
 TEXT_CORRUPTION_NALHUTTA_STORY_BRIBERY,The strip mining concerns are run by one Hutt family organization. The Zann Consortium will bribe the leader of that family and make the resources of the planet flow to our consortium.
 TEXT_CORRUPTION_NALHUTTA_STORY_CORUPTMILITIA,Every Hutt family is at war with every other Hutt family in one way or another. We can use this to our advantage to keep them fighting amongst themselves, while all the while they will be following our orders.
 TEXT_CORRUPTION_NALHUTTA_STORY_KIDNAP,Kidnapping the space port director will halt the flow of minerals to the moon of Nar Shaddaa. If the moon can't process those resources our enemies' ability to build warships will be drastically curtailed.
+TEXT_CORRUPTION_OBJ_INT_DANTOOINE_00,Intimidate the local farmers.
+TEXT_CORRUPTION_OBJ_INT_HONOGHR_00,Destroy 3 Noghri Camps.
+TEXT_CORRUPTION_OBJ_INT_HONOGHR_01,1 of 3 Noghri Camps destroyed.
+TEXT_CORRUPTION_OBJ_INT_HONOGHR_02,2 of 3 Noghri Camps destroyed.
+TEXT_CORRUPTION_OBJ_INT_HONOGHR_03,3 of 3 Noghri Camps destroyed.
+TEXT_CORRUPTION_OBJ_INT_NABOO_00,Intimidate Chairman Arnama.
+TEXT_CORRUPTION_OBJ_INT_TARIS_00,Intimidate 'Twitch.'
 TEXT_CORRUPTION_OBJ_KID_BYSS_00,Kidnap Governor Kirith.
 TEXT_CORRUPTION_OBJ_KID_BYSS_01,Escort Governor Kirith back to the transport.
 TEXT_CORRUPTION_OBJ_SILRISURVIVE,Silri must survive.
