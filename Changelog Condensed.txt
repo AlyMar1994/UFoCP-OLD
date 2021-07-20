@@ -102,6 +102,7 @@ Last Updated:
 - Fixed broken/badly painted passability on all included maps in the mod.  This should help ensure that the AI can travel fluidly across the map while fixing overtly bad sections.  This also affects minimap quality with water placement.
 - Many minimaps are also being regenerated or have been regenerated to fix overtly low-quality pre-battle maps, to add where some don't exist, and to fix beta/old/non-existant content.
 - Fixed various planetary buffs not applying to the Underworld (e.g. Bestine, Carida, Corellia, Corulag, Fresia, Sullust, Vergesso or Yavin) with normal or Piracy units.
+- Fixed various spots of spawners/markers being assigned incorrectly (mainly space), and defense sattelites not being assigned neutrally to appear in maps.
 
 * GALACTIC
 - Fixed Bespin being labeled as a "None" weather map from EaW, when it should be Clear/Sunny.

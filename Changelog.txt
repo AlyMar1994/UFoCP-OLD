@@ -77,8 +77,11 @@ Maps/Planets (Land)
 Maps/Planets (Space)
 ==================
 -Dantooine – Fixed space station spawner being affiliated with the Rebels.
+-Dantooine – Regenerated map preview to correct incorrect content.
 
 -Dathomir – Fixed none of the defense satellites spawning.
+-Dathomir – Fixed Dathomir not being labelled as a space map, but as a desert.
+-Dathomir – Regenerated map preview to correct a severely out-of-date map.
 
 -Felucia – Fixed two defense satellites only appearing for the Rebellion.
 
