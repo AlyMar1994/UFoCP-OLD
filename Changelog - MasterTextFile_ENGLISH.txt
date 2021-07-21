@@ -22,6 +22,9 @@ v1.16
 -Renamed string "TEXT_TOOLTIP_ANNIHILATOR_01" to "TEXT_TOOLTIP_ANNIHILATOR_00" for consistency.
 -Renamed string "TEXT_HERO_ANNIHILATOR_01" to "TEXT_HERO_ANNIHILATOR_00" for consistency.
 
+-Deleted string "TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_01_STORY," invalidated by "TEXT_CORRUPTION_OBJ_URAISURVIVE."
+-Deleted string "TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_02_STORY," invalidated by misc other strings for the Intimidation mission.
+
 
 -[TEXT_GUI_DIALOG_TOOLTIP_IDC_BOTH_MOUSE_BUTTONS_ROTATE]: "When enabled, holding both left- and right-mouse buttons down will rotate the playfield." --> "When enabled, holding both left- and right-mouse buttons down will rotate the playfield instead of solely CTRL+middle-mouse."
 -[TEXT_OBJECT_PROXIMITY_MINE]: "Proximity mine" --> "Proximity Mine"

@@ -36,7 +36,8 @@ UFoCP
 -Regenerated all AI hint data for included land maps to adjust for map modifications.
 
 
-- Honoghr – Fixed Intimidation corruption mission having missing objective text.
+- Honoghr – Fixed campaign Intimidation corruption mission having missing objective text.
+- Honoghr – Fixed campaign Intimidation corruption mission not marking objective Urai surviving as complete when finished.
 
 
 -Corellian Corvette – Fixed Underworld Corellian Corvette pointing to a non-existant unit for it's "vulnerable to" indicator.  Was pointing to "Alliance_Assault_Ship" and not "_Assault_Frigate."

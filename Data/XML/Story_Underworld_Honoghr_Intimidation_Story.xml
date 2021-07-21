@@ -1,8 +1,6 @@
 <?xml version="1.0" ?>
-
 <Story>
-
-<!-- Start Campaign -->
+	<!-- Start Campaign -->
 	<Event Name="Honoghr_Intimidation_Mission_Begin">
 		<Event_Type>STORY_ELAPSED</Event_Type>
 		<Event_Param1>0</Event_Param1>
@@ -14,18 +12,19 @@
 		<Reward_Param1>0</Reward_Param1>
 		<Prereq>Honoghr_Intimidation_Mission_Begin</Prereq>
 	</Event>
-	
+
+
 	<Event Name="Honoghr_Intimidation_Mission_Add_Objective_00">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
 		<Event_Param2>ADD_OBJECTIVE_00</Event_Param2>
 		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
-		<Reward_Param1>TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_00</Reward_Param1>
+		<Reward_Param1>TEXT_CORRUPTION_OBJ_INT_HONOGHR_00</Reward_Param1>
 	</Event>
 	
 	<Event Name="Honoghr_Intimidation_Mission_Add_Objective_01">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
-		<Reward_Param1>TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_01_STORY</Reward_Param1>
+		<Reward_Param1>TEXT_CORRUPTION_OBJ_URAISURVIVE</Reward_Param1>
 		<Prereq>Honoghr_Intimidation_Mission_Begin</Prereq>
 	</Event>
 	
@@ -33,32 +32,42 @@
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
 		<Event_Param2>ADD_OBJECTIVE_02</Event_Param2>
 		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
-		<Reward_Param1>TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_00_STORY</Reward_Param1>
+		<Reward_Param1>TEXT_CORRUPTION_OBJ_INT_HONOGHR_STORY_00</Reward_Param1>
 	</Event>
-	
+
+
 	<Event Name="Honoghr_Intimidation_Mission_Complete_Objective_00">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
 		<Event_Param2>COMPLETE_OBJECTIVE_00</Event_Param2>
 		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
-		<Reward_Param1>TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_05</Reward_Param1>
+		<Reward_Param1>TEXT_CORRUPTION_OBJ_INT_HONOGHR_03</Reward_Param1>
 		<Prereq>Honoghr_Intimidation_Mission_Add_Objective_00</Prereq>
 	</Event>
-	
-	<Event Name="Honoghr_Intimidation_Mission_Complete_Objective_02">
-		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
-		<Event_Param2>COMPLETE_OBJECTIVE_02</Event_Param2>
-		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
-		<Reward_Param1>TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_00_STORY</Reward_Param1>
-		<Prereq>Honoghr_Intimidation_Mission_Add_Objective_02</Prereq>
-	</Event>
-	
-			<Event Name="Honoghr_Intimidation_Mission_Complete_Victory_Trigger">
-				<Event_Type>STORY_TRIGGER</Event_Type>
-				<Reward_Type>VICTORY</Reward_Type>
-				<Reward_Param1>Underworld</Reward_Param1>
-				<Prereq>Honoghr_Intimidation_Mission_Complete_Objective_02 Honoghr_Intimidation_Mission_Complete_Objective_00</Prereq>
+
+		<Event Name="Honoghr_Intimidation_Mission_Complete_Objective_01">
+			<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+			<Event_Param2>COMPLETE_OBJECTIVE_00</Event_Param2>
+			<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+			<Reward_Param1>TEXT_CORRUPTION_OBJ_URAISURVIVE</Reward_Param1>
+			<Prereq>Honoghr_Intimidation_Mission_Add_Objective_01</Prereq>
+		</Event>
+
+			<Event Name="Honoghr_Intimidation_Mission_Complete_Objective_02">
+				<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+				<Event_Param2>COMPLETE_OBJECTIVE_02</Event_Param2>
+				<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+				<Reward_Param1>TEXT_CORRUPTION_OBJ_INT_HONOGHR_STORY_00</Reward_Param1>
+				<Prereq>Honoghr_Intimidation_Mission_Add_Objective_02</Prereq>
 			</Event>
-			
+
+				<Event Name="Honoghr_Intimidation_Mission_Complete_Victory_Trigger">
+					<Event_Type>STORY_TRIGGER</Event_Type>
+					<Reward_Type>VICTORY</Reward_Type>
+					<Reward_Param1>Underworld</Reward_Param1>
+					<Prereq>Honoghr_Intimidation_Mission_Complete_Objective_02 Honoghr_Intimidation_Mission_Complete_Objective_00</Prereq>
+				</Event>
+
+
 	<Event Name="Honoghr_Intimidation_Mission_Update_00_1_Lua">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
 		<Event_Param2>UPDATE_OBJECTIVE_00_1</Event_Param2>
@@ -66,8 +75,8 @@
 			<Event Name="Honoghr_Intimidation_Mission_Update_00_1">
 				<Event_Type>STORY_TRIGGER</Event_Type>
 				<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
-				<Reward_Param1>TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_00</Reward_Param1>
-				<Reward_Param2>TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_03</Reward_Param2>
+				<Reward_Param1>TEXT_CORRUPTION_OBJ_INT_HONOGHR_00</Reward_Param1>
+				<Reward_Param2>TEXT_CORRUPTION_OBJ_INT_HONOGHR_01</Reward_Param2>
 				<Prereq>Honoghr_Intimidation_Mission_Update_00_1_Lua</Prereq>
 			</Event>  
 	
@@ -78,8 +87,8 @@
 			<Event Name="Honoghr_Intimidation_Mission_Update_00_2">
 				<Event_Type>STORY_TRIGGER</Event_Type>
 				<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
-				<Reward_Param1>TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_03</Reward_Param1>
-				<Reward_Param2>TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_04</Reward_Param2>
+				<Reward_Param1>TEXT_CORRUPTION_OBJ_INT_HONOGHR_01</Reward_Param1>
+				<Reward_Param2>TEXT_CORRUPTION_OBJ_INT_HONOGHR_02</Reward_Param2>
 				<Prereq>Honoghr_Intimidation_Mission_Update_00_2_Lua</Prereq>
 			</Event>  
 			
@@ -90,49 +99,49 @@
 			<Event Name="Honoghr_Intimidation_Mission_Update_00_3">
 				<Event_Type>STORY_TRIGGER</Event_Type>
 				<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
-				<Reward_Param1>TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_04</Reward_Param1>
-				<Reward_Param2>TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_05</Reward_Param2>
+				<Reward_Param1>TEXT_CORRUPTION_OBJ_INT_HONOGHR_02</Reward_Param1>
+				<Reward_Param2>TEXT_CORRUPTION_OBJ_INT_HONOGHR_03</Reward_Param2>
 				<Prereq>Honoghr_Intimidation_Mission_Update_00_3_Lua</Prereq>
 			</Event>  
-			
-			
+
+
 	<Event Name="Honoghr_Intimidation_Mission_Fail_Objective_00">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
 		<Event_Param2>FAIL_OBJECTIVE_00</Event_Param2>
 		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
-		<Reward_Param1>TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_00</Reward_Param1>
+		<Reward_Param1>TEXT_CORRUPTION_OBJ_INT_HONOGHR_00</Reward_Param1>
 		<Prereq>Honoghr_Intimidation_Mission_Add_Objective_00</Prereq>
 	</Event>
-	
+
 	<Event Name="Honoghr_Intimidation_Mission_Fail_Objective_01">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
-		<Reward_Param1>TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_01_STORY</Reward_Param1>
+		<Reward_Param1>TEXT_CORRUPTION_OBJ_URAISURVIVE</Reward_Param1>
 		<Prereq>Honoghr_Intimidation_Mission_Fail_Objective_00</Prereq>
 	</Event>
-	
+
 	<Event Name="Honoghr_Intimidation_Mission_Fail_Objective_02">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
 		<Event_Param2>FAIL_OBJECTIVE_02</Event_Param2>
 		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
-		<Reward_Param1>TEXT_HONOGHR_INTIMIDATION_OBJECTIVE_00_STORY</Reward_Param1>
+		<Reward_Param1>TEXT_CORRUPTION_OBJ_INT_HONOGHR_STORY_00</Reward_Param1>
 		<Prereq>Honoghr_Intimidation_Mission_Add_Objective_02</Prereq>
 	</Event>
-	
+
 	<Event Name="Honoghr_Intimidation_Mission_Loss_Rebel">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
 		<Event_Param2>VICTORY_REBEL</Event_Param2>
 		<Reward_Type>VICTORY</Reward_Type>
 		<Reward_Param1>Rebel</Reward_Param1>
 	</Event>
-	
+
 	<Event Name="Honoghr_Intimidation_Mission_Loss_Empire">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
 		<Event_Param2>VICTORY_EMPIRE</Event_Param2>
 		<Reward_Type>VICTORY</Reward_Type>
 		<Reward_Param1>Empire</Reward_Param1>
 	</Event>
-	
+
 	<Event Name="Honoghr_Intimidation_Mission_Loss_Hutt">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
 		<Event_Param2>VICTORY_HUTTS</Event_Param2>
