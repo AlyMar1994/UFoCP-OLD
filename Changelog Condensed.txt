@@ -16,16 +16,16 @@ Last Updated:
 - Text has been overhauled in v1.16.
 
 - Fixed bad delimiters in GameConstants for Armor_Types and Damage_Types, including Super Star Destroyer armor, IG-88's Infection weapon, bunker armor, etc.
-- 90% of all files in the mod are reorganized internally, and are condensed and/or cleaned.
+- 90% of all files in the mod are reorganized internally and are condensed and/or cleaned.
 - Did a general pass to clean up all the Lua scripting files included with UFoCP to make sure everything runs better and is clean to read.  This is in hopes someone may use UFoCP as a base to start their own mod.
 
-- Fixed Underworld Campaign mission #06: "Dark Ally" by preventing the Empire retreating when outnumbered, sequence breaking the mission.
+- Fixed Underworld Campaign mission #06: "Dark Ally" by preventing the Empire from retreating when outnumbered, sequence breaking the mission.
 - Fixed Underworld Campaign mission #07: "Cloud City Conflict" using the Black Sun hologram when Vader arrives, and not the Underworld Mercenary.
-- Fixed Underworld Campaign mission #09: "Baiting the Hook" by preventing the Empire retreating when outnumbered, sequence breaking the mission.  This also solves a temporary softlock.
+- Fixed Underworld Campaign mission #09: "Baiting the Hook" by preventing the Empire from retreating when outnumbered, sequence breaking the mission.  This also solves a temporary soft lock.
 - Fixed syntax errors on Underworld Campaign mission #12: "The Emperor's New Weapon."
 - Fixed 20% of Corruption mission objectives not ticking failed or completed when finished. WIP.
 - Fixed up Empire tech upgrade tooltips being inaccurate or not including units.
-- Fixed various Underworld, Empire and Rebel upgrades not doing what their tooltips implied, not having their tooltips display their full upgrades, or have proper percentages when applied.
+- Fixed various Underworld, Empire, and Rebel upgrades not doing what their tooltips implied, not having their tooltips display their full upgrades, or have proper percentages when applied.
 
 
 
@@ -37,15 +37,15 @@ Last Updated:
 
 * GALACTIC
 - Added a galactic piracy icon for the Underworld.
-- Added a new corruption particle effect which is more performance friendly.
+- Added a new corruption particle effect which is more performance-friendly.
 
 
 * LAND
-- Fixed EaW bumpmap "EB_BaseWall_DS1_BC" not including any damage to bumpmap causing issues.
+- Fixed EaW bump map "EB_BaseWall_DS1_BC" not including any damage to bumpmap causing issues.
 - Fixed command bar pause button not using its proper "disabled" texture.
 - Fixed Empire Skirmish command bar not being fully compressed and fixed some button overlapping by extending the texture.
-- Fixed the Ysalamiri tree not having a bumpmap.
-- Fixed swamp environmental river rock not having a bumpmap.
+- Fixed the Ysalamiri tree not having a bump map.
+- Fixed swamp environmental river rock not having a bump map.
 
 
 
@@ -58,14 +58,14 @@ Last Updated:
 - Modified Empire AI to prioritize budgeting, budget flushing to (at some point) build Vader and the Death Star II.
 - Fixed Galactic AI not considering Tyber Zann as leader of the Underworld in its AI movement calculations, and not including Captain Antilles as a frontline defender.
 - Fixed Rogue Squadron's AI not focusing on confronting the DS2.
-- Fixed the Teleporter Force Adept in Underworld Campaign mission #11 having bad AI variables being called.  It frenzies attacking all in sight, not just the Underworld like it should.
+- Fixed the Teleporter Force Adept in Underworld Campaign mission #11 having bad AI variables being called.  It frenzies attacking all insight, not just the Underworld like it should.
 - Fixed Underworld Ysalamiri Cage construction considerations factoring in "Darth_Vader" (EaW) and not "Darth_Vader_Expansion." (FoC)
 - Fixed BasicLandEquations calling for "Darth_Vader" (EaW) and not "Darth_Vader_Expansion" (FoC).  Also fixed certain BasicLandEquations not considering Underworld turbolasers, artillery or turrets when considering tactics.
 - Fixed BasicLandEquations not including Garm Bel Iblis or IG-88 as vehicle heroes to be healed by the vehicle turret.  This may cause an unintended side-effect that Iblis will hug a repair turret if he lost a hardpoint, but this has yet to be seen.
 - Fixed budgeting to include Underworld Repulsorlift Jammer properly, if a valid building.
-- Generic build turret AI now considers Underworld turrets properly and effectively utilizes each turrets purpose.  The original build need/purpose consideration was backwards, and didn't utilize the right turrets or utilized them at all.
-- Gave AI land units some new suggestions, specifically regarding AT-ATs deploying troops, infantry taking cover and reconsidering strategy when encountering artillery (e.g. MPTL, turbolasers) or generally searching around.
-- Fixed Galactic AI not reconsidering its situation every eight seconds like they should.
+- Generic build turret AI now considers Underworld turrets properly and effectively utilize each turret’s purpose.  The original build need/purpose consideration was backward, and didn't utilize the right turrets or utilized them at all.
+- Gave AI land units some new suggestions, specifically regarding AT-ATs deploying troops, infantry taking cover, and reconsidering strategy when encountering artillery (e.g. MPTL, turbolasers) or generally searching around.
+- Fixed Galactic AI not reconsidering its situation every eight seconds as they should.
 - Fixed skirmish Underworld AI not building the Venator.  Petro never defined it.
 
 
@@ -78,7 +78,7 @@ Last Updated:
 - Fixed Grand Admiral Thrawn using an incorrect spawning audio event.
 - Fixed Repulsorlift Jammers having bad VO.  The Jammer was intended to be made for the Empire, so it still had Empire-related VO (i.e. the Underworld Mercenary claiming "The Imperials are using a Gravity Generator!" when the generator was built *by* the Underworld).
 - Fixed Underworld Turbolaser Towers using female Rebel VO.
-- Fixed Rebel and Underworld Turbolaser Towers having green muzzleflashes yet red lasers (lasers are green for now).
+- Fixed Rebel and Underworld Turbolaser Towers having green muzzle flashes yet red lasers (lasers are green for now).
 - Fixed Luke Skywalker saying "Red 5 here!" in space when Red Squadron doesn't exist.
 - Removed Tyber Zann's space callout.  He has no applicable space callout, and used, nonsensically, the land one.
 - Fixed Rogue Squadron's Derek Kilvian VO not playing properly because the referenced audio was misspelled.
@@ -87,9 +87,9 @@ Last Updated:
 
 * FACTIONS *
 ------------
-- Fixed faction-based conditionals for Rebels and Empire.  Advisor dialogue will now be approriate based on whether Palpatine, the Death Star II, Mon Mothma, etc. are in battle alone or together.
+- Fixed faction-based conditionals for Rebels and Empire.  Advisor dialogue will now be appropriate based on whether Palpatine, the Death Star II, Mon Mothma, etc. are in battle alone or together.
 - Fixed Empire faction superweapon being "Death_Star" (EaW) and not "Death_Star_II" (FoC).
-- Fixed Rebel orbital bombardment checking for the Alliance Assault Frigate or the Nebulon-B when neither of them have ion cannons to bombard with.
+- Fixed Rebel orbital bombardment checking for the Alliance Assault Frigate or the Nebulon-B when neither of them has ion cannons to bombard with.
 - Fixed Underworld using pirate infantry as their generic infantry icon.
 - Fixed Underworld using an unused icon of the StarViper instead of the normal icon (the game originally used an unused hero icon for Xizor).
 - Fixed generic Hostile faction not having Hutts as an enemy.
@@ -101,29 +101,29 @@ Last Updated:
 ------------
 - Fixed various maps with incorrect angling/positioning for their space stations not facing towards the attackers.  This wasn't too egregious for the Rebels and their 360* station, but the Empire and Underworld suffered (e.g. Alzoc III, Atzerri, Endor, Kamino, Kuat, Mandalore, etc.).
 - Fixed broken/badly painted passability on all included maps in the mod.  This should help ensure that the AI can travel fluidly across the map while fixing overtly bad sections.  This also affects minimap quality with water placement.
-- Many minimaps are also being regenerated or have been regenerated to fix overtly low-quality pre-battle maps, to add where some don't exist, and to fix beta/old/non-existant content.
+- Many minimaps are also being regenerated or have been regenerated to fix overtly low-quality pre-battle maps, to add where some don't exist, and to fix beta/old/non-existent content.
 - Fixed various planetary buffs not applying to the Underworld (e.g. Bestine, Carida, Corellia, Corulag, Fresia, Sullust, Vergesso or Yavin) with normal or Piracy units.
-- Fixed various spots of spawners/markers being assigned incorrectly (mainly space), and defense sattelites not being assigned neutrally to appear in maps.
+- Fixed various spots of spawners/markers being assigned incorrectly (mainly space), and defense satellites not being assigned neutrally to appear in maps.
 
 * GALACTIC
-- Fixed Bespin being labeled as a "None" weather map from EaW, when it should be Clear/Sunny.
+- Fixed Bespin being labeled as a "None" weather map from EaW when it should be Clear/Sunny.
 - Fixed Honoghr's campaign and prologue variants not having the Noghri warrior as the population icon.
-- Fixed Jabiim's land backdrop being grasslands instead of polluted swamp.
+- Fixed Jabiim's land backdrop being grasslands instead of a polluted swamp.
 - Fixed Mandalore's campaign and prologue variants not having the Mandalorian warrior as the population icon.
-- Fixed Nal Hutta and variants being displayed as a temperate world when it's a swamp.  This should affect music, infantry models and map SFX.
+- Fixed Nal Hutta and variants being displayed as a temperate world when it's a swamp.  This should affect music, infantry models, and map SFX.
 - Fixed Nal Hutta and variants using the city land backdrop when it's a swamp.
 
 * LAND
 - Fixed Carida's rancor spawn dens showing holes through the object from behind.
 - Fixed most of Carida's wild rancor from spawning.  Faction owner was "Hutts" instead of "Hostile."
 - Fixed bad brushing on Honoghr so the Underworld no longer has Droideka Mk. IIs getting stuck on cliffs when they spawn.
-- Fixed bad brushing on Underworld Campaign mission #06: "Dark Ally" so rancor no longer get messed up when pathing near the northern parts of the map.  I actually pushed one out of existance once.
-- Fixed Tatooine's giant dip in the ground where the saarlac was removed.  No I don't know why it's in the skirmish map and yet not the single-player map, and no I'm not adding it back until someone from Petro tells me it was supposed to be there ( ͡° ͜ʖ ͡°).
+- Fixed bad brushing on Underworld Campaign mission #06: "Dark Ally" so rancor no longer gets messed up when pathing near the northern parts of the map.  I actually pushed one out of existence once.
+- Fixed Tatooine's giant dip in the ground where the sarlacc was removed.  No, I don't know why it's in the skirmish map and yet not the single-player map, and no I'm not adding it back until someone from Petro tells me it was supposed to be there ( ͡° ͜ʖ ͡°).
 
 
 * SPACE
-- Fixed Alderaan causing a slew of issues.  FoC now uses "Alderaan_Dead" while the skirmish map from EaW uses "Alderaan" to fix visual stuff.  Also fixed FoC Alderaan having "sunny" weather instead of "clear," even if it was true on technicality.
-- Fixed Kessel defender flags being inside the gigantic asteroid adjacent the space station.  Moved the giant rock a few feet.
+- Fixed Alderaan causing a slew of issues.  FoC now uses "Alderaan_Dead" while the skirmish map from EaW uses "Alderaan" to fix visual stuff.  Also fixed FoC Alderaan having "sunny" weather instead of "clear," even if it was true on a technicality.
+- Fixed Kessel defender flags being inside the gigantic asteroid adjacent to the space station.  Moved the giant rock a few feet.
 - Fixed Mandalore's attacker entry markers not facing towards the station, causing spawning issues.
 - Fixed Muunilinst's defense turrets only appearing for the Rebellion.
 - Fixed the DS2 targeting Nal Hutta's moon instead of the planet, by doing some map trickery and making the moon an irrelevant side prop and not a shrunken version of a galactic planet.
@@ -144,7 +144,7 @@ Last Updated:
 - Fixed unused Hound's Tooth land prop variant not being the same size as the landing variant.
 - Fixed Slave I landing variant not having a proper size compared to other ships.
 - Fixed all reinforcement points having no icon.
-- Fixed the Rebel campaign's under construction AT-AT's having the Decoration tag, which means that it ignored its obsticle properties.
+- Fixed the Rebel campaign's under construction AT-AT's having the Decoration tag, which means that it ignored its obstacle properties.
 
 
 * SPACE
@@ -155,9 +155,9 @@ Last Updated:
 
 * UNITS *
 ------------
-- Fixed various issues with Darth Vader using either "Darth_Vader" (EaW) or "Darth_Vader_Expansion" (FoC) simaltaneously in different scenarios.  They've now been segregated: Skirmish Space only uses "Darth_Vader," while all other instances are the FoC "Darth_Vader_Expansion."
+- Fixed various issues with Darth Vader using either "Darth_Vader" (EaW) or "Darth_Vader_Expansion" (FoC) simultaneously in different scenarios.  They've now been segregated: Skirmish Space only uses "Darth_Vader," while all other instances are the FoC "Darth_Vader_Expansion."
 - Fixed many Empire and Rebel units not being able to remove corruption, despite being coded to do so, because GameConstants didn't include them as a part of the main behavior (Ackbar, Solo, Katarn, Jade, Veers).
-- Fixed various issues (audio, functional, tooltip indicators, etc.) for Underworld-pirated units (e.g. constructing VO being factionally incorrect, A-wings not talking about attacking hangers, tooltips claiming the pirated ships are good against the Underworld's own faction, etc.).
+- Fixed various issues (audio, functional, tooltip indicators, etc.) for Underworld-pirated units (e.g. constructing VO being faction incorrect, A-wings not talking about attacking hangers, tooltips claiming the pirated ships are good against the Underworld's own faction, etc.).
 - Fixed various units having incorrect unit-matching (good against/vulnerable to) indicators (e.g. TIE defenders, Skipray BlastBoats, Underworld Piracy units, etc.).  This varied as units not having the same matching as their team does, or other examples of matching being out-of-date from EaW or outright incorrect.
 - Fixed lots of tooltips not including whether or not land-only units can capture build pads.
 - Fixed naming schemes on almost all hero units not being consistent.  They now usually follow the style "[The] (SHIP_NAME) - (UNIT NAME)," i.e. "The Millennium Falcon - Han Solo & Chewbacca."
@@ -210,12 +210,12 @@ Last Updated:
 - Fixed the Acclamator's back-right turbolaser having a regular/anti-fighter laser type.  Was calling "Damage_Acclamator" and not
 - Fixed the Arc Hammer's lasers not having a damage type.  Gave them "Damage_Acclamator."
 - Fixed the Arc Hammer's turbolasers not having a damage type.  Gave them "Damage_Star_Destroyer."
-- Fixed the B-wing's lasers being green, while the muzzleflash was red.
+- Fixed the B-wing's lasers being green, while the muzzle flash was red.
 - Fixed the B-wing's duplicate ion cannon hardpoint instead of using its actual 2 ion cannons.
 - Fixed the B-wing's escort syntax being "Nos" instead of "No."
 - Fixed Corellian Gunship not having proper missile control tags.
 - Fixed the Crusader Gunship not having a damage type.  The broken unit is nerfed into the ground! :Crab: :Crab:
-- Fixed the DS2's minimap icon not being representitive of its actual size.
+- Fixed the DS2's minimap icon not being representative of its actual size.
 - Fixed the Eclipse SSD's minimap icon being too small.
 - Fixed Grand Admiral Thrawn's unit callout not working.  Was searching for "Grand Admiral Thrawn" and not "Admonitor_Star_Destroyer."
 - Fixed Hound's Tooth (Space Bossk) not having a Damage_Type.  Assigned "Damage_Fighter."
@@ -239,7 +239,7 @@ Last Updated:
 - Fixed The Merciless (Space Tyber Zann) not having VO to attack Hangers and Gravity Control Generators.
 - Fixed The Merciless (Space Tyber Zann) using the Star Destroyer Turbolaser Damage_Type for its plasma blast.
 - Fixed TIE defenders having lots of broken tags, including ion shot hardpoints acting as torpedoes, having bad unit-matching indicators, not having fly-by sounds nor attack sounds for Gravity Well hardpoints, and wasn't set as a bomber-class unit.
-- Fixed Underworld TIE defender not being classified as a bomber, being less expensive than intended and building *faster* than the normal unit.  Petro wtf
+- Fixed Underworld TIE defender not being classified as a bomber, being less expensive than intended, and building *faster* than the normal unit.  Petro wtf
 - Fixed V-wings having incorrect build sounds for each faction (including Pirates...?).
 - Fixed Y-wing escort syntax being "nos" instead of "No."
 - Fixed Y-wing container info being dependant on Darth Vader's squad.
