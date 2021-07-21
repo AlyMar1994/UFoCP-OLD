@@ -1006,6 +1006,7 @@ TEXT_CORRUPTION_OBJ_INT_HONOGHR_00,Destroy 3 Noghri Camps.
 TEXT_CORRUPTION_OBJ_INT_HONOGHR_01,1 of 3 Noghri Camps destroyed.
 TEXT_CORRUPTION_OBJ_INT_HONOGHR_02,2 of 3 Noghri Camps destroyed.
 TEXT_CORRUPTION_OBJ_INT_HONOGHR_03,3 of 3 Noghri Camps destroyed.
+TEXT_CORRUPTION_OBJ_INT_HONOGHR_STORY_00,Destroy Imperial Fleet Commander Malinth.
 TEXT_CORRUPTION_OBJ_INT_NABOO_00,Intimidate Chairman Arnama.
 TEXT_CORRUPTION_OBJ_INT_TARIS_00,Intimidate 'Twitch.'
 TEXT_CORRUPTION_OBJ_KID_BYSS_00,Kidnap Governor Kirith.
@@ -1962,7 +1963,6 @@ TEXT_HIGH,High
 TEXT_HINT_REBEL_ACT02_MISSION_FIVE_01,HINT: The Rebels acquire tech by stealing technology from the Imperials' network. Use the droids to do this whenever they are available.
 TEXT_HISTORICAL_REFERENCE,Historical Reference:
 TEXT_HISTORY_DESCRIPTION,HINT: Select the 'Economy,' 'Military' or 'Planets' buttons to view different charts.
-TEXT_CORRUPTION_OBJ_INT_HONOGHR_STORY_00,Destroy Imperial Fleet Commander Malinth.
 TEXT_HOST_IP,Host Address :
 TEXT_HOST_LEFT_GAME,The game host left the game
 TEXT_HOST_PREFIX,Host
