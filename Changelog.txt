@@ -37,7 +37,6 @@ UFoCP
 
 
 - Honoghr – Fixed campaign Intimidation corruption mission having missing objective text.
-- Honoghr – Fixed campaign Intimidation corruption mission not marking objective Urai surviving as complete when finished.
 
 
 -Corellian Corvette – Fixed Underworld Corellian Corvette pointing to a non-existant unit for it's "vulnerable to" indicator.  Was pointing to "Alliance_Assault_Ship" and not "_Assault_Frigate."
@@ -60,6 +59,8 @@ General
 
 -Fixed Steam Workshop page using incorrect mod tags.
 
+-Honoghr – Fixed campaign Intimidation corruption mission not marking objective Urai surviving as complete when finished.
+
 
 ==================
 A.I.
@@ -70,6 +71,8 @@ A.I.
 ==================
 Maps/Planets (Land)
 ==================
+-All affected land maps in mod (with their passability modified) has had their AI data regenerated to ensure the AI is aware of new tactical zones and other land connections.
+
 -Nal Hutta – Modified terrain passability in northernmost building area.  Underworld droidekas could get stuck on the steep slope to the right of a factory if placed there.
 -Nal Hutta – Improved passability on the entire map.  Hopefully this improves pathfinding/helps movement make more sense.
 -Nal Hutta – Modified top-right swamp's left-most building position so the buildpad isn't colliding with a possible building.
