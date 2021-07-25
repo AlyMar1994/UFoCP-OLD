@@ -40,11 +40,11 @@ UFoCP
 -Honoghr – Fixed campaign Intimidation corruption mission having missing objective text.
 
 
--Corellian Corvette – Fixed Underworld Corellian Corvette pointing to a non-existent unit for its "vulnerable to" indicator.  Was pointing to "Alliance_Assault_Ship" and not "_Assault_Frigate."
+-Corellian Corvette – Fixed Underworld Corellian Corvette pointing to a non-existent unit for its "vulnerable to" indicator.  Was pointing to "Alliance_Assault_Ship" and not "Alliance_Assault_Frigate."
 
 -Defiler – Fixed thrown bomb having a broken Class ID.
 
--Marauder Cruiser – Fixed Underworld Marauder Cruiser pointing to a non-existent unit for its "vulnerable to" indicator.  Was pointing to "Alliance_Assault_Ship" and not "_Assault_Frigate."
+-Marauder Cruiser – Fixed Underworld Marauder Cruiser pointing to a non-existent unit for its "vulnerable to" indicator.  Was pointing to "Alliance_Assault_Ship" and not "Alliance_Assault_Frigate."
 
 -Grenadier – Fixed proximity mines having a broken Class ID.
 
@@ -97,9 +97,9 @@ Maps/Planets (Space)
 
 -Fondor – Fixed space map preview being severely inaccurate/out-of-date.
 
--Mandalore – Fixed space map preview being decently out-of-date.
+-Mandalore – Fixed space map preview being out-of-date.
 
--Nal Hutta – Fixed the DS2 targeting Nar Shaddaa (the moon).  Nar Shaddaa used Coruscant's planet scaled-down, which was targetable and killable like normal Coruscant.  Changed out with a custom NarShaddaa_Backdrop duplicate without killable properties.
+-Nal Hutta – Fixed the DS2 targeting Nar Shaddaa (the moon).  Nar Shaddaa used Coruscant's planet model scaled-down, which was targetable and killable like normal Coruscant.  Changed out with a custom NarShaddaa_Backdrop duplicate without killable properties.
 -Nal Hutta – Fixed perimeter defense turret satellites only appearing if the Black Sun Pirates owned the planet.
 
 -Sullust – Fixed in-battle planet being a desert instead of volcanic.  The file the volcanic planet backdrop is located had its model misspelled to "W_Planet_Volcanic.alo" and not "W_Planet_Volcanic00.alo," and a desert planet was used in its place.
