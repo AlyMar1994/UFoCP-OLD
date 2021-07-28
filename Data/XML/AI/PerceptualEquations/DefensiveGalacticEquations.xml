@@ -89,8 +89,8 @@
 			+
 			5.0 * Function_Is_Connected_To_Enemy.Evaluate
 			+
-			5.0 * (Variable_Target.FriendlyForce.HasGroundUnitsBitfield {Parameter_Type = "MON_MOTHMA", Parameter_Type = "Emperor_Palpatine"} > 0)
-			+ 
+			5.0 * (Variable_Target.FriendlyForce.HasGroundUnitsBitfield {Parameter_Type = "Mon_Mothma", Parameter_Type = "Emperor_Palpatine"} > 0)
+			+
 			Function_Defense_Level.Evaluate
 		)
     </GroundDefensiveValue>
