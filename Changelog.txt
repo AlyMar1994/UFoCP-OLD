@@ -124,6 +124,8 @@ Units (Space)
 -IG-2000 - IG-88 – Fixed the Object Contestation Glitch.
 -IG-2000 - IG-88 – Adjusted description to be more akin to the other heroes.
 
+-Luke Skywalker – Removed all instances of Luke calling "Red 5 here!" in space because Red Squadron doesn't exist anymore.  Fun fact: Petroglyph duplicated this line six times in the files.
+
 -The Hound's Tooth - Bossk – Fixed the Object Contestation Glitch.
 -The Hound's Tooth - Bossk – Adjusted description to be more akin to the other heroes.
 
