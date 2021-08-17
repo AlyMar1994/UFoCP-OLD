@@ -13,7 +13,6 @@ Last Updated:
 ------------
 - Text has been overhauled in v1.5.
 - Text has been overhauled in v1.9.
-- Text has been overhauled in v1.16.
 
 - Fixed bad delimiters in GameConstants for Armor_Types and Damage_Types, including Super Star Destroyer armor, IG-88's Infection weapon, bunker armor, etc.
 - 90% of all files in the mod are reorganized internally and are condensed and/or cleaned.

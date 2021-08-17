@@ -99,7 +99,7 @@ Support
 Former Contributors/Removed Content
 ================
 -Diamondback
-    – Music (Credits_Ep3.mp3) -- [ REMOVED IN UPDATE v1.16 ]
+    – Music (Credits_Ep3.mp3) -- [ REMOVED IN UPDATE v1.16.682 ]
 
 
 =========================================================================================

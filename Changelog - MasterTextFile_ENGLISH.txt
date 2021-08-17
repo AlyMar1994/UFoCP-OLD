@@ -8,7 +8,7 @@ Last of note, I am a human being and I make mistakes.  Please point out text err
 
 
 ===================================================================================================
-v1.16
+v1.16.682
 ===================================================================================================
 
 -Created string "TEXT_TOOLTIP_HOUNDSTOOTH_00" to make space Bossk's description more consistent.
