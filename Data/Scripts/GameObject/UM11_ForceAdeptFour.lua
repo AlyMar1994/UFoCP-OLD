@@ -4,7 +4,7 @@
 -- ORIGINAL AUTHOR (Petroglyph): James Yarrow
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 12/22/2020, 6:46 PM
+-- LAST REVISION DATE: 06/20/2021, 7:14 PM
 -- ======================================================================
 require("PGStateMachine")
 
@@ -18,13 +18,7 @@ end
 
 function State_Init(message)
 	if message == OnEnter then
-		warp1 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w1")
-		warp2 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w2")
-		warp3 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w3")
-		warp4 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w4")
-		warp5 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w5")
-		warp6 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w6")
-		underworld_player = Find_Player("Underworld") -- AM1994 (3/13/2020): Adding variable to prevent calling NIL later on.
+		underworld_player = Find_Player("Underworld") -- AM1994 (03/13/2020): Adding variable to prevent calling NIL later on.
 		closerange = false
 
 		Register_Prox(Object, Unit_Prox, 100, underworld_player)
@@ -45,8 +39,14 @@ function Unit_Prox(self_obj, trigger_obj)
 end
 
 function AdeptFour_AI()
+	local warp1 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w1")
+	local warp2 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w2")
+	local warp3 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w3")
+	local warp4 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w4")
+	local warp5 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w5")
+	local warp6 = Find_Hint("STORY_TRIGGER_ZONE", "a4-w6")
+
 	local warptimer = 0
-	local target = Find_Nearest(Object, underworld_player)
 	local noteleports
 	local cage
 	local dist
@@ -101,6 +101,7 @@ function AdeptFour_AI()
 			end
 		end
 
+		local target = Find_Nearest(Object, underworld_player)
 		if TestValid(target) then
 			Object.Attack_Move(target)
 		end

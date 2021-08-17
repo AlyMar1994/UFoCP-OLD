@@ -62,13 +62,6 @@ Developers
 
 
 ================
-Audio
-================
--Diamondback
-    – Music (Credits_Ep3.mp3).
-
-
-================
 Models
 ================
 -Lany
@@ -85,9 +78,14 @@ Texturing
 ================
 Support
 ================
+-Jorritkarwehr
+	- Petroglyph .DAT Text Disassembler (https://github.com/Vardamir117/datassembler)
+		-Regret ("Regret#0143")
+		- Custom version with a GUI.
+
 -KadVenku
     – Lots of help on GitHub for issues with FoC.
-	- Assistance with creating .MEGs.
+	- Assistance with creating .MEGs with a custom .MEG Cooker (https://github.com/gruenwaldlk/eaw-build)
 	- Other technical help.
 
 -STAR WARS: Empire at War Community (specif. Galyana, Lany, Nikomer, Cuarson & DarthCyfe6)
@@ -95,6 +93,14 @@ Support
 
 -STAR WARS: Empire at War Hub (specif. evilbobthebob, Coryak/Exocor, & Imperial)
     - Technical help.
+
+
+================
+Former Contributors/Removed Content
+================
+-Diamondback
+    – Music (Credits_Ep3.mp3) -- [ REMOVED IN UPDATE v1.16 ]
+
 
 =========================================================================================
 

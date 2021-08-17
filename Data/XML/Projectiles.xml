@@ -3641,7 +3641,7 @@
 		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
         <Text_ID>TEXT_REMOTE_BOMB</Text_ID>
         <Encyclopedia_Text>TEXT_REMOTE_BOMB_DESC</Encyclopedia_Text>
-        <Encyclopedia_Unit_Class>TEXT_BOMB_CLASS</Encyclopedia_Unit_Class>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOMB</Encyclopedia_Unit_Class>
         <IsDeathCloneObstacle>Yes</IsDeathCloneObstacle>
         <Avoidance_Disabled>Yes</Avoidance_Disabled>
 		<CategoryMask> Infantry </CategoryMask>

@@ -20,9 +20,9 @@
 	<File>Maps\SpaceProps.xml</File>
 	<File>Units\SpaceUnitsCapital.xml</File>
 	<File>Units\SpaceUnitsFighters.xml</File>
-	<File>SpaceUnitsCorvettes.xml</File>
+	<File>Units\SpaceUnitsCorvettes.xml</File>
 	<File>SpaceUnitsFrigates.xml</File>
-	<File>SpaceUnitsSupers.xml</File>
+	<File>Units\IMP\Units_Space_Empire_DeathStar.xml</File>
 	<File>SpacePrimarySkydomes.xml</File>
 	<File>SpaceSecondarySkydomes.xml</File>
 	<File>Structures\SpaceBuildablesSkirmish.xml</File>
@@ -88,7 +88,7 @@
 	<File>Units\IMP\Units_Space_Empire_TIE_Defender.xml</File>
 	<File>Units_Space_Empire_TIE_Interceptor.xml</File>
 	<File>Units_Space_Empire_TIE_Phantom.xml</File>
-	<File>Units\IMP\Units_UFoCP_Hero_Empire_Vader.xml</File> <!-- AM1994 (2/26/2020): Placing this here to fix buying issues. -->
+	<File>Units\IMP\Units_Hero_Empire_Vader.xml</File> <!-- AM1994 (2/26/2020): Placing this here to fix buying issues. -->
 	
 	<File>Units\IMP\Units_Land_Empire_DarkTroopers.xml</File>
 	<File>Units\IMP\Units_Land_Empire_Lancet.xml</File>
@@ -139,13 +139,13 @@
 	<File>Units_Space_Underworld_Buzz_Droids.xml</File>
 
 	<File>Structures\SpecialStructures_Underworld.xml</File>
-	<File>StarBases_Underworld.xml</File>
+	<File>Structures\StarBases_Underworld.xml</File>
 
 
 
 	<!-- Expansion Units: Neutral -->
 	<File>Units\Units_Space_Neutral_Eclipse.xml</File>
-	<File>Hutt_Faction_Units.xml</File>
+	<File>Units\HUT\Hutt_Faction_Units.xml</File>
 	<File>Structures\HUT\GroundBuildablesHutts.xml</File>
 
 
@@ -153,19 +153,19 @@
 	<!-- Expansion General Files -->
 	<File>Maps\SpaceProps_Underworld.xml</File>
 	<File>Underworld_TransportUnits.xml</File>
-	<File>Units\UND\Units_UFoCP_Land_Underworld_Defiler.xml</File>
+	<File>Units\UND\Units_Land_Underworld_Defiler.xml</File>
 	<File>Props_Felucia.xml</File>
 	<File>GroundBuildablesUnderworld.xml</File>
 	<File>GroundStructures_Underworld.xml</File>
-	<File>Units\Units_UFoCP_Land_All_MDUs.xml</File>
+	<File>Units\Units_Land_MDUs.xml</File>
 	<File>Multiplayer_Structure_Markers.XML</File>
 	<File>UpgradeObjects_Underworld.XML</File>
-	<File>Units\UND\Units_UFoCP_Both_Underworld_CorruptionRewards.xml</File> <!-- All unit rewards from corruption. -->
+	<File>Units\UND\Units_Underworld_CorruptionRewards.xml</File> <!-- All unit rewards from corruption. -->
 
 
 
-	<!-- UFoCP Object Files -->
-	<File>Units\REB\Units_UFoCP_Hero_Rebel_Droids.xml</File>
-	<File>Units\REB\Units_UFoCP_Hero_Rebel_VehicleThieves.xml</File>
-	<File>Units\IMP\Units_UFoCP_Hero_Empire_Fett.xml</File>
+	<!-- NEW Object Files -->
+	<File>Units\REB\Units_Hero_Rebel_Droids.xml</File>
+	<File>Units\REB\Units_Hero_Rebel_VehicleThieves.xml</File>
+	<File>Units\IMP\Units_Hero_Empire_Fett.xml</File>
 </Game_Object_Files>

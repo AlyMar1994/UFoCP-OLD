@@ -1,0 +1,984 @@
+<?xml version="1.0"?>
+<Corruption_Rewards_Files>
+	<!-- ===== SLAVERY ===== -->
+	<!-- Bothans -->
+	<Slave_Unit Name="Bothan_Slave">
+		<Variant_Of_Existing_Type>Bothan_Civilian</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
+
+		<LandBehavior>SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, IDLE, WEAPON, REVEAL, HIDE_WHEN_FOGGED</LandBehavior>
+
+		<Affiliation>Underworld</Affiliation>
+
+		<Victory_Relevant>Yes</Victory_Relevant>
+	</Slave_Unit>
+
+	<SlaveCompany Name="Bothan_Slave_Company">
+		<Text_ID>TEXT_INDIG_BOTHAN_CIV</Text_ID>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Button_Bothan_Civilian.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>60</Damage>
+		<Autoresolve_Health>60</Autoresolve_Health>
+		<Affiliation>Underworld</Affiliation>
+
+		<Build_Cost_Credits>200</Build_Cost_Credits>
+		<Build_Time_Seconds>6</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories>Yes</Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>U_Ground_Barracks</Required_Special_Structures>
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Ship_Class>Infantry</Ship_Class>
+		<Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
+		<Company_Units>Bothan_Slave, Bothan_Slave, Bothan_Slave, Bothan_Slave, Bothan_Slave, Bothan_Slave, Bothan_Slave, Bothan_Slave, Bothan_Slave</Company_Units>
+		<Max_Squad_Size>3</Max_Squad_Size>
+		<Create_Team_Type>Bothan_Slave_Team</Create_Team_Type>
+		<Score_Cost_Credits>20</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+	</SlaveCompany>
+
+	<Container Name="Bothan_Slave_Team">
+		<Text_ID>TEXT_INDIG_BOTHAN_CIV</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>I_Button_Bothan_Civilian.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM, SELECTABLE, UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.00</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Max_Speed>1</Max_Speed>
+		<Max_Rate_Of_Turn>12.00</Max_Rate_Of_Turn>
+		<Space_Layer>Land</Space_Layer>
+		<UnitCollisionClass>Infantry</UnitCollisionClass>
+		<FormationSpacing>.50</FormationSpacing>
+		<MovementClass>Infantry</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable>True</Is_Squashable>
+		<MovementPredictionInterval>4.00</MovementPredictionInterval>	
+		<ContainerArrangement>Dartboard</ContainerArrangement>
+		<Override_Acceleration>.10</Override_Acceleration>
+		<Override_Deceleration>.10</Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.00</Idle_Chase_Range>
+		<Guard_Chase_Range>200.00</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.00</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.00</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.00</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category>Infantry</Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+	</Container>
+
+
+	<!-- Geonosian -->
+	<Slave_Unit Name="Geonosian_Slave">
+		<Variant_Of_Existing_Type>Geonosian</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+
+		<LandBehavior>SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, IDLE, WEAPON, REVEAL, HIDE_WHEN_FOGGED</LandBehavior>
+
+		<Affiliation>Underworld</Affiliation>
+
+		<Victory_Relevant>Yes</Victory_Relevant>
+	</Slave_Unit>
+
+	<SlaveCompany Name="Geonosian_Slave_Company">
+		<Text_ID>TEXT_INDIG_GEONOSIAN</Text_ID>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Button_Geonosian.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>60</Damage>
+		<Autoresolve_Health>60</Autoresolve_Health>
+		<Affiliation>Underworld</Affiliation>
+		
+		<Build_Cost_Credits>260</Build_Cost_Credits>
+		<Build_Time_Seconds>10</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories>Yes</Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>U_Ground_Barracks</Required_Special_Structures>
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Ship_Class>Infantry</Ship_Class>
+		<Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
+		<Company_Units>Geonosian_Slave, Geonosian_Slave, Geonosian_Slave, Geonosian_Slave, Geonosian_Slave, Geonosian_Slave, Geonosian_Slave, Geonosian_Slave, Geonosian_Slave</Company_Units>
+		<Max_Squad_Size>3</Max_Squad_Size>
+		<Create_Team_Type>Geonosian_Slave_Container</Create_Team_Type>
+		<Score_Cost_Credits>40</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+	</SlaveCompany>
+
+	<Container Name="Geonosian_Slave_Container">
+		<Text_ID>TEXT_INDIG_GEONOSIAN</Text_ID>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Button_Geonosian.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM, SELECTABLE, UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.00</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Max_Speed>2</Max_Speed>
+		<Max_Rate_Of_Turn>12.00</Max_Rate_Of_Turn>
+		<Space_Layer>Land</Space_Layer>
+		<UnitCollisionClass>Infantry</UnitCollisionClass>
+		<FormationSpacing>1.50</FormationSpacing>
+		<MovementClass>Infantry</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable>True</Is_Squashable>
+		<MovementPredictionInterval>4.00</MovementPredictionInterval>	
+		<ContainerArrangement>Dartboard</ContainerArrangement>
+		<Override_Acceleration>.10</Override_Acceleration>
+		<Override_Deceleration>.10</Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.00</Idle_Chase_Range>
+		<Guard_Chase_Range>200.00</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.00</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.00</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.00</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category>Infantry</Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+	</Container>
+
+
+	<!-- Gungan -->
+	<Slave_Unit Name="Gungan_Slave">
+		<Variant_Of_Existing_Type>Gungan_Warrior</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
+
+		<LandBehavior>SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, IDLE, WEAPON, REVEAL, HIDE_WHEN_FOGGED</LandBehavior>
+
+		<Affiliation>Underworld</Affiliation>
+
+		<Victory_Relevant>Yes</Victory_Relevant>
+	</Slave_Unit>
+
+	<SlaveCompany Name="Gungan_Slave_Company">
+		<Text_ID>TEXT_INDIGENOUS_GUNGAN_SQUAD</Text_ID>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Button_Gungan.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>60</Damage>
+		<Autoresolve_Health>60</Autoresolve_Health>
+		<Affiliation>Underworld</Affiliation>
+		
+		<Build_Cost_Credits>150</Build_Cost_Credits>
+		<Build_Time_Seconds>8</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories>Yes</Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>U_Ground_Barracks</Required_Special_Structures>
+		
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Ship_Class>Infantry</Ship_Class>
+		<Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
+		<Company_Units>Gungan_Slave, Gungan_Slave, Gungan_Slave, Gungan_Slave, Gungan_Slave, Gungan_Slave, Gungan_Slave, Gungan_Slave, Gungan_Slave</Company_Units>
+		<Max_Squad_Size>3</Max_Squad_Size>
+		<Create_Team_Type>Gungan_Slave_Container</Create_Team_Type>
+		<Score_Cost_Credits>2</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+	</SlaveCompany>
+
+	<Container Name="Gungan_Slave_Container">
+		<Text_ID>TEXT_INDIGENOUS_GUNGAN_SQUAD</Text_ID>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Button_Gungan.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM, SELECTABLE, UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.00</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Max_Speed>1</Max_Speed>
+		<Max_Rate_Of_Turn>12.00</Max_Rate_Of_Turn>
+		<Space_Layer>Land</Space_Layer>
+		<UnitCollisionClass>Infantry</UnitCollisionClass>
+		<FormationSpacing>.50</FormationSpacing>
+		<MovementClass>Infantry</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable>True</Is_Squashable>
+		<MovementPredictionInterval>4.00</MovementPredictionInterval>	
+		<ContainerArrangement>Dartboard</ContainerArrangement>
+		<Override_Acceleration>.10</Override_Acceleration>
+		<Override_Deceleration>.10</Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.00</Idle_Chase_Range>
+		<Guard_Chase_Range>200.00</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.00</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.00</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.00</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category>Infantry</Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+	</Container>
+
+
+	<!-- Mon Calamari -->
+	<Slave_Unit Name="Mon_Calamari_Slave">
+		<Variant_Of_Existing_Type>Mon_Calamari_Civilian</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
+
+		<LandBehavior>SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, IDLE, WEAPON, REVEAL, HIDE_WHEN_FOGGED</LandBehavior>
+
+		<Affiliation>Underworld</Affiliation>
+
+		<Victory_Relevant>Yes</Victory_Relevant>
+	</Slave_Unit>
+
+	<SlaveCompany Name="Mon_Calamari_Slave_Company">
+		<Text_ID>TEXT_INDIG_MONCAL_CIV</Text_ID>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Button_MonCalCiv.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>60</Damage>
+		<Autoresolve_Health>60</Autoresolve_Health>
+		<Affiliation>Underworld</Affiliation>
+		
+		<Build_Cost_Credits>150</Build_Cost_Credits>
+		<Build_Time_Seconds>10</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories>Yes</Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>U_Ground_Barracks</Required_Special_Structures>
+		
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Ship_Class>Infantry</Ship_Class>
+		<Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
+		<Company_Units>Mon_Calamari_Slave, Mon_Calamari_Slave, Mon_Calamari_Slave, Mon_Calamari_Slave, Mon_Calamari_Slave, Mon_Calamari_Slave, Mon_Calamari_Slave, Mon_Calamari_Slave, Mon_Calamari_Slave</Company_Units>
+		<Max_Squad_Size>3</Max_Squad_Size>
+		<Create_Team_Type>MonCal_Slave_Team</Create_Team_Type>
+		<Score_Cost_Credits>25</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+	</SlaveCompany>
+
+	<Container Name="MonCal_Slave_Team">
+		<Text_ID>TEXT_INDIG_MONCAL_CIV</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>I_Button_MonCalCiv.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM, SELECTABLE, UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.00</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Max_Speed>1</Max_Speed>
+		<Max_Rate_Of_Turn>12.00</Max_Rate_Of_Turn>
+		<Space_Layer>Land</Space_Layer>
+		<UnitCollisionClass>Infantry</UnitCollisionClass>
+		<FormationSpacing>.50</FormationSpacing>
+		<MovementClass>Infantry</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable>True</Is_Squashable>
+		<MovementPredictionInterval>4.00</MovementPredictionInterval>	
+		<ContainerArrangement>Dartboard</ContainerArrangement>
+		<Override_Acceleration>.10</Override_Acceleration>
+		<Override_Deceleration>.10</Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.00</Idle_Chase_Range>
+		<Guard_Chase_Range>200.00</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.00</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.00</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.00</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category>Infantry</Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+		<Tactical_Bribe_Cost>35</Tactical_Bribe_Cost>	
+	</Container>
+
+
+	<!-- Pyn'gani -->
+	<Slave_Unit Name="Pyngani_Slave">
+		<Variant_Of_Existing_Type>Pyngani_Warrior</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
+
+		<LandBehavior>SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, REVEAL, HIDE_WHEN_FOGGED, INDIGENOUS_UNIT, HARASS</LandBehavior>
+
+		<Affiliation>Underworld</Affiliation>
+
+		<Victory_Relevant>Yes</Victory_Relevant>
+
+		<Create_Team>Yes</Create_Team>
+	</Slave_Unit>
+
+	<SlaveCompany Name="Pyngani_Slave_Company">
+		<Text_ID>TEXT_INDIG_PYNGANI</Text_ID>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Button_GMale_Snow.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>60</Damage>
+		<Autoresolve_Health>60</Autoresolve_Health>
+		<Affiliation>Underworld</Affiliation>
+		
+		<Build_Cost_Credits>175</Build_Cost_Credits>
+		<Build_Time_Seconds>13</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories>Yes</Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>U_Ground_Barracks</Required_Special_Structures>
+		
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Ship_Class>Infantry</Ship_Class>
+		<Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
+		<Company_Units>Pyngani_Slave, Pyngani_Slave, Pyngani_Slave, Pyngani_Slave, Pyngani_Slave, Pyngani_Slave, Pyngani_Slave, Pyngani_Slave, Pyngani_Slave</Company_Units>
+		<Max_Squad_Size>3</Max_Squad_Size>
+		<Create_Team_Type>Pyngani_Slave_Container</Create_Team_Type>
+		<Score_Cost_Credits>30</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+	</SlaveCompany>
+
+	<Container Name="Pyngani_Slave_Container">
+		<Text_ID>TEXT_INDIG_PYNGANI</Text_ID>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Button_GMale_Snow.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM, SELECTABLE, UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.00</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Max_Speed>1</Max_Speed>
+		<Max_Rate_Of_Turn>12.00</Max_Rate_Of_Turn>
+		<Space_Layer>Land</Space_Layer>
+		<UnitCollisionClass>Infantry</UnitCollisionClass>
+		<FormationSpacing>.50</FormationSpacing>
+		<MovementClass>Infantry</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable>True</Is_Squashable>
+		<MovementPredictionInterval>4.00</MovementPredictionInterval>	
+		<ContainerArrangement>Dartboard</ContainerArrangement>
+		<Override_Acceleration>.10</Override_Acceleration>
+		<Override_Deceleration>.10</Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.00</Idle_Chase_Range>
+		<Guard_Chase_Range>200.00</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.00</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.00</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.00</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category>Infantry</Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+	</Container>
+
+
+	<!-- Sullustan -->
+	<Slave_Unit Name="Sullustan_Slave">
+		<Variant_Of_Existing_Type>Sullustan_Civilian</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
+
+		<LandBehavior>SURFACE_FX, LAND_TEAM_Infantry_LOCOMOTOR, IDLE, WEAPON, REVEAL, HIDE_WHEN_FOGGED</LandBehavior>
+
+		<Affiliation>Underworld</Affiliation>
+
+		<Victory_Relevant>Yes</Victory_Relevant>
+	</Slave_Unit>
+
+	<SlaveCompany Name="Sullustan_Slave_Company">
+		<Text_ID>TEXT_INDIG_SULLUSTAN</Text_ID>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Button_Sullustan.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>60</Damage>
+		<Autoresolve_Health>60</Autoresolve_Health>
+		<Affiliation>Underworld</Affiliation>
+
+		<Build_Cost_Credits>200</Build_Cost_Credits>
+		<Build_Time_Seconds>10</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories>Yes</Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>U_Ground_Barracks</Required_Special_Structures>
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Ship_Class>Infantry</Ship_Class>
+		<Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
+		<Company_Units>Sullustan_Slave, Sullustan_Slave, Sullustan_Slave, Sullustan_Slave, Sullustan_Slave, Sullustan_Slave, Sullustan_Slave, Sullustan_Slave, Sullustan_Slave</Company_Units>
+		<Max_Squad_Size>3</Max_Squad_Size>
+		<Create_Team_Type>Sullustan_Slave_Container</Create_Team_Type>
+		<Score_Cost_Credits>25</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+	</SlaveCompany>
+
+	<Container Name="Sullustan_Slave_Container">
+		<Text_ID>TEXT_INDIG_SULLUSTAN</Text_ID>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Button_sullustan.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM, SELECTABLE, UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.0</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Max_Speed>1</Max_Speed>
+		<Max_Rate_Of_Turn>12.00</Max_Rate_Of_Turn>
+		<Space_Layer>Land</Space_Layer>
+		<UnitCollisionClass>Infantry</UnitCollisionClass>
+		<FormationSpacing>.50</FormationSpacing>
+		<MovementClass>Infantry</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable>True</Is_Squashable>
+		<MovementPredictionInterval>4.00</MovementPredictionInterval>	
+		<ContainerArrangement>Dartboard</ContainerArrangement>
+		<Override_Acceleration>.10</Override_Acceleration>
+		<Override_Deceleration>.10</Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.00</Idle_Chase_Range>
+		<Guard_Chase_Range>200.00</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.00</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.00</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.00</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category>Infantry</Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+	</Container>
+
+
+	<!-- Twi'lek -->
+	<Slave_Unit Name="Twilek_Slave">
+		<Variant_Of_Existing_Type>Twilek_Female</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
+
+		<LandBehavior>SURFACE_FX, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, REVEAL, HIDE_WHEN_FOGGED</LandBehavior>
+
+		<Victory_Relevant>Yes</Victory_Relevant>
+
+		<Create_Team>Yes</Create_Team>
+	</Slave_Unit>
+
+	<SlaveCompany Name="Twilek_Slave_Company">
+		<Text_ID>TEXT_INDIG_TWILEK_CIV</Text_ID>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Button_Twilek.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>60</Damage>
+		<Autoresolve_Health>60</Autoresolve_Health>
+		<Affiliation>Underworld</Affiliation>
+
+		<Build_Cost_Credits>225</Build_Cost_Credits>
+		<Build_Time_Seconds>12</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories>Yes</Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>U_Ground_Barracks</Required_Special_Structures>
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Ship_Class>Infantry</Ship_Class>
+		<Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
+		<Company_Units>Twilek_Slave, Twilek_Slave, Twilek_Slave, Twilek_Slave, Twilek_Slave, Twilek_Slave, Twilek_Slave, Twilek_Slave, Twilek_Slave</Company_Units>
+		<Victory_Relevant>Yes</Victory_Relevant>
+		<Score_Cost_Credits>35</Score_Cost_Credits>
+		<Max_Squad_Size>3</Max_Squad_Size>
+		<Create_Team_Type>Twilek_Slave_Container</Create_Team_Type>
+		<Population_Value>1</Population_Value>
+	</SlaveCompany>
+
+	<Container Name="Twilek_Slave_Container">
+		<Text_ID>TEXT_INDIG_TWILEK_CIV</Text_ID>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Button_Twilek.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM, SELECTABLE, UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.00</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.00</Select_Box_Z_Adjust>
+		<Max_Speed>1</Max_Speed>
+		<Max_Rate_Of_Turn>12.00</Max_Rate_Of_Turn>
+		<Space_Layer>Land</Space_Layer>
+		<UnitCollisionClass>Infantry</UnitCollisionClass>
+		<FormationSpacing>.50</FormationSpacing>
+		<MovementClass>Infantry</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable>True</Is_Squashable>
+		<MovementPredictionInterval>4.00</MovementPredictionInterval>	
+		<ContainerArrangement>Dartboard</ContainerArrangement>
+		<Override_Acceleration>.10</Override_Acceleration>
+		<Override_Deceleration>.10</Override_Deceleration>
+	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.00</Idle_Chase_Range>
+		<Guard_Chase_Range>200.00</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.00</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.00</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.00</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category>Infantry</Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+	</Container>
+
+
+	<!-- Wookiee -->
+	<Slave_Unit Name="Wookiee_Slave">
+		<Variant_Of_Existing_Type>Wookie_Warrior</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+
+		<LandBehavior>SURFACE_FX, LAND_TEAM_Infantry_LOCOMOTOR, IDLE, WEAPON, REVEAL, HIDE_WHEN_FOGGED</LandBehavior>
+
+		<Affiliation>Underworld</Affiliation>
+
+		<Victory_Relevant>Yes</Victory_Relevant>
+
+		<Create_Team>True</Create_Team>
+	</Slave_Unit>
+	
+	<SlaveCompany Name="Wookiee_Slave_Company">
+		<Text_ID>TEXT_INDIGENOUS_WOOKIE_PARTY</Text_ID>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Button_Generic_Wookie.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>72</Damage>
+		<Autoresolve_Health>30</Autoresolve_Health>
+		<Affiliation>Underworld</Affiliation>
+
+		<Build_Cost_Credits>250</Build_Cost_Credits>
+		<Build_Time_Seconds>12</Build_Time_Seconds>
+		<Build_Time_Reduced_By_Multiple_Factories>Yes</Build_Time_Reduced_By_Multiple_Factories>
+		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures>U_Ground_Barracks</Required_Special_Structures>
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Ship_Class>Infantry</Ship_Class>
+		<Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
+		<Company_Units>Wookiee_Slave, Wookiee_Slave, Wookiee_Slave, Wookiee_Slave, Wookiee_Slave, Wookiee_Slave, Wookiee_Slave, Wookiee_Slave, Wookiee_Slave</Company_Units>
+		<Max_Squad_Size>3</Max_Squad_Size>
+		<Create_Team_Type>Wookie_Slave_Container</Create_Team_Type>
+		<Score_Cost_Credits>20</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+	</SlaveCompany>
+
+	<Container Name="Wookie_Slave_Container">
+		<Text_ID>TEXT_INDIGENOUS_WOOKIE_PARTY</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SLAVE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TOOLTIP_SLAVE TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Icon_Name>I_Button_Generic_Wookie.tga</Icon_Name>
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM, SELECTABLE, UNIT_AI</Behavior>
+		<LandBehavior>REVEAL, LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT</LandBehavior>
+		<Land_FOW_Reveal_Range>90.00</Land_FOW_Reveal_Range>
+		<MovementClass>Infantry</MovementClass>
+		<Select_Box_Scale>65</Select_Box_Scale>
+
+		<Max_Speed>1</Max_Speed>
+		<Max_Rate_Of_Turn>12.00</Max_Rate_Of_Turn>
+		<Space_Layer>Land</Space_Layer>
+		<UnitCollisionClass>Infantry</UnitCollisionClass>
+		<FormationSpacing>.50</FormationSpacing>
+		<MovementClass>Infantry</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Is_Squashable>True</Is_Squashable>
+		<MovementPredictionInterval>4.00</MovementPredictionInterval>	
+		<ContainerArrangement>Dartboard</ContainerArrangement>
+		<Override_Acceleration>.10</Override_Acceleration>
+		<Override_Deceleration>.10</Override_Deceleration>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+
+		<Idle_Chase_Range>50.00</Idle_Chase_Range>
+		<Guard_Chase_Range>200.00</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.00</Attack_Move_Response_Range>
+		<Targeting_Max_Attack_Distance>120.00</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>200.00</Autonomous_Move_Extension_Vs_Attacker>
+		<Garrison_Category>Infantry</Garrison_Category>
+		<CategoryMask>Infantry</CategoryMask>
+	</Container>
+
+
+
+	<!-- ===== PIRACY ===== -->
+	<SpaceUnit Name="Acclamator_Underworld">
+		<Variant_Of_Existing_Type>Acclamator_Assault_Ship</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Good_Against>Corellian_Corvette Marauder_Missile_Cruiser Tartan_Patrol_Cruiser</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>Calamari_Cruiser TIE_Bomber Y-wing</Encyclopedia_Vulnerable_To>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<Build_Cost_Credits>2700</Build_Cost_Credits>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+
+		<Starting_Spawned_Units_Tech_0>StarViper_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+
+		<Reserve_Spawned_Units_Tech_0>StarViper_Squadron, 1</Reserve_Spawned_Units_Tech_0>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Tartan_Underworld">
+		<Variant_Of_Existing_Type>Tartan_Patrol_Cruiser</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Good_Against>X-wing Y-wing TIE_Interceptor</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>Victory_Destroyer Alliance_Assault_Frigate Nebulon_B_Frigate</Encyclopedia_Vulnerable_To>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<Build_Cost_Credits>1500</Build_Cost_Credits>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Broadside_Underworld">
+		<Variant_Of_Existing_Type>Broadside_Class_Cruiser</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Good_Against>Rebel_Star_Base_1 X-wing TIE_Bomber</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>Victory_Destroyer Alliance_Assault_Frigate Corellian_Gunboat</Encyclopedia_Vulnerable_To>
+
+		<Affiliation>Underworld</Affiliation>
+		<Tech_Level>0</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<Build_Cost_Credits>2000</Build_Cost_Credits>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Nebulon_B_Underworld">
+		<Variant_Of_Existing_Type>Nebulon_B_Frigate</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Good_Against>Tartan_Patrol_Cruiser Corellian_Corvette</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>TIE_Bomber Star_Destroyer Victory_Destroyer</Encyclopedia_Vulnerable_To>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<Build_Cost_Credits>2400</Build_Cost_Credits>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Marauder_Underworld">
+		<Variant_Of_Existing_Type>Marauder_Missile_Cruiser</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Good_Against>Empire_Star_Base_1 TIE_Fighter X-wing</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>Alliance_Assault_Frigate Victory_Destroyer Acclamator_Assault_Ship</Encyclopedia_Vulnerable_To>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<Build_Cost_Credits>2000</Build_Cost_Credits>
+		<Build_Time_Seconds>15</Build_Time_Seconds>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Corellian_Corvette_Underworld">
+		<Variant_Of_Existing_Type>Corellian_Corvette</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Good_Against>TIE_Fighter TIE_Bomber X-wing</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>Alliance_Assault_Frigate Victory_Destroyer Acclamator_Assault_Ship</Encyclopedia_Vulnerable_To>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<Build_Cost_Credits>1500</Build_Cost_Credits>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+	</SpaceUnit>
+
+
+	<SpaceUnit Name="A-Wing_Underworld">
+		<Variant_Of_Existing_Type>A-Wing</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Good_Against>TIE_Fighter TIE_Scout TIE_Bomber</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>Tartan_Patrol_Cruiser</Encyclopedia_Vulnerable_To>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+	</SpaceUnit>
+
+	<Squadron Name="Underworld_A_Wing_Squadron">
+		<Text_ID>TEXT_A_WING_SQUADRON</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_A_WING</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against>TIE_Fighter TIE_Scout TIE_Bomber</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>Tartan_Patrol_Cruiser</Encyclopedia_Vulnerable_To>
+		<Icon_Name>I_Button_A_Wing.tga</Icon_Name>
+
+		<GUI_Row>1</GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+		<Autoresolve_Health>300</Autoresolve_Health>
+		<Damage>35</Damage>
+
+		<Affiliation>Underworld</Affiliation>
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+		<Build_Time_Seconds>25</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>0</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+		<Squadron_Units>A-Wing_Underworld, A-Wing_Underworld, A-Wing_Underworld, A-Wing_Underworld, A-Wing_Underworld</Squadron_Units>
+		<Squadron_Offsets>30.00, 0.00, 0.00</Squadron_Offsets>
+		<Squadron_Offsets>0.00, 15.00, 0.00</Squadron_Offsets>
+		<Squadron_Offsets>0.00, -15.00, 0.00</Squadron_Offsets>
+		<Squadron_Offsets>-30.00, 30.00, 0.00</Squadron_Offsets>
+		<Squadron_Offsets>-30.00, -30.00, 0.00</Squadron_Offsets>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_A_Wing</SFXEvent_Build_Complete>
+
+		<FormationOrder>1</FormationOrder>
+		<Squadron_Formation_Error_Tolerance>25.00</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>1000.00</Guard_Chase_Range>
+		<Idle_Chase_Range>200.00</Idle_Chase_Range>
+		<Attack_Move_Response_Range>300.00</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>500.00</Autonomous_Move_Extension_Vs_Attacker>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Score_Cost_Credits>600</Score_Cost_Credits>
+		<SpaceBehavior>ABILITY_COUNTDOWN</SpaceBehavior>
+		<Population_Value>1</Population_Value>
+
+		<!-- Non-hero unit abilities description: -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary Ability: -->
+			<Unit_Ability>
+				<Type>LURE</Type>
+				<!-- Details in the unit's XML! -->
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Squadron>
+
+
+	<SpaceUnit Name="TIE_Defender_Underworld">
+		<Variant_Of_Existing_Type>TIE_Defender</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Good_Against>A-Wing Nebulon_B_Frigate Calamari_Cruiser</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>Corellian_Corvette</Encyclopedia_Vulnerable_To>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>3</Required_Star_Base_Level>
+	</SpaceUnit>
+
+	<Squadron Name="Underworld_TIE_Defender_Squadron">
+		<Text_ID>TEXT_TIE_DEFENDER_SQUADRON</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_TIE_DEFENDER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against>A-Wing Nebulon_B_Frigate Calamari_Cruiser</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>Corellian_Corvette</Encyclopedia_Vulnerable_To>
+		<Icon_Name>I_Button_EV_TIE_Defender.tga</Icon_Name>
+
+		<GUI_Row>1</GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Formation_Priority>1</Formation_Priority>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>Yes</Is_Bomber>
+		<Autoresolve_Health>400</Autoresolve_Health>
+		<Damage>50</Damage>
+		
+		<Affiliation>Underworld</Affiliation>
+		<Build_Cost_Credits>650</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Tech_Level>0</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>3</Required_Star_Base_Level>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Squadron_Units>TIE_Defender_Underworld, TIE_Defender_Underworld, TIE_Defender_Underworld</Squadron_Units>
+		<Squadron_Offsets>60.00, 0.00, 0.00</Squadron_Offsets>
+		<Squadron_Offsets>0.00, 40.00, 0.00</Squadron_Offsets>
+		<Squadron_Offsets>0.00, -40.00, 0.00</Squadron_Offsets>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Defender</SFXEvent_Build_Complete>
+
+		<FormationOrder>1</FormationOrder>
+		<Squadron_Formation_Error_Tolerance>35.00</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>1000.00</Guard_Chase_Range>
+		<Idle_Chase_Range>200.00</Idle_Chase_Range>
+		<Attack_Move_Response_Range>300.00</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>500.00</Autonomous_Move_Extension_Vs_Attacker>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Score_Cost_Credits>1000</Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+		<Tactical_Bribe_Cost>200</Tactical_Bribe_Cost>
+
+		<!-- Unit abilities description: -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!-- Primary Ability: -->
+			<Unit_Ability>
+				<Type>ION_CANNON_SHOT</Type>
+				<Recharge_Seconds>25.00</Recharge_Seconds>
+				<Supports_Autofire>True</Supports_Autofire>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ion_Cannon_Tie_Defender</SFXEvent_GUI_Unit_Ability_Activated>
+				<GUI_Activated_Ability_Name>Tie_Defender_Ion_Cannon_Shot</GUI_Activated_Ability_Name> <!-- GUI Command Bar support. -->
+				<Projectile_Types_Override>Proj_Ion_Cannon_Medium_Laser_Blue</Projectile_Types_Override>
+			</Unit_Ability>
+
+			<!-- Secondary Ability: -->
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			0.50</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	-25.00</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.00</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.20</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>10</Expiration_Seconds>
+
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Tie_Defender</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Ion_Cannon_Shot_Attack_Ability Name="Tie_Defender_Ion_Cannon_Shot">
+				<Activation_Style>User_Input</Activation_Style>
+
+				<!-- We only consider the following unit types "valid targets:" -->
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+			</Ion_Cannon_Shot_Attack_Ability>
+		</Abilities>
+	</Squadron>
+</Corruption_Rewards_Files>

@@ -14431,7 +14431,7 @@
 
 	 <!-- Vader & Obiwan Hero Clash Lines -->
 
- <!--  <SpeechEvent Name="Hero_Clash_Obiwan_Vader__Vader_01">
+<!-- <SpeechEvent Name="Hero_Clash_Obiwan_Vader__Vader_01">
 		<Files> HC000_VAD0101_ENG.MP3 </Files>
 		<Text_ID> TEXT_SPEECH_VAD_HC_01 </Text_ID>
 		<Volume_Percent> 100 </Volume_Percent>
@@ -14477,7 +14477,7 @@
 		<Files> HC000_OBI0104_ENG.MP3 </Files>
 		<Text_ID> TEXT_SPEECH_OBI_HC_04 </Text_ID>
 		<Volume_Percent> 100 </Volume_Percent>
-	</SpeechEvent>         -->
+	</SpeechEvent> -->
 
 	<SpeechEvent Name="Hero_Clash_Obiwan_Vader__Vader_Win">
 		<Files> HC000_VAD0105_ENG.MP3 </Files>

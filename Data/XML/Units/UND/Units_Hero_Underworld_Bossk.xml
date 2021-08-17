@@ -200,81 +200,10 @@
 	</HeroUnit>
 
 
-
-	<!-- MAIN: TEAM -->
-	<HeroCompany Name="Bossk_Team">
-		<Text_ID>TEXT_HERO_BOSSK_TEAM</Text_ID>
-		<Encyclopedia_Text>TEXT_TOOLTIP_BOSSK TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOUNTY_HUNTER</Encyclopedia_Unit_Class>
-		<Icon_Name>I_Button_UI_Boskk.tga</Icon_Name>
-		<Is_Dummy>Yes</Is_Dummy>
-		<Damage>80</Damage>
-		<Affiliation>Underworld</Affiliation>
-		<Build_Time_Seconds>0</Build_Time_Seconds>
-		<Combat_Power_Value>0</Combat_Power_Value>
-		<Tech_Level>3</Tech_Level>
-		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
-		<Required_Star_Base_Level>0</Required_Star_Base_Level>
-		<Required_Special_Structures />
-		<Required_Planets />
-		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
-		<Company_Transport_Unit>Houndstooth</Company_Transport_Unit>
-
-		<Company_Units>Bossk</Company_Units>
-		<Is_Named_Hero>Yes</Is_Named_Hero>
-		<Is_Stealth_Company>Yes</Is_Stealth_Company>
-		<Available_In_Skirmish>Yes</Available_In_Skirmish>
-		<Can_Be_Only_One>True</Can_Be_Only_One>
-
-		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Select_Bossk</SFXEvent_Build_Complete>
-		<SFXEvent_Hero_Respawned>Unit_Select_Bossk</SFXEvent_Hero_Respawned>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Bossk</SFXEvent_Fleet_Move>
-
-		<Score_Cost_Credits>10000</Score_Cost_Credits>
-		<CategoryMask>LandHero | SpaceHero</CategoryMask>
-		<Ranking_In_Category>3</Ranking_In_Category>
-		<Population_Value>1</Population_Value>
-
-		<Unit_Abilities_Data SubObjectList="Yes" />
-
-		<Tactical_Build_Cost_Multiplayer>1250</Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Time_Seconds>8</Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites />
-		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
-		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
-		<Is_Stealth_Company>No</Is_Stealth_Company>
-	</HeroCompany>
-
-	<!-- SECONDARY: VARIANTS -->
-	<HeroCompany Name="Bossk_Team_Space_MP">
-		<Variant_Of_Existing_Type>Bossk_Team</Variant_Of_Existing_Type>
-
-		<Text_ID>TEXT_UNIT_HOUNDSTOOTH_01</Text_ID>
-		<Encyclopedia_Text>TEXT_TOOLTIP_HOUNDSTOOTH</Encyclopedia_Text>
-
-		<Encyclopedia_Good_Against>X-wing Y-Wing Z-95_Headhunter_Rebel</Encyclopedia_Good_Against>
-		<Encyclopedia_Vulnerable_To>Corellian_Corvette Corellian_Gunboat A-Wing</Encyclopedia_Vulnerable_To>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR</Encyclopedia_Unit_Class>
-		
-		<Tactical_Build_Cost_Multiplayer>1200</Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Time_Seconds>14</Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites />
-		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
-		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
-		<Is_Stealth_Company>No</Is_Stealth_Company>
-	</HeroCompany>
-
-
-
 	<!-- MAIN: SPACE UNIT -->
 	<UniqueUnit Name="Houndstooth">
-		<Text_ID>TEXT_UNIT_HOUNDSTOOTH_01</Text_ID>
-		<Is_Named_Hero>Yes</Is_Named_Hero>
-		<Encyclopedia_Text>TEXT_TOOLTIP_HOUNDSTOOTH</Encyclopedia_Text>
+		<Text_ID>TEXT_UNIT_HOUNDSTOOTH_00</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_HOUNDSTOOTH_00</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR</Encyclopedia_Unit_Class>
 		<Encyclopedia_Good_Against>X-wing Y-Wing Z-95_Headhunter_Rebel</Encyclopedia_Good_Against>
 		<Encyclopedia_Vulnerable_To>Corellian_Corvette Corellian_Gunboat A-Wing</Encyclopedia_Vulnerable_To>
@@ -285,6 +214,7 @@
 		<Scale_Factor>1.00</Scale_Factor>
 		<Select_Box_Scale>100</Select_Box_Scale>
 		<Select_Box_Z_Adjust>-1</Select_Box_Z_Adjust>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
 
 		<Ranking_In_Category>3</Ranking_In_Category>
 		<Max_Speed>6.50</Max_Speed>
@@ -407,9 +337,31 @@
 		<Space_Override_Population_Value>1</Space_Override_Population_Value>
 	</UniqueUnit>
 
+	<UniqueUnit Name="Houndstooth_MP">
+		<Variant_Of_Existing_Type>Houndstooth</Variant_Of_Existing_Type>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+		<Tech_Level>99</Tech_Level>
+
+		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_Bossk</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Select_Bossk</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Bossk</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>1200</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>14</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+	</UniqueUnit>
+
+
 	<!-- SECONDARY: VARIANTS -->
 	<UniqueUnit Name="Houndstooth_Death_Clone">
-		<Encyclopedia_Text>TEXT_UNIT_HOUNDSTOOTH_01</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_UNIT_HOUNDSTOOTH_00</Encyclopedia_Text>
 		<Space_Model_Name>UV_HoundsTooth_D.alo</Space_Model_Name>
 		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
 		<Scale_Factor>1.20</Scale_Factor>
@@ -445,4 +397,75 @@
 		<User_Bound_Max>700, 700, 1500</User_Bound_Max>
 		<LandBehavior>REVEAL, IDLE</LandBehavior>
 	</UniqueUnit>
+
+
+
+	<!-- MAIN: TEAM -->
+	<HeroCompany Name="Bossk_Team">
+		<Text_ID>TEXT_HERO_BOSSK_TEAM</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_BOSSK TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOUNTY_HUNTER</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Button_UI_Boskk.tga</Icon_Name>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>80</Damage>
+		<Affiliation>Underworld</Affiliation>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>3</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Houndstooth</Company_Transport_Unit>
+
+		<Company_Units>Bossk</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Stealth_Company>Yes</Is_Stealth_Company>
+		<Available_In_Skirmish>Yes</Available_In_Skirmish>
+		<Can_Be_Only_One>True</Can_Be_Only_One>
+
+		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_Bossk</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Select_Bossk</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Bossk</SFXEvent_Fleet_Move>
+
+		<Score_Cost_Credits>10000</Score_Cost_Credits>
+		<CategoryMask>LandHero | SpaceHero</CategoryMask>
+		<Ranking_In_Category>3</Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+
+		<Unit_Abilities_Data SubObjectList="Yes" />
+
+		<Tactical_Build_Cost_Multiplayer>1250</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>8</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+	</HeroCompany>
+
+	<!-- SECONDARY: VARIANTS -->
+	<!-- AM1994 (02/18/2020): Removing for replacement with Houndstooth_MP to fix -->
+	<!-- the Object Contestation Glitch. -->
+	<!-- <HeroCompany Name="Bossk_Team_Space_MP">
+		<Variant_Of_Existing_Type>Bossk_Team</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_HOUNDSTOOTH_00</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_HOUNDSTOOTH_00</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against>X-wing Y-Wing Z-95_Headhunter_Rebel</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>Corellian_Corvette Corellian_Gunboat A-Wing</Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR</Encyclopedia_Unit_Class>
+		
+		<Tactical_Build_Cost_Multiplayer>1200</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>14</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+	</HeroCompany> -->
 </Bossk_Hero_Files>

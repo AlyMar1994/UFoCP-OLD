@@ -1850,9 +1850,9 @@
 		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
 		<Tactical_Buildable_Objects_Multiplayer> 
 			Rebel,
-				Rebel_X-Wing_Squadron, 
+				Rebel_X-Wing_Squadron,
 				Corellian_Corvette,
-				Y-Wing_Squadron, 
+				Y-Wing_Squadron,
 				Nebulon_B_Frigate,
 				A_Wing_Squadron,
 				Millennium_Falcon_MP,

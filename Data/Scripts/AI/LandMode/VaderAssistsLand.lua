@@ -4,10 +4,10 @@
 -- ORIGINAL AUTHOR (Petroglyph): Steve Copeland
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 12/03/2020, 1:20 PM
+-- LAST REVISION DATE: 06/17/2020, 6:43 PM
 -- ======================================================================
 -- This plan simply puts Vader in the right places.
--- It relies on the object script darthvader.lua to activate abilities.
+-- It relies on the object script DarthVader.lua to activate abilities.
 require("PGEvents")
 
 function Definitions()
@@ -23,28 +23,25 @@ function Definitions()
 
 	IgnoreTarget = true
 	AllowEngagedUnits = true
-
-	duration_to_assist = 20
-	duration_to_fight = 30
 end
 
 function MainForce_Thread()
 	local vader = MainForce.Get_Unit_Table()[1]
-	local enemy_location
-	local best_ally
+
+	if not TestValid(vader) then ScriptExit() end
 
 	BlockOnCommand(MainForce.Produce_Force())
 	QuickReinforce(PlayerObject, AITarget, MainForce)
 	MainForce.Set_As_Goal_System_Removable(false)
 
-	if not TestValid(vader) then
-		MessageBox("unexpected state; vader unavailable")
-
-		ScriptExit()
-	end
-
-	-- Continuously try to attack, assist the most significant nearby unit, and heal up.
+	-- Continuously try to heal, attack any threat for 30 seconds
+	-- and assist the most significant ally for 20 seconds.
 	while true do
+		local enemy_location
+		local best_ally
+		local duration_to_fight = 30
+		local duration_to_assist = 20
+
 		ConsiderHeal(vader)
 
 		enemy_location = FindTarget.Reachable_Target(PlayerObject, "Current_Enemy_Location", "Tactical_Location", "Any_Threat", 0.5)

@@ -4,7 +4,7 @@
 -- ORIGINAL AUTHOR (Petroglyph): Brian Hayes
 -- NEW AUTHOR: Connor "AlyMar1994" Hess
 --
--- LAST REVISION DATE: 12/02/19, 11:55 PM
+-- LAST REVISION DATE: 06/16/2021, 10:04 PM
 -- ======================================================================
 require("PGCommands")
 require("GalacticHeroFreeStore")
@@ -43,6 +43,7 @@ end
 function MoveUnit(object)
 	local dest_target = nil
 	local object_type = object.Get_Type()
+
 	if object_type.Is_Hero() then
 		dest_target = Find_Custom_Target(object)
 	end
@@ -106,17 +107,18 @@ end
 function On_Unit_Added(object)
 	DebugMessage("%s -- Object: %s added to freestore", tostring(Script), tostring(object))
 
-	local obj_type = object.Get_Type()
-	if obj_type.Is_Hero() then
-		DebugMessage("%s -- Hero Object: %s added to freestore", tostring(Script), obj_type.Get_Name())
-	end
+	-- AM1994 (06/16/21): Petro what the fuck
+	-- local obj_type = object.Get_Type()
+	-- if obj_type.Is_Hero() then
+	--	DebugMessage("%s -- Hero Object: %s added to freestore", tostring(Script), obj_type.Get_Name())
+	-- end
 
 	MoveUnit(object)
 end
 
 function FreeStoreService()
 	local object_count
-	MovedUnitsThisService = 0
+	local MovedUnitsThisService = 0
 	GroundUnitsMoved = 0
 	GroundUnitsToMove = 0
 	SpaceUnitsMoved = 0
@@ -177,8 +179,10 @@ function Find_Ground_Unit_Target(object)
 	if leader_planet then
 		if leader_planet == my_planet then
 			return nil
-		elseif leader_planet.Get_Is_Planet_AI_Usable() and object.Can_Land_On_Planet(leader_planet) and EvaluatePerception("Friendly_Land_Unit_Raw_Total", PlayerObject, leader_planet) < force_target then
-			return leader_planet
+		elseif leader_planet.Get_Is_Planet_AI_Usable() and object.Can_Land_On_Planet(leader_planet) then
+			if EvaluatePerception("Friendly_Land_Unit_Raw_Total", PlayerObject, leader_planet) < force_target then
+				return leader_planet
+			end
 		end
 	end
 

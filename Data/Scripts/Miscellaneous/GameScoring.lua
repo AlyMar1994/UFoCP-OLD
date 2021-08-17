@@ -6,7 +6,7 @@
 --
 -- LAST REVISION DATE: 4/24/2020, 12:44 PM
 -- ======================================================================
-require("pgcommands")
+require("PGCommands")
 
 -- Don't pool...
 ScriptPoolCount = 0
@@ -111,7 +111,7 @@ function Update_Build_Stats_Table(stat_table, planet, object_type, owner, build_
 	if planet then
 		planet_type = planet.Get_Type()
 		planet_name = planet_type.Get_Name()
-	else 
+	else
 		planet_type = 1
 		planet_name = "Unknown"
 	end
@@ -398,7 +398,6 @@ end
 -- ============================================
 -- @param player	the player that just quit
 function Player_Quit_Event(player)
-
 	Update_Player_Table(player)
 
 	if player == nil then
@@ -486,7 +485,7 @@ end
 -- @param new_type		the new starbase type
 function Galactic_Starbase_Level_Change(planet, old_type, new_type)
 	GameScoringMessage("GameScoring -- %s Starbase changed from %s to %s.", planet.Get_Type().Get_Name(), tostring(old_type), tostring(new_type))
-	
+
 	if old_type == nil then
 		return
 	end
@@ -494,7 +493,7 @@ function Galactic_Starbase_Level_Change(planet, old_type, new_type)
 	if new_type ~= nil then
 		return
 	end
-	
+
 	fake_object_type = old_type
 	fake_object_player = planet.Get_Owner()
 	fake_object = {}

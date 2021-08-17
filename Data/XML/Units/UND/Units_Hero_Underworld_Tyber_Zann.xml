@@ -354,153 +354,6 @@
 
 
 
-	<!-- MAIN: TEAM -->
-	<HeroCompany Name="Tyber_Zann_Team">
-		<Text_ID>TEXT_HERO_TYBER_ZANN</Text_ID>
-		<Encyclopedia_Text>TEXT_TOOLTIP_TYBER_ZANN TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CRIMELORD</Encyclopedia_Unit_Class>
-		<Icon_Name>I_Button_Tyber.tga</Icon_Name>
-		
-		<Is_Dummy>Yes</Is_Dummy>
-		<Damage>80</Damage>
-		<Affiliation>Underworld</Affiliation>
-		<Build_Time_Seconds>0</Build_Time_Seconds>
-		<Combat_Power_Value>0</Combat_Power_Value>
-		<Tech_Level>1</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
-		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
-		<Required_Star_Base_Level>0</Required_Star_Base_Level>
-		<Required_Special_Structures />
-		<Required_Planets />
-		
-		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
-		<Company_Transport_Unit>The_Peacebringer</Company_Transport_Unit>
-		<Company_Units>Tyber_Zann</Company_Units>
-		<Is_Named_Hero>Yes</Is_Named_Hero>
-		<Is_Stealth_Company>Yes</Is_Stealth_Company>
-		<Available_In_Skirmish>yes</Available_In_Skirmish>
-		<Can_Be_Only_One>True</Can_Be_Only_One>
-
-		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Select_Tyber_Zann</SFXEvent_Build_Complete>
-		<SFXEvent_Hero_Respawned>Unit_Select_Tyber_Zann</SFXEvent_Hero_Respawned>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Tyber_Zann</SFXEvent_Fleet_Move>
-
-		<Score_Cost_Credits>10000</Score_Cost_Credits>
-		<CategoryMask>LandHero | SpaceHero</CategoryMask>
-		<Ranking_In_Category>1</Ranking_In_Category>
-		<Population_Value>1</Population_Value>
-
-		<Cheap_Bribe_Cost>5</Cheap_Bribe_Cost>
-		<Expensive_Bribe_Cost>10</Expensive_Bribe_Cost>
-
-		<Unit_Abilities_Data SubObjectList="Yes" />
-		
-		<Tactical_Build_Cost_Multiplayer>3500</Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Time_Seconds>17</Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites>UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
-		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
-		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
-	</HeroCompany>
-
-	<!-- SECONDARY: VARIANTS -->
-	<HeroCompany Name="Tyber_Zann_Team_No_Peacebringer">
-		<Text_ID>TEXT_HERO_TYBER_ZANN</Text_ID>
-		<Encyclopedia_Text>TEXT_TOOLTIP_TYBER_ZANN TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CRIMELORD</Encyclopedia_Unit_Class>
-		<Icon_Name>I_Button_Tyber.tga</Icon_Name>
-		
-		<Is_Dummy>Yes</Is_Dummy>
-		<Damage>80</Damage>
-		<Affiliation>Underworld</Affiliation>
-		<Build_Time_Seconds>0</Build_Time_Seconds>
-		<Combat_Power_Value>0</Combat_Power_Value>
-		<Tech_Level>1</Tech_Level>
-		<Required_Timeline>0</Required_Timeline>
-		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
-		<Required_Star_Base_Level>0</Required_Star_Base_Level>
-		<Required_Special_Structures/>
-		<Required_Planets/>
-		
-		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
-		<Company_Transport_Unit>Underworld_Hero_Shuttle</Company_Transport_Unit>
-		<Company_Units>Tyber_Zann_Passenger</Company_Units>
-		<Is_Named_Hero>Yes</Is_Named_Hero>
-		<Is_Stealth_Company>No</Is_Stealth_Company>
-		<Available_In_Skirmish>Yes</Available_In_Skirmish>
-		<Can_Be_Only_One>True</Can_Be_Only_One>
-
-		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Select_Tyber_Zann</SFXEvent_Build_Complete>
-		<SFXEvent_Hero_Respawned>Unit_Select_Tyber_Zann</SFXEvent_Hero_Respawned>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Tyber_Zann</SFXEvent_Fleet_Move>
-
-		<Score_Cost_Credits>10000</Score_Cost_Credits>
-		<CategoryMask>LandHero | SpaceHero</CategoryMask>
-		<Ranking_In_Category>1</Ranking_In_Category>
-		<Population_Value>1</Population_Value>
-
-		<Cheap_Bribe_Cost>5</Cheap_Bribe_Cost>
-		<Expensive_Bribe_Cost>10</Expensive_Bribe_Cost>
-
-		<Unit_Abilities_Data SubObjectList="Yes" />
-	</HeroCompany>
-
-	<HeroCompany Name="Tyber_Zann_Team_Prologue">
-		<Variant_Of_Existing_Type>Tyber_Zann_Team_No_Peacebringer</Variant_Of_Existing_Type>
-
-		<Company_Units>Tyber_Zann_Prologue</Company_Units>
-		<Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
-	</HeroCompany>
-
-	<UniqueUnit Name="Tyber_Zann_Boarding_Shuttle_Prologue">
-		<Variant_Of_Existing_Type>Underworld_Infantry_Droid_Shuttle</Variant_Of_Existing_Type>
-
-		<Text_ID>TEXT_UNIT_UNDERWORLD_LIGHT_TRANSPORT</Text_ID>
-		<Encyclopedia_Text />
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TRANSPORT</Encyclopedia_Unit_Class>
-
-		<Space_Model_Name>UV_RZ-52BoardingShip.ALO</Space_Model_Name>
-		<Scale_Factor>1.00</Scale_Factor>
-		<Select_Box_Scale>150</Select_Box_Scale>
-		<Icon_Name>I_Button_Tyber.tga</Icon_Name>
-		<Is_Named_Hero>True</Is_Named_Hero>
-		
-		<Shield_Points>1000</Shield_Points>
-		<Tactical_Health>10000</Tactical_Health>
-
-		<SpaceBehavior>SIMPLE_SPACE_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, REVEAL, UNIT_AI, HIDE_WHEN_FOGGED, ASTEROID_FIELD_DAMAGE</SpaceBehavior>
-		<LandBehavior>SELECTABLE, REVEAL, HIDE_WHEN_FOGGED</LandBehavior>
-		
-		<Ranking_In_Category>1</Ranking_In_Category>
-
-		<Max_Speed>4.00</Max_Speed>
-		<Max_Rate_Of_Turn>0.60</Max_Rate_Of_Turn>
-		<Max_Rate_Of_Roll>0.30</Max_Rate_Of_Roll>
-		<Bank_Turn_Angle>25</Bank_Turn_Angle>	
-		<Max_Thrust>0.40</Max_Thrust>
-		
-		<SFXEvent_Select>Unit_Select_Tyber_Zann_Space</SFXEvent_Select>
-		<SFXEvent_Move>Unit_Move_Tyber_Zann_Space</SFXEvent_Move>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Tyber_Zann</SFXEvent_Fleet_Move>
-		<SFXEvent_Attack>Unit_Attack_Tyber_Zann_Space</SFXEvent_Attack>
-		<SFXEvent_Guard>Unit_Guard_Tyber_Zann</SFXEvent_Guard>
-		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Tyber_Zann</SFXEvent_Health_Low_Warning>
-		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Tyber_Zann</SFXEvent_Health_Critical_Warning>
-		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
-		
-		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Select_Tyber_Zann</SFXEvent_Build_Complete>
-		<SFXEvent_Hero_Respawned>Unit_Select_Tyber_Zann</SFXEvent_Hero_Respawned>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Tyber_Zann</SFXEvent_Fleet_Move>
-	</UniqueUnit>
-
-
-
 	<!-- MAIN: SPACE UNIT -->
 	<UniqueUnit Name="The_Peacebringer">
 		<Variant_Of_Existing_Type>Krayt_Class_Destroyer</Variant_Of_Existing_Type>
@@ -677,5 +530,152 @@
 		<Ship_Class>Capital_Ship</Ship_Class>
 		<Glory_Cinematics />
 		<Remove_Upon_Death>True</Remove_Upon_Death>
+	</UniqueUnit>
+
+
+
+	<!-- MAIN: TEAM -->
+	<HeroCompany Name="Tyber_Zann_Team">
+		<Text_ID>TEXT_HERO_TYBER_ZANN</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_TYBER_ZANN TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CRIMELORD</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Button_Tyber.tga</Icon_Name>
+		
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>80</Damage>
+		<Affiliation>Underworld</Affiliation>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>The_Peacebringer</Company_Transport_Unit>
+		<Company_Units>Tyber_Zann</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Stealth_Company>Yes</Is_Stealth_Company>
+		<Available_In_Skirmish>yes</Available_In_Skirmish>
+		<Can_Be_Only_One>True</Can_Be_Only_One>
+
+		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_Tyber_Zann</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Select_Tyber_Zann</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Tyber_Zann</SFXEvent_Fleet_Move>
+
+		<Score_Cost_Credits>10000</Score_Cost_Credits>
+		<CategoryMask>LandHero | SpaceHero</CategoryMask>
+		<Ranking_In_Category>1</Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+
+		<Cheap_Bribe_Cost>5</Cheap_Bribe_Cost>
+		<Expensive_Bribe_Cost>10</Expensive_Bribe_Cost>
+
+		<Unit_Abilities_Data SubObjectList="Yes" />
+		
+		<Tactical_Build_Cost_Multiplayer>3500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>17</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+	</HeroCompany>
+
+	<!-- SECONDARY: VARIANTS -->
+	<HeroCompany Name="Tyber_Zann_Team_No_Peacebringer">
+		<Text_ID>TEXT_HERO_TYBER_ZANN</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_TYBER_ZANN TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CRIMELORD</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Button_Tyber.tga</Icon_Name>
+		
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>80</Damage>
+		<Affiliation>Underworld</Affiliation>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures/>
+		<Required_Planets/>
+		
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+		<Company_Transport_Unit>Underworld_Hero_Shuttle</Company_Transport_Unit>
+		<Company_Units>Tyber_Zann_Passenger</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+		<Available_In_Skirmish>Yes</Available_In_Skirmish>
+		<Can_Be_Only_One>True</Can_Be_Only_One>
+
+		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_Tyber_Zann</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Select_Tyber_Zann</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Tyber_Zann</SFXEvent_Fleet_Move>
+
+		<Score_Cost_Credits>10000</Score_Cost_Credits>
+		<CategoryMask>LandHero | SpaceHero</CategoryMask>
+		<Ranking_In_Category>1</Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+
+		<Cheap_Bribe_Cost>5</Cheap_Bribe_Cost>
+		<Expensive_Bribe_Cost>10</Expensive_Bribe_Cost>
+
+		<Unit_Abilities_Data SubObjectList="Yes" />
+	</HeroCompany>
+
+	<HeroCompany Name="Tyber_Zann_Team_Prologue">
+		<Variant_Of_Existing_Type>Tyber_Zann_Team_No_Peacebringer</Variant_Of_Existing_Type>
+
+		<Company_Units>Tyber_Zann_Prologue</Company_Units>
+		<Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
+	</HeroCompany>
+
+	<UniqueUnit Name="Tyber_Zann_Boarding_Shuttle_Prologue">
+		<Variant_Of_Existing_Type>Underworld_Infantry_Droid_Shuttle</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_UNDERWORLD_LIGHT_TRANSPORT</Text_ID>
+		<Encyclopedia_Text />
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TRANSPORT</Encyclopedia_Unit_Class>
+
+		<Space_Model_Name>UV_RZ-52BoardingShip.ALO</Space_Model_Name>
+		<Scale_Factor>1.00</Scale_Factor>
+		<Select_Box_Scale>150</Select_Box_Scale>
+		<Icon_Name>I_Button_Tyber.tga</Icon_Name>
+		<Is_Named_Hero>True</Is_Named_Hero>
+		
+		<Shield_Points>1000</Shield_Points>
+		<Tactical_Health>10000</Tactical_Health>
+
+		<SpaceBehavior>SIMPLE_SPACE_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, REVEAL, UNIT_AI, HIDE_WHEN_FOGGED, ASTEROID_FIELD_DAMAGE</SpaceBehavior>
+		<LandBehavior>SELECTABLE, REVEAL, HIDE_WHEN_FOGGED</LandBehavior>
+		
+		<Ranking_In_Category>1</Ranking_In_Category>
+
+		<Max_Speed>4.00</Max_Speed>
+		<Max_Rate_Of_Turn>0.60</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>0.30</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>25</Bank_Turn_Angle>	
+		<Max_Thrust>0.40</Max_Thrust>
+		
+		<SFXEvent_Select>Unit_Select_Tyber_Zann_Space</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Tyber_Zann_Space</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Tyber_Zann</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Tyber_Zann_Space</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Tyber_Zann</SFXEvent_Guard>
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Tyber_Zann</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Tyber_Zann</SFXEvent_Health_Critical_Warning>
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+		
+		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_Tyber_Zann</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Select_Tyber_Zann</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Tyber_Zann</SFXEvent_Fleet_Move>
 	</UniqueUnit>
 </Tyber_Zann_Data>

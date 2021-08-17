@@ -496,4 +496,12 @@
 		<Fade_Out_Previous_Seconds>2.00</Fade_Out_Previous_Seconds>
 		<Loop>No</Loop>
 	</MusicEvent>
+
+	<MusicEvent Name="Test_Music_Event">
+		<Files>Test_Loop_Song_2.MP3</Files>
+		<Volume_Percent>95</Volume_Percent>
+		<Fade_In_Seconds>0.0</Fade_In_Seconds>
+		<Fade_Out_Previous_Seconds>2.0</Fade_Out_Previous_Seconds>
+		<Loop>No</Loop>
+	</MusicEvent>
 </MusicEvents>

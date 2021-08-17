@@ -18,7 +18,7 @@
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
 		<Event_Param2>ADD_OBJECTIVE_00</Event_Param2>
 		<Reward_Type>ADD_OBJECTIVE</Reward_Type>
-		<Reward_Param1>TEXT_CORRUPTION_INT_HONOGHR_OBJ_00</Reward_Param1>
+		<Reward_Param1>TEXT_CORRUPTION_OBJ_INT_HONOGHR_00</Reward_Param1>
 		<Prereq>Honoghr_Intimidation_Mission_Begin</Prereq>
 	</Event>
 	
@@ -34,23 +34,23 @@
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
 		<Event_Param2>COMPLETE_OBJECTIVE_00</Event_Param2>
 		<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
-		<Reward_Param1>TEXT_CORRUPTION_INT_HONOGHR_OBJ_03</Reward_Param1>
+		<Reward_Param1>TEXT_CORRUPTION_OBJ_INT_HONOGHR_03</Reward_Param1>
 		<Prereq>Honoghr_Intimidation_Mission_Add_Objective_00</Prereq>
 	</Event>
 
-		<Event Name="Honoghr_Intimidation_Mission_Complete_Objective_01">
-			<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
-			<Event_Param2>COMPLETE_OBJECTIVE_00</Event_Param2>
-			<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
-			<Reward_Param1>TEXT_CORRUPTION_OBJ_URAISURVIVE</Reward_Param1>
+		<Event Name="Honoghr_Intimidation_Mission_Complete_Victory_Trigger">
+			<Event_Type>STORY_TRIGGER</Event_Type>
+			<Reward_Type>VICTORY</Reward_Type>
+			<Reward_Param1>Underworld</Reward_Param1>
 			<Prereq>Honoghr_Intimidation_Mission_Complete_Objective_00</Prereq>
 		</Event>
-	
-			<Event Name="Honoghr_Intimidation_Mission_Complete_Victory_Trigger">
-				<Event_Type>STORY_TRIGGER</Event_Type>
-				<Reward_Type>VICTORY</Reward_Type>
-				<Reward_Param1>Underworld</Reward_Param1>
-				<Prereq>Honoghr_Intimidation_Mission_Complete_Objective_00</Prereq>
+
+			<Event Name="Honoghr_Intimidation_Mission_Complete_Objective_01">
+				<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+				<Event_Param2>COMPLETE_OBJECTIVE_00</Event_Param2>
+				<Reward_Type>OBJECTIVE_COMPLETE</Reward_Type>
+				<Reward_Param1>TEXT_CORRUPTION_OBJ_URAISURVIVE</Reward_Param1>
+				<Prereq>Honoghr_Intimidation_Mission_Complete_Victory_Trigger</Prereq>
 			</Event>
 
 
@@ -58,7 +58,7 @@
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
 		<Event_Param2>FAIL_OBJECTIVE_00</Event_Param2>
 		<Reward_Type>OBJECTIVE_FAILED</Reward_Type>
-		<Reward_Param1>TEXT_CORRUPTION_INT_HONOGHR_OBJ_00</Reward_Param1>
+		<Reward_Param1>TEXT_CORRUPTION_OBJ_INT_HONOGHR_00</Reward_Param1>
 		<Prereq>Honoghr_Intimidation_Mission_Add_Objective_00</Prereq>
 	</Event>
 
@@ -77,8 +77,8 @@
 			<Event Name="Honoghr_Intimidation_Mission_Update_00_1">
 				<Event_Type>STORY_TRIGGER</Event_Type>
 				<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
-				<Reward_Param1>TEXT_CORRUPTION_INT_HONOGHR_OBJ_00</Reward_Param1>
-				<Reward_Param2>TEXT_CORRUPTION_INT_HONOGHR_OBJ_01</Reward_Param2>
+				<Reward_Param1>TEXT_CORRUPTION_OBJ_INT_HONOGHR_00</Reward_Param1>
+				<Reward_Param2>TEXT_CORRUPTION_OBJ_INT_HONOGHR_01</Reward_Param2>
 				<Prereq>Honoghr_Intimidation_Mission_Update_00_1_Lua</Prereq>
 			</Event>
 	
@@ -89,8 +89,8 @@
 			<Event Name="Honoghr_Intimidation_Mission_Update_00_2">
 				<Event_Type>STORY_TRIGGER</Event_Type>
 				<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
-				<Reward_Param1>TEXT_CORRUPTION_INT_HONOGHR_OBJ_01</Reward_Param1>
-				<Reward_Param2>TEXT_CORRUPTION_INT_HONOGHR_OBJ_02</Reward_Param2>
+				<Reward_Param1>TEXT_CORRUPTION_OBJ_INT_HONOGHR_01</Reward_Param1>
+				<Reward_Param2>TEXT_CORRUPTION_OBJ_INT_HONOGHR_02</Reward_Param2>
 				<Prereq>Honoghr_Intimidation_Mission_Update_00_2_Lua</Prereq>
 			</Event>
 
@@ -101,8 +101,8 @@
 			<Event Name="Honoghr_Intimidation_Mission_Update_00_3">
 				<Event_Type>STORY_TRIGGER</Event_Type>
 				<Reward_Type>UPDATE_OBJECTIVE</Reward_Type>
-				<Reward_Param1>TEXT_CORRUPTION_INT_HONOGHR_OBJ_02</Reward_Param1>
-				<Reward_Param2>TEXT_CORRUPTION_INT_HONOGHR_OBJ_03</Reward_Param2>
+				<Reward_Param1>TEXT_CORRUPTION_OBJ_INT_HONOGHR_02</Reward_Param1>
+				<Reward_Param2>TEXT_CORRUPTION_OBJ_INT_HONOGHR_03</Reward_Param2>
 				<Prereq>Honoghr_Intimidation_Mission_Update_00_3_Lua</Prereq>
 			</Event>
 
@@ -135,7 +135,7 @@
 
 <!-- TEXT_SPEECH_UW_CLD_01
 URAI FEN: Urai Fen: The Death Commandos of Honoghr are a fierce fighting force. If we can destroy one of their 
-		  groups it will show that world and many others how strong the Zan Consortium is.  -->
+		  groups it will show that world and many others how strong the Zann Consortium is.  -->
 	<Event Name="Honoghr_Intimidation_Mission_Speech_Line_00">
 		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
 		<Event_Param2>TEXT_SPEECH_UW_CLD_01</Event_Param2>

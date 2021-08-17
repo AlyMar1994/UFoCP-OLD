@@ -239,88 +239,11 @@
 
 
 
-	<!-- MAIN: TEAM -->
-	<HeroCompany Name="IG88_Team">
-		<LOD_Bias>5</LOD_Bias>
-		<Text_ID>TEXT_HERO_IG88_TEAM</Text_ID>
-		<Encyclopedia_Text>TEXT_TOOLTIP_IG88 TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOUNTY_HUNTER</Encyclopedia_Unit_Class>
-		<Icon_Name>I_Button_UI_IG88.tga</Icon_Name>
-		
-		<Is_Dummy>Yes</Is_Dummy>
-		<Damage>80</Damage>
-		<Affiliation>Underworld</Affiliation>
-		<Build_Time_Seconds>0</Build_Time_Seconds>
-		<Combat_Power_Value>0</Combat_Power_Value>
-		<Tech_Level>3</Tech_Level>
-		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
-		<Required_Star_Base_Level>0</Required_Star_Base_Level>
-		<Required_Special_Structures />
-		<Required_Planets />
-		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
-
-		<Always_Spawn_In_Orbit>No</Always_Spawn_In_Orbit>
-		<Company_Transport_Unit>IG-2000</Company_Transport_Unit>
-
-		<Company_Units>IG-88</Company_Units>
-		<Is_Named_Hero>Yes</Is_Named_Hero>
-		<Is_Stealth_Company>Yes</Is_Stealth_Company>
-		<Available_In_Skirmish>Yes</Available_In_Skirmish>
-		<Can_Be_Only_One>True</Can_Be_Only_One>
-
-		<Score_Cost_Credits>10000</Score_Cost_Credits>
-		<CategoryMask>LandHero | SpaceHero</CategoryMask>
-		<Ranking_In_Category>3</Ranking_In_Category>
-		<Population_Value>1</Population_Value>
-
-		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>Unit_Select_IG88</SFXEvent_Build_Complete>
-		<SFXEvent_Hero_Respawned>Unit_Select_IG88</SFXEvent_Hero_Respawned>
-		<SFXEvent_Fleet_Move>Unit_Fleet_Move_IG88</SFXEvent_Fleet_Move>
-
-		<Unit_Abilities_Data SubObjectList="Yes" />
-
-		<Is_Stealth_Company>No</Is_Stealth_Company>
-	</HeroCompany>
-
-	<!-- SECONDARY: VARIANTS -->
-	<HeroCompany Name="IG88_Team_Land_MP">
-		<Variant_Of_Existing_Type>IG88_Team</Variant_Of_Existing_Type>
-
-		<Tactical_Build_Cost_Multiplayer>1800</Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
-		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
-		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
-		<Is_Stealth_Company>No</Is_Stealth_Company>
-	</HeroCompany>
-
-	<HeroCompany Name="IG88_Team_Space_MP">
-		<Variant_Of_Existing_Type>IG88_Team</Variant_Of_Existing_Type>
-
-		<Text_ID>TEXT_UNIT_IG2000_01</Text_ID>
-		<Encyclopedia_Good_Against>X-wing Y-Wing Z-95_Headhunter_Rebel</Encyclopedia_Good_Against>
-		<Encyclopedia_Vulnerable_To>Corellian_Corvette Corellian_Gunboat A-Wing</Encyclopedia_Vulnerable_To>
-		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR</Encyclopedia_Unit_Class>
-
-		<Tactical_Build_Cost_Multiplayer>1700</Tactical_Build_Cost_Multiplayer>
-		<Tactical_Build_Time_Seconds>23</Tactical_Build_Time_Seconds>
-		<Tactical_Build_Prerequisites />
-		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
-		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
-		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
-		<Is_Stealth_Company>No</Is_Stealth_Company>
-	</HeroCompany>
-
-
-
 	<!-- MAIN: SPACE UNIT -->
 	<UniqueUnit Name="IG-2000">
-		<Text_ID>TEXT_UNIT_IG2000_01</Text_ID>
+		<Text_ID>TEXT_UNIT_IG2000_00</Text_ID>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
-		<Encyclopedia_Text>TEXT_TOOLTIP_IG2000</Encyclopedia_Text>
+		<Encyclopedia_Text>TEXT_TOOLTIP_IG2000_00</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR</Encyclopedia_Unit_Class>
 		<Encyclopedia_Good_Against>X-wing Y-Wing Z-95_Headhunter_Rebel</Encyclopedia_Good_Against>
 		<Encyclopedia_Vulnerable_To>Corellian_Corvette Corellian_Gunboat A-Wing</Encyclopedia_Vulnerable_To>
@@ -358,8 +281,8 @@
 		<Energy_Refresh_Rate>9999</Energy_Refresh_Rate>
 		<Size_Value>120</Size_Value>
 		<Damage>5</Damage>
-		<Behavior>DUMMY_STARSHIP, TRANSPORT, POWERED, SHIELDED</Behavior>
-		<SpaceBehavior>FIGHTER_LOCOMOTOR, TARGETING, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, UNIT_AI, NEBULA, SELECTABLE, ABILITY_COUNTDOWN</SpaceBehavior>
+		<Behavior>DUMMY_STARSHIP, TRANSPORT</Behavior>
+		<SpaceBehavior>FIGHTER_LOCOMOTOR, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, UNIT_AI, NEBULA, SELECTABLE, ABILITY_COUNTDOWN</SpaceBehavior>
 		<LandBehavior>REVEAL, HIDE_WHEN_FOGGED, IDLE</LandBehavior>
 
 		<Victory_Relevant>Yes</Victory_Relevant>
@@ -464,9 +387,30 @@
 		<Space_Override_Population_Value>1</Space_Override_Population_Value>
 	</UniqueUnit>
 
+	<UniqueUnit Name="IG-2000_MP">
+		<Variant_Of_Existing_Type>IG-2000</Variant_Of_Existing_Type>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+		<Tech_Level>99</Tech_Level>
+
+		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_IG88</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Select_IG88</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_IG88</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>1700</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>23</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+	</UniqueUnit>
+
 	<!-- SECONDARY: VARIANTS -->
 	<UniqueUnit Name="IG2000_Death_Clone">
-		<Text_ID>TEXT_UNIT_IG2000_01</Text_ID>
+		<Text_ID>TEXT_UNIT_IG2000_00</Text_ID>
 		<Space_Model_Name>UV_IG2000_D.alo</Space_Model_Name>
 		<Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
 		<Scale_Factor>1.20</Scale_Factor>
@@ -502,4 +446,83 @@
 		<User_Bound_Max>700, 700, 1500</User_Bound_Max>
 		<LandBehavior>REVEAL, IDLE</LandBehavior>
 	</UniqueUnit>
+
+
+
+	<!-- MAIN: TEAM -->
+	<HeroCompany Name="IG88_Team">
+		<LOD_Bias>5</LOD_Bias>
+		<Text_ID>TEXT_HERO_IG88_TEAM</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_IG88 TEXT_TOOLTIP_UNIT_CAPTURE_ABILITY</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOUNTY_HUNTER</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Button_UI_IG88.tga</Icon_Name>
+		
+		<Is_Dummy>Yes</Is_Dummy>
+		<Damage>80</Damage>
+		<Affiliation>Underworld</Affiliation>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Combat_Power_Value>0</Combat_Power_Value>
+		<Tech_Level>3</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+
+		<Always_Spawn_In_Orbit>No</Always_Spawn_In_Orbit>
+		<Company_Transport_Unit>IG-2000</Company_Transport_Unit>
+
+		<Company_Units>IG-88</Company_Units>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Is_Stealth_Company>Yes</Is_Stealth_Company>
+		<Available_In_Skirmish>Yes</Available_In_Skirmish>
+		<Can_Be_Only_One>True</Can_Be_Only_One>
+
+		<Score_Cost_Credits>10000</Score_Cost_Credits>
+		<CategoryMask>LandHero | SpaceHero</CategoryMask>
+		<Ranking_In_Category>3</Ranking_In_Category>
+		<Population_Value>1</Population_Value>
+
+		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_IG88</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Select_IG88</SFXEvent_Hero_Respawned>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_IG88</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes" />
+
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+	</HeroCompany>
+
+	<!-- SECONDARY: VARIANTS -->
+	<HeroCompany Name="IG88_Team_Land_MP">
+		<Variant_Of_Existing_Type>IG88_Team</Variant_Of_Existing_Type>
+
+		<Tactical_Build_Cost_Multiplayer>1800</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+	</HeroCompany>
+
+	<!-- AM1994 (02/18/2020): Removing for replacement with IG-2000_MP to fix -->
+	<!-- the Object Contestation Glitch. -->
+	<!-- <HeroCompany Name="IG88_Team_Space_MP">
+		<Variant_Of_Existing_Type>IG88_Team</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_IG2000_00</Text_ID>
+		<Encyclopedia_Good_Against>X-wing Y-Wing Z-95_Headhunter_Rebel</Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To>Corellian_Corvette Corellian_Gunboat A-Wing</Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR</Encyclopedia_Unit_Class>
+
+		<Tactical_Build_Cost_Multiplayer>1700</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>23</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+		<Is_Stealth_Company>No</Is_Stealth_Company>
+	</HeroCompany> -->
 </IG88_Hero_Files>
