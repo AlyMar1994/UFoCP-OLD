@@ -60,7 +60,7 @@ UFoCP
 ==================
 General
 ==================
--Did some passes within Lua to clean and ensure things are running smoothly (localization of variables, repositioning, etc).
+-Did some passes within Lua to clean.
 
 -Did a pass on the entirety of Changelog.txt and Changelog Condensed.txt to ensure up-to-date information and proper grammar.
 
