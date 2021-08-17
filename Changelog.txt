@@ -36,6 +36,8 @@ UFoCP
 
 -Regenerated all AI hint data for included land maps to adjust for map modifications.
 
+-Compressed the mod into .MEG files for quicker loading and fewer system calls.
+
 
 -Honoghr – Fixed campaign Intimidation corruption mission having missing objective text.
 

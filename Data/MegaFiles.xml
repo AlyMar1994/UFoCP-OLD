@@ -1,6 +1,6 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Mega_Files>
-	<Info Name="UFoCP" Version="1.14.0" />
+	<Info Name="UFoCP" Version="1.16.554" />
 	<File>Data\RussianSpeech.meg</File>
 	<File>Data\FrenchSpeech.meg</File>
 	<File>Data\Config.meg</File>
@@ -18,4 +18,8 @@
 	<File>Data\GermanSpeech.meg</File>
 
 	<File>Data\UFoCP_Config.meg</File>
+	<File>Data\UFoCP_Maps.meg</File>
+	<File>Data\UFoCP_Models.meg</File>
+	<File>Data\UFoCP_Textures.meg</File>
+	<File>Data\UFoCP_Text.meg</File>
 </Mega_Files>
