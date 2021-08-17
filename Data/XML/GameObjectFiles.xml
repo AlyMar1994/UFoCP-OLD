@@ -20,7 +20,7 @@
 	<File>Maps\SpaceProps.xml</File>
 	<File>Units\SpaceUnitsCapital.xml</File>
 	<File>Units\SpaceUnitsFighters.xml</File>
-	<File>SpaceUnitsCorvettes.xml</File>
+	<File>Units\SpaceUnitsCorvettes.xml</File>
 	<File>SpaceUnitsFrigates.xml</File>
 	<File>Units\IMP\Units_Space_Empire_DeathStar.xml</File>
 	<File>SpacePrimarySkydomes.xml</File>

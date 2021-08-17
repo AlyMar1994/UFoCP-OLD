@@ -48,6 +48,10 @@ UFoCP
 
 -Grenadier – Fixed proximity mines having a broken Class ID.
 
+-IPV Patrol Craft – Fixed not having a selection box.  The SpaceCorvettes file wasn't present on source yet was before - restored and fixed.
+-IPV Patrol Craft – Fixed not using its own Power-to-Weapons VO.  The SpaceCorvettes file wasn't present on source yet was before - restored and fixed.
+-IPV Patrol Craft – Added the Underworld to the list of affiliated factions.  The SpaceCorvettes file wasn't present on source yet was before - restored and fixed.
+
 -The Millennium Falcon - Han Solo & Chewbacca – Fixed weapon inaccuracy distance.  "Super" was erroneously changed from 1.0 to 30.0, making the Falcon very inaccurate against the giant SSD.
 
 -V-wing – Fixed Hutt V-wings having broken descriptions.
