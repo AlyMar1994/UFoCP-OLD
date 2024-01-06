@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <GroundStructures>
+
 	<GroundStructure Name="Abstract_Turret">
 		<Select_Box_Scale>45</Select_Box_Scale>
 		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
@@ -640,7 +641,7 @@
 	<GroundStructure Name="Abstract_Repair_Facility">
 
 		<!-- BUG: The game engine does not recognize TACTICAL_SELL as a behavior on the game object - must make a general behavior for now -->
-		<!-- <LandBehavior> TACTICAL_SELL, SELECTABLE, IDLE, LAND_OBSTACLE, REVEAL </LandBehavior> -->
+		<!-- LandBehavior> TACTICAL_SELL, SELECTABLE, IDLE, LAND_OBSTACLE, REVEAL </LandBehavior> -->
 		<Behavior> TACTICAL_SELL, SELECTABLE, IDLE, REVEAL,DAMAGE_TRACKING, HIDE_WHEN_FOGGED, UNIT_AI </Behavior>
 		<LandBehavior> EARTHQUAKE_TARGET </LandBehavior>
 		<Has_Land_Evaluator>True</Has_Land_Evaluator>
@@ -713,8 +714,10 @@
 				<Owner_Light_Effect_Color2 />
 				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
 				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+				<Lighting_Effect_Name>Repair_Facility_Effect</Lighting_Effect_Name>
 			</Force_Healing_Ability>
 		</Abilities>
+
 	</GroundStructure>
 
 
@@ -835,6 +838,7 @@
 				<Owner_Light_Effect_Color2 />
 				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
 				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+				<Lighting_Effect_Name>Repair_Facility_Effect</Lighting_Effect_Name>
 			</Force_Healing_Ability>
 		</Abilities>
 	</GroundStructure>
@@ -1073,6 +1077,48 @@
 
 	</GroundStructure>
 
+	<GroundBuildable Name="UC_Underworld_Buildable_Abstract_Type">
+
+		<!-- NOTE: TACTICAL_UNDER_CONSTRUCTION does not work as a Land_Behavior, since the type Behaves_Like() fails for some reason when it should not - need to fix -->
+		<Behavior> TACTICAL_UNDER_CONSTRUCTION, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED </Behavior>
+		<LandBehavior> EARTHQUAKE_TARGET </LandBehavior>
+		
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+
+		<Loop_Idle_Anim_00> No </Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living> Yes </Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Generic_Building_Death_SFX </Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust> 10.0 </Ranged_Target_Z_Adjust>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+		<Land_FOW_Reveal_Range> 30.0 </Land_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier> 0.0 </Dense_FOW_Reveal_Range_Multiplier>
+		<Select_Box_Scale> 50 </Select_Box_Scale>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> Vehicle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 10.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 10.0 </Custom_Hard_YExtent>
+				
+		<Scale_Factor> 1.00 </Scale_Factor>
+		<Shield_Points> 0 </Shield_Points>
+		<Affiliation> Underworld </Affiliation>
+		<Base_Level_Available> 1 </Base_Level_Available>
+		<Required_Ground_Base_Level> 1 </Required_Ground_Base_Level>
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+		<Victory_Relevant> No </Victory_Relevant>
+		<No_Reflection_Below_Detail_Level> 1 </No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level> 1 </No_Refraction_Below_Detail_Level>
+		<CategoryMask> Structure </CategoryMask>
+		<GUI_Bracket_Width> 20 </GUI_Bracket_Width>
+		<GUI_Bracket_Height> 0 </GUI_Bracket_Height>
+		<GUI_Bracket_Size> 0 </GUI_Bracket_Size> 
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		
+	</GroundBuildable>
 
 	<GroundBuildable Name="UC_Underworld_Sensor_Scrambler">
 
@@ -1104,11 +1150,11 @@
 
 
 	<GroundStructure Name="Underworld_Ysalamiri_Cage">
-		<Text_ID>TEXT_STRUCTURE_YSALAMIRI_CAGE</Text_ID>
+   		<Text_ID>TEXT_STRUCTURE_YSALAMIRI_CAGE</Text_ID>
 		<Encyclopedia_Text>TEXT_TOOLTIP_YSALAMIRI_CAGE</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
-		<Encyclopedia_Good_Against>Darth_Vader_Expansion Obi_Wan_Kenobi Yoda</Encyclopedia_Good_Against>
-		<Encyclopedia_Vulnerable_To>T2B_Tank AT_ST_Walker</Encyclopedia_Vulnerable_To>	
+		<Encyclopedia_Good_Against> Darth_Vader_Expansion Obi_Wan_Kenobi Yoda </Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To> T2B_Tank AT_ST_Walker </Encyclopedia_Vulnerable_To>	
 
 		<Land_Model_Name>UV_MDU_Cage.alo</Land_Model_Name>
 		<Icon_Name>i_button_uv_mdu_cage.tga</Icon_Name>
@@ -1126,7 +1172,7 @@
 		<Behavior>SELECTABLE, TACTICAL_SELL</Behavior>
 		<LandBehavior> IDLE, UNIT_AI, REVEAL, HIDE_WHEN_FOGGED, LAND_OBSTACLE, DISABLE_FORCE_ABILITIES </LandBehavior>
 		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
-		<Radar_Icon_Size>0.075, 0.075</Radar_Icon_Size>
+		<Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
 		 
 		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
 		<Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
@@ -1314,6 +1360,50 @@
 		<Passive_Missile_Shield_Radius> 150.0 </Passive_Missile_Shield_Radius>
 
 	</GroundStructure>
+
+	<GroundBuildable Name="UC_Empire_Buildable_Abstract_Type">
+
+		<!-- NOTE: TACTICAL_UNDER_CONSTRUCTION does not work as a Land_Behavior, since the type->Behaves_Like() fails for some reason when it should not - need to fix -->
+		<Behavior> TACTICAL_UNDER_CONSTRUCTION, SELECTABLE, DAMAGE_TRACKING, REVEAL, HIDE_WHEN_FOGGED </Behavior>
+		<LandBehavior> EARTHQUAKE_TARGET </LandBehavior>
+		<Obstacle_Proxy_Type> Empire_Build_Pad </Obstacle_Proxy_Type>
+
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+
+		<Loop_Idle_Anim_00> No </Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living> Yes </Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Generic_Building_Death_SFX </Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust> 10.0 </Ranged_Target_Z_Adjust>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+		<Land_FOW_Reveal_Range> 30.0 </Land_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier> 0.0 </Dense_FOW_Reveal_Range_Multiplier>
+		<Select_Box_Scale> 50 </Select_Box_Scale>
+		
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> Vehicle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 10.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 10.0 </Custom_Hard_YExtent>
+		
+		<Scale_Factor> 0.75 </Scale_Factor>
+		<Shield_Points> 0 </Shield_Points>
+		<Affiliation> Empire </Affiliation>
+		<Base_Level_Available> 1 </Base_Level_Available>
+		<Required_Ground_Base_Level> 1 </Required_Ground_Base_Level>
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+		<Victory_Relevant> No </Victory_Relevant>
+		<No_Reflection_Below_Detail_Level> 1 </No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level> 1 </No_Refraction_Below_Detail_Level>
+		<CategoryMask> Structure </CategoryMask>
+		<GUI_Bracket_Width> 20 </GUI_Bracket_Width>
+		<GUI_Bracket_Height> 0 </GUI_Bracket_Height>
+		<GUI_Bracket_Size> 0 </GUI_Bracket_Size> 
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+	</GroundBuildable>
+
 
 	<GroundBuildable Name="UC_Empire_EM_Field_Generator">
 
@@ -1513,11 +1603,6 @@
 
 	</GroundBuildable>
 
-	<GroundStructure Name="Hutt_Offensive_Sensor_Node">
-		<Variant_Of_Existing_Type> Empire_Offensive_Sensor_Node </Variant_Of_Existing_Type>
-		<Affiliation> Hutts </Affiliation>
-	</GroundStructure>
-
 
 	<GroundStructure Name="Empire_Offensive_Sensor_Node">
    		<Text_ID>TEXT_STRUCTURE_OFFENSIVE_SENSOR_NODE</Text_ID>
@@ -1600,6 +1685,11 @@
 
         
 
+	</GroundStructure>
+
+	<GroundStructure Name="Hutt_Offensive_Sensor_Node">
+		<Variant_Of_Existing_Type> Empire_Offensive_Sensor_Node </Variant_Of_Existing_Type>
+		<Affiliation> Hutts </Affiliation>
 	</GroundStructure>
 
 	<GroundBuildable Name="UC_Empire_Offensive_Sensor_Node">
@@ -1695,6 +1785,50 @@
 		<Unit_Abilities_Data SubObjectList="Yes"> </Unit_Abilities_Data>
 		
 	</GroundStructure>
+
+	<GroundBuildable Name="UC_Rebel_Buildable_Abstract_Type">
+
+		<!-- NOTE: TACTICAL_UNDER_CONSTRUCTION does not work as a Land_Behavior, since the type->Behaves_Like() fails for some reason when it should not - need to fix -->
+		<Behavior> TACTICAL_UNDER_CONSTRUCTION, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED </Behavior>
+		<LandBehavior> EARTHQUAKE_TARGET </LandBehavior>
+		
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+
+		<Loop_Idle_Anim_00> No </Loop_Idle_Anim_00>
+		<Collidable_By_Projectile_Living> Yes </Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Death_SFXEvent_Start_Die> Unit_Generic_Building_Death_SFX </Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust> 10.0 </Ranged_Target_Z_Adjust>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+		<Land_FOW_Reveal_Range> 30.0 </Land_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier> 0.0 </Dense_FOW_Reveal_Range_Multiplier>
+		<Select_Box_Scale> 50 </Select_Box_Scale>
+
+		<Space_Layer> Land </Space_Layer>	
+		<UnitCollisionClass> Vehicle </UnitCollisionClass>	
+		<Custom_Hard_XExtent> 10.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 10.0 </Custom_Hard_YExtent>
+				
+		<Scale_Factor> 1.00 </Scale_Factor>
+		<Shield_Points> 0 </Shield_Points>
+		<Affiliation> Rebel </Affiliation>
+		<Base_Level_Available> 1 </Base_Level_Available>
+		<Required_Ground_Base_Level> 1 </Required_Ground_Base_Level>
+		<Armor_Type> Armor_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+		<Victory_Relevant> No </Victory_Relevant>
+		<No_Reflection_Below_Detail_Level> 1 </No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level> 1 </No_Refraction_Below_Detail_Level>
+		<CategoryMask> Structure </CategoryMask>
+		<GUI_Bracket_Width> 20 </GUI_Bracket_Width>
+		<GUI_Bracket_Height> 0 </GUI_Bracket_Height>
+		<GUI_Bracket_Size> 0 </GUI_Bracket_Size> 
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		
+	</GroundBuildable>
+
 
 	<GroundBuildable Name="UC_Rebel_Mobile_Shield_Generator">
 
